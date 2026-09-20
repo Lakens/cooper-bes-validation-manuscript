@@ -1,0 +1,560 @@
+#' Create a Report
+#'
+#' Run specified modules on a paper and generate a report in quarto (qmd), html, or pdf format.
+#'
+#' Pass arguments to modules in a named list of lists, using the same names as the `modules` argument. You only need to specify modules with arguments.
+#' ```
+#' args <- list(power = list(seed = 8675309))
+#' ```
+#'
+#' @param paper a paper object or a paperlist object
+#' @param modules a vector of modules to run (names for built-in modules or paths for custom modules)
+#' @param output_file the name of the output file
+#' @param output_format the format to create the report in
+#' @param args a list of arguments to pass to modules (see Details)
+#'
+#' @return the file path the report is saved to
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' paper <- demopaper()
+#' report(paper)
+#' }
+report <- function(paper,
+                   modules = c(
+                     "prereg_check",
+                     "funding_check",
+                     "coi_check",
+                     "power",
+                     "repo_check",
+                     "code_check",
+                     "stat_check",
+                     "stat_p_exact",
+                     "stat_p_nonsig",
+                     "stat_effect_size",
+                     "marginal",
+                     "ref_accuracy",
+                     "ref_replication",
+                     "ref_retraction",
+                     "ref_pubpeer",
+                     "ref_summary"
+                   ),
+                   output_file = paste0(paper$paper_id,
+                                        "_report.",
+                                        output_format),
+                   output_format = c("html", "qmd"),
+                   args = list()) {
+  # error catching ----
+  ## check output format
+  output_format <- tolower(output_format[[1]])
+  if (!output_format %in% c("html", "qmd")) {
+    stop("The output_format must be either 'html' or 'qmd'.",
+      call. = FALSE
+    )
+  }
+
+  ## check if modules are available
+  mod_exists <- sapply(modules, module_find)
+
+  # vectorise over papers ----
+  if (.is_paper_list(paper) && length(paper) == 1) {
+    # treat length-1 paperlist like 1 paper
+    paper <- paper[[1]]
+  } else if (.is_paper_list(paper)) {
+    ## set up progress bar ----
+    pb <- pb(
+      length(paper),
+      ":what [:bar] :current/:total :elapsedfull"
+    )
+    pb$tick(0, tokens = list(what = "Creating reports"))
+
+    if (length(output_file) != length(paper)) {
+      bn <- paste0(names(paper), x = basename(output_file[[1]]))
+      output_file <- dirname(output_file[[1]]) |> file.path(bn)
+    }
+
+    reports <- mapply(\(x, of) {
+      r <- tryCatch(report(x, modules, of, output_format, args),
+        error = \(e) {
+          logger("report", list(paper = x$id, error = e$message))
+          warning("Error in ", x$id, ":\n", e$message,
+            call. = FALSE
+          )
+          return(NULL)
+        }
+      )
+      pb$tick(tokens = list(what = x$id))
+      r
+    }, x = paper, of = output_file, SIMPLIFY = FALSE)
+
+    attr(reports, "save_path") <- sapply(reports, attr, "save_path")
+
+    return(invisible(reports))
+  }
+
+  ## check if the output_file is valid
+  # so the modules don't run then failure
+  tryCatch(suppressWarnings(write("test", output_file)),
+    error = \(e) {
+      stop("The output_file is not a valid path.", call. = FALSE)
+    }
+  )
+
+  ## check paper has required things
+  if (!"scivrs_paper" %in% class(paper)) {
+    stop("The paper argument must be a paper object (e.g., created with `read()`)", call. = FALSE)
+  }
+
+  # run modules ----
+  module_output <- report_module_run(paper, modules, args)
+
+  # set up report ----
+  report_text <- report_qmd(module_output, paper)
+
+  if (output_format == "qmd") {
+    write(report_text, output_file)
+    save_path <- output_file
+  } else {
+    # render report ----
+    temp_input <- tempfile(fileext = ".qmd")
+    temp_output <- sub("qmd$", output_format, temp_input)
+
+    ## clean up
+    on.exit(unlink(temp_input))
+    on.exit(unlink(temp_output)) # won't exist if rename works
+
+    write(report_text, temp_input)
+
+    save_path <- tryCatch(
+      {
+        quarto::quarto_render(
+          input = temp_input,
+          quiet = TRUE,
+          output_format = output_format
+        )
+        file.rename(temp_output, output_file)
+        output_file
+      },
+      error = function(e) {
+        # save the qmd on render error and return its path
+        output_qmd <- output_file |>
+          gsub("\\.html$", "", x = _) |>
+          paste0(".qmd")
+        write(report_text, output_qmd)
+
+        logger("quarto render", list(paper = paper$paper_id,
+                                     quarto = output_qmd,
+                                     error = e$message))
+
+        warning("There was an error rendering your report:\n", e$message,
+          "\n\nSee the following for the quarto file:\n", output_qmd,
+          call. = FALSE
+        )
+        return(output_qmd)
+      }
+    )
+  }
+
+  attr(module_output, "save_path") <- save_path
+
+  invisible(module_output)
+}
+
+#' Create a Report for a Local Repository
+#'
+#' Runs the repository modules on a folder of files on your own computer and
+#' writes a single report. Use it on a repository you have downloaded (for
+#' example with [osf_file_download()]) to see what was shared and what could be
+#' improved, before archiving the files somewhere permanent.
+#'
+#' Four modules run in order, each building on the one before it:
+#' `repo_check` takes an inventory of the files,
+#' `code_check` reads the analysis scripts,
+#' `data_check` reads the data files and runs data-quality checks,
+#' and `codebook_check` checks whether the data columns are
+#' documented. Only the first is told where the files are; the rest reuse its
+#' results.
+#'
+#' Nothing is downloaded and no links are followed: only the folder you name is
+#' read. Whether a language model is used is decided by [llm_use()], exactly as
+#' when running the modules individually.
+#'
+#' @param path path to the repository folder to check
+#' @param output_file the name of the output file. Defaults to the folder's own
+#'   name with `_report.html` appended, written to the working directory. Give a
+#'   path here to write it somewhere else; any folders in that path must already
+#'   exist.
+#' @param output_format the format to create the report in, `"html"` (the
+#'   default) or `"qmd"`
+#' @param modules the modules to run. Defaults to the four repository modules,
+#'   in the order they depend on each other. Change it to run fewer.
+#' @param args a list of extra arguments to pass to modules, named by module
+#'   (see [report()]). `local_path` and `local_only` are set for you.
+#'
+#' @return the module output, invisibly, with the report's file path in its
+#'   `save_path` attribute
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' # check a folder you have downloaded
+#' report_repository("how_many_registered_studies_are_published")
+#'
+#' # write the report somewhere else
+#' report_repository("my_study", output_file = "reports/my_study.html")
+#' }
+report_repository <- function(path,
+                              output_file = NULL,
+                              output_format = c("html", "qmd"),
+                              modules = c("repo_check", "code_check",
+                                          "data_check", "codebook_check"),
+                              args = list()) {
+  output_format <- tolower(output_format[[1]])
+
+  ## error checking ----
+  if (!is.character(path) || length(path) != 1 || is.na(path)) {
+    stop("`path` must be a single path to a repository folder", call. = FALSE)
+  }
+  if (!dir.exists(path)) {
+    stop("No folder found at ", path,
+         ".\nCheck the path, or download the repository first with ",
+         "osf_file_download().", call. = FALSE)
+  }
+
+  ## default the report name to the folder's own name ----
+  # normalizePath so a trailing slash or "." resolves to a real folder name
+  # rather than an empty string or a dot.
+  full_path <- normalizePath(path, winslash = "/", mustWork = TRUE)
+  if (is.null(output_file)) {
+    output_file <- paste0(basename(full_path), "_report.", output_format)
+  }
+
+  ## the first module reads the folder; the rest reuse its results ----
+  # Passing local_path to a later module would force it to re-run repo_check
+  # from scratch, so it is set on the first module only. local_only stops any
+  # link in the paper object being followed -- there is no paper here, but it
+  # also skips the link searches entirely.
+  first <- modules[[1]]
+  args[[first]] <- utils::modifyList(
+    args[[first]] %||% list(),
+    list(local_path = full_path, local_only = TRUE)
+  )
+
+  # There is no manuscript here, so the paper object is an empty stand-in for
+  # the modules to hang their results on. Its title becomes the report's
+  # subtitle, so name it after the folder rather than leaving it "Test Paper".
+  paper <- test_paper()
+  paper$info$title <- basename(full_path)
+
+  report(
+    paper = paper,
+    modules = modules,
+    output_file = output_file,
+    output_format = output_format,
+    args = args
+  )
+}
+
+#' Run modules for a report
+#'
+#' Runs modules in order on the paper and orders by section and traffic light.
+#'
+#' Pass arguments to modules in a named list of lists, using the same names as the `modules` argument. You only need to specify modules with arguments.
+#' ```
+#' args <- list(power = list(seed = 8675309))
+#' ```
+#'
+#' @param paper a paper object
+#' @param modules a vector of modules to run
+#' @param args optional list of arguments to pass to modules
+#'
+#' @returns a list of module outputs
+#' @export
+#'
+#' @examples
+#' paper <- demopaper()
+#' modules <- c("stat_p_exact", "stat_p_nonsig")
+#' module_output <- report_module_run(paper, modules)
+report_module_run <- function(paper, modules, args = list()) {
+  # set up progress bar
+  pb <- pb(
+    length(modules),
+    ":what [:bar] :current/:total :elapsedfull"
+  )
+  on.exit(pb$terminate())
+  pb$tick(0, tokens = list(what = "Running modules"))
+
+  # run each module ----
+  # module_output <- lapply(modules, \(module) {
+  op <- paper
+  for (module in modules) {
+    # Label the bar with the module about to run (zero-advance) so a slow module
+    # — e.g. one making LLM calls — is attributed to its own name, not the next
+    # module's. The bar advances only after the module returns (below).
+    pb$tick(0, tokens = list(what = module))
+    mod_args <- args[[module]] %||% list()
+    mod_args$paper <- op
+    mod_args$module <- module
+
+    op <- tryCatch(do.call(module_run, mod_args),
+      error = function(e) {
+        warning("Error in ", module, call. = FALSE)
+        prev <- list()
+        if (inherits(mod_args$paper, "metacheck_module_output")) {
+          prev <- mod_args$paper$prev_outputs %||% list()
+          this_out <- mod_args$paper
+          this_out$prev_outputs <- NULL
+          this_out$paper <- NULL
+          prev[[this_out$module]] <- this_out
+        }
+        report_items <- list(
+          module = module,
+          title = module,
+          table = NULL,
+          report = e$message,
+          summary_text = "This module failed to run",
+          summary_table = mod_args$paper$summary_table %||% data.frame(
+            paper_id = paper$paper_id),
+          traffic_light = "fail",
+          paper = paper,
+          prev_outputs = prev
+        )
+        class(report_items) <- "metacheck_module_output"
+
+        return(report_items)
+      }
+    )
+    # Advance now that the module has finished, so its elapsed time is charged to
+    # its own label rather than bleeding into the next module's.
+    pb$tick(tokens = list(what = module))
+  }
+
+  # pull last module output out
+  module_output <- op$prev_outputs
+  op$prev_outputs <- NULL
+  # Keep one copy of the paper as an attribute of the returned list (the per-
+  # module $paper slots are stripped to keep the object flat), so downstream
+  # consumers — e.g. convert_psychds() / convert_codebook() reusing a captured
+  # result — can recover the paper without re-reading it.
+  paper_obj <- op$paper
+  op$paper <- NULL
+  module_output[[op$module]] <- op
+
+  # organise modules ----
+  section_levels <- c("general", "intro", "method", "results", "discussion", "reference")
+  sections <- sapply(module_output, \(mo) mo$section)
+  sections <- factor(sections, section_levels)
+  # tl_levels <- c("red", "yellow", "green", "info", "na", "fail")
+  # tls <- sapply(module_output, \(mo) mo$traffic_light %||% "info")
+  # tls <- factor(tls, tl_levels)
+  # # this seems hacky, but I can't figure out how to sort by 2 vectors
+  # mod_order <- xtfrm(sections) * 10 + xtfrm(tls)
+  mod_order <- xtfrm(sections)
+  module_output <- sort_by(module_output, mod_order)
+
+  attr(module_output, "paper") <- paper_obj
+  return(module_output)
+}
+
+#' Create Report from Module Output
+#'
+#' @param module_output a list of module output (usually from `report_module_run()`)
+#' @param paper a paper object
+#'
+#' @returns report text
+#' @export
+report_qmd <- function(module_output, paper = list()) {
+  ## read in report template ----
+  report_template <- system.file("templates/_report.qmd",
+    package = "metacheck"
+  )
+  rt <- readLines(report_template)
+  cut_after <- which(rt == "<!-- Demo -->") - 1
+  rt_head <- paste(rt[1:cut_after], collapse = "\n")
+  # turn real % to %%, leave %s, %d, %f, %i
+  rt_head <- gsub("\\%(?![sdfi])", "%%", rt_head, perl = TRUE)
+  subtitle <- gsub('"', '\\\\"', paper$info$title %||% "")
+  doi_text <- ifelse(is.na(paper$info$doi) |
+                       (paper$info$doi %||% "") == "", "",
+    sprintf("DOI: [%s](https://doi.org/%s)", paper$info$doi, paper$info$doi)
+  )
+
+  # get authors
+  author_text <- ""
+  if (nrow(paper$author) > 0) {
+    names <- paste(paper$author$given,
+                   paper$author$family)
+    last <- utils::tail(names, 1)
+    first <- setdiff(names, last)
+    if (length(first)) first <- paste(first, collapse = ", ")
+    author_text <- c(first, last) |> paste(collapse = " & ")
+  }
+
+  qmd_header <- sprintf(
+    rt_head,
+    subtitle,
+    # author_text, # was confusing about author of paper vs report
+    as.character(utils::packageVersion("metacheck")),
+    Sys.Date(),
+    doi_text
+  )
+
+  ## generate summary section ----
+  emojis <- metacheck::emojis
+  summary_list <- sapply(module_output, \(x) {
+    tl <- paste0("tl_", x$traffic_light %||% "info")
+    summary_text <- x$summary_text %||% ""
+    # indent 4 if first line is \n (probably a list)
+    if (nzchar(summary_text) && substr(summary_text, 1, 1) == "\n") {
+      summary_text <- gsub("\n", "\n    ", summary_text)
+    }
+    sprintf(
+      "- %s [%s](#%s){.%s}: %s  ",
+      emojis[[tl]],
+      x$title,
+      gsub("\\s", "-", tolower(x$title)),
+      x$traffic_light %||% "info",
+      summary_text
+    )
+  })
+  summary_text <- sprintf(
+    "## Summary\n\n%s\n\n",
+    paste(summary_list, collapse = "\n")
+  )
+
+  ## format module reports ----
+  section_levels <- c("general", "intro", "method", "results", "discussion", "reference")
+
+  module_reports <- sapply(section_levels, \(sec) {
+    this_section <- sapply(module_output, `[[`, "section") == sec
+    # remove fail and na from main report section
+    valid_tl <- !sapply(module_output, `[[`, "traffic_light") %in% c("na", "fail")
+    if (!any(this_section & valid_tl)) {
+      return(NULL)
+    }
+
+    section_op <- module_output[this_section & valid_tl]
+    mr <- sapply(section_op, module_report)
+
+    title <- sprintf(
+      "## %s%s Modules",
+      toupper(substr(sec, 1, 1)),
+      substr(sec, 2, nchar(sec))
+    )
+    c(title, mr)
+  }) |>
+    unlist() |>
+    paste(collapse = "\n\n") |>
+    gsub("\\n{3,}", "\n\n", x = _)
+
+  report_text <- paste(qmd_header,
+    summary_text,
+    module_reports,
+    "\n", # prevent incomplete final line warnings
+    sep = "\n\n"
+  )
+
+  return(report_text)
+}
+
+#' Report from module output
+#'
+#' @param module_output the output of a `module_run()`
+#' @param header header level (default 2)
+#'
+#' @return text
+#' @export
+#'
+#' @examples
+#' paper <- demopaper()
+#' op <- module_run(paper, "stat_p_exact")
+#' module_report(op) |> cat()
+module_report <- function(module_output,
+                          header = 3) {
+  n <- NULL
+  emojis <- metacheck::emojis
+
+  # set up header
+  tl <- module_output$traffic_light %||% "info"
+  tl_symbol <- emojis[[paste0("tl_", tl)]]
+  if (is.null(header)) {
+    head <- ""
+  } else if (header == 0) {
+    head <- sprintf("%s %s", tl_symbol, module_output$title)
+  } else if (header %in% 1:6) {
+    head <- sprintf(
+      "%s %s %s {#%s .%s}",
+      rep("#", header) |> paste(collapse = ""),
+      tl_symbol,
+      module_output$title,
+      gsub(" ", "-", tolower(module_output$title)),
+      tl
+    )
+  } else {
+    head <- header
+  }
+
+  # set up report
+  summary <- module_output$summary_text %||% "..."
+  report <- module_output$report %||% module_output$summary_text
+  if (all(report == "")) report <- NULL
+
+
+  # how it works
+  hiw <- tryCatch(
+    {
+      validation <- NULL
+      info <- module_info(module_output$module)
+
+      # set up validation section if tagged. Emit a native Quarto fenced div, not
+      # a raw <p>: raw HTML gets passed through by Pandoc wrapped in
+      # \if{html}{\out{...}}, and that wrapper leaked into the rendered report as
+      # literal "}}" / "\if{html}{\out{" around the validation text. A fenced div
+      # renders to <div class="validation"> cleanly and keeps the CSS hook.
+      m <- gregexpr("<validation>.*?</validation>", info$details)
+      if (m[[1]][1] > -1) {
+        validation <- regmatches(info$details, m) |>
+          _[[1]] |>
+          sub("<validation>\\s*", "::: {.validation}\nValidation: ", x = _) |>
+          sub("\\s*</validation>", "\n:::", x = _)
+      }
+
+      # get authors
+      author_ack <- tryCatch({
+        if (!is.null(info$author)) {
+          a <- info$author |>
+            gsub("\\s*\\(.*email\\{.+\\})", "", x = _)
+          authors <- if (length(a) < 3) {
+            paste(a, collapse = " and ")
+          } else {
+            n <- length(a)
+            paste0(paste(a[-n], collapse = ", "), " and ", a[n])
+          }
+          sprintf("This module was developed by %s", authors)
+        }
+      })
+
+      # remove validation section
+      details <- gsub("\\s*<validation>.*</validation>\\s*", "", info$details)
+
+      c(info$description, details, author_ack) |>
+        collapse_section("How It Works", callout = "note")
+    },
+    error = \(e) {
+      return(NULL)
+    }
+  )
+
+  # create collapsible boxes around substantial reports (> 300 char)
+  pre <- "<details><summary>View detailed feedback</summary><div>"
+  post <- "</div></details>"
+  if (is.null(report) ||
+    all(module_output$summary_text == report)) {
+    pre <- post <- report <- NULL
+  } else if (paste(report, collapse = "\n\n") |> nchar() < 300) {
+    pre <- post <- NULL
+  }
+
+  paste0(c(head, summary, pre, report, post, hiw, validation), collapse = "\n\n")
+}

@@ -1,0 +1,102 @@
+Package: metacheck
+Title: Check Research Outputs for Best Practices
+Version: 0.2.1
+Date: 2026-08-14
+Authors@R: c(
+  person(  given = "Lisa",
+           family = "DeBruine",
+           role = c("aut", "cre"),
+           email = "debruine@gmail.com",
+           comment = c(ORCID = "0000-0002-7523-5539")),
+  person(  given = "Cristian",
+           family = "Mesquida",
+           role = c("aut"),
+           email = "cristianmesquida@gmail.com",
+           comment = c(ORCID = "0000-0002-1542-8355")),
+  person(  given = "Jakub",
+           family = "Werner",
+           role = c("aut"),
+           email = "jakub@jakubwerner.com",
+           comment = c(ORCID = "0009-0004-0388-0362")),
+  person(  given = "Raphael",
+           family = "Merz",
+           role = c("ctb"),
+           email = "r.t.p.merz@tue.nl",
+           comment = c(ORCID = "0000-0002-9474-3379")),
+  person(  given = "Lukas",
+           family = "Wallrich",
+           role = c("ctb"),
+           email = "l.wallrich@bbk.ac.uk",
+           comment = c(ORCID = "0000-0003-2121-5177")),
+  person(  given = "Daniel",
+           family = "Lakens",
+           role = c("aut"),
+           email = "lakens@gmail.com",
+           comment = c(ORCID = "0000-0002-0247-239X")))
+Description: A modular, extendable system for checking research outputs for best practices using text search, R code, and/or (optional) LLM queries.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Suggests:
+    ggplot2,
+    careless,
+    readODS,
+    openxlsx,
+    haven,
+    callr,
+    readxl,
+    data.table,
+    officer,
+    pdftools,
+    SnowballC,
+    yaml,
+    devtools,
+    httptest2,
+    processx,
+    remotes,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    rstudioapi,
+    withr,
+    shiny,
+    shinyjs,
+    shinydashboard,
+    DBI,
+    RSQLite,
+    zip,
+    digest
+Config/testthat/edition: 3
+Config/testthat/parallel: false
+Imports: 
+    dplyr,
+    tidyr,
+    readr,
+    knitr,
+    quarto,
+    DT,
+    bibtex,
+    ellmer,
+    jsonlite,
+    xml2,
+    curl,
+    httr2 (>= 1.1.0),
+    rvest,
+    rappdirs,
+    tidytext,
+    statcheck,
+    base64enc,
+    gitcreds, 
+    roxygen2, 
+    jpeg,
+    progress,
+    graphics,
+    grDevices,
+    utils
+URL: https://github.com/scienceverse/metacheck, https://scienceverse.github.io/metacheck/
+BugReports: https://github.com/scienceverse/metacheck/issues
+Depends: 
+    R (>= 4.3.0) 
+LazyData: true
+LazyDataCompression: xz
+Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.0.0

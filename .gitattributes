@@ -1,3 +1,4 @@
 manuscript/data/res_code_check.RData filter=lfs diff=lfs merge=lfs -text
 manuscript/data/res_data_check.RData filter=lfs diff=lfs merge=lfs -text
+data/reproducibility_check_results_execute.RData filter=lfs diff=lfs merge=lfs -text
 manuscript/01_run_metacheck/*.RData filter=lfs diff=lfs merge=lfs -text

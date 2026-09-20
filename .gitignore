@@ -5,3 +5,10 @@ Thumbs.db
 /manuscript/output/
 /manuscript/_quarto_output/
 manuscript/bes.rds
+
+# Runtime caches from final_pipeline/01_run_metacheck.R: speed up a local
+# rerun but are not needed to render the manuscript itself, and
+# .metacheck_repo_cache/ in particular can grow to tens of GB.
+manuscript/.metacheck_repo_cache/
+manuscript/.metacheck_repo_info_cache/
+manuscript/.metacheck_llm_cache/

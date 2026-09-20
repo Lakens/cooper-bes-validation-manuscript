@@ -1,0 +1,17 @@
+layer,category,subcategory
+prs_sqi,ecological,pollution
+prs_pathogens,ecological,pollution
+prs_wqi,ecological,pollution
+prs_trash,ecological,pollution
+sp_alien,ecological,alien_species
+sp_genetic,ecological,alien_species
+hd_subtidal,ecological,habitat_destruction
+hd_intertidal,ecological,habitat_destruction
+prs_fishing,ecological,fishing_pressure
+cc_sst,ecological,climate_change
+cc_acid,ecological,climate_change
+cc_slr,ecological,climate_change
+prs_social,social,social
+prs_aqua_hab,ecological,habitat_destruction
+prs_disease,ecological,alien_species
+prs_hardening,ecological,habitat_destruction

@@ -1,0 +1,226 @@
+README belong to ;;;
+Riechers et al Understanding relational values in cultural landscapes in Romania and Germany;;;
+;;;
+Metadata;;;
+;;;
+Name of Variable in raw dataset;explanation;missing values;Scale
+No;Questionnaire number;888, 999;Skala
+country;country of questionnaire, 1 = Romania, 2 = Germany;888, 999;Nominal
+study_area;"1
+Erdövidek
+2
+sighisoara
+3
+aranyossek
+4
+Dornum
+5
+Bakum
+6
+Bispingen
+";888, 999;Nominal
+Gender;"1
+M
+2
+W
+";888, 999;Nominal
+Owning_garden;"0
+no
+1
+yes
+";888, 999;Nominal
+agricultre;"0
+no
+1
+yes
+";888, 999;Nominal
+common_green;"0
+no
+1
+Yes
+";888, 999;Nominal
+Kleingarden;"0
+no
+1
+yes
+";888, 999;Nominal
+Visit_agriculture;"0
+never
+1
+once per year
+2
+once per month
+3
+a few times per week
+4
+daily
+";888, 999;Ordinal
+Visit_opengreen;"0
+never
+1
+once per year
+2
+once per month
+3
+a few times per week
+4
+daily
+";888, 999;Ordinal
+Visit_forest;"0
+never
+1
+once per year
+2
+once per month
+3
+a few times per week
+4
+daily
+";888, 999;Ordinal
+Visit_water;"0
+never
+1
+once per year
+2
+once per month
+3
+a few times per week
+4
+daily
+";888, 999;Ordinal
+Length_agriculture;"1
+up to one hour
+2
+1-2hr
+3
+2-5hr
+4
+more than 5
+";888, 999;Ordinal
+Length_opengreen;"1
+up to one hour
+2
+1-2hr
+3
+2-5hr
+4
+more than 5
+";888, 999;Ordinal
+Length_forest;"1
+up to one hour
+2
+1-2hr
+3
+2-5hr
+4
+more than 5
+";888, 999;Ordinal
+Length_water;"1
+up to one hour
+2
+1-2hr
+3
+2-5hr
+4
+more than 5
+";888, 999;Ordinal
+distance;"1
+to 1km
+2
+1-5km
+3
+5-10km
+4
+more than 10
+";888, 999;Nominal
+transport;"1
+by foot
+2
+bike
+3
+car
+4
+horse cariage (just RO)
+5
+public transport (just DE)
+";888, 999;Ordinal
+F6_1;See questionnaire in supplementary for all information on the questionnaire items following;888, 999;Skala
+F6_2;;888, 999;Skala
+F6_3;;888, 999;Skala
+F6_4;;888, 999;Skala
+F6_5;;888, 999;Skala
+F6_6;;888, 999;Skala
+F6_7;;888, 999;Skala
+F6_8;;888, 999;Skala
+F6_9;;888, 999;Skala
+F6_10;;888, 999;Skala
+F6_11;;888, 999;Skala
+Wolfs;;888, 999;Ordinal
+Bees;;888, 999;Ordinal
+herbs;;888, 999;Ordinal
+trees;;888, 999;Ordinal
+F8_1;;888, 999;Skala
+F8_2;;888, 999;Skala
+F8_3;;888, 999;Skala
+F8_4;;888, 999;Skala
+F8_5;;888, 999;Skala
+F8_6;;888, 999;Skala
+F8_7;;888, 999;Skala
+F8_8;;888, 999;Skala
+F8_9;;888, 999;Skala
+F8_10;;888, 999;Skala
+F8_11;;888, 999;Skala
+F8_12;;888, 999;Skala
+firewood;;888, 999;Ordinal
+decoration;;888, 999;Ordinal
+water;;888, 999;Ordinal
+fruits_vegetables;;888, 999;Ordinal
+regionality_food;;888, 999;Ordinal
+Regionality_clothes;;888, 999;Ordinal
+F15_1;;888, 999;Skala
+F15_2;;888, 999;Skala
+F15_3;;888, 999;Skala
+F15_4;;888, 999;Skala
+F15_5;;888, 999;Skala
+F15_6;;888, 999;Skala
+F15_7;;888, 999;Skala
+F15_8;;888, 999;Skala
+F15_9;;888, 999;Skala
+F15_10;;888, 999;Skala
+F15_11;;888, 999;Skala
+F15_12;;888, 999;Skala
+F15_13;;888, 999;Skala
+pics_rape;;888, 999;Skala
+pics_mosaic;;888, 999;Skala
+pics_forest;;888, 999;Skala
+pics_lux;;888, 999;Skala
+pics_city;;888, 999;Skala
+pics_mine;;888, 999;Skala
+organisation;;888, 999;Nominal
+passive_active;;888, 999;Nominal
+birthyr;;888, 999;Skala
+since_here;;888, 999;Skala
+prior_region;;888, 999;Nominal
+since;;888, 999;Skala
+kids;;888, 999;Nominal
+migration_background;;888, 999;Nominal
+where;;888, 999;Nominal
+nationality;;888, 999;Nominal
+highest_school;;888, 999;Ordinal
+highest_vocation;;888, 999;Ordinal
+work_nature;;888, 999;Nominal
+outside_work;;888, 999;Nominal
+social_relation;;Ohne;Skala
+ethic;;Ohne;Skala
+Cultural_identity;;Ohne;Nominal
+Individual_identity;;Ohne;Skala
+Env_awareness;;Ohne;Skala
+Sense_of_place;;Ohne;Skala
+Care2;;Ohne;Skala
+Stewardship2;;Ohne;Skala
+Recreation2;;Ohne;Skala
+Instrumental;;Ohne;Skala
+Intrinsic;;Ohne;Nominal
+social_relations;;Ohne;Nominal
+Aesthetics1;;Ohne;Nominal
+Spiritual2;;Ohne;Nominal

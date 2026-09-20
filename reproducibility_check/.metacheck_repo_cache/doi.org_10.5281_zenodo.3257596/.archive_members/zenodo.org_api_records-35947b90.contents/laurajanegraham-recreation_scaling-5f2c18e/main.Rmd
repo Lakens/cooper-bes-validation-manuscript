@@ -1,0 +1,543 @@
+---
+title: "Scale-dependency in drivers of outdoor recreation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+# load_packages
+library(gamlss)
+library(raster)
+library(sf)
+library(GGally)
+library(ggrepel)
+library(broom)
+library(MuMIn)
+library(knitr)
+library(hier.part)
+library(patchwork)
+library(corrr)
+library(jtools)
+library(pscl)
+library(tidyverse)
+
+# set up plotting options
+theme_set(theme_bw(base_size = 10) + 
+            theme(strip.background = element_blank(),
+                  panel.grid.major = element_blank(),
+                  panel.grid.minor = element_blank()))
+
+# covariates
+cov_supply <- c("lcm_agri", 
+                "lcm_forest",
+                "lcm_coast",
+                "lcm_shei", 
+                "dem_range", 
+                "pa")
+
+cov_supply_lab <- c("Agriculture %", 
+                    "Forest %",
+                    "Coastal %",
+                    "LC Diversity", 
+                    "Elevation Range", 
+                    "Designated Landscape")
+
+cov_demand <- c("pop", 
+                "dist")
+
+cov_demand_lab <- c("Population density", 
+                    "Distance to city")
+
+# study extent
+prj <- "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs"
+
+study_ext_sf <- st_read("~/DATA/ADMINISTRATIVE/gb_shapefile/GBR_adm1.shp", quiet = TRUE) %>% 
+  filter(NAME_1 == "England") %>% 
+  st_transform(prj)
+```
+
+# Data
+
+Response data are MENE visits, and flickr visits. 
+
+For each response type and resolution, the covariates are:
+
+- Proportion of agricultural land cover (lcm_agri; supply)
+- Proporiton of forested land cover (lcm_forest; supply)
+- Proporiton of coastal land cover (lcm_coast; supply)
+- Diversity of land-cover types (lcm_shei; supply)
+- Amount of protected area (pa; supply)
+- Elevation range (dem_range; supply)
+- Total population (pop; demand)
+- Distance to nearest major town or city (dist; demand)
+
+```{r load_data}
+load("data/rec_analysis_data.Rda") 
+
+df <- df %>% select(-lcm_prop)
+```
+
+## Data exploration 
+
+### Distribution, sample size and coverage of recreation proxies
+
+```{r rec_distribution, fig.height = 4, fig.width = 8}
+df_response <- df %>% select(x, y, resolution, mene, flickr) %>% 
+  gather(dataset, response, -x, -y, -resolution)
+
+ggplot(df_response, 
+       aes(x = response)) + 
+  geom_density(alpha = 0.3) + 
+  facet_wrap(~ dataset + resolution, scales = "free", nrow = 2)
+```
+
+### Distribution of covariates
+
+We are windsorising the extreme outliers  (99th percentile) because they are completely driving analysis. This involves setting values > 99th percentile to the 99th percentile value. 
+
+```{r outliers}
+df %>% group_by(resolution) %>% 
+  mutate(qtl = quantile(flickr, 0.99)) %>% 
+  filter(flickr > qtl) %>% 
+  group_by(resolution) %>% 
+  summarise(outliers = n())
+
+df <- df %>% group_by(resolution) %>% 
+  mutate(f_qtl = quantile(flickr, 0.95),
+         flickr = case_when(flickr > f_qtl ~ f_qtl,
+                            TRUE ~ flickr)) %>%
+  select(-f_qtl)
+
+```
+
+```{r cov_dist, fig.height = 10, fig.width = 8}
+df_narrow <- df %>% 
+  select(resolution, cov_supply, cov_demand) %>% 
+  gather(variable, value, -resolution)
+
+ggplot(df_narrow, aes(x = value)) + 
+      geom_histogram() + 
+      facet_wrap(~ variable + resolution, nrow = length(c(cov_supply, cov_demand)), 
+                 scales = "free")
+```
+
+- lcm_agri: left skew at all resolutions
+- lcm_shei: fine
+- all others: right skew at all resolutions
+
+We log transform lcm_forest, lcm_coast, dem_range, pa, dist and pop; we square transform lcm_agri.
+
+```{r transform}
+df_scaled <- df %>% group_by(resolution) %>% 
+  nest() %>% 
+  mutate(data = map(data, mutate_at, vars(lcm_coast, lcm_forest, dem_range, pa, pop, dist), 
+                    function(x) log(x + 1)),
+         data = map(data, mutate, lcm_agri = lcm_agri^2),
+         data_scale = map(data, mutate_at, vars(cov_supply, cov_demand), 
+                          function(x) scale(x) %>% as.vector)) 
+
+df_analysis <- df_scaled %>% 
+  select(resolution, data_scale) %>% 
+  unnest()
+
+# get mean and sd values from the log-transformed data (for back scaling)
+means <- df_scaled %>% 
+  select(resolution, data) %>% 
+  unnest() %>% 
+  group_by(resolution) %>% 
+  summarise_all(funs(mean, sd)) %>% 
+  gather(key, value, -resolution) 
+```
+
+### Correlation between variables
+
+```{r cov_corrs, fig.width = 8}
+corrs <- df_analysis %>% 
+  select(-x, -y) %>% 
+  group_by(resolution) %>% 
+  nest() %>% 
+  mutate(
+    corrs = map(data, function(x) {
+      x %>% correlate(quiet = TRUE) %>% shave
+    })
+  )
+
+map(corrs$corrs, rplot, shape = 15, print_cor = TRUE)
+```
+
+Need to take care at 50km resolution due to moderate correlation combined with small sample size. All other resolutions seem fine. 
+
+# Q1: How similar are proxies for recreation at different scales?
+
+First, check the spatial distribution of the data: 
+
+```{r, fig.width=10, fig.height = 6}
+pa <- rbind(
+  st_read("~/DATA/ADMINISTRATIVE/aonb_england/Areas_of_Outstanding_Natural_Beauty_England.shp", 
+        quiet = TRUE) %>% select(name),
+  st_read("~/DATA/ADMINISTRATIVE/national_parks_england/National_Parks_England.shp", 
+        quiet = TRUE) %>% select(name)) %>% 
+  mutate(name = as.character(name), 
+         label = case_when(name == "LAKE DISTRICT" ~ "Lake District NP",
+                           name == "PEAK DISTRICT" ~ "Peak District NP",
+                           name == "SOUTH DOWNS" ~ "South Downs NP",
+                           TRUE ~ ""))
+  
+town <- st_read("~/DATA/ADMINISTRATIVE/uk_cities/Major_Towns_and_Cities_December_2015_Boundaries.shp",
+                quiet = TRUE) %>% 
+  st_centroid() %>% 
+  mutate(name = as.character(tcity15nm), 
+         label = case_when(name %in% c("London", 
+                                       "Manchester", 
+                                       "Birmingham") ~ name, 
+                           TRUE ~ ""))
+
+p0 <- ggplot() + 
+  geom_sf(data = study_ext_sf, fill = "grey", colour = NA) + 
+  geom_sf(data = pa, fill = "darkgreen", colour = NA) + 
+  geom_sf(data = town) + 
+  geom_label_repel(
+    data = filter(pa, nchar(label) > 0),
+    aes(label = label, geometry = geometry),
+    stat = "sf_coordinates",
+    nudge_x = c(0, -300000, -300000),
+    nudge_y = c(-110000, 0, 100000),
+    min.segment.length = 0
+  ) +
+  geom_label_repel(
+    data = filter(town, nchar(label) > 0),
+    aes(label = label, geometry = geometry),
+    stat = "sf_coordinates",
+    nudge_x = c(-200000, 250000, 50000),
+    nudge_y = c(0, 200000, -90000),
+    min.segment.length = 0
+  ) +
+  #coord_sf(datum = NA) + 
+  theme(axis.title = element_blank())
+
+p1 <- ggplot() + 
+  geom_sf(data = study_ext_sf, fill = "grey", colour = NA) + 
+  geom_raster(data = df_analysis %>% filter(resolution == "10km"), 
+              aes(x = x, y = y, fill = flickr), colour = NA) +
+  coord_sf(crs = st_crs(study_ext_sf), datum = NA) + 
+  scale_fill_viridis_c(name = "Flickr photos\n(10km resolution)") + 
+  theme(axis.text = element_blank(), axis.line = element_blank(), 
+        axis.ticks = element_blank(), axis.title = element_blank(),
+        panel.border = element_blank())
+
+p2 <- ggplot() + 
+  geom_sf(data = study_ext_sf, fill = "grey", colour = NA) + 
+  geom_raster(data = df_analysis %>% filter(resolution == "10km"), 
+              aes(x = x, y = y, fill = mene), colour = NA) +
+  coord_sf(crs = st_crs(study_ext_sf), datum = NA) + 
+  scale_fill_viridis_c(name = "MENE visits\n(10km resolution)") + 
+  theme(axis.text = element_blank(), axis.line = element_blank(), 
+        axis.ticks = element_blank(), axis.title = element_blank(),
+        panel.border = element_blank())
+
+p0 + (p1 / p2) + plot_annotation(tag_levels = "a", tag_suffix = ")") + 
+  plot_layout(ncol = 2, widths = c(2,1.5))
+
+ggsave("figures/F1_recreation_distribution.png", width = 10, height = 6, dpi = 300)
+```
+
+Hypothesis: The MENE visits and Flickr photos are proxies for different kinds of recreation. MENE visits are day-to-day local recreation; Flickr photos represent destination recreation. 
+
+Test: MENE visits will not explain a large proportion of the variation in Flickr photos, 
+
+We are fitting a poisson glm for each resolution with flickr photos as response, and mene visits as covariate. We plot $D^2$, coefficient estimate and spatial plot of residuals. We do this for the dataset with and without the outliers.
+
+```{r comp_proxy}
+fit_comp_model <- function(dat) {
+  lm(log(flickr) ~ log(mene), data = dat)
+}
+comp_df <- df %>% filter_at(vars(flickr, mene), any_vars(. != 0))
+
+comp_mods <- comp_df %>% 
+  group_by(resolution) %>% 
+  nest() %>% 
+  mutate(mod = map(data, fit_comp_model),
+         mod_glance = map(mod, glance),
+         mod_preds = map(mod, fitted))
+
+r2 <- comp_mods %>% 
+  select(resolution, mod_glance) %>% 
+  unnest()
+
+ggplot(comp_df, aes(x = log(mene), y = log(flickr))) + 
+  geom_point() + 
+  #geom_smooth(method = "glm", method.args = list(family = "poisson")) + 
+  geom_smooth(method = "lm") + 
+  geom_text(data = r2, 
+            aes(label = paste0("R^2  == ", round(r.squared, 2))), 
+            x = Inf, 
+            y = -Inf, 
+            hjust = 1.5, 
+            vjust = -1.5, 
+            parse = TRUE) + 
+  facet_wrap(~resolution, scales = "free") + 
+  labs(x = "log(MENE visits)", y = "log(Flickr photographs)")
+
+ggsave("figures/S1_proxy_comparison.png", width = 5, height = 5, dpi = 300)
+```
+
+Spatial distribution of the residuals
+
+```{r comp_proxy_spatial, fig.height = 8, fig.width = 8}
+mod_resids <- comp_mods %>% 
+  select(resolution, data, mod_preds) %>% 
+  unnest() %>% 
+  mutate(mod_resid = flickr - exp(mod_preds))
+
+plots <- map(unique(df$resolution), function (rln) {
+  p1 <- ggplot() + 
+    geom_sf(data = study_ext_sf, fill = "lightgrey", colour = NA) +
+    geom_raster(data = mod_resids %>% filter(resolution == rln), 
+                aes(x = x, y = y, fill = mod_resid)) + 
+    coord_sf(crs = st_crs(study_ext_sf), datum = NA) + 
+    scale_fill_gradient2("Residuals", low = "#984ea3", high = "#4daf4a") + 
+    theme(axis.title = element_blank(), 
+          axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.border = element_blank())
+})
+
+(plots[[1]] + plots[[2]]) / (plots[[3]] + plots[[4]]) + 
+  plot_annotation(tag_levels = "a", tag_suffix = ")")
+
+ggsave("figures/S2_proxy_residuals.png", width = 8, height = 8, dpi = 300)
+```
+
+When the residuals are positive, the number of flickr photos is much higher than expected based on the MENE visits. The residuals are more often positive than negative, and by a bigger margin. This means that when they diverge from each other, it's because there are more flickr photos than expected. We could do a more detailed analysis, but looks like the higher positive residuals are mainly around National Parks. 
+
+# Q2: What are the relative importances of drivers of supply of and demand for ecosystem services at different scales?
+
+Hypothesis: supply will be a more important predictor of the flickr photos, demand of the MENE visits. 
+
+Test: Deviance partitioning and model comparison
+
+## Model selection
+
+We fit 3 negative binomial models for each resolution and response type. The models are supply, demand and full (combined supply and demand models):
+
+- Proportion of agricultural land cover (lcm_agri; supply)
+- Proporiton of forest land cover (lcm_forest; supply)
+- Proporiton of coastal land cover (lcm_coast; supply)
+- Diversity of land-cover types (lcm_shei; supply)
+- Elevation range (dem_range; supply)
+- Proportion of area covered by protected area (pa; supply)
+- Total population (pop; demand)
+- Distance to nearest urban area (dist; supply)
+
+```{r supplydemand_mods}
+df_analysis_n <- df_analysis %>% 
+  gather(dataset, 
+         response, 
+         -resolution, 
+         -x, -y, 
+         -cov_supply, 
+         -cov_demand)
+
+fit_mod_full <- function(dat) {
+  glm(response ~ 
+        lcm_agri + 
+        lcm_forest + 
+        lcm_coast + 
+        lcm_shei + 
+        dem_range + 
+        pa + 
+        pop + 
+        dist,
+      family = negative.binomial(1.15),
+      data = dat)
+}
+
+fit_mod_supply <- function(dat) {
+  glm(response ~ 
+        lcm_agri + 
+        lcm_forest + 
+        lcm_coast + 
+        lcm_shei + 
+        dem_range + 
+        pa,
+      family = negative.binomial(1.15),
+      data = dat)
+}
+
+fit_mod_demand <- function(dat) {
+  glm(response ~ 
+        pop + 
+        dist,
+      family = negative.binomial(1.15),
+      data = dat)
+}
+
+calc_d2 <- function(x) {
+   (x$null.deviance - x$deviance) / x$null.deviance
+}
+
+mod <- df_analysis_n %>% 
+  group_by(resolution, dataset) %>% 
+  nest() %>% 
+  mutate(mod_full = map(data, fit_mod_full),
+         mod_supply = map(data, fit_mod_supply),
+         mod_demand = map(data, fit_mod_demand),
+         mod_full_D2 = map_dbl(mod_full, calc_d2),
+         mod_demand_D2 = map_dbl(mod_demand, calc_d2),
+         mod_supply_D2 = map_dbl(mod_supply, calc_d2),
+         mod_tidy = map(mod_full, tidy),
+         mod_resid = map(mod_full, resid))
+
+mod_stats <- mod %>%
+  dplyr::select(resolution, dataset, mod_tidy) %>% 
+  unnest() %>% 
+  filter(term != "(Intercept)") %>% 
+  mutate(lci = estimate - 1.96*std.error,
+         uci = estimate + 1.96*std.error) %>% 
+  select(resolution, dataset, var = term, coef = estimate, lci, uci) %>% 
+  mutate(cov = factor(var, 
+                      levels = c(cov_demand, cov_supply), 
+                      labels = c(cov_demand_lab, cov_supply_lab)),
+         cov_type = case_when(var %in% cov_supply ~ "Supply", 
+                              TRUE ~ "Demand"),
+         dataset = factor(dataset, labels = c("Flickr photos", "MENE visits")))
+
+mod_aic <- mod %>%
+  mutate(mod_full_aic = map_dbl(mod_full, function(x) x$aic),
+         mod_demand_aic = map_dbl(mod_demand, function(x) x$aic),
+         mod_supply_aic = map_dbl(mod_supply, function(x) x$aic)) %>% 
+  select(resolution, dataset, mod_full_aic, mod_demand_aic, mod_supply_aic)
+mod_aic %>% kable
+write_csv(mod_aic, "doc/table1_mod_aic.csv")
+```
+
+In all cases the full (supply & demand) model is the best performing model as judged by AIC. At all resolutions, there is more support for the demand than supply model when MENE observations are used as a proxy for recreation. Similarly, at all resolutions there is more support for the supply than demand model when flickr photos are used as a proxy. 
+
+### Deviance partitioning
+
+Following the plot from [Keil and Chase, 2019](https://www.nature.com/articles/s41559-019-0799-0.epdf?shared_access_token=t0H3KjubyHGCpiRw6rsWmdRgN0jAjWel9jnR3ZoTv0Oibl38INTmLHc9kqB6xeu5KEJ3UYeJOAeAWz3H5zlkKUTa_QNy9R-EbxoZlbisdLEzk_Y3BGp3AJV0jomrNL-fQycUYw6PLbOrON6gVoIOmfFUOVgCsPcgZphsqvzRUwM%3D): 
+
+```{r, fig.height = 3, fig.width = 10}
+# nb each plot requires a height of 0.75, going to export as two plots for now
+mod_D2 <- mod %>%
+  dplyr::select(resolution, dataset, mod_full_D2, mod_demand_D2, mod_supply_D2) %>% 
+  mutate(dataset = factor(dataset, labels = c("Flickr photos", "MENE visits")),
+         demand_ind = mod_full_D2 - mod_supply_D2,
+         supply_ind = mod_full_D2 - mod_demand_D2,
+         overlap = mod_full_D2 - (demand_ind + supply_ind),
+         remain = 1 - mod_full_D2)
+
+plot_varpart <- function(rln, dat) {
+  tick_breaks <-c(dat$start, dat$end, 1)
+  ymin = tick_breaks[-length(tick_breaks)]
+  ymax = tick_breaks[-1]
+  df_annotate <- data.frame(ymin = ymin,
+                            ymax = ymax,
+                            x = 0,
+                            height=0.75)
+  df_label <- data.frame(value = c(paste0(round((ymax - ymin)*100, 0), "%"), ""),
+                         position = c((ymax - ymin)/2 + ymin, 1))
+  ggplot(dat) + 
+    geom_linerange(aes(ymin = start, ymax = end, x = Type, colour = Type),
+                   size = 5) + 
+    geom_hline(aes(yintercept = mod_full_D2),
+               colour = "red") + 
+    geom_hline(yintercept = c(0, 1)) + 
+    geom_segment(data = dat %>% filter(Type == "Demand"), 
+                 aes(x = 0.5, y = end, xend = 1.5, yend = end)) + 
+    geom_segment(data = dat %>% filter(Type == "Supply"), 
+                 aes(x = 1.5, y = start, xend = 2.5, yend = start)) + 
+    scale_colour_manual(values = c("#984ea3", "#4daf4a")) + 
+    scale_y_continuous(breaks = df_label$position, labels = df_label$value) + 
+    geom_errorbar(data = df_annotate, aes(x, ymin=ymin, ymax=ymax, width=height)) + 
+    coord_flip() + 
+    geom_text(aes(y = mod_full_D2, x = 2.2, 
+                 label = paste0(round(mod_full_D2*100, 0), "%")), 
+             hjust = -0.1, colour = "red") + 
+    geom_text(aes(y = demand_ind + (mod_supply_D2/2), x = 2, 
+                  label = c(paste0(round(mod_supply_D2*100, 0), "%"))), hjust = 0) + 
+    geom_text(aes(y = (mod_demand_D2)/2, x = 1, 
+                  label = c(paste0(round(mod_demand_D2*100, 0), "%"))), hjust = 0) + 
+    xlab(rln) + 
+    theme(panel.border = element_blank(),
+          legend.position = "none",
+          axis.ticks.x = element_line(linetype=0),
+          axis.ticks.y = element_blank(),
+          axis.text.y = element_blank(),
+          axis.title.x = element_blank(),
+          axis.title.y = element_text(angle = 0, hjust = 1, vjust = 0.5))
+}
+
+var_part_plot <- mod_D2 %>% 
+  mutate(Demand_start = 0, 
+         Demand_end = mod_demand_D2,
+         Supply_start = demand_ind,
+         Supply_end = mod_full_D2) %>% 
+  select(resolution, 
+         dataset, 
+         Demand_start, 
+         Demand_end, 
+         Supply_start, 
+         Supply_end, 
+         mod_full_D2, 
+         mod_supply_D2, 
+         mod_demand_D2, 
+         demand_ind) %>% 
+  gather(key, value, 
+         -resolution, 
+         -dataset,
+         -mod_full_D2, 
+         -mod_supply_D2, 
+         -mod_demand_D2, 
+         -demand_ind) %>% 
+  separate(key, into = c("Type", "pos")) %>% 
+  spread(pos, value) %>% 
+  group_by(resolution, dataset) %>% 
+  nest() %>% 
+  mutate(plot = map2(resolution, data, plot_varpart))
+
+flickr_plots <- filter(var_part_plot, dataset == "Flickr photos") %>% pull(plot)
+flickr_plot <- flickr_plots[[1]] + flickr_plots[[2]] + flickr_plots[[3]] + flickr_plots[[4]] + 
+  plot_layout(ncol = 1)
+ggsave("figures/F2a_flickr.png", flickr_plot, height = 3, width = 10, units = "in")
+
+MENE_plots <- filter(var_part_plot, dataset == "MENE visits") %>% pull(plot)
+MENE_plot <- MENE_plots[[1]] + MENE_plots[[2]] + MENE_plots[[3]] + MENE_plots[[4]] + 
+  plot_layout(ncol = 1)
+ggsave("figures/F2b_mene.png", MENE_plot, height = 3, width = 10, units = "in")
+```
+
+Flickr deviance partitioning: 
+
+```{r}
+flickr_plot
+```
+
+MENE deviance partitioning: 
+
+```{r}
+MENE_plot
+```
+
+### Variable relationships
+
+```{r, fig.width = 8, fig.height = 4}
+ggplot(mod_stats, aes(x = resolution, y = coef, ymin = lci, ymax = uci, colour = dataset)) + 
+  geom_point(position = position_dodge(0.8)) + 
+  geom_errorbar(position = position_dodge(0.8), width = 0.5) + 
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  scale_colour_manual("Proxy", values = c("#4daf4a", "#984ea3")) +
+  xlab("Analysis Resolution") + ylab(expression("Coefficient Estimate " %+-% " 95% CI")) + 
+  facet_wrap(~cov, nrow = 2)
+
+ggsave("figures/F3_var_relationships.png", width = 8, height = 4, dpi = 300)
+```
+
+## Session Info
+
+```{r session_info}
+session <- devtools::session_info()
+session[[1]]
+session[[2]] %>% select(package, loadedversion, source) %>% kable
+```

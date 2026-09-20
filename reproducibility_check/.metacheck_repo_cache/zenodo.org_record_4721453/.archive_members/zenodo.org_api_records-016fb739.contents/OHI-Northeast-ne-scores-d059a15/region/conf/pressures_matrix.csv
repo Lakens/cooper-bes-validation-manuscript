@@ -1,0 +1,17 @@
+goal,element,element_name,prs_sqi,prs_pathogens,prs_wqi,prs_trash,sp_alien,sp_genetic,hd_subtidal,hd_intertidal,prs_fishing,cc_sst,cc_acid,cc_slr,prs_social,prs_aqua_hab,prs_disease,prs_hardening
+RAO,,,1,2,1,1,1,1,2,1,3,2,2,3,1,1,2,2
+CP,,,2,,2,,1,,,3,,2,,3,1,2,,3
+CS,,,2,,2,,1,,,3,,2,,3,1,2,,3
+CW,,,3,3,3,3,,,,,,2,,,1,,,
+ECO,,,,,,,,,,,,,,1,1,,,
+FIS,,,1,,1,,1,1,2,1,3,2,2,,1,1,3,
+HAB,saltmarsh,,2,,2,,1,,,3,,2,,3,1,3,,3
+HAB,eelgrass,,2,,3,,1,,1,3,,2,1,3,1,3,,2
+HAB,seabed,,2,,2,,1,,3,,,1,1,,1,3,,2
+ICO,,,1,,1,1,1,1,1,1,2,2,1,1,1,1,3,1
+LIV,,,,,,,,,,,,,,1,1,,,
+LSP,,,,2,2,3,1,,3,3,2,2,,2,1,1,,2
+MAR,,,2,,2,,2,,1,,,2,2,2,1,2,3,
+SPP,,,1,,1,1,1,1,1,1,2,2,1,1,1,1,3,1
+TR,,,,3,2,3,,,,2,2,,,2,1,,,
+SPFIS,,,,,,,1,1,2,2,3,2,2,,1,1,2,

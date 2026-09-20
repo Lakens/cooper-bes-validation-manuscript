@@ -1,0 +1,23 @@
+Sets
+t 	t_3.txt 	Number of surveillance days (daily paths), T
+n	nodes_n.txt	all nodes (sites) including the start node "1" and end node "99999" (the main facility)
+n2(n)	nodes_n2.txt	all nodes excluding the start node "1" and including the end node "99999"
+n2n(n)	nodes_n2n.txt	all nodes excluding the start and end nodes "1" and "99999"
+n1(n)	nodes_n1.txt	all nodes including the start node "1" and excluding the end node "99999"
+s	2s.txt  	invasion scenarios
+p	2m.txt  	sampling rate levels 
+
+Parameters 
+mask(n,n)	arcs0_nos_1n_v2.txt	mask with arcs connecting adjacent nodes - inlcudes nodes 1 and N (main facility)
+arc_time(n,n)	arcs_time_nm_v2.txt	time to travel through an arc in minutes
+time_i(n,p)	__stime.txt   	        time to inspect a tree in site n at sampling rate p with inspection method 1 (minutes)
+time_i2(n,p)	2_stime.txt   	        time to inspect a tree in site n at sampling rate p with inspection method 2 (minutes)
+P_d(n,s,p)	_p_no_inf.txt	        probability of not detecting the pest in site n in scenario s at sampling level p with inspection method 1
+P_d2(n,s,p)	2p_no_inf.txt 	        probability of not detecting the pest in site n in scenario s at sampling level p with inspection method 2
+KS(p)		2k.txt	                sample sizes for survey sampling rates sampling levels p
+mask_inf(n,p)	2_mask.txt  	        nodata mask for site n at sampling level p
+Nj(n)   	_Nj.txt   	        number of host trees at a site n
+beta(n,s)	__beta.txt   	        beta value for site n in scenario s for inspection method 1 
+beta2(n,s) 	2_beta.txt   	        beta value for site n in scenario s for inspection method 2
+theta(n,s)  	__theta.txt    	        theta value for site n in scenario s for inspection method 1 
+theta2(n,s)  	2_theta.txt    	        theta value for site n in scenario s for inspection method 2 

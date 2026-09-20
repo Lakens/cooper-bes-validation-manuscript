@@ -1,0 +1,145 @@
+﻿RecordID,Service.original,ESCODE,Biome,Access,Why.changed.access,Why.changed.access.code
+1,Source of rainfall,ES.CLI,forest,Decreased,Little and irregular rains,Climate Change
+2,Source of building material,ES.MAT,forest,Decreased,decreased availability of building materials,Decreased Resource Availability
+3,Source of firewood and charcoal,ES.NRG,forest,Decreased,management of natural forests has been left aside,Deforestation and Forest Degradation;Weak Governance
+4,Water ,ES.WQN,forest,Decreased,Increased human population; climate change; increased human activities and environmental degradation,Population Increase;Climate Change;Human Activities (General);Environmental Degradation (General)
+5,Honey,ES.FOD,forest,Decreased,Increased human activities,Human Activities (General)
+6,Water ,ES.WQN,freshwater,Increased,improved conservation education; improved relationship between communities and KINAPA officials,Improved Education and Awareness;Improved Community-Gov Relations
+7,Water ,ES.WQN,freshwater,Decreased,A large population still have low environmental conservation knowledge thus causing the areas to become deserts,Desertification;Insufficient Education and Awareness
+8,Traditional medicine,ES.MED,forest,Decreased,Improved modern facilities; formal education; improved health specialits; new health complications,Improved Education and Awareness;Improved Health Facilities
+9,Traditional medicine,ES.MED,forest,Increased,Increased utilization; Distributors have improved search; industrial production,Increased Market
+10,Source of water,ES.WQN,NA,Decreased,Increased demand because of increased uses,Increased Resource Competition
+11,Source of water,ES.WQN,freshwater,Decreased,poor infrustructure; poor policies and regulations implementation,Poor infrastructure;Weak Governance
+12,Source of water,ES.WQN,forest,Decreased,Decreased rainfall; increased water demand both for domestic and agricultural use,Climate Change;Increased Resource Competition
+13,Fodder,ES.FOD,grassland,Increased,Land shared between brothers and sisters and animals are increasing,Cooperation and Solidarity
+14,Seed bank,ES.MED,forest,Decreased,Most areas are now protected and access allowed,Protection and Regulation
+15,Source of water,ES.WQN,forest,Decreased,population growth has resulted in more people sharing this resource,Population Increase
+16,Source of Water,ES.WQN,forest,Increased,Improved infrustracture,Improved Infrastructure
+17,Source of water,ES.WQN,forest,Decreased,Increased number of people in demand for water,Increased Resource Competition
+18,Source of water,ES.WQN,NA,Decreased,Increased demand because of increased uses,Increased Resource Competition;Population Increase
+19,Balance of nature,ES.HAB,NA,Decreased,Human activities,Human Activities (General)
+20,Timber,ES.MAT,forest,No answer,No answer,NA
+21,Food,ES.FOD,forest; agriculture; freshwater,No answer,No answer,NA
+22,Income,ES.LIV,forest; agriculture; freshwater,No answer,No answer,NA
+23,Fresh water,ES.WQN,forest,Increased,There is increased  water use; Climate change; Deforestation ,Increased Resource Competition;Climate Change;Deforestation and Forest Degradation
+24,Medicines,ES.MED,grassland,Decreased,Lack of production,Decreased Resource Availability
+25,Climate regulation,ES.CLI,forest,No answer,No answer,NA
+26,Income,ES.LIV,grassland; forest; alpine,Decreased,Biodiversity loss; Deforestation; Climate change,Biodiversity Loss;Deforestation and Forest Degradation;Climate Change
+27,Fresh water,ES.WQN,freshwater; forest; alpine,Decreased,Changes in water cycles have led to reduced water downstream; increased population has caused redueced accessbility,Climate Change;Population Increase
+28,Biodiversity,ES.HAB,forest,Decreased,Environmental degradation,Environmental degradation (general)
+29,Fresh water,ES.WQN,freshwater,Decreased,Human population increase; increased scarcity,Population Increase;Increased Resource Competition
+30,Climate regulation,ES.CLI,forest,Decreased,Decrease in forest/vegetation cover,Deforestation and Forest Degradation
+31,Food,ES.FOD,agriculture,Decreased,Reduced water flows in the rivers due to climate change and other anthropogenic activities,Decreased Resource Availability;Climate Change;Human Activities (General)
+32,Tourism,ES.LIV,forest; agriculture,Decreased,Conversion of habitats due to increased commercialization of products,Land-Use Change (General);Increased Resource Competition
+33,Food,ES.FOD,forest,Decreased,Human interventions and forest clearing has caaused decreased services,Deforestation and Forest Degradation;Human Activities (General)
+34,Climate regulation,ES.CLI,forest,Decreased,Deforestation,Deforestation and Forest Degradation
+35,Fresh air,ES.AIR,forest,Decreased,Increased pollution,Pollution
+36,Income,ES.LIV,NA,No answer,No answer,NA
+37,Food,ES.FOD,NA,No answer,No answer,NA
+38,Water,ES.WQN,forest,No answer,No answer,NA
+39,Soil fertility,ES.SOL,NA,Increased,Increased awareness of individuals about not to cut trees; afforestation efforts,Afforestation;Improved Education and Awareness
+40,Ecotourism,ES.EXP,forest,Increased,Conservation education and awareness raising efforts have rendered people to better understand importance of the service,Improved Education and Awareness
+41,Carbon sequestration,ES.CLI,forest,Increased,Increased areas that are protected,Protection and Regulation
+42,Food,ES.FOD,grassland,Decreased,Increased population; Loss of soil fertility,Population Increase;Soil Fertility Decline
+43,Timber,ES.MAT,forest,Decreased,Competitive land uses such as livestock keepers vs farmers; propulation increase causes excessive use of forests,Increased Resource Competition;Population Increase;Deforestation and Forest Degradation
+44,Aquatic (Rivers; Pond; Springs),ES.WQN,NA,Decreased,Increased population; water pollution; excessive competition among various users,Population Increase;Pollution;Increased Resource Competition
+45,Firewood,ES.NRG,NA,Decreased,Deforestation; lack of water; Population increase; lack of alternative energy sources,"Deforestation and Forest Degradation;Decreased Resource Availability, Population Increase, Lack Alternative Energy Sources"
+46,Livelihoods,ES.WEB,grassland,Decreased,Deforestation; lack of water; overgrzing; Population increase,Deforestation and Forest Degradation;Decreased Resource Availability;Agriculture and Livestock;Population Increase
+47,Medicines,ES.MED,NA,Decreased,Deforestation; Climate change; Over harvesting,Climate Change;Deforestation and Forest Degradation
+48,Mprovision of products such as medicines,ES.MED,forest; grassland,Decreased,Human activities; Climate Change; littel knowledge,Human Activities (General);Climate Change;Insufficient Education and Awareness
+49,Biodiversity,ES.HAB,NA,Decreased,Decreased ranges and population size,Biodiversity Loss
+50,Carbon sequestration,ES.CLI,NA,Decreased,Human activities,Human Activities (General)
+51,Food,ES.FOD,forest; agriculture; freshwater,No answer,No answer,NA
+52,Pest and disease control,ES.PST,forest; agriculture; grassland,No answer,No answer,NA
+53,Fertile soils,ES.SOL,forest; agriculture; grassland,No answer,No answer,NA
+54,Food,ES.FOD,forest; freshwater,No answer,No answer,NA
+55,Cultural value,ES.IDE,forest; freshwater,No answer,No answer,NA
+56,Income,ES.LIV,forest; alpine,No answer,No answer,NA
+57,Nutrient cycling,ES.SOL,grassland,decreased,"Human activities like agriculture has decreased this access because there were many areas burnt and when the areas are burned, the living organisms in the soil, e.g. earthwoms and dung beetles, most of them die. Hence, decreased access to ertile soil.",Agriculture and Livestock;Fires;Biodiversity Loss
+58,Medicinal trees,ES.MED,forest,decreased,Overexploitation of trees has changed access from high access to lower access as some of the trees are near to extinction,Deforestation and Forest Degradation
+59,Water source,ES.WQN,forest,decreased,existence of laws that strictly prohibit entrance of forest; increase in numbers of people who destroy the forest,Protection and Regulation;Deforestation and Forest Degradation
+60,Medicinal plants / trees,ES.MED,forest,decreased,Existence of bylaws; raise of awarenesss of local community on using technological medics rather than local ones,Cultural change;Protection and Regulation
+61,Carbon sink,ES.CLI,forest,decreased,Heat waves have been seen to be increasing,Climate Change
+62,Water source,ES.WQN,forest,increased,The access has increased,Increased Access 
+63,Flood control,ES.HAZ,forest,decreased,Flooding continues to impact most areas in the area,Natural Disasters
+64,Rainfall,ES.CLI,forest,decreased,Climate changes; high demand of rainfall; high population growth,Climate Change;Population Increase;Increased Resource Competition
+65,Source of water,ES.WQN,freshwater,decreased,More people having to share the same resources; climate changes affected water availability in the area,Increased Resource Competition;Climate Change
+66,Water,ES.WQN,agroforestry,decreased,Increased human population has caused increased demand,Population Increase;Increased Resource Competition
+67,Food,ES.FOD,agroforestry,decreased,Environmental degradation,Environmental degradation (general)
+68,Habitat,ES.HAB,forest; freshwater,decreased,People are still doing illegal activities; which has caused more destruction,Weak Governance
+69,Seed dispersal,ES.POL,grassland,decreased,Human activities are still done on the wildlife corridor,Human Activities (General)
+70,Source of food,ES.FOD,,decreased,An increase in population; use of cultivation methods which are not friendly to the matter of conservation,Population Increase;Agriculture and Livestock
+71,Source of energy,ES.NRG,,not changed,Corruption; higher prices to alternative sources of energy; dependency on the same sources of energy as per nature of life,Weak Governance;Lack Alternative Energy Sources
+72,Rainfall,ES.CLI,agroforestry,decreased,Overgrazing; deforestation,Agriculture and Livestock;Deforestation and Forest Degradation
+73,Water sources,ES.WQN,forest,decreased,Increase of population; overgrazing,Population Increase;Agriculture and Livestock
+74,Water sources,ES.WQN,forest,increased,More water infrastructures for water supply; more storage tanks and pipes,Improved Infrastructure
+75,Recreational or tourism value,ES.EXP,forest; alpine,increased,more tourism products; good access / infrastructures / facilities; more tour operators / agents; more advertisements,Improved Infrastructure;Tourism
+76,Rainfall,ES.CLI,agriculture,decreased,erratic rain period; prolonged drought; climatic change,Climate Change
+77,Soil fertility,ES.SOL,agriculture,decreased,because some of the beneficial soil organisms to decompose organic matter for the soil fertility some destroyed,Biodiversity Loss
+78,Pollination,ES.POL,NA,decreased,the decrease of natural patches in the farmland has resulted in poor diversity of pollinators; application of chemicals for agriculture,Agriculture and Livestock;Pollution
+79,Carbon sink,ES.CLI,NA,decreased,There is a bit of competition from them while the numbers of these resources are decreasing in relation to carrying capacityies,Increased Resource Competition
+80,Agriculture benefits,ES.FOD,NA,not changed,NA,NA
+81,Building material,ES.MAT,forest,decreased,population increase; human activities like livestock and agriculture; demand of the service has increased,Population Increase;Agriculture and Livestock;Increased Resource Competition
+82,Water source,ES.WQN,freshwater,decreased,"Climate variability, like shortage of rainfall and high temperatures; population increase; poor land planning",Climate Change;Population Increase;Weak Governance
+83,Source of water,ES.WQN,agriculture,decreased,Population growth; high demand of water for domestic and irrigation purposes,Population Increase;Increased Resource Competition
+84,Energy source,ES.NRG,agriculture,decreased,"There is high demand for energy sources for cooking: firewood, charcoal, wood",Increased Resource Competition
+85,Ecosystem balance,ES.HAB,NA,decreased,NA,NA
+86,Rainfall,ES.CLI,NA,increased,Rainfall increased in these 10 years. C???? To 10 years ago because the society have education to that,Improved Education and Awareness
+88,Tourism,ES.LIV,NA,Increased,In general the sense for a healthy enviornment is favoured in tourism,Tourism
+89,Tourism,ES.LIV,NA,Increased,"improvement of the transport system (roads); increase of the airplane within the country (Dreamliner, Boeing 787-8)",Improved Infrastructure
+90,Tourism,ES.LIV,NA,Increased,Become more popular in the world of tourism/mountaineering,Tourism
+91,Tourism,ES.LIV,agriculture; agroforestry; grassland,Increased,More awareness of the negative patterns; trying to work against the same. Advocacy building team work to build a more stable future,Improved Education and Awareness
+92,Tourism,ES.LIV,NA,Increased,more in demand,Increased Market
+93,Tourism,ES.LIV,NA,Increased,Because of good government support to protect the nature and because of more people are interested on it,Protection and Regulation;Improved Education and Awareness
+94,Tourism,ES.LIV,NA,Increased,Presence of tourism act setting aside mountain climb business to Tanzanian citizens only; individual tour operators marketing strategy,Tourism
+95,Social aspects,ES.IDE,NA,Decreased,change of climate decreasing of snow; change of rain season; less rain; inverse of temperature,Climate Change
+96,Tourism,ES.LIV,NA,Increased,more awareness about the area,Improved Education and Awareness
+97,Nutrition,ES.FOD,NA,Increased,NA,NA
+98,Nutrition,ES.FOD,agroforestry; forest,Increased,infrastructure has become better,Improved Infrastructure
+99,Nutrition,ES.FOD,NA,Increased,"it is available to the market places under low costs because production is high for instance honey, fish, etc",Increased Market
+100,Natural health,ES.HAB,forest; agroforestry,Increased,awareness of possibilities and access to heritage food. Knowhow in nutritional health has increased in general; awareness towards nutritional health in tourism kitchens has increased,Improved Education and Awareness
+101,Natural health,ES.HAB,NA,Decreased,people are looking for easy way and not thinking of the outcome and the future and for the nature,Mindset
+102,Climate regulation,ES.CLI,NA,Decreased,too many people demand the same things and less to be taken out,Increased Resource Competition
+103,Climate regulation,ES.CLI,forest,Decreased,less rains; more irregular weather patterns; desertification; wildlife dicrease; more dust; erosion; less tourism activities,Climate Change;Biodiversity Loss;Erosion;Tourism Decline;Desertification
+104,Climate regulation,ES.CLI,NA,Not changed,NA,NA
+105,Source of revenue,ES.LIV,agriculture; agroforestry,Decreased,Increase in the price of agricultural goods has led to limitations on accessing ,High Food/Farm Input Cost
+106,Employment,ES.LIV,agriculture; agroforestry,Increased,A large area of the fores has been cleared for agricultural expansion; agriculture has become a backbone in Tanzania,Agriculture and Livestock;Deforestation and Forest Degradation
+107,Food and feed for livestock,ES.FOD,agriculture; agroforestry,Decreased,High price of food and animal feed,High Food/Farm Input Cost
+108,Food for humans and feed for livestock,ES.FOD,agriculture,Decreased,Cost of food and feed production has gone higher from time to time,High Food/Farm Input Cost
+109,Source of revenue,ES.LIV,agriculture,Decreased,climate change leading to drought and heavy rains; expensive agro inputs leading to reduced cash crops production; lack of reliable markets ,Climate Change;High Food/Farm Input Cost;Insufficient Market
+110,Water,ES.WQN,forest,Decreased,Increase in population; demand for agriculture,Population Increase;Increased Resource Competition
+111,Fuel wood,ES.NRG,forest,Increased,Population increase,Population Increase
+112,Water for domestic use,ES.WQN,freshwater,Decreased,No clear answer,NA
+113,Water for domestic use,ES.WQN,freshwater,Increased,Tanzanian governemnt efforts in making sure that every citizen gets access to water services,Protection and Regulation
+114,Irrigation,ES.WQN,freshwater,Increased,Provision of education on irrigation agricultural system,Imroved Education and Awareness
+115,Groun water recharge,ES.WQN,forest,Increased,No clear answer,NA
+116,Medicinal purposes,ES.MED,agroforestry,Decreased,Lack and poor awarenes in the community,Insufficient Education and Awareness
+117,Irrigation,ES.WQN,freshwater,Increased,Increase awareness amon the people; presence of by-laws; increased demand within the community,Increased Access;Improved Education and Awareness;Protection and Regulation
+118,Source of revenue,ES.LIV,agroforestry,Increased,awareness creation has increased in the society; presence of law and its enforcement,Improved Education and Awareness;Law Enforcement
+119,Energy,ES.NRG,agriculture,Decreased,Regulations have led to natural forests access barriers,Protection and Regulation
+120,Water for domestic use,ES.WQN,freshwater,Decreased,Poor land use practices has affected availability of perrenial free access  water; poor water supply systems,Poor Land-use Practice;Lack of Infrastructure
+121,Employment,ES.LIV,forest,Decreased,Changing governemnt policies limiting access to employment opportunities; poor investment conditions hence low rate of employment from private sectors,Insufficient Investment;Protection and Regulation
+122,Erosion control,ES.HAZ,grassland,Not changed,NA,NA
+123,Food and feed for livestock,ES.FOD,,Decreased,climate change; lack of enough value addition skills; natural disasters,Climate Change;Lack Value Add Skils;Natural Disasters
+124,Harvesting fuel wood and charcoal,ES.NRG,forest,Decreased,over-exploitation,Deforestation and Forest Degradation
+125,Fresh air,ES.AIR,forest,Decreased,quality and quantity of fresh air has decreased because of forest degradation,Deforestation and Forest Degradation
+126,Source of revenue,ES.LIV,forest,Decreased,shortage of materials due to discovery alternative materials,Decreased Resource Availability
+127,Building materials,ES.MAT,forest,Decreased,effects of climate change on plantations and forests,Climate Change
+128,Water sources,ES.WQN,forest,Decreased,climate change; desertification in catchment forest; deforestation and wildfire increase,Climate Change;Desertification;Deforestation and Forest Degradation;Wildfires
+129,Socio-economic development,ES.IDE,freshwater,Decreased,deteriration of water sources,Decreased Resource Availability
+130,Socio-economic development,ES.IDE,freshwater,Decreased,fluctuation of water from the sources,Decreased Resource Availability
+131,Socio-economic development,ES.IDE,freshwater,Not changed,No clear answer,NA
+132,Building materials,ES.MAT,forest,Decreased,shortage of income; lack of education,Insufficient Income;Insufficient Education and Awareness
+133,Water for domestic use,ES.WQN,freshwater,Decreased,low education on the importance of water ,Insufficient Education and Awareness
+134,Irrigation,ES.WQN,freshwater,Decreased,too much agricultural activities; increased technological advancement encouraging more farming,Agriculture and Livestock
+135,Domestic water supply,ES.WQN,freshwater,Decreased,change of water quality due to pollution; inadequate infrastructures for water supply,Pollution;Poor Infrastructure
+136,Control sea water intrusion in pangani river,ES.WQN,freshwater,Decreased,rising of sea levels causes more backflow and fresh water intrusion; reduced river flows due to increased agricultural activities,Climate Change;Agriculture and Livestock
+137,Hydropower production,ES.NRG,freshwater,Decreased,less water for hydropower; silting of the dams with reduced water leveles;,Decreased Resource Availability
+138,Water for domestic use,ES.WQN,freshwater,Increased,community member do use clean water in domestic uses;,Improved Education and Awareness
+139,Irrigation,ES.WQN,freshwater,Increased,most communities access water for irrigation; improvement of irrigation methods and technology,Irrigation
+140,Water sources,ES.WQN,forest,Decreased,drying of water bodies,Climate Change
+141,Beekeeping,ES.FOD,forest,Increased,environmental conservation activities,Protection and Regulation
+142,Food,ES.FOD,agriculture,No answer,NA,NA
+143,Water,ES.WQN,freshwater,Decreased,anthropogenic activities such as deforestation; cultivation nearby water sources; overgrazing,Deforestation and Forest Degradation;Poor Land-use Practice;Agriculture and Livestock
+144,Irrigation,ES.WQN,freshwater,Increased,proper water management; water protection and conservation regulations,Protection and Regulation
+145,Water for domestic use,ES.WQN,freshwater,Increased,water sources protection regulations; creation of awareness on best water use and management practices,Improved Education and Awareness;Protection and Regulation

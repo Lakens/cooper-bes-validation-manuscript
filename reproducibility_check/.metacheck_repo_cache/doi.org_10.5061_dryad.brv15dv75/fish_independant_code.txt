@@ -1,0 +1,152 @@
+#t test for size comparison (time in open rivers)
+Data <- read.csv("Size-Nov-Feb-Open.csv")
+
+#test for normality
+hist(Data$width[Data$time=="November"])
+hist(Data$width[Data$time=="February"])
+tapply(Data$width,Data$time,shapiro.test)
+
+#if not normal, transform with SQRT
+Data$widthSQ <- sqrt(Data$width)
+hist(Data$widthSQ[Data$time=="November"])
+hist(Data$widthSQ[Data$time=="February"])
+tapply(Data$widthSQ,Data$time,shapiro.test)
+
+#if not normal, transform with log10
+Data$widthLG <- log10(Data$width)
+hist(Data$widthLG[Data$time=="November"])
+hist(Data$widthLG[Data$time=="February"])
+tapply(Data$widthLG,Data$time,shapiro.test)
+
+#test for homogeneity of variance
+boxplot(Data$width~Data$time)
+leveneTest(Data$width~Data$time)
+
+#t test
+t.test(Data$width~Data$time, mu=0, alt="two.sided", conf=0.95, var.eq=T, paired=F)
+
+#if not normal
+res <- wilcox.test(width~time, data = Data,exact = FALSE)
+res
+
+#t test for size comparison (time in TMR rivers)
+Data <- read.csv("Size-Nov-Feb-TMR.csv")
+
+#test for normality
+hist(Data$width[Data$time=="November"])
+hist(Data$width[Data$time=="February"])
+tapply(Data$width,Data$time,shapiro.test)
+
+#if not normal, transform with SQRT
+Data$widthSQ <- sqrt(Data$width)
+hist(Data$widthSQ[Data$time=="November"])
+hist(Data$widthSQ[Data$time=="February"])
+tapply(Data$widthSQ,Data$time,shapiro.test)
+
+#if not normal, transform with log10
+Data$widthLG <- log10(Data$width)
+hist(Data$widthLG[Data$time=="November"])
+hist(Data$widthLG[Data$time=="February"])
+tapply(Data$widthLG,Data$time,shapiro.test)
+
+#test for homogeneity of variance
+boxplot(Data$width~Data$time)
+leveneTest(Data$width~Data$time)
+
+#t test
+t.test(Data$width~Data$time, mu=0, alt="two.sided", conf=0.95, var.eq=T, paired=F)
+
+#if not normal
+res <- wilcox.test(width~time, data = Data,exact = FALSE)
+res
+
+#t test for size comparison (Zone in February)
+Data <- read.csv("Size-Open-TMR-Feb.csv")
+
+#test for normality
+hist(Data$width[Data$zone=="Open"])
+hist(Data$width[Data$zone=="Closed"])
+tapply(Data$width,Data$zone,shapiro.test)
+
+#if not normal, transform with SQRT
+Data$widthSQ <- sqrt(Data$width)
+hist(Data$width[Data$zone=="Open"])
+hist(Data$width[Data$zone=="Closed"])
+tapply(Data$width,Data$zone,shapiro.test)
+
+#if not normal, transform with Log10
+Data$widthLG <- log10(Data$width)
+hist(Data$widthLG[Data$zone=="Open"])
+hist(Data$widthLG[Data$zone=="Closed"])
+tapply(Data$widthLG,Data$zone,shapiro.test)
+
+#test for homogeneity of variance
+boxplot(Data$width~Data$zone)
+leveneTest(Data$width~Data$zone)
+
+#t test
+t.test(Data$width~Data$zone, mu=0, alt="two.sided", conf=0.95, var.eq=T, paired=F)
+
+#if not normal
+res <- wilcox.test(width~zone, data = Data,exact = FALSE)
+res
+
+#t test for size comparison (Zone in November)
+Data <- read.csv("Size-Open-TMR-Nov.csv")
+
+#test for normality
+hist(Data$width[Data$zone=="Open"])
+hist(Data$width[Data$zone=="Closed"])
+tapply(Data$width,Data$zone,shapiro.test)
+
+#if not normal, transform with SQRT
+Data$widthSQ <- sqrt(Data$width)
+hist(Data$width[Data$zone=="Open"])
+hist(Data$width[Data$zone=="Closed"])
+tapply(Data$width,Data$zone,shapiro.test)
+
+#if not normal, transform with Log10
+Data$widthLG <- log10(Data$width)
+hist(Data$widthLG[Data$zone=="Open"])
+hist(Data$widthLG[Data$zone=="Closed"])
+tapply(Data$widthLG,Data$zone,shapiro.test)
+
+#test for homogeneity of variance
+boxplot(Data$width~Data$zone)
+leveneTest(Data$width~Data$zone)
+
+#t test
+t.test(Data$width~Data$zone, mu=0, alt="two.sided", conf=0.95, var.eq=T, paired=F)
+
+#if not normal
+res <- wilcox.test(width~zone, data = Data,exact = FALSE)
+res
+
+#CPUE (time in open rivers)
+data <- read.csv("CPUE-Nov-Feb-Open.csv")
+glm<-glm(data$treatment~data$cpue, data=data, family=quasipoisson(link=log))
+summary(glm)
+plot(data$treatment,data$cpue)
+abline(glm, col='red')
+
+#CPUE (time in TMR rivers)
+data <- read.csv("CPUE-Nov-Feb-TMR.csv")
+glm<-glm(data$treatment~data$cpue, data=data, family=quasipoisson(link=log))
+summary(glm)
+plot(data$treatment,data$cpue)
+abline(glm, col='red')
+
+#CPUE (Zone in February)
+data <- read.csv("CPUE-Open-TMR-Feb.csv")
+glm<-glm(data$treatment~data$cpue, data=data, family=quasipoisson(link=log))
+summary(glm)
+plot(data$treatment,data$cpue)
+abline(glm, col='red')
+
+#CPUE (Zone in November)
+data <- read.csv("CPUE-Open-TMR-Feb.csv")
+glm<-glm(data$treatment~data$cpue, data=data, family=quasipoisson(link=log))
+summary(glm)
+plot(data$treatment,data$cpue)
+abline(glm, col='red')
+

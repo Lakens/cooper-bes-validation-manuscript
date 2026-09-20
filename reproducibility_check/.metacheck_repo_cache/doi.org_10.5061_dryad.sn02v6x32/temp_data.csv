@@ -1,0 +1,1788 @@
+doy,date,temp,site,city
+137,5/17/2019,20.71,Foothills,Boulder
+138,5/18/2019,17.379,Foothills,Boulder
+139,5/19/2019,6.166,Foothills,Boulder
+140,5/20/2019,3.049,Foothills,Boulder
+141,5/21/2019,6.37,Foothills,Boulder
+142,5/22/2019,5.552,Foothills,Boulder
+143,5/23/2019,19.662,Foothills,Boulder
+144,5/24/2019,21.951,Foothills,Boulder
+145,5/25/2019,19.853,Foothills,Boulder
+146,5/26/2019,17.094,Foothills,Boulder
+147,5/27/2019,10.553,Foothills,Boulder
+148,5/28/2019,14.421,Foothills,Boulder
+149,5/29/2019,19.662,Foothills,Boulder
+150,5/30/2019,23.677,Foothills,Boulder
+151,5/31/2019,22.142,Foothills,Boulder
+152,6/1/2019,23.773,Foothills,Boulder
+153,6/2/2019,22.812,Foothills,Boulder
+154,6/3/2019,24.835,Foothills,Boulder
+155,6/4/2019,24.738,Foothills,Boulder
+156,6/5/2019,27.173,Foothills,Boulder
+157,6/6/2019,27.862,Foothills,Boulder
+158,6/7/2019,26.195,Foothills,Boulder
+159,6/8/2019,17.189,Foothills,Boulder
+160,6/9/2019,23.869,Foothills,Boulder
+161,6/10/2019,24.931,Foothills,Boulder
+162,6/11/2019,23.388,Foothills,Boulder
+163,6/12/2019,29.752,Foothills,Boulder
+164,6/13/2019,27.567,Foothills,Boulder
+165,6/14/2019,24.062,Foothills,Boulder
+166,6/15/2019,22.717,Foothills,Boulder
+167,6/16/2019,20.615,Foothills,Boulder
+168,6/17/2019,19.092,Foothills,Boulder
+169,6/18/2019,26.585,Foothills,Boulder
+170,6/19/2019,27.567,Foothills,Boulder
+171,6/20/2019,19.758,Foothills,Boulder
+172,6/21/2019,12.11,Foothills,Boulder
+173,6/22/2019,13.846,Foothills,Boulder
+174,6/23/2019,25.805,Foothills,Boulder
+175,6/24/2019,27.567,Foothills,Boulder
+176,6/25/2019,28.555,Foothills,Boulder
+177,6/26/2019,29.752,Foothills,Boulder
+178,6/27/2019,32.086,Foothills,Boulder
+179,6/28/2019,30.154,Foothills,Boulder
+180,6/29/2019,30.255,Foothills,Boulder
+181,6/30/2019,27.468,Foothills,Boulder
+182,7/1/2019,23.004,Foothills,Boulder
+183,7/2/2019,30.054,Foothills,Boulder
+184,7/3/2019,26.39,Foothills,Boulder
+185,7/4/2019,24.545,Foothills,Boulder
+186,7/5/2019,24.738,Foothills,Boulder
+187,7/6/2019,27.567,Foothills,Boulder
+188,7/7/2019,26.977,Foothills,Boulder
+189,7/8/2019,30.76,Foothills,Boulder
+190,7/9/2019,27.961,Foothills,Boulder
+191,7/10/2019,33.326,Foothills,Boulder
+192,7/11/2019,30.862,Foothills,Boulder
+193,7/12/2019,31.166,Foothills,Boulder
+194,7/13/2019,30.558,Foothills,Boulder
+195,7/14/2019,27.764,Foothills,Boulder
+196,7/15/2019,30.154,Foothills,Boulder
+197,7/16/2019,34.058,Foothills,Boulder
+198,7/17/2019,34.374,Foothills,Boulder
+199,7/18/2019,33.743,Foothills,Boulder
+200,7/19/2019,28.456,Foothills,Boulder
+201,7/20/2019,26.781,Foothills,Boulder
+202,7/21/2019,22.525,Foothills,Boulder
+203,7/22/2019,28.159,Foothills,Boulder
+204,7/23/2019,32.086,Foothills,Boulder
+205,7/24/2019,28.555,Foothills,Boulder
+206,7/25/2019,30.963,Foothills,Boulder
+207,7/26/2019,27.37,Foothills,Boulder
+208,7/27/2019,30.558,Foothills,Boulder
+209,7/28/2019,30.457,Foothills,Boulder
+210,7/29/2019,30.356,Foothills,Boulder
+211,7/30/2019,31.37,Foothills,Boulder
+212,7/31/2019,28.357,Foothills,Boulder
+213,8/1/2019,29.452,Foothills,Boulder
+214,8/2/2019,31.268,Foothills,Boulder
+215,8/3/2019,27.567,Foothills,Boulder
+216,8/4/2019,26.879,Foothills,Boulder
+217,8/5/2019,30.255,Foothills,Boulder
+218,8/6/2019,28.456,Foothills,Boulder
+219,8/7/2019,25.805,Foothills,Boulder
+220,8/8/2019,31.574,Foothills,Boulder
+221,8/9/2019,28.258,Foothills,Boulder
+222,8/10/2019,25.125,Foothills,Boulder
+223,8/11/2019,31.37,Foothills,Boulder
+224,8/12/2019,29.953,Foothills,Boulder
+225,8/13/2019,28.159,Foothills,Boulder
+226,8/14/2019,32.497,Foothills,Boulder
+227,8/15/2019,28.357,Foothills,Boulder
+228,8/16/2019,30.054,Foothills,Boulder
+229,8/17/2019,27.075,Foothills,Boulder
+230,8/18/2019,31.676,Foothills,Boulder
+231,8/19/2019,31.88,Foothills,Boulder
+232,8/20/2019,26.195,Foothills,Boulder
+233,8/21/2019,27.665,Foothills,Boulder
+234,8/22/2019,27.665,Foothills,Boulder
+235,8/23/2019,26.683,Foothills,Boulder
+236,8/24/2019,32.086,Foothills,Boulder
+237,8/25/2019,25.125,Foothills,Boulder
+238,8/26/2019,22.238,Foothills,Boulder
+239,8/27/2019,29.853,Foothills,Boulder
+240,8/28/2019,28.06,Foothills,Boulder
+241,8/29/2019,25.708,Foothills,Boulder
+242,8/30/2019,28.456,Foothills,Boulder
+243,8/31/2019,30.356,Foothills,Boulder
+244,9/1/2019,33.535,Foothills,Boulder
+245,9/2/2019,27.37,Foothills,Boulder
+246,9/3/2019,28.258,Foothills,Boulder
+247,9/4/2019,32.086,Foothills,Boulder
+248,9/5/2019,24.835,Foothills,Boulder
+249,9/6/2019,28.06,Foothills,Boulder
+250,9/7/2019,22.429,Foothills,Boulder
+251,9/8/2019,26.39,Foothills,Boulder
+252,9/9/2019,25.416,Foothills,Boulder
+253,9/10/2019,22.238,Foothills,Boulder
+254,9/11/2019,23.196,Foothills,Boulder
+255,9/12/2019,23.869,Foothills,Boulder
+256,9/13/2019,29.053,Foothills,Boulder
+257,9/14/2019,26.781,Foothills,Boulder
+258,9/15/2019,28.06,Foothills,Boulder
+259,9/16/2019,27.764,Foothills,Boulder
+260,9/17/2019,23.196,Foothills,Boulder
+261,9/18/2019,25.902,Foothills,Boulder
+262,9/19/2019,26.292,Foothills,Boulder
+263,9/20/2019,23.677,Foothills,Boulder
+264,9/21/2019,21.091,Foothills,Boulder
+265,9/22/2019,22.621,Foothills,Boulder
+266,9/23/2019,26.781,Foothills,Boulder
+267,9/24/2019,23.966,Foothills,Boulder
+268,9/25/2019,23.966,Foothills,Boulder
+269,9/26/2019,21.282,Foothills,Boulder
+270,9/27/2019,16.427,Foothills,Boulder
+271,9/28/2019,23.677,Foothills,Boulder
+272,9/29/2019,19.758,Foothills,Boulder
+273,9/30/2019,12.013,Foothills,Boulder
+274,10/1/2019,12.207,Foothills,Boulder
+275,10/2/2019,14.9,Foothills,Boulder
+276,10/3/2019,17.475,Foothills,Boulder
+277,10/4/2019,19.472,Foothills,Boulder
+278,10/5/2019,18.521,Foothills,Boulder
+279,10/6/2019,23.388,Foothills,Boulder
+280,10/7/2019,25.805,Foothills,Boulder
+281,10/8/2019,22.812,Foothills,Boulder
+282,10/9/2019,1.98,Foothills,Boulder
+283,10/10/2019,7.882,Foothills,Boulder
+284,10/11/2019,15.473,Foothills,Boulder
+285,10/12/2019,21.378,Foothills,Boulder
+137,5/17/2019,23.581,Harlow,Boulder
+138,5/18/2019,16.618,Harlow,Boulder
+139,5/19/2019,6.674,Harlow,Boulder
+140,5/20/2019,3.261,Harlow,Boulder
+141,5/21/2019,6.674,Harlow,Boulder
+142,5/22/2019,6.166,Harlow,Boulder
+143,5/23/2019,18.426,Harlow,Boulder
+144,5/24/2019,22.142,Harlow,Boulder
+145,5/25/2019,20.901,Harlow,Boulder
+146,5/26/2019,18.711,Harlow,Boulder
+147,5/27/2019,12.69,Harlow,Boulder
+148,5/28/2019,13.942,Harlow,Boulder
+149,5/29/2019,18.426,Harlow,Boulder
+150,5/30/2019,22.238,Harlow,Boulder
+151,5/31/2019,21.76,Harlow,Boulder
+152,6/1/2019,21.951,Harlow,Boulder
+153,6/2/2019,21.664,Harlow,Boulder
+154,6/3/2019,23.869,Harlow,Boulder
+155,6/4/2019,23.966,Harlow,Boulder
+156,6/5/2019,26,Harlow,Boulder
+157,6/6/2019,26.488,Harlow,Boulder
+158,6/7/2019,22.621,Harlow,Boulder
+159,6/8/2019,16.427,Harlow,Boulder
+160,6/9/2019,23.677,Harlow,Boulder
+161,6/10/2019,23.004,Harlow,Boulder
+162,6/11/2019,23.388,Harlow,Boulder
+163,6/12/2019,27.567,Harlow,Boulder
+164,6/13/2019,27.665,Harlow,Boulder
+165,6/14/2019,24.158,Harlow,Boulder
+166,6/15/2019,24.931,Harlow,Boulder
+167,6/16/2019,20.615,Harlow,Boulder
+168,6/17/2019,18.996,Harlow,Boulder
+169,6/18/2019,25.708,Harlow,Boulder
+170,6/19/2019,25.902,Harlow,Boulder
+171,6/20/2019,18.806,Harlow,Boulder
+172,6/21/2019,12.207,Harlow,Boulder
+173,6/22/2019,14.613,Harlow,Boulder
+174,6/23/2019,21.951,Harlow,Boulder
+175,6/24/2019,24.545,Harlow,Boulder
+176,6/25/2019,26.195,Harlow,Boulder
+177,6/26/2019,27.567,Harlow,Boulder
+178,6/27/2019,30.76,Harlow,Boulder
+179,6/28/2019,28.258,Harlow,Boulder
+180,6/29/2019,28.655,Harlow,Boulder
+181,6/30/2019,26.488,Harlow,Boulder
+182,7/1/2019,24.738,Harlow,Boulder
+183,7/2/2019,28.953,Harlow,Boulder
+184,7/3/2019,26.683,Harlow,Boulder
+185,7/4/2019,26,Harlow,Boulder
+186,7/5/2019,22.142,Harlow,Boulder
+187,7/6/2019,25.416,Harlow,Boulder
+188,7/7/2019,26.097,Harlow,Boulder
+189,7/8/2019,30.76,Harlow,Boulder
+190,7/9/2019,28.258,Harlow,Boulder
+191,7/10/2019,33.639,Harlow,Boulder
+192,7/11/2019,30.76,Harlow,Boulder
+193,7/12/2019,31.574,Harlow,Boulder
+194,7/13/2019,29.752,Harlow,Boulder
+195,7/14/2019,31.88,Harlow,Boulder
+196,7/15/2019,31.268,Harlow,Boulder
+197,7/16/2019,36.62,Harlow,Boulder
+198,7/17/2019,36.837,Harlow,Boulder
+199,7/18/2019,37.165,Harlow,Boulder
+200,7/19/2019,30.457,Harlow,Boulder
+201,7/20/2019,25.708,Harlow,Boulder
+202,7/21/2019,25.513,Harlow,Boulder
+203,7/22/2019,30.558,Harlow,Boulder
+204,7/23/2019,35.435,Harlow,Boulder
+205,7/24/2019,29.352,Harlow,Boulder
+206,7/25/2019,33.222,Harlow,Boulder
+207,7/26/2019,29.853,Harlow,Boulder
+208,7/27/2019,32.291,Harlow,Boulder
+209,7/28/2019,33.953,Harlow,Boulder
+210,7/29/2019,31.064,Harlow,Boulder
+211,7/30/2019,31.37,Harlow,Boulder
+212,7/31/2019,28.357,Harlow,Boulder
+213,8/1/2019,28.853,Harlow,Boulder
+214,8/2/2019,34.691,Harlow,Boulder
+215,8/3/2019,29.552,Harlow,Boulder
+216,8/4/2019,32.704,Harlow,Boulder
+217,8/5/2019,34.163,Harlow,Boulder
+218,8/6/2019,31.37,Harlow,Boulder
+219,8/7/2019,26.488,Harlow,Boulder
+220,8/8/2019,35.756,Harlow,Boulder
+221,8/9/2019,31.574,Harlow,Boulder
+222,8/10/2019,26.292,Harlow,Boulder
+223,8/11/2019,34.058,Harlow,Boulder
+224,8/12/2019,32.394,Harlow,Boulder
+225,8/13/2019,31.574,Harlow,Boulder
+226,8/14/2019,35.864,Harlow,Boulder
+227,8/15/2019,29.752,Harlow,Boulder
+228,8/16/2019,32.704,Harlow,Boulder
+229,8/17/2019,31.472,Harlow,Boulder
+230,8/18/2019,37.055,Harlow,Boulder
+231,8/19/2019,37.604,Harlow,Boulder
+232,8/20/2019,27.272,Harlow,Boulder
+233,8/21/2019,31.37,Harlow,Boulder
+234,8/22/2019,30.659,Harlow,Boulder
+235,8/23/2019,31.574,Harlow,Boulder
+236,8/24/2019,36.837,Harlow,Boulder
+237,8/25/2019,28.258,Harlow,Boulder
+238,8/26/2019,26.195,Harlow,Boulder
+239,8/27/2019,35.222,Harlow,Boulder
+240,8/28/2019,31.88,Harlow,Boulder
+241,8/29/2019,29.452,Harlow,Boulder
+242,8/30/2019,32.807,Harlow,Boulder
+243,8/31/2019,34.058,Harlow,Boulder
+244,9/1/2019,38.268,Harlow,Boulder
+245,9/2/2019,31.268,Harlow,Boulder
+246,9/3/2019,29.053,Harlow,Boulder
+247,9/4/2019,35.435,Harlow,Boulder
+248,9/5/2019,27.567,Harlow,Boulder
+249,9/6/2019,31.983,Harlow,Boulder
+250,9/7/2019,26.977,Harlow,Boulder
+251,9/8/2019,28.853,Harlow,Boulder
+252,9/9/2019,30.457,Harlow,Boulder
+253,9/10/2019,26.195,Harlow,Boulder
+254,9/11/2019,27.075,Harlow,Boulder
+255,9/12/2019,27.468,Harlow,Boulder
+256,9/13/2019,33.535,Harlow,Boulder
+257,9/14/2019,31.166,Harlow,Boulder
+258,9/15/2019,33.014,Harlow,Boulder
+259,9/16/2019,32.291,Harlow,Boulder
+260,9/17/2019,26.781,Harlow,Boulder
+261,9/18/2019,31.064,Harlow,Boulder
+262,9/19/2019,30.154,Harlow,Boulder
+263,9/20/2019,25.61,Harlow,Boulder
+264,9/21/2019,25.708,Harlow,Boulder
+265,9/22/2019,26.977,Harlow,Boulder
+266,9/23/2019,32.291,Harlow,Boulder
+267,9/24/2019,28.655,Harlow,Boulder
+268,9/25/2019,29.953,Harlow,Boulder
+269,9/26/2019,25.902,Harlow,Boulder
+270,9/27/2019,22.717,Harlow,Boulder
+271,9/28/2019,30.558,Harlow,Boulder
+272,9/29/2019,23.292,Harlow,Boulder
+273,9/30/2019,13.076,Harlow,Boulder
+274,10/1/2019,14.804,Harlow,Boulder
+275,10/2/2019,17.57,Harlow,Boulder
+276,10/3/2019,18.901,Harlow,Boulder
+277,10/4/2019,22.046,Harlow,Boulder
+278,10/5/2019,18.901,Harlow,Boulder
+279,10/6/2019,25.708,Harlow,Boulder
+280,10/7/2019,28.953,Harlow,Boulder
+281,10/8/2019,26.39,Harlow,Boulder
+282,10/9/2019,3.155,Harlow,Boulder
+283,10/10/2019,10.161,Harlow,Boulder
+284,10/11/2019,19.662,Harlow,Boulder
+285,10/12/2019,24.931,Harlow,Boulder
+138,5/18/2019,22.142,Fossil Creek,Fort Collins
+139,5/19/2019,30.154,Fossil Creek,Fort Collins
+140,5/20/2019,20.71,Fossil Creek,Fort Collins
+141,5/21/2019,12.207,Fossil Creek,Fort Collins
+142,5/22/2019,13.461,Fossil Creek,Fort Collins
+143,5/23/2019,6.674,Fossil Creek,Fort Collins
+144,5/24/2019,29.953,Fossil Creek,Fort Collins
+145,5/25/2019,28.159,Fossil Creek,Fort Collins
+146,5/26/2019,27.764,Fossil Creek,Fort Collins
+147,5/27/2019,28.06,Fossil Creek,Fort Collins
+148,5/28/2019,14.517,Fossil Creek,Fort Collins
+149,5/29/2019,20.329,Fossil Creek,Fort Collins
+150,5/30/2019,26.781,Fossil Creek,Fort Collins
+151,5/31/2019,28.754,Fossil Creek,Fort Collins
+152,6/1/2019,30.356,Fossil Creek,Fort Collins
+153,6/2/2019,30.356,Fossil Creek,Fort Collins
+154,6/3/2019,28.258,Fossil Creek,Fort Collins
+155,6/4/2019,31.064,Fossil Creek,Fort Collins
+156,6/5/2019,30.558,Fossil Creek,Fort Collins
+157,6/6/2019,33.326,Fossil Creek,Fort Collins
+158,6/7/2019,35.328,Fossil Creek,Fort Collins
+159,6/8/2019,29.853,Fossil Creek,Fort Collins
+160,6/9/2019,26.195,Fossil Creek,Fort Collins
+161,6/10/2019,31.472,Fossil Creek,Fort Collins
+162,6/11/2019,23.581,Fossil Creek,Fort Collins
+163,6/12/2019,29.352,Fossil Creek,Fort Collins
+164,6/13/2019,36.728,Fossil Creek,Fort Collins
+165,6/14/2019,29.053,Fossil Creek,Fort Collins
+166,6/15/2019,30.659,Fossil Creek,Fort Collins
+167,6/16/2019,29.953,Fossil Creek,Fort Collins
+168,6/17/2019,23.292,Fossil Creek,Fort Collins
+169,6/18/2019,17.855,Fossil Creek,Fort Collins
+170,6/19/2019,34.268,Fossil Creek,Fort Collins
+171,6/20/2019,32.807,Fossil Creek,Fort Collins
+172,6/21/2019,18.236,Fossil Creek,Fort Collins
+173,6/22/2019,16.332,Fossil Creek,Fort Collins
+174,6/23/2019,19.472,Fossil Creek,Fort Collins
+175,6/24/2019,29.352,Fossil Creek,Fort Collins
+176,6/25/2019,30.054,Fossil Creek,Fort Collins
+177,6/26/2019,37.935,Fossil Creek,Fort Collins
+178,6/27/2019,40.3,Fossil Creek,Fort Collins
+179,6/28/2019,40.761,Fossil Creek,Fort Collins
+180,6/29/2019,39.05,Fossil Creek,Fort Collins
+181,6/30/2019,37.055,Fossil Creek,Fort Collins
+182,7/1/2019,32.394,Fossil Creek,Fort Collins
+183,7/2/2019,33.326,Fossil Creek,Fort Collins
+184,7/3/2019,38.49,Fossil Creek,Fort Collins
+185,7/4/2019,30.76,Fossil Creek,Fort Collins
+186,7/5/2019,32.911,Fossil Creek,Fort Collins
+187,7/6/2019,28.06,Fossil Creek,Fort Collins
+188,7/7/2019,35.222,Fossil Creek,Fort Collins
+189,7/8/2019,31.983,Fossil Creek,Fort Collins
+190,7/9/2019,35.864,Fossil Creek,Fort Collins
+191,7/10/2019,34.796,Fossil Creek,Fort Collins
+192,7/11/2019,40.992,Fossil Creek,Fort Collins
+193,7/12/2019,38.49,Fossil Creek,Fort Collins
+194,7/13/2019,37.055,Fossil Creek,Fort Collins
+195,7/14/2019,36.946,Fossil Creek,Fort Collins
+196,7/15/2019,31.268,Fossil Creek,Fort Collins
+197,7/16/2019,34.585,Fossil Creek,Fort Collins
+198,7/17/2019,38.938,Fossil Creek,Fort Collins
+199,7/18/2019,42.878,Fossil Creek,Fort Collins
+200,7/19/2019,42.878,Fossil Creek,Fort Collins
+201,7/20/2019,30.659,Fossil Creek,Fort Collins
+202,7/21/2019,30.76,Fossil Creek,Fort Collins
+203,7/22/2019,30.76,Fossil Creek,Fort Collins
+204,7/23/2019,37.384,Fossil Creek,Fort Collins
+205,7/24/2019,37.494,Fossil Creek,Fort Collins
+206,7/25/2019,30.659,Fossil Creek,Fort Collins
+207,7/26/2019,34.796,Fossil Creek,Fort Collins
+208,7/27/2019,32.6,Fossil Creek,Fort Collins
+209,7/28/2019,30.963,Fossil Creek,Fort Collins
+210,7/29/2019,38.046,Fossil Creek,Fort Collins
+211,7/30/2019,33.222,Fossil Creek,Fort Collins
+212,7/31/2019,33.743,Fossil Creek,Fort Collins
+213,8/1/2019,30.054,Fossil Creek,Fort Collins
+214,8/2/2019,33.639,Fossil Creek,Fort Collins
+215,8/3/2019,37.714,Fossil Creek,Fort Collins
+216,8/4/2019,34.585,Fossil Creek,Fort Collins
+217,8/5/2019,32.911,Fossil Creek,Fort Collins
+218,8/6/2019,37.055,Fossil Creek,Fort Collins
+219,8/7/2019,31.676,Fossil Creek,Fort Collins
+220,8/8/2019,29.652,Fossil Creek,Fort Collins
+221,8/9/2019,35.435,Fossil Creek,Fort Collins
+222,8/10/2019,31.574,Fossil Creek,Fort Collins
+223,8/11/2019,27.272,Fossil Creek,Fort Collins
+224,8/12/2019,33.014,Fossil Creek,Fort Collins
+225,8/13/2019,32.497,Fossil Creek,Fort Collins
+226,8/14/2019,31.064,Fossil Creek,Fort Collins
+227,8/15/2019,36.295,Fossil Creek,Fort Collins
+228,8/16/2019,26.195,Fossil Creek,Fort Collins
+229,8/17/2019,33.639,Fossil Creek,Fort Collins
+230,8/18/2019,30.659,Fossil Creek,Fort Collins
+231,8/19/2019,37.604,Fossil Creek,Fort Collins
+232,8/20/2019,38.046,Fossil Creek,Fort Collins
+233,8/21/2019,27.862,Fossil Creek,Fort Collins
+234,8/22/2019,32.394,Fossil Creek,Fort Collins
+235,8/23/2019,29.752,Fossil Creek,Fort Collins
+236,8/24/2019,31.983,Fossil Creek,Fort Collins
+237,8/25/2019,39.957,Fossil Creek,Fort Collins
+238,8/26/2019,26.977,Fossil Creek,Fort Collins
+239,8/27/2019,26.195,Fossil Creek,Fort Collins
+240,8/28/2019,43.359,Fossil Creek,Fort Collins
+241,8/29/2019,37.384,Fossil Creek,Fort Collins
+242,8/30/2019,37.165,Fossil Creek,Fort Collins
+243,8/31/2019,35.649,Fossil Creek,Fort Collins
+244,9/1/2019,44.457,Fossil Creek,Fort Collins
+245,9/2/2019,42.878,Fossil Creek,Fort Collins
+246,9/3/2019,35.971,Fossil Creek,Fort Collins
+247,9/4/2019,33.848,Fossil Creek,Fort Collins
+248,9/5/2019,34.691,Fossil Creek,Fort Collins
+249,9/6/2019,24.448,Fossil Creek,Fort Collins
+250,9/7/2019,40.53,Fossil Creek,Fort Collins
+251,9/8/2019,24.448,Fossil Creek,Fort Collins
+252,9/9/2019,37.055,Fossil Creek,Fort Collins
+253,9/10/2019,35.435,Fossil Creek,Fort Collins
+254,9/11/2019,22.238,Fossil Creek,Fort Collins
+255,9/12/2019,33.535,Fossil Creek,Fort Collins
+256,9/13/2019,34.058,Fossil Creek,Fort Collins
+257,9/14/2019,39.05,Fossil Creek,Fort Collins
+258,9/15/2019,33.222,Fossil Creek,Fort Collins
+259,9/16/2019,39.163,Fossil Creek,Fort Collins
+260,9/17/2019,38.046,Fossil Creek,Fort Collins
+261,9/18/2019,34.268,Fossil Creek,Fort Collins
+262,9/19/2019,38.046,Fossil Creek,Fort Collins
+263,9/20/2019,35.222,Fossil Creek,Fort Collins
+264,9/21/2019,26.292,Fossil Creek,Fort Collins
+265,9/22/2019,31.472,Fossil Creek,Fort Collins
+266,9/23/2019,26.097,Fossil Creek,Fort Collins
+267,9/24/2019,38.714,Fossil Creek,Fort Collins
+268,9/25/2019,31.88,Fossil Creek,Fort Collins
+269,9/26/2019,35.756,Fossil Creek,Fort Collins
+270,9/27/2019,22.717,Fossil Creek,Fort Collins
+271,9/28/2019,30.054,Fossil Creek,Fort Collins
+272,9/29/2019,40.53,Fossil Creek,Fort Collins
+273,9/30/2019,23.677,Fossil Creek,Fort Collins
+274,10/1/2019,12.401,Fossil Creek,Fort Collins
+275,10/2/2019,21.187,Fossil Creek,Fort Collins
+276,10/3/2019,27.862,Fossil Creek,Fort Collins
+277,10/4/2019,31.676,Fossil Creek,Fort Collins
+278,10/5/2019,27.37,Fossil Creek,Fort Collins
+279,10/6/2019,26.488,Fossil Creek,Fort Collins
+280,10/7/2019,33.118,Fossil Creek,Fort Collins
+281,10/8/2019,34.058,Fossil Creek,Fort Collins
+282,10/9/2019,32.807,Fossil Creek,Fort Collins
+283,10/10/2019,2.837,Fossil Creek,Fort Collins
+284,10/11/2019,16.237,Fossil Creek,Fort Collins
+285,10/12/2019,27.075,Fossil Creek,Fort Collins
+286,10/13/2019,32.497,Fossil Creek,Fort Collins
+139,5/19/2019,18.521,Martinez,Fort Collins
+140,5/20/2019,17.855,Martinez,Fort Collins
+141,5/21/2019,18.616,Martinez,Fort Collins
+142,5/22/2019,18.236,Martinez,Fort Collins
+143,5/23/2019,22.717,Martinez,Fort Collins
+144,5/24/2019,23.869,Martinez,Fort Collins
+145,5/25/2019,22.525,Martinez,Fort Collins
+146,5/26/2019,20.424,Martinez,Fort Collins
+147,5/27/2019,11.722,Martinez,Fort Collins
+148,5/28/2019,18.045,Martinez,Fort Collins
+149,5/29/2019,23.292,Martinez,Fort Collins
+150,5/30/2019,23.773,Martinez,Fort Collins
+151,5/31/2019,24.738,Martinez,Fort Collins
+152,6/1/2019,25.028,Martinez,Fort Collins
+153,6/2/2019,25.125,Martinez,Fort Collins
+154,6/3/2019,26.292,Martinez,Fort Collins
+155,6/4/2019,26.097,Martinez,Fort Collins
+156,6/5/2019,26.781,Martinez,Fort Collins
+157,6/6/2019,28.357,Martinez,Fort Collins
+158,6/7/2019,26.585,Martinez,Fort Collins
+159,6/8/2019,21.282,Martinez,Fort Collins
+160,6/9/2019,27.173,Martinez,Fort Collins
+161,6/10/2019,23.388,Martinez,Fort Collins
+162,6/11/2019,23.388,Martinez,Fort Collins
+163,6/12/2019,28.853,Martinez,Fort Collins
+164,6/13/2019,26.488,Martinez,Fort Collins
+165,6/14/2019,27.862,Martinez,Fort Collins
+166,6/15/2019,21.951,Martinez,Fort Collins
+167,6/16/2019,20.615,Martinez,Fort Collins
+168,6/17/2019,17.094,Martinez,Fort Collins
+169,6/18/2019,26.683,Martinez,Fort Collins
+170,6/19/2019,25.513,Martinez,Fort Collins
+171,6/20/2019,15.091,Martinez,Fort Collins
+172,6/21/2019,14.038,Martinez,Fort Collins
+173,6/22/2019,18.616,Martinez,Fort Collins
+174,6/23/2019,28.258,Martinez,Fort Collins
+175,6/24/2019,27.665,Martinez,Fort Collins
+176,6/25/2019,30.76,Martinez,Fort Collins
+177,6/26/2019,29.152,Martinez,Fort Collins
+178,6/27/2019,27.173,Martinez,Fort Collins
+179,6/28/2019,28.357,Martinez,Fort Collins
+180,6/29/2019,23.677,Martinez,Fort Collins
+181,6/30/2019,22.717,Martinez,Fort Collins
+182,7/1/2019,27.567,Martinez,Fort Collins
+183,7/2/2019,26.585,Martinez,Fort Collins
+184,7/3/2019,28.06,Martinez,Fort Collins
+185,7/4/2019,25.902,Martinez,Fort Collins
+186,7/5/2019,24.062,Martinez,Fort Collins
+187,7/6/2019,28.853,Martinez,Fort Collins
+188,7/7/2019,23.388,Martinez,Fort Collins
+189,7/8/2019,32.291,Martinez,Fort Collins
+190,7/9/2019,27.961,Martinez,Fort Collins
+191,7/10/2019,35.328,Martinez,Fort Collins
+192,7/11/2019,29.452,Martinez,Fort Collins
+193,7/12/2019,31.472,Martinez,Fort Collins
+194,7/13/2019,33.326,Martinez,Fort Collins
+195,7/14/2019,28.754,Martinez,Fort Collins
+196,7/15/2019,30.356,Martinez,Fort Collins
+197,7/16/2019,33.43,Martinez,Fort Collins
+198,7/17/2019,34.796,Martinez,Fort Collins
+199,7/18/2019,35.864,Martinez,Fort Collins
+200,7/19/2019,23.581,Martinez,Fort Collins
+201,7/20/2019,22.238,Martinez,Fort Collins
+202,7/21/2019,23.966,Martinez,Fort Collins
+203,7/22/2019,29.853,Martinez,Fort Collins
+204,7/23/2019,32.291,Martinez,Fort Collins
+205,7/24/2019,29.652,Martinez,Fort Collins
+206,7/25/2019,28.655,Martinez,Fort Collins
+207,7/26/2019,28.357,Martinez,Fort Collins
+208,7/27/2019,32.704,Martinez,Fort Collins
+209,7/28/2019,32.497,Martinez,Fort Collins
+210,7/29/2019,27.862,Martinez,Fort Collins
+211,7/30/2019,31.166,Martinez,Fort Collins
+212,7/31/2019,25.222,Martinez,Fort Collins
+213,8/1/2019,27.961,Martinez,Fort Collins
+214,8/2/2019,33.743,Martinez,Fort Collins
+215,8/3/2019,26.097,Martinez,Fort Collins
+216,8/4/2019,30.054,Martinez,Fort Collins
+217,8/5/2019,29.352,Martinez,Fort Collins
+218,8/6/2019,27.075,Martinez,Fort Collins
+219,8/7/2019,23.677,Martinez,Fort Collins
+220,8/8/2019,32.188,Martinez,Fort Collins
+221,8/9/2019,25.61,Martinez,Fort Collins
+222,8/10/2019,25.222,Martinez,Fort Collins
+223,8/11/2019,31.472,Martinez,Fort Collins
+224,8/12/2019,29.452,Martinez,Fort Collins
+225,8/13/2019,28.655,Martinez,Fort Collins
+226,8/14/2019,31.064,Martinez,Fort Collins
+227,8/15/2019,23.292,Martinez,Fort Collins
+228,8/16/2019,28.06,Martinez,Fort Collins
+229,8/17/2019,25.902,Martinez,Fort Collins
+230,8/18/2019,32.6,Martinez,Fort Collins
+231,8/19/2019,34.374,Martinez,Fort Collins
+232,8/20/2019,25.902,Martinez,Fort Collins
+233,8/21/2019,28.655,Martinez,Fort Collins
+234,8/22/2019,29.552,Martinez,Fort Collins
+235,8/23/2019,31.472,Martinez,Fort Collins
+236,8/24/2019,33.326,Martinez,Fort Collins
+237,8/25/2019,25.805,Martinez,Fort Collins
+238,8/26/2019,24.351,Martinez,Fort Collins
+239,8/27/2019,30.76,Martinez,Fort Collins
+240,8/28/2019,29.853,Martinez,Fort Collins
+241,8/29/2019,26.195,Martinez,Fort Collins
+242,8/30/2019,30.255,Martinez,Fort Collins
+243,8/31/2019,33.953,Martinez,Fort Collins
+244,9/1/2019,33.743,Martinez,Fort Collins
+245,9/2/2019,28.655,Martinez,Fort Collins
+246,9/3/2019,27.961,Martinez,Fort Collins
+247,9/4/2019,33.014,Martinez,Fort Collins
+248,9/5/2019,24.641,Martinez,Fort Collins
+249,9/6/2019,31.37,Martinez,Fort Collins
+250,9/7/2019,21.569,Martinez,Fort Collins
+251,9/8/2019,21.76,Martinez,Fort Collins
+252,9/9/2019,28.357,Martinez,Fort Collins
+253,9/10/2019,22.429,Martinez,Fort Collins
+254,9/11/2019,26.097,Martinez,Fort Collins
+255,9/12/2019,27.567,Martinez,Fort Collins
+256,9/13/2019,29.853,Martinez,Fort Collins
+257,9/14/2019,29.853,Martinez,Fort Collins
+258,9/15/2019,29.552,Martinez,Fort Collins
+259,9/16/2019,29.953,Martinez,Fort Collins
+260,9/17/2019,25.222,Martinez,Fort Collins
+261,9/18/2019,28.853,Martinez,Fort Collins
+262,9/19/2019,30.054,Martinez,Fort Collins
+263,9/20/2019,22.333,Martinez,Fort Collins
+264,9/21/2019,25.125,Martinez,Fort Collins
+265,9/22/2019,26,Martinez,Fort Collins
+266,9/23/2019,31.37,Martinez,Fort Collins
+267,9/24/2019,25.416,Martinez,Fort Collins
+268,9/25/2019,28.159,Martinez,Fort Collins
+269,9/26/2019,18.14,Martinez,Fort Collins
+270,9/27/2019,26.683,Martinez,Fort Collins
+271,9/28/2019,32.807,Martinez,Fort Collins
+272,9/29/2019,22.429,Martinez,Fort Collins
+273,9/30/2019,13.173,Martinez,Fort Collins
+274,10/1/2019,16.903,Martinez,Fort Collins
+275,10/2/2019,24.255,Martinez,Fort Collins
+276,10/3/2019,26.585,Martinez,Fort Collins
+277,10/4/2019,23.966,Martinez,Fort Collins
+278,10/5/2019,25.125,Martinez,Fort Collins
+279,10/6/2019,27.862,Martinez,Fort Collins
+280,10/7/2019,29.953,Martinez,Fort Collins
+281,10/8/2019,27.567,Martinez,Fort Collins
+282,10/9/2019,4.623,Martinez,Fort Collins
+283,10/10/2019,12.207,Martinez,Fort Collins
+284,10/11/2019,18.616,Martinez,Fort Collins
+285,10/12/2019,23.388,Martinez,Fort Collins
+286,10/13/2019,24.448,Martinez,Fort Collins
+137,5/17/2019,27.272,Troutman,Fort Collins
+138,5/18/2019,10.455,Troutman,Fort Collins
+139,5/19/2019,5.244,Troutman,Fort Collins
+140,5/20/2019,5.962,Troutman,Fort Collins
+141,5/21/2019,10.259,Troutman,Fort Collins
+142,5/22/2019,6.573,Troutman,Fort Collins
+143,5/23/2019,21.091,Troutman,Fort Collins
+144,5/24/2019,22.525,Troutman,Fort Collins
+145,5/25/2019,22.525,Troutman,Fort Collins
+146,5/26/2019,19.092,Troutman,Fort Collins
+147,5/27/2019,13.942,Troutman,Fort Collins
+148,5/28/2019,18.331,Troutman,Fort Collins
+149,5/29/2019,22.142,Troutman,Fort Collins
+150,5/30/2019,24.738,Troutman,Fort Collins
+151,5/31/2019,24.448,Troutman,Fort Collins
+152,6/1/2019,24.158,Troutman,Fort Collins
+153,6/2/2019,26.292,Troutman,Fort Collins
+154,6/3/2019,26.781,Troutman,Fort Collins
+155,6/4/2019,27.075,Troutman,Fort Collins
+156,6/5/2019,27.764,Troutman,Fort Collins
+157,6/6/2019,29.752,Troutman,Fort Collins
+158,6/7/2019,26.683,Troutman,Fort Collins
+159,6/8/2019,19.758,Troutman,Fort Collins
+160,6/9/2019,25.319,Troutman,Fort Collins
+161,6/10/2019,23.292,Troutman,Fort Collins
+162,6/11/2019,24.738,Troutman,Fort Collins
+163,6/12/2019,29.252,Troutman,Fort Collins
+164,6/13/2019,26.585,Troutman,Fort Collins
+165,6/14/2019,25.125,Troutman,Fort Collins
+166,6/15/2019,22.908,Troutman,Fort Collins
+167,6/16/2019,21.76,Troutman,Fort Collins
+168,6/17/2019,18.045,Troutman,Fort Collins
+169,6/18/2019,26.977,Troutman,Fort Collins
+170,6/19/2019,26.585,Troutman,Fort Collins
+171,6/20/2019,18.901,Troutman,Fort Collins
+172,6/21/2019,13.846,Troutman,Fort Collins
+173,6/22/2019,17.76,Troutman,Fort Collins
+174,6/23/2019,25.902,Troutman,Fort Collins
+175,6/24/2019,26.488,Troutman,Fort Collins
+176,6/25/2019,30.558,Troutman,Fort Collins
+177,6/26/2019,31.37,Troutman,Fort Collins
+178,6/27/2019,34.374,Troutman,Fort Collins
+179,6/28/2019,32.6,Troutman,Fort Collins
+180,6/29/2019,31.268,Troutman,Fort Collins
+181,6/30/2019,29.853,Troutman,Fort Collins
+182,7/1/2019,28.258,Troutman,Fort Collins
+183,7/2/2019,31.88,Troutman,Fort Collins
+184,7/3/2019,25.805,Troutman,Fort Collins
+185,7/4/2019,26,Troutman,Fort Collins
+186,7/5/2019,24.835,Troutman,Fort Collins
+187,7/6/2019,29.853,Troutman,Fort Collins
+188,7/7/2019,26.39,Troutman,Fort Collins
+189,7/8/2019,33.535,Troutman,Fort Collins
+190,7/9/2019,29.452,Troutman,Fort Collins
+191,7/10/2019,35.649,Troutman,Fort Collins
+192,7/11/2019,30.862,Troutman,Fort Collins
+193,7/12/2019,29.953,Troutman,Fort Collins
+194,7/13/2019,30.356,Troutman,Fort Collins
+195,7/14/2019,29.452,Troutman,Fort Collins
+196,7/15/2019,31.472,Troutman,Fort Collins
+197,7/16/2019,35.115,Troutman,Fort Collins
+198,7/17/2019,37.494,Troutman,Fort Collins
+199,7/18/2019,37.935,Troutman,Fort Collins
+200,7/19/2019,27.567,Troutman,Fort Collins
+201,7/20/2019,26.097,Troutman,Fort Collins
+202,7/21/2019,26.879,Troutman,Fort Collins
+203,7/22/2019,32.704,Troutman,Fort Collins
+204,7/23/2019,32.704,Troutman,Fort Collins
+205,7/24/2019,26.977,Troutman,Fort Collins
+206,7/25/2019,30.356,Troutman,Fort Collins
+207,7/26/2019,26.585,Troutman,Fort Collins
+208,7/27/2019,31.064,Troutman,Fort Collins
+209,7/28/2019,32.394,Troutman,Fort Collins
+210,7/29/2019,29.552,Troutman,Fort Collins
+211,7/30/2019,31.166,Troutman,Fort Collins
+212,7/31/2019,25.319,Troutman,Fort Collins
+213,8/1/2019,31.064,Troutman,Fort Collins
+214,8/2/2019,32.497,Troutman,Fort Collins
+215,8/3/2019,29.652,Troutman,Fort Collins
+216,8/4/2019,29.752,Troutman,Fort Collins
+217,8/5/2019,31.983,Troutman,Fort Collins
+218,8/6/2019,27.862,Troutman,Fort Collins
+219,8/7/2019,25.805,Troutman,Fort Collins
+220,8/8/2019,32.291,Troutman,Fort Collins
+221,8/9/2019,26.781,Troutman,Fort Collins
+222,8/10/2019,27.567,Troutman,Fort Collins
+223,8/11/2019,30.558,Troutman,Fort Collins
+224,8/12/2019,29.652,Troutman,Fort Collins
+225,8/13/2019,29.752,Troutman,Fort Collins
+226,8/14/2019,30.054,Troutman,Fort Collins
+227,8/15/2019,26.879,Troutman,Fort Collins
+228,8/16/2019,28.456,Troutman,Fort Collins
+229,8/17/2019,28.258,Troutman,Fort Collins
+230,8/18/2019,36.295,Troutman,Fort Collins
+231,8/19/2019,35.328,Troutman,Fort Collins
+232,8/20/2019,28.06,Troutman,Fort Collins
+233,8/21/2019,27.567,Troutman,Fort Collins
+234,8/22/2019,28.953,Troutman,Fort Collins
+235,8/23/2019,29.352,Troutman,Fort Collins
+236,8/24/2019,32.394,Troutman,Fort Collins
+237,8/25/2019,25.61,Troutman,Fort Collins
+238,8/26/2019,23.966,Troutman,Fort Collins
+239,8/27/2019,31.778,Troutman,Fort Collins
+240,8/28/2019,30.054,Troutman,Fort Collins
+241,8/29/2019,26.781,Troutman,Fort Collins
+242,8/30/2019,29.053,Troutman,Fort Collins
+243,8/31/2019,34.374,Troutman,Fort Collins
+244,9/1/2019,34.374,Troutman,Fort Collins
+245,9/2/2019,27.665,Troutman,Fort Collins
+246,9/3/2019,28.853,Troutman,Fort Collins
+247,9/4/2019,31.676,Troutman,Fort Collins
+248,9/5/2019,26.292,Troutman,Fort Collins
+249,9/6/2019,29.352,Troutman,Fort Collins
+250,9/7/2019,22.908,Troutman,Fort Collins
+251,9/8/2019,26.097,Troutman,Fort Collins
+252,9/9/2019,26.292,Troutman,Fort Collins
+253,9/10/2019,22.717,Troutman,Fort Collins
+254,9/11/2019,23.004,Troutman,Fort Collins
+255,9/12/2019,24.545,Troutman,Fort Collins
+256,9/13/2019,28.754,Troutman,Fort Collins
+257,9/14/2019,29.152,Troutman,Fort Collins
+258,9/15/2019,30.054,Troutman,Fort Collins
+259,9/16/2019,28.159,Troutman,Fort Collins
+260,9/17/2019,25.222,Troutman,Fort Collins
+261,9/18/2019,28.456,Troutman,Fort Collins
+262,9/19/2019,27.37,Troutman,Fort Collins
+263,9/20/2019,21.855,Troutman,Fort Collins
+264,9/21/2019,22.621,Troutman,Fort Collins
+265,9/22/2019,25.416,Troutman,Fort Collins
+266,9/23/2019,28.06,Troutman,Fort Collins
+267,9/24/2019,24.448,Troutman,Fort Collins
+268,9/25/2019,24.835,Troutman,Fort Collins
+269,9/26/2019,21.473,Troutman,Fort Collins
+270,9/27/2019,20.805,Troutman,Fort Collins
+271,9/28/2019,29.953,Troutman,Fort Collins
+272,9/29/2019,24.351,Troutman,Fort Collins
+273,9/30/2019,10.944,Troutman,Fort Collins
+274,10/1/2019,12.401,Troutman,Fort Collins
+275,10/2/2019,17.284,Troutman,Fort Collins
+276,10/3/2019,20.901,Troutman,Fort Collins
+277,10/4/2019,18.426,Troutman,Fort Collins
+278,10/5/2019,16.903,Troutman,Fort Collins
+279,10/6/2019,21.473,Troutman,Fort Collins
+280,10/7/2019,25.125,Troutman,Fort Collins
+281,10/8/2019,25.319,Troutman,Fort Collins
+282,10/9/2019,1.33,Troutman,Fort Collins
+283,10/10/2019,10.748,Troutman,Fort Collins
+284,10/11/2019,17.95,Troutman,Fort Collins
+285,10/12/2019,23.292,Troutman,Fort Collins
+286,10/13/2019,23.869,Troutman,Fort Collins
+137,5/17/2019,24.545,Cemetary,Golden
+138,5/18/2019,15.76,Cemetary,Golden
+139,5/19/2019,6.877,Cemetary,Golden
+140,5/20/2019,3.155,Cemetary,Golden
+141,5/21/2019,6.573,Cemetary,Golden
+142,5/22/2019,6.471,Cemetary,Golden
+143,5/23/2019,23.196,Cemetary,Golden
+144,5/24/2019,25.708,Cemetary,Golden
+145,5/25/2019,20.519,Cemetary,Golden
+146,5/26/2019,20.424,Cemetary,Golden
+147,5/27/2019,13.461,Cemetary,Golden
+148,5/28/2019,16.523,Cemetary,Golden
+149,5/29/2019,22.046,Cemetary,Golden
+150,5/30/2019,23.677,Cemetary,Golden
+151,5/31/2019,23.677,Cemetary,Golden
+152,6/1/2019,26.879,Cemetary,Golden
+153,6/2/2019,25.125,Cemetary,Golden
+154,6/3/2019,25.319,Cemetary,Golden
+155,6/4/2019,24.545,Cemetary,Golden
+156,6/5/2019,29.853,Cemetary,Golden
+157,6/6/2019,27.37,Cemetary,Golden
+158,6/7/2019,26.879,Cemetary,Golden
+159,6/8/2019,19.567,Cemetary,Golden
+160,6/9/2019,28.655,Cemetary,Golden
+161,6/10/2019,25.222,Cemetary,Golden
+162,6/11/2019,24.158,Cemetary,Golden
+163,6/12/2019,28.853,Cemetary,Golden
+164,6/13/2019,27.764,Cemetary,Golden
+165,6/14/2019,24.448,Cemetary,Golden
+166,6/15/2019,25.125,Cemetary,Golden
+167,6/16/2019,20.615,Cemetary,Golden
+168,6/17/2019,19.662,Cemetary,Golden
+169,6/18/2019,26.585,Cemetary,Golden
+170,6/19/2019,28.655,Cemetary,Golden
+171,6/20/2019,19.377,Cemetary,Golden
+172,6/21/2019,12.497,Cemetary,Golden
+173,6/22/2019,19.092,Cemetary,Golden
+174,6/23/2019,30.255,Cemetary,Golden
+175,6/24/2019,27.665,Cemetary,Golden
+176,6/25/2019,30.659,Cemetary,Golden
+177,6/26/2019,33.848,Cemetary,Golden
+178,6/27/2019,36.946,Cemetary,Golden
+179,6/28/2019,32.704,Cemetary,Golden
+180,6/29/2019,31.166,Cemetary,Golden
+181,6/30/2019,27.665,Cemetary,Golden
+182,7/1/2019,27.764,Cemetary,Golden
+183,7/2/2019,33.118,Cemetary,Golden
+184,7/3/2019,29.352,Cemetary,Golden
+185,7/4/2019,26.879,Cemetary,Golden
+186,7/5/2019,29.652,Cemetary,Golden
+187,7/6/2019,31.983,Cemetary,Golden
+188,7/7/2019,29.552,Cemetary,Golden
+189,7/8/2019,34.163,Cemetary,Golden
+190,7/9/2019,33.535,Cemetary,Golden
+191,7/10/2019,35.864,Cemetary,Golden
+192,7/11/2019,33.848,Cemetary,Golden
+193,7/12/2019,34.691,Cemetary,Golden
+194,7/13/2019,29.452,Cemetary,Golden
+195,7/14/2019,32.497,Cemetary,Golden
+196,7/15/2019,35.435,Cemetary,Golden
+197,7/16/2019,35.864,Cemetary,Golden
+198,7/17/2019,40.185,Cemetary,Golden
+199,7/18/2019,40.992,Cemetary,Golden
+200,7/19/2019,30.558,Cemetary,Golden
+201,7/20/2019,30.054,Cemetary,Golden
+202,7/21/2019,22.908,Cemetary,Golden
+203,7/22/2019,35.115,Cemetary,Golden
+204,7/23/2019,33.43,Cemetary,Golden
+205,7/24/2019,28.456,Cemetary,Golden
+206,7/25/2019,31.778,Cemetary,Golden
+207,7/26/2019,29.252,Cemetary,Golden
+208,7/27/2019,35.435,Cemetary,Golden
+209,7/28/2019,34.058,Cemetary,Golden
+210,7/29/2019,32.6,Cemetary,Golden
+211,7/30/2019,31.88,Cemetary,Golden
+212,7/31/2019,26.488,Cemetary,Golden
+213,8/1/2019,33.535,Cemetary,Golden
+214,8/2/2019,38.602,Cemetary,Golden
+215,8/3/2019,31.268,Cemetary,Golden
+216,8/4/2019,32.807,Cemetary,Golden
+217,8/5/2019,36.62,Cemetary,Golden
+218,8/6/2019,29.152,Cemetary,Golden
+219,8/7/2019,26.585,Cemetary,Golden
+220,8/8/2019,32.911,Cemetary,Golden
+221,8/9/2019,30.154,Cemetary,Golden
+222,8/10/2019,30.76,Cemetary,Golden
+223,8/11/2019,33.639,Cemetary,Golden
+224,8/12/2019,34.058,Cemetary,Golden
+225,8/13/2019,34.268,Cemetary,Golden
+226,8/14/2019,37.384,Cemetary,Golden
+227,8/15/2019,31.472,Cemetary,Golden
+228,8/16/2019,30.659,Cemetary,Golden
+229,8/17/2019,36.295,Cemetary,Golden
+230,8/18/2019,34.479,Cemetary,Golden
+231,8/19/2019,38.046,Cemetary,Golden
+232,8/20/2019,26.292,Cemetary,Golden
+233,8/21/2019,27.961,Cemetary,Golden
+234,8/22/2019,28.853,Cemetary,Golden
+235,8/23/2019,29.252,Cemetary,Golden
+236,8/24/2019,35.222,Cemetary,Golden
+237,8/25/2019,29.152,Cemetary,Golden
+238,8/26/2019,28.258,Cemetary,Golden
+239,8/27/2019,36.187,Cemetary,Golden
+240,8/28/2019,30.457,Cemetary,Golden
+241,8/29/2019,31.574,Cemetary,Golden
+242,8/30/2019,35.435,Cemetary,Golden
+243,8/31/2019,36.079,Cemetary,Golden
+244,9/1/2019,38.602,Cemetary,Golden
+245,9/2/2019,28.555,Cemetary,Golden
+246,9/3/2019,29.752,Cemetary,Golden
+247,9/4/2019,33.535,Cemetary,Golden
+248,9/5/2019,26.781,Cemetary,Golden
+249,9/6/2019,30.659,Cemetary,Golden
+250,9/7/2019,21.473,Cemetary,Golden
+251,9/8/2019,31.268,Cemetary,Golden
+252,9/9/2019,31.778,Cemetary,Golden
+253,9/10/2019,25.125,Cemetary,Golden
+254,9/11/2019,29.352,Cemetary,Golden
+255,9/12/2019,31.574,Cemetary,Golden
+256,9/13/2019,37.165,Cemetary,Golden
+257,9/14/2019,31.472,Cemetary,Golden
+258,9/15/2019,30.356,Cemetary,Golden
+259,9/16/2019,29.252,Cemetary,Golden
+260,9/17/2019,30.862,Cemetary,Golden
+261,9/18/2019,30.862,Cemetary,Golden
+262,9/19/2019,34.479,Cemetary,Golden
+263,9/20/2019,26.39,Cemetary,Golden
+264,9/21/2019,29.053,Cemetary,Golden
+265,9/22/2019,25.416,Cemetary,Golden
+266,9/23/2019,34.691,Cemetary,Golden
+267,9/24/2019,33.953,Cemetary,Golden
+268,9/25/2019,31.064,Cemetary,Golden
+269,9/26/2019,27.272,Cemetary,Golden
+270,9/27/2019,28.853,Cemetary,Golden
+271,9/28/2019,33.743,Cemetary,Golden
+272,9/29/2019,26.683,Cemetary,Golden
+273,9/30/2019,12.207,Cemetary,Golden
+274,10/1/2019,19.187,Cemetary,Golden
+275,10/2/2019,22.333,Cemetary,Golden
+276,10/3/2019,26.488,Cemetary,Golden
+277,10/4/2019,25.513,Cemetary,Golden
+278,10/5/2019,21.378,Cemetary,Golden
+279,10/6/2019,30.054,Cemetary,Golden
+280,10/7/2019,31.574,Cemetary,Golden
+281,10/8/2019,25.805,Cemetary,Golden
+282,10/9/2019,1.439,Cemetary,Golden
+283,10/10/2019,11.431,Cemetary,Golden
+284,10/11/2019,22.812,Cemetary,Golden
+285,10/12/2019,25.125,Cemetary,Golden
+286,10/13/2019,19.758,Cemetary,Golden
+137,5/17/2019,25.902,Forestry,Golden
+138,5/18/2019,15.855,Forestry,Golden
+139,5/19/2019,6.166,Forestry,Golden
+140,5/20/2019,6.268,Forestry,Golden
+141,5/21/2019,7.682,Forestry,Golden
+142,5/22/2019,5.86,Forestry,Golden
+143,5/23/2019,22.238,Forestry,Golden
+144,5/24/2019,24.545,Forestry,Golden
+145,5/25/2019,24.641,Forestry,Golden
+146,5/26/2019,18.236,Forestry,Golden
+147,5/27/2019,15.569,Forestry,Golden
+148,5/28/2019,16.618,Forestry,Golden
+149,5/29/2019,24.062,Forestry,Golden
+150,5/30/2019,29.953,Forestry,Golden
+151,5/31/2019,28.06,Forestry,Golden
+152,6/1/2019,26.292,Forestry,Golden
+153,6/2/2019,26.585,Forestry,Golden
+154,6/3/2019,28.853,Forestry,Golden
+155,6/4/2019,27.075,Forestry,Golden
+156,6/5/2019,27.468,Forestry,Golden
+157,6/6/2019,30.356,Forestry,Golden
+158,6/7/2019,28.953,Forestry,Golden
+159,6/8/2019,18.616,Forestry,Golden
+160,6/9/2019,26.977,Forestry,Golden
+161,6/10/2019,28.853,Forestry,Golden
+162,6/11/2019,24.255,Forestry,Golden
+163,6/12/2019,28.754,Forestry,Golden
+164,6/13/2019,28.754,Forestry,Golden
+165,6/14/2019,27.173,Forestry,Golden
+166,6/15/2019,26.292,Forestry,Golden
+167,6/16/2019,20.805,Forestry,Golden
+168,6/17/2019,21.187,Forestry,Golden
+169,6/18/2019,27.37,Forestry,Golden
+170,6/19/2019,29.152,Forestry,Golden
+171,6/20/2019,21.378,Forestry,Golden
+172,6/21/2019,12.69,Forestry,Golden
+173,6/22/2019,18.521,Forestry,Golden
+174,6/23/2019,28.754,Forestry,Golden
+175,6/24/2019,27.173,Forestry,Golden
+176,6/25/2019,32.6,Forestry,Golden
+177,6/26/2019,31.983,Forestry,Golden
+178,6/27/2019,35.971,Forestry,Golden
+179,6/28/2019,33.639,Forestry,Golden
+180,6/29/2019,34.058,Forestry,Golden
+181,6/30/2019,28.655,Forestry,Golden
+182,7/1/2019,29.552,Forestry,Golden
+183,7/2/2019,32.394,Forestry,Golden
+184,7/3/2019,28.159,Forestry,Golden
+185,7/4/2019,28.555,Forestry,Golden
+186,7/5/2019,27.665,Forestry,Golden
+187,7/6/2019,30.963,Forestry,Golden
+188,7/7/2019,29.452,Forestry,Golden
+189,7/8/2019,33.535,Forestry,Golden
+190,7/9/2019,31.472,Forestry,Golden
+191,7/10/2019,35.649,Forestry,Golden
+192,7/11/2019,36.187,Forestry,Golden
+193,7/12/2019,34.268,Forestry,Golden
+194,7/13/2019,32.086,Forestry,Golden
+195,7/14/2019,34.691,Forestry,Golden
+196,7/15/2019,35.115,Forestry,Golden
+197,7/16/2019,36.946,Forestry,Golden
+198,7/17/2019,36.511,Forestry,Golden
+199,7/18/2019,38.826,Forestry,Golden
+200,7/19/2019,34.163,Forestry,Golden
+201,7/20/2019,28.456,Forestry,Golden
+202,7/21/2019,24.545,Forestry,Golden
+203,7/22/2019,32.291,Forestry,Golden
+204,7/23/2019,33.743,Forestry,Golden
+205,7/24/2019,30.76,Forestry,Golden
+206,7/25/2019,32.6,Forestry,Golden
+207,7/26/2019,29.452,Forestry,Golden
+208,7/27/2019,31.166,Forestry,Golden
+209,7/28/2019,33.848,Forestry,Golden
+210,7/29/2019,34.479,Forestry,Golden
+211,7/30/2019,33.326,Forestry,Golden
+212,7/31/2019,29.352,Forestry,Golden
+213,8/1/2019,31.472,Forestry,Golden
+214,8/2/2019,36.403,Forestry,Golden
+215,8/3/2019,33.953,Forestry,Golden
+216,8/4/2019,31.676,Forestry,Golden
+217,8/5/2019,34.796,Forestry,Golden
+218,8/6/2019,31.472,Forestry,Golden
+219,8/7/2019,28.357,Forestry,Golden
+220,8/8/2019,35.435,Forestry,Golden
+221,8/9/2019,31.064,Forestry,Golden
+222,8/10/2019,28.953,Forestry,Golden
+223,8/11/2019,35.649,Forestry,Golden
+224,8/12/2019,33.014,Forestry,Golden
+225,8/13/2019,35.649,Forestry,Golden
+226,8/14/2019,37.604,Forestry,Golden
+227,8/15/2019,29.552,Forestry,Golden
+228,8/16/2019,31.88,Forestry,Golden
+229,8/17/2019,36.837,Forestry,Golden
+230,8/18/2019,36.837,Forestry,Golden
+231,8/19/2019,38.714,Forestry,Golden
+232,8/20/2019,28.159,Forestry,Golden
+233,8/21/2019,29.652,Forestry,Golden
+234,8/22/2019,31.268,Forestry,Golden
+235,8/23/2019,28.853,Forestry,Golden
+236,8/24/2019,35.542,Forestry,Golden
+237,8/25/2019,27.468,Forestry,Golden
+238,8/26/2019,26.977,Forestry,Golden
+239,8/27/2019,34.058,Forestry,Golden
+240,8/28/2019,31.88,Forestry,Golden
+241,8/29/2019,30.963,Forestry,Golden
+242,8/30/2019,34.691,Forestry,Golden
+243,8/31/2019,33.848,Forestry,Golden
+244,9/1/2019,38.157,Forestry,Golden
+245,9/2/2019,28.159,Forestry,Golden
+246,9/3/2019,30.963,Forestry,Golden
+247,9/4/2019,35.756,Forestry,Golden
+248,9/5/2019,29.352,Forestry,Golden
+249,9/6/2019,30.963,Forestry,Golden
+250,9/7/2019,23.484,Forestry,Golden
+251,9/8/2019,29.552,Forestry,Golden
+252,9/9/2019,29.152,Forestry,Golden
+253,9/10/2019,26,Forestry,Golden
+254,9/11/2019,25.708,Forestry,Golden
+255,9/12/2019,28.159,Forestry,Golden
+256,9/13/2019,31.676,Forestry,Golden
+257,9/14/2019,31.88,Forestry,Golden
+258,9/15/2019,30.558,Forestry,Golden
+259,9/16/2019,31.268,Forestry,Golden
+260,9/17/2019,26.781,Forestry,Golden
+261,9/18/2019,31.37,Forestry,Golden
+262,9/19/2019,33.222,Forestry,Golden
+263,9/20/2019,24.641,Forestry,Golden
+264,9/21/2019,26.39,Forestry,Golden
+265,9/22/2019,26.39,Forestry,Golden
+266,9/23/2019,35.756,Forestry,Golden
+267,9/24/2019,30.558,Forestry,Golden
+268,9/25/2019,32.497,Forestry,Golden
+269,9/26/2019,23.292,Forestry,Golden
+270,9/27/2019,25.61,Forestry,Golden
+271,9/28/2019,34.163,Forestry,Golden
+272,9/29/2019,22.812,Forestry,Golden
+273,9/30/2019,11.041,Forestry,Golden
+274,10/1/2019,16.141,Forestry,Golden
+275,10/2/2019,21.951,Forestry,Golden
+276,10/3/2019,23.196,Forestry,Golden
+277,10/4/2019,21.664,Forestry,Golden
+278,10/5/2019,21.282,Forestry,Golden
+279,10/6/2019,28.456,Forestry,Golden
+280,10/7/2019,29.252,Forestry,Golden
+281,10/8/2019,27.862,Forestry,Golden
+282,10/9/2019,0.01,Forestry,Golden
+283,10/10/2019,14.517,Forestry,Golden
+284,10/11/2019,24.158,Forestry,Golden
+285,10/12/2019,26.683,Forestry,Golden
+286,10/13/2019,23.869,Forestry,Golden
+138,5/18/2019,25.805,Golden Heights,Golden
+139,5/19/2019,14.134,Golden Heights,Golden
+140,5/20/2019,6.573,Golden Heights,Golden
+141,5/21/2019,2.195,Golden Heights,Golden
+142,5/22/2019,6.978,Golden Heights,Golden
+143,5/23/2019,6.471,Golden Heights,Golden
+144,5/24/2019,24.931,Golden Heights,Golden
+145,5/25/2019,27.173,Golden Heights,Golden
+146,5/26/2019,19.187,Golden Heights,Golden
+147,5/27/2019,19.377,Golden Heights,Golden
+148,5/28/2019,13.173,Golden Heights,Golden
+149,5/29/2019,15.282,Golden Heights,Golden
+150,5/30/2019,20.424,Golden Heights,Golden
+151,5/31/2019,23.677,Golden Heights,Golden
+152,6/1/2019,27.272,Golden Heights,Golden
+153,6/2/2019,30.255,Golden Heights,Golden
+154,6/3/2019,23.869,Golden Heights,Golden
+155,6/4/2019,23.869,Golden Heights,Golden
+156,6/5/2019,23.869,Golden Heights,Golden
+157,6/6/2019,31.88,Golden Heights,Golden
+158,6/7/2019,26.195,Golden Heights,Golden
+159,6/8/2019,25.708,Golden Heights,Golden
+160,6/9/2019,19.282,Golden Heights,Golden
+161,6/10/2019,30.457,Golden Heights,Golden
+162,6/11/2019,23.292,Golden Heights,Golden
+163,6/12/2019,25.902,Golden Heights,Golden
+164,6/13/2019,27.272,Golden Heights,Golden
+165,6/14/2019,25.513,Golden Heights,Golden
+166,6/15/2019,24.931,Golden Heights,Golden
+167,6/16/2019,23.581,Golden Heights,Golden
+168,6/17/2019,19.948,Golden Heights,Golden
+169,6/18/2019,19.377,Golden Heights,Golden
+170,6/19/2019,27.665,Golden Heights,Golden
+171,6/20/2019,26.097,Golden Heights,Golden
+172,6/21/2019,18.426,Golden Heights,Golden
+173,6/22/2019,12.11,Golden Heights,Golden
+174,6/23/2019,17.379,Golden Heights,Golden
+175,6/24/2019,29.053,Golden Heights,Golden
+176,6/25/2019,25.416,Golden Heights,Golden
+177,6/26/2019,28.258,Golden Heights,Golden
+178,6/27/2019,34.163,Golden Heights,Golden
+179,6/28/2019,35.115,Golden Heights,Golden
+180,6/29/2019,29.552,Golden Heights,Golden
+181,6/30/2019,27.862,Golden Heights,Golden
+182,7/1/2019,24.931,Golden Heights,Golden
+183,7/2/2019,26.879,Golden Heights,Golden
+184,7/3/2019,31.983,Golden Heights,Golden
+185,7/4/2019,28.853,Golden Heights,Golden
+186,7/5/2019,26,Golden Heights,Golden
+187,7/6/2019,28.555,Golden Heights,Golden
+188,7/7/2019,31.574,Golden Heights,Golden
+189,7/8/2019,29.053,Golden Heights,Golden
+190,7/9/2019,30.457,Golden Heights,Golden
+191,7/10/2019,32.291,Golden Heights,Golden
+192,7/11/2019,34.585,Golden Heights,Golden
+193,7/12/2019,32.086,Golden Heights,Golden
+194,7/13/2019,32.497,Golden Heights,Golden
+195,7/14/2019,26.585,Golden Heights,Golden
+196,7/15/2019,28.953,Golden Heights,Golden
+197,7/16/2019,34.268,Golden Heights,Golden
+198,7/17/2019,31.88,Golden Heights,Golden
+199,7/18/2019,38.268,Golden Heights,Golden
+200,7/19/2019,40.761,Golden Heights,Golden
+201,7/20/2019,28.357,Golden Heights,Golden
+202,7/21/2019,27.961,Golden Heights,Golden
+203,7/22/2019,21.378,Golden Heights,Golden
+204,7/23/2019,28.258,Golden Heights,Golden
+205,7/24/2019,28.159,Golden Heights,Golden
+206,7/25/2019,26,Golden Heights,Golden
+207,7/26/2019,27.468,Golden Heights,Golden
+208,7/27/2019,27.764,Golden Heights,Golden
+209,7/28/2019,30.356,Golden Heights,Golden
+210,7/29/2019,29.853,Golden Heights,Golden
+211,7/30/2019,29.152,Golden Heights,Golden
+212,7/31/2019,28.853,Golden Heights,Golden
+213,8/1/2019,25.222,Golden Heights,Golden
+214,8/2/2019,28.754,Golden Heights,Golden
+215,8/3/2019,33.014,Golden Heights,Golden
+216,8/4/2019,28.953,Golden Heights,Golden
+217,8/5/2019,28.853,Golden Heights,Golden
+218,8/6/2019,34.058,Golden Heights,Golden
+219,8/7/2019,26.39,Golden Heights,Golden
+220,8/8/2019,24.158,Golden Heights,Golden
+221,8/9/2019,30.862,Golden Heights,Golden
+222,8/10/2019,28.258,Golden Heights,Golden
+223,8/11/2019,26,Golden Heights,Golden
+224,8/12/2019,28.754,Golden Heights,Golden
+225,8/13/2019,29.152,Golden Heights,Golden
+226,8/14/2019,32.497,Golden Heights,Golden
+227,8/15/2019,36.079,Golden Heights,Golden
+228,8/16/2019,28.456,Golden Heights,Golden
+229,8/17/2019,27.961,Golden Heights,Golden
+230,8/18/2019,31.676,Golden Heights,Golden
+231,8/19/2019,31.983,Golden Heights,Golden
+232,8/20/2019,35.649,Golden Heights,Golden
+233,8/21/2019,24.738,Golden Heights,Golden
+234,8/22/2019,23.388,Golden Heights,Golden
+235,8/23/2019,25.028,Golden Heights,Golden
+236,8/24/2019,25.513,Golden Heights,Golden
+237,8/25/2019,33.326,Golden Heights,Golden
+238,8/26/2019,25.028,Golden Heights,Golden
+239,8/27/2019,24.351,Golden Heights,Golden
+240,8/28/2019,30.659,Golden Heights,Golden
+241,8/29/2019,29.053,Golden Heights,Golden
+242,8/30/2019,26.292,Golden Heights,Golden
+243,8/31/2019,28.357,Golden Heights,Golden
+244,9/1/2019,31.574,Golden Heights,Golden
+245,9/2/2019,31.676,Golden Heights,Golden
+246,9/3/2019,26,Golden Heights,Golden
+247,9/4/2019,25.028,Golden Heights,Golden
+248,9/5/2019,31.88,Golden Heights,Golden
+249,9/6/2019,24.641,Golden Heights,Golden
+250,9/7/2019,24.738,Golden Heights,Golden
+251,9/8/2019,20.329,Golden Heights,Golden
+252,9/9/2019,22.908,Golden Heights,Golden
+253,9/10/2019,25.319,Golden Heights,Golden
+254,9/11/2019,21.951,Golden Heights,Golden
+255,9/12/2019,22.238,Golden Heights,Golden
+256,9/13/2019,21.76,Golden Heights,Golden
+257,9/14/2019,27.764,Golden Heights,Golden
+258,9/15/2019,27.173,Golden Heights,Golden
+259,9/16/2019,27.173,Golden Heights,Golden
+260,9/17/2019,27.567,Golden Heights,Golden
+261,9/18/2019,23.388,Golden Heights,Golden
+262,9/19/2019,25.708,Golden Heights,Golden
+263,9/20/2019,29.752,Golden Heights,Golden
+264,9/21/2019,22.429,Golden Heights,Golden
+265,9/22/2019,21.187,Golden Heights,Golden
+266,9/23/2019,21.951,Golden Heights,Golden
+267,9/24/2019,27.37,Golden Heights,Golden
+268,9/25/2019,24.351,Golden Heights,Golden
+269,9/26/2019,24.545,Golden Heights,Golden
+270,9/27/2019,20.996,Golden Heights,Golden
+271,9/28/2019,19.853,Golden Heights,Golden
+272,9/29/2019,30.054,Golden Heights,Golden
+273,9/30/2019,19.282,Golden Heights,Golden
+274,10/1/2019,12.11,Golden Heights,Golden
+275,10/2/2019,11.528,Golden Heights,Golden
+276,10/3/2019,13.942,Golden Heights,Golden
+277,10/4/2019,16.141,Golden Heights,Golden
+278,10/5/2019,16.427,Golden Heights,Golden
+279,10/6/2019,15.282,Golden Heights,Golden
+280,10/7/2019,19.758,Golden Heights,Golden
+281,10/8/2019,22.429,Golden Heights,Golden
+282,10/9/2019,23.581,Golden Heights,Golden
+283,10/10/2019,1.33,Golden Heights,Golden
+284,10/11/2019,5.757,Golden Heights,Golden
+285,10/12/2019,14.996,Golden Heights,Golden
+286,10/13/2019,18.521,Golden Heights,Golden
+287,10/14/2019,18.521,Golden Heights,Golden
+139,5/19/2019,17.475,Kroh,Loveland
+140,5/20/2019,12.207,Kroh,Loveland
+141,5/21/2019,10.846,Kroh,Loveland
+142,5/22/2019,6.674,Kroh,Loveland
+143,5/23/2019,21.76,Kroh,Loveland
+144,5/24/2019,22.142,Kroh,Loveland
+145,5/25/2019,22.142,Kroh,Loveland
+146,5/26/2019,19.472,Kroh,Loveland
+147,5/27/2019,12.304,Kroh,Loveland
+148,5/28/2019,16.237,Kroh,Loveland
+149,5/29/2019,20.71,Kroh,Loveland
+150,5/30/2019,24.255,Kroh,Loveland
+151,5/31/2019,23.292,Kroh,Loveland
+152,6/1/2019,25.513,Kroh,Loveland
+153,6/2/2019,26.488,Kroh,Loveland
+154,6/3/2019,27.862,Kroh,Loveland
+155,6/4/2019,25.902,Kroh,Loveland
+156,6/5/2019,28.06,Kroh,Loveland
+157,6/6/2019,30.054,Kroh,Loveland
+158,6/7/2019,27.961,Kroh,Loveland
+159,6/8/2019,19.282,Kroh,Loveland
+160,6/9/2019,24.738,Kroh,Loveland
+161,6/10/2019,23.581,Kroh,Loveland
+162,6/11/2019,24.835,Kroh,Loveland
+163,6/12/2019,30.154,Kroh,Loveland
+164,6/13/2019,27.173,Kroh,Loveland
+165,6/14/2019,25.708,Kroh,Loveland
+166,6/15/2019,24.545,Kroh,Loveland
+167,6/16/2019,22.238,Kroh,Loveland
+168,6/17/2019,18.426,Kroh,Loveland
+169,6/18/2019,26.585,Kroh,Loveland
+170,6/19/2019,28.06,Kroh,Loveland
+171,6/20/2019,19.282,Kroh,Loveland
+172,6/21/2019,14.038,Kroh,Loveland
+173,6/22/2019,16.808,Kroh,Loveland
+174,6/23/2019,25.805,Kroh,Loveland
+175,6/24/2019,27.567,Kroh,Loveland
+176,6/25/2019,29.853,Kroh,Loveland
+177,6/26/2019,30.356,Kroh,Loveland
+178,6/27/2019,34.058,Kroh,Loveland
+179,6/28/2019,31.983,Kroh,Loveland
+180,6/29/2019,32.704,Kroh,Loveland
+181,6/30/2019,29.752,Kroh,Loveland
+182,7/1/2019,26.683,Kroh,Loveland
+183,7/2/2019,31.983,Kroh,Loveland
+184,7/3/2019,26.781,Kroh,Loveland
+185,7/4/2019,26.39,Kroh,Loveland
+186,7/5/2019,23.1,Kroh,Loveland
+187,7/6/2019,28.555,Kroh,Loveland
+188,7/7/2019,27.37,Kroh,Loveland
+189,7/8/2019,29.953,Kroh,Loveland
+190,7/9/2019,28.555,Kroh,Loveland
+191,7/10/2019,34.268,Kroh,Loveland
+192,7/11/2019,31.064,Kroh,Loveland
+193,7/12/2019,31.778,Kroh,Loveland
+194,7/13/2019,32.188,Kroh,Loveland
+195,7/14/2019,28.357,Kroh,Loveland
+196,7/15/2019,31.778,Kroh,Loveland
+197,7/16/2019,33.743,Kroh,Loveland
+198,7/17/2019,36.295,Kroh,Loveland
+199,7/18/2019,35.649,Kroh,Loveland
+200,7/19/2019,29.552,Kroh,Loveland
+201,7/20/2019,26.195,Kroh,Loveland
+202,7/21/2019,26.488,Kroh,Loveland
+203,7/22/2019,30.659,Kroh,Loveland
+204,7/23/2019,34.479,Kroh,Loveland
+205,7/24/2019,27.862,Kroh,Loveland
+206,7/25/2019,31.778,Kroh,Loveland
+207,7/26/2019,28.456,Kroh,Loveland
+208,7/27/2019,30.862,Kroh,Loveland
+209,7/28/2019,32.704,Kroh,Loveland
+210,7/29/2019,31.268,Kroh,Loveland
+211,7/30/2019,30.255,Kroh,Loveland
+212,7/31/2019,27.37,Kroh,Loveland
+213,8/1/2019,31.574,Kroh,Loveland
+214,8/2/2019,33.535,Kroh,Loveland
+215,8/3/2019,30.659,Kroh,Loveland
+216,8/4/2019,30.963,Kroh,Loveland
+217,8/5/2019,33.953,Kroh,Loveland
+218,8/6/2019,30.054,Kroh,Loveland
+219,8/7/2019,27.862,Kroh,Loveland
+220,8/8/2019,33.535,Kroh,Loveland
+221,8/9/2019,28.06,Kroh,Loveland
+222,8/10/2019,26.879,Kroh,Loveland
+223,8/11/2019,32.188,Kroh,Loveland
+224,8/12/2019,30.356,Kroh,Loveland
+225,8/13/2019,30.659,Kroh,Loveland
+226,8/14/2019,32.291,Kroh,Loveland
+227,8/15/2019,25.319,Kroh,Loveland
+228,8/16/2019,30.356,Kroh,Loveland
+229,8/17/2019,29.352,Kroh,Loveland
+230,8/18/2019,35.542,Kroh,Loveland
+231,8/19/2019,36.187,Kroh,Loveland
+232,8/20/2019,27.764,Kroh,Loveland
+233,8/21/2019,28.456,Kroh,Loveland
+234,8/22/2019,29.352,Kroh,Loveland
+235,8/23/2019,30.963,Kroh,Loveland
+236,8/24/2019,35.009,Kroh,Loveland
+237,8/25/2019,26.39,Kroh,Loveland
+238,8/26/2019,25.125,Kroh,Loveland
+239,8/27/2019,32.394,Kroh,Loveland
+240,8/28/2019,31.268,Kroh,Loveland
+241,8/29/2019,27.272,Kroh,Loveland
+242,8/30/2019,32.394,Kroh,Loveland
+243,8/31/2019,35.222,Kroh,Loveland
+244,9/1/2019,35.435,Kroh,Loveland
+245,9/2/2019,29.853,Kroh,Loveland
+246,9/3/2019,29.053,Kroh,Loveland
+247,9/4/2019,34.479,Kroh,Loveland
+248,9/5/2019,27.272,Kroh,Loveland
+249,9/6/2019,31.676,Kroh,Loveland
+250,9/7/2019,23.484,Kroh,Loveland
+251,9/8/2019,25.319,Kroh,Loveland
+252,9/9/2019,27.961,Kroh,Loveland
+253,9/10/2019,22.908,Kroh,Loveland
+254,9/11/2019,25.708,Kroh,Loveland
+255,9/12/2019,26.977,Kroh,Loveland
+256,9/13/2019,31.166,Kroh,Loveland
+257,9/14/2019,30.558,Kroh,Loveland
+258,9/15/2019,31.472,Kroh,Loveland
+259,9/16/2019,29.853,Kroh,Loveland
+260,9/17/2019,27.468,Kroh,Loveland
+261,9/18/2019,30.659,Kroh,Loveland
+262,9/19/2019,28.159,Kroh,Loveland
+263,9/20/2019,24.835,Kroh,Loveland
+264,9/21/2019,24.448,Kroh,Loveland
+265,9/22/2019,26,Kroh,Loveland
+266,9/23/2019,29.352,Kroh,Loveland
+267,9/24/2019,25.805,Kroh,Loveland
+268,9/25/2019,26.683,Kroh,Loveland
+269,9/26/2019,21.951,Kroh,Loveland
+270,9/27/2019,22.333,Kroh,Loveland
+271,9/28/2019,29.552,Kroh,Loveland
+272,9/29/2019,22.238,Kroh,Loveland
+273,9/30/2019,13.076,Kroh,Loveland
+274,10/1/2019,14.996,Kroh,Loveland
+275,10/2/2019,19.282,Kroh,Loveland
+276,10/3/2019,23.292,Kroh,Loveland
+277,10/4/2019,22.621,Kroh,Loveland
+278,10/5/2019,20.043,Kroh,Loveland
+279,10/6/2019,24.062,Kroh,Loveland
+280,10/7/2019,26.39,Kroh,Loveland
+281,10/8/2019,27.272,Kroh,Loveland
+282,10/9/2019,1.548,Kroh,Loveland
+283,10/10/2019,11.139,Kroh,Loveland
+284,10/11/2019,16.427,Kroh,Loveland
+285,10/12/2019,21.569,Kroh,Loveland
+139,5/19/2019,17.475,Namaqua,Loveland
+140,5/20/2019,12.11,Namaqua,Loveland
+141,5/21/2019,11.431,Namaqua,Loveland
+142,5/22/2019,6.674,Namaqua,Loveland
+143,5/23/2019,24.835,Namaqua,Loveland
+144,5/24/2019,24.738,Namaqua,Loveland
+145,5/25/2019,25.222,Namaqua,Loveland
+146,5/26/2019,22.621,Namaqua,Loveland
+147,5/27/2019,13.461,Namaqua,Loveland
+148,5/28/2019,18.616,Namaqua,Loveland
+149,5/29/2019,24.641,Namaqua,Loveland
+150,5/30/2019,27.961,Namaqua,Loveland
+151,5/31/2019,26.39,Namaqua,Loveland
+152,6/1/2019,29.053,Namaqua,Loveland
+153,6/2/2019,30.356,Namaqua,Loveland
+154,6/3/2019,32.911,Namaqua,Loveland
+155,6/4/2019,31.88,Namaqua,Loveland
+156,6/5/2019,31.983,Namaqua,Loveland
+157,6/6/2019,34.163,Namaqua,Loveland
+158,6/7/2019,31.574,Namaqua,Loveland
+159,6/8/2019,22.525,Namaqua,Loveland
+160,6/9/2019,28.953,Namaqua,Loveland
+161,6/10/2019,25.61,Namaqua,Loveland
+162,6/11/2019,27.665,Namaqua,Loveland
+163,6/12/2019,34.479,Namaqua,Loveland
+164,6/13/2019,30.154,Namaqua,Loveland
+165,6/14/2019,29.352,Namaqua,Loveland
+166,6/15/2019,28.357,Namaqua,Loveland
+167,6/16/2019,25.902,Namaqua,Loveland
+168,6/17/2019,18.331,Namaqua,Loveland
+169,6/18/2019,28.853,Namaqua,Loveland
+170,6/19/2019,29.752,Namaqua,Loveland
+171,6/20/2019,18.331,Namaqua,Loveland
+172,6/21/2019,17.094,Namaqua,Loveland
+173,6/22/2019,18.236,Namaqua,Loveland
+174,6/23/2019,28.853,Namaqua,Loveland
+175,6/24/2019,30.558,Namaqua,Loveland
+176,6/25/2019,35.971,Namaqua,Loveland
+177,6/26/2019,36.403,Namaqua,Loveland
+178,6/27/2019,38.602,Namaqua,Loveland
+179,6/28/2019,36.946,Namaqua,Loveland
+180,6/29/2019,37.165,Namaqua,Loveland
+181,6/30/2019,34.163,Namaqua,Loveland
+182,7/1/2019,31.268,Namaqua,Loveland
+183,7/2/2019,36.295,Namaqua,Loveland
+184,7/3/2019,29.053,Namaqua,Loveland
+185,7/4/2019,29.352,Namaqua,Loveland
+186,7/5/2019,27.075,Namaqua,Loveland
+187,7/6/2019,33.43,Namaqua,Loveland
+188,7/7/2019,32.807,Namaqua,Loveland
+189,7/8/2019,36.187,Namaqua,Loveland
+190,7/9/2019,31.983,Namaqua,Loveland
+191,7/10/2019,40.071,Namaqua,Loveland
+192,7/11/2019,35.115,Namaqua,Loveland
+193,7/12/2019,35.222,Namaqua,Loveland
+194,7/13/2019,36.62,Namaqua,Loveland
+195,7/14/2019,28.754,Namaqua,Loveland
+196,7/15/2019,33.639,Namaqua,Loveland
+197,7/16/2019,38.938,Namaqua,Loveland
+198,7/17/2019,39.843,Namaqua,Loveland
+199,7/18/2019,41.575,Namaqua,Loveland
+200,7/19/2019,34.374,Namaqua,Loveland
+201,7/20/2019,28.258,Namaqua,Loveland
+202,7/21/2019,28.754,Namaqua,Loveland
+203,7/22/2019,35.542,Namaqua,Loveland
+204,7/23/2019,37.494,Namaqua,Loveland
+205,7/24/2019,31.166,Namaqua,Loveland
+206,7/25/2019,36.295,Namaqua,Loveland
+207,7/26/2019,33.953,Namaqua,Loveland
+208,7/27/2019,34.903,Namaqua,Loveland
+209,7/28/2019,36.946,Namaqua,Loveland
+210,7/29/2019,33.848,Namaqua,Loveland
+211,7/30/2019,34.691,Namaqua,Loveland
+212,7/31/2019,29.853,Namaqua,Loveland
+213,8/1/2019,35.649,Namaqua,Loveland
+214,8/2/2019,36.187,Namaqua,Loveland
+215,8/3/2019,36.079,Namaqua,Loveland
+216,8/4/2019,37.494,Namaqua,Loveland
+217,8/5/2019,37.384,Namaqua,Loveland
+218,8/6/2019,35.649,Namaqua,Loveland
+219,8/7/2019,32.704,Namaqua,Loveland
+220,8/8/2019,36.187,Namaqua,Loveland
+221,8/9/2019,31.064,Namaqua,Loveland
+222,8/10/2019,28.06,Namaqua,Loveland
+223,8/11/2019,35.435,Namaqua,Loveland
+224,8/12/2019,36.187,Namaqua,Loveland
+225,8/13/2019,30.255,Namaqua,Loveland
+226,8/14/2019,36.837,Namaqua,Loveland
+227,8/15/2019,25.416,Namaqua,Loveland
+228,8/16/2019,36.079,Namaqua,Loveland
+229,8/17/2019,29.652,Namaqua,Loveland
+230,8/18/2019,40.876,Namaqua,Loveland
+231,8/19/2019,41.575,Namaqua,Loveland
+232,8/20/2019,31.676,Namaqua,Loveland
+233,8/21/2019,32.086,Namaqua,Loveland
+234,8/22/2019,31.574,Namaqua,Loveland
+235,8/23/2019,31.166,Namaqua,Loveland
+236,8/24/2019,42.164,Namaqua,Loveland
+237,8/25/2019,29.252,Namaqua,Loveland
+238,8/26/2019,29.652,Namaqua,Loveland
+239,8/27/2019,37.935,Namaqua,Loveland
+240,8/28/2019,33.222,Namaqua,Loveland
+241,8/29/2019,30.154,Namaqua,Loveland
+242,8/30/2019,34.374,Namaqua,Loveland
+243,8/31/2019,41.341,Namaqua,Loveland
+244,9/1/2019,40.645,Namaqua,Loveland
+245,9/2/2019,32.188,Namaqua,Loveland
+246,9/3/2019,32.911,Namaqua,Loveland
+247,9/4/2019,38.826,Namaqua,Loveland
+248,9/5/2019,29.053,Namaqua,Loveland
+249,9/6/2019,33.326,Namaqua,Loveland
+250,9/7/2019,26.488,Namaqua,Loveland
+251,9/8/2019,28.159,Namaqua,Loveland
+252,9/9/2019,31.676,Namaqua,Loveland
+253,9/10/2019,27.567,Namaqua,Loveland
+254,9/11/2019,27.272,Namaqua,Loveland
+255,9/12/2019,29.452,Namaqua,Loveland
+256,9/13/2019,32.086,Namaqua,Loveland
+257,9/14/2019,33.639,Namaqua,Loveland
+258,9/15/2019,33.43,Namaqua,Loveland
+259,9/16/2019,33.43,Namaqua,Loveland
+260,9/17/2019,28.159,Namaqua,Loveland
+261,9/18/2019,31.574,Namaqua,Loveland
+262,9/19/2019,31.778,Namaqua,Loveland
+263,9/20/2019,27.665,Namaqua,Loveland
+264,9/21/2019,26.585,Namaqua,Loveland
+265,9/22/2019,29.053,Namaqua,Loveland
+266,9/23/2019,31.574,Namaqua,Loveland
+267,9/24/2019,27.567,Namaqua,Loveland
+268,9/25/2019,26.097,Namaqua,Loveland
+269,9/26/2019,23.484,Namaqua,Loveland
+270,9/27/2019,21.473,Namaqua,Loveland
+271,9/28/2019,30.154,Namaqua,Loveland
+272,9/29/2019,26.39,Namaqua,Loveland
+273,9/30/2019,12.497,Namaqua,Loveland
+274,10/1/2019,12.11,Namaqua,Loveland
+275,10/2/2019,19.187,Namaqua,Loveland
+276,10/3/2019,21.091,Namaqua,Loveland
+277,10/4/2019,21.951,Namaqua,Loveland
+278,10/5/2019,20.043,Namaqua,Loveland
+279,10/6/2019,27.37,Namaqua,Loveland
+280,10/7/2019,25.319,Namaqua,Loveland
+281,10/8/2019,29.352,Namaqua,Loveland
+282,10/9/2019,1.656,Namaqua,Loveland
+283,10/10/2019,11.431,Namaqua,Loveland
+284,10/11/2019,18.996,Namaqua,Loveland
+285,10/12/2019,24.158,Namaqua,Loveland
+138,5/18/2019,22.142,Woodmere,Loveland
+139,5/19/2019,30.154,Woodmere,Loveland
+140,5/20/2019,20.71,Woodmere,Loveland
+141,5/21/2019,12.207,Woodmere,Loveland
+142,5/22/2019,13.461,Woodmere,Loveland
+143,5/23/2019,6.674,Woodmere,Loveland
+144,5/24/2019,29.953,Woodmere,Loveland
+145,5/25/2019,28.159,Woodmere,Loveland
+146,5/26/2019,27.764,Woodmere,Loveland
+147,5/27/2019,28.06,Woodmere,Loveland
+148,5/28/2019,14.517,Woodmere,Loveland
+149,5/29/2019,20.329,Woodmere,Loveland
+150,5/30/2019,26.781,Woodmere,Loveland
+151,5/31/2019,28.754,Woodmere,Loveland
+152,6/1/2019,30.356,Woodmere,Loveland
+153,6/2/2019,30.356,Woodmere,Loveland
+154,6/3/2019,28.258,Woodmere,Loveland
+155,6/4/2019,31.064,Woodmere,Loveland
+156,6/5/2019,30.558,Woodmere,Loveland
+157,6/6/2019,33.326,Woodmere,Loveland
+158,6/7/2019,35.328,Woodmere,Loveland
+159,6/8/2019,29.853,Woodmere,Loveland
+160,6/9/2019,26.195,Woodmere,Loveland
+161,6/10/2019,31.472,Woodmere,Loveland
+162,6/11/2019,23.581,Woodmere,Loveland
+163,6/12/2019,29.352,Woodmere,Loveland
+164,6/13/2019,36.728,Woodmere,Loveland
+165,6/14/2019,29.053,Woodmere,Loveland
+166,6/15/2019,30.659,Woodmere,Loveland
+167,6/16/2019,29.953,Woodmere,Loveland
+168,6/17/2019,23.292,Woodmere,Loveland
+169,6/18/2019,17.855,Woodmere,Loveland
+170,6/19/2019,34.268,Woodmere,Loveland
+171,6/20/2019,32.807,Woodmere,Loveland
+172,6/21/2019,18.236,Woodmere,Loveland
+173,6/22/2019,16.332,Woodmere,Loveland
+174,6/23/2019,19.472,Woodmere,Loveland
+175,6/24/2019,29.352,Woodmere,Loveland
+176,6/25/2019,30.054,Woodmere,Loveland
+177,6/26/2019,37.935,Woodmere,Loveland
+178,6/27/2019,40.3,Woodmere,Loveland
+179,6/28/2019,40.761,Woodmere,Loveland
+180,6/29/2019,39.05,Woodmere,Loveland
+181,6/30/2019,37.055,Woodmere,Loveland
+182,7/1/2019,32.394,Woodmere,Loveland
+183,7/2/2019,33.326,Woodmere,Loveland
+184,7/3/2019,38.49,Woodmere,Loveland
+185,7/4/2019,30.76,Woodmere,Loveland
+186,7/5/2019,32.911,Woodmere,Loveland
+187,7/6/2019,28.06,Woodmere,Loveland
+188,7/7/2019,35.222,Woodmere,Loveland
+189,7/8/2019,31.983,Woodmere,Loveland
+190,7/9/2019,35.864,Woodmere,Loveland
+191,7/10/2019,34.796,Woodmere,Loveland
+192,7/11/2019,40.992,Woodmere,Loveland
+193,7/12/2019,38.49,Woodmere,Loveland
+194,7/13/2019,37.055,Woodmere,Loveland
+195,7/14/2019,36.946,Woodmere,Loveland
+196,7/15/2019,31.268,Woodmere,Loveland
+197,7/16/2019,34.585,Woodmere,Loveland
+198,7/17/2019,38.938,Woodmere,Loveland
+199,7/18/2019,42.878,Woodmere,Loveland
+200,7/19/2019,42.878,Woodmere,Loveland
+201,7/20/2019,30.659,Woodmere,Loveland
+202,7/21/2019,30.76,Woodmere,Loveland
+203,7/22/2019,30.76,Woodmere,Loveland
+204,7/23/2019,37.384,Woodmere,Loveland
+205,7/24/2019,37.494,Woodmere,Loveland
+206,7/25/2019,30.659,Woodmere,Loveland
+207,7/26/2019,34.796,Woodmere,Loveland
+208,7/27/2019,32.6,Woodmere,Loveland
+209,7/28/2019,30.963,Woodmere,Loveland
+210,7/29/2019,38.046,Woodmere,Loveland
+211,7/30/2019,33.222,Woodmere,Loveland
+212,7/31/2019,33.743,Woodmere,Loveland
+213,8/1/2019,30.054,Woodmere,Loveland
+214,8/2/2019,33.639,Woodmere,Loveland
+215,8/3/2019,37.714,Woodmere,Loveland
+216,8/4/2019,34.585,Woodmere,Loveland
+217,8/5/2019,32.911,Woodmere,Loveland
+218,8/6/2019,37.055,Woodmere,Loveland
+219,8/7/2019,31.676,Woodmere,Loveland
+220,8/8/2019,29.652,Woodmere,Loveland
+221,8/9/2019,35.435,Woodmere,Loveland
+222,8/10/2019,31.574,Woodmere,Loveland
+223,8/11/2019,27.272,Woodmere,Loveland
+224,8/12/2019,33.014,Woodmere,Loveland
+225,8/13/2019,32.497,Woodmere,Loveland
+226,8/14/2019,31.064,Woodmere,Loveland
+227,8/15/2019,36.295,Woodmere,Loveland
+228,8/16/2019,26.195,Woodmere,Loveland
+229,8/17/2019,33.639,Woodmere,Loveland
+230,8/18/2019,30.659,Woodmere,Loveland
+231,8/19/2019,37.604,Woodmere,Loveland
+232,8/20/2019,38.046,Woodmere,Loveland
+233,8/21/2019,27.862,Woodmere,Loveland
+234,8/22/2019,32.394,Woodmere,Loveland
+235,8/23/2019,29.752,Woodmere,Loveland
+236,8/24/2019,31.983,Woodmere,Loveland
+237,8/25/2019,39.957,Woodmere,Loveland
+238,8/26/2019,26.977,Woodmere,Loveland
+239,8/27/2019,26.195,Woodmere,Loveland
+240,8/28/2019,43.359,Woodmere,Loveland
+241,8/29/2019,37.384,Woodmere,Loveland
+242,8/30/2019,37.165,Woodmere,Loveland
+243,8/31/2019,35.649,Woodmere,Loveland
+244,9/1/2019,44.457,Woodmere,Loveland
+245,9/2/2019,42.878,Woodmere,Loveland
+246,9/3/2019,35.971,Woodmere,Loveland
+247,9/4/2019,33.848,Woodmere,Loveland
+248,9/5/2019,34.691,Woodmere,Loveland
+249,9/6/2019,24.448,Woodmere,Loveland
+250,9/7/2019,40.53,Woodmere,Loveland
+251,9/8/2019,24.448,Woodmere,Loveland
+252,9/9/2019,37.055,Woodmere,Loveland
+253,9/10/2019,35.435,Woodmere,Loveland
+254,9/11/2019,22.238,Woodmere,Loveland
+255,9/12/2019,33.535,Woodmere,Loveland
+256,9/13/2019,34.058,Woodmere,Loveland
+257,9/14/2019,39.05,Woodmere,Loveland
+258,9/15/2019,33.222,Woodmere,Loveland
+259,9/16/2019,39.163,Woodmere,Loveland
+260,9/17/2019,38.046,Woodmere,Loveland
+261,9/18/2019,34.268,Woodmere,Loveland
+262,9/19/2019,38.046,Woodmere,Loveland
+263,9/20/2019,35.222,Woodmere,Loveland
+264,9/21/2019,26.292,Woodmere,Loveland
+265,9/22/2019,31.472,Woodmere,Loveland
+266,9/23/2019,26.097,Woodmere,Loveland
+267,9/24/2019,38.714,Woodmere,Loveland
+268,9/25/2019,31.88,Woodmere,Loveland
+269,9/26/2019,35.756,Woodmere,Loveland
+270,9/27/2019,22.717,Woodmere,Loveland
+271,9/28/2019,30.054,Woodmere,Loveland
+272,9/29/2019,40.53,Woodmere,Loveland
+273,9/30/2019,23.677,Woodmere,Loveland
+274,10/1/2019,12.401,Woodmere,Loveland
+275,10/2/2019,21.187,Woodmere,Loveland
+276,10/3/2019,27.862,Woodmere,Loveland
+277,10/4/2019,31.676,Woodmere,Loveland
+278,10/5/2019,27.37,Woodmere,Loveland
+279,10/6/2019,26.488,Woodmere,Loveland
+280,10/7/2019,33.118,Woodmere,Loveland
+281,10/8/2019,34.058,Woodmere,Loveland
+282,10/9/2019,32.807,Woodmere,Loveland
+283,10/10/2019,2.837,Woodmere,Loveland
+284,10/11/2019,16.237,Woodmere,Loveland
+285,10/12/2019,27.075,Woodmere,Loveland
+286,10/13/2019,32.497,Woodmere,Loveland
+137,5/17/2019 22:00,25.028,Pineview,Boulder
+138,5/18/2019 22:00,18.236,Pineview,Boulder
+139,5/19/2019 22:00,6.37,Pineview,Boulder
+140,5/20/2019 22:00,2.303,Pineview,Boulder
+141,5/21/2019 22:00,6.674,Pineview,Boulder
+142,5/22/2019 22:00,6.166,Pineview,Boulder
+143,5/23/2019 22:00,12.787,Pineview,Boulder
+144,5/24/2019 22:00,19.472,Pineview,Boulder
+145,5/25/2019 22:00,18.045,Pineview,Boulder
+146,5/26/2019 22:00,14.996,Pineview,Boulder
+147,5/27/2019 22:00,10.651,Pineview,Boulder
+148,5/28/2019 22:00,11.041,Pineview,Boulder
+149,5/29/2019 22:00,16.999,Pineview,Boulder
+150,5/30/2019 22:00,22.142,Pineview,Boulder
+151,5/31/2019 22:00,20.424,Pineview,Boulder
+152,6/1/2019 22:00,20.71,Pineview,Boulder
+153,6/2/2019 22:00,20.519,Pineview,Boulder
+154,6/3/2019 22:00,20.615,Pineview,Boulder
+155,6/4/2019 22:00,23.869,Pineview,Boulder
+156,6/5/2019 22:00,21.473,Pineview,Boulder
+157,6/6/2019 22:00,24.158,Pineview,Boulder
+158,6/7/2019 22:00,22.621,Pineview,Boulder
+159,6/8/2019 22:00,15.187,Pineview,Boulder
+160,6/9/2019 22:00,21.664,Pineview,Boulder
+161,6/10/2019 22:00,21.569,Pineview,Boulder
+162,6/11/2019 22:00,21.569,Pineview,Boulder
+163,6/12/2019 22:00,25.902,Pineview,Boulder
+164,6/13/2019 22:00,23.869,Pineview,Boulder
+165,6/14/2019 22:00,23.004,Pineview,Boulder
+166,6/15/2019 22:00,21.855,Pineview,Boulder
+167,6/16/2019 22:00,16.618,Pineview,Boulder
+168,6/17/2019 22:00,16.903,Pineview,Boulder
+169,6/18/2019 22:00,20.996,Pineview,Boulder
+170,6/19/2019 22:00,22.142,Pineview,Boulder
+171,6/20/2019 22:00,16.713,Pineview,Boulder
+172,6/21/2019 22:00,12.594,Pineview,Boulder
+173,6/22/2019 22:00,12.207,Pineview,Boulder
+174,6/23/2019 22:00,17.284,Pineview,Boulder
+175,6/24/2019 22:00,21.091,Pineview,Boulder
+176,6/25/2019 22:00,23.1,Pineview,Boulder
+177,6/26/2019 22:00,24.835,Pineview,Boulder
+178,6/27/2019 22:00,28.258,Pineview,Boulder
+179,6/28/2019 22:00,24.738,Pineview,Boulder
+180,6/29/2019 22:00,25.125,Pineview,Boulder
+181,6/30/2019 22:00,24.158,Pineview,Boulder
+182,7/1/2019 22:00,20.234,Pineview,Boulder
+183,7/2/2019 22:00,23.677,Pineview,Boulder
+184,7/3/2019 22:00,22.525,Pineview,Boulder
+185,7/4/2019 22:00,20.615,Pineview,Boulder
+186,7/5/2019 22:00,19.282,Pineview,Boulder
+187,7/6/2019 22:00,21.76,Pineview,Boulder
+188,7/7/2019 22:00,21.378,Pineview,Boulder
+189,7/8/2019 22:00,26.195,Pineview,Boulder
+190,7/9/2019 22:00,24.931,Pineview,Boulder
+191,7/10/2019 22:00,28.357,Pineview,Boulder
+192,7/11/2019 22:00,26.977,Pineview,Boulder
+193,7/12/2019 22:00,26.977,Pineview,Boulder
+194,7/13/2019 22:00,25.028,Pineview,Boulder
+195,7/14/2019 22:00,23.004,Pineview,Boulder
+196,7/15/2019 22:00,24.738,Pineview,Boulder
+197,7/16/2019 22:00,28.655,Pineview,Boulder
+198,7/17/2019 22:00,29.452,Pineview,Boulder
+199,7/18/2019 22:00,31.268,Pineview,Boulder
+200,7/19/2019 22:00,25.708,Pineview,Boulder
+201,7/20/2019 22:00,20.996,Pineview,Boulder
+202,7/21/2019 22:00,19.853,Pineview,Boulder
+203,7/22/2019 22:00,21.951,Pineview,Boulder
+204,7/23/2019 22:00,25.513,Pineview,Boulder
+205,7/24/2019 22:00,23.004,Pineview,Boulder
+206,7/25/2019 22:00,26,Pineview,Boulder
+207,7/26/2019 22:00,24.255,Pineview,Boulder
+208,7/27/2019 22:00,24.351,Pineview,Boulder
+209,7/28/2019 22:00,26.097,Pineview,Boulder
+210,7/29/2019 22:00,24.641,Pineview,Boulder
+211,7/30/2019 22:00,25.319,Pineview,Boulder
+212,7/31/2019 22:00,23.388,Pineview,Boulder
+213,8/1/2019 22:00,23.581,Pineview,Boulder
+214,8/2/2019 22:00,25.125,Pineview,Boulder
+215,8/3/2019 22:00,24.255,Pineview,Boulder
+216,8/4/2019 22:00,24.062,Pineview,Boulder
+217,8/5/2019 22:00,22.908,Pineview,Boulder
+218,8/6/2019 22:00,24.641,Pineview,Boulder
+219,8/7/2019 22:00,22.525,Pineview,Boulder
+220,8/8/2019 22:00,23.677,Pineview,Boulder
+221,8/9/2019 22:00,23.388,Pineview,Boulder
+222,8/10/2019 22:00,21.76,Pineview,Boulder
+223,8/11/2019 22:00,26.977,Pineview,Boulder
+224,8/12/2019 22:00,24.738,Pineview,Boulder
+225,8/13/2019 22:00,23.869,Pineview,Boulder
+226,8/14/2019 22:00,27.862,Pineview,Boulder
+227,8/15/2019 22:00,23.484,Pineview,Boulder
+228,8/16/2019 22:00,27.272,Pineview,Boulder
+229,8/17/2019 22:00,24.448,Pineview,Boulder
+230,8/18/2019 22:00,28.456,Pineview,Boulder
+231,8/19/2019 22:00,28.357,Pineview,Boulder
+232,8/20/2019 22:00,22.333,Pineview,Boulder
+233,8/21/2019 22:00,24.351,Pineview,Boulder
+234,8/22/2019 22:00,24.641,Pineview,Boulder
+235,8/23/2019 22:00,23.773,Pineview,Boulder
+236,8/24/2019 22:00,30.356,Pineview,Boulder
+237,8/25/2019 22:00,23.1,Pineview,Boulder
+238,8/26/2019 22:00,21.187,Pineview,Boulder
+239,8/27/2019 22:00,26.488,Pineview,Boulder
+240,8/28/2019 22:00,25.708,Pineview,Boulder
+241,8/29/2019 22:00,24.255,Pineview,Boulder
+242,8/30/2019 22:00,26,Pineview,Boulder
+243,8/31/2019 22:00,26.39,Pineview,Boulder
+244,9/1/2019 22:00,28.953,Pineview,Boulder
+245,9/2/2019 22:00,23.869,Pineview,Boulder
+246,9/3/2019 22:00,22.717,Pineview,Boulder
+247,9/4/2019 22:00,25.805,Pineview,Boulder
+248,9/5/2019 22:00,21.473,Pineview,Boulder
+249,9/6/2019 22:00,21.569,Pineview,Boulder
+250,9/7/2019 22:00,19.187,Pineview,Boulder
+251,9/8/2019 22:00,19.662,Pineview,Boulder
+252,9/9/2019 22:00,21.187,Pineview,Boulder
+253,9/10/2019 22:00,18.331,Pineview,Boulder
+254,9/11/2019 22:00,16.618,Pineview,Boulder
+255,9/12/2019 22:00,18.711,Pineview,Boulder
+256,9/13/2019 22:00,24.448,Pineview,Boulder
+257,9/14/2019 22:00,22.525,Pineview,Boulder
+258,9/15/2019 22:00,22.812,Pineview,Boulder
+259,9/16/2019 22:00,22.429,Pineview,Boulder
+260,9/17/2019 22:00,20.138,Pineview,Boulder
+261,9/18/2019 22:00,21.569,Pineview,Boulder
+262,9/19/2019 22:00,20.234,Pineview,Boulder
+263,9/20/2019 22:00,18.521,Pineview,Boulder
+264,9/21/2019 22:00,18.14,Pineview,Boulder
+265,9/22/2019 22:00,17.95,Pineview,Boulder
+266,9/23/2019 22:00,23.773,Pineview,Boulder
+267,9/24/2019 22:00,20.615,Pineview,Boulder
+268,9/25/2019 22:00,21.091,Pineview,Boulder
+269,9/26/2019 22:00,18.521,Pineview,Boulder
+270,9/27/2019 22:00,15.378,Pineview,Boulder
+271,9/28/2019 22:00,19.377,Pineview,Boulder
+272,9/29/2019 22:00,18.045,Pineview,Boulder
+273,9/30/2019 22:00,11.528,Pineview,Boulder
+274,10/1/2019 22:00,12.11,Pineview,Boulder
+275,10/2/2019 22:00,12.594,Pineview,Boulder
+276,10/3/2019 22:00,14.421,Pineview,Boulder
+277,10/4/2019 22:00,14.709,Pineview,Boulder
+278,10/5/2019 22:00,13.461,Pineview,Boulder
+279,10/6/2019 22:00,17.094,Pineview,Boulder
+280,10/7/2019 22:00,18.711,Pineview,Boulder
+281,10/8/2019 22:00,18.711,Pineview,Boulder
+282,10/9/2019 22:00,2.088,Pineview,Boulder
+283,10/10/2019 22:00,2.088,Pineview,Boulder
+284,10/11/2019 22:00,9.373,Pineview,Boulder
+285,10/12/2019 22:00,23.966,Pineview,Boulder

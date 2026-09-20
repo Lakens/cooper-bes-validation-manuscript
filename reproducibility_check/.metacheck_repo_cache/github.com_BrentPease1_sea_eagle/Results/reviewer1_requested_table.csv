@@ -1,0 +1,5 @@
+ebird,twitter,sample_size,mean_expend,se_expend,mean_dist,se_dist,mean_travel_time,se_travel_time,mean_years,se_years
+No,No,235,218.87,25.54,458.20,41.18,4.65,0.38,22.38,1.31
+No,Yes,14,261.14,73.63,306.69,52.49,3.21,0.51,10.62,4.09
+Yes,No,171,333.41,42.87,845.98,63.30,8.27,0.58,20.03,1.33
+Yes,Yes,31,211.10,54.67,677.07,106.84,6.70,0.98,15.19,2.52

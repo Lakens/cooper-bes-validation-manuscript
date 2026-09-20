@@ -1,0 +1,867 @@
+---
+title: "Figures for Kilimanjaro IPBES Workshop Paper"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+R code for creating the figures for: Masao CA, Prescott GW, Snethlage MA, Urbach D, Torre-Marin Rando A, Molina-Venegas R, Mollel NP, Hemp C, Hemp A, Fischer M (2022). Stakeholder Perspectives on Nature, People, and Sustainability at Mount Kilimanjaro. People and Nature.
+
+Summary of figures for the main manuscript:
+
+Figure 1 - Trends in habitat area and condition, direct and indirect drivers of those changes, and actions needed for a sustainable future (Note: figure appended to Kilimanjaro profile image by Mark A. Snethlage).
+
+Figure 2 - Nature's Contributions to People (NCPs listed by stakeholder groups and the habitats they are associated with.
+
+Figure 3 - Trends in NCP access 2008-2018 and predicted changes in NCP access 2018-2028.
+
+Figure 4 - Drivers of changes in NCP access over the past 10 years (2008-2018).
+
+Figure 5 - Contributions of actions to SDGs, created by Davnah Urbach (no R code)
+
+Figure 6 - Scale at which different actions are needed.
+
+Figure 7 - Linkages of indirect drivers to direct drivers to trends in habitat area to recommended actions. 
+
+Summary of figures for the Supporting Information:
+
+Figure S1 - Maps of 'areas assessed' by different stakeholder groups overlaid on a map of Mount Kilimanjaro. Created by Mark Snethlage in QGIS.
+
+Figure S2 - Projected trends in habitat area and condition (2018-2028).
+
+Figure S3 - Trends in the diversity of selected taxa and functional groups (2008-2018).
+
+Figure S4 - Recommended actions by stakeholder group and habtiat.
+
+```{r}
+library(networkD3)
+library(RColorBrewer)
+library(tidyverse)
+library(webshot)
+remotes::install_github("rstudio/webshot2")
+```
+
+Data available from: https://zenodo.org/record/5846443
+
+```{r}
+# habitat questionnaire
+habitat.questionnaire.original <- read.csv(
+  "./kilimanjaro_ipbes_workshop_habitat_questionnaire.csv")
+
+# ecosystem services questionnaire 
+es.questionnaire.original <- read.csv(
+  "./kilimanjaro_ipbes_workshop_ecosystem_services_questionnaire.csv",sep = ";")
+
+# coded drivers of ecosystem services change 
+es.questionnaire.why.changed.access.codes <- read.csv(
+  "./kilimanjaro_ipbes_workshop_ecosystem_services_access_change_codes.csv")
+
+# group discussion list
+recommended.measures <- read.csv(
+  "./kilimanjaro_ipbes_workshop_spatial_scales_recommended_measures.csv") %>%
+  pivot_longer(-Suggested.Measures, names_to = "Scale", values_to = "Count")
+```
+
+Figure 1. Left: trends in area and condition along habitats; right: direct drivers, indirect drivers, and recommended actions for each habitat. Height of bars indicates total number of responses Direct drivers: ACT = ‘Human Activities’, CC = Climate Change, IAS = Invasive Alien Species, LUC = Land-Use Change, OVR = Overexploitation, POL = Pollution. Indirect drivers: CLT = Cultural, DEM = Demographic, ECO = Economic, GOV = Governance, S&T = Science and Technology. Recommended actions: AWR = Awareness Raising, ECO = Livelihood, Economic & Moral Incentives, EDU = Education & Training, ENF = Law Enforcement & Prosecution, INS = Institutional Development, LAN = Land / Water Management, LAW = Legal & Policy Frameworks, PRT = Conservation Designation & Planning, RSR = Research & Monitoring, SPC = Species Management.
+
+For the left side panel (habitat area and condition)
+
+```{r}
+habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  mutate(Habitat.area = str_replace_all(Habitat.area, 
+                                        c("Increased" = "Positive",
+                                          "Decreased" = "Negative",
+                                          "Mixed" = "NA",
+                                          "No answer" = "NA",
+                                          "Not changed" = "Neutral"))) %>%
+  mutate(Habitat.condition = str_replace_all(Habitat.condition, 
+                                             c("Improved" = "Positive",
+                                               "Deteriorated" = "Negative",
+                                               "No answer" = "NA",
+                                               "Not changed" = "Neutral"))) %>%
+  select(Biome, Habitat.area, Habitat.condition) %>%
+  pivot_longer(-Biome, 
+               names_to = "Variable", values_to = "Trend") %>%
+  subset(Trend != "NA") %>%
+  subset(Biome != "Urban") %>%
+  mutate(Trend = str_replace_all(Trend, 
+                                 c("Positive" = "+",
+                                   "Negative" = "-",
+                                   "Neutral" = "0"))) %>%
+    mutate(Trend = fct_relevel(Trend,
+                                "-", "0", "+")) %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    "Habitat.condition", "Condition")) %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    "Habitat.area", "Area")) %>%
+  mutate(Biome = str_replace_all(Biome, 
+                                 "Agriculture", "Cropland")) %>%
+  mutate(Biome = fct_relevel(Biome,
+                             "Alpine", "Forest",
+                             "Agroforestry", "Cropland", 
+                             "Freshwater", "Grassland" )) %>%
+  mutate(Variable = fct_relevel(Variable,
+                                "Area", "Condition")) %>%
+  ggplot() +
+  geom_bar(aes(x = Trend), fill = "#A9A9A9", colour = "black", size = 0.2) +
+
+    theme_bw() +
+  labs(x = "", y = "") +
+  facet_grid(rows = vars(Biome), cols = vars(Variable)) +
+  theme(legend.position = "none") +
+  theme(legend.justification = "right")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.right = element_text(size = 8, vjust = 1, angle = 0)) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0))+ 
+  theme(axis.text.y = element_text(size = 8, angle = 0))+
+  theme(axis.text.x= element_text(size = 8, angle = 0))+ 
+  theme(axis.ticks.x=element_blank())+ 
+  theme(legend.title = element_blank())+ 
+  theme(legend.text = element_text(size = 8))+
+  theme(panel.grid.major.x = element_blank())+ 
+  theme(panel.grid.minor.y = element_blank())+ 
+  scale_y_continuous(position = "left", breaks = c(10, 20)) 
+
+# to download high resolution version of figure:
+#ggsave(filename = "Figure1_left.png", width = 90, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+
+
+```
+
+Figure 1 - right side panel, part 1 - direct drivers
+
+```{r}
+drivers.and.actions <- habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  select(Biome, 
+         ACT.LAND, ACT.SPEC, ACT.AWAR,
+         ACT.ENFORC, ACT.ECON, ACT.PROTECT,
+         ACT.LAWPOL, ACT.RSRCH, ACT.EDUC,
+         ACT.INST, DIR.ACT, DIR.CC, DIR.IAS,
+         DIR.LUC, DIR.OVR, DIR.POL,IND.CLT, IND.DEM, IND.ECO,
+         IND.GVN, IND.LUC, IND.S.T) %>%
+  pivot_longer(-Biome, 
+               names_to = "Variable", values_to = "Value") %>%
+  mutate(Variable = str_replace_all(Variable, c("ACT.AWAR" = "ACT.AWR",
+                                      "ACT.ECON" = "ACT.ECO",
+                                      "ACT.EDUC" = "ACT.EDU",
+                                      "ACT.ENFORC" = "ACT.ENF",
+                                      "ACT.INST"= "ACT.INS",
+                                      "ACT.LAND" = "ACT.LAN",
+                                      "ACT.LAWPOL"= "ACT.LAW",
+                                      "ACT.PROTECT" = "ACT.PRT",
+                                      "ACT.RSRCH" = "ACT.RSR",
+                                      "ACT.SPEC" = "ACT.SPC"))) %>%
+  mutate(Variable = str_replace_all(Variable, "IND.S.T", "IND.ST")) %>%
+  separate(Variable, c("Component", "Variable") ) %>%
+  subset(Biome != "Urban") %>%
+  mutate(Biome = str_replace_all(Biome, "Agriculture", "Cropland")) %>%
+  mutate(Biome = fct_relevel(Biome,
+                             "Alpine", "Forest",
+                             "Agroforestry", "Cropland", 
+                             "Freshwater", "Grassland" )) %>%
+  mutate(Component = fct_relevel(Component,
+                                "DIR", "IND", "ACT")) %>%
+  mutate(Component = str_replace_all(Component, c("DIR" = "Direct Drivers",
+                                                 "IND" = "Indirect Drivers",
+                                                 "ACT" = "Actions"))) %>%
+  subset(Value >0) %>% 
+  group_by(Biome, Component, Variable) %>%
+  tally()
+
+ggplot(subset(drivers.and.actions, Component == "Direct Drivers")) +
+  geom_bar(aes(x = reorder(Variable,-n), y = n, fill = Component), 
+           stat="identity", color = "black", size = 0.2) +
+  scale_fill_manual(values = c("#A9A9A9")) +
+  theme_bw() +
+  labs(x = "", y = "") +
+  facet_wrap(~Biome, ncol=1, switch = "y") +
+  facet_grid(rows = vars(Biome), cols = vars(Component), switch = "y") +
+  theme(legend.position = "none") +
+  theme(legend.justification = "centre")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.left = element_blank()) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0))+
+  theme(axis.title.x=element_blank())+
+  theme(axis.text.x=element_text(vjust = 1, size = 8, angle = 90)) + 
+  theme(axis.ticks.x=element_blank())+ 
+  theme(legend.title = element_blank())+ 
+  theme(legend.text = element_text(size = 8))+
+  theme(panel.grid.major.x = element_blank())+ 
+  theme(panel.grid.minor.y = element_blank()) +
+  scale_y_continuous(position = "right", 
+                     breaks = c(10, 20), minor_breaks = c(5,15,25))    
+
+# to download high resolution version of figure:
+#ggsave(filename = "Figure1_right_DD.png", width = 40, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+Figure 1 - right side panel, part 2 - indirect drivers
+
+```{r}
+ggplot(subset(drivers.and.actions, Component == "Indirect Drivers")) +
+  geom_bar(aes(x = reorder(Variable,-n), y = n, fill = Component), 
+           stat="identity", color = "black", size = 0.2) +
+  scale_fill_manual(values = c("#A9A9A9")) +
+  theme_bw() +
+  labs(x = "", y = "") +
+  facet_wrap(~Biome, ncol=1, switch = "y") +
+  facet_grid(rows = vars(Biome), cols = vars(Component), switch = "y") +
+  theme(legend.position = "none") +
+  theme(legend.justification = "centre")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.left = element_blank()) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0))+
+  theme(axis.title.x=element_blank())+
+  theme(axis.text.x=element_text(vjust = 1, size = 8, angle = 90)) + 
+  theme(axis.ticks.x=element_blank())+ 
+  theme(legend.title = element_blank())+ 
+  theme(legend.text = element_text(size = 8))+
+  theme(panel.grid.major.x = element_blank())+ 
+  theme(panel.grid.minor.y = element_blank()) +
+  scale_y_continuous(position = "right", 
+                     breaks = c(10, 20), minor_breaks = c(5,15,25))
+
+# to download high resolution version of figure:
+#ggsave(filename = "Figure1_right_ID.png", width = 40, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+Figure 1 - right side panel, part 3 - recommended actions
+
+```{r}
+ggplot(subset(drivers.and.actions, Component == "Actions")) +
+  geom_bar(aes(x = reorder(Variable, -n), y = n, fill = Component), 
+           stat="identity", color = "black", size = 0.2) +
+  scale_fill_manual(values = c("#A9A9A9")) +
+  theme_bw() +
+  labs(x = "", y = "") +
+  facet_wrap(~Biome, ncol=1, switch = "y") +
+  facet_grid(rows = vars(Biome), cols = vars(Component), switch = "y") +
+  theme(legend.position = "none") +
+  theme(legend.justification = "centre")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.left = element_blank()) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0))+
+  theme(axis.title.x=element_blank())+
+  theme(axis.text.x=element_text(vjust = 1, size = 8, angle = 90)) + 
+  theme(axis.ticks.x=element_blank())+ 
+  theme(legend.title = element_blank())+ 
+  theme(legend.text = element_text(size = 8))+
+  theme(panel.grid.major.x = element_blank())+ 
+  theme(panel.grid.minor.y = element_blank()) +
+  scale_y_continuous(position = "right", 
+                     breaks = c(10, 20), minor_breaks = c(5,15,25)) 
+
+# to download high resolution version of figure:
+#ggsave(filename = "Figure1_right_ACT.png", width = 40, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+Figure 2. The NCP mentioned by different stakeholders in the ‘ecosystem services’ questionnaire, and the habitats with which the NCP are associated. Links show co-associations between variables in responses (e.g. which NCP was mentioned by which group member, and the habitats with which that NCP associated), and the width of each link is proportional to the number of responses. The number after each stakeholder group / NCP / habitat indicates the total number of responses. The flows are not totally balanced because some respondents associated a particular NCP with multiple habitats (one NCP could be associated with multiple habitats) and because some respondents did not associate a habitat with an NCP. Each source node in the diagram has a different colour to make the links easier to discriminate.
+
+
+```{r}
+NCP.sankey.part.1 <- es.questionnaire.original %>%
+  select(Group, ESCODE) %>%
+  mutate(Group = as.factor(str_replace_all(Group, 
+                                           c("Blue" = "Community",
+                                             "Green" = "Research",
+                                             "Orange" = "Conservation",
+                                             "Red" = "Other",
+                                             "Yellow" = "Resources")))) %>%
+  mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Pollination&PestControl",
+                                            "ES.PST" = "Pollination&PestControl",
+                                            "ES.AIR" = "Air&Climate",
+                                            "ES.CLI" = "Air&Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil&Hazards",
+                                            "ES.HAZ" = "Soil&Hazards",
+                                            "ES.NRG"= "Energy&Materials",
+                                            "ES.MAT"= "Energy&Materials",
+                                            "ES.FOD"= "Food&Medicine",
+                                            "ES.MED"= "Food&Medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+  select(Group, ESCODE) %>%
+  group_by(Group, ESCODE) %>%
+  summarise(Count = length(ESCODE)) %>%
+  rename("Source" = "Group") %>%
+  rename("Target" = "ESCODE")
+
+NCP.sankey.part.2 <- es.questionnaire.original %>%
+  select(Biome, ESCODE) %>%
+  mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Pollination&PestControl",
+                                            "ES.PST" = "Pollination&PestControl",
+                                            "ES.AIR" = "Air&Climate",
+                                            "ES.CLI" = "Air&Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil&Hazards",
+                                            "ES.HAZ" = "Soil&Hazards",
+                                            "ES.NRG"= "Energy&Materials",
+                                            "ES.MAT"= "Energy&Materials",
+                                            "ES.FOD"= "Food&Medicine",
+                                            "ES.MED"= "Food&Medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+  select(Biome, ESCODE) %>%
+  separate_rows(Biome) %>%
+  group_by(Biome, ESCODE) %>%
+  summarise(Count = length(ESCODE)) %>%
+  rename("Source" = "ESCODE") %>%
+  rename("Target" = "Biome") %>%
+  filter(Target != "NA") %>%
+  filter(Target != "")
+
+NCP.sankey.data <- full_join(NCP.sankey.part.1, NCP.sankey.part.2)
+
+
+NCP.sankey.links <- data.frame(
+  source=NCP.sankey.data$Source, 
+  target=NCP.sankey.data$Target, 
+  value=NCP.sankey.data$Count
+  )
+ 
+NCP.sankey.nodes <- data.frame(
+  name=c(as.character(NCP.sankey.links$source), 
+  as.character(NCP.sankey.links$target)) %>% unique()
+)
+
+NCP.sankey.links$IDsource <- match(NCP.sankey.links$source, NCP.sankey.nodes$name)-1 
+NCP.sankey.links$IDtarget <- match(NCP.sankey.links$target, NCP.sankey.nodes$name)-1
+
+NCP.sankey.plot <- sankeyNetwork(Links = NCP.sankey.links, Nodes = NCP.sankey.nodes,
+              Source = "IDsource", Target = "IDtarget",
+              Value = "value", NodeID = "name", 
+              sinksRight=FALSE)
+
+NCP.sankey.plot
+
+
+# to download high resolution version of figure:
+#saveNetwork(NCP.sankey.plot, "Figure2.html")
+#webshot::install_phantomjs()
+#webshot("Figure2.html", "Figure2.png", vwidth = 1000, vheight = 500, zoom = 3)
+```
+
+Figure 3. Trends in access to key NCP over the last ten years (2008-2018), and prediction for the trend in the next ten years (2018-2028). Ecosystem services listed by respondents in the ‘ecosystem services’ questionnaire coded into NCP categories following (Payne et al. 2020) plus ‘Livelihoods’ and ‘Wellbeing’. Abbreviations: ‘Energy & mat.’ = Energy and Materials; ‘Poll. & Pest Cont.’ = Pollution and Pest Control. Height of bars indicates number of responses
+
+```{r}
+es.questionnaire.original %>%
+  select(ESCODE, Provision, Access, Provision.will, Access.will) %>%
+  pivot_longer(-ESCODE, 
+               names_to = "Variable", values_to = "Trend") %>%
+  mutate(Trend = str_replace_all(Trend, c("Decrease" = "decrease",
+                                          "Increase" = "increase",
+                                          "Not" = "not",
+                                          "Deteriorate" = "decrease",
+                                          "No answer" = "NA",
+                                          "no answer" = "NA",
+                                          "Mixed" = "NA",
+                                          "decreased" = "decrease",
+                                          "increased" = "increase",
+                                          "not changed" = "Neutral",
+                                          "not change" = "Neutral",
+                                          "decrease" = "Negative",
+                                          "deteriorate" = "Negative",
+                                          "improve" = "Positive",
+                                          "increase" = "Positive",
+                                          "Improve" = "Positive"))) %>%
+  mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Poll. & pest cont.",
+                                            "ES.PST" = "Poll. & pest cont.",
+                                            "ES.AIR" = "Air & Climate",
+                                            "ES.CLI" = "Air & Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil & hazards",
+                                            "ES.HAZ" = "Soil & hazards",
+                                            "ES.NRG"= "Energy & materials",
+                                            "ES.MAT"= "Energy & materials",
+                                            "ES.FOD"= "Food & medicine",
+                                            "ES.MED"= "Food & medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+    mutate(Trend = str_replace_all(Trend, 
+                                   c("Positive" = "+", 
+                                     "Negative" = "-",
+                                     "Neutral" = "0"))) %>%
+    mutate(Trend = fct_relevel(Trend, "-", "0", "+")) %>%  
+  subset(Trend != "NA") %>%
+  subset(Variable == "Access" | Variable == "Access.will") %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    c("Access.will" = "Predicted trend 2018-2028",
+                                      "Access" = "Trend 2008-2018"))) %>%
+  mutate(Variable = fct_relevel(Variable, 
+                                "Trend 2008-2018", 
+                                "Predicted trend 2018-2028")) %>%
+  ggplot() +
+  geom_bar(aes(x = Trend), fill = "#A9A9A9", colour = "black", size = 0.2) +
+  theme_bw() +
+  labs(x = "", y = "") +
+  facet_grid(rows = vars(Variable), cols = vars(ESCODE), switch = "y") +
+  theme(legend.position = "bottom") +
+  theme(legend.justification = "right")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.left = element_text(size = 12, vjust = 1, angle = 90)) +
+  theme(strip.text.x = element_text(vjust = 1, size = 12, angle = 0))+
+  theme(axis.text.y = element_text(size = 12))+
+  theme(axis.title.x=element_blank())+
+  theme(legend.title = element_blank())+ 
+  theme(legend.text = element_text(size = 12))+
+  theme(panel.grid.major.x = element_blank())+ 
+  theme(panel.grid.minor.y = element_line(linetype="dashed"))+
+  scale_y_continuous(position = "right", 
+                     breaks = c(10, 20), minor_breaks = c(5,15,25)) 
+
+# to download high resolution version of figure:
+#ggsave(filename = "Figure3.png", width = 360, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+
+```
+
+Figure 4. Most frequent co-occurrences between trends in coded NCP (cf. Figure 3) and their drivers (both direct and indirect), using a different coding of drivers from Figure 7. Only co-occurrences with more than two responses are displayed. Each source node in the diagram has a different colour to make the links easier to discriminate. 
+
+```{r}
+NCP.change.drivers <- es.questionnaire.why.changed.access.codes %>%
+  select(RecordID, ESCODE, Access, Why.changed.access.code) %>%
+  mutate(Access = str_replace_all(Access, c("decreased" = "Decreased",
+                                            "increased" = "Increased"))) %>%
+    mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Poll. & pest cont.",
+                                            "ES.PST" = "Poll. & pest cont.",
+                                            "ES.AIR" = "Air & Climate",
+                                            "ES.CLI" = "Air & Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil & hazards",
+                                            "ES.HAZ" = "Soil & hazards",
+                                            "ES.NRG"= "Energy & materials",
+                                            "ES.MAT"= "Energy & materials",
+                                            "ES.FOD"= "Food & medicine",
+                                            "ES.MED"= "Food & medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+  separate_rows(Why.changed.access.code, sep = ";") %>%
+  unite("ESCODE_change", ESCODE:Access) %>%
+  group_by(Why.changed.access.code, ESCODE_change) %>%  
+  summarize(Count = n()) %>%
+  filter(Count > 2) %>%
+  filter(Why.changed.access.code != "NA")
+
+NCP.change.drivers.links <- data.frame(
+  source=NCP.change.drivers$Why.changed.access.code, 
+  target=NCP.change.drivers$ESCODE_change, 
+  value=NCP.change.drivers$Count
+  )
+ 
+NCP.change.drivers.nodes <- data.frame(
+  name=c(as.character(NCP.change.drivers.links$source), 
+  as.character(NCP.change.drivers.links$target)) %>% unique()
+)
+
+NCP.change.drivers.links$IDsource <- match(
+  NCP.change.drivers.links$source, NCP.change.drivers.nodes$name)-1 
+NCP.change.drivers.links$IDtarget <- match(
+  NCP.change.drivers.links$target, NCP.change.drivers.nodes$name)-1
+
+Sankey.NCP.drivers <- sankeyNetwork(
+  Links = NCP.change.drivers.links, Nodes = NCP.change.drivers.nodes,
+              Source = "IDsource", Target = "IDtarget",
+              Value = "value", NodeID = "name", 
+              sinksRight=FALSE)
+
+Sankey.NCP.drivers
+
+# to download high resolution version of figure:
+#saveNetwork(Sankey.NCP.drivers, "Figure4.html")
+#webshot::install_phantomjs()
+#webshot("Figure4.html", "Figure4.png", vwidth = 500, vheight = 500, zoom = 4)
+```
+
+Figure 6. Number of different measures towards a sustainable future for people and nature on Mount Kilimanjaro as proposed by all participants during the carousel session and grouped by Conservation Measures Partnership (CMP) categories.
+
+```{r}
+recommended.measures %>%
+  mutate(Scale = fct_relevel(Scale,
+                             "Household", 
+                             "Community",
+                             "Regional",
+                             "National",
+                             "International")) %>%
+  ggplot() +
+  geom_col(aes(x = Scale, y = Count, fill = Suggested.Measures), 
+           color = "black") +
+  scale_fill_brewer(palette = "RdBu") +
+  theme_classic() +
+  xlab("Spatial level of intervention") +
+  ylab("Number of suggested measures by CMP category") +
+  theme(legend.title = element_blank()) +
+  coord_flip()
+
+# to download high resolution version of figure:  
+#ggsave(filename = "Figure6.png", width = 360, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+
+Figure 7. The key indirect drivers, direct drivers, changes in habitat area within habitats, and suggested actions mentioned by different stakeholders in the ‘habitat’ questionnaire. Links show co-associations between pairs of variables in responses (which indirect driver was associated with which direct driver, which direct driver was associated with which habitat area trend, and which habitat trend was associated with which suggested action), and the width of each link is proportional to the number of responses. The flows are not totally balanced because one trend in habitat area could be associated with multiple (or no) drivers and recommended actions. Only links with more than 5 responses are displayed. Each source node in the diagram has a different colour to make the links easier to discriminate. 
+
+
+```{r}
+habitat.sankey.part.1 <- habitat.questionnaire.original %>%
+  select(DIR.CC, DIR.IAS, DIR.LUC, DIR.OVR, DIR.POL,
+         IND.CLT, IND.DEM, IND.ECO, IND.GVN, IND.LUC, IND.S.T) %>% 
+  mutate_if(is.numeric, ~1 * (. > 0)) %>%
+  rename("IND.ST" = "IND.S.T") %>%
+  pivot_longer(-c(DIR.CC, DIR.IAS, DIR.LUC, DIR.OVR, DIR.POL), 
+               names_to = "IND", values_to = "Value.IND") %>%
+  filter(Value.IND > 0) %>%
+  pivot_longer(-c(IND, Value.IND), 
+               names_to = "DIR", values_to = "Value.DIR") %>%
+  filter(Value.DIR > 0) %>%
+  select(DIR,IND) %>%
+  group_by(DIR, IND) %>%
+  tally %>%
+  mutate(IND = str_replace_all(IND, c("IND." = ""))) %>%
+  mutate(DIR = str_replace_all(DIR, c("DIR." = ""))) %>%
+  rename("Source" = "IND") %>%
+  rename("Target" = "DIR") %>%
+  rename("Count" = "n") %>%
+  filter(Count > 2)
+
+habitat.sankey.part.2 <- habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  mutate_if(is.numeric, ~1 * (. > 0)) %>%
+  mutate(Habitat.area = str_replace_all(Habitat.area, 
+                                        c("Increased" = "Positive",
+                                          "Decreased" = "Negative",
+                                          "Mixed" = "NA",
+                                          "No answer" = "NA",
+                                          "Not changed" = "Neutral"))) %>%
+  mutate(Biome = fct_relevel(Biome, 
+                             "Alpine", "Forest",
+                             "Freshwater", "Agroforestry",
+                             "Grassland", "Agriculture", "Urban")) %>%
+  select(Biome, Habitat.area, DIR.CC, DIR.IAS, DIR.LUC, DIR.OVR, DIR.POL,
+         IND.CLT, IND.DEM, IND.ECO, IND.GVN, IND.LUC, IND.S.T,
+         ACT.LAND, ACT.SPEC, ACT.AWAR, ACT.ENFORC, ACT.ECON,
+         ACT.PROTECT, ACT.LAWPOL, ACT.RSRCH, ACT.EDUC, ACT.INST) %>% 
+  unite(Biome.trend, Biome:Habitat.area, sep = "_") %>%
+  pivot_longer(-Biome.trend, 
+               names_to = "Variable", values_to = "Value") %>%
+  mutate(Variable = str_replace_all(Variable, c("IND.S.T" = "IND.ST"))) %>%
+  separate(Variable,  c("Component", "Category")) %>%
+  subset(Component == "DIR") %>%
+  group_by(Category, Biome.trend) %>%
+  summarise(Tally = sum(Value)) %>%
+  subset(Tally > 2) %>%
+  rename("Source" = "Category") %>%
+  rename("Target" = "Biome.trend") %>%
+  rename("Count" = "Tally") 
+
+habitat.sankey.part.3 <- habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  mutate_if(is.numeric, ~1 * (. > 0)) %>%
+  mutate(Habitat.area = str_replace_all(Habitat.area, 
+                                        c("Increased" = "Positive",
+                                          "Decreased" = "Negative",
+                                          "Mixed" = "NA",
+                                          "No answer" = "NA",
+                                          "Not changed" = "Neutral"))) %>%
+  mutate(Biome = fct_relevel(Biome, 
+                             "Alpine", "Forest",
+                             "Freshwater", "Agroforestry",
+                             "Grassland", "Agriculture", "Urban")) %>%
+  select(Biome, Habitat.area, DIR.CC, DIR.IAS, DIR.LUC, DIR.OVR, DIR.POL,
+         IND.CLT, IND.DEM, IND.ECO, IND.GVN, IND.LUC, IND.S.T,
+         ACT.LAND, ACT.SPEC, ACT.AWAR, ACT.ENFORC, ACT.ECON,
+         ACT.PROTECT, ACT.LAWPOL, ACT.RSRCH, ACT.EDUC, ACT.INST) %>% 
+  unite(Biome.trend, Biome:Habitat.area, sep = "_") %>%
+  pivot_longer(-Biome.trend, names_to = "Variable", values_to = "Value") %>%
+  mutate(Variable = str_replace_all(Variable, c("IND.S.T" = "IND.ST"))) %>%
+  separate(Variable,  c("Component", "Category")) %>%
+  subset(Component == "ACT") %>%
+  group_by(Category, Biome.trend) %>%
+  summarise(Tally = sum(Value)) %>%
+  subset(Tally > 2) %>%
+  rename("Target" = "Category") %>%
+  rename("Source" = "Biome.trend") %>%
+  rename("Count" = "Tally")
+
+
+habitat.sankey.data_1_2 <- full_join(habitat.sankey.part.1, habitat.sankey.part.2)
+habitat.sankey.data <- full_join(habitat.sankey.data_1_2, habitat.sankey.part.3)
+
+habitat.sankey.links <- data.frame(
+  source=habitat.sankey.data$Source, 
+  target=habitat.sankey.data$Target, 
+  value=habitat.sankey.data$Count
+  )
+ 
+habitat.sankey.nodes <- data.frame(
+  name=c(as.character(habitat.sankey.links$source), 
+  as.character(habitat.sankey.links$target)) %>% unique()
+)
+
+habitat.sankey.links$IDsource <- match(
+  habitat.sankey.links$source, habitat.sankey.nodes$name)-1 
+habitat.sankey.links$IDtarget <- match(
+  habitat.sankey.links$target, habitat.sankey.nodes$name)-1
+
+habitat.sankey.plot <- sankeyNetwork(
+  Links = habitat.sankey.links, Nodes = habitat.sankey.nodes,
+              Source = "IDsource", Target = "IDtarget",
+              Value = "value", NodeID = "name", 
+              sinksRight=FALSE)
+
+habitat.sankey.plot
+
+# to download high resolution version of figure:
+#saveNetwork(habitat.sankey.plot, "Figure7.html")
+#webshot::install_phantomjs()
+#webshot("Figure7.html", "Figure7.png", vwidth = 1000, vheight = 500, zoom = 3)
+```
+
+Supporting Information
+
+Figure S1 - created by Mark A. Snethlage 
+
+Figure S2. Projected future trends for 2018-2028 in habitat area and habitat condition for each of the habitats.
+
+```{r}
+habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  mutate(Habitat.area.will = str_replace_all(Habitat.area.will, 
+                                             c("Increase" = "Positive",
+                                               "Decrease" = "Negative",
+                                               "Mixed" = "NA",
+                                               "No answer" = "NA",
+                                               "Not change" = "Neutral"))) %>%
+  mutate(Habitat.condition.will = str_replace_all(Habitat.condition.will, 
+                                                  c("Improve" = "Positive",
+                                                    "Deteriorate" = "Negative",
+                                                    "No answer" = "NA",
+                                                    "Mixed" = "NA",
+                                                    "Not change" = "Neutral"))) %>%
+  select(Biome, Habitat.area.will, Habitat.condition.will) %>%
+  pivot_longer(-Biome, 
+               names_to = "Variable", values_to = "Trend") %>%
+  subset(Trend != "NA") %>%
+  subset(Biome != "Urban") %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    "Habitat.condition.will", "Condition")) %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    "Habitat.area.will", "Area")) %>%
+  mutate(Biome = str_replace_all(Biome, "Agriculture", "Cropland")) %>%
+  mutate(Biome = fct_relevel(Biome,
+                             "Alpine", "Forest",
+                             "Agroforestry", "Cropland",
+                             "Freshwater", "Grassland" )) %>%
+  mutate(Variable = fct_relevel(Variable,
+                                "Area", "Condition")) %>%
+    mutate(Trend = str_replace_all(Trend, c("Positive" = "+",
+                                          "Negative" = "-",
+                                          "Neutral" = "0"))) %>%
+    mutate(Trend = fct_relevel(Trend,
+                                "-", "0", "+")) %>%
+  
+  ggplot() +
+  geom_bar(aes(x = Trend), fill = "#A9A9A9", colour = "black", size = 0.2) +
+
+    theme_bw() +
+  labs(x = "", y = "") +
+  facet_grid(rows = vars(Biome), cols = vars(Variable)) +
+  theme(legend.position = "none") +
+  theme(legend.justification = "right") +
+  theme(strip.background = element_blank()) +
+  theme(strip.text.y.right = element_text(size = 8, vjust = 1, angle = 0)) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0)) + 
+  theme(axis.text.y = element_text(size = 8, angle = 0)) +
+  theme(axis.text.x= element_text(size = 8, angle = 0)) + 
+  theme(axis.ticks.x=element_blank()) + 
+  theme(legend.title = element_blank()) + 
+  theme(legend.text = element_text(size = 8)) +
+  theme(panel.grid.major.x = element_blank()) + 
+  theme(panel.grid.minor.y = element_blank()) + 
+  scale_y_continuous(position = "left", breaks = c(10, 20)) 
+
+# to download high resolution version of figure:
+#ggsave(filename = "FigureS3.png", width = 120, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+Function to convert blank cells to NA (for the 'Birds' variable) from Holger Brandl  https://stackoverflow.com/questions/24172111/change-the-blank-cells-to-na
+```{r}
+empty_as_na <- function(x){
+  if("factor" %in% class(x)) x <- as.character(x) 
+  ifelse(as.character(x)!="", x, NA)
+}
+```
+
+Figure S3. Reported past trends from 2008-2018 in the diversity of trees, other plants, fungi, invertebrates, fish, reptiles and amphibians, birds, and mammals.
+
+```{r}
+habitat.questionnaire.original %>%
+  rename("Biome" = "Biome2") %>%
+  mutate(Birds = as.factor(empty_as_na(Birds))) %>%
+  mutate_if(is.numeric, ~1 * (. > 0)) %>%
+  select(Biome, Birds, Mammals, Trees, Reptiles.amphibians,
+            Fish,
+            Invertebrates,
+            Other.plants,
+            Fungi) %>%
+  pivot_longer(-Biome, 
+               names_to = "Variable", values_to = "Trend") %>%
+  mutate(Trend = str_replace_all(Trend, 
+                                 c("More" = "Positive",
+                                   "Less" = "Negative",
+                                   "No change" = "Neutral",
+                                   "No answer" = "NA"))) %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    c("Invertebrates" = "Inverts.",
+                                      "Reptiles.amphibians" = "Herps."))) %>%
+  subset(Trend != "NA") %>%
+  subset(Biome != "Urban") %>%
+  mutate(Variable = fct_relevel(Variable, 
+                                "Trees", "Other.plants", "Fungi", 
+                                "Inverts.", "Fish", "Herps.", 
+                                "Birds", "Mammals")) %>%
+  mutate(Biome = str_replace_all(Biome, "Agriculture", "Cropland")) %>%
+  mutate(Biome = fct_relevel(Biome,
+                             "Alpine", "Forest",
+                             "Agroforestry", "Cropland",
+                             "Freshwater", "Grassland" )) %>%
+    mutate(Trend = str_replace_all(Trend, c("Positive" = "+",
+                                          "Negative" = "-",
+                                          "Neutral" = "0"))) %>%
+    mutate(Trend = fct_relevel(Trend,
+                                "-", "0", "+")) %>%
+ggplot() +
+  geom_bar(aes(x = Trend), fill = "#A9A9A9", colour = "black", size = 0.2) +
+
+    theme_bw() +
+  labs(x = "", y = "") +
+  facet_grid(rows = vars(Biome), cols = vars(Variable)) +
+  theme(legend.position = "none") +
+  theme(legend.justification = "right") +
+  theme(strip.background = element_blank()) +
+  theme(strip.text.y.right = element_text(size = 8, vjust = 1, angle = 0)) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0)) + 
+  theme(axis.text.y = element_text(size = 8, angle = 0)) +
+  theme(axis.text.x= element_text(size = 8, angle = 0)) + 
+  theme(axis.ticks.x=element_blank()) + 
+  theme(legend.title = element_blank()) + 
+  theme(legend.text = element_text(size = 8)) +
+  theme(panel.grid.major.x = element_blank()) + 
+  theme(panel.grid.minor.y = element_blank()) + 
+  scale_y_continuous(position = "left", breaks = c(10, 20)) 
+
+# to download high resolution version of figure:
+#ggsave(filename = "FigureS4.png", width = 180, 
+#       height = 163, dpi = "print", units = "mm", device='png')
+```
+
+Figure S4. Recommended actions by stakeholder groups for each habitat.. Direct drivers: ACT = ‘Human Activities’, CC = Climate Change, IAS = Invasive Alien Species, LUC = Land-Use Change, OVR = Overexploitation, POL = Pollution. Indirect drivers: CLT = Cultural, DEM = Demographic, ECO = Economic, GOV = Governance, S&T = Science and Technology. Recommended actions: AWR = Awareness Raising, ECO = Livelihood, Economic & Moral Incentives, EDU = Education & Training, ENF = Law Enforcement & Prosecution, INS = Institutional Development, LAN = Land / Water Management, LAW = Legal & Policy Frameworks, PRT = Conservation Designation & Planning, RSR = Research & Monitoring, SPC = Species Management
+
+```{r}
+habitat.questionnaire.original%>%
+  select(Group, Biome2, 
+         ACT.LAND, ACT.SPEC, ACT.AWAR,
+         ACT.ENFORC, ACT.ECON, ACT.PROTECT,
+         ACT.LAWPOL, ACT.RSRCH, ACT.EDUC,
+         ACT.INST, DIR.ACT, DIR.CC, DIR.IAS,
+         DIR.LUC, DIR.OVR, DIR.POL,IND.CLT, IND.DEM, IND.ECO,
+         IND.GVN, IND.LUC, IND.S.T) %>%
+  mutate(Group = as.factor(str_replace_all(Group, 
+                                           c("Blue" = "Community",
+                                             "Green" = "Research",
+                                             "Orange" = "Conservation",
+                                             "Red" = "Other",
+                                             "Yellow" = "Resources")))) %>% 
+  mutate(Group = fct_relevel(Group, 
+                             "Community", "Conservation", 
+                             "Resources", "Other", "Research")) %>%
+  pivot_longer(-c(Group, Biome2), 
+               names_to = "Variable", values_to = "Value") %>%
+  mutate(Variable = str_replace_all(Variable, 
+                                    c("ACT.AWAR" = "ACT.AWR",
+                                      "ACT.ECON" = "ACT.ECO",
+                                      "ACT.EDUC" = "ACT.EDU",
+                                      "ACT.ENFORC" = "ACT.ENF",
+                                      "ACT.INST"= "ACT.INS",
+                                      "ACT.LAND" = "ACT.LAN",
+                                      "ACT.LAWPOL"= "ACT.LAW",
+                                      "ACT.PROTECT" = "ACT.PRT",
+                                      "ACT.RSRCH" = "ACT.RSR",
+                                      "ACT.SPEC" = "ACT.SPC"))) %>%
+  mutate(Variable = str_replace_all(Variable, "IND.S.T", "IND.ST")) %>%
+  separate(Variable, c("Component", "Variable") ) %>%
+  subset(Biome2 != "Urban") %>%
+  mutate(Biome2 = str_replace_all(Biome2, "Agriculture", "Cropland")) %>%
+  mutate(Biome2 = fct_relevel(Biome2,
+                             "Alpine", "Forest",
+                             "Agroforestry", "Cropland", 
+                             "Freshwater", "Grassland" )) %>%
+  mutate(Component = fct_relevel(Component,
+                                "DIR", "IND", "ACT")) %>%
+  mutate(Component = str_replace_all(Component, c("DIR" = "Direct Drivers",
+                                                 "IND" = "Indirect Drivers",
+                                                 "ACT" = "Actions"))) %>%
+  subset(Value >0) %>% 
+  group_by(Group, Biome2, Component, Variable) %>%
+  tally() %>%
+  filter(Component == "Actions") %>%
+  ggplot() +
+  geom_bar(aes(x = reorder(Variable, -n), y = n), stat="identity") +
+  scale_fill_brewer(palette = "Set3") +
+  theme_bw() +
+  labs(x = "", y = "") +
+  facet_grid(rows = vars(Biome2), cols = vars(Group), switch = "y") +
+  theme(legend.position = "bottom") +
+  theme(legend.justification = "centre")+
+  theme(strip.background = element_blank())+
+  theme(strip.text.y.left = element_text(size = 8, vjust = 1, angle = 0)) +
+  theme(strip.text.x = element_text(vjust = 1, size = 8, angle = 0))+
+  theme(axis.title.x=element_blank()) +
+  theme(axis.text.y = element_text(size = 8)) +
+  theme(axis.text.x=element_text(vjust = 1, size = 8, angle = 90)) + 
+  theme(axis.ticks.x=element_blank()) + 
+  theme(legend.title = element_blank()) +
+  theme(legend.text = element_text(size = 8)) +
+  theme(panel.grid.major.x = element_blank()) + 
+  theme(panel.grid.minor.y = element_line(linetype="dashed")) +
+  scale_y_continuous(position = "right", breaks = c(2, 4, 6))   
+
+# to download high resolution version of figure:
+#ggsave(filename = "FigureS2.png", width = 180, 
+#       height = 180, dpi = "print", units = "mm", device='png')
+```

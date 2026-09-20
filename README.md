@@ -1,19 +1,25 @@
 # Automating Data- and Code-Archiving Checks with Metacheck
 
-This repository contains everything needed to **render the manuscript**
-that validates [metacheck](https://github.com/scienceverse/metacheck)
-against Cooper and the BES Data and Code Hackathon Group's (2026)
-manually-coded corpus of 1861 BES-journal papers.
+This repository holds the manuscript that validates
+[metacheck](https://github.com/scienceverse/metacheck) against Cooper and
+the BES Data and Code Hackathon Group's (2026) manually-coded corpus of
+1861 BES-journal papers, together with the saved results the manuscript
+reads and the small set of scripts that can regenerate them.
 
-This is a standalone, minimal repository: it contains only the final
-manuscript source, its bibliography/formatting files, and the small set
-of saved results the manuscript reads. It does **not** contain the full
-history of scripts, patches, and intermediate reruns behind those
-results — that history lives in the original working repository
-(`cooper_validation_metacheck`) and is documented in the manuscript's
-own Appendix A.
+It is a **trimmed** copy of the original working repository
+(`cooper_validation_metacheck`), which holds the full iterative history —
+every intermediate script, patch, and rebuild — behind these results,
+documented narratively in the manuscript's own Appendix A. This repository
+keeps only the scripts the manuscript actually names by path (so those
+citations resolve to a real file) plus the final, consolidated pipeline;
+it does not keep that full history. A few files this repository's own
+scripts reference (`build.R` at the repository root; several
+`code_data_preparation/*.R` scripts other than the ones named below;
+`sample.csv`'s generating step) exist only in `cooper_validation_metacheck`
+and are called out below wherever that applies, rather than silently
+assumed to be present.
 
-## Render the manuscript
+## Quickest path: just render the manuscript
 
 ```bash
 cd manuscript
@@ -21,69 +27,450 @@ quarto render manuscript.qmd
 ```
 
 This needs no internet access and no corpus rerun — every number the
-manuscript reports is read from the small `.RData`/`.csv` files already
-in `manuscript/data/`.
+manuscript reports is read from the small `.RData`/`.csv` files already in
+`manuscript/data/`, at render time, via inline R code. Nothing in
+`manuscript.qmd` is a hand-typed number describing the results (a few
+narrative counts describing *methodology*, e.g. "145 people," are typed
+prose, not derived figures).
 
-`code_check_validation.qmd` (a separate, supporting validation report
-referenced from the main manuscript's Appendix A.3) can be rendered the
-same way, from `manuscript/data/validation/`.
+`code_check_validation.qmd` renders the same way but is a **separate**
+report over a **different** corpus (400 ecology papers, not these 1861) —
+see its own section below.
 
-## Reproducing the underlying analysis from scratch
-
-If you want to rerun metacheck over the corpus yourself rather than
-trust the saved results, see `manuscript/final_pipeline/README.md`. In
-short:
-
-1. You need `bes.rds` (the parsed 1861-paper corpus). It is not included
-   here — it contains extracted full text of copyrighted journal
-   articles. Contact the authors for access.
-2. `Rscript manuscript/final_pipeline/01_run_metacheck.R` runs
-   metacheck's `repo_check`/`data_check`/`code_check` modules over the
-   whole corpus.
-3. `Rscript manuscript/final_pipeline/02_build_comparison_data.R` derives
-   the comparison columns, builds the disagreement worklist, and
-   computes the statistics the manuscript reports.
-4. The disagreement worklist then needs a human (or an LLM assistant
-   working the same way) to review each flagged disagreement — this step
-   is manual, not automated, and is where most of the analytical work in
-   this project actually happened. See `final_pipeline/README.md` for
-   the evidence-source rule each column should be checked against.
-
-## Structure
+## Repository layout
 
 ```text
-manuscript/
-├── manuscript.qmd                 # the manuscript itself
-├── code_check_validation.qmd      # supporting validation report (Appendix A.3)
-├── references.bib, package-citations.bib, apa.csl, style.css, _quarto.yml
-├── _extensions/                   # apaquarto Quarto extension
-├── final_pipeline/                # the fastest reproducible path to the manuscript's numbers
-│   ├── 01_run_metacheck.R
-│   ├── 02_build_comparison_data.R
-│   ├── helpers.R
-│   └── README.md
-└── data/
-    ├── res_repo_check.RData       # metacheck's repo_check output, full corpus
-    ├── res_data_check.RData       # metacheck's data_check output, full corpus (Git LFS)
-    ├── res_code_check.RData       # metacheck's code_check output, full corpus (Git LFS)
-    ├── recreated_cooper_columns.RData
-    ├── cooper_vs_recreated.RData / .xlsx
-    ├── comparison_statistics.RData
-    ├── disagreement_cause_categories.RData
-    ├── disagreement_review_worklist.csv / .xlsx  # the manually-reviewed disagreement worklist
-    ├── repo_not_detected_categorization.csv
-    ├── comment_quality_correlation.RData
-    ├── free_extras_summary.RData
-    ├── rerun_disagreements_comparison.csv
-    ├── bes_crossref.RData          # CrossRef bibliographic metadata (not copyrighted)
-    ├── manifests/                  # per-paper provenance JSON
-    └── validation/                 # evidence base for code_check_validation.qmd
+.
+├── README.md                                  # this file
+├── .gitattributes                              # Git LFS config (2 large .RData files)
+├── .gitignore                                  # excludes bes.rds, runtime caches, batch checkpoints
+├── sample.csv                                  # doi -> article_id lookup (see "Gaps" below)
+├── data/                                       # root-level: reproducibility_check's own outputs
+│   ├── reproducibility_check_execute_warnings.log
+│   ├── reproducibility_check_results_execute.RData   (Git LFS)
+│   └── scratch_all_session_improved_ids.rds
+├── reproducibility_check/
+│   ├── run_reproducibility_check.R             # standalone reproducibility-check tool
+│   └── run_full_20260920_112839.log            # a run's own log (untracked, git-ignored)
+└── manuscript/
+    ├── manuscript.qmd                          # the manuscript itself
+    ├── code_check_validation.qmd               # separate report (Appendix A.3), different corpus
+    ├── _quarto.yml, apa.csl, style.css, package-citations.bib, references.bib
+    ├── session-info.txt                        # generated by manuscript.qmd's own session-info chunk
+    ├── final_pipeline/                         # the fastest reproducible path to the manuscript's numbers
+    │   ├── 01_run_metacheck.R
+    │   ├── 02_build_comparison_data.R
+    │   ├── helpers.R
+    │   └── README.md
+    ├── code_data_preparation/                  # the specific historical scripts manuscript.qmd cites by path
+    │   ├── 03_recreate_cooper_columns.R
+    │   ├── 25_compute_comparison_statistics.R
+    │   ├── 34_comment_quality_correlation.R
+    │   ├── 35_free_extras_summary.R
+    │   ├── 57_rebuild_worklist_carry_forward_post_a5.R
+    │   ├── 58_categorize_disagreement_causes.R
+    │   ├── 59_apply_a5_review_verdicts.R
+    │   ├── scratch_final_classify_v3.R
+    │   └── helpers.R
+    └── data/
+        ├── res_repo_check.RData                # metacheck's repo_check output, full corpus
+        ├── res_data_check.RData                # metacheck's data_check output, full corpus (Git LFS)
+        ├── res_code_check.RData                # metacheck's code_check output, full corpus (Git LFS)
+        ├── recreated_cooper_columns.RData
+        ├── cooper_vs_recreated.RData / .xlsx
+        ├── comparison_statistics.RData
+        ├── disagreement_cause_categories.RData
+        ├── disagreement_review_worklist.csv / .xlsx
+        ├── repo_not_detected_categorization.csv
+        ├── rerun_disagreements_comparison.csv  # NOT read by manuscript.qmd (see "Gaps")
+        ├── comment_quality_correlation.RData
+        ├── free_extras_summary.RData
+        ├── bes_crossref.RData                  # NOT read by manuscript.qmd (see "Gaps")
+        ├── manifests/                          # per-paper provenance JSON, one file per paper
+        └── validation/                         # evidence base for code_check_validation.qmd
 ```
 
-`res_data_check.RData` and `res_code_check.RData` are stored via
-[Git LFS](https://git-lfs.com) (each is ~1.4GB); install `git-lfs` before
-cloning if you want them, or clone with `GIT_LFS_SKIP_SMUDGE=1` if you
-only want the manuscript source.
+`bes.rds` (the parsed 1861-paper corpus manuscript.qmd itself loads) is
+**not** in this repository at all — it is git-ignored (it contains
+extracted full text of copyrighted journal articles) and must be obtained
+separately; see "Prerequisite" under Reproducing below.
+
+---
+
+## File-by-file reference
+
+### Repository root
+
+**`sample.csv`** — a lookup table mapping each paper's `doi`/`article_id`
+(plus `journal`, `year`, `paper_number`, `source`, `ok`). Relied on by
+`final_pipeline/02_build_comparison_data.R` (read as `../sample.csv`) to
+join Cooper et al.'s DOI-keyed rows onto Metacheck's `article_id`-keyed
+output. Produced by `build.R` in the sibling `cooper_validation_metacheck`
+repository (see "Gaps" below) — nothing in this repository regenerates it.
+
+**`.gitattributes`** — declares `manuscript/data/res_code_check.RData`,
+`manuscript/data/res_data_check.RData`, and
+`data/reproducibility_check_results_execute.RData` as Git LFS objects
+(each of the first two is ~1.4GB). Relied on by `git` itself at clone/pull
+time; creates nothing.
+
+**`.gitignore`** — excludes `bes.rds` (wherever it's placed),
+`manuscript/output/`, `manuscript/_quarto_output/`, metacheck's own
+runtime caches (`.metacheck_repo_cache/`, `.metacheck_repo_info_cache/`,
+`.metacheck_llm_cache/`, all regenerable and potentially tens of GB), and
+`/data/batches/` (per-batch checkpoints from
+`reproducibility_check/run_reproducibility_check.R`).
+
+### `data/` (repository root)
+
+This is **not** the manuscript's own data folder (that is
+`manuscript/data/`, below) — it holds output from
+`reproducibility_check/run_reproducibility_check.R` runs made directly
+from the repository root.
+
+- **`reproducibility_check_results_execute.RData`** (Git LFS) — the
+  combined output of one `run_reproducibility_check.R --execute` run.
+  Currently a 1-paper test run (`dataset: 1`), not a full-corpus result —
+  nothing in the manuscript reads it.
+- **`reproducibility_check_execute_warnings.log`** — the warning log that
+  same run wrote as it went.
+- **`scratch_all_session_improved_ids.rds`** — a character vector of 20
+  paper IDs, left over from an ad hoc session; not read by any script
+  here.
+
+None of these three currently feed into `manuscript.qmd` or
+`code_check_validation.qmd`.
+
+### `reproducibility_check/`
+
+**`run_reproducibility_check.R`** — a standalone tool, independent of the
+`manuscript/final_pipeline/` chain, that checks whether a paper's own
+shared code actually *reproduces* its results (as opposed to
+`repo_check`/`data_check`/`code_check`'s more limited "is a file present
+and openable" checks). It:
+- **Relies on**: `bes.rds` (found at either `<repo_root>/bes.rds` or
+  `<repo_root>/manuscript/data/bes.rds`); always installs
+  `scienceverse/metacheck@dev` fresh from GitHub first (never a local/
+  vendored copy), since the `reproducibility_check` module it needs may
+  not exist in an older installed version; with `--execute` (the
+  default), also pulls the `ghcr.io/scienceverse/metacheck_r:latest`
+  Docker image to run each paper's code inside a sandboxed container.
+- **Creates**: `data/batches/*.RData` (per-batch, resumable checkpoints —
+  git-ignored), a combined `data/reproducibility_check_results.RData` (or
+  `..._execute.RData` when run with `--execute`), and a matching
+  `data/reproducibility_check[_execute]_warnings.log`.
+- Supports `--max-papers`, `--batch-size`, `--no-resume`, `--no-execute`,
+  `--timeout`; see the script's own header comment for the full flag
+  list and the reasoning behind batching/resumability/rate-limit handling.
+- **`run_full_20260920_112839.log`** — the console log of one invocation
+  of this script. Untracked (not committed); kept locally only.
+
+### `manuscript/manuscript.qmd`
+
+The manuscript itself. Every quantitative claim in its body and Appendix
+A is computed live, in an inline R chunk, from a file in `manuscript/
+data/` — none are hand-typed. Its own top-of-file chunks:
+
+- **`setup`** (`eval: FALSE`, not run on render) — installs the
+  `apaquarto` Quarto extension and `scienceverse/metacheck@dev`.
+- **`libraries`** — loads `metacheck`, `dplyr`, `ggplot2`, `tidyr`,
+  `stringr`, `flextable`; writes `package-citations.bib` via
+  `knitr::write_bib()`.
+- **`data`** — loads `data/bes.rds` (see Prerequisite below) and
+  Cooper et al.'s ground-truth CSV **live from their public GitHub
+  repository** (not mirrored locally), repairing a few invalid-UTF-8
+  byte sequences in place.
+- Later chunks (`data-code-archiving-counts`, `comparison-stats`,
+  `comment-quality-stats`, `free-extras-stats`, `a6-categorization-load`/
+  `-table`, `summary-table-display`) each `load()` one or more of the
+  `.RData`/`.csv` files in `manuscript/data/` described below and compute
+  the specific numbers/tables that section reports.
+- **`session-info`** — writes `manuscript/session-info.txt` (an *output*
+  of rendering, not an input any chunk reads back).
+
+### `manuscript/code_check_validation.qmd`
+
+A **separate, self-contained** validation report — not part of the main
+manuscript's numbers, and over a **different corpus**: 400 ecology
+papers (Journal of Applied Ecology, Methods in Ecology and Evolution, and
+related journals), not the 1861-paper BES corpus everything else in this
+repository concerns. It validates five checks inside metacheck's
+`code_check()` module (missing referenced files, hardcoded absolute
+paths, `setwd()` calls, comment density, and scattered library/import
+lines) by having a human read a sample of flagged and non-flagged files
+directly.
+
+- **Relies on**: the CSVs in `manuscript/data/validation/` (see below),
+  which `validate_code_check.R` produces.
+- **Creates**: an HTML report (`code-fold`, TOC) when rendered with
+  `quarto render code_check_validation.qmd`.
+
+**`manuscript/data/validation/validate_code_check.R`** — the script that
+produced every CSV in that folder. **Not directly runnable from this
+repository as committed**: it hard-codes absolute paths into two other
+local checkouts not included here
+(`C:/Users/.../git_repos/metacheck-new` for `devtools::load_all()`, and
+`C:/Users/.../git_repos/cooper_validation_metacheck/manuscript/data/
+{batches,validation}` for its input/output paths), and reads its input
+corpus table from `res_code_check_batch*.RData` files (batches 1–38) that
+live in that other repository's `data/batches/`, not in this one. It is
+included here as the documented provenance for the validation CSVs, not
+as a script you can `Rscript` in place.
+
+**`manuscript/data/validation/*.csv`** (`abs_paths_negsample60.csv`,
+`all_judgments.csv`, `judgments_*.csv`, `missing_files_*.csv`,
+`precision_summary.csv`, `remote_only_fetch_attempt.csv`,
+`scattered_*.csv`, `zero_comment_*.csv`) — the samples drawn and the
+by-hand true/false-positive/negative judgments recorded for each of the
+five checks `code_check_validation.qmd` discusses. Read only by that
+`.qmd`, not by `manuscript.qmd`.
+
+### `manuscript/final_pipeline/` — the current, consolidated pipeline
+
+The shortest path from a built corpus (`bes.rds`) to the files
+`manuscript.qmd` reads. Documented in its own
+`manuscript/final_pipeline/README.md`; summarized here:
+
+**`helpers.R`** — shared utilities sourced by both scripts below:
+`status()` (timestamped progress logging), `.fix_invalid_utf8()` (repairs
+invalid-UTF-8 bytes in Cooper et al.'s CSV), `run_with_warnings()` (wraps
+a `module_run()` call so warnings are logged live rather than deferred
+and truncated by R's default 50-warning cap), and `.ensure_cols()`/
+`combine_batches()` (schema-safe batch combination).
+
+**`01_run_metacheck.R`**
+- **Relies on**: `data/bes.rds`; `helpers.R`.
+- **Runs**: metacheck's `repo_check` → `data_check` → `code_check` over
+  the whole corpus, in resumable batches of 50 papers (checkpoints in
+  `data/batches/`, git-ignored).
+- **Creates**: `data/res_repo_check.RData`, `data/res_data_check.RData`,
+  `data/res_code_check.RData` (the full corpus-wide module output), plus
+  `data/warnings.log`.
+- This is the slow step (live network calls to every repository platform
+  cited in the corpus).
+
+**`02_build_comparison_data.R`**
+- **Relies on**: `data/res_repo_check.RData`, `data/res_data_check.RData`,
+  `data/res_code_check.RData` (from step 1); Cooper et al.'s ground-truth
+  CSV (fetched live from GitHub); `../sample.csv` (doi → article_id); an
+  existing `data/disagreement_review_worklist.csv` if present (verdicts
+  already recorded there are carried forward, never overwritten); `helpers.R`.
+- **Derives**: every `mc_`-prefixed column (`mc_data_availability`,
+  `mc_data_archive`, `mc_data_doi`, `mc_data_license`, `mc_data_download`,
+  `mc_data_format`, `mc_any_readme`, `mc_code_archived`,
+  `mc_code_download`, `mc_code_language`) from the raw module output —
+  see the script's own header comment for exactly which
+  `repo_check`/`data_check`/`code_check` field each column reads.
+- **Creates**: `data/recreated_cooper_columns.RData` (the `mc_*` columns
+  alone), `data/cooper_vs_recreated.RData` (those columns joined
+  side-by-side with Cooper et al.'s own), `data/
+  disagreement_review_worklist.csv` (one row per paper with at least one
+  flagged column disagreement, `_verdict`/`_comment` cells blank until
+  manually reviewed — see "Manual review" below), and `data/
+  comparison_statistics.RData` (agreement, sensitivity, specificity,
+  McNemar's test, and directional miss rates per construct — recomputed
+  from whatever verdicts are currently in the worklist every time this
+  script runs).
+
+**Manual review, in between.** After step 2, a human (or an LLM assistant
+following the same evidence rule) must open `data/
+disagreement_review_worklist.csv` and, for every flagged row, decide
+which side was correct and why, filling in `_verdict` (`COOPER_RIGHT`,
+`METACHECK_RIGHT`, `BOTH_DEFENSIBLE`, `DIFFERENT_DEFINITION`, or
+`UNCLEAR`) and `_comment` (the evidence). This step is not automated by
+anything in this repository. Rerunning `02_build_comparison_data.R`
+afterward recomputes `comparison_statistics.RData` from the completed
+verdicts.
+
+### `manuscript/code_data_preparation/` — cited-by-name historical scripts
+
+The manuscript's Appendix A narrates a much longer iterative history than
+`final_pipeline/`'s two-script version — dozens of scripts, reruns, and
+patches, most of which live only in `cooper_validation_metacheck`. This
+folder holds **only the specific scripts `manuscript.qmd` cites by exact
+path**, copied here so those citations resolve to a real file rather than
+describing a script this repository doesn't contain. It is not a
+runnable pipeline end to end (several of the scripts below depend on
+intermediate `.RData`/`.csv` files from *other*, non-included scripts in
+that longer history) — treat each one as documented provenance for a
+specific number or table in the manuscript, not as a sequence to execute.
+
+- **`helpers.R`** — the same role as `final_pipeline/helpers.R` (an
+  earlier, slightly different version); sourced by several scripts below
+  via `source("code_data_preparation/helpers.R")`.
+- **`03_recreate_cooper_columns.R`** — an earlier version of the logic
+  now consolidated into `final_pipeline/02_build_comparison_data.R`;
+  cited in the manuscript's Coding section as the origin of
+  `mc_data_availability` etc.
+- **`25_compute_comparison_statistics.R`** — cited as the source of the
+  confusion tables, sensitivity/specificity, directional miss rates, and
+  McNemar's test in the Empirical Comparison section. **Relies on**
+  `data/cooper_vs_recreated.RData` and `data/
+  disagreement_review_worklist.csv`. **Creates**
+  `data/comparison_statistics.RData`.
+- **`34_comment_quality_correlation.R`** — cited as the source of the
+  "Is a comment count a proxy for comment quality?" section's numbers.
+  **Relies on** Cooper et al.'s `code_annotation_scale` joined against
+  `code_check()`'s per-file comment/code line counts. **Creates**
+  `data/comment_quality_correlation.RData`.
+- **`35_free_extras_summary.R`** — cited as the source of the "Results
+  you get for free alongside Metacheck" section (portability signals,
+  comment density, import organization, parse errors, version pinning,
+  spreadsheet/data-quality findings, file-naming conventions). **Relies
+  on** the saved corpus-wide module outputs directly (no new module run).
+  **Creates** `data/free_extras_summary.RData`.
+- **`57_rebuild_worklist_carry_forward_post_a5.R`** — cited in the
+  Empirical Comparison intro as the script that regenerated
+  `cooper_vs_recreated.RData` and the disagreement worklist after
+  Appendix A.5's fixes, carrying forward any prior verdict whose
+  underlying (paper, column, Cooper value, Metacheck value) combination
+  was unchanged.
+- **`58_categorize_disagreement_causes.R`** — cited as a reproducible,
+  keyword-based categorization of each verified disagreement's root
+  cause, computed from the verdict comments rather than hand-tallied.
+  **Creates** `data/disagreement_cause_categories.RData`.
+- **`59_apply_a5_review_verdicts.R`** — cited as the script that applied
+  Appendix A.5's 57 newly-reviewed verdicts (from
+  `verdicts_a5_review.csv`, not included here) into the worklist.
+- **`scratch_final_classify_v3.R`** — cited in Appendix A.6 as the
+  script that individually categorized every still-unresolved
+  "repository not detected" disagreement by verified root cause.
+  **Creates** `data/repo_not_detected_categorization.csv` (230 rows: one
+  per paper, columns `article_id`, `column`, `comment`, `category`) —
+  the source for Appendix A.6's Table A.6.
+
+### `manuscript/data/` — the manuscript's own data folder
+
+Files not already described above:
+
+- **`res_repo_check.RData`, `res_data_check.RData` (Git LFS),
+  `res_code_check.RData` (Git LFS)** — corpus-wide `repo_check`/
+  `data_check`/`code_check` output; produced by
+  `final_pipeline/01_run_metacheck.R`; read directly by `manuscript.qmd`
+  (`data-code-archiving-counts` chunk) and by
+  `final_pipeline/02_build_comparison_data.R`.
+- **`recreated_cooper_columns.RData`** — the `mc_*` columns alone,
+  produced by `02_build_comparison_data.R`; not read directly by
+  `manuscript.qmd` (superseded for that purpose by
+  `cooper_vs_recreated.RData`, below, which already has these columns
+  joined against Cooper's own).
+- **`cooper_vs_recreated.RData`** (`side_by_side` object) / **`.xlsx`** —
+  Cooper et al.'s coded columns and Metacheck's `mc_*` columns, joined
+  side by side, one row per paper (`article_id`). Read by
+  `manuscript.qmd` in three separate chunks (`data-code-archiving-
+  counts`, `comparison-stats`, `a6-categorization-load` indirectly via
+  its downstream files). The `.xlsx` is a human-readable export of the
+  same object.
+- **`comparison_statistics.RData`** (`results`, `verdict_tallies`
+  objects) — produced by `02_build_comparison_data.R`/
+  `25_compute_comparison_statistics.R`; read by `manuscript.qmd`'s
+  `comparison-stats` chunk for every sensitivity/specificity/McNemar
+  figure in the Empirical Comparison section.
+- **`disagreement_cause_categories.RData`** — produced by
+  `58_categorize_disagreement_causes.R`; read by `manuscript.qmd`'s
+  `comparison-stats` chunk for the "dominant cause" breakdowns (e.g. how
+  many `COOPER_RIGHT` disagreements trace to `repo_not_detected`).
+- **`disagreement_review_worklist.csv`** / **`.xlsx`** — the manually
+  reviewed worklist described above; read by `manuscript.qmd`'s
+  `comparison-stats` chunk (via the `review` object) for the
+  fully-reviewed/total counts and per-construct verdict tallies.
+- **`repo_not_detected_categorization.csv`** — described above; read by
+  `manuscript.qmd`'s `a6-categorization-load`/`-table` chunks for
+  Appendix A.6's Table A.6 (230 papers categorized into 14 root-cause
+  buckets, e.g. 105 `UNSUPPORTED_REPO`, 41 `SPLIT_DOI_EXTRACTION`).
+- **`comment_quality_correlation.RData`** — produced by
+  `34_comment_quality_correlation.R`; read by `manuscript.qmd`'s
+  `comment-quality-stats` chunk.
+- **`free_extras_summary.RData`** — produced by
+  `35_free_extras_summary.R`; read by `manuscript.qmd`'s
+  `free-extras-stats` chunk.
+- **`rerun_disagreements_comparison.csv`** — **not read by any script in
+  this repository.** The manuscript's Appendix A.5 text (`manuscript.qmd`
+  line ~660) explicitly cites this file's row-level detail as living at
+  `cooper_validation_metacheck/manuscript/data/rerun_disagreements_comparison.csv`,
+  produced there by `rerun_disagreements.R` (not included here); the
+  identically-named copy in this folder appears to be a leftover mirror,
+  not something `manuscript.qmd` itself loads.
+- **`bes_crossref.RData`** (`crossref_results` object, 1857 rows of
+  Crossref bibliographic metadata) — **not read by any script in this
+  repository.** Appears to be a byproduct of the corpus-building step
+  (`build.R`, in the sibling repository) saved here but never consumed by
+  either `.qmd`.
+- **`manifests/`** — one `<paper_id>.manifest.json` per paper (1861
+  files), each recording that paper's `repo_check`/`data_check` file
+  listing with per-file `data_type`, `download`/`skip` status, and a
+  DDI-metadata mapping. Not read by `manuscript.qmd` directly (its own
+  numbers come from the `.RData` files above); useful for inspecting a
+  single paper's own detected files without loading the full
+  corpus-wide `.RData` objects.
+- **`validation/`** — described under `code_check_validation.qmd` above.
+
+## Prerequisite for any rerun: `bes.rds`
+
+`manuscript.qmd`, `final_pipeline/01_run_metacheck.R`, and
+`reproducibility_check/run_reproducibility_check.R` all load
+`data/bes.rds` (or `manuscript/data/bes.rds`) — the corpus of 1861 parsed
+papers, as a metacheck `paperlist`. It is **not included** in this
+repository: it contains the full extracted text of copyrighted journal
+articles, so it is hosted as a GitHub Release asset on the private
+repository `scienceverse/papers_private`, not the public
+`scienceverse/papers` repository `metacheck::papers_load()` reads from by
+default. Download it manually (e.g. `gh release download
+bes-2026-08-29 --repo scienceverse/papers_private`, using your own
+authenticated `gh` CLI login) and place it at `manuscript/data/bes.rds`.
+Contact the authors for access if you do not already have it.
+
+Building `bes.rds` itself from scratch (downloading each paper's PDF via
+Europe PMC or an institutional proxy login, then converting with GROBID)
+is done by `build.R`, which — along with the DOI→`article_id` step that
+produces `sample.csv` — exists only in the sibling
+`cooper_validation_metacheck` repository, not here.
+
+## Reproducing the analysis from scratch
+
+1. Obtain `data/bes.rds` (see above) and `sample.csv` (see "Gaps" below —
+   copy it from `cooper_validation_metacheck` if you don't already have a
+   copy at the repository root).
+2. `Rscript manuscript/final_pipeline/01_run_metacheck.R` (from inside
+   `manuscript/`) — runs `repo_check`/`data_check`/`code_check` over the
+   whole corpus. Slow; resumable via `data/batches/`.
+3. `Rscript manuscript/final_pipeline/02_build_comparison_data.R` (same
+   working directory) — derives the `mc_*` columns, joins them against
+   Cooper et al.'s ground truth, and writes a blank disagreement
+   worklist.
+4. Manually review every flagged row in `data/
+   disagreement_review_worklist.csv` (see "Manual review" above) — this
+   is the step where most of the actual analytical judgment in this
+   project happens, and nothing here automates it.
+5. Rerun step 3 to fold the completed verdicts into
+   `comparison_statistics.RData`, then render `manuscript/manuscript.qmd`.
+
+`code_check_validation.qmd` is independent of steps 2–5 above (different
+corpus entirely) and cannot currently be regenerated from this repository
+alone — see `validate_code_check.R`'s entry above.
+
+## Gaps: files this repository's own scripts reference but do not contain
+
+Flagged here explicitly rather than left for a failed run to discover:
+
+- **`build.R`** (repository root) — builds `bes.rds` and `sample.csv`.
+  Referenced by `final_pipeline/README.md` and `01_run_metacheck.R`'s own
+  comments. Exists only in `cooper_validation_metacheck`.
+- **`sample.csv`** — present at the repository root here (copied in
+  manually), but nothing in this repository regenerates it if it goes
+  missing or becomes stale relative to a fresh `bes.rds`.
+- **The rest of `code_data_preparation/`** — dozens of numbered and
+  `scratch_*` scripts (roughly 250 files) that produced the intermediate
+  results narrated in Appendix A but not directly cited by path in the
+  final manuscript text. They exist only in `cooper_validation_metacheck`.
+- **`validate_code_check.R`'s absolute-path dependencies** — the
+  `metacheck-new` checkout it `devtools::load_all()`s, and the
+  `cooper_validation_metacheck` batch files it reads its corpus table
+  from (see its entry above).
+- **`rerun_disagreements.R`** and its output's canonical location —
+  cited by the manuscript text itself as living in
+  `cooper_validation_metacheck`, not here (see
+  `rerun_disagreements_comparison.csv`'s entry above).
 
 ## Citation
 

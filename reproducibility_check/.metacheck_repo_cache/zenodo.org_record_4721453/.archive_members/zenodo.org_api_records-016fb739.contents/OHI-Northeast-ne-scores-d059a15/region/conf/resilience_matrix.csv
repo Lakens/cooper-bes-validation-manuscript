@@ -1,0 +1,17 @@
+goal,element,res_water_pollution,res_fishing,res_climate_change,res_alien,res_hab_destruction,res_social,res_eco_integrity
+RAO,,x,x,x,,x,x,x
+CP,,x,,x,,x,x,x
+CS,,x,,x,,x,x,x
+CW,,x,,x,,,x,x
+ECO,,,,,,,x,x
+FIS,,,x,x,,x,x,x
+HAB,saltmarsh,x,,x,,x,x,x
+HAB,eelgrass,x,,x,,x,x,x
+HAB,seabed,x,,x,,x,x,x
+ICO,,,x,x,,,x,x
+LIV,,,,,,,x,x
+LSP,,x,x,x,,x,x,x
+MAR,,x,,x,x,,x,x
+SPP,,,x,x,,,x,x
+TR,,x,x,x,,x,x,x
+SPFIS,,,x,x,x,x,x,x

@@ -1,0 +1,157 @@
+"","year","rgn_id","rgn_name","score"
+"1",2005,5,"Connecticut",0.814350192486393
+"2",2006,5,"Connecticut",0.834262577990176
+"3",2007,5,"Connecticut",0.843687773795301
+"4",2008,5,"Connecticut",0.844617018452144
+"5",2009,5,"Connecticut",0.846077260055755
+"6",2010,5,"Connecticut",0.843953272268684
+"7",2011,5,"Connecticut",0.838908801274393
+"8",2012,5,"Connecticut",0.835324571883712
+"9",2013,5,"Connecticut",0.830943847072879
+"10",2014,5,"Connecticut",0.841696535244922
+"11",2015,5,"Connecticut",0.860148679145095
+"12",2016,5,"Connecticut",0.847404752422674
+"13",2017,5,"Connecticut",0.848864994026284
+"14",2005,2,"Geroges Bank",NA
+"15",2006,2,"Geroges Bank",NA
+"16",2007,2,"Geroges Bank",NA
+"17",2008,2,"Geroges Bank",NA
+"18",2009,2,"Geroges Bank",NA
+"19",2010,2,"Geroges Bank",NA
+"20",2011,2,"Geroges Bank",NA
+"21",2012,2,"Geroges Bank",NA
+"22",2013,2,"Geroges Bank",NA
+"23",2014,2,"Geroges Bank",NA
+"24",2015,2,"Geroges Bank",NA
+"25",2016,2,"Geroges Bank",NA
+"26",2017,2,"Geroges Bank",NA
+"27",2005,3,"Gulf of Maine",NA
+"28",2006,3,"Gulf of Maine",NA
+"29",2007,3,"Gulf of Maine",NA
+"30",2008,3,"Gulf of Maine",NA
+"31",2009,3,"Gulf of Maine",NA
+"32",2010,3,"Gulf of Maine",NA
+"33",2011,3,"Gulf of Maine",NA
+"34",2012,3,"Gulf of Maine",NA
+"35",2013,3,"Gulf of Maine",NA
+"36",2014,3,"Gulf of Maine",NA
+"37",2015,3,"Gulf of Maine",NA
+"38",2016,3,"Gulf of Maine",NA
+"39",2017,3,"Gulf of Maine",NA
+"40",2005,6,"Maine",0.821511179645335
+"41",2006,6,"Maine",0.818555641223336
+"42",2007,6,"Maine",0.816371112824467
+"43",2008,6,"Maine",0.811488049344641
+"44",2009,6,"Maine",0.815728604471858
+"45",2010,6,"Maine",0.823824209714726
+"46",2011,6,"Maine",0.828707273194552
+"47",2012,6,"Maine",0.828450269853508
+"48",2013,6,"Maine",0.84130043690568
+"49",2014,6,"Maine",0.838987406836289
+"50",2015,6,"Maine",0.838601901824724
+"51",2016,6,"Maine",0.832176818298638
+"52",2017,6,"Maine",0.82857877152403
+"53",2005,7,"Massachusetts-North",0.821215195581107
+"54",2006,7,"Massachusetts-North",0.819918836658776
+"55",2007,7,"Massachusetts-North",0.823920640288581
+"56",2008,7,"Massachusetts-North",0.822906098523278
+"57",2009,7,"Massachusetts-North",0.825836996956375
+"58",2010,7,"Massachusetts-North",0.822849735091872
+"59",2011,7,"Massachusetts-North",0.822680644797655
+"60",2012,7,"Massachusetts-North",0.821384285875324
+"61",2013,7,"Massachusetts-North",0.822398827640627
+"62",2014,7,"Massachusetts-North",0.820933378424078
+"63",2015,7,"Massachusetts-North",0.82301882538609
+"64",2016,7,"Massachusetts-North",0.81304249802728
+"65",2017,7,"Massachusetts-North",0.804024349002367
+"66",2005,8,"Massachusetts-South",0.821215195581107
+"67",2006,8,"Massachusetts-South",0.819918836658776
+"68",2007,8,"Massachusetts-South",0.823920640288581
+"69",2008,8,"Massachusetts-South",0.822906098523278
+"70",2009,8,"Massachusetts-South",0.825836996956375
+"71",2010,8,"Massachusetts-South",0.822849735091872
+"72",2011,8,"Massachusetts-South",0.822680644797655
+"73",2012,8,"Massachusetts-South",0.821384285875324
+"74",2013,8,"Massachusetts-South",0.822398827640627
+"75",2014,8,"Massachusetts-South",0.820933378424078
+"76",2015,8,"Massachusetts-South",0.82301882538609
+"77",2016,8,"Massachusetts-South",0.81304249802728
+"78",2017,8,"Massachusetts-South",0.804024349002367
+"79",2005,4,"Mid-Atlantic Bight",NA
+"80",2006,4,"Mid-Atlantic Bight",NA
+"81",2007,4,"Mid-Atlantic Bight",NA
+"82",2008,4,"Mid-Atlantic Bight",NA
+"83",2009,4,"Mid-Atlantic Bight",NA
+"84",2010,4,"Mid-Atlantic Bight",NA
+"85",2011,4,"Mid-Atlantic Bight",NA
+"86",2012,4,"Mid-Atlantic Bight",NA
+"87",2013,4,"Mid-Atlantic Bight",NA
+"88",2014,4,"Mid-Atlantic Bight",NA
+"89",2015,4,"Mid-Atlantic Bight",NA
+"90",2016,4,"Mid-Atlantic Bight",NA
+"91",2017,4,"Mid-Atlantic Bight",NA
+"92",2005,9,"New Hampshire",0.829862832589654
+"93",2006,9,"New Hampshire",0.828705999008428
+"94",2007,9,"New Hampshire",0.831515451991406
+"95",2008,9,"New Hampshire",0.834159643034209
+"96",2009,9,"New Hampshire",0.832341761692282
+"97",2010,9,"New Hampshire",0.832341761692282
+"98",2011,9,"New Hampshire",0.832837547512808
+"99",2012,9,"New Hampshire",0.832672285572633
+"100",2013,9,"New Hampshire",0.826557593786151
+"101",2014,9,"New Hampshire",0.832341761692282
+"102",2015,9,"New Hampshire",0.831680713931582
+"103",2016,9,"New Hampshire",0.826722855726326
+"104",2017,9,"New Hampshire",0.80705668484548
+"105",2005,10,"New York",0.822784614910089
+"106",2006,10,"New York",0.821674223497116
+"107",2007,10,"New York",0.822722926498257
+"108",2008,10,"New York",0.773526418062367
+"109",2009,10,"New York",0.786234230899725
+"110",2010,10,"New York",0.771182258412757
+"111",2011,10,"New York",0.747154622004256
+"112",2012,10,"New York",0.745303969649301
+"113",2013,10,"New York",0.753169242157861
+"114",2014,10,"New York",0.744933839178311
+"115",2015,10,"New York",0.743761759353505
+"116",2016,10,"New York",0.647651213719503
+"117",2017,10,"New York",0.644906079392986
+"118",2005,1,"Offshore",NA
+"119",2006,1,"Offshore",NA
+"120",2007,1,"Offshore",NA
+"121",2008,1,"Offshore",NA
+"122",2009,1,"Offshore",NA
+"123",2010,1,"Offshore",NA
+"124",2011,1,"Offshore",NA
+"125",2012,1,"Offshore",NA
+"126",2013,1,"Offshore",NA
+"127",2014,1,"Offshore",NA
+"128",2015,1,"Offshore",NA
+"129",2016,1,"Offshore",NA
+"130",2017,1,"Offshore",NA
+"131",2005,11,"Rhode Island",0.799625468164794
+"132",2006,11,"Rhode Island",0.7964151952916
+"133",2007,11,"Rhode Island",0.816211878009631
+"134",2008,11,"Rhode Island",0.802568218298555
+"135",2009,11,"Rhode Island",0.798555377207062
+"136",2010,11,"Rhode Island",0.802835741037988
+"137",2011,11,"Rhode Island",0.80390583199572
+"138",2012,11,"Rhode Island",0.792134831460674
+"139",2013,11,"Rhode Island",0.794275013376137
+"140",2014,11,"Rhode Island",0.789459604066346
+"141",2015,11,"Rhode Island",0.781968967362226
+"142",2016,11,"Rhode Island",0.778758694489032
+"143",2017,11,"Rhode Island",0.769127875869449
+"144",2005,12,"Northeast",0.820857746422735
+"145",2006,12,"Northeast",0.821508762140114
+"146",2007,12,"Northeast",0.824830270902255
+"147",2008,12,"Northeast",0.802523018055722
+"148",2009,12,"Northeast",0.808926886949128
+"149",2010,12,"Northeast",0.802576162195916
+"150",2011,12,"Northeast",0.792279485033281
+"151",2012,12,"Northeast",0.790193577530658
+"152",2013,12,"Northeast",0.79432553443076
+"153",2014,12,"Northeast",0.791495608965416
+"154",2015,12,"Northeast",0.792864070575418
+"155",2016,12,"Northeast",0.746615382571379
+"156",2017,12,"Northeast",0.741021961815935

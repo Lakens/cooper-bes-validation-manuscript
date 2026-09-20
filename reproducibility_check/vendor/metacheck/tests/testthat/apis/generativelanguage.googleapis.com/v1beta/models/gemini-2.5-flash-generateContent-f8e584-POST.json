@@ -1,0 +1,31 @@
+{
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "TRUE"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "index": 0
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 16,
+        "candidatesTokenCount": 1,
+        "totalTokenCount": 131,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 16
+            }
+        ],
+        "thoughtsTokenCount": 114,
+        "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-2.5-flash",
+    "responseId": "1Sccav7iM6LmvdIPxtLqiAc"
+}

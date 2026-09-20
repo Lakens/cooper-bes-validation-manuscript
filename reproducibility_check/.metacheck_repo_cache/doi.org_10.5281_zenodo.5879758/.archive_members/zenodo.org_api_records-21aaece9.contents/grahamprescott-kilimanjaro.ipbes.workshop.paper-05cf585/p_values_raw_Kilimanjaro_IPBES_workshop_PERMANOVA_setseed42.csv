@@ -1,0 +1,20 @@
+﻿Model,Pseudo-F,df,p
+Habitat area ~ stakeholder groups,2.02,"4, 104",0.098
+Habitat area ~ habitats,3.93,"16, 104",0.002
+Habitat area ~ stakeholder groups*habitats,0.61,"6, 104",0.862
+NCP ~ stakeholder groups ,3.85,"4, 63",0.001
+NCP (past trend) ~ stakeholder groups,5.47,"4, 92",0.002
+NCP (past trend) ~ NCP categories,1.68,"8, 92",0.091
+NCP (past trend) ~ stakeholder groups*NCP categories,1.79,"20, 92",0.017
+NCP (future trend) ~ stakeholder groups,1.64,"4, 92",0.138
+NCP (future trend) ~ NCP categories,0.56,"8, 92",0.81
+NCP (future trend) ~ stakeholder groups*NCP categories,0.88,"20, 92",0.497
+Direct driver ~ stakeholder groups,1.03,"4, 96",0.418
+Direct driver ~ habitats,2.12,"6, 96",0.019
+Direct driver ~ stakeholder groups*habitats,1,"14, 96",0.461
+Indirect driver ~ stakeholder groups,1.28,"4, 37",0.258
+Indirect driver ~ habitats,0.48,"6, 37",0.91
+Indirect driver ~ stakeholder groups*habitats,0.81,"11, 37",0.7
+Actions ~ stakeholder groups,1.99,"4, 108",0.027
+Actions ~ habitats,1.83,"6, 108",0.02
+Actions ~ stakeholder groups*habitats,0.91,"16, 108",0.626

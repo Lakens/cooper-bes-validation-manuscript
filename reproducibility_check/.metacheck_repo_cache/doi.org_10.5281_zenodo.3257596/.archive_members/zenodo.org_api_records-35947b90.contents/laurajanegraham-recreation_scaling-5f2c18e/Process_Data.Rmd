@@ -1,0 +1,482 @@
+---
+title: "Process Data"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+```{r load_packages}
+# Libraries
+library(raster)
+library(rgdal)
+library(tidyverse)
+library(gdalUtils)
+library(doParallel)
+library(knitr)
+library(sf)
+library(fs)
+library(lubridate)
+library(furrr)
+library(knitr)
+
+# code to download flickr metadata
+source("code/flickr.R")
+
+# Analysis resolutions
+rln <- c(5, 10, 25, 50)
+
+# Calculate the number of cores
+no_cores <- detectCores() - 1
+```
+
+# Covariate Data
+
+## General details
+
+We are creating a dataset of social-ecological covariates at a range of spatial resolutions: 5km, 10km, 25km, 50km. All data are open except for Land Cover Map 2015. 
+
+## Land-cover data
+
+We use Land Cover Map 2015 at 25m resolution to calculate land-cover proportions and diversity at each resolution. 
+
+```{r clc_data}
+lcm <- raster("C:/Users/lg1u16/DATA/LULC/lcm2015/lcm2015gb25m.tif")
+```
+
+### Land-cover diversity
+
+```{r clc_shei}
+# Initiate cluster
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("lcm"))
+clusterEvalQ(cl, c("raster", "grainchanger"))
+
+# aggregate to each resolution
+out <- parLapply(cl, rln, function(x) {
+  fname <- paste0("data/covariates/lcm_shei_", x, "km.tif")
+  raster::aggregate(lcm, (x*1000)/25, 
+            fun=function(y, ...) grainchanger::diversity(y, lc_class = 1:21), 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+
+### Proportion of agricultural land cover
+
+- Classes 3 (arable and horticulture) and 4 (improved grassland). 
+
+```{r clc_agri}
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("lcm"))
+clusterEvalQ(cl, c("raster"))
+
+out <- parLapply(cl, rln, function(x) {
+  div <- ((x*1000)/25)^2
+  fname <- paste0("data/covariates/lcm_agri_", x, "km.tif")
+  raster::aggregate(lcm, (x*1000)/25, 
+            fun=function(y, ...) sum(y %in% 3:4)/div, 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+
+### Proportion of natural land cover
+
+- Semi-natural grassland (5-8)
+- Mountain, heath and bog (9-12)
+- Forested land cover (1-2)
+- Wetland / water bodies (13-19)
+
+
+```{r clc_prop}
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("lcm"))
+clusterEvalQ(cl, c("raster", "grainchanger"))
+
+out <- parLapply(cl, rln, function(x) {
+  div <- ((x*1000)/25)^2
+  fname <- paste0("data/covariates/lcm_prop_", x, "km.tif")
+  raster::aggregate(lcm, (x*1000)/25, 
+            fun=function(y, ...) sum(y %in% c(1:2, 5:19))/div, 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+```{r lcm_props}
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("lcm"))
+clusterEvalQ(cl, c("raster", "grainchanger"))
+
+out <- parLapply(cl, rln, function(x) {
+  div <- ((x*1000)/25)^2
+  fname <- paste0("data/covariates/lcm_forest_", x, "km.tif")
+  raster::aggregate(lcm, (x*1000)/25, 
+            fun=function(y, ...) sum(y %in% c(1:2))/div, 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("lcm"))
+clusterEvalQ(cl, c("raster", "grainchanger"))
+
+out <- parLapply(cl, rln, function(x) {
+  div <- ((x*1000)/25)^2
+  fname <- paste0("data/covariates/lcm_coast_", x, "km.tif")
+  raster::aggregate(lcm, (x*1000)/25, 
+            fun=function(y, ...) sum(y %in% c(15:19))/div, 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+
+## Elevation data
+
+We use [EU-DEM v1.1](https://land.copernicus.eu/pan-european/satellite-derived-products/eu-dem/eu-dem-v1.1/view) at 25m resolution to calculate topographic range at each resolution. 
+
+```{r dem_data}
+align_rasters(unaligned = "C:/Users/lg1u16/DATA/PHYSICAL/elev/eu_dem_1.1/eu_dem_v11_E30N30.TIF", 
+              reference = "C:/Users/lg1u16/DATA/LULC/lcm2015/lcm2015gb25m.tif",
+              dstfile = "data/covariates/ukdem_25m.tif",
+              nThreads = "ALL_CPUS",
+              overwrite = TRUE)
+```
+
+```{r dem_range}
+dem <- raster("data/covariates/ukdem_25m.tif")
+
+# Initiate cluster
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("dem"))
+clusterEvalQ(cl, "raster")
+
+# aggregate to each resolution
+out <- parLapply(cl, rln, function(x) {
+  fname <- paste0("data/covariates/dem_range_", x, "km.tif")
+  raster::aggregate(dem, (x*1000)/25, 
+            fun=function(y, ...) max(y, na.rm = TRUE) - min(y, na.rm = TRUE), 
+            filename = fname,
+            overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+
+
+## Population data
+
+We use [OpenPopGrid](http://openpopgrid.geodata.soton.ac.uk/) at 10m resolution to calculate total population at each resolution. 
+
+```{r pop_data}
+f <- list.files("~/DATA/SOCIAL/OpenPopGrid", pattern = "*.asc", full.names = TRUE)
+
+# Initiate cluster
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("f"))
+clusterEvalQ(cl, "raster")
+
+out <- parLapply(cl, f, function(x) {
+  fname <- gsub(".asc", ".tif", x)
+  r <- raster::raster(x, crs = '+init=EPSG:27700')
+  raster::aggregate(r, 500, fun=sum, filename = fname, overwrite = TRUE)
+})
+
+stopCluster(cl)
+
+f <- list.files("~/DATA/SOCIAL/OpenPopGrid", pattern = "*.tif", full.names = TRUE)
+
+mosaic_rasters(f, "data/covariates/pop.tif", overwrite = TRUE)
+
+align_rasters(unaligned = "data/covariates/pop.tif", 
+              reference = "data/covariates/lcm_shei_5km.tif",
+              dstfile = "data/covariates/pop_aligned.tif",
+              nThreads = "ALL_CPUS",
+              overwrite = TRUE)
+```
+
+```{r pop_total}
+pop <- raster("data/covariates/pop_aligned.tif")
+
+# Initiate cluster
+cl <- makeCluster(no_cores)
+clusterExport(cl, c("pop"))
+clusterEvalQ(cl, "raster")
+
+# aggregate to each resolution
+out <- parLapply(cl, rln, function(x) {
+  fname <- paste0("data/covariates/pop_", x, "km.tif")
+  r <- raster::aggregate(pop, x/5, 
+            fun=sum)
+  r <- r / (x^2)
+  raster::writeRaster(r, fname, overwrite = TRUE)
+})
+
+stopCluster(cl)
+```
+
+## Protected area data
+
+We calculate the total amount of area designated as [National Park](https://data.gov.uk/dataset/334e1b27-e193-4ef5-b14e-696b58bb7e95/national-parks-england) or [Area of Outstanding Natural Beauty](https://data.gov.uk/dataset/8e3ae3b9-a827-47f1-b025-f08527a4e84e/areas-of-outstanding-natural-beauty-england) at each resolution. We use the data from Natural England.
+
+```{r pa}
+shp <- rbind(st_read("~/DATA/ADMINISTRATIVE/national_parks_england/National_Parks_England.shp") 
+            %>% select(name),
+            st_read("~/DATA/ADMINISTRATIVE/aonb_england/Areas_of_Outstanding_Natural_Beauty_England.shp") 
+            %>% select(name)) %>% 
+  st_transform(projection(lcm))
+
+
+for(x in rln) {
+  ras <- raster(paste0("data/covariates/pop_", x, "km.tif"))
+  g <- as(ras, 'SpatialPolygonsDataFrame') %>% st_as_sf() %>% mutate(id = 1:n())
+  int <- as_tibble(st_intersection(shp, g))
+  int <- int %>% mutate(area_pa = st_area(geometry))
+  
+  pa_cell <- int %>%
+    group_by(id) %>%
+    summarise(area_pa = sum(area_pa)/((x*1000)^2)) %>% 
+    right_join(g) %>% 
+    mutate(area_pa = case_when(is.na(area_pa) ~ 0,
+                               TRUE ~ as.numeric(area_pa))) %>% 
+    st_as_sf()
+  
+  ras_out <- fasterize::fasterize(pa_cell, ras, field = "area_pa")
+  writeRaster(ras_out, filename = paste0("data/covariates/pa_", x, "km.tif"), overwrite = TRUE)
+}
+```
+
+## Distance to city data
+
+Data on major towns and cities from [ONS](https://data.gov.uk/dataset/7879ab82-2863-401e-8a29-a56e264d2182/major-towns-and-cities-december-2015-boundaries). 
+
+```{r dist}
+cities <- st_read("~/DATA/ADMINISTRATIVE/uk_cities/Major_Towns_and_Cities_December_2015_Boundaries.shp") %>% 
+  st_transform(projection(lcm)) %>% 
+  st_centroid()
+
+for(x in rln) {
+  ras <- raster(paste0("data/covariates/pop_", x, "km.tif"))
+  g <- as(ras, 'SpatialPolygonsDataFrame') %>% st_as_sf() %>% mutate(id = 1:n())
+  pts <- g %>% st_centroid()
+  dists <- g %>% mutate(dist = st_distance(pts, cities) %>% apply(1, min))
+  ras_out <- fasterize::fasterize(dists, ras, field = "dist")
+  writeRaster(ras_out, filename = paste0("data/covariates/dist_", x, "km.tif"), overwrite = TRUE)
+}
+```
+
+# Response data
+
+We have two response variables and these will be calculated at the same 4 resolutions (5km, 10km, 25km, 50km). 
+
+## Flickr photograph density
+
+We filter photos using keywords in a number of languages following @VanZanten2014. The keywords are included in the supplementary materials for this paper. Code used to get photos from Flickr is an early version of [`photosearcher`](https://nfox29.github.io/photosearcher/), developed by Nathan Fox, Tom August, Francesca Martini and Laura Graham. 
+
+We will get photograph metadata for England for the years 2009-2017 to be comparable to the MENE data. 
+
+These are lists of keywords from [@VanZanten2014]. They filtered photos that contained at least one of both kw_landscape and kw_ambig, and all keywords from kw_unambig. 
+
+```{r keywords}
+kw_landscape <- c("nature", "landscape", 
+                  "cultural landscape", "cultural land", "hill",
+                  "mountain", "valley", "basin", "highland",
+                  "ridge", "cliff", "peak", "gorge",
+                  "glacier", "beach", "shore", "coast",
+                  "sea", "ocean", "wetland", "river", "dike",
+                  "brook", "lake", "waterfall", "dune",
+                  "swamp", "pond", "ditch", "channel",
+                  "estuary", "creek", "forest", "tree",
+                  "woods", "canopy", "grove", "hedgerow",
+                  "bush", "meadow", "grassland", "pasture",
+                  "countryside", "prairie", "maize",
+                  "corn", "wheat", "oats", "livestock", "cattle",
+                  "cow","sheep", "orchard", "field",
+                  "vineyard", "crops", "cropland", "grazing",
+                  "heather", "heath", "heathland",
+                  "park", "peat", "peatland", "peatbog",
+                  "marsh", "marshes", "marshland",
+                  "moor", "moors", "moorland", "shrubs",
+                  "shrubland")
+
+kw_ambig <- c("relax", "cruising", "relaxing", "beauty",
+              "beautiful", "magnificence", "magnificent",
+              "splendour", "brilliance", "brilliant",
+              "inspiring", "inspired", "sublime",
+              "gorgeous", "outstanding", "enjoying",
+              "breathtaking", "enchanting")
+
+kw_unambig <- c("walk", "walking", "hike", "hiking",
+                "camp", "camping", "recreation", "cycling",
+                "horse riding", "fishing", "mountain biking", 
+                "bike riding", "run", "running",
+                "hunt", "hunting", "tourism",
+                "climbing", "trekking", "mountaineering",
+                "skiing", "sailing", "rowing", "jogging",
+                "outdoor", "vista", "panorama",
+                "scene", "scenic", "scenery", "view",
+                "viewpoint", "heritage", "historic value")
+```
+
+```{r get_photos, message = FALSE}
+for(kw in kw_unambig) {
+  print(kw)
+  p <- photo_by_tag(year_range = c(2009, 2017),
+                    tags = kw,
+                    woe_id = 24554868)
+  save(p, file = paste0("data/flickr/", kw, ".Rda"))
+}
+
+for(kw in kw_ambig){
+  
+  p <- photo_by_tag(year_range = c(2009, 2017),
+                    tags = kw,
+                    woe_id = 24554868) %>% 
+    mutate(photo_tags = str_split(photo_tags, pattern = " "),
+           match = map_dbl(photo_tags, function(x) sum(x %in% kw_landscape))) %>% 
+    filter(match > 0) %>% 
+    select(-match)
+  
+  save(p, file = paste0("data/flickr/", kw, ".Rda"))
+}
+```
+
+```{r photo_shp, message = FALSE}
+f <- list.files("data/flickr/", full.names = TRUE)
+
+photos_sf <- map_dfr(f, function(x) {
+  load(x)
+  if(!is.null(p)) p %>% select(longitude, latitude, owner, datetaken)
+  }) %>% 
+  mutate(owner_date = paste(owner, date(datetaken), sep="_")) %>% 
+  distinct() %>%
+  na.omit() %>% 
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326) %>% 
+  st_transform(crs = projection(lcm))
+
+photos_sp <- as(photos_sf, "Spatial")
+```
+
+We need to convert from points to raster at the analysis resolutions. In order to do so, we want the unique owner date combinations. 
+
+```{r photo_rasters}
+# loop through the dem files to get rasters for the visits
+fnames <- list.files("data/covariates", pattern = "pop", full.names = TRUE)
+
+for(f in fnames) {
+  ras <- raster(f)
+  rln <- res(ras)/1000
+  fname <- paste0("data/response/flickr_", rln[1], "km.tif")
+  rec_ras <- rasterize(photos_sp, 
+                       ras, 
+                       'owner_date', 
+                       fun = function(x,...) length(unique(x)),
+                       filename = fname, 
+                       overwrite = TRUE)
+}
+```
+
+## MENE visit density
+
+The data for the recreation visits come from the [Monitor of Engagement with the Natural Environment (MENE) survey](https://www.gov.uk/government/collections/monitor-of-engagement-with-the-natural-environment-survey-purpose-and-results). At present, I've not filtered other than to remove records which do not have locations. This means we have point locations of visits across all years the survey was run, and these are of all types. 
+
+```{r rec_data}
+visits_sf <- read_csv("data/mene_vists.csv") %>% 
+  select(id = id2,
+         x = DESTINATION_EASTING,
+         y = DESTINATION_NORTHING,
+         year, Visitdate) %>% 
+  na.omit %>% 
+  st_as_sf(coords = c("x", "y"), crs = 27700) %>% 
+  st_transform(crs = projection(lcm))
+
+visits_sp <- as(visits_sf, "Spatial")
+```
+
+We need to convert from points to raster at the 4 analysis resolutions.
+
+```{r rec_rasters}
+# loop through the dem files to get rasters for the visits
+fnames <- list.files("data/covariates", pattern = "pop", full.names = TRUE)
+
+for(f in fnames) {
+  ras <- raster(f)
+  rln <- res(ras)/1000
+  fname <- paste0("data/response/mene_", rln[1], "km.tif")
+  rec_ras <- rasterize(visits_sp, 
+                       ras, 
+                       'id', 
+                       fun=function(x,...)length(x),
+                       filename = fname, 
+                       overwrite = TRUE)
+}
+```
+
+# Combine data
+
+```{r dat_to_csv}
+get_df <- function(rln, study_ext) {
+  rln = paste0(rln, "km")
+  # list all files of specified resolution
+  covs <- list.files("data/covariates", pattern = paste0("_", rln), full.names = TRUE)
+  resp <- list.files("data/response", pattern = paste0("_", rln), full.names = TRUE)
+  fnames <- c(covs, resp)
+  
+  # stack them
+  dat <- stack(fnames)
+  
+  # crop and mask by study extent - mask will get rid of most of the coastal cells
+  # NB need to find out what rule mask actually applies
+  dat <- crop(dat, study_ext)
+  dat <- mask(dat, study_ext)
+  
+  # get into a dataframe
+  df <- as.data.frame(dat, xy = TRUE) %>% 
+    rename_all(funs(str_replace_all(., paste0("_", rln), ""))) %>% 
+    filter_at(vars(lcm_agri, dem_range, pop), all_vars(!is.na(.))) %>% 
+    filter_at(vars(mene, flickr), all_vars(!is.na(.))) %>% 
+    mutate(resolution = rln)
+  
+  return(df)
+}
+
+# study extent
+study_ext_sf <- st_read("~/DATA/ADMINISTRATIVE/gb_shapefile/GBR_adm1.shp", quiet = TRUE) %>% 
+  filter(NAME_1 == "England") %>% 
+  st_transform(projection(lcm))
+
+study_ext <- as(study_ext_sf, "Spatial")
+
+# dataframe with obs for all data
+df <- map_dfr(rln, get_df, study_ext) %>% 
+  mutate(resolution = factor(resolution, levels = paste0(rln, "km")),
+         mene = case_when(is.na(mene) ~ 0, 
+                              TRUE ~ mene),
+         flickr = case_when(is.na(flickr) ~ 0,
+                            TRUE ~ flickr)) %>% 
+  #select(x, y, resolution, mene, flickr, lcm_agri, lcm_prop, lcm_shei, dem_range, pa, pop, dist) %>% 
+  as_tibble()
+
+save(df, file = "data/rec_analysis_data.Rda")
+```
+
+## Session Info
+
+```{r session_info}
+session <- devtools::session_info()
+session[[1]]
+session[[2]] %>% kable
+```

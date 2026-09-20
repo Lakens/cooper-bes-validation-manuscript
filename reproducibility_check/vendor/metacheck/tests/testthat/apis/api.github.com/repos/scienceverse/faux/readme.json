@@ -1,0 +1,18 @@
+{
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "96eec71bed9ecbce8f51d3fe8f135530ec175e46",
+    "size": 1906,
+    "url": "https://api.github.com/repos/scienceverse/faux/contents/README.md?ref=master",
+    "html_url": "https://github.com/scienceverse/faux/blob/master/README.md",
+    "git_url": "https://api.github.com/repos/scienceverse/faux/git/blobs/96eec71bed9ecbce8f51d3fe8f135530ec175e46",
+    "download_url": "https://raw.githubusercontent.com/scienceverse/faux/master/README.md",
+    "type": "file",
+    "content": "CiMgZmF1eCA8YSBocmVmPSJodHRwczovL3d3dy5zY2llbmNldmVyc2Uub3Jn\nL2ZhdXgvIj48aW1nIHNyYz0ibWFuL2ZpZ3VyZXMvbG9nby5wbmciIGFsaWdu\nPSJyaWdodCIgaGVpZ2h0PSIxMjAiIC8+PC9hPgoKPCEtLSBybWFya2Rvd24g\ndjEgLS0+Cgo8IS0tIFJFQURNRS5tZCBpcyBnZW5lcmF0ZWQgZnJvbSBSRUFE\nTUUuUm1kLiBQbGVhc2UgZWRpdCB0aGF0IGZpbGUgLS0+Cgo8IS0tIGJhZGdl\nczogc3RhcnQgLS0+CgpbIVtET0ldKGh0dHBzOi8vemVub2RvLm9yZy9iYWRn\nZS8xNjM1MDY1NjYuc3ZnKV0oaHR0cHM6Ly96ZW5vZG8ub3JnL2JhZGdlL2xh\ndGVzdGRvaS8xNjM1MDY1NjYpClshW0NSQU4Kc3RhdHVzXShodHRwczovL3d3\ndy5yLXBrZy5vcmcvYmFkZ2VzL3ZlcnNpb24tbGFzdC1yZWxlYXNlL2ZhdXgp\nXShodHRwczovL0NSQU4uUi1wcm9qZWN0Lm9yZy9wYWNrYWdlPWZhdXgpCiFb\nRG93bmxvYWRzXShodHRwczovL2NyYW5sb2dzLnItcGtnLm9yZy9iYWRnZXMv\nZ3JhbmQtdG90YWwvZmF1eCkKWyFbTGlmZWN5Y2xlOgpzdGFibGVdKGh0dHBz\nOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvbGlmZWN5Y2xlLXN0YWJsZS1icmln\naHRncmVlbi5zdmcpXShodHRwczovL2xpZmVjeWNsZS5yLWxpYi5vcmcvYXJ0\naWNsZXMvc3RhZ2VzLmh0bWwjc3RhYmxlKQpbIVtDb3ZlcmFnZQpzdGF0dXNd\nKGh0dHBzOi8vY29kZWNvdi5pby9naC9zY2llbmNldmVyc2UvZmF1eC9icmFu\nY2gvbWFzdGVyL2dyYXBoL2JhZGdlLnN2ZyldKGh0dHBzOi8vYXBwLmNvZGVj\nb3YuaW8vZ2l0aHViL3NjaWVuY2V2ZXJzZS9mYXV4P2JyYW5jaD1tYXN0ZXIp\nClshW1ItQ01ELWNoZWNrXShodHRwczovL2dpdGh1Yi5jb20vc2NpZW5jZXZl\ncnNlL2ZhdXgvd29ya2Zsb3dzL1ItQ01ELWNoZWNrL2JhZGdlLnN2ZyldKGh0\ndHBzOi8vZ2l0aHViLmNvbS9zY2llbmNldmVyc2UvZmF1eC9hY3Rpb25zKQpb\nIVtSLUNNRC1jaGVja10oaHR0cHM6Ly9naXRodWIuY29tL3NjaWVuY2V2ZXJz\nZS9mYXV4L2FjdGlvbnMvd29ya2Zsb3dzL1ItQ01ELWNoZWNrLnlhbWwvYmFk\nZ2Uuc3ZnKV0oaHR0cHM6Ly9naXRodWIuY29tL3NjaWVuY2V2ZXJzZS9mYXV4\nL2FjdGlvbnMvd29ya2Zsb3dzL1ItQ01ELWNoZWNrLnlhbWwpCjwhLS0gYmFk\nZ2VzOiBlbmQgLS0+CgpJdCBpcyB1c2VmdWwgdG8gYmUgYWJsZSB0byBzaW11\nbGF0ZSBkYXRhIHdpdGggYSBzcGVjaWZpZWQgc3RydWN0dXJlLiBUaGUKYGZh\ndXhgIHBhY2thZ2UgcHJvdmlkZXMgc29tZSBmdW5jdGlvbnMgdG8gbWFrZSB0\naGlzIHByb2Nlc3MgZWFzaWVyLiBTZWUKdGhlIFtwYWNrYWdlIHdlYnNpdGVd\nKGh0dHBzOi8vd3d3LnNjaWVuY2V2ZXJzZS5vcmcvZmF1eC8pIGZvciBtb3Jl\nCmRldGFpbHMuCgojIyBJbnN0YWxsYXRpb24KCllvdSBjYW4gaW5zdGFsbCB0\naGUgcmVsZWFzZWQgdmVyc2lvbiBvZiBmYXV4IGZyb20KW0NSQU5dKGh0dHBz\nOi8vQ1JBTi5SLXByb2plY3Qub3JnKSB3aXRoOgoKYGBgIHIKaW5zdGFsbC5w\nYWNrYWdlcygiZmF1eCIpCmBgYAoKQW5kIHRoZSBkZXZlbG9wbWVudCB2ZXJz\naW9uIGZyb20KW0dpdEh1Yl0oaHR0cHM6Ly9naXRodWIuY29tL3NjaWVuY2V2\nZXJzZS9mYXV4KSB3aXRoOgoKYGBgIHIKIyBpbnN0YWxsLnBhY2thZ2VzKCJk\nZXZ0b29scyIpCmRldnRvb2xzOjppbnN0YWxsX2dpdGh1Yigic2NpZW5jZXZl\ncnNlL2ZhdXgiKQpgYGAKClBsZWFzZSBub3RlIHRoYXQgdGhlIOKAmGZhdXji\ngJkgcHJvamVjdCBpcyByZWxlYXNlZCB3aXRoIGEgW0NvbnRyaWJ1dG9yIENv\nZGUKb2YKQ29uZHVjdF0oaHR0cHM6Ly9naXRodWIuY29tL3NjaWVuY2V2ZXJz\nZS9mYXV4L2Jsb2IvbWFzdGVyL0NPREVfT0ZfQ09ORFVDVC5tZCkuCkJ5IGNv\nbnRyaWJ1dGluZyB0byB0aGlzIHByb2plY3QsIHlvdSBhZ3JlZSB0byBhYmlk\nZSBieSBpdHMgdGVybXMuCg==\n",
+    "encoding": "base64",
+    "_links": {
+        "self": "https://api.github.com/repos/scienceverse/faux/contents/README.md?ref=master",
+        "git": "https://api.github.com/repos/scienceverse/faux/git/blobs/96eec71bed9ecbce8f51d3fe8f135530ec175e46",
+        "html": "https://github.com/scienceverse/faux/blob/master/README.md"
+    }
+}

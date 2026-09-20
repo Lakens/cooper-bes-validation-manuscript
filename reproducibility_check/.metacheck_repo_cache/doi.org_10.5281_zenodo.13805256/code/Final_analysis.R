@@ -1,0 +1,534 @@
+knitr::opts_knit$set(root.dir = "H:/Data/bird feeding survery/Manuscript/revision/zenodo")
+
+library(dplyr)
+library(tidyr)
+library(reshape2)
+library(ggplot2)
+library(knitr)
+library(broom)
+library(AICcmodavg)
+require(MASS)
+require(Hmisc)
+library(VGAM)
+library(nnet)
+library(haven)
+library(lme4)
+library(DHARMa)
+library(vcd)
+library(waffle)
+library(glmmTMB)
+library(gamm4)
+library(car)
+library(sjPlot)
+library(readr)
+#install.packages("forcats")
+library(forcats)
+library("likert")
+library(sure)
+library(emmeans)
+library(coin)
+library(effects)
+
+knitr::opts_knit$set(root.dir = "H:/Data/bird feeding survery/Manuscript/revision/zenodo")
+data<-read.csv("Birdfeeding_survey_all_edits_31052021_PD.csv")
+
+con<- data %>% filter(Conflicting == 1) %>% droplevels() 
+
+data1 <-data[!(data$ID %in% con$ID),]
+
+data2<- subset(data1, select = c("location", "Firegion", "FeedChange_YES_started_5y", "FeedChange_YES_stopped", "FeedChange_YES_more", "FeedChange_YES_less","FeedChange_NOchange"))
+
+data2<-data2[!is.na(data2$location),]
+data2<-data2[!is.na(data2$Firegion),]
+
+data2[is.na(data2)] <- 0
+
+feed_ch_l_1<- gather(data2, Why, Report, FeedChange_YES_started_5y:FeedChange_NOchange, factor_key=TRUE)
+
+feed_ch_l_1[feed_ch_l_1 == 0]<- NA
+feed_ch_l_1<- feed_ch_l_1[complete.cases(feed_ch_l_1),]
+
+feed_ch_l_1$dual <- recode_factor(feed_ch_l_1$Why, FeedChange_YES_started_5y = '2', 
+                                FeedChange_NOchange = '0',
+                                FeedChange_YES_more = '1',
+                                FeedChange_YES_less = '-1',
+                                FeedChange_YES_stopped = '-2')
+
+feed_ch_l_1$dual1<- as.numeric(as.character(feed_ch_l_1$dual))
+
+feed_ch_l_1$region <- recode_factor(feed_ch_l_1$Firegion, `Northern Finland north from Tornio and Kuusamo` = "North", 
+                                `South-Finland south from Pori-Tampere-Mikkeli` = "South",
+                                `Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo` = "Central")
+
+feed_ch_l_2<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_started_5y',])
+feed_ch_l_2<- droplevels(feed_ch_l_2[!feed_ch_l_2$Why == 'FeedChange_YES_stopped',])
+
+feed_ch_l_2$dual1<- as.factor(feed_ch_l_2$dual1)
+
+feed_ch_l_2 <- feed_ch_l_2 %>% 
+  mutate(dual1 = factor(dual1,
+                        levels = c("-1", "0", "1")))
+
+feed_ch_l_2$location<- as.factor(feed_ch_l_2$location)
+
+feed_ch_l_2 <- feed_ch_l_2 %>% 
+  mutate(region = factor(region,
+                        levels = c("North", "Central", "South")))
+
+## This model is for more change and less change
+m3<- polr(dual1~ location*region, Hess = TRUE, data = feed_ch_l_2)
+summary(m3) # Smaller AIC
+
+m4<- polr(dual1~ location+region, Hess = TRUE, data = feed_ch_l_2)
+summary(m4)
+
+summary_table <- coef(summary(m3))
+pval <- pnorm(abs(summary_table[, "t value"]),lower.tail = FALSE)* 2
+summary_table <- cbind(summary_table, "p value" = round(pval,3))
+summary_table
+
+sure::autoplot.polr(m3, what = "fitted") # I think this is okay. The qq plot is very good.
+
+allEffects(m3)
+
+plot(allEffects(m3))
+
+feed_ch_l_3<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_more',])
+feed_ch_l_3<- droplevels(feed_ch_l_3[!feed_ch_l_3$Why == 'FeedChange_YES_less',])
+
+feed_ch_l_3$dual1 <- recode_factor(feed_ch_l_3$Why, FeedChange_YES_started_5y = '1', 
+                                FeedChange_NOchange = '0',
+                                FeedChange_YES_stopped = '-1')
+
+feed_ch_l_3$dual1<- as.factor(feed_ch_l_3$dual1)
+
+feed_ch_l_3 <- feed_ch_l_3 %>% 
+  mutate(dual1 = factor(dual1,
+                        levels = c("-1", "0", "1")))
+
+feed_ch_l_3$location<- as.factor(feed_ch_l_3$location)
+
+feed_ch_l_3 <- feed_ch_l_3 %>% 
+  mutate(region = factor(region,
+                        levels = c("North", "Central", "South")))
+
+m5<- polr(dual1~ location*region, Hess = TRUE, data = feed_ch_l_3)
+summary(m5) # Smaller AIC
+
+m6<- polr(dual1~ location+region, Hess = TRUE, data = feed_ch_l_3)
+summary(m6)
+
+summary_table_1 <- coef(summary(m5))
+pval <- pnorm(abs(summary_table_1[, "t value"]),lower.tail = FALSE)* 2
+summary_table_1 <- cbind(summary_table_1, "p value" = round(pval,3))
+summary_table_1
+
+sure::autoplot.polr(m5, what = "fitted") # I think this is also okay and the qq is very good
+
+allEffects(m5)
+
+plot(allEffects(m5))
+
+## This means that the estimated odds for people reporting starting provisioning in rural southern areas is 1.92 times the odds of people in the northern urban areas
+
+feed_ch_l_1$dual2 <- recode_factor(feed_ch_l_1$Why, FeedChange_YES_started_5y = '1', 
+                                FeedChange_NOchange = '0',
+                                FeedChange_YES_more = '1',
+                                FeedChange_YES_less = '1',
+                                FeedChange_YES_stopped = '1')
+
+feed_ch_l_1$dual2=as.numeric(as.character(feed_ch_l_1$dual2))
+
+##### First no change vs. stopped#####
+
+feed_ch_l_4<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_started_5y',])
+feed_ch_l_4<- droplevels(feed_ch_l_4[!feed_ch_l_4$Why == 'FeedChange_YES_more',])
+feed_ch_l_4<- droplevels(feed_ch_l_4[!feed_ch_l_4$Why == 'FeedChange_YES_less',])
+
+feed_ch_l_4 %>% count(region, dual, sort = FALSE)
+
+feed_ch_l_4 <- feed_ch_l_4 %>% 
+  mutate(region = factor(region,
+                        levels = c("North", "Central", "South")))
+
+feed_ch_l_4$dual2=as.numeric(as.character(feed_ch_l_4$dual2))
+
+m7<- glm(dual2~ location*region, family = binomial(logit), data = feed_ch_l_4)
+summary(m7) 
+
+m7_em<- emmeans(m7, ~ region*location)
+contrast(m7_em, method = "pairwise", interaction = TRUE, adjust = "bonferroni")
+
+with(summary(m7), 1 - deviance/null.deviance)
+
+# Diagnostics
+
+m7out <- simulateResiduals(fittedModel = m7, n = 1000,  allow.new.levels=TRUE)
+plot(m7out) 
+
+##### no change vs. started recently ####
+
+feed_ch_l_5<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_stopped',])
+feed_ch_l_5<- droplevels(feed_ch_l_5[!feed_ch_l_5$Why == 'FeedChange_YES_more',])
+feed_ch_l_5<- droplevels(feed_ch_l_5[!feed_ch_l_5$Why == 'FeedChange_YES_less',])
+
+m8<- glm(dual2 ~ location*region, family = binomial(logit), data = feed_ch_l_5)
+summary(m8) # no differences between regions and urbanity. In the south rural areas less people are likely to start feeding.
+
+m8_em<- emmeans(m8, ~ region*location)
+contrast(m8_em, method = "pairwise", interaction = TRUE, adjust = "bonferroni")
+
+# Diagnostics
+
+m8out <- simulateResiduals(fittedModel = m8, n = 1000,  allow.new.levels=TRUE)
+plot(m8out) ## Perfection
+
+###### no change vs. more feeding#####
+
+feed_ch_l_6<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_stopped',])
+feed_ch_l_6<- droplevels(feed_ch_l_6[!feed_ch_l_6$Why == 'FeedChange_YES_started_5y',])
+feed_ch_l_6<- droplevels(feed_ch_l_6[!feed_ch_l_6$Why == 'FeedChange_YES_less',])
+
+m9<- glm(dual2 ~ location*region, family = binomial(logit), data = feed_ch_l_6)
+summary(m9) ## no statistically significant trends
+
+m9_em<- emmeans(m9, ~ region*location)
+contrast(m9_em, method = "pairwise", interaction = TRUE, adjust = "bonferroni")
+
+# Diagnostics
+
+m9out <- simulateResiduals(fittedModel = m9, n = 1000,  allow.new.levels=TRUE)
+plot(m9out) # These look perfect!
+
+##### no change vs. less feeding#####
+
+feed_ch_l_7<- droplevels(feed_ch_l_1[!feed_ch_l_1$Why == 'FeedChange_YES_stopped',])
+feed_ch_l_7<- droplevels(feed_ch_l_7[!feed_ch_l_7$Why == 'FeedChange_YES_started_5y',])
+feed_ch_l_7<- droplevels(feed_ch_l_7[!feed_ch_l_7$Why == 'FeedChange_YES_more',])
+
+m10<- glmmTMB(dual2 ~ location*region, family = binomial(logit), data = feed_ch_l_7)
+summary(m10) # More people reported that they are feeding less in rural regions of the south than urban north, but not a significant trend.
+
+m10_em<- emmeans(m10, ~ region*location)
+contrast(m8_em, method = "pairwise", interaction = TRUE, adjust = "bonferroni")
+
+# Diagnostics
+
+m10out <- simulateResiduals(fittedModel = m10, n = 1000,  allow.new.levels=TRUE)
+plot(m10out) 
+
+loc_ch<- subset(data1, select = c("location","Firegion","FeedChange_NOchange", "FeedChange_YES_started_5y", "FeedChange_YES_stopped", "FeedChange_YES_more", "FeedChange_YES_less")) # chosing relevant columns
+
+loc_ch$location<- as.factor(loc_ch$location) # converting to facotrs
+loc_ch$Firegion<- as.factor(loc_ch$Firegion)
+
+loc_ch<- loc_ch[!is.na(loc_ch$location),] # removing NAs
+loc_ch<- loc_ch[!is.na(loc_ch$Firegion),]
+
+loc_ch_ag<- gather(loc_ch, Reason,Report, FeedChange_NOchange:FeedChange_YES_less, factor_key=TRUE) # aggregate columns
+
+loc_ch_ag<- loc_ch_ag[!is.na(loc_ch_ag$Report),] # remove NAs
+
+loc_ch_num<- aggregate(loc_ch_ag$Report, by=list(Firegion=loc_ch_ag$Firegion, location = loc_ch_ag$location, Reason = loc_ch_ag$Reason), FUN=sum) # sum by groups
+
+loc_ch_num_1<- loc_ch_num %>%
+    group_by(Firegion) %>%
+    mutate(countT= sum(x)) %>%
+    group_by(Reason, add=TRUE) %>%
+    mutate(per=paste0(round(100*x/countT,2))) # calculate percentages
+
+loc_ch_num_1$per<- as.numeric(loc_ch_num_1$per) 
+
+loc_ch_num_1$Firegion <- recode_factor(loc_ch_num_1$Firegion, "Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo"= 'Central Finland',
+                                       "Northern Finland north from Tornio and Kuusamo" = 'Northern Finland',
+                               "South-Finland south from Pori-Tampere-Mikkeli" = 'Southern Finland')
+
+loc_ch_num_1$Reason <- recode_factor(loc_ch_num_1$Reason, FeedChange_YES_started_5y = 'Started 5 years ago', 
+                                FeedChange_NOchange = 'No change',
+                                FeedChange_YES_more = 'Provisioning more',
+                                FeedChange_YES_less = 'Provisioning less',
+                                FeedChange_YES_stopped = 'Stopped provisioning')
+
+loc_ch_num_1$location <- recode_factor(loc_ch_num_1$location, `City/urban area` = 'Urban area', 
+                                `Rural area` = "Rural area")
+
+levels(loc_ch_num_1$Firegion) <- c("Northern Finland", "Central Finland", "Southern Finland")
+
+levels(loc_ch_num_1$Reason)<- c("Started 5 years ago", "Provisioning more", "No change", "Provisioning less", "Stopped provisioning")
+
+#my_colors <- RColorBrewer::brewer.pal(4, "reds")[2:4]
+
+p1<- ggplot(loc_ch_num_1, aes(x=Reason, y = per, fill = location))+ scale_fill_manual(values=c("#CC3300", "#ebc77f"))+
+  geom_bar(position="dodge", stat="identity")+ facet_grid(rows = vars(Firegion))+ theme_bw() + theme(axis.title = element_text(size = 16),axis.text.x = element_text(size = 14),axis.text.y = element_text(size = 14),strip.text.y = element_text(size = 14),legend.title=element_text(size=14)) + xlab("Type of change in provisioning behaviour") + ylab("Percentage of total responses") + guides(fill=guide_legend(title="Location")) 
+p1 
+
+ggsave("type_change.png", width = 3300, height = 1600, units = "px", dpi = 300)
+
+likert_store_groups <- function(db, groups) {
+  attr(db, "likert.groups") <- groups
+  db 
+} 
+
+# This function is helpful to plot likert questions based on the groups you defined using the above function
+plot_likert_groups <- function(db, all=F, groups=NA, ...) {
+  attrgroups <- attr(db, "likert.groups")
+  
+  if(is.null(attrgroups)) {
+    stop("You have not stored any groups using likert_store_groups")
+  }
+  
+  if(all) { 
+    groups <- names(attrgroups) 
+  }
+  
+  if(all(is.na(groups))) {
+    stop("You have not specified a group name using groups=, or all=F")
+  }
+  
+  for(e in groups) {
+    group <- attrgroups[[e]]
+    ligroup <- likert(db[,group], ...)
+    print(plot(ligroup) + ggtitle(names(attrgroups[e])) )
+  }
+  
+} 
+
+
+# Function to round all the numbers in a df:
+round_df <- function(df, digits = 3) {
+  nums <- vapply(df, is.numeric, FUN.VALUE = logical(1))
+  
+  df[,nums] <- round(df[,nums], digits = digits)
+  
+  (df)
+}
+
+## Making the dataframe for the plot
+
+# North
+
+nor<- feed_ch_l_1[feed_ch_l_1$Firegion == "Northern Finland north from Tornio and Kuusamo", ]
+
+levels(nor$Why) <- c("FeedChange_YES_started_5y", "FeedChange_YES_more", "FeedChange_NOchange","FeedChange_YES_less", "FeedChange_YES_stopped")
+
+nor<- subset(nor, select = c("location","Why"))
+nor<- nor %>% dplyr::mutate(row_id=row_number())
+
+nor_wide<- spread(nor, location, Why)
+
+nor_wide$Urban<- as.factor(nor_wide$`City/urban area`)
+nor_wide$Rural<- as.factor(nor_wide$`Rural area`)
+
+nor_plot<- subset(nor_wide, select = c("Urban","Rural"))
+
+round_df <- function(df, digits = 3) {
+  nums <- vapply(df, is.numeric, FUN.VALUE = logical(1))
+  
+  df[,nums] <- round(df[,nums], digits = digits)
+  
+  (df)
+}
+
+Pnor <- plot(likert(nor_plot), wrap= 1, text.size = 2) +
+  theme(text = element_text(size=20))
+Pnor
+
+#south
+
+sou<- feed_ch_l_1[feed_ch_l_1$Firegion == "South-Finland south from Pori-Tampere-Mikkeli", ]
+
+levels(sou$Why) <- c("FeedChange_YES_started_5y", "FeedChange_YES_more", "FeedChange_NOchange","FeedChange_YES_less", "FeedChange_YES_stopped")
+
+sou<- subset(sou, select = c("location","Why"))
+sou<- sou %>% dplyr::mutate(row_id=row_number())
+
+sou_wide<- spread(sou, location, Why)
+
+sou_wide$Urban<- as.factor(sou_wide$`City/urban area`)
+sou_wide$Rural<- as.factor(sou_wide$`Rural area`)
+
+sou_plot<- subset(sou_wide, select = c("Urban","Rural"))
+
+
+Psou <- plot(likert(sou_plot), wrap= 1, text.size = 2) +
+  theme(text = element_text(size=20))
+Psou
+
+#Central
+
+cen<- feed_ch_l_1[feed_ch_l_1$Firegion == "Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo", ]
+
+levels(cen$Why) <- c("FeedChange_YES_started_5y", "FeedChange_YES_more", "FeedChange_NOchange","FeedChange_YES_less", "FeedChange_YES_stopped")
+
+cen<- subset(cen, select = c("location","Why"))
+cen<- cen %>% dplyr::mutate(row_id=row_number())
+
+cen_wide<- spread(cen, location, Why)
+
+cen_wide$Urban<- as.factor(cen_wide$`City/urban area`)
+cen_wide$Rural<- as.factor(cen_wide$`Rural area`)
+
+cen_plot<- subset(cen_wide, select = c("Urban","Rural"))
+
+
+Pcen <- plot(likert(cen_plot), wrap= 1, text.size = 2) +
+  theme(text = element_text(size=20))
+Pcen
+
+# plot together
+
+colnames(nor_plot)[1] ="North Urban"
+colnames(nor_plot)[2] ="North Rural"
+colnames(sou_plot)[1] ="South Urban"
+colnames(sou_plot)[2] ="South Rural"
+colnames(cen_plot)[1] ="Central Urban"
+colnames(cen_plot)[2] ="Central Rural"
+
+plotdata<- merge(data.frame(nor_plot, row.names=NULL), data.frame(cen_plot, row.names=NULL), 
+  by = 0, all = TRUE)[-1]
+
+plotdata_1<- merge(data.frame(plotdata, row.names=NULL), data.frame(sou_plot, row.names=NULL), 
+  by = 0, all = TRUE)[-1]
+
+big <- plot(likert(plotdata_1), wrap= 10, text.size = 12) +
+  theme(text = element_text(size=30))
+big
+
+## The two datasets
+
+why.change.mul<- read.csv("change.csv")
+
+why.change.long.sing<- subset(why.change.mul, select = c("Firegion", "location", "WhyChange_MoreBirds", "WhyChange_NewLocation", "WhyChange_NoReason", "WhyChange_Timing", "WhyChange_Expenses"))
+
+why.change.long.sing.1<- gather(why.change.long.sing, Why, Report, WhyChange_MoreBirds:WhyChange_Expenses, factor_key=TRUE)
+
+why.change.long.sing.1$region <- recode_factor(why.change.long.sing.1$Firegion, `Northern Finland north from Tornio and Kuusamo` = "North", `South-Finland south from Pori-Tampere-Mikkeli` = "South",`Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo` = "Central")
+
+why.change.long.sing.1$Urbanity <- recode_factor(why.change.long.sing.1$location, `Rural area` = "Rural area", `City/urban area` = "Urban area")
+
+why.change.long.sing.1$reason <- recode_factor(why.change.long.sing.1$Why, `WhyChange_MoreBirds` = "More birds", `WhyChange_NewLocation` = "New location",`WhyChange_NoReason` = "No reason",`WhyChange_Timing`= "Timing",`WhyChange_Expenses` = "Expenses")
+
+why.change.long.sing.1<- why.change.long.sing.1[complete.cases(why.change.long.sing.1),]
+
+sings<- read.csv("stop_single.csv")
+
+why.stop.sing<- sings %>% drop_na(single)
+
+why.stop.sing[is.na(why.stop.sing)]<-0
+
+why.stop.sing$neighbours <- rowSums(why.stop.sing[,c(12,3,18)])
+why.stop.sing$corvids<- rowSums(why.stop.sing[,c(6,13,14,17,21)])
+why.stop.sing$pets<- rowSums(why.stop.sing[,c(5,9)])
+why.stop.sing$forest.mammal<- rowSums(why.stop.sing[,c(7,22)])
+why.stop.sing$maintainence<- rowSums(why.stop.sing[,c(10,11,19,16)])
+
+#removing row 435 because it has two values
+
+why.stop.sing<- why.stop.sing[-(435),]
+
+### removing the repeated columns before changing dataset to long
+
+why.stop.sing.1 = subset(why.stop.sing, select =-c(12,19,16,4,3,18,6,13,14,17,21,5,9,7,22,10,11,24))
+
+why.stop.long.1<- gather(why.stop.sing.1, Why, Report, WhyStop_Diseases:maintainence, factor_key=TRUE)
+
+why.stop.long.1[why.stop.long.1 == 0] <- NA
+why.stop.long.1<- why.stop.long.1[complete.cases(why.stop.long.1),]
+
+why.stop.long.1$region <- recode_factor(why.stop.long.1$Firegion, `Northern Finland north from Tornio and Kuusamo` = "North", 
+                                `South-Finland south from Pori-Tampere-Mikkeli` = "South",
+                                `Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo` = "Central")
+
+
+
+why.stop.long.1$Urbanity <- recode_factor(why.stop.long.1$location, `Rural area` = "Rural area", 
+                                `City/urban area` = "Urban area")
+
+why.stop.long.1$reason <- recode_factor(why.stop.long.1$Why,`WhyStop_Diseases` = "Diseases",
+                                `WhyStop_LackOfSnow` = "No snow",
+                                `WhyStop_Rats` = "Rats",
+                                `WhyStop_Woodpeckers` = "Woodpecker",
+                                `neighbours` = "Neighbours/Rules",
+                                `corvis` = "Corvid",
+                                `pets` = "Pets",
+                                `wild.animal` = "Forest mammal",
+                                `maintainence` = "Maintainence")
+
+why.stop.long.1$location<- as.factor(why.stop.long.1$location)
+
+levels(why.stop.long.1$location) <- c("North", "Central", "South")
+
+change_ag<- why.change.long.sing.1 %>%
+    group_by(Firegion, location,Why) %>%
+    mutate(countS= sum(Report))%>%
+  distinct(countS)
+
+change_ag_1<- change_ag%>% group_by(Firegion)%>% mutate(countT = sum(countS))
+
+change_ag_1$per<- change_ag_1$countS/change_ag_1$countT*100
+
+change_ag_1$region <- recode_factor(change_ag_1$Firegion, "Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo"= 'Central Finland',
+                                       "Northern Finland north from Tornio and Kuusamo" = 'Northern Finland',
+                               "South-Finland south from Pori-Tampere-Mikkeli" = 'Southern Finland')
+
+change_ag_1$Why_1 <- recode_factor(change_ag_1$Why, WhyChange_Expenses = 'Expenses', WhyChange_MoreBirds = 'More birds',
+                                WhyChange_NewLocation = 'New location',
+                                WhyChange_NoReason = 'No reason',
+                                WhyChange_Timing = 'Timing')
+
+change_ag_1$location <- recode_factor(change_ag_1$location, `City/urban area` = 'Urban area', `Rural area` = 'Rural area')
+
+
+
+levels(change_ag_1$Why)<- c("More birds", "New location", "Timing", "Expenses", "No reason")
+
+change_ag_2<- change_ag_1%>%
+  complete(nesting(Why_1, region), location, fill = list(per = 0))
+
+levels(change_ag_2$region) <- c("Northern Finland", "Central Finland", "Southern Finland")
+
+p2<- ggplot(change_ag_2, aes(x=Why_1, y = per, fill = location))+ scale_fill_manual(values=c("#CC3300", "#ebc77f"))+
+  geom_bar(position="dodge", stat="identity")+theme(text = element_text(size=20))+ facet_grid(rows = vars(region))+ theme_bw() + labs(x = "Reasons for changing provisioning", y = "Percentage of responses") +theme(axis.title = element_text(size = 16),axis.text.x = element_text(size = 14),axis.text.y = element_text(size = 14),strip.text.y = element_text(size = 14),legend.title=element_text(size=14)) + xlab("Reasons for changing provisioning") + ylab("Percentage of total responses") + guides(fill=guide_legend(title="Location")) 
+p2
+
+ggsave("Why_change.png", width = 3300, height = 1600, units = "px", dpi = 300)
+
+stop_ag<- why.stop.long.1 %>%
+    group_by(Urbanity, Firegion,Why) %>%
+    mutate(countS= sum(Report))%>%
+  distinct(countS)
+
+stop_ag$Firegion<- as.factor(stop_ag$Firegion)
+stop_ag$Urbanity<- as.factor(stop_ag$Urbanity)
+stop_ag$Why<- as.factor(stop_ag$Why)
+stop_ag$countS<- as.numeric(stop_ag$countS)
+
+stop_ag_1<- stop_ag%>% group_by(Firegion)%>% mutate(countT = sum(countS))
+
+stop_ag_1$per<- stop_ag_1$countS/stop_ag_1$countT*100
+
+stop_ag_1$location <- recode_factor(stop_ag_1$Firegion, "Middle-Finland from Pori-Tampere-Mikkeli to Tornio and Kuusamo"= 'Central Finland',
+                                       "Northern Finland north from Tornio and Kuusamo" = 'Northern Finland',
+                               "South-Finland south from Pori-Tampere-Mikkeli" = 'Southern Finland')
+
+stop_ag_1$Why_1 <- recode_factor(stop_ag_1$Why, WhyStop_Diseases = 'Diseases', WhyStop_LackOfSnow = 'No snow',
+                                WhyStop_Rats = 'Rats',
+                                WhyStop_Woodpeckers = 'Woodpeckers',
+                                neighbours = 'Neighbours',
+                                corvids = 'Corvids',
+                                pets = 'Pets',
+                                forest.mammal = 'Forest mammals',
+                                maintainence = 'Maintenance')
+
+stop_ag_1$Urbanity <- recode_factor(stop_ag_1$Urbanity, `City/urban area` = 'Urban area', `Rural area` = 'Rural area')
+
+levels(stop_ag_1$Firegion) <- c("Northern Finland", "Central Finland", "Southern Finland")
+
+stop_ag_2<- stop_ag_1%>%
+  complete(nesting(Why_1, location), Urbanity, fill = list(per = 0))
+
+p3<- ggplot(stop_ag_2, aes(x=Why_1, y = per, fill = Urbanity))+ scale_fill_manual(values=c("#CC3300", "#ebc77f"))+
+  geom_bar(position = position_dodge(preserve = 'single'), stat="identity")+theme(text = element_text(size=20))+ facet_grid(rows = vars(Firegion))+ theme_bw() + labs(x = "Reasons for stopping provisioning", y = "Percentage of responses")+ theme(axis.text.x = element_text(angle = 45, hjust=1)) +theme(axis.title = element_text(size = 16),axis.text.x = element_text(size = 14),axis.text.y = element_text(size = 14),strip.text.y = element_text(size = 14),legend.title=element_text(size=14)) + xlab("Reasons for stopping provisioning") + ylab("Percentage of total responses") + guides(fill=guide_legend(title="Location")) 
+p3
+
+ggsave("why_stop.png", width = 3300, height = 2000, units = "px", dpi = 300)

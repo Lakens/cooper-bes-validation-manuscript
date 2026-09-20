@@ -1,0 +1,7 @@
+user_code = unique numeric code identifying each survey participant
+
+obs_date = date (YYYY-MM-DD) on which a journey was made to undertake bird surveys
+
+transport_mode = mode of transport used to get from the observer's home to/from the survey location. Based on a questionnaire. NA indicates the observer did not respond to the quesitonnaire.
+
+distance_km = estimated round trip distance (km) by road from the observer's home, to the one or more survey locations on that date, and back to their home

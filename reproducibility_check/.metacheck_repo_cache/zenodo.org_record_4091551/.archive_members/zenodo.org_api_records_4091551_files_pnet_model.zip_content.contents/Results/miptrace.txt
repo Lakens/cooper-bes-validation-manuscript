@@ -1,0 +1,6 @@
+* miptrace file Results\miptrace.txt: ID = GUROBI.1 Instance = PNet_Oct11
+* fields are lineNum, seriesID, node, seconds, bestFound, bestBound
+1, S, 0, 0, na, -4431.77
+2, T, 71, 31.583, 7407.89, 7394.03
+3, E, 237, 41.107, 7407.83, 7394.36
+* miptrace file Results\miptrace.txt closed

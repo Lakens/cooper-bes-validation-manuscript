@@ -1,0 +1,137 @@
+# Analyses done by Manuele Bazzichetto and Vojta Bartak (Czech University of Life Sciences, Prague)
+# Date: 14/12/2022
+
+library(sf)
+library(spatstat)
+library(spatstat.random)
+library(ggplot2)
+library(ggpubr)
+library(mapview)
+library(dplyr)
+
+
+# Importing data, transforming them to UTM 32N, and filtering
+# --------------------------------------------------------------------------------------------------------------
+
+# Simplified Sardinia boundary polygon for computing the g-function (see below)
+Sard_poly_simplified <- st_read("Data/Sardinia_simplified.shp") %>% st_transform(32632)
+
+# Map of vegetation series
+Veg_map <- st_read("Data/serie_di_vegetazione/Serie_vegetazione_MM_Descr.shp") %>% st_transform(32632)
+
+# Human structures (nuraghe and villages)
+# (Points with id's NUR19459, NUR11084, NUR4780 are duplicates and must be excluded.)
+Nuraghe_villagi <- st_read("Data/strutture megalitiche_points/Megalithic structures Sardinia.shp") %>% 
+  st_transform(32632) %>% 
+  select(content_id, tipology) %>% 
+  filter(tipology %in% c("nuraghe", "villaggi") & !(content_id %in% c("NUR19459", "NUR11084", "NUR4780")))
+
+# Have a look at the data
+mapview(Veg_map) + mapview(Nuraghe_villagi)
+
+
+# Computing the g-function to check for clustering of nuraghe and villages
+# --------------------------------------------------------------------------------------------------------------
+
+# Create a spatstat point pattern object, using the simplified Sardinia boundary as the point pattern window
+# (110 out of 5453 points (2 %) were falling outside the simplified boundary and were thus excluded.)
+Nuraghe.ppp.sw <- ppp(
+  x = st_coordinates(Nuraghe_villagi)[,1],
+  y = st_coordinates(Nuraghe_villagi)[,2], 
+  window = as.owin(Sard_poly_simplified)
+)
+
+# Compute and plot the g-function (i.e., the pair-correlation function), including a global simulation 
+# envelope for a formal test
+Nuraghe.pcf <- envelope(Nuraghe.ppp.sw, pcf.ppp, divisor = "d", global = T, nsim=39)
+plot(Nuraghe.pcf, main="Pair Correlation Function")
+
+
+# Performing torus translation test to test the significance of association 
+# between the human settlements and the vegetation classes
+# --------------------------------------------------------------------------------------------------------------
+
+# Create a spatstat point pattern object, using rectangular window
+# (The point pattern window is created automatically as a bounding box of the points.)
+Nuraghe.ppp.rw <- as.ppp(Nuraghe_villagi)
+
+# Random shift of the point pattern on a torus 5000 times
+set.seed(20)
+Torus_list_ppp <- spatstat.random::rshift.ppp(Nuraghe.ppp.rw, nsim = 5000, edge = "torus")
+
+# Minimum number of points falling inside Sardinia, taken as 70% of the original points
+# (Only these point patterns with at least this number of points are used in the test.)
+Min_N <- floor((nrow(Nuraghe_villagi))*.7) # 3817
+
+# Compute the number of points in each vegetation category for the shifted point patterns
+# (This takes some time so the progress bar is implemented.)
+pb <- txtProgressBar(min = 0, max = length(Torus_list_ppp), style=3)
+Exp_counts <- lapply(1:length(Torus_list_ppp), function(i) {
+  setTxtProgressBar(pb, i)          # move the progress bar
+  pnt_obj <- Torus_list_ppp[[i]]    # take the point pattern
+  pnt_sf <- st_as_sf(pnt_obj)       # convert to sf object
+  st_crs(pnt_sf) <- 32632           # set the coordinate system 
+  pnt_sf <- pnt_sf[2:nrow(pnt_sf),] # exclude the bounding polygon (keep only the points)
+  pnt_veg <- st_join(               # spatial join of the points with the vegetation map
+    pnt_sf,                         # (LEG_ITALIA is the column with the ID of vegetation categories.)
+    Veg_map[c("LEG_ITALIA")], 
+    join = st_intersects
+  )                                 
+  smp_sz <- sum(!is.na(pnt_veg$LEG_ITALIA)) # sample size (number of points falling inside the vegetation map)
+  if(smp_sz < Min_N) return(NA)             # exclude this point pattern if its sample size is below Min_N
+  pnt_veg.cnt <- as.data.frame(table(pnt_veg[[c("LEG_ITALIA")]])) # count the points in the vegetation categories
+  pnt_veg.cnt <- setNames(pnt_veg.cnt$Freq, pnt_veg.cnt$Var1)     # transform the counts into a named vector
+  return(list(Exp = pnt_veg.cnt, N = smp_sz))                     # return the counts and the sample size
+})
+close(pb)
+
+# Get rid of NAs; Number of useful point patterns is 5000 - 2943 = 2057
+Exp_counts <- Filter(Negate(is.logical), Exp_counts)
+
+# Average sample size 
+mean(sapply(Exp_counts, '[[', 2)) # 4202.667
+quantile(sapply(Exp_counts, '[[', 2)) # 3995, 4329 (1st, 3rd quartiles)
+
+# Average counts across categories (weighted by sample sizes)
+Total_smp_sz <- sum(sapply(Exp_counts, "[[", 2))
+Exp_pr <- lapply(Exp_counts, function(pp) {
+  pp$Exp * pp$N / Total_smp_sz
+}) %>% 
+  bind_rows %>% 
+  apply(2, sum, na.rm = T)
+
+# Observed counts of nuraghe and villages falling in vegetation categories
+Obs_pr <- Nuraghe_villagi %>% 
+  st_join(Veg_map, join = st_intersects) %>% 
+  pull(LEG_ITALIA) %>% 
+  table %>% 
+  as.data.frame
+Obs_pr <- setNames(object = Obs_pr$Freq, nm = Obs_pr$".")
+
+# Because of no points in "SA9", this category is added with a zero count
+unique(Veg_map$LEG_ITALIA)[!unique(Veg_map$LEG_ITALIA) %in% names(Obs_pr)]
+Obs_pr <- c(Obs_pr, "SA9" = 0)
+
+# Compute Chi-sq statistic
+Chi_stat <- sum(((Obs_pr - Exp_pr[names(Obs_pr)])^2)/(Exp_pr[names(Obs_pr)]))
+
+# P value, with degrees of freedom = number of categories (30) minus 1 = 29
+pchisq(Chi_stat, df = 29, lower.tail = F) # 0
+
+# Plot the expected and observed counts
+ggplot(
+  data.frame(count = c(Obs_pr, Exp_pr),
+             category = factor(c(names(Obs_pr), names(Exp_pr)),
+                               levels = names(Exp_pr)[order(Exp_pr, decreasing = T)]),
+             type = c(rep("Observed", length(Obs_pr)),
+                      rep("Expected", length(Exp_pr)))),
+  aes(x=category, y=count, fill=type)
+) +
+  geom_col(position = position_dodge()) +
+  scale_fill_manual(values = c("Expected" = "#FFC107", "Observed" = "#1E88E5"), name = NULL) +
+  ylab("Number of nuraghe and villages") + xlab(NULL) +
+  theme_pubr() +
+  theme(axis.text.x.bottom = element_text(size = 10, angle = 45, vjust = 1, hjust = 1))
+
+# Save the plot
+ggsave(filename = "Nuraghe_preference.png", units = "cm", width = 18, height = 16, dpi = 300)

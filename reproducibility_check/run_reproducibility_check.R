@@ -1,8 +1,10 @@
 #!/usr/bin/env Rscript
 
-# Prepare the corpus for a metacheck reproducibility check. On older
-# installs this may not have a dedicated `reproducibility_check` module,
-# so we gracefully fall back to the same repo/data/code chain used by the
+# Prepare the corpus for a metacheck reproducibility check. Always installs
+# scienceverse/metacheck@dev fresh from GitHub before running (never a
+# vendored/local copy) -- see ensure_repro_branch(). If that installed
+# package ever lacks a dedicated `reproducibility_check` module, we
+# gracefully fall back to the same repo/data/code chain used by the
 # project's batch pipeline.
 #
 # Usage:
@@ -36,7 +38,7 @@ suppressPackageStartupMessages(library(dplyr))
 
 parse_args <- function(args) {
   opts <- list(max_papers = NULL, batch_size = 50L, resume = TRUE,
-              execute = TRUE, timeout = 3000L)
+              execute = TRUE, timeout = 3000L, workers = 1L)
   i <- 1L
   while (i <= length(args)) {
     a <- args[i]
@@ -78,9 +80,21 @@ parse_args <- function(args) {
         stop("--timeout must be a positive integer (seconds).")
       }
       i <- i + 2L
+    } else if (a == "--workers") {
+      # Number of papers to run CONCURRENTLY in Docker (metacheck >= 0.3.1's
+      # reproducibility_check(workers = ...); see run_module_batched_workers()'s
+      # own comment). Ignored (falls back to the one-paper-at-a-time path) when
+      # execute = FALSE or sandbox is not docker -- see run_repro_check().
+      if (i == length(args)) stop("Missing value for ", a)
+      opts$workers <- as.integer(args[i + 1L])
+      if (is.na(opts$workers) || opts$workers < 1L) {
+        stop("--workers must be a positive integer.")
+      }
+      i <- i + 2L
     } else if (a %in% c("--help", "-h")) {
-      message("Usage: Rscript run_reproducibility_check.R [--max-papers N] [--batch-size N] [--no-resume] [--no-execute] [--timeout SECONDS]")
+      message("Usage: Rscript run_reproducibility_check.R [--max-papers N] [--batch-size N] [--no-resume] [--no-execute] [--timeout SECONDS] [--workers N]")
       message("execute = TRUE by default (real code execution); pass --no-execute for a static-only pass.")
+      message("--workers N (default 1) runs up to N papers concurrently in Docker (requires execute = TRUE and sandbox = docker, both defaults here).")
       quit(status = 0)
     } else {
       stop("Unknown argument: ", a)
@@ -134,21 +148,16 @@ module_exists <- function(name) {
 }
 
 ensure_repro_branch <- function(repo_root) {
-  if (module_exists("reproducibility_check")) {
-    return(invisible(TRUE))
-  }
-
   if (!requireNamespace("remotes", quietly = TRUE)) {
     install.packages("remotes", repos = "https://cloud.r-project.org")
   }
 
-  # Prefer the vendored, version-controlled copy of the metacheck source under
-  # vendor/metacheck (a tracked fork of scienceverse/metacheck's
-  # reproducibility_check branch, with local compatibility fixes applied) so
-  # the fix this project depends on is reproducible from this repo alone and
-  # is not lost when renv::restore() wipes the untracked renv/library cache.
-  # Fall back to installing straight from GitHub only if that folder is
-  # missing (e.g. a fresh checkout before vendoring was added).
+  # Always install metacheck fresh from GitHub's dev branch -- never from a
+  # locally vendored copy. dev is the reconciled branch (see PR #413) that
+  # both the reproducibility_check module and its Docker sandbox backend
+  # live on. No early-return on module_exists(): an older metacheck already
+  # installed on this machine could already expose a same-named module, and
+  # silently keeping that stale copy would defeat "always use dev".
   # Detach/unload BEFORE installing, not after: on Windows, R CMD INSTALL
   # refuses to overwrite a package that is currently loaded in THIS SAME
   # process ("package 'metacheck' is in use and will not be installed"),
@@ -159,22 +168,16 @@ ensure_repro_branch <- function(repo_root) {
     detach("package:metacheck", unload = TRUE, character.only = TRUE)
   }
 
-  vendor_path <- file.path(repo_root, "vendor", "metacheck")
-  if (dir.exists(vendor_path) && file.exists(file.path(vendor_path, "DESCRIPTION"))) {
-    message("Installing metacheck from the tracked vendor/metacheck source...")
-    remotes::install_local(vendor_path, upgrade = "never", force = TRUE)
-  } else {
-    message("vendor/metacheck not found; installing scienceverse/metacheck@reproducibility_check from GitHub...")
-    # Force the reinstall even if remotes thinks the SHA is unchanged; otherwise
-    # the same process can keep using the currently loaded package object and the
-    # module-check never sees the newly-installed files.
-    remotes::install_github(
-      "scienceverse/metacheck",
-      ref = "reproducibility_check",
-      upgrade = "never",
-      force = TRUE
-    )
-  }
+  message("Installing scienceverse/metacheck@dev from GitHub...")
+  # Force the reinstall even if remotes thinks the SHA is unchanged; otherwise
+  # the same process can keep using the currently loaded package object and the
+  # module-check never sees the newly-installed files.
+  remotes::install_github(
+    "scienceverse/metacheck",
+    ref = "dev",
+    upgrade = "never",
+    force = TRUE
+  )
 
   suppressPackageStartupMessages(library(metacheck))
 
@@ -189,8 +192,7 @@ ensure_repro_branch <- function(repo_root) {
   if (!module_exists("reproducibility_check")) {
     stop(
       "The reproducibility_check module is not present in the installed package. ",
-      "The reproducibility_check branch is not yet exposing this feature, or the ",
-      "branch name is different on GitHub."
+      "scienceverse/metacheck@dev is not currently exposing this feature."
     )
   }
 
@@ -388,8 +390,83 @@ run_module_batched_per_paper <- function(papers, module_name, batch_dir, warning
   batch_results
 }
 
+# Same outer batch-file checkpointing as run_module_batched_per_paper(), but
+# hands each outer batch's WHOLE paperlist to reproducibility_check() in one
+# call with workers = <n>, instead of looping one paper at a time within the
+# batch. metacheck >= 0.3.1 added native support for this (see
+# reproducibility_check()'s own `workers`/`results_dir` args): when
+# `execute = TRUE` and `sandbox = "docker"`, passing a paperlist of length > 1
+# with workers > 1 runs that many papers CONCURRENTLY, each in its own
+# background R process/container, internally still calling module_run() ONE
+# PAPER AT A TIME per worker (so the old "multi-paper paperlist collapses to
+# an empty result" limitation run_module_batched_per_paper()'s own comment
+# describes does not apply here -- that was about handing several papers to a
+# single reproducibility_check() call, not about several concurrent
+# single-paper calls) and combining their results the same way
+# combine_batches() below already does by hand. Falls back to the old
+# per-paper-sequential behaviour automatically whenever workers <= 1 or the
+# batch has only one paper (reproducibility_check()'s own workers argument is
+# simply ignored in that case, not an error).
+#
+# results_dir points at a per-paper .rds checkpoint folder (one file per
+# paper_id, written the moment that paper finishes) INSIDE this outer batch's
+# own scope -- a second, finer-grained resumability layer underneath the
+# existing per-batch .RData files, so a run killed mid-batch does not lose
+# the papers that already finished within that still-unsaved batch.
+run_module_batched_workers <- function(papers, module_name, batch_dir, warning_log,
+                                       batch_size = 50L, resume = TRUE,
+                                       variant = "", workers = 1L, ...) {
+  n <- length(papers)
+  starts <- seq(1L, n, by = batch_size)
+  nb <- length(starts)
+  status("Processing %d papers in %d batch(es) of up to %d papers each (up to %d worker(s) concurrently).",
+         n, nb, batch_size, workers)
+
+  var_name <- paste0("res_", module_name)
+  batch_results <- vector("list", nb)
+  results_root <- file.path(batch_dir, "worker_results")
+
+  for (b in seq_len(nb)) {
+    batch_id <- sprintf("%03d", b)
+    s <- starts[b]
+    e <- min(s + batch_size - 1L, n)
+    path <- file.path(batch_dir, sprintf("res_%s%s_bs%d_batch%s.RData", module_name, variant, batch_size, batch_id))
+
+    if (resume && file.exists(path)) {
+      status("Batch %d/%d (papers %d-%d): already done, loading from disk.", b, nb, s, e)
+      env <- new.env()
+      load(path, envir = env)
+      batch_results[[b]] <- env[[var_name]]
+      next
+    }
+
+    status("Batch %d/%d (papers %d-%d): running %s on %d paper(s), up to %d at a time...",
+           b, nb, s, e, module_name, e - s + 1L, workers)
+    batch_papers <- papers[s:e]
+    results_dir <- file.path(results_root, sprintf("batch%s", batch_id))
+    dir.create(results_dir, showWarnings = FALSE, recursive = TRUE)
+    res <- tryCatch(
+      run_with_warnings(module_name, warning_log, batch_papers, module_name,
+                        workers = workers, results_dir = results_dir, ...),
+      error = function(err) {
+        status("Batch %d/%d FAILED (%s) -- skipping; rerun this script later to retry just this batch.",
+               b, nb, conditionMessage(err))
+        NULL
+      }
+    )
+    if (!is.null(res)) {
+      assign(var_name, res)
+      save(list = var_name, file = path)
+      status("Batch %d/%d done.", b, nb)
+    }
+    batch_results[[b]] <- res
+  }
+
+  batch_results
+}
+
 run_repro_check <- function(papers, repo_root, batch_size, resume,
-                            execute = TRUE, timeout = 3000L) {
+                            execute = TRUE, timeout = 3000L, workers = 1L) {
   data_dir <- file.path(repo_root, "data")
   batch_dir <- file.path(data_dir, "batches")
   dir.create(batch_dir, showWarnings = FALSE, recursive = TRUE)
@@ -423,19 +500,29 @@ run_repro_check <- function(papers, repo_root, batch_size, resume,
     ))
   }
 
-  message("Detected dedicated reproducibility_check module. Running it one paper at a time ",
-          "(checkpointed in batches of ", batch_size, ")",
+  message("Detected dedicated reproducibility_check module. Running it ",
+          if (isTRUE(execute) && workers > 1L) paste0("up to ", workers, " papers at a time")
+          else "one paper at a time",
+          " (checkpointed in batches of ", batch_size, ")",
           if (isTRUE(execute)) " (execute = TRUE: code will actually run)." else ".")
 
-  # execute = TRUE additionally installs the declared dependencies (into the
-  # MAIN R library, so a package one paper needs is already there -- and
-  # skipped -- for every later paper needing it too, per
-  # cran_install_main's own docs) and actually runs each script in an
-  # isolated callr subprocess (sandbox = "process": isolates a crash, NOT
-  # the filesystem/network -- see reproducibility_check()'s own docs).
+  # execute = TRUE additionally installs the declared dependencies and
+  # actually runs each script -- sandbox = "docker" runs each script inside
+  # a locked-down container (network disabled, filesystem read-only outside
+  # the sandbox, non-root user) instead of a bare callr subprocess on this
+  # machine, a real containment boundary for running downloaded third-party
+  # code. By default this uses ghcr.io/scienceverse/metacheck_r:latest,
+  # which already has the ~750 most common corpus packages installed, so
+  # most papers skip most of the install phase. install_missing = TRUE still
+  # installs any further declared dependencies (into a throwaway per-run
+  # library inside the container -- see repro_install_deps_docker()).
+  # cran_install_main is intentionally omitted here: it is documented as
+  # ignored under sandbox = "docker" (a container never has access to the
+  # host's main R library; every install always goes into that throwaway
+  # library regardless of this argument).
   extra_args <- if (isTRUE(execute)) {
-    list(execute = TRUE, sandbox = "process", install_missing = TRUE,
-        cran_install_main = TRUE, timeout = timeout)
+    list(execute = TRUE, sandbox = "docker", install_missing = TRUE,
+        timeout = timeout)
   } else list()
 
   # skip_on_api_limit = TRUE: an unattended, hours-long corpus run must never
@@ -444,10 +531,17 @@ run_repro_check <- function(papers, repo_root, batch_size, resume,
   # message on batch 1 of a 373-batch run). Skipping that file/download and
   # moving on is the right default here; it only affects data actually pulled
   # from a rate-limited host, not the paper's other files.
-  batch_results <- do.call(run_module_batched_per_paper, c(
+  #
+  # workers > 1 (and execute = TRUE, sandbox = "docker" via extra_args) uses
+  # metacheck >= 0.3.1's native concurrent-papers batch dispatcher (see
+  # run_module_batched_workers()'s own comment); otherwise falls back to the
+  # pre-existing one-paper-at-a-time path unchanged.
+  batcher <- if (isTRUE(execute) && workers > 1L) run_module_batched_workers else run_module_batched_per_paper
+  batch_results <- do.call(batcher, c(
     list(papers, "reproducibility_check", batch_dir, warning_log,
         batch_size = batch_size, resume = resume, variant = variant, cache = TRUE,
         skip_on_api_limit = TRUE),
+    if (isTRUE(execute) && workers > 1L) list(workers = workers) else list(),
     extra_args
   ))
 
@@ -507,7 +601,7 @@ main <- function() {
   }
 
   out <- run_repro_check(bes, repo_root, batch_size = opts$batch_size, resume = opts$resume,
-                         execute = opts$execute, timeout = opts$timeout)
+                         execute = opts$execute, timeout = opts$timeout, workers = opts$workers)
 
   save(out, file = out$output_path)
   cat("Saved combined output to: ", out$output_path, "\n", sep = "")

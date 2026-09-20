@@ -1,0 +1,8 @@
+layer,category,category_type,subcategory,weight
+res_eco_integrity,ecological,ecosystem,res_eco_integrity,1
+res_water_pollution,ecological,regulatory,res_water_pollution,1
+res_climate_change,ecological,regulatory,res_climate_change,1
+res_alien,ecological,regulatory,res_alien,1
+res_hab_destruction,ecological,regulatory,res_hab_destruction,1
+res_fishing,ecological,regulatory,res_fishing,1
+res_social,social,social,res_social,1

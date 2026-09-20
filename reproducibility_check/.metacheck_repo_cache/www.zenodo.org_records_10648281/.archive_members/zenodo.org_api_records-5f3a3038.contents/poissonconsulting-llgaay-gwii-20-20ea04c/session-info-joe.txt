@@ -1,0 +1,383 @@
+─ Session info ──────────────────────────────────────────
+ setting  value                       
+ version  R version 3.6.1 (2019-07-05)
+ os       macOS Mojave 10.14.4        
+ system   x86_64, darwin15.6.0        
+ ui       RStudio                     
+ language (EN)                        
+ collate  en_CA.UTF-8                 
+ ctype    en_CA.UTF-8                 
+ tz       America/Vancouver           
+ date     2019-10-28                  
+
+─ Packages ──────────────────────────────────────────────
+ package             * version    date       lib
+ abind                 1.4-5      2016-07-21 [1]
+ assertr             * 2.6        2019-01-22 [1]
+ assertthat            0.2.1      2019-03-21 [1]
+ audio                 0.1-6      2019-03-19 [1]
+ backports             1.1.5      2019-10-02 [1]
+ base64enc             0.1-3      2015-07-28 [1]
+ batchr              * 0.0.0.9036 2019-10-25 [1]
+ beepr                 1.3        2018-06-04 [1]
+ bibtex                0.4.2      2017-06-30 [1]
+ bit                   1.1-14     2018-05-29 [1]
+ bit64                 0.9-7      2017-05-08 [1]
+ bitops                1.0-6      2013-08-17 [1]
+ blob                * 1.2.0      2019-07-23 [1]
+ blogdown              0.16       2019-10-01 [1]
+ bookdown              0.14       2019-10-01 [1]
+ broom               * 0.5.2      2019-04-07 [1]
+ callr                 3.3.2      2019-09-22 [1]
+ cellranger            1.1.0      2016-07-27 [1]
+ checkr              * 0.5.0.9001 2019-08-07 [1]
+ chk                 * 0.0.1.9040 2019-10-25 [1]
+ class                 7.3-15     2019-01-01 [1]
+ classInt              0.4-2      2019-10-17 [1]
+ cli                   1.9.9.9000 2019-10-23 [1]
+ coda                  0.19-3     2019-07-05 [1]
+ codetools             0.2-16     2018-12-24 [1]
+ colorspace            1.4-1      2019-03-18 [1]
+ conflicted          * 1.0.4      2019-06-21 [1]
+ crayon                1.3.4      2017-09-16 [1]
+ crosstalk             1.0.0      2016-12-21 [1]
+ data.table            1.12.6     2019-10-18 [1]
+ datacheckr            0.2.0.9003 2019-05-17 [1]
+ DBI                 * 1.0.0      2018-05-02 [1]
+ digest                0.6.21     2019-09-20 [1]
+ doParallel          * 1.0.15     2019-08-02 [1]
+ dplyr               * 0.8.3      2019-07-04 [1]
+ drat                * 0.1.5      2019-03-28 [1]
+ dts                 * 0.0.0.9008 2019-05-16 [1]
+ dttr                * 0.0.1      2019-05-17 [1]
+ dttr2               * 0.0.1.9002 2019-09-17 [1]
+ e1071                 1.7-2      2019-06-05 [1]
+ err                 * 0.2.0.9000 2019-06-29 [1]
+ evaluate              0.14       2019-05-28 [1]
+ fansi                 0.4.0      2018-10-05 [1]
+ fastmap               1.0.1      2019-10-08 [1]
+ fishbc                0.0.1.9000 2019-09-13 [1]
+ fledge              * 0.0.2      2019-09-30 [1]
+ flobr               * 0.2.0.9005 2019-09-19 [1]
+ forcats             * 0.4.0      2019-02-17 [1]
+ foreach             * 1.4.7      2019-07-27 [1]
+ fs                    1.3.1      2019-05-06 [1]
+ furrr                 0.1.0      2018-05-16 [1]
+ future                1.14.0     2019-07-02 [1]
+ generics              0.0.2      2018-11-29 [1]
+ ggmap               * 3.0.0      2019-02-05 [1]
+ ggplot2             * 3.2.1      2019-08-10 [1]
+ ggrepel             * 0.8.1      2019-05-07 [1]
+ ggspatial           * 1.0.3      2018-12-14 [1]
+ git2r                 0.26.1     2019-06-29 [1]
+ globals               0.12.4     2018-10-11 [1]
+ glue                * 1.3.1      2019-03-12 [1]
+ gridExtra             2.3        2017-09-09 [1]
+ gtable                0.3.0      2019-03-25 [1]
+ hashFunction          1.0        2013-03-25 [1]
+ highr                 0.8        2019-03-20 [1]
+ hms                 * 0.5.1      2019-08-23 [1]
+ hmstimer            * 0.0.2.9004 2019-10-23 [1]
+ htmltools             0.4.0      2019-10-04 [1]
+ htmlwidgets           1.5.1      2019-10-08 [1]
+ httpuv                1.5.2      2019-09-11 [1]
+ httr                  1.4.1      2019-08-05 [1]
+ inline                0.3.15     2018-05-18 [1]
+ iterators           * 1.0.12     2019-07-26 [1]
+ jmbr                * 0.0.0.9110 2019-08-26 [1]
+ jpeg                  0.1-8      2014-01-23 [1]
+ jsonlite              1.6        2018-12-07 [1]
+ KernSmooth            2.23-16    2019-10-15 [1]
+ knitr               * 1.25       2019-09-18 [1]
+ labeling              0.3        2014-08-23 [1]
+ later                 1.0.0      2019-10-04 [1]
+ lattice               0.20-38    2018-11-04 [1]
+ lazyeval              0.2.2      2019-03-15 [1]
+ leaflet               2.0.2      2018-08-27 [1]
+ lifecycle             0.1.0      2019-08-01 [1]
+ listenv               0.7.0      2018-01-21 [1]
+ loo                   2.1.0      2019-03-13 [1]
+ lubridate           * 1.7.4      2018-04-11 [1]
+ magrittr            * 1.5        2014-11-22 [1]
+ mapview             * 2.7.0      2019-05-13 [1]
+ MASS                  7.3-51.4   2019-03-31 [1]
+ matrixStats           0.55.0     2019-09-07 [1]
+ mbr                 * 0.0.1.9026 2019-08-26 [1]
+ mcmcdata            * 0.0.0.9010 2019-10-16 [1]
+ mcmcderive          * 0.0.1.9006 2019-09-20 [1]
+ mcmcr               * 0.2.0.9015 2019-09-12 [1]
+ memoise               1.1.0      2017-04-21 [1]
+ microbenchmark      * 1.4-7      2019-09-24 [1]
+ mime                  0.7        2019-06-11 [1]
+ munsell               0.5.0      2018-06-12 [1]
+ newdata             * 0.0.0.9013 2019-05-16 [1]
+ nlist               * 0.0.0.9111 2019-10-02 [1]
+ nlme                  3.1-141    2019-08-01 [1]
+ packrat               0.5.0      2018-11-14 [1]
+ pillar                1.4.2      2019-06-29 [1]
+ pkgbuild              1.0.6      2019-10-09 [1]
+ pkgconfig             2.0.3      2019-09-22 [1]
+ pkgdown             * 1.4.1      2019-09-15 [1]
+ plyr                * 1.8.4      2016-06-08 [1]
+ png                   0.1-7      2013-12-03 [1]
+ poisblogdown        * 0.0.0.9002 2019-08-30 [1]
+ poisdata            * 0.0.0.9012 2019-05-16 [1]
+ poisdrat            * 0.0.0.9003 2019-09-13 [1]
+ poisinteractivepkgs * 0.0.0.9001 2019-10-09 [1]
+ poispkgs            * 0.0.1.9014 2019-10-28 [1]
+ poisplot            * 0.0.0.9002 2019-05-16 [1]
+ poisreport          * 0.0.0.9004 2019-06-17 [1]
+ poisspatial         * 0.0.0.9027 2019-08-08 [1]
+ poissqlite          * 0.0.0.9032 2019-10-16 [1]
+ poisutils           * 0.0.0.9009 2019-06-20 [1]
+ prettyunits           1.0.2      2015-07-13 [1]
+ processx              3.4.1      2019-07-18 [1]
+ progress              1.2.2      2019-05-16 [1]
+ promises              1.1.0      2019-10-04 [1]
+ ps                    1.3.0      2018-12-21 [1]
+ purrr               * 0.3.3      2019-10-18 [1]
+ R6                    2.4.0      2019-02-14 [1]
+ raster                3.0-7      2019-09-24 [1]
+ Rcpp                  1.0.2      2019-07-25 [1]
+ readr               * 1.3.1      2018-12-21 [1]
+ readwritesqlite     * 0.0.2.9004 2019-10-07 [1]
+ readxl              * 1.3.1      2019-03-13 [1]
+ RefManageR            1.2.12     2019-04-03 [1]
+ rematch2              2.1.0      2019-07-11 [1]
+ rescale               0.0.0.9006 2019-05-16 [1]
+ rex                   1.1.2      2017-10-19 [1]
+ RgoogleMaps           1.4.4      2019-08-20 [1]
+ rjags                 4-9        2019-08-19 [1]
+ rjson                 0.2.20     2018-06-08 [1]
+ rlang               * 0.4.0.9005 2019-10-16 [1]
+ rmarkdown           * 1.16       2019-10-01 [1]
+ roxygen2md          * 1.0.0.9000 2019-10-01 [1]
+ RSQLite             * 2.1.2      2019-07-24 [1]
+ rstan               * 2.19.2     2019-07-09 [1]
+ rstudioapi            0.10       2019-03-19 [1]
+ satellite             1.0.1      2017-10-18 [1]
+ scales              * 1.0.0      2018-08-09 [1]
+ servr                 0.15       2019-08-07 [1]
+ sessioninfo         * 1.1.1      2018-11-05 [1]
+ sf                  * 0.8-0      2019-09-17 [1]
+ shiny                 1.4.0      2019-10-10 [1]
+ sims                * 0.0.0.9021 2019-10-22 [1]
+ slackr              * 1.4.2      2016-07-20 [1]
+ smbr                * 0.0.1.9002 2019-08-26 [1]
+ sp                    1.3-1      2018-06-05 [1]
+ StanHeaders         * 2.19.0     2019-09-07 [1]
+ stringi               1.4.3      2019-03-12 [1]
+ stringr             * 1.4.0      2019-02-10 [1]
+ styler              * 1.2.0      2019-10-17 [1]
+ subfoldr              0.0.0.9030 2019-05-16 [1]
+ subfoldr2           * 0.0.0.9036 2019-10-22 [1]
+ subreport           * 0.0.0.9014 2019-05-16 [1]
+ term                * 0.0.1      2019-10-02 [1]
+ testthat            * 2.2.1      2019-07-25 [1]
+ tibble              * 2.1.3      2019-06-06 [1]
+ tidyr               * 1.0.0      2019-09-11 [1]
+ tidyselect            0.2.5      2018-10-11 [1]
+ timer                 0.0.1.9000 2019-05-16 [1]
+ tinter              * 0.0.1      2018-12-16 [1]
+ tmbr                * 0.0.1.9002 2019-08-26 [1]
+ udunits2              0.13       2016-11-17 [1]
+ units               * 0.6-5      2019-10-08 [1]
+ usethis             * 1.5.1.9000 2019-09-13 [1]
+ utf8                  1.1.4      2018-05-24 [1]
+ vctrs                 0.2.0.9005 2019-10-16 [1]
+ viridis             * 0.5.1      2018-03-29 [1]
+ viridisLite         * 0.3.0      2018-02-01 [1]
+ webshot               0.5.1      2018-09-28 [1]
+ withr                 2.1.2      2018-03-15 [1]
+ xfun                  0.10       2019-10-01 [1]
+ xml2                  1.2.2      2019-08-09 [1]
+ xtable                1.8-4      2019-04-21 [1]
+ yaml                  2.2.0      2018-07-25 [1]
+ yesno               * 0.1.0.9002 2019-05-16 [1]
+ zeallot               0.1.0      2018-01-28 [1]
+ source                                   
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ Github (tidyverse/blob@aa30955)          
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ Github (poissonconsulting/checkr@c86f727)
+ local                                    
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ Github (r-lib/cli@ad6410a)               
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ Github (poissonconsulting/dttr@2962219)  
+ local                                    
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ local                                    
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ Github (r-lib/rlang@bdeb7f6)             
+ CRAN (R 3.6.0)                           
+ Github (r-lib/roxygen2md@3ca3c16)        
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ local                                    
+ local                                    
+ local                                    
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.1)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+ Github (r-lib/vctrs@ba92613)             
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ CRAN (R 3.6.0)                           
+ local                                    
+ CRAN (R 3.6.0)                           
+
+[1] /Library/Frameworks/R.framework/Versions/3.6/Resources/library

@@ -1,0 +1,2105 @@
+﻿cond;plot;subplot;species;n_ind;caract
+non-invaded;1;1;Gay_bras;14;len
+non-invaded;1;1;Smi_camp ;2;len
+non-invaded;1;1;Bac_drac ;1;len
+non-invaded;1;1;Dio_radu;0;nlen
+non-invaded;1;1;Ple_lepi;0;nlen
+non-invaded;1;1;Cyr_flav;0;nlen
+non-invaded;1;1;rynchospora ;0;nlen
+non-invaded;1;2;Gay_bras;4;len
+non-invaded;1;2;Ouratea;2;len
+non-invaded;1;2;Smi_camp ;4;len
+non-invaded;1;2;rynchospora ;0;nlen
+non-invaded;1;3;Gay_bras;8;len
+non-invaded;1;3;Smi_camp ;2;len
+non-invaded;1;3;Myr_palu;1;len
+non-invaded;1;3;Epi_fulg;0;nlen
+non-invaded;1;3;Ple_lepi;0;nlen
+non-invaded;1;3;Dio_radu;0;nlen
+non-invaded;1;3;Dyc_ench;0;nlen
+non-invaded;1;3;Vri_frib;0;nlen
+non-invaded;1;4;Myr_palu;2;len
+non-invaded;1;4;Gay_bras;2;len
+non-invaded;1;4;Ouratea;2;len
+non-invaded;1;4;Smi_camp ;1;len
+non-invaded;1;4;Ple_lepi;0;nlen
+non-invaded;1;4;Vri_frib;0;nlen
+non-invaded;1;4;Epi_fulg;0;nlen
+non-invaded;1;4;Rum_adia;0;nlen
+non-invaded;1;4;rynchospora ;0;nlen
+non-invaded;1;4;Dio_radu;0;nlen
+non-invaded;2;1;Smi_camp ;1;len
+non-invaded;2;1;Dod_visc;1;len
+non-invaded;2;1;Tib_urvi;1;len
+non-invaded;2;1;Clu_criu;1;len
+non-invaded;2;1;Vri_frib;0;nlen
+non-invaded;2;1;Epi_fulg;0;nlen
+non-invaded;2;1;Dyc_ench;0;nlen
+non-invaded;2;1;Coc_lanc;0;nlen
+non-invaded;2;1;Cyr_flav;0;nlen
+non-invaded;2;1;Rum_adia;0;nlen
+non-invaded;2;1;Dio_radu;0;nlen
+non-invaded;2;1;Tillandsia sp. ;0;nlen
+non-invaded;2;1;C8;0;nlen
+non-invaded;2;1;C1;0;nlen
+non-invaded;2;2;Gay_bras;2;len
+non-invaded;2;2;Smi_camp ;1;len
+non-invaded;2;2;Ouratea;1;len
+non-invaded;2;2;C3;1;len
+non-invaded;2;2;C4;1;len
+non-invaded;2;2;Act_poly;0;nlen
+non-invaded;2;2;Rum_adia;0;nlen
+non-invaded;2;2;Ser_lati;0;nlen
+non-invaded;2;2;C5;0;nlen
+non-invaded;2;2;C6;0;nlen
+non-invaded;2;2;Seb_corn;0;nlen
+non-invaded;2;2;Dio_radu;0;nlen
+non-invaded;2;2;Epi_fulg;0;nlen
+non-invaded;2;2;Cup_hyss;0;nlen
+non-invaded;2;3;Gay_bras;8;len
+non-invaded;2;3;Tib_urvi;2;len
+non-invaded;2;3;Ter_bras;1;len
+non-invaded;2;3;Act_poly;0;nlen
+non-invaded;2;3;Dyc_ench;0;nlen
+non-invaded;2;3;Epi_fulg;0;nlen
+non-invaded;2;3;C6;0;nlen
+non-invaded;2;3;C8;0;nlen
+non-invaded;2;3;Vri_frib;0;nlen
+non-invaded;2;3;C1;0;nlen
+non-invaded;2;4;Smi_camp ;1;len
+non-invaded;2;4;Epi_fulg;0;nlen
+non-invaded;2;4;Dyc_ench;0;nlen
+non-invaded;2;4;Act_poly;0;nlen
+non-invaded;2;4;C10;0;nlen
+non-invaded;2;4;C11;0;nlen
+non-invaded;2;4;C12;0;nlen
+non-invaded;3;1;Ouratea;4;len
+non-invaded;3;1;Gay_bras;10;len
+non-invaded;3;1;Gua_oppo;2;len
+non-invaded;3;1;Vit_mont;1;len
+non-invaded;3;1;Smi_camp ;2;len
+non-invaded;3;1;Cyr_flav;0;nlen
+non-invaded;3;1;Dio_radu;0;nlen
+non-invaded;3;1;Ple_lepi;0;nlen
+non-invaded;3;1;Rum_adia;0;nlen
+non-invaded;3;1;Vri_frib;0;nlen
+non-invaded;3;1;Rha_madi ;0;nlen
+non-invaded;3;1;C16;0;nlen
+non-invaded;3;2;Smi_camp ;2;len
+non-invaded;3;2;Eug_cath;3;len
+non-invaded;3;2;Gay_bras;2;len
+non-invaded;3;2;Bac_drac ;2;len
+non-invaded;3;2;Rum_adia;0;nlen
+non-invaded;3;2;Vri_frib;0;nlen
+non-invaded;3;2;Dio_radu;0;nlen
+non-invaded;3;2;Pep_glab;0;nlen
+non-invaded;3;2;Act_poly;0;nlen
+non-invaded;3;3;Gua_oppo;3;len
+non-invaded;3;3;Tib_urvi;1;len
+non-invaded;3;3;Psy_cart;1;len
+non-invaded;3;3;Smi_camp ;3;len
+non-invaded;3;3;Cyr_flav;0;nlen
+non-invaded;3;3;Pep_glab;0;nlen
+non-invaded;3;3;Ser_lati;0;nlen
+non-invaded;3;3;Rum_adia;0;nlen
+non-invaded;3;3;Vri_frib;0;nlen
+non-invaded;3;4;Bac_drac ;2;len
+non-invaded;3;4;Gay_bras;3;len
+non-invaded;3;4;Tib_urvi;9;len
+non-invaded;3;4;Psy_cart;5;len
+non-invaded;3;4;C5;0;nlen
+non-invaded;3;4;Act_poly;0;nlen
+non-invaded;3;4;Aec_coma;0;nlen
+non-invaded;3;4;C16;0;nlen
+non-invaded;3;4;C1;0;nlen
+non-invaded;3;4;Vri_frib;0;nlen
+non-invaded;4;1;Smi_camp ;11;len
+non-invaded;4;1;Pep_glab;0;nlen
+non-invaded;4;1;Cyr_flav;0;nlen
+non-invaded;4;1;Vri_frib;0;nlen
+non-invaded;4;1;Rum_adia;0;nlen
+non-invaded;4;1;Ple_lepi;0;nlen
+non-invaded;4;1;C20;0;nlen
+non-invaded;4;2;Gay_bras;1;len
+non-invaded;4;2;Ple_lepi;0;nlen
+non-invaded;4;2;Dyc_ench;0;nlen
+non-invaded;4;2;Pep_glab;0;nlen
+non-invaded;4;2;Dio_radu;0;nlen
+non-invaded;4;2;Cyr_flav;0;nlen
+non-invaded;4;2;Vri_frib;0;nlen
+non-invaded;4;2;C20;0;nlen
+non-invaded;4;3;Smi_camp ;6;len
+non-invaded;4;3;Ouratea;1;len
+non-invaded;4;3;Vit_mont;1;len
+non-invaded;4;3;Dyc_ench;0;nlen
+non-invaded;4;3;Ple_lepi;0;nlen
+non-invaded;4;3;Cyr_flav;0;nlen
+non-invaded;4;3;C21;0;nlen
+non-invaded;4;3;Vri_frib;0;nlen
+non-invaded;4;3;Seb_corn;0;nlen
+non-invaded;4;4;C23;0;nlen
+non-invaded;4;4;C24;0;nlen
+non-invaded;5;1;C26;1;len
+non-invaded;5;1;C27;1;len
+non-invaded;5;1;Smi_camp ;2;len
+non-invaded;5;1;C8;0;nlen
+non-invaded;5;1;C28;0;nlen
+non-invaded;5;1;C29;0;nlen
+non-invaded;5;2;Smi_camp ;2;len
+non-invaded;5;2;Gay_bras;1;len
+non-invaded;5;2;Vri_frib;0;nlen
+non-invaded;5;2;Cyr_flav;0;nlen
+non-invaded;5;2;Rum_adia;0;nlen
+non-invaded;5;2;Ple_lepi;0;nlen
+non-invaded;5;2;Dio_radu;0;nlen
+non-invaded;5;2;Seb_corn;0;nlen
+non-invaded;5;2;C30;0;nlen
+non-invaded;5;2;C31;0;nlen
+non-invaded;5;3;Clu_criu;1;len
+non-invaded;5;3;Vri_frib;0;nlen
+non-invaded;5;3;Ple_lepi;0;nlen
+non-invaded;5;3;Dio_radu;0;nlen
+non-invaded;5;3;C33;0;nlen
+non-invaded;5;3;Cyr_flav;0;nlen
+non-invaded;5;3;Pep_glab;0;nlen
+non-invaded;5;3;Ser_lati;0;nlen
+non-invaded;5;4;Smi_camp ;9;len
+non-invaded;5;4;Vit_mont;2;len
+non-invaded;5;4;Clu_criu;1;len
+non-invaded;5;4;Seb_corn;0;nlen
+non-invaded;5;4;C33;0;nlen
+non-invaded;5;4;C34;0;nlen
+non-invaded;6;1;Smi_camp ;8;len
+non-invaded;6;1;Ouratea;6;len
+non-invaded;6;1;C8;0;nlen
+non-invaded;6;1;C37;0;nlen
+non-invaded;6;1;C38;0;nlen
+non-invaded;6;1;C39;0;nlen
+non-invaded;6;1;C40;0;nlen
+non-invaded;6;2;Psy_cart;2;len
+non-invaded;6;2;Smi_camp ;3;len
+non-invaded;6;2;Ouratea;2;len
+non-invaded;6;2;Gay_bras;3;len
+non-invaded;6;2;Eug_cath;1;len
+non-invaded;6;2;Vri_frib;0;nlen
+non-invaded;6;2;Cyr_flav;0;nlen
+non-invaded;6;2;Rum_adia;0;nlen
+non-invaded;6;2;Ple_lepi;0;nlen
+non-invaded;6;2;Dyc_ench;0;nlen
+non-invaded;6;2;C42;0;nlen
+non-invaded;6;2;Tillandsia sp. ;0;nlen
+non-invaded;6;3;Vit_mont;1;len
+non-invaded;6;3;Bac_drac ;2;len
+non-invaded;6;3;Gay_bras;12;len
+non-invaded;6;3;Gua_oppo;1;len
+non-invaded;6;3;Dod_visc;1;len
+non-invaded;6;3;Smi_camp ;2;len
+non-invaded;6;3;Cyr_flav;0;nlen
+non-invaded;6;3;Ple_lepi;0;nlen
+non-invaded;6;3;Dyc_ench;0;nlen
+non-invaded;6;3;Dio_radu;0;nlen
+non-invaded;6;3;Rum_adia;0;nlen
+non-invaded;6;3;C42;0;nlen
+non-invaded;6;3;C43;0;nlen
+non-invaded;6;4;Gay_bras;3;len
+non-invaded;6;4;Smi_camp ;2;len
+non-invaded;6;4;Ouratea;1;len
+non-invaded;6;4;Dio_radu;0;nlen
+non-invaded;6;4;Vri_frib;0;nlen
+non-invaded;6;4;Cyr_flav;0;nlen
+non-invaded;6;4;Ple_lepi;0;nlen
+non-invaded;6;4;Rum_adia;0;nlen
+non-invaded;6;4;Dyc_ench;0;nlen
+non-invaded;6;4;Sin_doug;0;nlen
+non-invaded;7;1;Vit_mont;1;len
+non-invaded;7;1;Smi_camp ;17;len
+non-invaded;7;1;Tib_urvi;2;len
+non-invaded;7;1;Gay_bras;2;len
+non-invaded;7;1;Dyc_ench;0;nlen
+non-invaded;7;1;Ser_lati;0;nlen
+non-invaded;7;1;Vri_frib;0;nlen
+non-invaded;7;1;Ple_lepi;0;nlen
+non-invaded;7;1;Cyr_flav;0;nlen
+non-invaded;7;1;Epi_fulg;0;nlen
+non-invaded;7;1;C52;0;nlen
+non-invaded;7;2;Tib_urvi;2;len
+non-invaded;7;2;Smi_camp ;22;len
+non-invaded;7;2;Ouratea;1;len
+non-invaded;7;2;Gay_bras;5;len
+non-invaded;7;2;Aec_coma;0;nlen
+non-invaded;7;2;Ple_lepi;0;nlen
+non-invaded;7;2;Dyc_ench;0;nlen
+non-invaded;7;2;Dio_radu;0;nlen
+non-invaded;7;3;Ouratea;2;len
+non-invaded;7;3;Eug_cath;1;len
+non-invaded;7;3;Gay_bras;1;len
+non-invaded;7;3;Smi_camp ;5;len
+non-invaded;7;3;Vri_frib;0;nlen
+non-invaded;7;3;Rum_adia;0;nlen
+non-invaded;7;3;Ple_lepi;0;nlen
+non-invaded;7;3;Ser_lati;0;nlen
+non-invaded;7;3;Mic_vacc;0;nlen
+non-invaded;7;4;Gay_bras;3;len
+non-invaded;7;4;Smi_camp ;1;len
+non-invaded;7;4;Bac_drac ;1;len
+non-invaded;7;4;Ple_lepi;0;nlen
+non-invaded;7;4;Rum_adia;0;nlen
+non-invaded;7;4;Cyr_flav;0;nlen
+non-invaded;7;4;Vri_frib;0;nlen
+non-invaded;7;4;Dio_radu;0;nlen
+non-invaded;7;4;Dyc_ench;0;nlen
+non-invaded;8;1;Ouratea;14;len
+non-invaded;8;1;Gay_bras;4;len
+non-invaded;8;1;Smi_camp ;10;len
+non-invaded;8;1;C56;0;nlen
+non-invaded;8;1;C57;0;nlen
+non-invaded;8;1;C57;0;nlen
+non-invaded;8;2;Rum_adia;0;nlen
+non-invaded;8;2;Ple_lepi;0;nlen
+non-invaded;8;2;Vri_frib;0;nlen
+non-invaded;8;3;Ouratea;1;len
+non-invaded;8;3;Ple_lepi;0;nlen
+non-invaded;8;3;C8;0;nlen
+non-invaded;8;3;C57;0;nlen
+non-invaded;8;3;Vri_frib;0;nlen
+non-invaded;8;3;C50;0;nlen
+non-invaded;8;3;C58;0;nlen
+non-invaded;8;4;Ouratea;3;len
+non-invaded;8;4;Smi_camp ;2;len
+non-invaded;8;4;Vit_mont;1;len
+non-invaded;8;4;C50;0;nlen
+non-invaded;8;4;C59;0;nlen
+non-invaded;8;4;Act_poly;0;nlen
+non-invaded;8;4;C8;0;nlen
+non-invaded;9;1;Ouratea;3;len
+non-invaded;9;1;C61;1;len
+non-invaded;9;1;Gay_bras;2;len
+non-invaded;9;1;Smi_camp ;1;len
+non-invaded;9;1;Ile_thee;1;len
+non-invaded;9;1;Ple_lepi;0;nlen
+non-invaded;9;1;Cyr_flav;0;nlen
+non-invaded;9;1;Vri_frib;0;nlen
+non-invaded;9;1;Dio_radu;0;nlen
+non-invaded;9;1;Dyc_ench;0;nlen
+non-invaded;9;2;Smi_camp ;2;len
+non-invaded;9;2;Bac_drac ;1;len
+non-invaded;9;2;Dio_radu;0;nlen
+non-invaded;9;2;C62;0;nlen
+non-invaded;9;3;Smi_camp ;1;len
+non-invaded;9;3;Clu_criu;1;len
+non-invaded;9;3;Vri_frib;0;nlen
+non-invaded;9;3;Epi_fulg;0;nlen
+non-invaded;9;4;Ouratea;4;len
+non-invaded;9;4;Ile_thee;1;len
+non-invaded;9;4;Gay_bras;3;len
+non-invaded;9;4;Smi_camp ;2;len
+non-invaded;9;4;C5;0;nlen
+non-invaded;9;4;Pte_arac;0;nlen
+non-invaded;9;4;Ple_lepi;0;nlen
+non-invaded;9;4;Vri_frib;0;nlen
+non-invaded;10;1;Gay_bras;7;len
+non-invaded;10;1;Smi_camp ;5;len
+non-invaded;10;1;Vit_mont;1;len
+non-invaded;10;1;Ouratea;3;len
+non-invaded;10;1;Act_poly;0;nlen
+non-invaded;10;1;Dio_radu;0;nlen
+non-invaded;10;1;Ple_lepi;0;nlen
+non-invaded;10;1;C43;0;nlen
+non-invaded;10;2;Ouratea;2;len
+non-invaded;10;2;Gay_bras;1;len
+non-invaded;10;2;Clu_criu;3;len
+non-invaded;10;2;Pep_glab;0;nlen
+non-invaded;10;2;Ple_lepi;0;nlen
+non-invaded;10;2;Vri_frib;0;nlen
+non-invaded;10;2;C42;0;nlen
+non-invaded;10;2;C43;0;nlen
+non-invaded;10;2;C65;0;nlen
+non-invaded;10;2;C66;0;nlen
+non-invaded;10;3;Ouratea;4;len
+non-invaded;10;3;Gay_bras;1;len
+non-invaded;10;4;Ouratea;3;len
+non-invaded;10;4;Gay_bras;3;len
+non-invaded;10;4;Smi_camp ;2;len
+non-invaded;10;4;Ple_lepi;0;nlen
+non-invaded;10;4;Epi_fulg;0;nlen
+non-invaded;10;4;Cyr_flav;0;nlen
+non-invaded;10;4;C43;0;nlen
+non-invaded;11;1;Ouratea;1;len
+non-invaded;11;1;Ile_thee;1;len
+non-invaded;11;1;Smi_camp ;2;len
+non-invaded;11;1;Gay_bras;2;len
+non-invaded;11;1;Gua_oppo;1;len
+non-invaded;11;1;Ple_lepi;0;nlen
+non-invaded;11;1;Cyr_flav;0;nlen
+non-invaded;11;1;C43;0;nlen
+non-invaded;11;2;Gay_bras;14;len
+non-invaded;11;2;Smi_camp ;5;len
+non-invaded;11;2;C43;0;nlen
+non-invaded;11;2;Dio_radu;0;nlen
+non-invaded;11;2;Cyr_flav;0;nlen
+non-invaded;11;2;Ple_lepi;0;nlen
+non-invaded;11;3;Gay_bras;6;len
+non-invaded;11;3;Smi_camp ;7;len
+non-invaded;11;3;Ouratea;3;len
+non-invaded;11;3;Act_poly;0;nlen
+non-invaded;11;3;C43;0;nlen
+non-invaded;11;3;Dio_radu;0;nlen
+non-invaded;11;4;Ouratea;3;len
+non-invaded;11;4;Tib_urvi;1;len
+non-invaded;11;4;Gay_bras;1;len
+non-invaded;11;4;Ile_thee;1;len
+non-invaded;11;4;Smi_camp ;4;len
+non-invaded;11;4;Act_poly;0;nlen
+non-invaded;11;4;C43;0;nlen
+non-invaded;11;4;Ple_lepi;0;nlen
+non-invaded;12;1;Ouratea;1;len
+non-invaded;12;1;Smi_camp ;2;len
+non-invaded;12;1;Dod_visc;1;len
+non-invaded;12;1;Gay_bras;1;len
+non-invaded;12;1;Bac_drac ;1;len
+non-invaded;12;1;Vit_mont;1;len
+non-invaded;12;1;C43;0;nlen
+non-invaded;12;1;Dio_radu;0;nlen
+non-invaded;12;1;Ple_lepi;0;nlen
+non-invaded;12;1;Cyr_flav;0;nlen
+non-invaded;12;2;Gay_bras;16;len
+non-invaded;12;2;Smi_camp ;10;len
+non-invaded;12;2;Vit_mont;1;len
+non-invaded;12;2;C43;0;nlen
+non-invaded;12;2;Ple_lepi;0;nlen
+non-invaded;12;2;Dyc_ench;0;nlen
+non-invaded;12;2;Act_poly;0;nlen
+non-invaded;12;3;Vit_mont;4;len
+non-invaded;12;3;Smi_camp ;4;len
+non-invaded;12;3;Gay_bras;6;len
+non-invaded;12;3;Ouratea;1;len
+non-invaded;12;3;Dio_radu;0;nlen
+non-invaded;12;3;Dyc_ench;0;nlen
+non-invaded;12;3;C43;0;nlen
+non-invaded;12;3;C67;0;nlen
+non-invaded;12;4;Ouratea;1;len
+non-invaded;12;4;Smi_camp ;3;len
+non-invaded;12;4;Gay_bras;16;len
+non-invaded;12;4;C42;0;nlen
+non-invaded;12;4;C43;0;nlen
+non-invaded;12;4;Dio_radu;0;nlen
+non-invaded;13;1;Gay_bras;2;len
+non-invaded;13;1;Ouratea;1;len
+non-invaded;13;1;C43;0;nlen
+non-invaded;13;1;Rum_adia;0;nlen
+non-invaded;13;1;Ple_lepi;0;nlen
+non-invaded;13;1;Cyr_flav;0;nlen
+non-invaded;13;2;Ouratea;2;len
+non-invaded;13;2;Smi_camp ;6;len
+non-invaded;13;2;Gay_bras;3;len
+non-invaded;13;2;Cyr_flav;0;nlen
+non-invaded;13;2;C43;0;nlen
+non-invaded;13;2;Dio_radu;0;nlen
+non-invaded;13;3;Gay_bras;8;len
+non-invaded;13;3;Tib_urvi;7;len
+non-invaded;13;3;Smi_camp ;2;len
+non-invaded;13;3;Act_poly;0;nlen
+non-invaded;13;3;C43;0;nlen
+non-invaded;13;3;Dio_radu;0;nlen
+non-invaded;13;3;C67;0;nlen
+non-invaded;13;4;Ouratea;6;len
+non-invaded;13;4;Gay_bras;7;len
+non-invaded;13;4;Vit_mont;2;len
+non-invaded;13;4;Smi_camp ;13;len
+non-invaded;13;4;Ple_lepi;0;nlen
+non-invaded;13;4;Act_poly;0;nlen
+non-invaded;13;4;Dyc_ench;0;nlen
+non-invaded;13;4;C43;0;nlen
+non-invaded;13;4;Dio_radu;0;nlen
+non-invaded;13;4;C68;0;nlen
+non-invaded;13;4;Vri_frib;0;nlen
+non-invaded;14;1;Ouratea;5;len
+non-invaded;14;1;Gua_oppo;1;len
+non-invaded;14;1;Eug_cath;1;len
+non-invaded;14;1;Gay_bras;9;len
+non-invaded;14;1;Tib_urvi;2;len
+non-invaded;14;1;Smi_camp ;5;len
+non-invaded;14;1;Ter_bras;1;len
+non-invaded;14;1;Bac_drac ;1;len
+non-invaded;14;1;C70;0;nlen
+non-invaded;14;1;Dio_radu;0;nlen
+non-invaded;14;1;Ple_lepi;0;nlen
+non-invaded;14;1;Dyc_ench;0;nlen
+non-invaded;14;1;C43;0;nlen
+non-invaded;14;2;Ouratea;1;len
+non-invaded;14;2;Smi_camp ;13;len
+non-invaded;14;2;Gay_bras;5;len
+non-invaded;14;2;Seb_corn;0;nlen
+non-invaded;14;2;Dio_radu;0;nlen
+non-invaded;14;2;C43;0;nlen
+non-invaded;14;2;Ple_lepi;0;nlen
+non-invaded;14;3;Ouratea;1;len
+non-invaded;14;3;Tib_urvi;1;len
+non-invaded;14;3;Smi_camp ;22;len
+non-invaded;14;3;Vit_mont;1;len
+non-invaded;14;3;Gay_bras;1;len
+non-invaded;14;3;C43;0;nlen
+non-invaded;14;3;Dio_radu;0;nlen
+non-invaded;14;3;Act_poly;0;nlen
+non-invaded;14;4;Ouratea;8;len
+non-invaded;14;4;Smi_camp ;9;len
+non-invaded;14;4;Vit_mont;1;len
+non-invaded;14;4;Gay_bras;3;len
+non-invaded;14;4;Dio_radu;0;nlen
+non-invaded;14;4;Vri_frib;0;nlen
+non-invaded;14;4;Ple_lepi;0;nlen
+non-invaded;14;4;C43;0;nlen
+non-invaded;15;1;Smi_camp ;27;len
+non-invaded;15;1;Bac_drac ;1;len
+non-invaded;15;1;Gay_bras;7;len
+non-invaded;15;1;C43;0;nlen
+non-invaded;15;1;C42;0;nlen
+non-invaded;15;1;Dio_radu;0;nlen
+non-invaded;15;2;Smi_camp ;21;len
+non-invaded;15;2;Gay_bras;2;len
+non-invaded;15;2;Dio_radu;0;nlen
+non-invaded;15;2;C43;0;nlen
+non-invaded;15;2;C72;0;nlen
+non-invaded;15;3;Smi_camp ;19;len
+non-invaded;15;3;Gay_bras;2;len
+non-invaded;15;3;Vit_mont;1;len
+non-invaded;15;3;Dio_radu;0;nlen
+non-invaded;15;3;Seb_corn;0;nlen
+non-invaded;15;3;C43;0;nlen
+non-invaded;15;4;Gay_bras;11;len
+non-invaded;15;4;Smi_camp ;27;len
+non-invaded;15;4;C43;0;nlen
+non-invaded;15;4;Ple_lepi;0;nlen
+non-invaded;16;1;Smi_camp ;19;len
+non-invaded;16;1;Oco_pulc;2;len
+non-invaded;16;1;Vri_frib;0;nlen
+non-invaded;16;1;C73;0;nlen
+non-invaded;16;1;C74;0;nlen
+non-invaded;16;2;Tib_urvi;1;len
+non-invaded;16;2;Smi_camp ;16;len
+non-invaded;16;2;Vit_mont;2;len
+non-invaded;16;2;C73;0;nlen
+non-invaded;16;2;Act_poly;0;nlen
+non-invaded;16;2;Seb_corn;0;nlen
+non-invaded;16;2;C42;0;nlen
+non-invaded;16;2;C43;0;nlen
+non-invaded;16;3;Smi_camp ;5;len
+non-invaded;16;3;Vit_mont;1;len
+non-invaded;16;3;C73;0;nlen
+non-invaded;16;3;C8;0;nlen
+non-invaded;16;4;Smi_camp ;4;len
+non-invaded;16;4;Vit_mont;2;len
+non-invaded;16;4;C8;0;nlen
+non-invaded;16;4;C73;0;nlen
+non-invaded;17;1;Ouratea;9;len
+non-invaded;17;1;Smi_camp ;19;len
+non-invaded;17;1;Vit_mont;2;len
+non-invaded;17;1;Vri_frib;0;nlen
+non-invaded;17;1;Act_poly;0;nlen
+non-invaded;17;1;Seb_corn;0;nlen
+non-invaded;17;1;C43;0;nlen
+non-invaded;17;1;Dyc_ench;0;nlen
+non-invaded;17;1;Ple_lepi;0;nlen
+non-invaded;17;2;Gay_bras;5;len
+non-invaded;17;2;Tib_urvi;1;len
+non-invaded;17;2;Smi_camp ;13;len
+non-invaded;17;2;Act_poly;0;nlen
+non-invaded;17;2;C43;0;nlen
+non-invaded;17;2;C75;0;nlen
+non-invaded;17;2;Vri_frib;0;nlen
+non-invaded;17;2;Epi_fulg;0;nlen
+non-invaded;17;2;C68;0;nlen
+non-invaded;17;3;Ouratea;2;len
+non-invaded;17;3;Gay_bras;2;len
+non-invaded;17;3;Smi_camp ;5;len
+non-invaded;17;3;C73;0;nlen
+non-invaded;17;4;Ouratea;1;len
+non-invaded;17;4;Smi_camp ;7;len
+non-invaded;17;4;C43;0;nlen
+non-invaded;17;4;C76;0;nlen
+non-invaded;18;1;Gay_bras;7;len
+non-invaded;18;1;Tib_urvi;6;len
+non-invaded;18;1;Smi_camp ;1;len
+non-invaded;18;1;Gua_oppo;1;len
+non-invaded;18;1;C5;0;nlen
+non-invaded;18;1;Dyc_ench;0;nlen
+non-invaded;18;1;Act_poly;0;nlen
+non-invaded;18;1;Vri_frib;0;nlen
+non-invaded;18;1;Dio_radu;0;nlen
+non-invaded;18;1;Cyr_flav;0;nlen
+non-invaded;18;1;C43;0;nlen
+non-invaded;18;2;Ouratea;4;len
+non-invaded;18;2;Smi_camp ;5;len
+non-invaded;18;2;Gay_bras;2;len
+non-invaded;18;2;Tib_urvi;1;len
+non-invaded;18;2;Bac_drac ;1;len
+non-invaded;18;2;C5;0;nlen
+non-invaded;18;2;Vri_frib;0;nlen
+non-invaded;18;2;Dio_radu;0;nlen
+non-invaded;18;2;C43;0;nlen
+non-invaded;18;2;Ple_lepi;0;nlen
+non-invaded;18;2;Dyc_ench;0;nlen
+non-invaded;18;3;Ouratea;1;len
+non-invaded;18;3;Smi_camp ;4;len
+non-invaded;18;3;Ple_lepi;0;nlen
+non-invaded;18;3;Dio_radu;0;nlen
+non-invaded;18;3;Cyr_flav;0;nlen
+non-invaded;18;3;Seb_corn;0;nlen
+non-invaded;18;3;Vri_frib;0;nlen
+non-invaded;18;4;Smi_camp ;14;len
+non-invaded;18;4;Gay_bras;2;len
+non-invaded;18;4;Tib_urvi;3;len
+non-invaded;18;4;Vit_mont;1;len
+non-invaded;18;4;Ouratea;1;len
+non-invaded;18;4;Dio_radu;0;nlen
+non-invaded;18;4;Act_poly;0;nlen
+non-invaded;18;4;C42;0;nlen
+non-invaded;18;4;C43;0;nlen
+non-invaded;18;4;Vri_frib;0;nlen
+non-invaded;18;4;C68;0;nlen
+non-invaded;19;1;Smi_camp ;16;len
+non-invaded;19;1;Gay_bras;1;len
+non-invaded;19;1;Tib_urvi;4;len
+non-invaded;19;1;Vri_frib;0;nlen
+non-invaded;19;1;Dio_radu;0;nlen
+non-invaded;19;1;C43;0;nlen
+non-invaded;19;1;C79;0;nlen
+non-invaded;19;2;Smi_camp ;12;len
+non-invaded;19;2;Gay_bras;1;len
+non-invaded;19;2;Tib_urvi;2;len
+non-invaded;19;2;Ouratea;1;len
+non-invaded;19;2;C78;0;nlen
+non-invaded;19;2;Dyc_ench;0;nlen
+non-invaded;19;2;C68;0;nlen
+non-invaded;19;2;C79;0;nlen
+non-invaded;19;3;Smi_camp ;7;len
+non-invaded;19;3;Ple_lepi;0;nlen
+non-invaded;19;3;Cyr_flav;0;nlen
+non-invaded;19;3;C43;0;nlen
+non-invaded;19;3;Vri_frib;0;nlen
+non-invaded;19;3;Dio_radu;0;nlen
+non-invaded;19;3;C42;0;nlen
+non-invaded;19;4;Smi_camp ;10;len
+non-invaded;19;4;Gay_bras;2;len
+non-invaded;19;4;C43;0;nlen
+non-invaded;19;4;Dio_radu;0;nlen
+non-invaded;20;1;Ouratea;6;len
+non-invaded;20;1;Smi_camp ;3;len
+non-invaded;20;1;Gay_bras;4;len
+non-invaded;20;1;Vit_mont;1;len
+non-invaded;20;1;Dod_visc;1;len
+non-invaded;20;1;Bac_drac ;1;len
+non-invaded;20;1;C43;0;nlen
+non-invaded;20;1;Ple_lepi;0;nlen
+non-invaded;20;1;Dio_radu;0;nlen
+non-invaded;20;2;Smi_camp ;9;len
+non-invaded;20;2;Gay_bras;5;len
+non-invaded;20;2;Ouratea;1;len
+non-invaded;20;2;Dio_radu;0;nlen
+non-invaded;20;2;C43;0;nlen
+non-invaded;20;2;Ple_lepi;0;nlen
+non-invaded;20;2;C68;0;nlen
+non-invaded;20;2;Cyr_flav;0;nlen
+non-invaded;20;3;Smi_camp ;7;len
+non-invaded;20;3;Ouratea;4;len
+non-invaded;20;3;Gay_bras;4;len
+non-invaded;20;3;Dod_visc;1;len
+non-invaded;20;3;Ple_lepi;0;nlen
+non-invaded;20;3;C43;0;nlen
+non-invaded;20;3;Dio_radu;0;nlen
+non-invaded;20;3;C68;0;nlen
+non-invaded;20;3;C42;0;nlen
+non-invaded;20;4;Dod_visc;14;len
+non-invaded;20;4;Bac_drac ;6;len
+non-invaded;20;4;Smi_camp ;1;len
+non-invaded;20;4;Ouratea;1;len
+non-invaded;20;4;Eug_cath;1;len
+non-invaded;20;4;Gay_bras;2;len
+non-invaded;20;4;Dio_radu;0;nlen
+non-invaded;20;4;Ple_lepi;0;nlen
+non-invaded;20;4;Cyr_flav;0;nlen
+non-invaded;20;4;C43;0;nlen
+non-invaded;20;4;C68;0;nlen
+non-invaded;20;4;Seb_corn;0;nlen
+non-invaded;21;1;Bac_drac ;1;len
+non-invaded;21;1;Ter_bras;2;len
+non-invaded;21;1;Ouratea;2;len
+non-invaded;21;1;C43;0;nlen
+non-invaded;21;1;Ple_lepi;0;nlen
+non-invaded;21;1;Dio_radu;0;nlen
+non-invaded;21;2;Vit_mont;1;len
+non-invaded;21;2;Smi_camp ;3;len
+non-invaded;21;2;C43;0;nlen
+non-invaded;21;2;Ple_lepi;0;nlen
+non-invaded;21;2;Dio_radu;0;nlen
+non-invaded;21;2;Cyr_flav;0;nlen
+non-invaded;21;2;Vri_frib;0;nlen
+non-invaded;21;2;Cle_libo;0;nlen
+non-invaded;21;3;Bac_drac ;1;len
+non-invaded;21;3;Ouratea;2;len
+non-invaded;21;3;Gay_bras;5;len
+non-invaded;21;3;Smi_camp ;4;len
+non-invaded;21;3;Vri_frib;0;nlen
+non-invaded;21;3;Ple_lepi;0;nlen
+non-invaded;21;3;Dio_radu;0;nlen
+non-invaded;21;3;Dyc_ench;0;nlen
+non-invaded;21;3;C43;0;nlen
+non-invaded;21;4;Gay_bras;1;len
+non-invaded;21;4;Smi_camp ;1;len
+non-invaded;21;4;Myr_palu;5;len
+non-invaded;21;4;Vri_frib;0;nlen
+non-invaded;21;4;Ple_lepi;0;nlen
+non-invaded;21;4;Cle_libo;0;nlen
+non-invaded;21;4;Cyr_flav;0;nlen
+non-invaded;21;4;C68;0;nlen
+non-invaded;22;1;Ouratea;2;len
+non-invaded;22;1;Ple_lepi;0;nlen
+non-invaded;22;1;Cyr_flav;0;nlen
+non-invaded;22;1;Vri_frib;0;nlen
+non-invaded;22;2;Gay_bras;3;len
+non-invaded;22;2;Psi_catt;1;len
+non-invaded;22;2;C43;0;nlen
+non-invaded;22;2;Ple_lepi;0;nlen
+non-invaded;22;2;Vri_frib;0;nlen
+non-invaded;22;2;Cyr_flav;0;nlen
+non-invaded;22;2;Dyc_ench;0;nlen
+non-invaded;22;3;Ouratea;8;len
+non-invaded;22;3;Dav_rugo;1;len
+non-invaded;22;3;Gay_bras;2;len
+non-invaded;22;3;Bac_drac ;1;len
+non-invaded;22;3;Smi_camp ;1;len
+non-invaded;22;3;C5;0;nlen
+non-invaded;22;3;Dyc_ench;0;nlen
+non-invaded;22;3;Ser_lati;0;nlen
+non-invaded;22;3;Cle_libo;0;nlen
+non-invaded;22;3;Ple_lepi;0;nlen
+non-invaded;22;3;Vri_frib;0;nlen
+non-invaded;22;4;Dav_rugo;1;len
+non-invaded;22;4;Smi_camp ;2;len
+non-invaded;22;4;Gay_bras;3;len
+non-invaded;22;4;Ouratea;1;len
+non-invaded;22;4;Dyc_ench;0;nlen
+non-invaded;22;4;Ple_lepi;0;nlen
+non-invaded;22;4;C43;0;nlen
+non-invaded;22;4;Cyr_flav;0;nlen
+non-invaded;22;4;Pte_arac;0;nlen
+non-invaded;22;4;C68;0;nlen
+non-invaded;23;1;Gay_bras;7;len
+non-invaded;23;1;Smi_camp ;1;len
+non-invaded;23;1;Rum_adia;0;nlen
+non-invaded;23;1;Dio_radu;0;nlen
+non-invaded;23;1;C84;0;nlen
+non-invaded;23;1;C85;0;nlen
+non-invaded;23;2;Gay_bras;4;len
+non-invaded;23;2;Vit_mont;2;len
+non-invaded;23;2;Smi_camp ;1;len
+non-invaded;23;2;Ouratea;1;len
+non-invaded;23;2;Myr_sple;2;len
+non-invaded;23;2;Bac_drac ;1;len
+non-invaded;23;2;C5;0;nlen
+non-invaded;23;2;Dio_radu;0;nlen
+non-invaded;23;2;C86;0;nlen
+non-invaded;23;3;Smi_camp ;3;len
+non-invaded;23;3;Gay_bras;1;len
+non-invaded;23;3;Myr_sple;1;len
+non-invaded;23;3;Vri_frib;0;nlen
+non-invaded;23;3;Pep_glab;0;nlen
+non-invaded;23;4;Ouratea;5;len
+non-invaded;23;4;Gay_bras;6;len
+non-invaded;23;4;Myr_sple;4;len
+non-invaded;23;4;Bac_drac ;1;len
+non-invaded;23;4;Smi_camp ;2;len
+non-invaded;23;4;C87;1;len
+non-invaded;23;4;Vri_frib;0;nlen
+non-invaded;23;4;Dio_radu;0;nlen
+non-invaded;23;4;C85;0;nlen
+non-invaded;24;1;Gay_bras;3;len
+non-invaded;24;1;Smi_camp ;1;len
+non-invaded;24;1;Ple_lepi;0;nlen
+non-invaded;24;1;Cyr_flav;0;nlen
+non-invaded;24;1;Dyc_ench;0;nlen
+non-invaded;24;2;Smi_camp ;8;len
+non-invaded;24;2;Epi_fulg;0;nlen
+non-invaded;24;2;Ple_lepi;0;nlen
+non-invaded;24;2;Dio_radu;0;nlen
+non-invaded;24;2;C43;0;nlen
+non-invaded;24;3;Smi_camp ;3;len
+non-invaded;24;3;Dod_visc;1;len
+non-invaded;24;3;C43;0;nlen
+non-invaded;24;3;Ple_lepi;0;nlen
+non-invaded;24;3;Vri_frib;0;nlen
+non-invaded;24;3;C42;0;nlen
+non-invaded;24;4;Gay_bras;2;len
+non-invaded;24;4;Smi_camp ;15;len
+non-invaded;24;4;Vit_mont;1;len
+non-invaded;24;4;Ple_lepi;0;nlen
+non-invaded;24;4;C42;0;nlen
+non-invaded;24;4;Epi_fulg;0;nlen
+non-invaded;24;4;C68;0;nlen
+non-invaded;24;4;C43;0;nlen
+non-invaded;25;1;Smi_camp ;8;len
+non-invaded;25;1;Ouratea;4;len
+non-invaded;25;1;C5;0;nlen
+non-invaded;25;1;Cyr_flav;0;nlen
+non-invaded;25;1;Vri_frib;0;nlen
+non-invaded;25;1;Ple_lepi;0;nlen
+non-invaded;25;1;C42;0;nlen
+non-invaded;25;1;C43;0;nlen
+non-invaded;25;2;Bac_drac ;1;len
+non-invaded;25;2;Smi_camp ;12;len
+non-invaded;25;2;Gay_bras;3;len
+non-invaded;25;2;Ouratea;1;len
+non-invaded;25;2;Epi_fulg;0;nlen
+non-invaded;25;2;Ple_lepi;0;nlen
+non-invaded;25;2;Cyr_flav;0;nlen
+non-invaded;25;2;Rum_adia;0;nlen
+non-invaded;25;2;Dio_radu;0;nlen
+non-invaded;25;2;C43;0;nlen
+non-invaded;25;2;C88;0;nlen
+non-invaded;25;3;Ouratea;6;len
+non-invaded;25;3;Vri_frib;0;nlen
+non-invaded;25;3;Cyr_flav;0;nlen
+non-invaded;25;3;Ple_lepi;0;nlen
+non-invaded;25;4;Ouratea;3;len
+non-invaded;25;4;Gay_bras;3;len
+non-invaded;25;4;Smi_camp ;3;len
+non-invaded;25;4;C43;0;nlen
+non-invaded;25;4;Ple_lepi;0;nlen
+non-invaded;25;4;Dyc_ench;0;nlen
+non-invaded;25;4;Cyr_flav;0;nlen
+non-invaded;25;4;Vri_frib;0;nlen
+non-invaded;25;4;Epi_fulg;0;nlen
+non-invaded;25;4;Pte_arac;0;nlen
+non-invaded;26;1;Bac_drac ;1;len
+non-invaded;26;1;Smi_camp ;5;len
+non-invaded;26;1;Gay_bras;1;len
+non-invaded;26;1;Vit_mont;2;len
+non-invaded;26;1;Cyr_flav;0;nlen
+non-invaded;26;1;Dio_radu;0;nlen
+non-invaded;26;1;C42;0;nlen
+non-invaded;26;1;C68;0;nlen
+non-invaded;26;1;C43;0;nlen
+non-invaded;26;1;Ple_lepi;0;nlen
+non-invaded;26;1;Pte_arac;0;nlen
+non-invaded;26;2;Gay_bras;3;len
+non-invaded;26;2;Smi_camp ;8;len
+non-invaded;26;2;Vit_mont;1;len
+non-invaded;26;2;Dio_radu;0;nlen
+non-invaded;26;2;Pte_arac;0;nlen
+non-invaded;26;2;C42;0;nlen
+non-invaded;26;2;C43;0;nlen
+non-invaded;26;2;C89;0;nlen
+non-invaded;26;2;Ple_lepi;0;nlen
+non-invaded;26;2;Epi_fulg;0;nlen
+non-invaded;26;2;C68;0;nlen
+non-invaded;26;3;Vit_mont;2;len
+non-invaded;26;3;Smi_camp ;2;len
+non-invaded;26;3;C5;0;nlen
+non-invaded;26;3;Epi_fulg;0;nlen
+non-invaded;26;3;Ple_lepi;0;nlen
+non-invaded;26;3;C43;0;nlen
+non-invaded;26;3;Vri_frib;0;nlen
+non-invaded;26;4;Smi_camp ;2;len
+non-invaded;26;4;Vit_mont;2;len
+non-invaded;26;4;Gay_bras;3;len
+non-invaded;26;4;Ple_lepi;0;nlen
+non-invaded;26;4;Dyc_ench;0;nlen
+non-invaded;26;4;Cyr_flav;0;nlen
+non-invaded;26;4;C5;0;nlen
+non-invaded;26;4;C43;0;nlen
+non-invaded;26;4;C42;0;nlen
+non-invaded;26;4;C89;0;nlen
+non-invaded;26;4;Epi_fulg;0;nlen
+non-invaded;26;4;C68;0;nlen
+non-invaded;27;1;Smi_camp ;9;len
+non-invaded;27;1;Gay_bras;1;len
+non-invaded;27;1;Ouratea;11;len
+non-invaded;27;1;C43;0;nlen
+non-invaded;27;1;Dio_radu;0;nlen
+non-invaded;27;1;C68;0;nlen
+non-invaded;27;1;C8;0;nlen
+non-invaded;27;2;Ouratea;4;len
+non-invaded;27;2;Vit_mont;2;len
+non-invaded;27;2;Gay_bras;2;len
+non-invaded;27;2;Bac_drac ;2;len
+non-invaded;27;2;Smi_camp ;17;len
+non-invaded;27;2;C43;0;nlen
+non-invaded;27;2;Dio_radu;0;nlen
+non-invaded;27;2;C68;0;nlen
+non-invaded;27;2;C8;0;nlen
+non-invaded;27;2;C90;0;nlen
+non-invaded;27;2;C91;0;nlen
+non-invaded;27;3;Ouratea;3;len
+non-invaded;27;3;Ile_thee;1;len
+non-invaded;27;3;Vri_frib;0;nlen
+non-invaded;27;3;Ple_lepi;0;nlen
+non-invaded;27;3;Pte_arac;0;nlen
+non-invaded;27;3;C43;0;nlen
+non-invaded;27;3;Rum_adia;0;nlen
+non-invaded;27;4;Smi_camp ;23;len
+non-invaded;27;4;Gay_bras;9;len
+non-invaded;27;4;Ple_lepi;0;nlen
+non-invaded;27;4;Dio_radu;0;nlen
+non-invaded;27;4;Dyc_ench;0;nlen
+non-invaded;27;4;C43;0;nlen
+non-invaded;27;4;C68;0;nlen
+non-invaded;28;1;Smi_camp ;13;len
+non-invaded;28;1;Gay_bras;6;len
+non-invaded;28;1;Tib_urvi;1;len
+non-invaded;28;1;C43;0;nlen
+non-invaded;28;1;C92;0;nlen
+non-invaded;28;1;C42;0;nlen
+non-invaded;28;1;Dio_radu;0;nlen
+non-invaded;28;2;Tib_urvi;3;len
+non-invaded;28;2;Vit_mont;1;len
+non-invaded;28;2;Smi_camp ;3;len
+non-invaded;28;2;Gay_bras;5;len
+non-invaded;28;2;C43;0;nlen
+non-invaded;28;2;C68;0;nlen
+non-invaded;28;2;C93;0;nlen
+non-invaded;28;2;Seb_corn;0;nlen
+non-invaded;28;2;Vri_frib;0;nlen
+non-invaded;28;3;Ouratea;7;len
+non-invaded;28;3;Ile_thee;1;len
+non-invaded;28;3;Ple_lepi;0;nlen
+non-invaded;28;3;Dyc_ench;0;nlen
+non-invaded;28;3;Cyr_flav;0;nlen
+non-invaded;28;3;Dio_radu;0;nlen
+non-invaded;28;3;Vri_frib;0;nlen
+non-invaded;28;3;Rum_adia;0;nlen
+non-invaded;28;3;Ser_lati;0;nlen
+non-invaded;28;4;Smi_camp ;2;len
+non-invaded;28;4;Ouratea;3;len
+non-invaded;28;4;Ile_dumo;2;len
+non-invaded;28;4;Gay_bras;1;len
+non-invaded;28;4;C94;2;len
+non-invaded;28;4;Ple_lepi;0;nlen
+non-invaded;28;4;Dio_radu;0;nlen
+non-invaded;28;4;Cyr_flav;0;nlen
+non-invaded;28;4;Vri_frib;0;nlen
+non-invaded;28;4;Pep_glab;0;nlen
+non-invaded;28;4;Ser_lati;0;nlen
+non-invaded;29;1;Ouratea;4;len
+non-invaded;29;1;Smi_camp ;17;len
+non-invaded;29;1;Gay_bras;4;len
+non-invaded;29;1;Bac_drac ;1;len
+non-invaded;29;1;Dio_radu;0;nlen
+non-invaded;29;1;Ple_lepi;0;nlen
+non-invaded;29;1;C43;0;nlen
+non-invaded;29;2;Smi_camp ;18;len
+non-invaded;29;2;Ouratea;1;len
+non-invaded;29;2;Vit_mont;1;len
+non-invaded;29;2;Dio_radu;0;nlen
+non-invaded;29;2;C43;0;nlen
+non-invaded;29;2;C95;0;nlen
+non-invaded;29;2;C96;0;nlen
+non-invaded;29;3;Vit_mont;1;len
+non-invaded;29;3;Gay_bras;7;len
+non-invaded;29;3;Vri_frib;0;nlen
+non-invaded;29;3;Ple_lepi;0;nlen
+non-invaded;29;3;Dio_radu;0;nlen
+non-invaded;29;3;C43;0;nlen
+non-invaded;29;4;Gua_oppo;1;len
+non-invaded;29;4;Ouratea;1;len
+non-invaded;29;4;Smi_camp ;1;len
+non-invaded;29;4;Vri_frib;0;nlen
+non-invaded;29;4;Ple_lepi;0;nlen
+non-invaded;30;1;Smi_camp ;9;len
+non-invaded;30;1;Gay_bras;5;len
+non-invaded;30;1;Vit_mont;1;len
+non-invaded;30;1;Dio_radu;0;nlen
+non-invaded;30;1;C43;0;nlen
+non-invaded;30;1;C96;0;nlen
+non-invaded;30;1;C42;0;nlen
+non-invaded;30;2;Smi_camp ;4;len
+non-invaded;30;2;Gay_bras;6;len
+non-invaded;30;2;Dio_radu;0;nlen
+non-invaded;30;2;C43;0;nlen
+non-invaded;30;2;C97;0;nlen
+non-invaded;30;3;Vit_mont;1;len
+non-invaded;30;3;Smi_camp ;2;len
+non-invaded;30;3;Gay_bras;7;len
+non-invaded;30;3;Myr_sple;1;len
+non-invaded;30;3;Dio_radu;0;nlen
+non-invaded;30;4;Gay_bras;4;len
+non-invaded;30;4;Smi_camp ;4;len
+non-invaded;30;4;Vit_mont;2;len
+non-invaded;30;4;C43;0;nlen
+non-invaded;30;4;Cyr_flav;0;nlen
+non-invaded;30;4;Dio_radu;0;nlen
+non-invaded;30;4;Ple_lepi;0;nlen
+non-invaded;30;4;Epi_fulg;0;nlen
+invaded;1;1;Ouratea;9;len
+invaded;1;1;Gay_bras;4;len
+invaded;1;1;Dyc_ench;0;nlen
+invaded;1;1;Rum_adia;0;nlen
+invaded;1;1;Cyr_flav;0;nlen
+invaded;1;2;C98;0;nlen
+invaded;1;2;Rum_adia;0;nlen
+invaded;1;2;Pep_glab;0;nlen
+invaded;1;2;Ple_lepi;0;nlen
+invaded;1;2;Tel_serr;0;nlen
+invaded;1;2;Vri_frib;0;nlen
+invaded;1;3;Ouratea;1;len
+invaded;1;3;Per_glab;1;len
+invaded;1;3;Ser_lati;0;nlen
+invaded;1;3;Rum_adia;0;nlen
+invaded;1;3;Pep_glab;0;nlen
+invaded;1;3;Coc_lanc;0;nlen
+invaded;1;3;Sin_doug;0;nlen
+invaded;1;4;Gay_bras;1;len
+invaded;1;4;Rum_adia;0;nlen
+invaded;1;4;Coc_lanc;0;nlen
+invaded;1;4;C98;0;nlen
+invaded;1;4;Vri_frib;0;nlen
+invaded;1;4;Tel_serr;0;nlen
+invaded;2;1;Smi_camp ;3;len
+invaded;2;1;Tel_serr;0;nlen
+invaded;2;1;Ple_lepi;0;nlen
+invaded;2;2;Eug_cath;1;len
+invaded;2;2;Oco_pulc;1;len
+invaded;2;2;C100;2;len
+invaded;2;2;Gay_bras;5;len
+invaded;2;2;Smi_camp ;5;len
+invaded;2;2;Vit_mont;2;len
+invaded;2;2;Ouratea;1;len
+invaded;2;2;C101;2;len
+invaded;2;2;Tel_serr;0;nlen
+invaded;2;2;Ple_lepi;0;nlen
+invaded;2;3;Gay_bras;22;len
+invaded;2;3;Ouratea;2;len
+invaded;2;3;Smi_camp ;1;len
+invaded;2;3;Vit_mont;1;len
+invaded;2;3;Dio_radu;0;nlen
+invaded;2;3;Ple_lepi;0;nlen
+invaded;2;3;Ser_lati;0;nlen
+invaded;2;3;Tel_serr;0;nlen
+invaded;2;4;Vit_mont;2;len
+invaded;2;4;Smi_camp ;1;len
+invaded;2;4;Ple_lepi;0;nlen
+invaded;3;1;Eug_cath;1;len
+invaded;3;1;Gay_bras;16;len
+invaded;3;1;Smi_camp ;9;len
+invaded;3;1;Vit_mont;1;len
+invaded;3;1;Ple_lepi;0;nlen
+invaded;3;1;C102;0;nlen
+invaded;3;1;C103;0;nlen
+invaded;3;2;Smi_camp ;2;len
+invaded;3;2;Vit_mont;1;len
+invaded;3;2;Pte_arac;0;nlen
+invaded;3;2;Dio_radu;0;nlen
+invaded;3;3;Smi_camp ;2;len
+invaded;3;3;Gay_bras;4;len
+invaded;3;3;Ple_lepi;0;nlen
+invaded;3;4;Vit_mont;3;len
+invaded;3;4;Eug_cath;1;len
+invaded;3;4;Smi_camp ;3;len
+invaded;3;4;C104;1;len
+invaded;3;4;Ple_lepi;0;nlen
+invaded;3;4;Epi_fulg;0;nlen
+invaded;4;1;Smi_camp ;6;len
+invaded;4;1;Ouratea;2;len
+invaded;4;1;Cyr_flav;0;nlen
+invaded;4;1;Ple_lepi;0;nlen
+invaded;4;1;Vri_frib;0;nlen
+invaded;4;1;Dio_radu;0;nlen
+invaded;4;2;Myr_palu;1;len
+invaded;4;2;Smi_camp ;1;len
+invaded;4;2;Gay_bras;2;len
+invaded;4;2;Dio_radu;0;nlen
+invaded;4;2;Ple_lepi;0;nlen
+invaded;4;2;Tel_serr;0;nlen
+invaded;4;2;Vri_frib;0;nlen
+invaded;4;3;Gay_bras;2;len
+invaded;4;3;Smi_camp ;2;len
+invaded;4;3;Ouratea;1;len
+invaded;4;3;Rum_adia;0;nlen
+invaded;4;3;Pte_arac;0;nlen
+invaded;4;3;Vri_frib;0;nlen
+invaded;4;3;Ple_lepi;0;nlen
+invaded;4;4;Myr_palu;2;len
+invaded;4;4;Gay_bras;4;len
+invaded;4;4;Ouratea;3;len
+invaded;4;4;Cyr_flav;0;nlen
+invaded;4;4;Ple_lepi;0;nlen
+invaded;4;4;Dio_radu;0;nlen
+invaded;4;4;Vri_frib;0;nlen
+invaded;5;1;Ouratea;1;len
+invaded;5;1;Smi_camp ;7;len
+invaded;5;1;Tel_serr;0;nlen
+invaded;5;1;Vri_frib;0;nlen
+invaded;5;1;Ple_lepi;0;nlen
+invaded;5;2;Vit_mont;4;len
+invaded;5;2;Smi_camp ;8;len
+invaded;5;2;Gay_bras;1;len
+invaded;5;2;C43;0;nlen
+invaded;5;3;Smi_camp ;15;len
+invaded;5;3;Vit_mont;2;len
+invaded;5;3;C43;0;nlen
+invaded;5;3;Pte_arac;0;nlen
+invaded;5;4;Smi_camp ;11;len
+invaded;5;4;Vit_mont;2;len
+invaded;5;4;Tel_serr;0;nlen
+invaded;5;4;Ple_lepi;0;nlen
+invaded;5;4;Dio_radu;0;nlen
+invaded;5;4;Epi_fulg;0;nlen
+invaded;6;1;Smi_camp ;10;len
+invaded;6;1;Pte_arac;0;nlen
+invaded;6;1;C43;0;nlen
+invaded;6;1;C105;0;nlen
+invaded;6;2;Ouratea;1;len
+invaded;6;2;Smi_camp ;10;len
+invaded;6;2;C43;0;nlen
+invaded;6;2;Pte_arac;0;nlen
+invaded;6;2;Tel_serr;0;nlen
+invaded;6;3;Smi_camp ;10;len
+invaded;6;3;Ouratea;1;len
+invaded;6;3;Vit_mont;1;len
+invaded;6;3;C43;0;nlen
+invaded;6;3;Dio_radu;0;nlen
+invaded;6;4;Ouratea;4;len
+invaded;6;4;Smi_camp ;4;len
+invaded;6;4;Vit_mont;1;len
+invaded;6;4;Vri_frib;0;nlen
+invaded;6;4;Ple_lepi;0;nlen
+invaded;6;4;Tel_serr;0;nlen
+invaded;7;1;Smi_camp ;6;len
+invaded;7;1;Vit_mont;2;len
+invaded;7;1;Epi_fulg;0;nlen
+invaded;7;1;C43;0;nlen
+invaded;7;2;Smi_camp ;4;len
+invaded;7;2;Vit_mont;1;len
+invaded;7;2;Gay_bras;10;len
+invaded;7;2;C43;0;nlen
+invaded;7;2;Ple_lepi;0;nlen
+invaded;7;3;Smi_camp ;4;len
+invaded;7;3;Vit_mont;1;len
+invaded;7;3;Gay_bras;12;len
+invaded;7;3;Bac_drac ;1;len
+invaded;7;3;Ple_lepi;0;nlen
+invaded;7;3;C43;0;nlen
+invaded;7;4;Ouratea;1;len
+invaded;7;4;Smi_camp ;6;len
+invaded;7;4;Gay_bras;14;len
+invaded;7;4;Ple_lepi;0;nlen
+invaded;8;1;Ouratea;6;len
+invaded;8;1;Smi_camp ;1;len
+invaded;8;1;Gay_bras;2;len
+invaded;8;1;Rum_adia;0;nlen
+invaded;8;1;Vri_frib;0;nlen
+invaded;8;1;Ple_lepi;0;nlen
+invaded;8;2;Smi_camp ;3;len
+invaded;8;2;Gay_bras;3;len
+invaded;8;2;Ple_lepi;0;nlen
+invaded;8;2;Vri_frib;0;nlen
+invaded;8;2;Cyr_flav;0;nlen
+invaded;8;3;C106;2;len
+invaded;8;3;Gay_bras;4;len
+invaded;8;3;Ple_lepi;0;nlen
+invaded;8;3;Vri_frib;0;nlen
+invaded;8;3;Cyr_flav;0;nlen
+invaded;8;3;C107;0;nlen
+invaded;8;4;Ouratea;1;len
+invaded;8;4;Ple_lepi;0;nlen
+invaded;8;4;Dio_radu;0;nlen
+invaded;9;1;Smi_camp ;3;len
+invaded;9;1;Gay_bras;7;len
+invaded;9;1;C108;0;nlen
+invaded;9;2;Eug_cath;2;len
+invaded;9;2;Ouratea;1;len
+invaded;9;2;Gay_bras;4;len
+invaded;9;2;Smi_camp ;4;len
+invaded;9;2;Ple_lepi;0;nlen
+invaded;9;2;C108;0;nlen
+invaded;9;3;Smi_camp ;1;len
+invaded;9;3;Gay_bras;1;len
+invaded;9;3;Dav_rugo;1;len
+invaded;9;3;Pte_arac;0;nlen
+invaded;9;3;Tel_serr;0;nlen
+invaded;9;4;Smi_camp ;5;len
+invaded;9;4;Gay_bras;12;len
+invaded;9;4;C42;0;nlen
+invaded;9;4;Dio_radu;0;nlen
+invaded;9;4;C108;0;nlen
+invaded;10;1;Smi_camp ;13;len
+invaded;10;1;Gay_bras;1;len
+invaded;10;1;C43;0;nlen
+invaded;10;2;Gay_bras;1;len
+invaded;10;2;Smi_camp ;3;len
+invaded;10;3;Gay_bras;5;len
+invaded;10;3;Smi_camp ;2;len
+invaded;10;3;C43;0;nlen
+invaded;10;3;Dio_radu;0;nlen
+invaded;10;4;Gay_bras;3;len
+invaded;10;4;Smi_camp ;8;len
+invaded;10;4;Vit_mont;2;len
+invaded;10;4;C108;0;nlen
+invaded;10;4;Dio_radu;0;nlen
+invaded;10;4;Pte_arac;0;nlen
+invaded;11;1;C109;1;len
+invaded;11;1;Tel_serr;0;nlen
+invaded;11;2;Tel_serr;0;nlen
+invaded;11;3;Ouratea;1;len
+invaded;11;3;Eug_cath;1;len
+invaded;11;3;Tel_serr;0;nlen
+invaded;11;3;Vri_frib;0;nlen
+invaded;11;3;Mic_vacc;0;nlen
+invaded;11;4;C109;1;len
+invaded;11;4;Tel_serr;0;nlen
+invaded;11;4;C110;0;nlen
+invaded;12;1;Clu_criu;1;len
+invaded;12;1;C109;1;len
+invaded;12;1;Mic_vacc;0;nlen
+invaded;12;1;Tel_serr;0;nlen
+invaded;12;2;Tel_serr;0;nlen
+invaded;12;2;Rum_adia;0;nlen
+invaded;12;2;Vri_frib;0;nlen
+invaded;12;2;Pep_glab;0;nlen
+invaded;12;3;C109;1;len
+invaded;12;3;C112;1;len
+invaded;12;3;Tel_serr;0;nlen
+invaded;12;3;Pep_glab;0;nlen
+invaded;12;3;Mic_vacc;0;nlen
+invaded;12;3;C113;0;nlen
+invaded;12;4;C109;1;len
+invaded;12;4;Tel_serr;0;nlen
+invaded;12;4;Rum_adia;0;nlen
+invaded;12;4;Mic_vacc;0;nlen
+invaded;13;1;Tel_serr;0;nlen
+invaded;13;2;Tel_serr;0;nlen
+invaded;13;3;Tel_serr;0;nlen
+invaded;13;4;Tel_serr;0;nlen
+invaded;14;1;Tel_serr;0;nlen
+invaded;14;2;Tel_serr;0;nlen
+invaded;14;2;C113;0;nlen
+invaded;14;3;Tel_serr;0;nlen
+invaded;14;3;Rum_adia;0;nlen
+invaded;14;4;Tel_serr;0;nlen
+invaded;15;1;Tel_serr;0;nlen
+invaded;15;2;C120;1;len
+invaded;15;2;Tel_serr;0;nlen
+invaded;15;3;Tel_serr;0;nlen
+invaded;15;3;C113;0;nlen
+invaded;15;3;C121;0;nlen
+invaded;15;4;Eug_cath;2;len
+invaded;15;4;Tel_serr;0;nlen
+invaded;16;1;Tel_serr;0;nlen
+invaded;16;2;Tel_serr;0;nlen
+invaded;16;3;0;0;0
+invaded;16;4;Tel_serr;0;nlen
+invaded;17;1;Tib_urvi;1;len
+invaded;17;1;C125;1;len
+invaded;17;1;C8;0;nlen
+invaded;17;1;Tel_serr;0;nlen
+invaded;17;2;C129;2;len
+invaded;17;2;Gay_bras;2;len
+invaded;17;2;Psi_catt;1;len
+invaded;17;2;C130;0;nlen
+invaded;17;2;C8;0;nlen
+invaded;17;3;Tel_serr;0;nlen
+invaded;17;3;C8;0;nlen
+invaded;17;3;C130;0;nlen
+invaded;17;4;C125;1;len
+invaded;17;4;C8;0;nlen
+invaded;17;4;C130;0;nlen
+invaded;18;1;C131;1;len
+invaded;18;1;Eug_cath;1;len
+invaded;18;1;C8;0;nlen
+invaded;18;2;C8;0;nlen
+invaded;18;2;C130;0;nlen
+invaded;18;3;Gay_bras;2;len
+invaded;18;3;Tel_serr;0;nlen
+invaded;18;3;C8;0;nlen
+invaded;18;3;C130;0;nlen
+invaded;18;4;Gay_bras;6;len
+invaded;18;4;Clu_criu;1;len
+invaded;18;4;C8;0;nlen
+invaded;19;1;C125;3;len
+invaded;19;1;Gay_bras;1;len
+invaded;19;1;Clu_criu;1;len
+invaded;19;1;C132;1;len
+invaded;19;1;C8;0;nlen
+invaded;19;2;Clu_criu;1;len
+invaded;19;2;C8;0;nlen
+invaded;19;3;C8;0;nlen
+invaded;19;4;C8;0;nlen
+invaded;20;1;Tib_urvi;1;len
+invaded;20;1;Tel_serr;0;nlen
+invaded;20;1;C8;0;nlen
+invaded;20;1;C130;0;nlen
+invaded;20;2;Gay_bras;7;len
+invaded;20;2;C8;0;nlen
+invaded;20;2;Tel_serr;0;nlen
+invaded;20;3;Gay_bras;2;len
+invaded;20;3;C8;0;nlen
+invaded;20;3;Tel_serr;0;nlen
+invaded;20;4;Gay_bras;7;len
+invaded;20;4;Tel_serr;0;nlen
+invaded;20;4;C8;0;nlen
+invaded;21;1;Smi_camp ;10;len
+invaded;21;1;Myr_palu;4;len
+invaded;21;1;Gua_oppo;1;len
+invaded;21;1;C42;0;nlen
+invaded;21;1;Dio_radu;0;nlen
+invaded;21;1;Ple_lepi;0;nlen
+invaded;21;1;Epi_fulg;0;nlen
+invaded;21;2;Myr_palu;5;len
+invaded;21;2;Smi_camp ;4;len
+invaded;21;2;Vit_mont;1;len
+invaded;21;2;Rum_adia;0;nlen
+invaded;21;2;Ple_lepi;0;nlen
+invaded;21;2;Vri_frib;0;nlen
+invaded;21;3;Smi_camp ;12;len
+invaded;21;3;Dio_radu;0;nlen
+invaded;21;3;Ple_lepi;0;nlen
+invaded;21;3;C42;0;nlen
+invaded;21;4;Smi_camp ;1;len
+invaded;21;4;C136;1;len
+invaded;21;4;Ple_lepi;0;nlen
+invaded;21;4;Dio_radu;0;nlen
+invaded;21;4;Vri_frib;0;nlen
+invaded;21;4;Cle_libo;0;nlen
+invaded;22;1;Tel_serr;0;nlen
+invaded;22;2;Tel_serr;0;nlen
+invaded;22;3;Eug_cath;1;len
+invaded;22;3;Tib_urvi;1;len
+invaded;22;3;C138;1;len
+invaded;22;3;Tel_serr;0;nlen
+invaded;22;3;Vri_frib;0;nlen
+invaded;22;3;Cyr_flav;0;nlen
+invaded;22;4;C138;6;len
+invaded;22;4;C139;3;len
+invaded;22;4;C140;4;len
+invaded;22;4;Tel_serr;0;nlen
+invaded;22;4;Rum_adia;0;nlen
+invaded;22;4;Cyr_flav;0;nlen
+invaded;23;1;C143;4;len
+invaded;23;1;C138;1;len
+invaded;23;1;C144;1;len
+invaded;23;1;C140;1;len
+invaded;23;1;C145;1;len
+invaded;23;1;Tel_serr;0;nlen
+invaded;23;2;Tel_serr;0;nlen
+invaded;23;3;Tel_serr;0;nlen
+invaded;23;4;C146;1;len
+invaded;23;4;C140;1;len
+invaded;23;4;Tel_serr;0;nlen
+invaded;24;1;C143;7;len
+invaded;24;1;Tel_serr;0;nlen
+invaded;24;2;C149;1;len
+invaded;24;2;Tel_serr;0;nlen
+invaded;24;3;Tel_serr;0;nlen
+invaded;24;4;Tel_serr;0;nlen
+invaded;25;1;C155;1;len
+invaded;25;1;C139;1;len
+invaded;25;1;Tel_serr;0;nlen
+invaded;25;2;Gay_bras;1;len
+invaded;25;2;Tel_serr;0;nlen
+invaded;25;3;C146;1;len
+invaded;25;3;C156;1;len
+invaded;25;3;Tel_serr;0;nlen
+invaded;25;4;Tel_serr;0;nlen
+invaded;26;1;Tel_serr;0;nlen
+invaded;26;2;Tel_serr;0;nlen
+invaded;26;3;Tel_serr;0;nlen
+invaded;26;4;Epi_fulg;0;nlen
+invaded;26;4;Tel_serr;0;nlen
+invaded;27;1;C166;1;len
+invaded;27;1;Tel_serr;0;nlen
+invaded;27;2;Eug_cath;6;len
+invaded;27;2;C167;1;len
+invaded;27;2;C168;1;len
+invaded;27;2;Tel_serr;0;nlen
+invaded;27;3;C166;2;len
+invaded;27;3;Tel_serr;0;nlen
+invaded;27;4;C146;1;len
+invaded;27;4;Eug_cath;1;len
+invaded;27;4;C169;0;nlen
+invaded;28;1;C109;1;len
+invaded;28;1;C171;0;nlen
+invaded;28;1;Tel_serr;0;nlen
+invaded;28;1;Rum_adia;0;nlen
+invaded;28;1;C172;0;nlen
+invaded;28;2;C109;2;len
+invaded;28;2;Eug_cath;4;len
+invaded;28;2;C171;0;nlen
+invaded;28;2;Tel_serr;0;nlen
+invaded;28;2;C113;0;nlen
+invaded;28;3;C173;1;len
+invaded;28;3;Clu_criu;1;len
+invaded;28;3;Tel_serr;0;nlen
+invaded;28;3;C113;0;nlen
+invaded;28;3;Pep_glab;0;nlen
+invaded;28;3;C172;0;nlen
+invaded;28;4;C174;1;len
+invaded;28;4;C175;1;len
+invaded;28;4;C109;1;len
+invaded;28;4;C146;1;len
+invaded;28;4;Pep_glab;0;nlen
+invaded;28;4;Tel_serr;0;nlen
+invaded;28;4;C113;0;nlen
+invaded;29;1;C177;2;len
+invaded;29;1;C178;3;len
+invaded;29;1;C146;1;len
+invaded;29;1;C125;1;len
+invaded;29;1;Gua_oppo;2;len
+invaded;29;1;Tel_serr;0;nlen
+invaded;29;2;Tel_serr;0;nlen
+invaded;29;2;Vri_frib;0;nlen
+invaded;29;3;Tel_serr;0;nlen
+invaded;29;4;Tel_serr;0;nlen
+invaded;30;1;Clu_criu;1;len
+invaded;30;1;C181;1;len
+invaded;30;1;Pep_glab;0;nlen
+invaded;30;1;Vri_frib;0;nlen
+invaded;30;2;Tel_serr;0;nlen
+invaded;30;2;Pep_glab;0;nlen
+invaded;30;2;Rum_adia;0;nlen
+invaded;30;3;Tel_serr;0;nlen
+invaded;30;3;Rum_adia;0;nlen
+invaded;30;3;Pep_glab;0;nlen
+invaded;30;3;C113;0;nlen
+invaded;30;4;C184;3;len
+invaded;30;4;C146;1;len
+invaded;30;4;C185;2;len
+invaded;30;4;Tel_serr;0;nlen
+invaded;30;4;Pep_glab;0;nlen
+managed;1;1;Ouratea;1;len
+managed;1;1;Smi_camp ;8;len
+managed;1;1;Gay_bras;1;len
+managed;1;1;Cyr_flav;0;nlen
+managed;1;1;Dio_radu;0;nlen
+managed;1;1;Vri_frib;0;nlen
+managed;1;1;C43;0;nlen
+managed;1;1;C68;0;nlen
+managed;1;1;C186;0;nlen
+managed;1;1;Act_poly;0;nlen
+managed;1;1;Seb_corn;0;nlen
+managed;1;1;Ser_lati;0;nlen
+managed;1;2;Smi_camp ;1;len
+managed;1;2;Ouratea;3;len
+managed;1;2;Vit_mont;1;len
+managed;1;2;Gay_bras;6;len
+managed;1;2;C43;0;nlen
+managed;1;2;Dio_radu;0;nlen
+managed;1;2;Cyr_flav;0;nlen
+managed;1;2;Ple_lepi;0;nlen
+managed;1;2;Com_erec;0;nlen
+managed;1;3;Vit_mont;2;len
+managed;1;3;Smi_camp ;14;len
+managed;1;3;C43;0;nlen
+managed;1;3;Act_poly;0;nlen
+managed;1;3;Ple_lepi;0;nlen
+managed;1;3;Dio_radu;0;nlen
+managed;1;4;Ouratea;4;len
+managed;1;4;Vit_mont;2;len
+managed;1;4;Gay_bras;2;len
+managed;1;4;Smi_camp ;8;len
+managed;1;4;Vri_frib;0;nlen
+managed;1;4;C43;0;nlen
+managed;1;4;Act_poly;0;nlen
+managed;1;4;Dio_radu;0;nlen
+managed;2;1;Tib_urvi;6;len
+managed;2;1;Smi_camp ;23;len
+managed;2;1;Ouratea;1;len
+managed;2;1;Seb_corn;0;nlen
+managed;2;1;Dio_radu;0;nlen
+managed;2;1;Vri_frib;0;nlen
+managed;2;1;C43;0;nlen
+managed;2;1;C68;0;nlen
+managed;2;1;C186;0;nlen
+managed;2;1;Act_poly;0;nlen
+managed;2;2;Smi_camp ;10;len
+managed;2;2;Gay_bras;1;len
+managed;2;2;Act_poly;0;nlen
+managed;2;2;C43;0;nlen
+managed;2;2;C186;0;nlen
+managed;2;2;C68;0;nlen
+managed;2;2;Dio_radu;0;nlen
+managed;2;3;Gay_bras;3;len
+managed;2;3;Smi_camp ;6;len
+managed;2;3;C5;0;nlen
+managed;2;3;Vri_frib;0;nlen
+managed;2;4;Smi_camp ;1;len
+managed;2;4;Dio_radu;0;nlen
+managed;2;4;C188;0;nlen
+managed;3;1;Smi_camp ;22;len
+managed;3;1;Gay_bras;25;len
+managed;3;1;Vit_mont;1;len
+managed;3;1;C43;0;nlen
+managed;3;1;Dio_radu;0;nlen
+managed;3;1;C42;0;nlen
+managed;3;2;Smi_camp ;15;len
+managed;3;2;Gay_bras;27;len
+managed;3;2;Tib_urvi;1;len
+managed;3;2;Ouratea;1;len
+managed;3;2;Bac_drac ;1;len
+managed;3;2;C43;0;nlen
+managed;3;2;C189;0;nlen
+managed;3;2;C68;0;nlen
+managed;3;2;Dio_radu;0;nlen
+managed;3;2;Cyr_flav;0;nlen
+managed;3;2;Ple_lepi;0;nlen
+managed;3;3;Gay_bras;7;len
+managed;3;3;Ouratea;3;len
+managed;3;3;Smi_camp ;6;len
+managed;3;3;Vit_mont;2;len
+managed;3;3;Ter_bras;1;len
+managed;3;3;Dod_visc;1;len
+managed;3;3;C5;0;nlen
+managed;3;3;C42;0;nlen
+managed;3;3;Vri_frib;0;nlen
+managed;3;3;Ple_lepi;0;nlen
+managed;3;3;Cyr_flav;0;nlen
+managed;3;3;Dio_radu;0;nlen
+managed;3;3;C43;0;nlen
+managed;3;4;Ouratea;1;len
+managed;3;4;Smi_camp ;9;len
+managed;3;4;Myr_palu;2;len
+managed;3;4;Vri_frib;0;nlen
+managed;3;4;Dio_radu;0;nlen
+managed;3;4;Ple_lepi;0;nlen
+managed;3;4;Cyr_flav;0;nlen
+managed;3;4;Ser_lati;0;nlen
+managed;4;1;Smi_camp ;4;len
+managed;4;1;Gay_bras;1;len
+managed;4;2;Vit_mont;2;len
+managed;4;2;Ouratea;6;len
+managed;4;2;Smi_camp ;5;len
+managed;4;2;C8;0;nlen
+managed;4;2;Seb_corn;0;nlen
+managed;4;3;C8;0;nlen
+managed;4;4;C191;0;nlen
+managed;4;4;C192;0;nlen
+managed;5;1;Smi_camp ;9;len
+managed;5;1;Gay_bras;4;len
+managed;5;1;C193;0;nlen
+managed;5;1;C194;0;nlen
+managed;5;2;Smi_camp ;10;len
+managed;5;2;Gay_bras;1;len
+managed;5;2;Bac_drac ;1;len
+managed;5;2;Tib_urvi;2;len
+managed;5;2;C194;0;nlen
+managed;5;3;Smi_camp ;7;len
+managed;5;3;Tib_urvi;6;len
+managed;5;3;Ouratea;6;len
+managed;5;3;Gay_bras;9;len
+managed;5;3;C5;0;nlen
+managed;5;3;C43;0;nlen
+managed;5;3;Dio_radu;0;nlen
+managed;5;3;Ple_lepi;0;nlen
+managed;5;3;Dyc_ench;0;nlen
+managed;5;4;Smi_camp ;10;len
+managed;5;4;Tib_urvi;1;len
+managed;5;4;Ouratea;2;len
+managed;5;4;Gay_bras;8;len
+managed;5;4;Dio_radu;0;nlen
+managed;5;4;Dyc_ench;0;nlen
+managed;5;4;C189;0;nlen
+managed;6;1;C195;0;nlen
+managed;6;2;C8;0;nlen
+managed;6;3;Ouratea;1;len
+managed;6;3;Smi_camp ;2;len
+managed;6;3;Vit_mont;2;len
+managed;6;3;Gay_bras;2;len
+managed;6;3;C8;0;nlen
+managed;6;3;Dyc_ench;0;nlen
+managed;6;3;Act_poly;0;nlen
+managed;6;4;Smi_camp ;3;len
+managed;6;4;C8;0;nlen
+managed;7;1;C8;0;nlen
+managed;7;2;C8;0;nlen
+managed;7;3;C8;0;nlen
+managed;7;4;C8;0;nlen
+managed;8;1;Smi_camp ;2;len
+managed;8;1;C8;0;nlen
+managed;8;2;Smi_camp ;1;len
+managed;8;2;C8;0;nlen
+managed;8;3;C8;0;nlen
+managed;8;4;Ouratea;5;len
+managed;8;4;C8;0;nlen
+managed;9;1;Ouratea;4;len
+managed;9;1;Vit_mont;1;len
+managed;9;1;Smi_camp ;4;len
+managed;9;1;Dyc_ench;0;nlen
+managed;9;1;Act_poly;0;nlen
+managed;9;1;Ple_lepi;0;nlen
+managed;9;2;Ouratea;4;len
+managed;9;2;Eug_cath;2;len
+managed;9;2;C8;0;nlen
+managed;9;2;Dyc_ench;0;nlen
+managed;9;2;C195;0;nlen
+managed;9;2;Seb_corn;0;nlen
+managed;9;3;Ouratea;4;len
+managed;9;3;Dyc_ench;0;nlen
+managed;9;3;C8;0;nlen
+managed;9;3;C195;0;nlen
+managed;9;4;Ouratea;2;len
+managed;9;4;Smi_camp ;1;len
+managed;9;4;Seb_corn;0;nlen
+managed;9;4;C68;0;nlen
+managed;9;4;C213;0;nlen
+managed;9;4;C195;0;nlen
+managed;9;4;C8;0;nlen
+managed;10;1;Smi_camp ;1;len
+managed;10;1;Gay_bras;6;len
+managed;10;1;Tib_urvi;1;len
+managed;10;1;Ter_bras;1;len
+managed;10;1;Ouratea;2;len
+managed;10;1;C8;0;nlen
+managed;10;1;C195;0;nlen
+managed;10;1;C213;0;nlen
+managed;10;1;Dyc_ench;0;nlen
+managed;10;1;Act_poly;0;nlen
+managed;10;2;Gay_bras;6;len
+managed;10;2;Tib_urvi;3;len
+managed;10;2;Smi_camp ;3;len
+managed;10;2;Act_poly;0;nlen
+managed;10;2;C68;0;nlen
+managed;10;2;Dyc_ench;0;nlen
+managed;10;2;Ple_lepi;0;nlen
+managed;10;3;Ouratea;1;len
+managed;10;3;smi_camp ;1;len
+managed;10;3;C8;0;nlen
+managed;10;4;Gay_bras;8;len
+managed;10;4;Tib_urvi;2;len
+managed;10;4;Smi_camp ;3;len
+managed;10;4;C8;0;nlen
+managed;10;4;Vri_frib;0;nlen
+managed;10;4;Dyc_ench;0;nlen
+managed;10;4;Ser_lati;0;nlen
+managed;10;4;C196;0;nlen
+managed;10;4;C197;0;nlen
+managed;11;1;Smi_camp ;10;len
+managed;11;1;Gay_bras;8;len
+managed;11;1;Tib_urvi;2;len
+managed;11;1;C195;0;nlen
+managed;11;1;C68;0;nlen
+managed;11;1;C214;0;nlen
+managed;11;2;Tib_urvi;2;len
+managed;11;2;Smi_camp ;3;len
+managed;11;2;Gay_bras;15;len
+managed;11;2;Seb_corn;0;nlen
+managed;11;2;C195;0;nlen
+managed;11;2;Cyr_flav;0;nlen
+managed;11;3;Ouratea;2;len
+managed;11;3;Gay_bras;3;len
+managed;11;3;C196;0;nlen
+managed;11;4;Smi_camp ;11;len
+managed;11;4;Ouratea;3;len
+managed;11;4;C196;0;nlen
+managed;11;4;C8;0;nlen
+managed;11;4;C195;0;nlen
+managed;12;1;Smi_camp ;11;len
+managed;12;1;Gay_bras;29;len
+managed;12;1;Dyc_ench;0;nlen
+managed;12;1;C42;0;nlen
+managed;12;1;Dio_radu;0;nlen
+managed;12;1;C68;0;nlen
+managed;12;1;Ple_lepi;0;nlen
+managed;12;1;Epi_fulg;0;nlen
+managed;12;2;Smi_camp ;17;len
+managed;12;2;Gay_bras;19;len
+managed;12;2;Dod_visc;1;len
+managed;12;2;Bac_drac ;2;len
+managed;12;2;Dio_radu;0;nlen
+managed;12;2;C43;0;nlen
+managed;12;2;C68;0;nlen
+managed;12;2;Ple_lepi;0;nlen
+managed;12;2;Vri_frib;0;nlen
+managed;12;2;Pte_arac;0;nlen
+managed;12;3;Vit_mont;1;len
+managed;12;3;Smi_camp ;15;len
+managed;12;3;Gay_bras;22;len
+managed;12;3;Dod_visc;1;len
+managed;12;3;C42;0;nlen
+managed;12;3;Dio_radu;0;nlen
+managed;12;3;C43;0;nlen
+managed;12;3;Epi_fulg;0;nlen
+managed;12;4;Smi_camp ;10;len
+managed;12;4;Gay_bras;59;len
+managed;12;4;Dio_radu;0;nlen
+managed;12;4;C42;0;nlen
+managed;12;4;C43;0;nlen
+managed;12;4;C68;0;nlen
+managed;12;4;Cyr_flav;0;nlen
+managed;13;1;Smi_camp ;15;len
+managed;13;1;Gay_bras;7;len
+managed;13;1;Ouratea;4;len
+managed;13;1;Clu_criu;1;len
+managed;13;1;Dyc_ench;0;nlen
+managed;13;1;Dio_radu;0;nlen
+managed;13;1;C68;0;nlen
+managed;13;1;Ple_lepi;0;nlen
+managed;13;1;Epi_fulg;0;nlen
+managed;13;2;Smi_camp ;8;len
+managed;13;2;Gay_bras;11;len
+managed;13;2;Ouratea;1;len
+managed;13;2;Dio_radu;0;nlen
+managed;13;2;C43;0;nlen
+managed;13;3;Gay_bras;1;len
+managed;13;3;Smi_camp ;11;len
+managed;13;3;Bac_drac ;1;len
+managed;13;3;Dio_radu;0;nlen
+managed;13;3;C43;0;nlen
+managed;13;3;C42;0;nlen
+managed;13;3;Seb_corn;0;nlen
+managed;13;4;Smi_camp ;11;len
+managed;13;4;Gay_bras;6;len
+managed;13;4;Dyc_ench;0;nlen
+managed;13;4;C42;0;nlen
+managed;13;4;C43;0;nlen
+managed;13;4;Dio_radu;0;nlen
+managed;13;4;Seb_corn;0;nlen
+managed;14;1;Ouratea;2;len
+managed;14;1;Smi_camp ;21;len
+managed;14;1;Gay_bras;1;len
+managed;14;1;Dyc_ench;0;nlen
+managed;14;1;Seb_corn;0;nlen
+managed;14;1;Ple_lepi;0;nlen
+managed;14;2;Bac_drac ;1;len
+managed;14;2;Ouratea;6;len
+managed;14;2;Vit_mont;1;len
+managed;14;2;Act_poly;0;nlen
+managed;14;2;Dyc_ench;0;nlen
+managed;14;2;Ple_lepi;0;nlen
+managed;14;2;C213;0;nlen
+managed;14;2;Epi_fulg;0;nlen
+managed;14;3;Gay_bras;1;len
+managed;14;3;C198;1;len
+managed;14;3;Ouratea;1;len
+managed;14;3;Smi_camp ;5;len
+managed;14;3;Tib_urvi;8;len
+managed;14;3;Act_poly;0;nlen
+managed;14;3;Dio_radu;0;nlen
+managed;14;4;Smi_camp ;5;len
+managed;14;4;Gay_bras;4;len
+managed;14;4;Ouratea;17;len
+managed;14;4;Eug_cath;1;len
+managed;14;4;Gua_oppo;2;len
+managed;14;4;Vri_frib;0;nlen
+managed;14;4;C42;0;nlen
+managed;14;4;Ple_lepi;0;nlen
+managed;15;1;Gay_bras;2;len
+managed;15;1;Smi_camp ;1;len
+managed;15;1;Tib_urvi;3;len
+managed;15;1;Vit_mont;1;len
+managed;15;1;Act_poly;0;nlen
+managed;15;1;Dyc_ench;0;nlen
+managed;15;1;C42;0;nlen
+managed;15;2;C8;0;nlen
+managed;15;2;C196;0;nlen
+managed;15;3;Ouratea;5;len
+managed;15;3;Smi_camp ;11;len
+managed;15;3;Tib_urvi;9;len
+managed;15;3;Clu_criu;1;len
+managed;15;3;Gay_bras;1;len
+managed;15;3;Act_poly;0;nlen
+managed;15;3;C8;0;nlen
+managed;15;3;Vri_frib;0;nlen
+managed;15;3;C42;0;nlen
+managed;15;3;Epi_fulg;0;nlen
+managed;15;4;Smi_camp ;4;len
+managed;15;4;Dod_visc;1;len
+managed;15;4;Tib_urvi;3;len
+managed;15;4;Epi_fulg;0;nlen
+managed;15;4;Dyc_ench;0;nlen
+managed;15;4;C8;0;nlen
+managed;15;4;C68;0;nlen
+managed;15;4;Ple_lepi;0;nlen
+managed;16;1;Ouratea;7;len
+managed;16;1;Smi_camp ;14;len
+managed;16;1;Vit_mont;2;len
+managed;16;1;Act_poly;0;nlen
+managed;16;1;Vri_frib;0;nlen
+managed;16;1;C42;0;nlen
+managed;16;1;Ple_lepi;0;nlen
+managed;16;1;C43;0;nlen
+managed;16;1;Aec_coma;0;nlen
+managed;16;1;Cle_libo;0;nlen
+managed;16;2;Dod_visc;1;len
+managed;16;2;Smi_camp ;12;len
+managed;16;2;C43;0;nlen
+managed;16;2;Ple_lepi;0;nlen
+managed;16;2;Vri_frib;0;nlen
+managed;16;2;Dio_radu;0;nlen
+managed;16;3;Smi_camp ;6;len
+managed;16;3;Ouratea;1;len
+managed;16;3;C199;1;len
+managed;16;3;C200;1;len
+managed;16;3;Dyc_ench;0;nlen
+managed;16;3;Seb_corn;0;nlen
+managed;16;3;C43;0;nlen
+managed;16;4;Gay_bras;2;len
+managed;16;4;Smi_camp ;2;len
+managed;16;4;Dyc_ench;0;nlen
+managed;16;4;Vri_frib;0;nlen
+managed;16;4;Act_poly;0;nlen
+managed;16;4;Ple_lepi;0;nlen
+managed;16;4;C43;0;nlen
+managed;16;4;Dio_radu;0;nlen
+managed;16;4;Cyr_flav;0;nlen
+managed;17;1;Tib_urvi;2;len
+managed;17;1;Gay_bras;3;len
+managed;17;1;Dyc_ench;0;nlen
+managed;17;1;Act_poly;0;nlen
+managed;17;1;C43;0;nlen
+managed;17;1;C8;0;nlen
+managed;17;2;Ouratea;12;len
+managed;17;2;Smi_camp ;5;len
+managed;17;2;Psy_cart;1;len
+managed;17;2;Bac_drac ;1;len
+managed;17;2;Act_poly;0;nlen
+managed;17;2;C43;0;nlen
+managed;17;2;C213;0;nlen
+managed;17;2;C214;0;nlen
+managed;17;2;Vri_frib;0;nlen
+managed;17;2;Ple_lepi;0;nlen
+managed;17;2;Epi_fulg;0;nlen
+managed;17;2;Seb_corn;0;nlen
+managed;17;3;C68;0;nlen
+managed;17;3;Act_poly;0;nlen
+managed;17;3;Dyc_ench;0;nlen
+managed;17;3;C201;0;nlen
+managed;17;4;Myr_palu;1;len
+managed;17;4;Ouratea;1;len
+managed;17;4;Act_poly;0;nlen
+managed;17;4;Dyc_ench;0;nlen
+managed;17;4;Ple_lepi;0;nlen
+managed;17;4;C43;0;nlen
+managed;18;1;Smi_camp ;5;len
+managed;18;1;Ile_thee;1;len
+managed;18;1;C196;0;nlen
+managed;18;1;Dio_radu;0;nlen
+managed;18;1;C42;0;nlen
+managed;18;1;C202;0;nlen
+managed;18;1;Cyr_flav;0;nlen
+managed;18;2;Gay_bras;12;len
+managed;18;2;Smi_camp ;1;len
+managed;18;2;Ouratea;1;len
+managed;18;2;C196;0;nlen
+managed;18;2;Dio_radu;0;nlen
+managed;18;2;Cyr_flav;0;nlen
+managed;18;2;C202;0;nlen
+managed;18;2;C42;0;nlen
+managed;18;3;Ile_thee;2;len
+managed;18;3;Vit_mont;3;len
+managed;18;3;Gay_bras;1;len
+managed;18;3;Smi_camp ;1;len
+managed;18;3;Dio_radu;0;nlen
+managed;18;3;Cyr_flav;0;nlen
+managed;18;3;C43;0;nlen
+managed;18;3;Ple_lepi;0;nlen
+managed;18;4;Vit_mont;1;len
+managed;18;4;Gay_bras;9;len
+managed;18;4;Smi_camp ;4;len
+managed;18;4;C202;0;nlen
+managed;18;4;Dio_radu;0;nlen
+managed;18;4;C42;0;nlen
+managed;18;4;C43;0;nlen
+managed;18;4;Ple_lepi;0;nlen
+managed;18;4;Dyc_ench;0;nlen
+managed;19;1;Vit_mont;3;len
+managed;19;1;Tib_urvi;1;len
+managed;19;1;C68;0;nlen
+managed;19;1;C8;0;nlen
+managed;19;1;C195;0;nlen
+managed;19;1;Dyc_ench;0;nlen
+managed;19;1;C196;0;nlen
+managed;19;1;C205;0;nlen
+managed;19;2;C195;0;nlen
+managed;19;2;C214;0;nlen
+managed;19;2;C8;0;nlen
+managed;19;3;C195;0;nlen
+managed;19;3;C206;0;nlen
+managed;19;3;C8;0;nlen
+managed;19;4;C8;0;nlen
+managed;20;1;C8;0;nlen
+managed;20;1;C205;0;nlen
+managed;20;1;C207;0;nlen
+managed;20;2;Ouratea;1;len
+managed;20;2;C8;0;nlen
+managed;20;2;C196;0;nlen
+managed;20;2;C195;0;nlen
+managed;20;2;C207;0;nlen
+managed;20;3;Vit_mont;2;len
+managed;20;3;Smi_camp ;3;len
+managed;20;3;Ouratea;1;len
+managed;20;3;C8;0;nlen
+managed;20;3;C195;0;nlen
+managed;20;3;C196;0;nlen
+managed;20;3;C214;0;nlen
+managed;20;3;C213;0;nlen
+managed;20;4;Smi_camp ;3;len
+managed;20;4;Tib_urvi;6;len
+managed;20;4;Gay_bras;3;len
+managed;20;4;Ouratea;9;len
+managed;20;4;C208;1;len
+managed;20;4;Eug_cath;1;len
+managed;20;4;C205;0;nlen
+managed;20;4;C214;0;nlen
+managed;20;4;C8;0;nlen
+managed;20;4;Dyc_ench;0;nlen
+managed;21;1;Vit_mont;2;len
+managed;21;1;Gay_bras;5;len
+managed;21;1;Dio_radu;0;nlen
+managed;21;1;Act_poly;0;nlen
+managed;21;1;C43;0;nlen
+managed;21;1;Ple_lepi;0;nlen
+managed;21;1;Dyc_ench;0;nlen
+managed;21;1;Vri_frib;0;nlen
+managed;21;2;Ouratea;3;len
+managed;21;2;Tib_urvi;3;len
+managed;21;2;Gay_bras;5;len
+managed;21;2;Vit_mont;1;len
+managed;21;2;Dod_visc;1;len
+managed;21;2;Dyc_ench;0;nlen
+managed;21;2;Act_poly;0;nlen
+managed;21;2;Vri_frib;0;nlen
+managed;21;2;Ple_lepi;0;nlen
+managed;21;2;C214;0;nlen
+managed;21;2;C42;0;nlen
+managed;21;2;Cle_libo;0;nlen
+managed;21;3;C8;0;nlen
+managed;21;3;C195;0;nlen
+managed;21;4;C8;0;nlen
+managed;22;1;Ouratea;1;len
+managed;22;1;Smi_camp ;11;len
+managed;22;1;Eugenia;1;len
+managed;22;1;C214;0;nlen
+managed;22;1;C195;0;nlen
+managed;22;1;C8;0;nlen
+managed;22;2;Smi_camp ;5;len
+managed;22;2;Ter_bras;1;len
+managed;22;2;Ouratea;1;len
+managed;22;2;C209;2;len
+managed;22;2;C8;0;nlen
+managed;22;2;C195;0;nlen
+managed;22;3;Smi_camp ;3;len
+managed;22;3;Ouratea;1;len
+managed;22;3;C8;0;nlen
+managed;22;3;C195;0;nlen
+managed;22;4;Vit_mont;1;len
+managed;22;4;Smi_camp ;1;len
+managed;22;4;Ter_bras;1;len
+managed;22;4;Act_poly;0;nlen
+managed;22;4;C8;0;nlen
+managed;22;4;C214;0;nlen
+managed;23;1;C8;0;nlen
+managed;23;1;C43;0;nlen
+managed;23;2;Clu_criu;1;len
+managed;23;2;Gay_bras;1;len
+managed;23;2;Myr_sple;1;len
+managed;23;2;C8;0;nlen
+managed;23;2;C195;0;nlen
+managed;23;2;Vri_frib;0;nlen
+managed;23;2;Ple_lepi;0;nlen
+managed;23;2;Cle_libo;0;nlen
+managed;23;3;Gay_bras;9;len
+managed;23;3;Ouratea;1;len
+managed;23;3;Vri_frib;0;nlen
+managed;23;3;Ple_lepi;0;nlen
+managed;23;3;C43;0;nlen
+managed;23;3;Dyc_ench;0;nlen
+managed;23;4;Gay_bras;4;len
+managed;23;4;Vit_mont;1;len
+managed;23;4;C8;0;nlen
+managed;23;4;Dyc_ench;0;nlen
+managed;23;4;Act_poly;0;nlen
+managed;24;1;C214;0;nlen
+managed;24;1;C196;0;nlen
+managed;24;1;C8;0;nlen
+managed;24;2;Eugenia;1;len
+managed;24;2;Ouratea;2;len
+managed;24;2;Smi_camp ;2;len
+managed;24;2;C8;0;nlen
+managed;24;2;C195;0;nlen
+managed;24;2;C213;0;nlen
+managed;24;3;Myr_palu;1;len
+managed;24;3;Ouratea;3;len
+managed;24;3;Eugenia;5;len
+managed;24;3;Gua_oppo;1;len
+managed;24;3;C210;1;len
+managed;24;3;Gay_bras;2;len
+managed;24;3;Ter_bras;2;len
+managed;24;3;Tib_urvi;1;len
+managed;24;3;Ile_thee;2;len
+managed;24;3;C42;0;nlen
+managed;24;3;Dyc_ench;0;nlen
+managed;24;3;Act_poly;0;nlen
+managed;24;3;Ple_lepi;0;nlen
+managed;24;4;C8;0;nlen
+managed;24;4;C214;0;nlen
+managed;24;4;C195;0;nlen
+managed;25;1;Smi_camp ;7;len
+managed;25;1;Gay_bras;6;len
+managed;25;1;Vit_mont;1;len
+managed;25;1;Vri_frib;0;nlen
+managed;25;1;Ple_lepi;0;nlen
+managed;25;1;C43;0;nlen
+managed;25;1;Dyc_ench;0;nlen
+managed;25;1;C42;0;nlen
+managed;25;1;Act_poly;0;nlen
+managed;25;2;Ouratea;1;len
+managed;25;2;Gay_bras;2;len
+managed;25;2;Tib_urvi;4;len
+managed;25;2;C8;0;nlen
+managed;25;2;Dyc_ench;0;nlen
+managed;25;2;Vri_frib;0;nlen
+managed;25;2;Ple_lepi;0;nlen
+managed;25;2;Act_poly;0;nlen
+managed;25;2;Dio_radu;0;nlen
+managed;25;3;Vit_mont;2;len
+managed;25;3;Myr_palu;2;len
+managed;25;3;Ouratea;1;len
+managed;25;3;Smi_camp ;1;len
+managed;25;3;C8;0;nlen
+managed;25;3;C195;0;nlen
+managed;25;3;C43;0;nlen
+managed;25;4;C8;0;nlen
+managed;25;4;C195;0;nlen
+managed;25;4;C214;0;nlen
+managed;26;1;Gay_bras;20;len
+managed;26;1;Vit_mont;1;len
+managed;26;1;Smi_camp ;5;len
+managed;26;2;Smi_camp ;26;len
+managed;26;2;Gay_bras;4;len
+managed;26;2;Vit_mont;1;len
+managed;26;2;C43;0;nlen
+managed;26;2;Act_poly;0;nlen
+managed;26;3;Vit_mont;1;len
+managed;26;3;Smi_camp ;20;len
+managed;26;3;Gay_bras;19;len
+managed;26;3;Dio_radu;0;nlen
+managed;26;3;C43;0;nlen
+managed;26;3;C42;0;nlen
+managed;26;3;Ple_lepi;0;nlen
+managed;26;3;Epi_fulg;0;nlen
+managed;26;4;Smi_camp ;6;len
+managed;26;4;Tib_urvi;5;len
+managed;26;4;Vit_mont;1;len
+managed;26;4;Gay_bras;13;len
+managed;26;4;C5;0;nlen
+managed;26;4;Ple_lepi;0;nlen
+managed;26;4;C42;0;nlen
+managed;26;4;C43;0;nlen
+managed;26;4;Dio_radu;0;nlen
+managed;26;4;C68;0;nlen
+managed;26;4;Vri_frib;0;nlen
+managed;26;4;Cyr_flav;0;nlen
+managed;27;1;Smi_camp ;18;len
+managed;27;1;Tib_urvi;2;len
+managed;27;1;Gay_bras;6;len
+managed;27;1;Ple_lepi;0;nlen
+managed;27;1;C42;0;nlen
+managed;27;1;C43;0;nlen
+managed;27;1;Dio_radu;0;nlen
+managed;27;1;C68;0;nlen
+managed;27;1;Vri_frib;0;nlen
+managed;27;1;Cyr_flav;0;nlen
+managed;27;1;C8;0;nlen
+managed;27;1;Dyc_ench;0;nlen
+managed;27;2;Smi_camp ;6;len
+managed;27;2;Gay_bras;1;len
+managed;27;2;C8;0;nlen
+managed;27;2;C213;0;nlen
+managed;27;2;C196;0;nlen
+managed;27;3;Smi_camp ;29;len
+managed;27;3;Gay_bras;17;len
+managed;27;3;C196;0;nlen
+managed;27;3;Dio_radu;0;nlen
+managed;27;3;C42;0;nlen
+managed;27;3;C43;0;nlen
+managed;27;3;Cyr_flav;0;nlen
+managed;27;4;Smi_camp ;6;len
+managed;27;4;Ouratea;2;len
+managed;27;4;Gay_bras;5;len
+managed;27;4;Dyc_ench;0;nlen
+managed;27;4;Vri_frib;0;nlen
+managed;27;4;Ple_lepi;0;nlen
+managed;27;4;C43;0;nlen
+managed;27;4;Dio_radu;0;nlen
+managed;27;4;Cyr_flav;0;nlen
+managed;27;4;C42;0;nlen
+managed;27;4;Epi_fulg;0;nlen
+managed;27;4;Pte_arac;0;nlen
+managed;28;1;Smi_camp ;6;len
+managed;28;1;Gay_bras;15;len
+managed;28;1;Vit_mont;3;len
+managed;28;1;Ple_lepi;0;nlen
+managed;28;1;C42;0;nlen
+managed;28;1;C43;0;nlen
+managed;28;1;Dio_radu;0;nlen
+managed;28;1;Dyc_ench;0;nlen
+managed;28;2;Vit_mont;3;len
+managed;28;2;Smi_camp ;3;len
+managed;28;2;Gay_bras;10;len
+managed;28;2;Dyc_ench;0;nlen
+managed;28;2;Ple_lepi;0;nlen
+managed;28;2;C43;0;nlen
+managed;28;2;Dio_radu;0;nlen
+managed;28;2;Cyr_flav;0;nlen
+managed;28;3;Smi_camp ;3;len
+managed;28;3;Gay_bras;8;len
+managed;28;3;Ouratea;3;len
+managed;28;3;Eug_cath;1;len
+managed;28;3;C43;0;nlen
+managed;28;3;Ple_lepi;0;nlen
+managed;28;3;Dio_radu;0;nlen
+managed;28;3;Vri_frib;0;nlen
+managed;28;4;Smi_camp ;6;len
+managed;28;4;Gay_bras;10;len
+managed;28;4;Cyr_flav;0;nlen
+managed;28;4;Dio_radu;0;nlen
+managed;28;4;Ple_lepi;0;nlen
+managed;28;4;C43;0;nlen
+managed;29;1;Smi_camp ;4;len
+managed;29;1;C43;0;nlen
+managed;29;1;C195;0;nlen
+managed;29;1;C196;0;nlen
+managed;29;1;Act_poly;0;nlen
+managed;29;2;Smi_camp ;3;len
+managed;29;2;Clu_criu;2;len
+managed;29;2;Oco_pulc;2;len
+managed;29;2;C68;0;nlen
+managed;29;2;Cyr_flav;0;nlen
+managed;29;3;Smi_camp ;2;len
+managed;29;3;Bac_drac ;3;len
+managed;29;3;Vit_mont;1;len
+managed;29;3;Tib_urvi;1;len
+managed;29;3;C196;0;nlen
+managed;29;3;C8;0;nlen
+managed;29;3;C43;0;nlen
+managed;29;3;Act_poly;0;nlen
+managed;29;3;C195;0;nlen
+managed;29;3;Dio_radu;0;nlen
+managed;29;3;Dyc_ench;0;nlen
+managed;29;4;Smi_camp ;8;len
+managed;29;4;Dod_visc;1;len
+managed;29;4;Ouratea;1;len
+managed;29;4;Cyr_flav;0;nlen
+managed;29;4;C43;0;nlen
+managed;29;4;Ple_lepi;0;nlen
+managed;29;4;Vri_frib;0;nlen
+managed;29;4;Dio_radu;0;nlen
+managed;30;1;Smi_camp ;6;len
+managed;30;1;C43;0;nlen
+managed;30;1;C212;0;nlen
+managed;30;2;Smi_camp ;4;len
+managed;30;2;Gay_bras;2;len
+managed;30;2;Tib_urvi;1;len
+managed;30;2;C213;0;nlen
+managed;30;2;C8;0;nlen
+managed;30;2;C195;0;nlen
+managed;30;2;Act_poly;0;nlen
+managed;30;2;Dyc_ench;0;nlen
+managed;30;3;C43;0;nlen
+managed;30;3;Act_poly;0;nlen
+managed;30;3;Dio_radu;0;nlen
+managed;30;3;C196;0;nlen
+managed;30;3;Vri_frib;0;nlen
+managed;30;4;Smi_camp ;6;len
+managed;30;4;Vit_mont;1;len
+managed;30;4;Oco_pulc;2;len
+managed;30;4;C8;0;nlen
+managed;30;4;C195;0;nlen

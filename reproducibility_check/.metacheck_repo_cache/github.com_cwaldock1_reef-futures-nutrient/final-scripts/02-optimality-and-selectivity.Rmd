@@ -1,0 +1,1298 @@
+---
+title: "02-optimality-and-selectivity"
+output: html_document
+date: "`r Sys.Date()`"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Analysis of optimality and selectivity for RDA 
+
+This script reproduces figures 2, 3, and 4
+
+### Read in preamble
+
+```{r load packages, echo = F, results = 'hide'}
+
+my_packages <-  
+  c('tidyverse', 'plyr', 'raster', 'sp', 'sf','tmap', 'tmaptools', 'scico', 'ggExtra',
+    'factoextra', 'FactoMineR', 'corrplot', 'matrixStats', 'ggrepel', 'GGally', 'ncdf4',
+    'scales')
+not_installed <- my_packages[!(my_packages %in% installed.packages()[ , 'Package'])]   
+if(length(not_installed)) install.packages(not_installed)  
+lapply(my_packages, function(x) library(x, character.only = T))
+
+```
+
+Outputs:
+```{r}
+dir.create('figures-final-v4/05-nutrient-simulation/', recursive = T)
+```
+
+
+Pre-loaded data:
+```{r load in data}
+
+# load in preamble containing multiple datasets
+load('scripts/results-final/01-main-analysis/preamble.RData')
+
+# subset to fished and non-conservation concern species 
+fished_genus <- gsub(' ', '_', fished_list$fished_genus)
+fished_genus <- fished_genus[which(fished_genus %in% keep_species$valid_name_FishBase)]
+
+```
+
+
+Nutrient SDM model data for presence (micronutrient concentrations):
+```{r load in micronutrient RNI data}
+
+# subset to fished and non-conservation concern species 
+fished_genus <- gsub(' ', '_', fished_list$fished_genus)
+fished_genus <- fished_genus[which(fished_genus %in% keep_species$valid_name_FishBase)]
+
+# load in species x site matrix for biomass and nutrients
+calcium_wide_RNI            <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/calcium_wide_RNI.RDS')
+iron_wide_RNI               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/iron_wide_RNI.RDS')
+vitamina_wide_RNI           <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/vitamina_wide_RNI.RDS')
+zinc_wide_RNI               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/zinc_wide_RNI.RDS')
+
+# process nutrients to remove 0 values
+calcium_wide_RNI[calcium_wide_RNI==0]   <- NA
+iron_wide_RNI[iron_wide_RNI==0]         <- NA
+vitamina_wide_RNI[vitamina_wide_RNI==0] <- NA
+zinc_wide_RNI[zinc_wide_RNI==0]         <- NA
+
+# subset the matrix to only fished species
+calcium_wide_RNI       <- cbind(cell = calcium_wide_RNI[,'cell'],       calcium_wide_RNI[,colnames(calcium_wide_RNI) %in% fished_genus])
+iron_wide_RNI          <- cbind(cell = iron_wide_RNI[,'cell'],          iron_wide_RNI[,colnames(iron_wide_RNI) %in% fished_genus])
+vitamina_wide_RNI      <- cbind(cell = vitamina_wide_RNI[,'cell'],      vitamina_wide_RNI[,colnames(vitamina_wide_RNI) %in% fished_genus])
+zinc_wide_RNI          <- cbind(cell = zinc_wide_RNI[,'cell'],          zinc_wide_RNI[,colnames(zinc_wide_RNI) %in% fished_genus])
+
+```
+
+Nutrient SDM model data for biomass and micronutrient mass (micronutrient concentrations):
+```{r load in biomass and micronutrient mass data}
+
+# subset to fished and non-conservation concern species 
+fished_genus <- gsub(' ', '_', fished_list$fished_genus)
+fished_genus <- fished_genus[which(fished_genus %in% keep_species$valid_name_FishBase)]
+
+# load in species x site matrix for biomass and nutrients
+biomass_index_wide      <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/biomass_index_wide.RDS')
+calcium_wide_MASS            <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/calcium_wide_MASS.RDS')
+iron_wide_MASS               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/iron_wide_MASS.RDS')
+vitamina_wide_MASS           <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/vitamina_wide_MASS.RDS')
+zinc_wide_MASS               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/zinc_wide_MASS.RDS')
+
+# process nutrients to remove 0 values
+calcium_wide_MASS[calcium_wide_MASS==0]   <- NA
+iron_wide_MASS[iron_wide_MASS==0]         <- NA
+vitamina_wide_MASS[vitamina_wide_MASS==0] <- NA
+zinc_wide_MASS[zinc_wide_MASS==0]         <- NA
+
+# subset the matrix to only fished species
+biomass_index_wide <- cbind(cell = biomass_index_wide[,'cell'], biomass_index_wide[,colnames(biomass_index_wide) %in% fished_genus])
+calcium_wide_MASS       <- cbind(cell = calcium_wide_MASS[,'cell'],       calcium_wide_MASS[,colnames(calcium_wide_MASS) %in% fished_genus])
+iron_wide_MASS          <- cbind(cell = iron_wide_MASS[,'cell'],          iron_wide_MASS[,colnames(iron_wide_MASS) %in% fished_genus])
+vitamina_wide_MASS      <- cbind(cell = vitamina_wide_MASS[,'cell'],      vitamina_wide_MASS[,colnames(vitamina_wide_MASS) %in% fished_genus])
+zinc_wide_MASS          <- cbind(cell = zinc_wide_MASS[,'cell'],          zinc_wide_MASS[,colnames(zinc_wide_MASS) %in% fished_genus])
+
+```
+
+Sea around us project data:
+
+```{r}
+
+# finally, obtain the species that contribute the most to direct consumption reported in the SAUP
+saup_country_tonnes <- readRDS('processed-data/fisheries-data/saup_country_tonnes.RDS')
+
+# bind together, get the countries of interest, and remove non-fished species
+saup_reef_tonnes <- bind_rows(saup_country_tonnes) %>% 
+  
+  # clean names
+  dplyr::rename(., ISO_3 = iso_3, valid_name_FishBase = species_corrected) %>% 
+  
+  # clean species names to match with site x species nutrient matrix
+  mutate(valid_name_FishBase = gsub(' ', '_', .$valid_name_FishBase)) %>% 
+  
+  # join in social data 
+  left_join(social %>% dplyr::select(ISO_3, GID_0), .) %>% 
+  
+  # filter to focal countries and fishes consumed for direct consumption
+  filter(GID_0 %in% reef_associated_nations$GID_0,
+         direct_consumption == 1) %>% 
+  
+  # split by countries to loop over
+  split(., .$GID_0)
+
+```
+
+Species nutrient data:
+
+```{r}
+# read in the raw specices list information
+species_list <- read.csv('processed-data/nutrient-content/Spp_NutrientPred_REEF_FUTURESJune2021.csv')
+
+species_list$valid_name_FishBase <- gsub(' ','_',species_list$valid_name_FishBase)
+
+# keep only valid species 
+species_list <- species_list %>% 
+  filter(valid_name_FishBase %in% keep_species$valid_name_FishBase, 
+         valid_name_FishBase %in% fished_genus)
+
+```
+
+
+### Convert to Reference Nutrient Intakes (RNI in code) 
+
+Here we convert back to 100g portions (x100) from g, and then convert to proportions of daily reference intakes for each nutrient. 
+
+```{r}
+
+# convert back to per 100g portion
+calcium_wide_RNI[,-1]  <- calcium_wide_RNI[,-1]*100
+iron_wide_RNI[,-1]     <- iron_wide_RNI[,-1]*100
+vitamina_wide_RNI[,-1] <- vitamina_wide_RNI[,-1]*100
+zinc_wide_RNI[,-1]     <- zinc_wide_RNI[,-1]*100
+
+# express each as percentage of RNI per species
+calcium_wide_RNI[,-1] <- (calcium_wide_RNI[,-1]/700) * 100
+iron_wide_RNI[-1] <- (iron_wide_RNI[,-1] / 7) * 100
+vitamina_wide_RNI[,-1] <- (vitamina_wide_RNI[,-1] / 300)*100
+zinc_wide_RNI[,-1] <- (zinc_wide_RNI[,-1] / 3)*100
+
+```
+
+
+Combine the species x site nutrient matrix into a list for application of function over.
+
+```{r}
+
+# set up as a list of objects for the later loop to work over
+nutrient_list_MASS <- list(calcium_wide  = calcium_wide_MASS, 
+                           iron_wide     = iron_wide_MASS, 
+                           vitamina_wide = vitamina_wide_MASS, 
+                           zinc_wide     = zinc_wide_MASS)
+
+
+# set up as a list of objects for the later loop to work over
+nutrient_list_RNI <- list(calcium_wide = calcium_wide_RNI, 
+                      iron_wide        = iron_wide_RNI, 
+                      vitamina_wide    = vitamina_wide_RNI, 
+                      zinc_wide        = zinc_wide_RNI)
+
+```
+
+
+## Analyse optimality and selectivity for RNI (micronutrient concentrations per species)
+
+Here we perform our analysis of optimality and selectivity. We loop through each country and assess the species caught, and then the metrics for this fishery compared to the modelled pool of nutrients available in our site x species nutrient matrices. 
+
+```{r, results = 'hide'}
+
+if(!file.exists('figures-final-v4/05-nutrient-simulation/OptimalitySelectivitySave.RData')){
+
+## Create loop across all countries in the SAUP dataset
+country_nutrient_simulation_RNI <- list() 
+country_species_RNI <- list()
+
+# Run loop across each country
+for(i in seq_along(saup_reef_tonnes)){
+
+   # 1. Get the species list for the GID_0 based on the nutrient maps
+   test_saup <- saup_reef_tonnes[[i]]
+   
+   # 2. Get the taxonomic namese of valid species
+   test_taxa <- na.omit(unique(c(test_saup$valid_name_FishBase, test_saup$genus, test_saup$family)))
+   
+   # 3. Read in the species list 
+   test_country_fished <- species_list$valid_name_FishBase[which(species_list$valid_name_FishBase %in% test_taxa | 
+                                                                 species_list$Genus_FishBase %in% test_taxa)]
+   test_country_fished <- gsub(' ', '_', test_country_fished)
+   
+   # 4. Obtain the country cells that are of interest
+   test_country_cells <- country_cells[[which(names(country_cells) %in% unique(test_saup$GID_0))]]
+   
+   # 5. Loop through each nutrient
+   nutrient_output_country <- lapply(nutrient_list_RNI, function(x){
+     
+     # 5a. Filter the nutrient and nutrients down to the country
+     nutrient_country  <- 
+       x[which(x[,1] %in% test_country_cells),-1]
+     
+     biomass_country   <-
+       biomass_index_wide[which(x[,1] %in% test_country_cells), -1]
+     
+     # 5b. Remove species that don't have any occurrences in the countries to make the code later more streamlined
+     nutrient_country <- nutrient_country[ , which(colSums(nutrient_country, na.rm = T) != 0)]
+     biomass_country  <- biomass_country[ , which(colSums(biomass_country, na.rm = T) != 0)]
+     
+     # 5c. Filter the nutrient and nutrient information down to the identified potentially fished species (defined above)
+     # ensure also that only systems with > 1 fishable species are considered in these simulations
+     if(length(which(colnames(nutrient_country) %in% test_country_fished)) < 2){     
+       
+       # return empty data if < 2 species
+       return(data.frame(GID_0 = unique(test_saup$GID_0), 
+                         n_fished_species = NA,
+                         max_nutrient = NA, 
+                         nutrient_trueFished_raw = NA, 
+                         nutrient_nullFished_raw = NA, 
+                         nutrient_trueFished = NA,
+                         nutrient_nullFished = NA, 
+                         nutrient_selectivity = NA, 
+                         mean_nutrient_selectivity = NA ,
+                         sd_nutrient_selectivity = NA, 
+                         biomass_trueFished_raw = NA, 
+                         biomass_nutrient_optimal = NA))
+       
+     }
+     
+     # 5d. Get the fished species
+     test_nutrient_trueFished  <- nutrient_country[, which(colnames(nutrient_country) %in% test_country_fished)] 
+     test_biomass_trueFished  <- biomass_country[, which(colnames(biomass_country) %in% test_country_fished)] 
+     
+     # 5e. Get the number of species which are classified as fished
+     n_fished_species <- sum(colMeans(test_nutrient_trueFished, na.rm = T) != 0)
+     
+     # 5f.Get the mean potential of the system when fishing the most RDA species at n_fished_species
+     max_nutrient  <- mean(sort(colMeans(nutrient_country, na.rm = T),  decreasing = T)[1:n_fished_species], na.rm = T)
+     optimal_species <- names(sort(colMeans(nutrient_country, na.rm = T),  decreasing = T)[1:n_fished_species])
+
+     # 5g. Get true values of nutrients for country-specific fished species
+     nutrient_trueFished_raw <- mean(apply(test_nutrient_trueFished, 2, function(x){unique(na.omit(x))}), na.rm = T)
+     nutrient_trueFished     <- nutrient_trueFished_raw / max_nutrient
+     
+     # 5h. Get true values of the biomass for country-specific fished species
+     biomass_trueFished_raw     <- mean(unlist(test_biomass_trueFished), na.rm = T)
+     biomass_nutrient_optimal <- mean(unlist(biomass_country[,optimal_species]), na.rm = T)
+     
+     # 5i. Get distribution of nutrients considering random sampling of fishes
+     nutrient_nullFished_raw  <- sapply(1:999, 
+                                        function(x){
+                                          mean(
+                                            apply(nutrient_country[,sample(seq_along(colnames(nutrient_country)),n_fished_species)],
+                                                  2,
+                                                  function(x){unique(na.omit(x))}), na.rm = T)})
+     
+     # 5j. Express null fishes in reference to the maximum nutrients possible
+     nutrient_nullFished <- nutrient_nullFished_raw / max_nutrient
+     
+     # 5k. Output table
+     return(data.frame(GID_0 = unique(test_saup$GID_0), 
+                       n_fished_species = n_fished_species,
+                       max_nutrient = max_nutrient, 
+                       nutrient_trueFished_raw = nutrient_trueFished_raw, 
+                       nutrient_nullFished_raw = nutrient_nullFished_raw, 
+                       nutrient_trueFished = nutrient_trueFished,
+                       nutrient_nullFished = nutrient_nullFished, 
+                       nutrient_selectivity = nutrient_trueFished - nutrient_nullFished, 
+                       mean_nutrient_selectivity = mean(nutrient_trueFished - nutrient_nullFished, na.rm = T), 
+                       sd_nutrient_selectivity   = sd(nutrient_trueFished - nutrient_nullFished, na.rm = T), 
+                       biomass_trueFished_raw = biomass_trueFished_raw, 
+                       biomass_nutrient_optimal = biomass_nutrient_optimal))
+     
+   })
+   
+   # 6. Bind outputs across nutrients
+   country_nutrient_simulation_RNI[[i]] <- bind_rows(nutrient_output_country, .id = 'nutrient')
+   
+   # 7. Get the coountries fished species list based on our analysis
+   country_species_RNI[[i]] <- test_country_fished
+
+}
+
+# combine outputs from the simulation
+nutrient_sim_all_RNI <- bind_rows(country_nutrient_simulation_RNI)
+
+}
+
+```
+
+
+## Analyse optimality and selectivity for mass based nutrient values
+
+Here the key difference from the RDA assessment is that we sum nutrient values for mass rather than taking the mean values.
+
+```{r, results = 'hide'}
+
+if(!file.exists('figures-final-v4/05-nutrient-simulation/OptimalitySelectivitySave.RData')){
+
+## Create loop across all countries in the SAUP dataset
+country_nutrient_simulation_MASS <- list() 
+country_species_MASS <- list()
+for(i in seq_along(saup_reef_tonnes)){
+
+   # 1. Get the species list for the GID_0 based on the nutrient maps
+   test_saup <- saup_reef_tonnes[[i]]
+   
+   # 2. Get the taxonomic namese of valid species
+   test_taxa <- na.omit(unique(c(test_saup$valid_name_FishBase, test_saup$genus, test_saup$family)))
+   
+   # 3. Read in the species list 
+   test_country_fished <- species_list$valid_name_FishBase[which(species_list$valid_name_FishBase %in% test_taxa | 
+                                                                 species_list$Genus_FishBase %in% test_taxa)]
+   test_country_fished <- gsub(' ', '_', test_country_fished)
+   
+   # 4. Obtain the country cells that are of interest
+   test_country_cells <- country_cells[[which(names(country_cells) %in% unique(test_saup$GID_0))]]
+   
+   # 5. Loop through each nutrient
+   nutrient_output_country <- lapply(nutrient_list_MASS, function(x){
+     
+     # 5a Filter the nutrient and nutrients down to the country
+     nutrient_country  <- 
+       x[which(x[,1] %in% test_country_cells),-1]
+     biomass_country   <- 
+       biomass_index_wide[which(x[,1] %in% test_country_cells), -1] 
+     
+     # 5b. Remove species that don't have any occurrences in the countries to make the code later more streamlined
+     nutrient_country <- nutrient_country[ , which(colSums(nutrient_country, na.rm = T) != 0)]
+     biomass_country  <- biomass_country[ , which(colSums(biomass_country, na.rm = T) != 0)]
+     
+     # 5c. Filter the nutrient and nutrient information down to the identified potentially fished species (defined above)
+     # ensure also that only systems with > 1 fishable species are considered in these simulations
+     if(length(which(colnames(nutrient_country) %in% test_country_fished)) < 2){  
+       # Output if species are fewer than 2
+       return(data.frame(GID_0 = unique(test_saup$GID_0), 
+                         n_fished_species = NA,
+                         max_nutrient = NA, 
+                         nutrient_trueFished_raw = NA, 
+                         nutrient_nullFished_raw = NA, 
+                         nutrient_trueFished = NA,
+                         nutrient_nullFished = NA, 
+                         nutrient_selectivity = NA, 
+                         mean_nutrient_selectivity = NA, 
+                         sd_nutrient_selectivity = NA, 
+                         biomass_trueFished_raw = NA, 
+                         biomass_nutrient_optimal = NA))
+       
+     }
+     
+     # 5d. Get the fished species
+     test_nutrient_trueFished  <- nutrient_country[, which(colnames(nutrient_country) %in% test_country_fished)] 
+     test_biomass_trueFished  <- biomass_country[, which(colnames(biomass_country) %in% test_country_fished)] 
+     
+     # 5e. Get the number of species which are classified as fished
+     n_fished_species <- sum(colSums(test_nutrient_trueFished, na.rm = T) != 0)
+     
+     # 5f. Get the maximum potential of the system when fished at n_fished_species
+     max_nutrient  <- sum(sort(colMeans(nutrient_country, na.rm = T),  decreasing = T)[1:n_fished_species], na.rm = T)
+     optimal_species <- names(sort(colMeans(nutrient_country, na.rm = T),  decreasing = T)[1:n_fished_species])
+     
+     # 5g. Get true values of nutrients for country-specific fished species
+     nutrient_trueFished_raw  <- sum(colMeans(test_nutrient_trueFished, na.rm = T), na.rm = T) 
+     nutrient_trueFished  <- nutrient_trueFished_raw / max_nutrient 
+     
+     # 5h. Get true values of the biomass for country-specific fished species
+     biomass_trueFished_raw   <- mean(unlist(test_biomass_trueFished), na.rm = T)
+     biomass_nutrient_optimal <- mean(unlist(biomass_country[,optimal_species]), na.rm = T)
+     
+     # 5i. Get distribution of random values
+     nutrient_nullFished_raw  <- sapply(1:999, 
+                                        function(x){
+                                          sum(
+                                            colMeans(nutrient_country[,sample(seq_along(colnames(nutrient_country)), 
+                                                                                n_fished_species)],
+                                                     na.rm=T), 
+                                            na.rm = T)}
+                                        )
+     
+     # 5j. Calculate randomised fishing as a % of maximum
+     nutrient_nullFished  <- nutrient_nullFished_raw / max_nutrient
+     
+     
+     # 5k. Return outputs
+     return(data.frame(GID_0 = unique(test_saup$GID_0), 
+                       n_fished_species = n_fished_species,
+                       max_nutrient = max_nutrient, 
+                       nutrient_trueFished_raw = nutrient_trueFished_raw, 
+                       nutrient_nullFished_raw = nutrient_nullFished_raw, 
+                       nutrient_trueFished = nutrient_trueFished,
+                       nutrient_nullFished = nutrient_nullFished, 
+                       nutrient_selectivity = nutrient_trueFished - nutrient_nullFished, 
+                       mean_nutrient_selectivity = mean(nutrient_trueFished - nutrient_nullFished, na.rm = T), 
+                       sd_nutrient_selectivity = sd(nutrient_trueFished - nutrient_nullFished, na.rm = T), 
+                       biomass_trueFished_raw = biomass_trueFished_raw, 
+                       biomass_nutrient_optimal = biomass_nutrient_optimal))
+     
+   })
+   
+   # 6. Combine outputs
+   country_nutrient_simulation_MASS[[i]] <- bind_rows(nutrient_output_country, .id = 'nutrient')
+
+   # 7. Return country catches
+   country_species_MASS[[i]] <- test_country_fished
+   
+}
+
+
+# combine outputs from the simulation
+nutrient_sim_all_MASS <- bind_rows(country_nutrient_simulation_MASS)
+
+}
+
+```
+
+
+#### Save image of the nutrient optimality and selectivity runs
+
+Remember, if running with different set up, then delete the old data to recrete new optimality and selectivity simulations.
+
+```{r load in runs of data}
+
+if(!file.exists('figures-final-v4/05-nutrient-simulation/OptimalitySelectivitySave.RData')){
+  save.image(file = 'figures-final-v4/05-nutrient-simulation/OptimalitySelectivitySave.RData')
+  }else{
+  load('figures-final-v4/05-nutrient-simulation/OptimalitySelectivitySave.RData')
+  }
+
+saveRDS(nutrient_sim_all_MASS, 'figures-final-v4/05-nutrient-simulation/nutrient_sim_all_MASS.RDS')
+
+
+```
+
+
+#### Summary statistics of the simulations
+Here we summarise some of the properties of the simulations based on the number of species input, for example, that are relevant in the methods section of the manuscript. 
+
+```{r}
+
+# how  many species per country
+country_species_count <- sapply(country_species_RNI, function(x) length(unique(x)))
+
+# number of coutries with more than 2 species
+n_countries <- length(country_species_count[!country_species_count<2])
+
+# mean number of species per country
+n_sp_per_country <-
+  round(mean(country_species_count[!country_species_count<2]))
+
+# sd of number of species per country
+sd_sp_per_country <-
+  round(sd(country_species_count[!country_species_count<2]))
+
+# min number of species per country
+min_sp_per_country <-
+  round(min(country_species_count[!country_species_count<2]))
+
+# max number of species per country
+max_sp_per_country <-
+  round(max(country_species_count[!country_species_count<2]))
+
+```
+
+
+These investigations were undertaken for `r n_countries` of the 87 reef-associated countries that had more than one species with landings in the Sea Around Us reconstructed catch data. Note that these simulated scenarios occur completely within our modelled system, but using species and congenerics identified as caught in the Sea Around Us data (for the analysed `r n_countries` countries in the Sea Around Us data n_i = `r n_sp_per_country`± `r sd_sp_per_country` with a range of n_i = `r min_sp_per_country` to `r max_sp_per_country` species).
+
+
+# Create plots for Figure 2 
+ 
+These plots show the optimality gap between maximum nutrients available from 'n' species and those contained in 'n' fished species. 
+
+### RNI for Figure 2
+
+```{r}
+
+# Join in nutrient simulation with social data
+nutrient_sim_all_plot_RNI <- left_join(nutrient_sim_all_RNI, social %>% dplyr::select(GID_0, Country_GADM))
+
+# Caclulate nutrient optimality
+nutrient_sim_all_plot_RNI$nutrient_optimality <- nutrient_sim_all_plot_RNI$nutrient_trueFished_raw / nutrient_sim_all_plot_RNI$max_nutrient
+
+# Caclulate mean across countries for ordering plots
+nutrient_sim_all_plot_RNI <- nutrient_sim_all_plot_RNI %>% 
+  group_by(Country_GADM) %>% 
+  do(max_nutrient_mean = mean(.$max_nutrient, na.rm = T), 
+     fished_nutrient_mean = mean(.$nutrient_trueFished_raw, na.rm = T), 
+     optimality_nutrient_mean = mean(.$nutrient_optimality, na.rm = T)) %>% 
+  unnest(max_nutrient_mean, 
+         fished_nutrient_mean, 
+         optimality_nutrient_mean) %>% 
+  left_join(nutrient_sim_all_plot_RNI, .)
+
+# Set levels of ordering
+levels <- unique(nutrient_sim_all_plot_RNI$Country_GADM[order(nutrient_sim_all_plot_RNI$optimality_nutrient_mean)])
+
+# Set levels of the countries by the mean null differences
+nutrient_sim_all_plot_RNI$Country_GADM <- factor(nutrient_sim_all_plot_RNI$Country_GADM, 
+                                             levels = levels)
+
+# Join in regions to assign regions to different panels
+RDA_optimality_mean <- left_join(nutrient_sim_all_plot_RNI, 
+                                 reef_associated_nations %>% dplyr::select(Country_GADM, un.region.name) %>% unique()) %>% 
+  dplyr::select(Country_GADM, un.region.name, nutrient, nutrient_optimality, nutrient_trueFished_raw, max_nutrient) %>% 
+  unique() %>% 
+  na.omit()
+
+# Rename levels
+RDA_optimality_mean$Country_GADM <- factor(RDA_optimality_mean$Country_GADM, levels = levels)
+
+```
+
+These investigations were undertaken for `r length(unique(RDA_optimality_mean$Country_GADM))` of the 87 reef-associated countries that had more than one species with landings in the Sea Around Us reconstructed catch data. Note that these simulated scenarios occur completely within our modelled system, but using species and congenerics identified as caught in the Sea Around Us data (for the analysed `r length(unique(RDA_optimality_mean$Country_GADM))` countries in the Sea Around Us data n_i = `r n_sp_per_country`± `r sd_sp_per_country` with a range of n_i = `r min_sp_per_country` to `r max_sp_per_country` species).
+
+
+### Plot of optimality for RDA
+
+```{r}
+
+RDA_optimality <- ggplot(data = RDA_optimality_mean %>% 
+         mutate(nutrient = factor(.$nutrient, 
+                                  levels = rev(unique(.$nutrient))))) + 
+  geom_bar(aes(y = Country_GADM, 
+               x = (nutrient_optimality)*100, 
+               fill = nutrient), 
+           stat = 'identity',
+           alpha = 0.9)  + 
+  facet_grid(un.region.name~., scales = "free", space = 'free') + 
+  geom_text(data = RDA_optimality_mean %>% dplyr::select(Country_GADM,
+                                                         un.region.name, 
+                                                         nutrient_optimality) %>% 
+              group_by(Country_GADM, un.region.name) %>% 
+              do(sum_no = sum(.$nutrient_optimality, na.rm = T)) %>% 
+              unnest(cols = c(sum_no)) %>% 
+              unique(), 
+            aes(x = sum_no*101, 
+                y = Country_GADM, 
+                label = Country_GADM), 
+            hjust = 0, size = 2) +
+  geom_vline(aes(xintercept = 400), lty = 2) + 
+  scale_fill_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) +    
+  theme_bw() + 
+  theme(#strip.text = element_blank(), 
+        panel.grid = element_blank(), 
+        legend.position = 'none', 
+        plot.margin = margin(5,5,5,10),
+        panel.background = element_blank(), 
+        plot.background = element_blank(), 
+        panel.border = element_blank(), 
+        axis.line.x = element_line(), 
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) +
+  scale_x_continuous(lim = c(0,400), labels = paste0(c(0, 100, 200, 300, 400), '%')) +
+  xlab('Combined nutrient RNI optimality')+ 
+  ylab(NULL)
+
+# Plot for markdown document
+RDA_optimality
+
+# Save plot for manuscript
+png(filename = 'figures-final-v4/05-nutrient-simulation/RDA-allNutrients_combined-v3.png', 
+    width = 1000, height = 2000, res = 300, bg = 'transparent')
+RDA_optimality
+dev.off()
+
+```
+
+
+
+### Micronutrient mass optimality plots for Figure 2
+
+```{r}
+
+# Join with social data
+nutrient_sim_all_plot_MASS <- left_join(nutrient_sim_all_MASS, social %>% dplyr::select(GID_0, Country_GADM))
+
+# Calculate optimality
+nutrient_sim_all_plot_MASS$nutrient_optimality <- nutrient_sim_all_plot_MASS$nutrient_trueFished_raw / nutrient_sim_all_plot_MASS$max_nutrient
+
+# Aggregate to mean to order plots within regions
+nutrient_sim_all_plot_MASS <- nutrient_sim_all_plot_MASS %>% 
+  group_by(Country_GADM) %>% 
+  do(max_nutrient_mean = mean(.$max_nutrient, na.rm = T), 
+     fished_nutrient_mean = mean(.$nutrient_trueFished_raw, na.rm = T), 
+     optimality_nutrient_mean = mean(.$nutrient_optimality, na.rm = T)) %>% 
+  unnest(max_nutrient_mean, 
+         fished_nutrient_mean, 
+         optimality_nutrient_mean) %>% 
+  left_join(nutrient_sim_all_plot_MASS, .)
+
+# Levels
+levels <- unique(nutrient_sim_all_plot_MASS$Country_GADM[order(nutrient_sim_all_plot_MASS$optimality_nutrient_mean)])
+
+# Set levels of the countries by the mean null differences
+nutrient_sim_all_plot_MASS$Country_GADM <- factor(nutrient_sim_all_plot_MASS$Country_GADM, 
+                                                  levels = levels)
+
+# Join with country data and regions for plotting in different panels
+MASS_optimality_mean <- left_join(nutrient_sim_all_plot_MASS, 
+                                 reef_associated_nations %>% dplyr::select(Country_GADM, un.region.name) %>% unique()) %>% 
+  filter(nutrient != 'biomass_index_wide') %>% 
+  dplyr::select(Country_GADM, un.region.name, nutrient, nutrient_optimality, nutrient_trueFished_raw, max_nutrient) %>% 
+  unique() %>% 
+  na.omit()
+
+# Organise levels
+MASS_optimality_mean$Country_GADM <- factor(MASS_optimality_mean$Country_GADM, 
+                                           levels = levels)
+
+```
+
+```{r}
+
+# Make optimality plot
+MASS_optimality <- ggplot(data = MASS_optimality_mean %>% 
+         mutate(nutrient = factor(.$nutrient, 
+                                  levels = rev(unique(.$nutrient))))) + 
+  geom_bar(aes(y = Country_GADM, 
+               x = (nutrient_optimality)*100, 
+               fill = nutrient), 
+           stat = 'identity',
+           alpha = 0.9)  + 
+  facet_grid(un.region.name~., scales = "free", space = 'free') + 
+  geom_text(data = MASS_optimality_mean %>% dplyr::select(Country_GADM,
+                                                         un.region.name, 
+                                                         nutrient_optimality) %>% 
+              group_by(Country_GADM, un.region.name) %>% 
+              do(sum_no = sum(.$nutrient_optimality, na.rm = T)) %>% 
+              unnest() %>% 
+              unique(), 
+            aes(x = sum_no*101, 
+                y = Country_GADM, 
+                label = Country_GADM), 
+            hjust = 0, size = 2) +
+  geom_vline(aes(xintercept = 400), lty = 2) + 
+  scale_fill_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) +    
+  theme_bw() + 
+  theme(#strip.text = element_blank(), 
+    panel.grid = element_blank(), 
+    legend.position = 'none', 
+    plot.margin = margin(5,5,5,10),
+    panel.background = element_blank(), 
+    plot.background = element_blank(), 
+    panel.border = element_blank(), 
+    axis.line.x = element_line(), 
+    axis.ticks.y = element_blank(),
+    axis.text.y = element_blank()) +
+  scale_x_continuous(lim = c(0,425), labels = paste0(c(0, 100, 200, 300, 400), '%'), 
+                     breaks = c(0, 100, 200, 300, 400)) +
+  xlab('Combined nutrient mass optimality')+ 
+  ylab(NULL)
+
+# Print for markdown
+MASS_optimality
+
+# Save mass optimality plot
+png(filename = 'figures-final-v4/05-nutrient-simulation/MASS-allNutrients_combined-v3.png', 
+    width = 1000, height = 2000, res = 300, bg = 'transparent')
+MASS_optimality
+dev.off()
+
+
+```
+
+
+# Generate percentages and numerical summaries for table 1 results
+
+```{r Generate summary for table 1}
+
+# RNI summary aggregated across all countries 
+
+RNI_all_summary <- nutrient_sim_all_plot_RNI %>% 
+  
+  # select relevant columns
+  dplyr::select(GID_0, nutrient, max_nutrient, nutrient_trueFished_raw, nutrient_nullFished_raw, nutrient_optimality, mean_nutrient_selectivity) %>%
+  
+  # group by country and nutrient, there are now 999 repetitions per country (downsampling to "n" species per country)
+  group_by(GID_0, nutrient) %>% 
+  
+  # average micronutrient metrics over 999 simulationos
+  do(Zmax = mean(.$max_nutrient, na.rm = T), 
+     Zfished = mean(.$nutrient_trueFished_raw, na.rm = T),
+     Znull = mean(.$nutrient_nullFished_raw, na.rm = T),
+     optimality = mean(.$nutrient_optimality, na.rm = T)*100,
+     selectivity = mean(.$mean_nutrient_selectivity, na.rm = T)*100) %>% 
+  
+  # post-process
+  unnest() %>% 
+  na.omit() %>% 
+  ungroup() %>% 
+  
+  # group by nutrient and take the average values across all countries as well as standard deviation
+  group_by(nutrient) %>% 
+  do(Zmax = paste0(signif(mean(.$Zmax, na.rm = T),2), ' ± ', signif(sd(.$Zmax, na.rm = T), 2)),
+     Zfished = paste0(signif(mean(.$Zfished, na.rm = T),2), ' ± ', signif(sd(.$Zfished, na.rm = T),2)),
+     Znull = paste0(signif(mean(.$Znull, na.rm = T),2), ' ± ', signif(sd(.$Znull, na.rm = T),2)),
+     optimality = paste0(signif(mean(.$optimality, na.rm = T),2), ' ± ', signif(sd(.$optimality, na.rm = T),2)),
+     selectivity = paste0(signif(mean(.$selectivity, na.rm = T),2), ' ± ', signif(sd(.$selectivity, na.rm = T),2))) %>% 
+  
+  # post-process
+  unnest() %>% 
+  ungroup() %>% 
+  dplyr::rename('Micronutrient' = nutrient) %>% 
+  
+  # rename for clean table
+  mutate(Micronutrient = recode(.$Micronutrient, 
+                                'calcium_wide' = 'Calcium (mg)', 
+                                'iron_wide' = 'Iron (mg)',
+                                'vitamina_wide' = 'Vitamin A (µg)',
+                                'zinc_wide' = 'Zinc (mg)'))
+
+# save RNI summary table
+writexl::write_xlsx(RNI_all_summary, path = 'figures-final-v4/05-nutrient-simulation/RNI-all-metric-summary.xlsx')
+
+RNI_all_summary
+
+
+## Micronutrient mass summary aggregated across all countries
+
+MASS_all_summary <- nutrient_sim_all_plot_MASS %>% 
+  
+  # filter and select relevant columns
+  filter(nutrient != 'biomass_index_wide') %>% 
+  dplyr::select(GID_0, nutrient, max_nutrient, nutrient_trueFished_raw, nutrient_nullFished_raw, nutrient_optimality, mean_nutrient_selectivity) %>% 
+  
+  # group by country and nutrient, there are now 999 repetitions per country (downsampling to "n" species per country
+  group_by(GID_0, nutrient) %>% 
+  
+  # average micronutrient metrics over 999 simulationos
+  do(Zmax = mean(.$max_nutrient, na.rm = T), 
+     Zfished = mean(.$nutrient_trueFished_raw, na.rm = T),
+     Znull = mean(.$nutrient_nullFished_raw, na.rm = T),
+     optimality = mean(.$nutrient_optimality, na.rm = T)*100,
+     selectivity = mean(.$mean_nutrient_selectivity, na.rm = T)*100) %>% 
+  
+  # post-process
+  unnest() %>% 
+  na.omit() %>% 
+  ungroup() %>% 
+  
+  # group by nutrient and take the average values across all countries as well as standard deviation
+  group_by(nutrient) %>% 
+  do(Zmax = paste0(signif(mean(.$Zmax, na.rm = T),2), ' ± ', signif(sd(.$Zmax, na.rm = T), 2)),
+     Zfished = paste0(signif(mean(.$Zfished, na.rm = T),2), ' ± ', signif(sd(.$Zfished, na.rm = T),2)),
+     Znull = paste0(signif(mean(.$Znull, na.rm = T),2), ' ± ', signif(sd(.$Znull, na.rm = T),2)),
+     optimality = paste0(signif(mean(.$optimality, na.rm = T),2), ' ± ', signif(sd(.$optimality, na.rm = T),2)),
+     selectivity = paste0(signif(mean(.$selectivity, na.rm = T),2), ' ± ', signif(sd(.$selectivity, na.rm = T),2))) %>% 
+  
+  # post-process
+  unnest() %>% 
+  ungroup() %>% 
+  dplyr::rename('Micronutrient' = nutrient) %>% 
+  
+  # rename for clean table
+  mutate(Micronutrient = recode(.$Micronutrient, 
+                                'calcium_wide' = 'Calcium (mg)', 
+                                'iron_wide' = 'Iron (mg)',
+                                'vitamina_wide' = 'Vitamin A (µg)',
+                                'zinc_wide' = 'Zinc (mg)')) 
+
+# save MASS summary table
+writexl::write_xlsx(MASS_all_summary, path = 'figures-final-v4/05-nutrient-simulation/MASS-all-metric-summary.xlsx')
+
+MASS_all_summary
+
+```
+
+
+
+## Optimality summary values for countries in the text 
+
+```{r}
+
+### extract values for countries of interest
+RDA_optimality_outliers <- bind_rows(
+  # get the high outliers
+  RDA_optimality_mean %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_optimality > quantile(nutrient_optimality, 0.9, na.rm = T)) %>% 
+    mutate(outlier = '>0.9'),
+           
+  # get the low outliers
+  RDA_optimality_mean %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_optimality < quantile(nutrient_optimality, 0.1, na.rm = T)) %>% 
+    mutate(outlier = '<0.1')) %>% 
+  arrange(Country_GADM, nutrient_optimality) %>% 
+  mutate(nutrient_optimality = round(nutrient_optimality, 2), 
+         nutrient_trueFished_raw = round(nutrient_trueFished_raw), 
+         max_nutrient = round(max_nutrient))
+
+write.csv(RDA_optimality_outliers, 'figures-final-v4/05-nutrient-simulation/RNI-optimality-outliers.csv')
+
+# print for manual insertion in manuscript
+lookup <- abbreviate(names(RDA_optimality_outliers))
+
+RDA_optimality_outliers %>% 
+  dplyr::select(-un.region.name) %>% 
+  rename(lookup) %>% 
+  print(., n=nrow(.))
+
+```
+
+
+
+```{r}
+
+### extract values for countries of interest
+MASS_optimality_outliers <- bind_rows(
+  # get the high outliers
+  MASS_optimality_mean %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_optimality > quantile(nutrient_optimality, 0.9, na.rm = T)) %>% 
+    mutate(outlier = '>0.9'),
+           
+  # get the low outliers
+  MASS_optimality_mean %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_optimality < quantile(nutrient_optimality, 0.1, na.rm = T)) %>% 
+    mutate(outlier = '<0.1')) %>% 
+  arrange(Country_GADM, nutrient_optimality) %>% 
+  mutate(nutrient_optimality = round(nutrient_optimality, 2), 
+         nutrient_trueFished_raw = round(nutrient_trueFished_raw), 
+         max_nutrient = round(max_nutrient))
+
+write.csv(MASS_optimality_outliers, 'figures-final-v4/05-nutrient-simulation/MASS-optimality-outliers.csv')
+
+# print for manual insertion in manuscript
+lookup <- abbreviate(names(MASS_optimality_outliers))
+
+MASS_optimality_outliers %>% 
+  dplyr::select(-un.region.name) %>% 
+  rename(lookup) %>% 
+  print(., n=nrow(.))
+
+```
+
+
+# Micronutrient selectivity
+
+## Selective for RNI 
+
+```{r}
+# join in the country names with gids
+selectivity_plotdata_RNI <- left_join(nutrient_sim_all_RNI, social %>% dplyr::select(GID_0, Country_GADM))
+
+# estimate averages across all nutrients for ordering
+selectivity_plotdata_RNI <- selectivity_plotdata_RNI %>% 
+  group_by(GID_0, nutrient) %>% 
+  do(all_nutrient_mean_deviation = mean(.$nutrient_selectivity, na.rm = T)) %>% 
+  unnest(all_nutrient_mean_deviation) %>% 
+  left_join(selectivity_plotdata_RNI, .) %>% 
+  ungroup() %>% 
+  group_by(nutrient) %>% 
+  nest() %>% 
+  mutate(nutrient_selectivity_GID0_mean = purrr::map(data, ~mean(.$nutrient_selectivity, na.rm = T))) %>% 
+  unnest(nutrient_selectivity_GID0_mean) %>% 
+  unnest(data)
+
+# set levels
+levels <- unique(selectivity_plotdata_RNI$Country_GADM[order(selectivity_plotdata_RNI$all_nutrient_mean_deviation)])
+
+# set levels of the countries by the mean null differences
+selectivity_plotdata_RNI$Country_GADM <- factor(selectivity_plotdata_RNI$Country_GADM, 
+                                             levels = levels)
+
+# make selectivity data
+selectivity_plotdata_RNI <- selectivity_plotdata_RNI %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0_mean, all_nutrient_mean_deviation) %>% 
+  unique() %>% na.omit() %>% 
+  mutate(nutrient_selectivity_globalmean = nutrient_selectivity_GID0_mean*100, 
+         nutrient_selectivity_GID0 = all_nutrient_mean_deviation*100) %>% 
+  filter(nutrient != 'biomass_index_wide')
+
+# change factor labels
+selectivity_plotdata_RNI <- selectivity_plotdata_RNI %>% 
+  mutate(nutrient = as.character(factor(.$nutrient, labels = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'))))
+
+
+# make selectivity plot
+selectivity_plot_RNI <- ggplot(data = selectivity_plotdata_RNI) + 
+  geom_hline(aes(yintercept = 0), lty = 2) + 
+  geom_violin(aes(x = nutrient, y = nutrient_selectivity_GID0, fill = nutrient),  
+              draw_quantiles = c(0.25,0.75), alpha = 1) +
+  geom_point(aes(x = nutrient, y = nutrient_selectivity_GID0), pch = 1, col = 'black', position = position_jitter(width = 0.05, height = 0)) + 
+  geom_violin(aes(x = nutrient, y = nutrient_selectivity_GID0, group = nutrient), 
+              col = 'black',fill = 'transparent', draw_quantiles = c(0.5)) + 
+  theme_bw() + 
+  theme(strip.text = element_blank(), 
+        panel.grid = element_blank(), 
+        legend.position = 'none', 
+        plot.margin = margin(5,5,5,10)) + 
+  scale_colour_manual(breaks = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'), 
+                      values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_fill_manual(breaks = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  xlab(NULL) + 
+  ylab('RNI nutrient selectivity (%)')# + 
+ # scale_y_continuous(breaks = seq(-30, 90, 30), limits = c(-30, 90))
+
+
+# print for markdown
+selectivity_plot_RNI
+```
+
+
+```{r, echo = F, results='hide'}
+# save as output
+png(filename = 'figures-final-v4/05-nutrient-simulation/RDA-nutrient-selectivity-v2.png', 
+    width = 1000, height = 1500, res = 300)
+selectivity_plot_RNI
+dev.off()
+```
+
+
+
+## Selectivity for micronutrient mass
+
+```{r}
+
+# join in the country names with gids
+selectivity_plotdata_MASS <- left_join(nutrient_sim_all_MASS, social %>% dplyr::select(GID_0, Country_GADM))
+
+# estimate averages across all nutrients for ordering
+selectivity_plotdata_MASS <- selectivity_plotdata_MASS %>% 
+  group_by(GID_0, nutrient) %>% 
+  do(all_nutrient_mean_deviation = mean(.$nutrient_selectivity, na.rm = T)) %>% 
+  unnest(all_nutrient_mean_deviation) %>% 
+  left_join(selectivity_plotdata_MASS, .) %>% 
+  ungroup() %>% 
+  group_by(nutrient) %>% 
+  nest() %>% 
+  mutate(nutrient_selectivity_GID0_mean = purrr::map(data, ~mean(.$nutrient_selectivity, na.rm = T))) %>% 
+  unnest(nutrient_selectivity_GID0_mean) %>% 
+  unnest(data)
+  
+# set levels
+levels <- unique(selectivity_plotdata_MASS$Country_GADM[order(selectivity_plotdata_MASS$all_nutrient_mean_deviation)])
+
+# set levels of the countries by the mean null differences
+selectivity_plotdata_MASS$Country_GADM <- factor(selectivity_plotdata_MASS$Country_GADM, 
+                                             levels = levels)
+
+# make selectivity data
+selectivity_plotdata_MASS <- selectivity_plotdata_MASS %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0_mean, all_nutrient_mean_deviation) %>% 
+  unique() %>% na.omit() %>% 
+  mutate(nutrient_selectivity_globalmean = nutrient_selectivity_GID0_mean*100, 
+         nutrient_selectivity_GID0 = all_nutrient_mean_deviation*100) %>% 
+  filter(nutrient != 'biomass_index_wide')
+
+# change labels
+selectivity_plotdata_MASS <- selectivity_plotdata_MASS %>% 
+  mutate(nutrient = as.character(factor(.$nutrient, labels = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'))))
+
+
+# country point plots
+selectivity_plot_MASS <- ggplot(data = selectivity_plotdata_MASS) + 
+  geom_hline(aes(yintercept = 0), lty = 2) + 
+  geom_violin(aes(x = nutrient, y = nutrient_selectivity_GID0, fill = nutrient),  
+              draw_quantiles = c(0.25,0.75), alpha = 1) +
+  geom_point(aes(x = nutrient, y = nutrient_selectivity_GID0), 
+             pch = 1, col = 'black', position = position_jitter(width = 0.05, height = 0)) + 
+  geom_violin(aes(x = nutrient, y = nutrient_selectivity_GID0, group = nutrient), 
+              col = 'black',fill = 'transparent', draw_quantiles = c(0.5)) + 
+  theme_bw() + 
+  theme(strip.text = element_blank(), 
+        panel.grid = element_blank(), 
+        legend.position = 'none', 
+        plot.margin = margin(5,5,5,10)) + 
+  scale_colour_manual(breaks = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'), 
+                      values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_fill_manual(breaks = c('Calcium', 'Iron', 'Vitamin A', 'Zinc'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  xlab(NULL) + 
+  ylab('Yield nutrient selectivity (%)') + 
+  scale_y_continuous(breaks = seq(-30, 90, 30), limits = c(-30, 90))
+
+# print for markdown
+selectivity_plot_MASS
+
+```
+
+
+```{r, echo = F, results='hide'}
+png(filename = 'figures-final-v4/05-nutrient-simulation/MASS-nutrient-selectivity-v2.png', 
+    width = 1000, height = 1500, res = 300)
+selectivity_plot_MASS
+dev.off()
+```
+
+
+
+# Summarise values for text
+
+## Range of selectivity values for micronutrient RNI
+
+```{r}
+
+# get country values for selectivity based on micronutrient RNI
+selectivity_country_RNI <- nutrient_sim_all_plot_RNI %>% 
+    na.omit() %>% 
+    group_by(nutrient, GID_0) %>% 
+    dplyr::select(nutrient, GID_0, nutrient_selectivity) %>% 
+    do(mean_sel = mean(.$nutrient_selectivity, na.rm = T)*100) %>%
+    unnest() 
+
+# get country values for selectivity based on micronutrient RNI
+selectivity_country_MASS <- nutrient_sim_all_plot_MASS %>% 
+    na.omit() %>% 
+    group_by(nutrient, GID_0) %>% 
+    dplyr::select(nutrient, GID_0, nutrient_selectivity) %>% 
+    do(mean_sel = mean(.$nutrient_selectivity, na.rm = T)*100) %>%
+    unnest() 
+
+```
+
+Text in manuscript:
+> Although selectivity was low in general, we found substantial variation between countries, ranging from `r round(min(selectivity_country_RNI$mean_sel, na.rm = T))`% to `r round(max(selectivity_country_RNI$mean_sel, na.rm = T))`% for micronutrient RNI and from `r round(min(selectivity_country_MASS$mean_sel, na.rm = T))`% to `r round(max(selectivity_country_MASS$mean_sel, na.rm = T))`% for micronutrient mass (Figure 3, Table 1). 
+
+
+
+## Create excel tables with example countries that are outliers for selectivity
+
+```{r}
+
+### extract RNI selectivity values for countries of interest
+RNI_selectivity_outliers <- bind_rows(
+  # get the high outliers
+  selectivity_plotdata_RNI %>% 
+  group_by(nutrient) %>% 
+  filter(nutrient_selectivity_GID0 > quantile(nutrient_selectivity_GID0, 0.9, na.rm = T)), 
+  # get the low outliers
+  selectivity_plotdata_RNI %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_selectivity_GID0 < quantile(nutrient_selectivity_GID0, 0.1, na.rm = T))) %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0) %>% 
+  arrange(Country_GADM)
+
+write.csv(RNI_selectivity_outliers, 'figures-final-v4/05-nutrient-simulation/RNI-selectivity-outliers.csv')
+
+
+### extract MASS selectivity values for countries of interest
+MASS_selectivity_outliers <- bind_rows(
+  # get the high outliers
+  selectivity_plotdata_MASS %>% 
+  group_by(nutrient) %>% 
+  filter(nutrient_selectivity_GID0 > quantile(nutrient_selectivity_GID0, 0.9, na.rm = T)), 
+  # get the low outliers
+  selectivity_plotdata_MASS %>% 
+    group_by(nutrient) %>% 
+    filter(nutrient_selectivity_GID0 < quantile(nutrient_selectivity_GID0, 0.1, na.rm = T))) %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0) %>% 
+  arrange(Country_GADM)
+
+write.csv(MASS_selectivity_outliers, 'figures-final-v4/05-nutrient-simulation/MASS-selectivity-outliers.csv')
+
+```
+
+
+# Trade offs in selectivity
+
+## Trades offs for micronutrient RNI selectivity
+
+```{r}
+selectivity_tradeoff_RNI <- selectivity_plotdata_RNI %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0) %>% 
+  
+  # get mean selectivity per country
+  group_by(Country_GADM) %>% 
+  nest() %>% 
+  mutate(mean_selectivity = purrr::map(data, ~mean(.$nutrient_selectivity_GID0, na.rm = T))) %>% 
+  unnest() %>% 
+  
+  # get difference between nutrient and selectivity
+  mutate(selectivity_difference =  .$nutrient_selectivity_GID0 - .$mean_selectivity) %>% 
+  unnest() %>% 
+  
+  # estimate the variation in selectivity as the trade off
+  group_by(Country_GADM) %>% 
+  nest() %>% 
+  mutate(selectivity_difference_sd = purrr::map(data, ~sd(.$selectivity_difference, na.rm = T))) %>% 
+  unnest() %>% 
+  ungroup()
+
+# order countries by variation in selectivity differences
+selectivity_tradeoff_RNI <- left_join(selectivity_tradeoff_RNI, 
+                                      reef_associated_nations %>%
+                                        dplyr::select(Country_GADM, un.region.name))
+
+# set factor levels to the magintude of the trade-off
+selectivity_tradeoff_RNI$Country_GADM <- factor(selectivity_tradeoff_RNI$Country_GADM,
+                                            levels = unique(
+                                              selectivity_tradeoff_RNI$Country_GADM[order(
+                                                selectivity_tradeoff_RNI$selectivity_difference_sd
+                                                )]))
+
+# join with regions as above
+
+selectivity_tradeoff_plot_RNI <- ggplot(data = selectivity_tradeoff_RNI) + 
+  geom_tile(aes(x = nutrient, y = Country_GADM, fill = selectivity_difference)) + 
+  geom_text(aes(x = nutrient, y = Country_GADM, label = round(nutrient_selectivity_GID0))) + 
+  scale_fill_gradientn(colours = c('#00D1CD', '#00D1CD', 'white', '#ff8a00', '#ff8a00'), 
+                       limits = c(-abs(max(selectivity_tradeoff_RNI$selectivity_difference)), 
+                                  abs(max(selectivity_tradeoff_RNI$selectivity_difference))), 
+                       name = 'selectivity difference') + 
+  facet_grid(un.region.name~., scales = "free", space = 'free') + 
+  theme_bw() + 
+  theme(#strip.text = element_blank(), 
+    panel.grid = element_blank(), 
+    legend.position = 'none', 
+    plot.margin = margin(5,5,5,10),
+    panel.background = element_blank(), 
+    plot.background = element_blank(), 
+    #panel.border = element_blank(), 
+    axis.line.x = element_line(), 
+    axis.ticks.y = element_blank()) +
+  xlab(NULL) + 
+  ylab(NULL) + 
+  theme(panel.grid = element_blank())
+
+# print for markdown document
+selectivity_tradeoff_plot_RNI
+```
+
+
+```{r, results = 'hide', echo = F}
+png('figures-final-v4/05-nutrient-simulation/RDA-selectivity-trade-off.png', res = 300, width = 2000*0.8, height = 3000)
+selectivity_tradeoff_plot_RNI
+dev.off()
+
+```
+
+
+
+
+## Trades offs for micronutrient MASS selectivity
+
+
+```{r}
+selectivity_tradeoff_MASS <- selectivity_plotdata_MASS %>% 
+  dplyr::select(Country_GADM, nutrient, nutrient_selectivity_GID0) %>% 
+  
+  # get mean selectivity per country
+  group_by(Country_GADM) %>% 
+  nest() %>% 
+  mutate(mean_selectivity = purrr::map(data, ~mean(.$nutrient_selectivity_GID0, na.rm = T))) %>% 
+  unnest() %>% 
+  
+  # get difference between nutrient and selectivity
+  mutate(selectivity_difference =  .$nutrient_selectivity_GID0 - .$mean_selectivity) %>% 
+  unnest() %>% 
+  
+  # estimate the variation in selectivity as the trade off
+  group_by(Country_GADM) %>% 
+  nest() %>% 
+  mutate(selectivity_difference_sd = purrr::map(data, ~sd(.$selectivity_difference, na.rm = T))) %>% 
+  unnest() %>% 
+  ungroup()
+
+# order countries by variation in selectivity differences
+selectivity_tradeoff_MASS <- left_join(selectivity_tradeoff_MASS, 
+                                      reef_associated_nations %>%
+                                        dplyr::select(Country_GADM, un.region.name))
+
+# set factor levels to the magintude of the trade-off
+selectivity_tradeoff_MASS$Country_GADM <- factor(selectivity_tradeoff_MASS$Country_GADM,
+                                            levels = unique(
+                                              selectivity_tradeoff_MASS$Country_GADM[order(
+                                                selectivity_tradeoff_MASS$selectivity_difference_sd
+                                                )]))
+
+# join with regions as above
+
+selectivity_tradeoff_plot_MASS <- ggplot(data = selectivity_tradeoff_MASS) + 
+  geom_tile(aes(x = nutrient, y = Country_GADM, fill = selectivity_difference)) + 
+  geom_text(aes(x = nutrient, y = Country_GADM, label = round(nutrient_selectivity_GID0))) + 
+  scale_fill_gradientn(colours = c('#00D1CD', '#00D1CD', 'white', '#ff8a00', '#ff8a00'), 
+                       limits = c(-abs(max(selectivity_tradeoff_MASS$selectivity_difference)), 
+                                  abs(max(selectivity_tradeoff_MASS$selectivity_difference))), 
+                       name = 'selectivity difference') + 
+  facet_grid(un.region.name~., scales = "free", space = 'free') + 
+  theme_bw() + 
+  theme(#strip.text = element_blank(), 
+    panel.grid = element_blank(), 
+    legend.position = 'none', 
+    plot.margin = margin(5,5,5,10),
+    panel.background = element_blank(), 
+    plot.background = element_blank(), 
+    #panel.border = element_blank(), 
+    axis.line.x = element_line(), 
+    axis.ticks.y = element_blank()) +
+  xlab(NULL) + 
+  ylab(NULL) + 
+  theme(panel.grid = element_blank())
+
+# print for markdown document
+selectivity_tradeoff_plot_MASS
+```
+
+
+```{r, results = 'hide', echo = F}
+
+png('figures-final-v4/05-nutrient-simulation/MASS-selectivity-trade-off.png', res = 300, width = 2000*0.8, height = 3000)
+selectivity_tradeoff_plot_MASS
+dev.off()
+
+```
+
+
+# Assess trade-off in RNI when optimising for biomass and vice-versa
+
+```{r}
+
+png(filename = 'figures-final-v4/05-nutrient-simulation/RDA-optimize-biomass-difference.png', 
+        width = 1500, height = 1500, res = 300, bg = 'transparent')
+ggplot(data = nutrient_sim_all_plot_RNI %>% 
+         dplyr::select(Country_GADM, max_nutrient, nutrient_trueFished_raw, nutrient, biomass_trueFished_raw, biomass_nutrient_optimal) %>% 
+         unique() %>% 
+         na.omit()) + 
+  geom_abline(lty = 2) + 
+  geom_point(aes(x = exp(biomass_trueFished_raw), y = exp(biomass_nutrient_optimal), fill = nutrient), 
+             pch = 21, size = 2) + 
+  stat_smooth(aes(x = exp(biomass_trueFished_raw), y = exp(biomass_nutrient_optimal), fill = nutrient), 
+              col = 'black',size = 0.5, method = lm) + 
+  scale_fill_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                      values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_colour_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  facet_wrap(~nutrient) + 
+  scale_x_log10(limits = c(1,10000), breaks = c(1,10,100,1000,10000)) + 
+  scale_y_log10(limits = c(1,10000), breaks = c(1,10,100,1000,10000)) + 
+  theme_bw() + 
+  theme(strip.text = element_blank(), 
+        panel.grid = element_blank(), 
+        axis.text.x = element_text(angle = 45, hjust = 1, margin = margin(t = 0, r = 10, b = 0, l = 10, unit = "pt")), 
+        legend.position = 'none', 
+        plot.margin = margin(5,5,5,10)) + 
+  xlab('biomass \n (current fishing practice)') + 
+  ylab('biomass \n (nutrient RNI optimised fishing)')
+dev.off()
+
+png(filename = 'figures-final-v4/05-nutrient-simulation/MASS-optimize-biomass-difference.png', 
+        width = 1500, height = 1500, res = 300, bg = 'transparent')
+ggplot(data = nutrient_sim_all_plot_MASS %>% 
+         dplyr::select(Country_GADM, max_nutrient, nutrient_trueFished_raw, nutrient, biomass_trueFished_raw, biomass_nutrient_optimal) %>% 
+         unique() %>% 
+         na.omit()) + 
+  geom_abline(lty = 2) + 
+  geom_point(aes(x = exp(biomass_trueFished_raw), y = exp(biomass_nutrient_optimal), fill = nutrient), 
+             pch = 21, size = 2) + 
+  stat_smooth(aes(x = exp(biomass_trueFished_raw), y = exp(biomass_nutrient_optimal), fill = nutrient), 
+              col = 'black',size = 0.5, method = lm) + 
+  scale_fill_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                      values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_colour_manual(breaks = c('calcium_wide', 'iron_wide', 'vitamina_wide', 'zinc_wide'), 
+                    values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  facet_wrap(~nutrient) + 
+  scale_x_log10(limits = c(1,10000), breaks = c(1,10,100,1000,10000)) + 
+  scale_y_log10(limits = c(1,10000), breaks = c(1,10,100,1000,10000)) + 
+  theme_bw() + 
+  theme(strip.text = element_blank(), 
+        panel.grid = element_blank(), 
+        axis.text.x = element_text(angle = 45, hjust = 1, margin = margin(t = 0, r = 10, b = 0, l = 10, unit = "pt")), 
+        legend.position = 'none', 
+        plot.margin = margin(5,5,5,10)) + 
+  xlab('biomass \n (current fishing practice)') + 
+  ylab('biomass \n (nutrient MASS optimised fishing)')
+dev.off()
+
+```
+
+

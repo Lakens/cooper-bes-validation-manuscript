@@ -1,0 +1,528 @@
+Repo root: C:/Users/dlakens/OneDrive - TU Eindhoven/git_repos/cooper-bes-validation-manuscript
+metacheck version: 0.3.1
+metacheck cache dir: C:/Users/dlakens/OneDrive - TU Eindhoven/git_repos/cooper-bes-validation-manuscript/manuscript
+Installing scienceverse/metacheck@dev from GitHub...
+Using github PAT from envvar GITHUB_PAT. Use `gitcreds::gitcreds_set()` and unset GITHUB_PAT in .Renviron (or elsewhere) if you want to use the more secure git credential store instead.
+Downloading GitHub repo scienceverse/metacheck@dev
+── R CMD build ─────────────────────────────────────────────────────────────────
+* checking for file 'C:\Users\dlakens\AppData\Local\Temp\Rtmpm2qK34\remotes1bf0f96441e\scienceverse-metacheck-f080541/DESCRIPTION' ... OK
+* preparing 'metacheck':
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files and shell scripts
+* checking for empty or unneeded directories
+* building 'metacheck_0.3.1.tar.gz'
+
+Installing package into 'C:/Users/dlakens/AppData/Local/R/win-library/4.5'
+(as 'lib' is unspecified)
+* installing *source* package 'metacheck' ...
+** this is package 'metacheck' version '0.3.1'
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (metacheck)
+Loading corpus from: C:/Users/dlakens/OneDrive - TU Eindhoven/git_repos/cooper-bes-validation-manuscript/manuscript/data/bes.rds
+Detected dedicated reproducibility_check module. Running it up to 5 papers at a time (checkpointed in batches of 5) (execute = TRUE: code will actually run).
+[2026-09-20 20:12:13] Processing 1861 papers in 373 batch(es) of up to 5 papers each (up to 5 worker(s) concurrently).
+[2026-09-20 20:12:13] Batch 1/373 (papers 1-5): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12006' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12012' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12014' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12016' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12022' (4 already running)
+[repro]   <- '10_1002_2688_8319_12016' done (1/5)
+[repro]   <- '10_1002_2688_8319_12014' done (2/5)
+[repro]   <- '10_1002_2688_8319_12022' done (3/5)
+[repro]   <- '10_1002_2688_8319_12012' done (4/5)
+[repro]   <- '10_1002_2688_8319_12006' done (5/5)
+[2026-09-20 20:12:26] Batch 1/373 done.
+[2026-09-20 20:12:26] Batch 2/373 (papers 6-10): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12029' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12044' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12064' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12070' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12078' (4 already running)
+[repro]   <- '10_1002_2688_8319_12070' done (1/5)
+[repro]   <- '10_1002_2688_8319_12078' done (2/5)
+[repro]   <- '10_1002_2688_8319_12044' done (3/5)
+[repro]   <- '10_1002_2688_8319_12064' done (4/5)
+[repro]   <- '10_1002_2688_8319_12029' done (5/5)
+[2026-09-20 20:12:52] Batch 2/373 done.
+[2026-09-20 20:12:52] Batch 3/373 (papers 11-15): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12080' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12083' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12094' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12100' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12101' (4 already running)
+[repro]   <- '10_1002_2688_8319_12094' done (1/5)
+[repro]   <- '10_1002_2688_8319_12080' done (2/5)
+[repro]   <- '10_1002_2688_8319_12101' done (3/5)
+[repro]   <- '10_1002_2688_8319_12083' done (4/5)
+[repro]   <- '10_1002_2688_8319_12100' done (5/5)
+[2026-09-20 20:13:37] Batch 3/373 done.
+[2026-09-20 20:13:37] Batch 4/373 (papers 16-20): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12107' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12118' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12123' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12124' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12126' (4 already running)
+[repro]   <- '10_1002_2688_8319_12118' done (1/5)
+[repro]   <- '10_1002_2688_8319_12126' done (2/5)
+[repro]   <- '10_1002_2688_8319_12123' done (3/5)
+[repro]   <- '10_1002_2688_8319_12107' done (4/5)
+[repro]   <- '10_1002_2688_8319_12124' done (5/5)
+[2026-09-20 20:20:27] Batch 4/373 done.
+[2026-09-20 20:20:27] Batch 5/373 (papers 21-25): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12128' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12138' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12139' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12149' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12156' (4 already running)
+[repro]   <- '10_1002_2688_8319_12156' done (1/5)
+[repro]   <- '10_1002_2688_8319_12149' done (2/5)
+[repro]   <- '10_1002_2688_8319_12138' done (3/5)
+[repro]   <- '10_1002_2688_8319_12128' done (4/5)
+[repro]   <- '10_1002_2688_8319_12139' done (5/5)
+[2026-09-20 20:21:12] Batch 5/373 done.
+[2026-09-20 20:21:12] Batch 6/373 (papers 26-30): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12159' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12160' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12165' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12171' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12185' (4 already running)
+[repro]   <- '10_1002_2688_8319_12159' done (1/5)
+[repro]   <- '10_1002_2688_8319_12160' done (2/5)
+[repro]   <- '10_1002_2688_8319_12165' done (3/5)
+[repro]   <- '10_1002_2688_8319_12171' done (4/5)
+[repro]   <- '10_1002_2688_8319_12185' done (5/5)
+[2026-09-20 20:23:39] Batch 6/373 done.
+[2026-09-20 20:23:39] Batch 7/373 (papers 31-35): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12191' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12194' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12208' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12229' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12241' (4 already running)
+[repro]   <- '10_1002_2688_8319_12191' done (1/5)
+[repro]   <- '10_1002_2688_8319_12194' done (2/5)
+[repro]   <- '10_1002_2688_8319_12241' done (3/5)
+[repro]   <- '10_1002_2688_8319_12208' done (4/5)
+[repro]   <- '10_1002_2688_8319_12229' done (5/5)
+[2026-09-20 20:28:25] Batch 7/373 done.
+[2026-09-20 20:28:25] Batch 8/373 (papers 36-40): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12250' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12251' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12270' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12277' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12280' (4 already running)
+[repro]   <- '10_1002_2688_8319_12270' done (1/5)
+[repro]   <- '10_1002_2688_8319_12280' done (2/5)
+[repro]   <- '10_1002_2688_8319_12251' done (3/5)
+[repro]   <- '10_1002_2688_8319_12250' done (4/5)
+[repro]   <- '10_1002_2688_8319_12277' done (5/5)
+[2026-09-20 20:28:53] Batch 8/373 done.
+[2026-09-20 20:28:53] Batch 9/373 (papers 41-45): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12288' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12302' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12305' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12307' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12310' (4 already running)
+[repro]   <- '10_1002_2688_8319_12288' done (1/5)
+[repro]   <- '10_1002_2688_8319_12310' done (2/5)
+[repro]   <- '10_1002_2688_8319_12307' done (3/5)
+[repro]   <- '10_1002_2688_8319_12305' done (4/5)
+[repro]   <- '10_1002_2688_8319_12302' done (5/5)
+[2026-09-20 20:30:06] Batch 9/373 done.
+[2026-09-20 20:30:06] Batch 10/373 (papers 46-50): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12312' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12315' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12316' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12320' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12342' (4 already running)
+[repro]   <- '10_1002_2688_8319_12315' done (1/5)
+[repro]   <- '10_1002_2688_8319_12342' done (2/5)
+[repro]   <- '10_1002_2688_8319_12320' done (3/5)
+[repro]   <- '10_1002_2688_8319_12312' done (4/5)
+[repro]   <- '10_1002_2688_8319_12316' done (5/5)
+[2026-09-20 20:31:27] Batch 10/373 done.
+[2026-09-20 20:31:27] Batch 11/373 (papers 51-55): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12343' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12348' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12356' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12372' (3 already running)
+[repro]   -> starting '10_1002_2688_8319_12386' (4 already running)
+[repro]   <- '10_1002_2688_8319_12372' done (1/5)
+[repro]   <- '10_1002_2688_8319_12348' done (2/5)
+[repro]   <- '10_1002_2688_8319_12343' done (3/5)
+[repro]   <- '10_1002_2688_8319_12386' done (4/5)
+[repro]   <- '10_1002_2688_8319_12356' done (5/5)
+[2026-09-20 20:32:32] Batch 11/373 done.
+[2026-09-20 20:32:32] Batch 12/373 (papers 56-60): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_2688_8319_12389' (0 already running)
+[repro]   -> starting '10_1002_2688_8319_12393' (1 already running)
+[repro]   -> starting '10_1002_2688_8319_12402' (2 already running)
+[repro]   -> starting '10_1002_2688_8319_12405' (3 already running)
+[repro]   -> starting '10_1002_pan3_10042' (4 already running)
+[repro]   <- '10_1002_2688_8319_12389' done (1/5)
+[repro]   <- '10_1002_2688_8319_12405' done (2/5)
+[repro]   <- '10_1002_2688_8319_12393' done (3/5)
+[repro]   <- '10_1002_pan3_10042' done (4/5)
+[repro]   <- '10_1002_2688_8319_12402' done (5/5)
+[2026-09-20 20:40:38] Batch 12/373 done.
+[2026-09-20 20:40:38] Batch 13/373 (papers 61-65): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10053' (0 already running)
+[repro]   -> starting '10_1002_pan3_10055' (1 already running)
+[repro]   -> starting '10_1002_pan3_10056' (2 already running)
+[repro]   -> starting '10_1002_pan3_10071' (3 already running)
+[repro]   -> starting '10_1002_pan3_10073' (4 already running)
+[repro]   <- '10_1002_pan3_10055' done (1/5)
+[repro]   <- '10_1002_pan3_10073' done (2/5)
+[repro]   <- '10_1002_pan3_10056' done (3/5)
+[repro]   <- '10_1002_pan3_10053' done (4/5)
+[repro]   <- '10_1002_pan3_10071' done (5/5)
+[2026-09-20 20:42:10] Batch 13/373 done.
+[2026-09-20 20:42:10] Batch 14/373 (papers 66-70): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10075' (0 already running)
+[repro]   -> starting '10_1002_pan3_10076' (1 already running)
+[repro]   -> starting '10_1002_pan3_10084' (2 already running)
+[repro]   -> starting '10_1002_pan3_10094' (3 already running)
+[repro]   -> starting '10_1002_pan3_10117' (4 already running)
+[repro]   <- '10_1002_pan3_10075' done (1/5)
+[repro]   <- '10_1002_pan3_10076' done (2/5)
+[repro]   <- '10_1002_pan3_10117' done (3/5)
+[repro]   <- '10_1002_pan3_10094' done (4/5)
+[repro]   <- '10_1002_pan3_10084' done (5/5)
+[2026-09-20 20:42:30] Batch 14/373 done.
+[2026-09-20 20:42:30] Batch 15/373 (papers 71-75): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10121' (0 already running)
+[repro]   -> starting '10_1002_pan3_10130' (1 already running)
+[repro]   -> starting '10_1002_pan3_10133' (2 already running)
+[repro]   -> starting '10_1002_pan3_10148' (3 already running)
+[repro]   -> starting '10_1002_pan3_10149' (4 already running)
+[repro]   <- '10_1002_pan3_10149' done (1/5)
+[repro]   <- '10_1002_pan3_10121' done (2/5)
+[repro]   <- '10_1002_pan3_10148' done (3/5)
+[repro]   <- '10_1002_pan3_10133' done (4/5)
+[repro]   <- '10_1002_pan3_10130' done (5/5)
+[2026-09-20 20:42:50] Batch 15/373 done.
+[2026-09-20 20:42:50] Batch 16/373 (papers 76-80): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10154' (0 already running)
+[repro]   -> starting '10_1002_pan3_10158' (1 already running)
+[repro]   -> starting '10_1002_pan3_10170' (2 already running)
+[repro]   -> starting '10_1002_pan3_10183' (3 already running)
+[repro]   -> starting '10_1002_pan3_10185' (4 already running)
+[repro]   <- '10_1002_pan3_10170' done (1/5)
+[repro]   <- '10_1002_pan3_10185' done (2/5)
+[repro]   <- '10_1002_pan3_10154' done (3/5)
+[repro]   <- '10_1002_pan3_10158' done (4/5)
+[repro]   <- '10_1002_pan3_10183' done (5/5)
+[2026-09-20 20:43:05] Batch 16/373 done.
+[2026-09-20 20:43:05] Batch 17/373 (papers 81-85): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10187' (0 already running)
+[repro]   -> starting '10_1002_pan3_10190' (1 already running)
+[repro]   -> starting '10_1002_pan3_10196' (2 already running)
+[repro]   -> starting '10_1002_pan3_10200' (3 already running)
+[repro]   -> starting '10_1002_pan3_10216' (4 already running)
+[repro]   <- '10_1002_pan3_10187' done (1/5)
+[repro]   <- '10_1002_pan3_10196' done (2/5)
+[repro]   <- '10_1002_pan3_10200' done (3/5)
+[repro]   <- '10_1002_pan3_10190' done (4/5)
+[repro]   <- '10_1002_pan3_10216' done (5/5)
+[2026-09-20 20:43:30] Batch 17/373 done.
+[2026-09-20 20:43:30] Batch 18/373 (papers 86-90): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10218' (0 already running)
+[repro]   -> starting '10_1002_pan3_10220' (1 already running)
+[repro]   -> starting '10_1002_pan3_10223' (2 already running)
+[repro]   -> starting '10_1002_pan3_10233' (3 already running)
+[repro]   -> starting '10_1002_pan3_10236' (4 already running)
+[repro]   <- '10_1002_pan3_10218' done (1/5)
+[repro]   <- '10_1002_pan3_10220' done (2/5)
+[repro]   <- '10_1002_pan3_10233' done (3/5)
+[repro]   <- '10_1002_pan3_10236' done (4/5)
+[repro]   <- '10_1002_pan3_10223' done (5/5)
+[2026-09-20 20:45:07] Batch 18/373 done.
+[2026-09-20 20:45:07] Batch 19/373 (papers 91-95): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10246' (0 already running)
+[repro]   -> starting '10_1002_pan3_10249' (1 already running)
+[repro]   -> starting '10_1002_pan3_10252' (2 already running)
+[repro]   -> starting '10_1002_pan3_10256' (3 already running)
+[repro]   -> starting '10_1002_pan3_10257' (4 already running)
+[repro]   <- '10_1002_pan3_10249' done (1/5)
+[repro]   <- '10_1002_pan3_10252' done (2/5)
+[repro]   <- '10_1002_pan3_10257' done (3/5)
+[repro]   x  '10_1002_pan3_10246' failed: ! callr subprocess failed: could not start R, exited with non-zero status, has crashed or was killed
+[repro]   <- '10_1002_pan3_10246' done (4/5)
+[repro]   <- '10_1002_pan3_10256' done (5/5)
+[2026-09-20 20:45:35] Batch 19/373 done.
+[2026-09-20 20:45:35] Batch 20/373 (papers 96-100): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10265' (0 already running)
+[repro]   -> starting '10_1002_pan3_10289' (1 already running)
+[repro]   -> starting '10_1002_pan3_10291' (2 already running)
+[repro]   -> starting '10_1002_pan3_10294' (3 already running)
+[repro]   -> starting '10_1002_pan3_10307' (4 already running)
+[repro]   <- '10_1002_pan3_10307' done (1/5)
+[repro]   <- '10_1002_pan3_10265' done (2/5)
+[repro]   <- '10_1002_pan3_10291' done (3/5)
+[repro]   <- '10_1002_pan3_10294' done (4/5)
+[repro]   <- '10_1002_pan3_10289' done (5/5)
+[2026-09-20 20:45:58] Batch 20/373 done.
+[2026-09-20 20:45:58] Batch 21/373 (papers 101-105): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10310' (0 already running)
+[repro]   -> starting '10_1002_pan3_10322' (1 already running)
+[repro]   -> starting '10_1002_pan3_10326' (2 already running)
+[repro]   -> starting '10_1002_pan3_10333' (3 already running)
+[repro]   -> starting '10_1002_pan3_10334' (4 already running)
+[repro]   <- '10_1002_pan3_10322' done (1/5)
+[repro]   <- '10_1002_pan3_10326' done (2/5)
+[repro]   <- '10_1002_pan3_10333' done (3/5)
+[repro]   <- '10_1002_pan3_10310' done (4/5)
+[repro]   <- '10_1002_pan3_10334' done (5/5)
+[2026-09-20 20:47:20] Batch 21/373 done.
+[2026-09-20 20:47:20] Batch 22/373 (papers 106-110): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10338' (0 already running)
+[repro]   -> starting '10_1002_pan3_10372' (1 already running)
+[repro]   -> starting '10_1002_pan3_10376' (2 already running)
+[repro]   -> starting '10_1002_pan3_10386' (3 already running)
+[repro]   -> starting '10_1002_pan3_10388' (4 already running)
+[repro]   <- '10_1002_pan3_10372' done (1/5)
+[repro]   <- '10_1002_pan3_10376' done (2/5)
+[repro]   <- '10_1002_pan3_10338' done (3/5)
+[repro]   <- '10_1002_pan3_10386' done (4/5)
+[repro]   <- '10_1002_pan3_10388' done (5/5)
+[2026-09-20 20:49:03] Batch 22/373 done.
+[2026-09-20 20:49:03] Batch 23/373 (papers 111-115): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10389' (0 already running)
+[repro]   -> starting '10_1002_pan3_10400' (1 already running)
+[repro]   -> starting '10_1002_pan3_10401' (2 already running)
+[repro]   -> starting '10_1002_pan3_10402' (3 already running)
+[repro]   -> starting '10_1002_pan3_10406' (4 already running)
+[repro]   <- '10_1002_pan3_10389' done (1/5)
+[repro]   <- '10_1002_pan3_10400' done (2/5)
+[repro]   <- '10_1002_pan3_10406' done (3/5)
+[repro]   <- '10_1002_pan3_10401' done (4/5)
+[repro]   <- '10_1002_pan3_10402' done (5/5)
+[2026-09-20 20:50:27] Batch 23/373 done.
+[2026-09-20 20:50:27] Batch 24/373 (papers 116-120): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10410' (0 already running)
+[repro]   -> starting '10_1002_pan3_10428' (1 already running)
+[repro]   -> starting '10_1002_pan3_10431' (2 already running)
+[repro]   -> starting '10_1002_pan3_10433' (3 already running)
+[repro]   -> starting '10_1002_pan3_10434' (4 already running)
+[repro]   <- '10_1002_pan3_10410' done (1/5)
+[repro]   <- '10_1002_pan3_10431' done (2/5)
+[repro]   <- '10_1002_pan3_10433' done (3/5)
+[repro]   <- '10_1002_pan3_10434' done (4/5)
+[repro]   <- '10_1002_pan3_10428' done (5/5)
+[2026-09-20 20:50:44] Batch 24/373 done.
+[2026-09-20 20:50:44] Batch 25/373 (papers 121-125): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10436' (0 already running)
+[repro]   -> starting '10_1002_pan3_10452' (1 already running)
+[repro]   -> starting '10_1002_pan3_10461' (2 already running)
+[repro]   -> starting '10_1002_pan3_10466' (3 already running)
+[repro]   -> starting '10_1002_pan3_10476' (4 already running)
+[repro]   <- '10_1002_pan3_10436' done (1/5)
+[repro]   <- '10_1002_pan3_10476' done (2/5)
+[repro]   <- '10_1002_pan3_10452' done (3/5)
+[repro]   <- '10_1002_pan3_10461' done (4/5)
+[repro]   <- '10_1002_pan3_10466' done (5/5)
+[2026-09-20 21:01:19] Batch 25/373 done.
+[2026-09-20 21:01:19] Batch 26/373 (papers 126-130): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10479' (0 already running)
+[repro]   -> starting '10_1002_pan3_10491' (1 already running)
+[repro]   -> starting '10_1002_pan3_10497' (2 already running)
+[repro]   -> starting '10_1002_pan3_10499' (3 already running)
+[repro]   -> starting '10_1002_pan3_10500' (4 already running)
+[repro]   <- '10_1002_pan3_10491' done (1/5)
+[repro]   <- '10_1002_pan3_10479' done (2/5)
+[repro]   <- '10_1002_pan3_10499' done (3/5)
+[repro]   <- '10_1002_pan3_10500' done (4/5)
+[repro]   <- '10_1002_pan3_10497' done (5/5)
+[2026-09-20 21:02:02] Batch 26/373 done.
+[2026-09-20 21:02:02] Batch 27/373 (papers 131-135): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10518' (0 already running)
+[repro]   -> starting '10_1002_pan3_10527' (1 already running)
+[repro]   -> starting '10_1002_pan3_10535' (2 already running)
+[repro]   -> starting '10_1002_pan3_10536' (3 already running)
+[repro]   -> starting '10_1002_pan3_10547' (4 already running)
+[repro]   <- '10_1002_pan3_10547' done (1/5)
+[repro]   <- '10_1002_pan3_10536' done (2/5)
+[repro]   <- '10_1002_pan3_10535' done (3/5)
+[repro]   <- '10_1002_pan3_10518' done (4/5)
+[repro]   <- '10_1002_pan3_10527' done (5/5)
+[2026-09-20 21:06:12] Batch 27/373 done.
+[2026-09-20 21:06:12] Batch 28/373 (papers 136-140): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10551' (0 already running)
+[repro]   -> starting '10_1002_pan3_10561' (1 already running)
+[repro]   -> starting '10_1002_pan3_10564' (2 already running)
+[repro]   -> starting '10_1002_pan3_10571' (3 already running)
+[repro]   -> starting '10_1002_pan3_10576' (4 already running)
+[repro]   <- '10_1002_pan3_10564' done (1/5)
+[repro]   <- '10_1002_pan3_10571' done (2/5)
+[repro]   <- '10_1002_pan3_10551' done (3/5)
+[repro]   <- '10_1002_pan3_10561' done (4/5)
+[repro]   <- '10_1002_pan3_10576' done (5/5)
+[2026-09-20 21:08:01] Batch 28/373 done.
+[2026-09-20 21:08:01] Batch 29/373 (papers 141-145): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10579' (0 already running)
+[repro]   -> starting '10_1002_pan3_10582' (1 already running)
+[repro]   -> starting '10_1002_pan3_10613' (2 already running)
+[repro]   -> starting '10_1002_pan3_10618' (3 already running)
+[repro]   -> starting '10_1002_pan3_10623' (4 already running)
+[repro]   <- '10_1002_pan3_10613' done (1/5)
+[repro]   <- '10_1002_pan3_10623' done (2/5)
+[repro]   <- '10_1002_pan3_10618' done (3/5)
+[repro]   <- '10_1002_pan3_10579' done (4/5)
+[repro]   <- '10_1002_pan3_10582' done (5/5)
+[2026-09-20 21:08:14] Batch 29/373 done.
+[2026-09-20 21:08:14] Batch 30/373 (papers 146-150): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10628' (0 already running)
+[repro]   -> starting '10_1002_pan3_10640' (1 already running)
+[repro]   -> starting '10_1002_pan3_10642' (2 already running)
+[repro]   -> starting '10_1002_pan3_10648' (3 already running)
+[repro]   -> starting '10_1002_pan3_10651' (4 already running)
+[repro]   <- '10_1002_pan3_10628' done (1/5)
+[repro]   <- '10_1002_pan3_10640' done (2/5)
+[repro]   <- '10_1002_pan3_10651' done (3/5)
+[repro]   <- '10_1002_pan3_10648' done (4/5)
+[repro]   <- '10_1002_pan3_10642' done (5/5)
+[2026-09-20 21:08:28] Batch 30/373 done.
+[2026-09-20 21:08:29] Batch 31/373 (papers 151-155): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10655' (0 already running)
+[repro]   -> starting '10_1002_pan3_10656' (1 already running)
+[repro]   -> starting '10_1002_pan3_10674' (2 already running)
+[repro]   -> starting '10_1002_pan3_10677' (3 already running)
+[repro]   -> starting '10_1002_pan3_10678' (4 already running)
+[repro]   <- '10_1002_pan3_10655' done (1/5)
+[repro]   <- '10_1002_pan3_10674' done (2/5)
+[repro]   <- '10_1002_pan3_10677' done (3/5)
+[repro]   <- '10_1002_pan3_10678' done (4/5)
+[repro]   <- '10_1002_pan3_10656' done (5/5)
+[2026-09-20 21:08:44] Batch 31/373 done.
+[2026-09-20 21:08:44] Batch 32/373 (papers 156-160): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10686' (0 already running)
+[repro]   -> starting '10_1002_pan3_10687' (1 already running)
+[repro]   -> starting '10_1002_pan3_10689' (2 already running)
+[repro]   -> starting '10_1002_pan3_10690' (3 already running)
+[repro]   -> starting '10_1002_pan3_10701' (4 already running)
+[repro]   <- '10_1002_pan3_10690' done (1/5)
+[repro]   <- '10_1002_pan3_10689' done (2/5)
+[repro]   <- '10_1002_pan3_10686' done (3/5)
+[repro]   <- '10_1002_pan3_10701' done (4/5)
+[repro]   <- '10_1002_pan3_10687' done (5/5)
+[2026-09-20 21:08:56] Batch 32/373 done.
+[2026-09-20 21:08:56] Batch 33/373 (papers 161-165): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10711' (0 already running)
+[repro]   -> starting '10_1002_pan3_10718' (1 already running)
+[repro]   -> starting '10_1002_pan3_10727' (2 already running)
+[repro]   -> starting '10_1002_pan3_10728' (3 already running)
+[repro]   -> starting '10_1002_pan3_10730' (4 already running)
+[repro]   <- '10_1002_pan3_10711' done (1/5)
+[repro]   <- '10_1002_pan3_10728' done (2/5)
+[repro]   <- '10_1002_pan3_10718' done (3/5)
+[repro]   <- '10_1002_pan3_10727' done (4/5)
+[repro]   <- '10_1002_pan3_10730' done (5/5)
+[2026-09-20 21:09:05] Batch 33/373 done.
+[2026-09-20 21:09:05] Batch 34/373 (papers 166-170): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10732' (0 already running)
+[repro]   -> starting '10_1002_pan3_10736' (1 already running)
+[repro]   -> starting '10_1002_pan3_10743' (2 already running)
+[repro]   -> starting '10_1002_pan3_10745' (3 already running)
+[repro]   -> starting '10_1002_pan3_10748' (4 already running)
+[repro]   <- '10_1002_pan3_10732' done (1/5)
+[repro]   <- '10_1002_pan3_10743' done (2/5)
+[repro]   <- '10_1002_pan3_10748' done (3/5)
+[repro]   <- '10_1002_pan3_10745' done (4/5)
+[repro]   <- '10_1002_pan3_10736' done (5/5)
+[2026-09-20 21:13:47] Batch 34/373 done.
+[2026-09-20 21:13:47] Batch 35/373 (papers 171-175): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_10756' (0 already running)
+[repro]   -> starting '10_1002_pan3_10758' (1 already running)
+[repro]   -> starting '10_1002_pan3_10776' (2 already running)
+[repro]   -> starting '10_1002_pan3_14' (3 already running)
+[repro]   -> starting '10_1002_pan3_26' (4 already running)
+[repro]   <- '10_1002_pan3_10758' done (1/5)
+[repro]   <- '10_1002_pan3_14' done (2/5)
+[repro]   <- '10_1002_pan3_10756' done (3/5)
+[repro]   <- '10_1002_pan3_10776' done (4/5)
+[repro]   <- '10_1002_pan3_26' done (5/5)
+[2026-09-20 21:14:03] Batch 35/373 done.
+[2026-09-20 21:14:03] Batch 36/373 (papers 176-180): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1002_pan3_32' (0 already running)
+[repro]   -> starting '10_1002_pan3_6' (1 already running)
+[repro]   -> starting '10_1111_1365_2435_12826' (2 already running)
+[repro]   -> starting '10_1111_1365_2435_12834' (3 already running)
+[repro]   -> starting '10_1111_1365_2435_12836' (4 already running)
+[repro]   <- '10_1002_pan3_32' done (1/5)
+[repro]   <- '10_1111_1365_2435_12826' done (2/5)
+[repro]   <- '10_1002_pan3_6' done (3/5)
+[repro]   <- '10_1111_1365_2435_12834' done (4/5)
+[repro]   <- '10_1111_1365_2435_12836' done (5/5)
+[2026-09-20 21:14:14] Batch 36/373 done.
+[2026-09-20 21:14:14] Batch 37/373 (papers 181-185): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1111_1365_2435_12853' (0 already running)
+[repro]   -> starting '10_1111_1365_2435_12859' (1 already running)
+[repro]   -> starting '10_1111_1365_2435_12861' (2 already running)
+[repro]   -> starting '10_1111_1365_2435_12867' (3 already running)
+[repro]   -> starting '10_1111_1365_2435_12870' (4 already running)
+[repro]   <- '10_1111_1365_2435_12859' done (1/5)
+[repro]   <- '10_1111_1365_2435_12867' done (2/5)
+[repro]   <- '10_1111_1365_2435_12861' done (3/5)
+[repro]   <- '10_1111_1365_2435_12853' done (4/5)
+[repro]   <- '10_1111_1365_2435_12870' done (5/5)
+[2026-09-20 21:15:01] Batch 37/373 done.
+[2026-09-20 21:15:01] Batch 38/373 (papers 186-190): running reproducibility_check on 5 paper(s), up to 5 at a time...
+[repro] running 5 papers with up to 5 at a time (4 CPU / 6GB per container) ...
+[repro]   -> starting '10_1111_1365_2435_12871' (0 already running)
+[repro]   -> starting '10_1111_1365_2435_12872' (1 already running)
+[repro]   -> starting '10_1111_1365_2435_12874' (2 already running)
+[repro]   -> starting '10_1111_1365_2435_12885' (3 already running)
+[repro]   -> starting '10_1111_1365_2435_12886' (4 already running)
+[repro]   <- '10_1111_1365_2435_12874' done (1/5)
+[repro]   <- '10_1111_1365_2435_12872' done (2/5)
+[repro]   <- '10_1111_1365_2435_12886' done (3/5)
+[repro]   <- '10_1111_1365_2435_12885' done (4/5)

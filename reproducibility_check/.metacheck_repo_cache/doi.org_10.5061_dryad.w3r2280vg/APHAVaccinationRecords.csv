@@ -1,0 +1,12 @@
+PopulationType,Year,TotalVac.Night1,UnmarkedAnimals.Night.2,MarkedAnimals.Night2,PopEst,upper_PopEst,lower_PopEst,PropVacc,UpperPropVacc,LowerPropVacc
+Post_Culled_Population,1,71,28,16,189.59,286,136,52.22,72.79,34.62
+Post_Culled_Population,2,81,30,9,327,577,203,33.94,54.68,19.24
+Unculled_Population_1,1,349,84,79,720.09,853,622,60.13,69.61,50.76
+Unculled_Population_1,2,409,182,114,1061.96,1234,926,55.65,63.82,47.89
+Unculled_Population_1,3,730,226,210,1515.62,1678,1381,63.08,69.23,56.97
+Unculled_Population_1,4,607,194,182,1254.02,1399,1136,63.87,70.51,57.26
+Unculled_Population_1,5,607,192,161,1330.88,1499,1194,60.04,66.92,53.3
+Unculled_Population_2,2,75,27,13,230.77,373,156,44.2,65.38,27.35
+Unculled_Population_2,3,145,56,38,358.68,467,287,56.04,70.03,43.04
+Unculled_Population_2,4,134,46,28,354.14,485,272,50.83,66.18,37.11
+Unculled_Population_2,5,128,31,27,274.96,373,216,57.83,73.61,42.63

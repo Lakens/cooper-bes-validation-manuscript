@@ -1,0 +1,181 @@
+---
+title: "Llgaay Gwii sdiihlda (Restoring Balance project) 2017"
+author: "Irvine, R.L. & Thorley, J.L."
+bibliography: bibliography.bib
+---
+  
+```{r, echo = FALSE, warning = FALSE, message = FALSE, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE, comment = NA, results = "asis", cache = FALSE)
+
+source("header.R")
+library(poisreport)
+
+nheaders <- 2L
+
+rename <- c(
+  "rate" = "Removal",
+  "map" = "Maps" # to avoid rendering problems!
+)
+
+sort <- c(
+  "island", "psis_table", "description", "coef", "glance", "sensitivity", "sensitivity_parameter", "sensitivity_term", "ppc", "map", 
+  "total_deer", "popn", "comp", "total_costs",  
+  "efficiency_data", "efficiency", "efficiency_facet", "efficiencyi", "efficiency_faceti", "percent_completion", "cumsum"
+)
+
+drop <- "deer"
+```
+
+```{r}
+cat(report_draft())
+```
+
+The suggested citation for this [analytic appendix](https://www.poissonconsulting.ca/analytic-appendices.html) is:
+  
+```{r}
+cat(report_citation(file_name()))
+```
+
+## Background
+
+To restore balance, a deer removal program was implemented on various islands in Gwaii Haanas.
+
+The primary goal of the current analyses is to answer the following questions:
+  
+> What was the relative efficiency of the removal methods?
+
+> What would the cost of removing the remaining deer have been?
+
+### Data Preparation
+  
+The data were provided by Parks Canada in the form of Excel spreadsheets and prepared for analysis using `r substr(R.version.string,1,15)` [@r_core_team_r_2020].
+
+### Statistical Analysis
+
+Model parameters were estimated using Bayesian methods.
+The estimates were produced using JAGS [@plummer_jags:_2003].
+For additional information on Bayesian estimation the reader is referred to @mcelreath_statistical_2020.
+
+Unless stated otherwise, the Bayesian analyses used weakly informative normal and half-normal prior distributions [@gelman_prior_2017].
+The posterior distributions were estimated from `r getOption("mb.nchains", 3L) * getOption("mb.niters", 500L) ` Markov Chain Monte Carlo (MCMC) samples thinned from the second halves of `r getOption("mb.nchains", 3L)` chains [@kery_bayesian_2011, pp. 38-40].
+Model convergence was confirmed by ensuring that the potential scale reduction factor $\hat{R} \leq `r round(getOption("mb.rhat", 1.05), 2)`$ [@kery_bayesian_2011, pp. 40] and the effective sample size [@brooks_handbook_2011] $\textrm{ESS} \geq  `r getOption("mb.nchains", 3L) * getOption("mb.niters", 500) * round(getOption("mb.esr", 0.1), 2)`$ for each of the monitored parameters [@kery_bayesian_2011, pp. 61].
+
+The parameters are summarised in terms of the point *estimate*, *lower* and *upper* 95% compatibility limits [@rafi_semantic_2020] and the surprisal *s-value* [@greenland_valid_2019].
+The estimate is the median (50th percentile) of the MCMC samples while the 95% CLs are the 2.5th and 97.5th percentiles.
+The s-value indicates how surprising it would be to discover that the true value of the parameter is in the opposite direction to the estimate [@greenland_valid_2019].
+An s-value of $>$ 4.3 bits, which is equivalent to a significant p-value $<$ 0.05 [@kery_bayesian_2011; @greenland_living_2013], indicates that the surprise would be equivalent to throwing at least 4.3 heads in a row.
+
+Model selection was based on Leave-one-out cross-validation (LOO-CV) as implemented using the Pareto-smoothed importance sampling (PSIS) algorithm [@vehtari_practical_2017]. 
+LOO-CV is asymptotically equal to the Widely Applicable Information Criterion [WAIC, @watanabe_asymptotic_2010, @watanabe_widely_2013].
+Model weight ($w_i$) was based on $\exp(-0.5 \Delta_i)$ as proposed by @akaike_likelihood_1978 for Akaike Information Criterion (AIC) and by @watanabe_asymptotic_2010 for WAIC where $\Delta_i$ is the absolute difference in the out-of-sample predictive density of the $i$th model relative to the best model [@burnham_model_2002].
+Primary explanatory variables were evaluated based on their estimated effect sizes with 95% CLs [@bradford_using_2005]
+
+Model adequacy was assessed via posterior predictive checks [@kery_bayesian_2011].
+More specifically, the proportion of zeros in the data and the first four central moments (mean, variance, skewness and kurtosis) in the deviance residuals were compared to the expected values by simulating new data based on the posterior distribution and assumed sampling distribution and calculating the deviance residuals.
+In this context each s-value indicates how surprising it would be to discover that the actual data was generated using the same distribution as the simulated data.
+
+The sensitivity of the parameters to the choice of prior distributions was evaluated by doubling the standard deviations of all the normal and half-normal priors and then using $\hat{R}$ to evaluate whether the samples were drawn from the same posterior distribution [@thorley_fishing_2017].
+
+The results are displayed graphically by plotting the modeled relationships between individual variables and the response with the remaining variables held constant.
+In general, continuous and discrete fixed variables are held constant at their mean and first level values, respectively, while random variables are held constant at their average values (expected values of the underlying hyperdistributions) [@kery_bayesian_2011, pp. 77-82].
+
+The analyses were implemented using `r substr(R.version.string,1,15)` [@r_core_team_r_2022] and the [`mbr`](https://www.poissonconsulting.ca/mbr) family of packages.
+
+### Model Descriptions
+
+#### Model
+
+The data were analysed using a power function [@ward_mechanistic_2013] for the relationship between efficiency and density
+
+$$\text{Efficiency} = \alpha \cdot {\text{Density}}^{\beta} $$
+
+
+Four models were considered which varied in whether they included variation in $\alpha$ and $\beta$ by method.
+
+Key assumptions of all the models include:
+
+- There is no migration among the islands during the course of the study.
+- The relationship between efficiency and density is described by a power function.
+- The expected number of deer removed by island, method and day is the product of the efficiency and effort.
+- The residual variation in the number deer removed by island, method and day is described by an overdispersed Poisson distribution (negative binomial).
+
+The full model (variation in $\alpha$ and $\beta$ by method = ambm) is defined algebraically as follows: 
+
+$$\text{Efficiency}_{m,i,d} = \alpha_{m} \cdot {\text{Density}_{i,d}}^{\beta_{m}} $$
+where $\text{Efficiency}_{m,i,d}$ is the efficiency of the $m$th method on the $i$th island during the $d$th day,
+$\alpha_{m}$ is the efficiency of the $m$th method at a density of 1 deer per km^2^, $\text{Density}_{i,d}$ is the deer density (deer/km^2^) on the $i$th island at the start of the $d$th day and $\beta_{m}$ is the scaling constant.
+
+The allometric coefficient and the scaling exponent in the power function are given by 
+
+$$\log(\alpha_{m}) = a_m $$
+and
+
+$$\log(\beta_{m}) = b_m$$
+
+, respectively, where $a_m$ and $b_m$ are the values by method.
+
+The expected number of deer removed using the $m$th method on the $i$th island during the $d$th day ($\mu_{m,i,d}$) is given by
+
+$$\lambda_{m,i,d} = \text{Efficiency}_{m,i,d} \cdot \text{Effort}_{m,i,d}$$
+
+where $\text{Effort}_{m,i,d}$ is the effort (heli hours) of the $m$th method on the $i$th island during the $d$th day.
+
+The actual number of deer removed using the $m$th method on the $i$th island during the $d$th day ($\mu_{m,i,d}$) is given by the relationship
+
+$$\text{Removed}_{m,i,d} \sim \text{NBinomial}(\lambda_{m,i,d}, \phi)$$
+
+The total population on each island at the start of the study was given by
+
+$$\text{Population}_{i} = \text{TotalRemoved}_i + \Psi_i$$
+
+where $\Psi_i$, which is the total number of remaining deer on the $i$th island,
+was based on the number of scent trails detected by dogs at the end of the surveys and the effective coverage of those dogs according to the relationship
+
+$$\text{ScentTrails}_i \sim \text{Binomial}(\Psi_{i},\text{Coverage}_i)$$
+
+The priors were as follows:
+
+
+$$a_m \sim \text{Normal}(1, 2)$$
+
+$$b_m \sim \text{Normal}(0, 2)$$
+$$\phi \sim \text{Normal}(0, 1)\ \text{T}(0,)$$
+
+$$\Psi_i \sim \text{Normal}(0, \text{Area}_i \cdot 5) \text{T}(0,)$$
+
+
+
+### Model Templates
+
+```{r}
+cat(sbr_blocks(sort = sort, rename = rename, nheaders = nheaders, drop = drop))
+```
+
+## Results
+
+### Tables
+
+```{r}
+cat(sbr_tables(sort = sort, rename = rename, nheaders = nheaders, drop = drop))
+```
+
+### Figures
+
+```{r}
+cat(sbr_figures(sort = sort, rename = rename, nheaders = nheaders, drop = drop))
+```
+
+## Acknowledgements
+
+The organisations and individuals whose contributions have made this analytic appendix possible include:
+  
+- Parks Canada
+  - Nadine Wilson
+  - Christine Bentley
+  - Charlotte Houston
+- Simon Fraser University
+  - Carl Schwarz
+- Poisson Consulting
+  - Sebastian Dalgarno
+
+## References

@@ -1,0 +1,672 @@
+---
+title: "01-nutrient-targetting-SAUP"
+output: html_document
+date: "2024-07-10"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Analysis 1: Summarising biomass data in SAU available for comparison with SDMs
+
+Our first analysis compares the catch tonnage in the Sea Around Us project database with the micronutrient properties from the species distribution and species biomass models. This script produces the results in section Figure 1 in the main manuscript and the summary statistics in the methods + results sections titled *Coupling known reef fish catch and micronutrient ecosystem potential*.
+
+### Read in preamble
+
+Packages:
+```{r load packages, echo = F,  results = 'hide'}
+
+my_packages <-  
+  c('tidyverse', 'plyr', 'raster', 'sp', 'sf','tmap', 'tmaptools', 'scico', 'ggExtra',
+    'factoextra', 'FactoMineR', 'corrplot', 'matrixStats', 'ggrepel', 'GGally', 'ncdf4',
+    'scales')
+not_installed <- my_packages[!(my_packages %in% installed.packages()[ , 'Package'])]   
+if(length(not_installed)) install.packages(not_installed)  
+lapply(my_packages, function(x) library(x, character.only = T))
+
+```
+
+Outputs:
+```{r}
+dir.create('figures-final-v4/03-nutrient-targetting/', recursive = T)
+```
+
+
+Pre-loaded data:
+```{r load in data}
+
+# load in preamble containing multiple datasets
+load('scripts/results-final/01-main-analysis/preamble.RData')
+
+# subset to fished and non-conservation concern species 
+fished_genus <- gsub(' ', '_', fished_list$fished_genus)
+fished_genus <- fished_genus[which(fished_genus %in% keep_species$valid_name_FishBase)]
+
+```
+
+
+Nutrient SDM model data:
+```{r load in biomass and micronutrient data}
+
+# subset to fished and non-conservation concern species 
+fished_genus <- gsub(' ', '_', fished_list$fished_genus)
+fished_genus <- fished_genus[which(fished_genus %in% keep_species$valid_name_FishBase)]
+
+# load in species x site matrix for biomass and nutrients
+biomass_index_wide      <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/biomass_index_wide.RDS')
+calcium_wide            <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/calcium_wide_MASS.RDS')
+iron_wide               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/iron_wide_MASS.RDS')
+vitamina_wide           <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/vitamina_wide_MASS.RDS')
+zinc_wide               <- readRDS('processed-models/sdm-run-june2021/final-outputs-QC2024/zinc_wide_MASS.RDS')
+
+# process nutrients to remove 0 values
+calcium_wide[calcium_wide==0]   <- NA
+iron_wide[iron_wide==0]         <- NA
+vitamina_wide[vitamina_wide==0] <- NA
+zinc_wide[zinc_wide==0]         <- NA
+
+# subset the matrix to only fished species
+biomass_index_wide <- cbind(cell = biomass_index_wide[,'cell'], biomass_index_wide[,colnames(biomass_index_wide) %in% fished_genus])
+calcium_wide       <- cbind(cell = calcium_wide[,'cell'],       calcium_wide[,colnames(calcium_wide) %in% fished_genus])
+iron_wide          <- cbind(cell = iron_wide[,'cell'],          iron_wide[,colnames(iron_wide) %in% fished_genus])
+vitamina_wide      <- cbind(cell = vitamina_wide[,'cell'],      vitamina_wide[,colnames(vitamina_wide) %in% fished_genus])
+zinc_wide          <- cbind(cell = zinc_wide[,'cell'],          zinc_wide[,colnames(zinc_wide) %in% fished_genus])
+
+# get number of species
+n_sdm <- ncol(biomass_index_wide)-1
+
+```
+
+
+> There are `r n_sdm` species used from the SDMs workflow.
+
+
+## Summarise properties of the Sea Around Us Data used 
+
+Here we compare the available sea around us data to the species that we also have species distribution models for. 
+
+### Create a dataframe of fished species 
+
+This contains data only at a species level where species are also directly consumed rather than discarded.
+
+```{r}
+
+# obtain the species that contribute the most to direct consumption reported in the SAUP
+saup_country_tonnes <- readRDS('processed-data/fisheries-data/saup_country_tonnes.RDS')
+
+# country dataframe of fished species in SAU
+saup_country_tonnes_df <- bind_rows(saup_country_tonnes) %>% 
+  filter(rank == 'species', direct_consumption == 1) %>% 
+  dplyr::rename(., ISO_3 = iso_3, valid_name_FishBase = species_corrected) %>% 
+  dplyr::select(ISO_3, valid_name_FishBase, tonnes) %>% 
+  mutate(valid_name_FishBase = gsub(' ', '_', .$valid_name_FishBase)) %>% 
+  # select only countries in our subset
+  left_join(social %>% dplyr::select(GID_0, ISO_3), .,) %>% 
+  unique() %>% 
+  na.omit()
+
+# species sum of capture in SAU
+saup_sum_tonnes <- bind_rows(saup_country_tonnes) %>% 
+  filter(rank == 'species', direct_consumption == 1) %>% 
+  group_by(species_corrected) %>% 
+  do(sum_tonnes = sum(.$tonnes, na.rm = T)) %>% 
+  ungroup() %>% 
+  unnest(cols = c(sum_tonnes)) %>% 
+  arrange(sum_tonnes, decreasing = T) %>% 
+  dplyr::rename(., 'valid_name_FishBase' = 'species_corrected') %>% 
+  mutate(valid_name_FishBase = gsub(' ', '_', .$valid_name_FishBase))
+
+# get number of species in our SAU project data
+n_sau <- n_distinct(saup_sum_tonnes$valid_name_FishBase)
+
+```
+
+> The sea around us data contains `r n_sau` species in total
+
+### How many species are caught in SAUP in our focal countries?
+
+```{r}
+
+## How many countries report our species as caught
+n_countries <- saup_country_tonnes_df %>%  
+  filter(valid_name_FishBase %in% keep_species$valid_name_FishBase, 
+         GID_0 %in% reef_associated_nations$GID_0) %>% 
+  .$GID_0 %>% 
+  n_distinct
+
+## How many species are caught in focal countries?
+SAUP_final_species <- saup_country_tonnes_df %>%  
+  filter(valid_name_FishBase %in% keep_species$valid_name_FishBase, 
+         GID_0 %in% reef_associated_nations$GID_0) %>% 
+  pull(valid_name_FishBase) %>% 
+  unique
+
+# get species in both
+n_both <- n_distinct(SAUP_final_species)
+
+```
+
+> There are `r n_both` species that have tonnage information in the SAU from our SDM analysis.
+
+### Calculate what proportion of modelled biomass is available in the focal species that are also in SAU
+
+```{r}
+
+## What is modelled biomass species also available in SAUP
+# All species
+biomass_sum_kgs <- sum(colSums(biomass_index_wide[,-1], na.rm = T)) / 1000
+# Only fished species
+fished_sum_kgs <- sum(colSums(biomass_index_wide[,colnames(biomass_index_wide) %in% SAUP_final_species], na.rm = T)) / 1000
+
+# % biomass of focal species available in both
+perc_total_biomass_in_fished <- round((fished_sum_kgs / biomass_sum_kgs)*100)
+
+```
+
+### Calculate the total number of our focal species that are reported as caught in SAU
+
+```{r}
+
+# sum of total catch for focal species in SAU
+total_tonnes <- saup_country_tonnes_df %>%  
+  filter(valid_name_FishBase %in% colnames(biomass_index_wide), 
+         valid_name_FishBase %in% keep_species$valid_name_FishBase, 
+         GID_0 %in% reef_associated_nations$GID_0) %>% 
+  do(sum_tonnes_total = sum(.$tonnes, na.rm = T)) %>% 
+  unnest() %>% 
+  .$sum_tonnes_total
+
+```
+
+
+### What % of total catch tonnage for reef associated countries is not identified to species level 
+
+```{r}
+
+# How much tonnage is reported at the species level for our focal countries
+species_level_sau_tonnes <- bind_rows(saup_country_tonnes) %>% 
+  filter(rank == 'species') %>% 
+  dplyr::rename(., ISO_3 = iso_3, valid_name_FishBase = species_corrected) %>% 
+  left_join(social %>% dplyr::select(GID_0, ISO_3), .,) %>% 
+  filter(GID_0 %in% reef_associated_nations$GID_0) %>% 
+  do(sum_tonnes = sum(.$tonnes, na.rm = T)) %>% 
+  unnest()
+species_level_sau_tonnes
+
+# How much tonnage is reported above the species level for our focal countries
+aboveSpecies_level_sau_tonnes <- bind_rows(saup_country_tonnes) %>% 
+  filter(rank != 'species') %>% 
+  dplyr::rename(., ISO_3 = iso_3, valid_name_FishBase = species_corrected) %>% 
+  left_join(social %>% dplyr::select(GID_0, ISO_3), .,) %>% 
+  filter(GID_0 %in% reef_associated_nations$GID_0) %>% 
+  do(sum_tonnes = sum(.$tonnes, na.rm = T)) %>% 
+  unnest()
+aboveSpecies_level_sau_tonnes
+
+# what percentage is not reported at species level
+percentage_tonnes_at_species_level <- round(aboveSpecies_level_sau_tonnes / (species_level_sau_tonnes + aboveSpecies_level_sau_tonnes)*100)
+
+
+```
+
+
+## Summary statistics for methods of manuscript based on above data
+
+Using the Sea Around Us reconstructed landings data for small-scale fisheries for the `r n_countries` of `r n_distinct(reef_associated_nations$GID_0)` that reported catches, we identified `r n_both` of `r n_sdm` fish species within these countries that had both SDM models and species-level catch tonnage information available for comparison to modelled regional biomass estimates. Although low in number, we expect these focal species to be important biomass sources because they comprise `r perc_total_biomass_in_fished`% of the total global biomass in our models, even though they formed only `r round((n_both/n_sdm)*100)`% of species richness. Additionally, these species totalled `r total_tonnes` million tonnes of catch for direct human consumption...
+
+As such, the reef fishes considered in our analysis form an important food, even though a high level of taxonomic uncertainty and underreporting exists in reef fish catch reporting (Derrick et al. 2023; Pauly & Zeller 2016; Zeller et al. 2015). This is also indicated in our analysis by the `r percentage_tonnes_at_species_level`% of total catch tonnage for the reef-associated countries reported above the species level. 
+
+
+# Analysis 2: Comparison of catch tonnage and micronutrient availability predicted from SDMs and SBMs
+
+Here we reproduce Figure 1 showing the relationship between catch tonnage and the predicted micronutrients. We also create the correlation values that provide insets to Figure 1. Here, the RDA values are based on species level properties but not the SDM outputs, whereas the micronutrient mass values are from our SDM and SBM modelling pipeline (i.e., local cell biomass prediction). 
+
+### Read in and pre-process nutrient data
+
+```{r}
+
+# convert name for ease of matching
+nuts$valid_name_FishBase <- gsub(' ','_',nuts$valid_name_FishBase)
+
+# select only those species in our final analysis
+nuts_2 <- nuts %>% filter(valid_name_FishBase %in% fished_genus)
+
+# convert nutrients to % RDA
+nuts_2$Calcium_mu   <- (nuts_2$Calcium_mu   / 700) * 100
+nuts_2$Iron_mu      <- (nuts_2$Iron_mu      / 7)   * 100
+nuts_2$Vitamin_A_mu <- (nuts_2$Vitamin_A_mu / 300) * 100
+nuts_2$Zinc_mu      <- (nuts_2$Zinc_mu      / 3)   * 100
+
+# join together data on tonnage and data on nutrient contents
+nuts_country_tonnes <- left_join(saup_country_tonnes_df, nuts_2) %>% 
+  filter(valid_name_FishBase %in% names(biomass_index_wide)) %>% 
+  na.omit() %>% 
+  pivot_longer(cols = Calcium_mu:Zinc_mu)
+
+```
+
+
+# Micronutrient RDA vs SAU tonnes
+### Estimate correlation between RDA and tonnage from SAU
+
+```{r}
+
+# calculate correlation per nutrient using spearmans rank
+country_RDA_tonnes_cors <- nuts_country_tonnes %>% 
+  # select only relevant countries and fishes
+  filter(GID_0 %in% reef_associated_nations$GID_0, 
+         valid_name_FishBase %in% fished_genus) %>% 
+  # group by nutrient and species
+  group_by(valid_name_FishBase, name) %>% 
+  na.omit() %>% 
+  split(., .$name) %>% 
+  lapply(., function(x){broom::tidy(cor.test(x$tonnes, 
+                                             x$value, 
+                                             method = 'spearman'))}) %>% 
+  bind_rows
+
+# print
+country_RDA_tonnes_cors
+
+# save output to excel
+writexl::write_xlsx(country_RDA_tonnes_cors,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_rda_correlations.xlsx')
+
+```
+
+
+### Estimate linear model to obtain R2 values
+
+```{r}
+
+# Estimate a linear model between the mean country values
+country_RDA_tonnes_lms <- nuts_country_tonnes %>% 
+    # select only relevant countries and fishes
+  filter(GID_0 %in% reef_associated_nations$GID_0, 
+         valid_name_FishBase %in% fished_genus) %>% 
+    # group by nutrient and species
+  group_by(valid_name_FishBase, name) %>% 
+  na.omit() %>% 
+  split(., .$name) %>% 
+  lapply(., function(x){cbind(broom::tidy(summary(lm(log10(x$tonnes+1) ~ x$value))), 
+                              broom::glance(summary(lm(log10(x$tonnes+1) ~ x$value))))}) %>% 
+  bind_rows
+
+# print
+country_RDA_tonnes_lms
+
+# save output to excel
+writexl::write_xlsx(country_RDA_tonnes_lms,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_rda_lm.xlsx')
+
+
+```
+
+
+
+### Plot RDA vs tonnes caught
+
+```{r}
+RDA_vs_tonnes <- ggplot(data = nuts_country_tonnes %>% 
+         filter(valid_name_FishBase %in% unique(keep_species$valid_name_FishBase), 
+                GID_0 %in% reef_associated_nations$GID_0)) + 
+  geom_point(aes(y = tonnes, x = value, col = name), pch = 21, alpha = 1) + 
+  stat_smooth(aes(y = tonnes, x = value, fill = name), col = 'black', alpha = 0.5, method = 'lm') + 
+  scale_colour_manual(values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_fill_manual(values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  theme_bw() +
+  facet_wrap(~name, scales = 'free', nrow = 1)  +
+  theme(strip.background = element_blank(), 
+        strip.text = element_blank(), 
+        legend.title = element_blank(), 
+        panel.grid = element_blank(), 
+        rect = element_rect(fill = "transparent"),
+        panel.background = element_rect(fill = 'transparent'),
+        aspect.ratio = 1, 
+        legend.position = 'none') + 
+  xlab('micronutrient RNI per 100g (%)') +
+  ylab('tonnes caught') + 
+  scale_y_log10(limits = c(NA, max(nuts_country_tonnes$tonnes,na.rm=T)*2), 
+                breaks = c(1, 100, 10000))
+
+# print to document
+RDA_vs_tonnes
+
+# save for editing in illustrator
+png('figures-final-v4/03-nutrient-targetting/RDA-vs-tonnes.png', res = 600, width = 5000, height = 3000, bg = 'transparent')
+RDA_vs_tonnes
+dev.off()
+
+```
+
+
+
+# Micronutrient mass vs SAU tonnes
+
+First we need to process the mass of micronutrients per country per species to then correlate with tonnage caught in SAU data.
+
+```{r}
+
+# Define a function that calculates micronutrient mass per country from the wide site-species nutrient matrix:
+# 1. nutrient SDM model frame
+# 2. biomass SBM model frame
+# 3. conversion factor to grams for each micronutrient
+# 4. Name of nutrient
+# 5. x = list of country cells for consideration and aggregation over
+
+nutrient_mass_converter <- function(nutrient_matrix, biomass_matrix, nutrient_factor, nutrient_name, x){
+  
+  # average across nutrients
+  nutrient_country_mean <- colMeans(nutrient_matrix[which(nutrient_matrix$cell %in% x),-1]*nutrient_factor, na.rm = T)
+  # exclude 0 nutrients
+  nutrient_country_mean[nutrient_country_mean==0] <- NA
+  # remove species not present
+  nutrient_country_mean <- na.omit(nutrient_country_mean)
+  # find the cumulative sum of nutrients
+
+  # sum across nutrients
+  nutrient_country_sum <- colSums(nutrient_matrix[which(nutrient_matrix$cell %in% x),-1]*nutrient_factor, na.rm = T)
+  # exclude 0 nutrients
+  nutrient_country_sum[nutrient_country_sum==0] <- NA
+  # remove species not present
+  nutrient_country_sum <- na.omit(nutrient_country_sum)
+  
+  # average across biomass
+  biomass_country_mean <- colMeans(biomass_matrix[which(biomass_matrix$cell %in% x),-1], na.rm = T)
+  # exclude 0 nutrients
+  biomass_country_mean[biomass_country_mean==0] <- NA
+  # remove species not present
+  biomass_country_mean <- na.omit(biomass_country_mean)
+  
+  # average across biomass
+  biomass_country_sum <- colSums(biomass_matrix[which(biomass_matrix$cell %in% x),-1], na.rm = T)
+  # exclude 0 nutrients
+  biomass_country_sum[biomass_country_sum==0] <- NA
+  # remove species not present
+  biomass_country_sum <- na.omit(biomass_country_sum)
+  
+  # convert into dataframe
+  nutrient_country_df <- data.frame(mean_nutrient_yield = nutrient_country_mean, 
+                                    sum_nutrient_yield = nutrient_country_sum,
+                                    mean_biomass = biomass_country_mean, 
+                                    sum_biomass  = biomass_country_sum)
+  
+  # get species names
+  nutrient_country_df$valid_name_FishBase <- rownames(nutrient_country_df)
+  # assigned fished categories
+  nutrient_country_df$fished <- ifelse(nutrient_country_df$valid_name_FishBase %in% gsub(' ', '_', fished_list$fished_genus), 'fished', 'unfished')
+  # give nutrient name
+  nutrient_country_df$nutrient = nutrient_name
+  return(nutrient_country_df)
+  
+}
+
+
+## Extract the nutrient mass per country
+# calcium
+calcium_country <- bind_rows(lapply(country_cells, function(x) nutrient_mass_converter(calcium_wide, biomass_index_wide, 0.001, 'Calcium', x = x)), .id = 'GID_0')
+
+# iron
+iron_country <- bind_rows(lapply(country_cells, function(x) nutrient_mass_converter(iron_wide, biomass_index_wide, 0.001, 'Iron', x = x)), .id = 'GID_0')
+
+# vitamin A
+vitamina_country <- bind_rows(lapply(country_cells, function(x) nutrient_mass_converter(vitamina_wide, biomass_index_wide, 0.000001, 'Vitamin A', x = x)), .id = 'GID_0')
+
+# zinc
+zinc_country <- bind_rows(lapply(country_cells, function(x) nutrient_mass_converter(zinc_wide, biomass_index_wide, 0.001, 'Zinc', x = x)), .id = 'GID_0')
+
+## head one as a example
+head(as_tibble(calcium_country))
+
+```
+
+### Process combined nutrient mass data
+```{r}
+
+# bind together all outputs at nutrient level
+all_nutrients_country <- bind_rows(calcium_country, iron_country, vitamina_country, zinc_country)
+
+# join in tonnage information for country by species
+all_nutrients_final <- left_join(all_nutrients_country, 
+                                 saup_country_tonnes_df %>% dplyr::select(-ISO_3))
+
+# select only our forcal species and focal countries
+all_nutrients_subset <- all_nutrients_final %>% 
+  filter(GID_0 %in% reef_associated_nations$GID_0, 
+         !is.na(tonnes), 
+         valid_name_FishBase %in% fished_genus)
+
+```
+
+### Calculate correlations between micronutrient mass and tonnes caught
+
+```{r}
+
+## Calculate the correlation between mean tonnage and RDA for species across alll countries. 
+country_Nmass_tonnes_cors <- all_nutrients_subset %>% 
+  group_by(valid_name_FishBase, nutrient) %>% 
+  na.omit() %>% 
+  split(., .$nutrient) %>% 
+  lapply(., function(x){broom::tidy(cor.test(x$tonnes, 
+                                             x$sum_nutrient_yield, 
+                                             method = 'spearman'))}) %>% 
+  bind_rows
+
+# print for markdown
+country_Nmass_tonnes_cors
+
+# save outputs for text in figure
+writexl::write_xlsx(country_Nmass_tonnes_cors,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_Nmass_correlations.xlsx')
+
+```
+
+### Calculate linear model between micronutrient mass and tonnes caught
+
+```{r}
+
+## Estimate a linear model between the mean country values
+country_Nmass_tonnes_lms <- all_nutrients_subset %>% 
+  group_by(valid_name_FishBase, nutrient) %>% 
+  do(mean_tonnes = .$tonnes, 
+     mean_value  = .$sum_nutrient_yield) %>% 
+  unnest() %>% 
+  na.omit() %>% 
+  split(., .$nutrient) %>% 
+  lapply(., function(x){cbind(broom::tidy(summary(lm(log10(x$mean_tonnes+1) ~ log10(x$mean_value+1)))), 
+                              broom::glance(summary(lm(log10(x$mean_tonnes+1) ~ log10(x$mean_value+1)))))}) %>% 
+  bind_rows
+
+# print for markdown
+country_Nmass_tonnes_lms
+
+
+# write to excel
+writexl::write_xlsx(country_Nmass_tonnes_lms,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_Nmass_lm.xlsx')
+
+```
+
+### Plot of nutrient mass vs. tonnes caught
+
+```{r}
+nm_vs_tonnes <- ggplot() + 
+  geom_point(data = all_nutrients_subset %>% 
+               filter(valid_name_FishBase %in% unique(keep_species$valid_name_FishBase), 
+                      GID_0 %in% unique(reef_associated_nations$GID_0)), 
+             aes(x = sum_nutrient_yield, y = tonnes, col = nutrient), 
+             pch = 21, alpha = 1) + 
+  stat_smooth(data = all_nutrients_subset %>% 
+                filter(valid_name_FishBase %in% unique(keep_species$valid_name_FishBase), 
+                       GID_0 %in% unique(reef_associated_nations$GID_0)), 
+              aes(x = sum_nutrient_yield, y = tonnes, fill = nutrient), 
+             alpha = 0.5, col = 'black', method = 'lm') + 
+  scale_colour_manual(values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  scale_fill_manual(values = c('#00D1CD', '#ff8a00', '#00ad0b', '#FF76C5')) + 
+  theme_bw() +
+  facet_wrap(~nutrient, scales = 'free', nrow = 1)  +
+  theme(strip.background = element_blank(), 
+        strip.text = element_blank(), 
+        legend.title = element_blank(), 
+        panel.grid = element_blank(), 
+        aspect.ratio = 1, 
+        legend.position = 'none') + 
+  xlab('micronutrient mass (g)') +
+  ylab('tonnes caught') + 
+  scale_y_log10(breaks = c(1, 100, 10000), 
+                limits = c(NA, max(all_nutrients_subset$tonnes,na.rm=T)*2)) +
+  scale_x_log10(breaks = c(1e-5, 1e-3, 1e-1, 10), 
+                labels = c(1e-5, 1e-3, 1e-1, 10))
+
+# plot here
+nm_vs_tonnes 
+
+png('figures-final-v4/03-nutrient-targetting/site-Nmass-vs-tonnes.png', res = 600, width = 5000, height = 3000, bg = 'transparent')
+nm_vs_tonnes
+dev.off()
+```
+
+
+
+
+# Assess correlation of tonnes caught with biomass only object
+
+### Calculate biomass per country from SBMs
+
+```{r}
+
+# biomass country summaries dataframe
+biomass_country <- bind_rows(lapply(country_cells, function(x){
+  
+  # average across biomass
+  biomass_country_mean <- colMeans(biomass_index_wide[which(biomass_index_wide$cell %in% x),-1], na.rm = T)
+  # exclude 0 nutrients
+  biomass_country_mean[biomass_country_mean==0] <- NA
+  # remove species not present
+  biomass_country_mean <- na.omit(biomass_country_mean)
+  
+  # average across biomass
+  biomass_country_sum <- colSums(biomass_index_wide[which(biomass_index_wide$cell %in% x),-1], na.rm = T)
+  # exclude 0 nutrients
+  biomass_country_sum[biomass_country_sum==0] <- NA
+  # remove species not present
+  biomass_country_sum <- na.omit(biomass_country_sum)
+  
+  # convert into dataframe
+  biomass_country_df <- data.frame(mean_biomass = biomass_country_mean, 
+                                   sum_biomass  = biomass_country_sum)
+  
+  # get species names
+  biomass_country_df$valid_name_FishBase <- rownames(biomass_country_df)
+  # assigned fished categories
+  biomass_country_df$fished <- ifelse(biomass_country_df$valid_name_FishBase %in% gsub(' ', '_', fished_list$fished_genus), 'fished', 'unfished')
+  return(biomass_country_df)
+  
+}
+), .id = 'GID_0')
+
+
+```
+
+### Link biomass data with SAU tonnes data
+
+```{r}
+
+# join in tonnage information for country by species
+biomass_yield_comparison <- left_join(biomass_country, 
+                                      saup_country_tonnes_df %>% dplyr::select(-ISO_3))
+
+# subset to the focal countries and fished species in SAUP
+biomass_yield_comparison_subset <- 
+  biomass_yield_comparison %>% 
+  filter(GID_0 %in% reef_associated_nations$GID_0, 
+         !is.na(tonnes), 
+         valid_name_FishBase %in% fished_genus)
+
+```
+
+
+### Calculate correlation between biomass and tonnage
+
+```{r}
+
+# Estimate the correlation between mean tonnage and biomass for species across all countries. 
+country_biomass_tonnes_cors <- biomass_yield_comparison_subset %>% 
+  na.omit() %>% 
+  do(broom::tidy(cor.test(.$tonnes, 
+                          .$sum_biomass, method = 'spearman')))
+
+# print for markdown document
+country_biomass_tonnes_cors
+
+# write excel
+writexl::write_xlsx(country_biomass_tonnes_cors,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_biomass_correlations.xlsx')
+
+```
+
+
+### Calculate linear model between biomass and tonnage
+
+```{r}
+
+## Estimate a linear model between the mean country values
+country_biomass_tonnes_lms <- biomass_yield_comparison_subset %>% 
+  na.omit() %>% 
+  do(tidy_lm   = broom::tidy(summary(lm(log10(.$tonnes+1) ~ log10(.$sum_biomass+1)))), 
+     glance_lm = broom::glance(summary(lm(log10(.$tonnes+1) ~ log10(.$sum_biomass+1))))) %>% 
+  unnest()
+
+# print for markdown
+country_biomass_tonnes_lms
+
+# write to excel
+writexl::write_xlsx(country_biomass_tonnes_lms,  
+                    path = 'figures-final-v4/03-nutrient-targetting/country_biomass_lm.xlsx')
+
+```
+
+
+### Make plot correlating two
+
+```{r}
+
+biomass_tonnes <- ggplot() + 
+  geom_point(data = biomass_yield_comparison_subset %>% 
+               filter(valid_name_FishBase %in% unique(keep_species$valid_name_FishBase), 
+                      GID_0 %in% unique(reef_associated_nations$GID_0)), 
+             aes(x = sum_biomass, y = tonnes), 
+             col = 'gray50', pch = 21, alpha = 1) + 
+  stat_smooth(data = biomass_yield_comparison_subset %>% 
+                filter(valid_name_FishBase %in% unique(keep_species$valid_name_FishBase), 
+                       GID_0 %in% unique(reef_associated_nations$GID_0)), 
+              aes(x = sum_biomass, y = tonnes), 
+              alpha = 0.5, col = 'black', method = 'lm') + 
+  theme_bw() +
+  theme(strip.background = element_blank(), 
+        strip.text = element_blank(), 
+        legend.title = element_blank(), 
+        panel.grid = element_blank(), 
+        aspect.ratio = 1, 
+        legend.position = 'none') + 
+  xlab('local biomass (kg)') +
+  ylab('tonnes caught') + 
+  scale_y_log10(breaks = c(1, 100, 10000), 
+                limits = c(NA, max(biomass_yield_comparison_subset$tonnes,na.rm=T)*2)) +
+  scale_x_log10(breaks = c(100000, 1000, 10), 
+                labels = c(100000, 1000, 10))
+
+biomass_tonnes
+
+
+# save as png
+png('figures-final-v4/03-nutrient-targetting/site-biomass-vs-tonnes.png', res = 600, width = 6000/3, height = 4000/3)
+biomass_tonnes
+dev.off()
+
+```
+
+

@@ -1,0 +1,27 @@
+user_code = unique numeric code identifying each survey participant
+
+square_code = unique numeric code identifying each survey location
+
+upland_rovers = boolean, is the survey location an Upland Rover square (see paper for definition)
+
+obs_date = survey date (YYYY-MM-DD)
+
+country = UK country or area in which the survey location was located
+
+home_latitude_rounded = latitude of the survey participant's home, rounded for anonymity
+
+home_longitude_rounded = longitude of the survey participant's home, rounded for anonymity
+
+square_latitude_rounded = latitude of the survey locaion, rounded for anonymity
+
+square_longitude_rounded = longitude of the survey locaion, rounded for anonymity
+
+response = boolean, did the survey participant respond to the questionnaire
+
+transport_mode = questionnaire response: mode of transport used to get to the survey location. NA if not supplied
+
+more_than_one = questionnaire response: did the participant survey more than one location on a round trip? NA if not supplied
+
+sole_purpose = questionnaire response: was the journey solely for the purpose of conducting the survey. NA if not supplied
+
+add_walk = questionnaire response: distance of additional walking to get to survey start. NA if not supplied

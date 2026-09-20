@@ -1,0 +1,333 @@
+---
+title: "Analysis for Kilimanjaro IPBES Workshop Paper"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+---
+
+R code for analyzing inter-group differences for: Masao CA, Prescott GW, Snethlage MA, Urbach D, Torre-Marin Rando A, Molina-Venegas R, Mollel NP, Hemp C, Hemp A, Fischer M (2022). Stakeholder Perspectives on Nature, People, and Sustainability at Mount Kilimanjaro. People and Nature.
+  
+```{r}
+library(tidyverse)
+library(vegan)
+```
+
+For background on Permutational Analysis of Variance (PERMANOVA):
+Anderson 2014 Permutational Analysis of Variance (PERMANOVA). Wiley StatsRef: Statistical Reference Online https://onlinelibrary.wiley.com/doi/epdf/10.1002/9781118445112.stat07841
+
+Structure of the analyses:
+
+Three questions based on the Ecosystem Services Questionnaire:
+
+1. Are there significant differences between groups in listed NCPs? (Response ~ Group)
+
+2. Are there significant differences between groups and NCP categories in reported changes in access and provision between 2008-2018? (Response ~ Group * ESCODE)
+
+3. Are there significant differences between groups and NCP categories in predictions of how NCP access and provision will change between 2018-2028? (Response ~ Group * ESCODE)
+
+And four further questions based on the Habitat Questionnaire:
+
+4. Are there significant differences between groups and habitats in the reported changes in habitat area between 2008-2018? (Response ~ Group * Biome2)
+
+5. Are there significant differences between groups and habitats in the reported direct drivers of these changes? (Response ~ Group * Biome2)
+
+6. Are there significant differences between groups and habitats in the reported indirect drivers of these changes? (Response ~ Group * Biome2)
+
+7. Are there significant differences between groups and habitats in what Actions are suggested to ensure a sustainable future for people and nature in Mount Kilimanjaro? (Response ~ Group * Biome2)
+
+Enter data. Data available from: https://zenodo.org/record/5846443
+
+```{r}
+# habitat questionnaire
+habitat.questionnaire.original <- read.csv(
+  "./kilimanjaro_ipbes_workshop_habitat_questionnaire.csv")
+
+# ecosystem services questionnaire 
+es.questionnaire.original <- read.csv(
+  "./kilimanjaro_ipbes_workshop_ecosystem_services_questionnaire.csv",sep = ";")
+```
+
+1. Are there significant differences between groups in listed NCPs? (Response ~ Group)
+
+```{r}
+es.wider <- es.questionnaire.original %>%
+  mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Pollination&PestControl",
+                                            "ES.PST" = "Pollination&PestControl",
+                                            "ES.AIR" = "Air&Climate",
+                                            "ES.CLI" = "Air&Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil&Hazards",
+                                            "ES.HAZ" = "Soil&Hazards",
+                                            "ES.NRG"= "Energy&Materials",
+                                            "ES.MAT"= "Energy&Materials",
+                                            "ES.FOD"= "Food&Medicine",
+                                            "ES.MED"= "Food&Medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+  select(Participant, Group, ESCODE) %>%
+  group_by(Participant, Group, ESCODE) %>%
+  summarise(Count = length(ESCODE)) %>%
+  pivot_wider(names_from = ESCODE, values_from = Count, values_fill = list(Count=0))
+
+es.form.data.response <- es.wider[,-c(1:2)]
+es.form.data.predictor <- es.wider[,c(1:2)]
+
+set.seed(42)
+adonis(es.form.data.response ~ Group, 
+       data = es.form.data.predictor, permutations = 999)
+```
+
+2. Are there significant differences between groups and NCP categories in reported changes in access and provision between 2008-2018? (Response ~ Group * ESCODE)
+
+```{r}
+ncp.access.wide.format <- es.questionnaire.original %>%
+  select(Participant, Group, ESCODE, Provision, Access, Provision.will, Access.will)%>%
+  mutate(Provision = str_replace_all(Provision, c("Decrease" = "decrease",
+                                          "Increase" = "increase",
+                                          "Not" = "not",
+                                          "Deteriorate" = "decrease",
+                                          "No answer" = "NA",
+                                          "no answer" = "NA",
+                                          "Mixed" = "NA",
+                                          "decreased" = "decrease",
+                                          "increased" = "increase",
+                                          "not changed" = "Neutral",
+                                          "not change" = "Neutral",
+                                          "decrease" = "Negative",
+                                          "deteriorate" = "Negative",
+                                          "improve" = "Positive",
+                                          "increase" = "Positive",
+                                          "Improve" = "Positive"))) %>%
+  mutate(Provision.will = str_replace_all(Provision.will, c("Decrease" = "decrease",
+                                          "Increase" = "increase",
+                                          "Not" = "not",
+                                          "Deteriorate" = "decrease",
+                                          "No answer" = "NA",
+                                          "no answer" = "NA",
+                                          "Mixed" = "NA",
+                                          "decreased" = "decrease",
+                                          "increased" = "increase",
+                                          "not changed" = "Neutral",
+                                          "not change" = "Neutral",
+                                          "decrease" = "Negative",
+                                          "deteriorate" = "Negative",
+                                          "improve" = "Positive",
+                                          "increase" = "Positive",
+                                          "Improve" = "Positive"))) %>%
+  mutate(Access = str_replace_all(Access, c("Decrease" = "decrease",
+                                          "Increase" = "increase",
+                                          "Not" = "not",
+                                          "Deteriorate" = "decrease",
+                                          "No answer" = "NA",
+                                          "no answer" = "NA",
+                                          "Mixed" = "NA",
+                                          "decreased" = "decrease",
+                                          "increased" = "increase",
+                                          "not changed" = "Neutral",
+                                          "not change" = "Neutral",
+                                          "decrease" = "Negative",
+                                          "deteriorate" = "Negative",
+                                          "improve" = "Positive",
+                                          "increase" = "Positive",
+                                          "Improve" = "Positive"))) %>%
+  mutate(Access.will = str_replace_all(Access.will, c("Decrease" = "decrease",
+                                          "Increase" = "increase",
+                                          "Not" = "not",
+                                          "Deteriorate" = "decrease",
+                                          "No answer" = "NA",
+                                          "no answer" = "NA",
+                                          "Mixed" = "NA",
+                                          "decreased" = "decrease",
+                                          "increased" = "increase",
+                                          "not changed" = "Neutral",
+                                          "not change" = "Neutral",
+                                          "decrease" = "Negative",
+                                          "deteriorate" = "Negative",
+                                          "improve" = "Positive",
+                                          "increase" = "Positive",
+                                          "Improve" = "Positive"))) %>%
+  mutate(ESCODE = str_replace_all(ESCODE, c("ES.HAB" = "Habitat",
+                                            "ES.POL" = "Poll. & pest cont.",
+                                            "ES.PST" = "Poll. & pest cont.",
+                                            "ES.AIR" = "Air & Climate",
+                                            "ES.CLI" = "Air & Climate",
+                                            "ES.OCE" = "Water",
+                                            "ES.WQN" = "Water",
+                                            "ES.WQL" = "Water",
+                                            "ES.SOL" = "Soil & hazards",
+                                            "ES.HAZ" = "Soil & hazards",
+                                            "ES.NRG"= "Energy & materials",
+                                            "ES.MAT"= "Energy & materials",
+                                            "ES.FOD"= "Food & medicine",
+                                            "ES.MED"= "Food & medicine",
+                                            "ES.LRN"= "Cultural",
+                                            "ES.EXP"= "Cultural",
+                                            "ES.IDE"= "Cultural",
+                                            "ES.OPT"= "Cultural",
+                                            "ES.LIV" = "Livelihoods",
+                                            "ES.WEB" = "Livelihoods"))) %>%
+   mutate(Provision = as.numeric(str_replace_all(Provision, c("Positive" = "3",
+                                                                       "Negative" = "1",
+                                                                       "Neutral" = "2")))) %>%
+   mutate(Provision.will = as.numeric(str_replace_all(Provision.will, c("Positive" = "3",
+                                                                       "Negative" = "1",
+                                                                       "Neutral" = "2")))) %>%
+   mutate(Access = as.numeric(str_replace_all(Access, c("Positive" = "3",
+                                                                       "Negative" = "1",
+                                                                       "Neutral" = "2")))) %>%
+   mutate(Access.will = as.numeric(str_replace_all(Access.will, c("Positive" = "3",
+                                                                       "Negative" = "1",
+                                                                       "Neutral" = "2")))) %>%
+  filter(Access != "NA") %>%
+  filter(Access.will != "NA") %>%
+  filter(Provision != "NA") %>%
+  filter(Provision.will != "NA")
+
+ncp.past.trends.data.response <- ncp.access.wide.format[,c(4:5)]
+ncp.past.trends.data.predictor <- ncp.access.wide.format[,c(1:3)]
+
+set.seed(42)
+adonis(ncp.past.trends.data.response ~ Group * ESCODE, 
+       data = ncp.past.trends.data.predictor, permutations = 999, na.rm = TRUE)
+```
+
+3. Are there significant differences between groups and NCP categories in predictions of how NCP access and provision will change between 2018-2028? (Response ~ Group * ESCODE)
+
+```{r}
+ncp.future.trends.data.response <- ncp.access.wide.format[,c(6:7)]
+ncp.future.trends.data.predictor <- ncp.access.wide.format[,c(1:3)]
+
+set.seed(42)
+adonis(ncp.future.trends.data.response ~ Group * ESCODE, 
+       data = ncp.future.trends.data.predictor, permutations = 999, na.rm = TRUE)
+```
+
+4. Are there significant differences between groups and habitats in the reported changes in habitat area between 2008-2018? (Response ~ Group * Biome2)
+
+```{r}
+#Function to convert blank cells to NA, from Holger Brandl  https://stackoverflow.com/questions/24172111/change-the-blank-cells-to-na
+empty_as_na <- function(x){
+  if("factor" %in% class(x)) x <- as.character(x) 
+  ifelse(as.character(x)!="", x, NA)
+}
+
+biome.trends.reduced <- habitat.questionnaire.original %>%
+  select(Group,
+         Participant,
+         Biome2,
+         Habitat.area) %>%
+  mutate(Habitat.area = as.numeric(str_replace_all(Habitat.area, c("Increased" = "3",
+                                                                   "Decreased" = "1",
+                                                                   "Mixed" = "NA",
+                                                                   "No answer" = "NA",
+                                                                   "Not changed" = "2"))))# %>%
+ 
+biome.trends.reduced.na.omitted <- na.omit(biome.trends.reduced)
+biome.trends.reduced.na.omitted.predictor <- biome.trends.reduced.na.omitted[,c(1:3)]
+biome.trends.reduced.na.omitted.response <- biome.trends.reduced.na.omitted[,-(1:3)]
+
+set.seed(42)
+adonis(biome.trends.reduced.na.omitted.response ~ Group * Biome2, 
+       data = biome.trends.reduced.na.omitted.predictor, permutations = 999, na.rm = TRUE)
+```
+
+5. Are there significant differences between groups and habitats in the reported direct drivers of these changes? (Response ~ Group * Biome2)
+
+```{r}
+habitat.questionnaire.dir <- habitat.questionnaire.original %>%
+  select(Group,
+         Participant,
+         Biome2,
+         DIR.ACT,
+         DIR.CC,
+         DIR.IAS,
+         DIR.LUC,
+         DIR.OVR,
+         DIR.POL) %>%
+  filter(DIR.ACT + DIR.CC + DIR.IAS + DIR.LUC + DIR.OVR + DIR.POL > 0)
+  
+habitat.questionnaire.dir.predictor <- habitat.questionnaire.dir[,c(1:3)]
+habitat.questionnaire.dir.response <- habitat.questionnaire.dir[,-c(1:3)] %>%
+               mutate_if(is.numeric, ~1 * (. > 0))
+
+set.seed(42)
+adonis(habitat.questionnaire.dir.response ~ Group * Biome2, 
+       data = habitat.questionnaire.dir.predictor, permutations = 999)
+```
+
+6. Are there significant differences between groups and habitats in the reported indirect drivers of these changes? (Response ~ Group * Biome2)
+
+```{r}
+habitat.questionnaire.ind <- habitat.questionnaire.original %>%
+  select(Group,
+         Biome2,
+         Participant,
+         IND.CLT,
+         IND.DEM,
+         IND.ECO,
+         IND.GVN,
+         IND.LUC,
+         IND.S.T) %>%
+  filter(IND.CLT + IND.DEM + IND.ECO + IND.GVN + IND.LUC + IND.S.T > 0)
+  
+habitat.questionnaire.ind.predictor <- habitat.questionnaire.ind[,c(1:3)]
+habitat.questionnaire.ind.response <- habitat.questionnaire.ind[,-c(1:3)] %>%
+               mutate_if(is.numeric, ~1 * (. > 0))
+
+set.seed(42)
+adonis(habitat.questionnaire.ind.response ~ Group * Biome2, 
+       data = habitat.questionnaire.ind.predictor, permutations = 999)
+```
+
+7. Are there significant differences between groups and habitats in what Actions are suggested to ensure a sustainable future for people and nature in Mount Kilimanjaro? (Response ~ Group * Biome2)
+
+```{r}
+habitat.questionnaire.act <- habitat.questionnaire.original %>%
+  select(Group,
+         Participant,
+         Biome2,
+         ACT.LAND,
+         ACT.SPEC,
+         ACT.AWAR,
+         ACT.ENFORC,
+         ACT.ECON,
+         ACT.PROTECT,
+         ACT.LAWPOL,
+         ACT.RSRCH,
+         ACT.EDUC,
+         ACT.INST) %>%
+  filter(ACT.LAND + ACT.SPEC + ACT.AWAR + ACT.ENFORC + ACT.ECON + ACT.PROTECT + ACT.LAWPOL + ACT.RSRCH + ACT.EDUC + ACT.INST > 0)
+  
+habitat.questionnaire.act.predictor <- habitat.questionnaire.act[,c(1:3)]
+habitat.questionnaire.act.response <- habitat.questionnaire.act[,-c(1:3)] %>%
+               mutate_if(is.numeric, ~1 * (. > 0))
+
+set.seed(42)
+adonis(habitat.questionnaire.act.response ~ Group * Biome2, 
+       data = habitat.questionnaire.act.predictor, permutations = 999)
+```
+
+Load table with unadjusted p-values
+
+```{r}
+permanova.results.consolidated <- read.csv(
+  "./p_values_raw_Kilimanjaro_IPBES_workshop_PERMANOVA_setseed42.csv")
+```
+
+Apply the Benjamini-Hochberg procedure to the p-values
+For further details, see: Benjamini and Hochberg 1995 Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing. Journal of the Royal Statistical Society: Series B (Methodological).  https://doi.org/10.1111/j.2517-6161.1995.tb02031.x
+
+```{r}
+p<- permanova.results.consolidated$p
+round(p.adjust(p, "BH"), 3)
+```
+

@@ -1,0 +1,356 @@
+{
+  "paper_id": "10_1111_1365_2435_14552",
+  "generated": "2026-09-10T02:26:21+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:26:21+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 24,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 21,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".Rbuildignore",
+      "file_path": ".Rbuildignore",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/.Rbuildignore",
+      "file_size": 28,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/.gitignore",
+      "file_size": 87,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DESCRIPTION",
+      "file_path": "DESCRIPTION",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/DESCRIPTION",
+      "file_size": 546,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "NAMESPACE",
+      "file_path": "NAMESPACE",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/NAMESPACE",
+      "file_size": 267,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RcppExports.R",
+      "file_path": "R/RcppExports.R",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/RcppExports.R",
+      "file_size": 357,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phnorm.r",
+      "file_path": "R/mice.impute.phnorm.r",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/mice.impute.phnorm.r",
+      "file_size": 3034,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phpmm.r",
+      "file_path": "R/mice.impute.phpmm.r",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/mice.impute.phpmm.r",
+      "file_size": 730,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phpp.R",
+      "file_path": "R/mice.impute.phpp.R",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/mice.impute.phpp.R",
+      "file_size": 1783,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phppm.R",
+      "file_path": "R/mice.impute.phppm.R",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/mice.impute.phppm.R",
+      "file_size": 1042,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "phylomice.R",
+      "file_path": "R/phylomice.R",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/R/phylomice.R",
+      "file_size": 796,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/README.md",
+      "file_size": 2138,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mice.impute.phnorm.Rd",
+      "file_path": "man/mice.impute.phnorm.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/mice.impute.phnorm.Rd",
+      "file_size": 1514,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phpmm.Rd",
+      "file_path": "man/mice.impute.phpmm.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/mice.impute.phpmm.Rd",
+      "file_size": 273,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phpp.Rd",
+      "file_path": "man/mice.impute.phpp.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/mice.impute.phpp.Rd",
+      "file_size": 1262,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mice.impute.phppm.Rd",
+      "file_path": "man/mice.impute.phppm.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/mice.impute.phppm.Rd",
+      "file_size": 281,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "phylomice.Rd",
+      "file_path": "man/phylomice.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/phylomice.Rd",
+      "file_size": 441,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "precomputePsi.Rd",
+      "file_path": "man/precomputePsi.Rd",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/man/precomputePsi.Rd",
+      "file_size": 465,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": "src/.gitignore",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/src/.gitignore",
+      "file_size": 15,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Makevars",
+      "file_path": "src/Makevars",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/src/Makevars",
+      "file_size": 48,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Makevars.win",
+      "file_path": "src/Makevars.win",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/src/Makevars.win",
+      "file_size": 48,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RcppExports.cpp",
+      "file_path": "src/RcppExports.cpp",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/src/RcppExports.cpp",
+      "file_size": 1050,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "testcpp.cpp",
+      "file_path": "src/testcpp.cpp",
+      "repo_url": "https://github.com/pdrhlik/phylomice",
+      "file_url": "https://raw.githubusercontent.com/pdrhlik/phylomice/master/src/testcpp.cpp",
+      "file_size": 325,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Dataset_of_SCR.xlsx",
+      "file_path": "Dataset_of_SCR.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.0k6djhb51",
+      "file_url": "https://datadryad.org/api/v2/files/2992440/download",
+      "file_size": 190750,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.0k6djhb51",
+      "file_url": "https://datadryad.org/api/v2/files/2992443/download",
+      "file_size": 531,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "ape"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

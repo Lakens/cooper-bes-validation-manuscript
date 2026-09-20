@@ -1,0 +1,246 @@
+{
+  "paper_id": "10_1111_2041_210x_12738",
+  "generated": "2026-09-10T05:21:22+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:21:22+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Dem75mInteger.zip",
+      "file_path": "Dem75mInteger.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/612/download",
+      "file_size": 78633187,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Evaporation_Jan.zip",
+      "file_path": "Evaporation_Jan.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/598/download",
+      "file_size": 77654594,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Evaporation_Jul.zip",
+      "file_path": "Evaporation_Jul.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/599/download",
+      "file_size": 78470080,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "log_vertical_distance_major_streams.zip",
+      "file_path": "log_vertical_distance_major_streams.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/600/download",
+      "file_size": 79774701,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MaxTemp_Jan.zip",
+      "file_path": "MaxTemp_Jan.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/601/download",
+      "file_size": 64522052,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MinTemp_Jul.zip",
+      "file_path": "MinTemp_Jul.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/602/download",
+      "file_size": 56062664,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PBSO.zip",
+      "file_path": "PBSO.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/597/download",
+      "file_size": 6688,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RainDays_Jan.zip",
+      "file_path": "RainDays_Jan.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/603/download",
+      "file_size": 52000004,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RainDays_Jul.zip",
+      "file_path": "RainDays_Jul.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/604/download",
+      "file_size": 57202711,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RainDays_Jul.zip",
+      "file_path": "RainDays_Jul.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/605/download",
+      "file_size": 57202711,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Rainfall_Jan.zip",
+      "file_path": "Rainfall_Jan.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/606/download",
+      "file_size": 52502029,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SO-data.zip",
+      "file_path": "SO-data.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/610/download",
+      "file_size": 16788,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "terrain_ruggedness_index.zip",
+      "file_path": "terrain_ruggedness_index.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/607/download",
+      "file_size": 74800602,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "visible_sky.zip",
+      "file_path": "visible_sky.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/609/download",
+      "file_size": 80754999,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "wetness_index.zip",
+      "file_path": "wetness_index.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/608/download",
+      "file_size": 80561294,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "yb-pb-location.csv",
+      "file_path": "yb-pb-location.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8467g",
+      "file_url": "https://datadryad.org/api/v2/files/611/download",
+      "file_size": 164277,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

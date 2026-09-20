@@ -1,0 +1,161 @@
+{
+  "paper_id": "10_1111_1365_2435_14511",
+  "generated": "2026-09-10T02:24:22+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:24:22+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "TdataLB_ITV.csv",
+      "file_path": "TdataLB_ITV.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Pollinator_intertegular_distance/25008425/1",
+      "file_url": "https://ndownloader.figshare.com/files/44112836",
+      "file_size": 13777,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Dryad_Worthy.xlsx",
+      "file_path": "Dryad_Worthy.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1vhhmgqzg",
+      "file_url": "https://datadryad.org/api/v2/files/4049676/download",
+      "file_size": 387286,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.1vhhmgqzg",
+      "file_url": "https://datadryad.org/api/v2/files/4049680/download",
+      "file_size": 10917,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "elkmplotabiotic.csv",
+      "file_path": "elkmplotabiotic.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637829/download",
+      "file_size": 3843,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "matrixdays.csv",
+      "file_path": "matrixdays.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637822/download",
+      "file_size": 28543,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "matrixplots.csv",
+      "file_path": "matrixplots.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637823/download",
+      "file_size": 28505,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "matrixyears.csv",
+      "file_path": "matrixyears.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637824/download",
+      "file_size": 28505,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637828/download",
+      "file_size": 6868,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temp2015_19.csv",
+      "file_path": "temp2015_19.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rfj6q579h",
+      "file_url": "https://datadryad.org/api/v2/files/637830/download",
+      "file_size": 1399685,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "burkle_ecography_data_for_dryad.csv",
+      "file_path": "burkle_ecography_data_for_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.stqjq2c4m",
+      "file_url": "https://datadryad.org/api/v2/files/1239934/download",
+      "file_size": 247397,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Burkle_Ecography_2021.txt",
+      "file_path": "README_Burkle_Ecography_2021.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.stqjq2c4m",
+      "file_url": "https://datadryad.org/api/v2/files/1239938/download",
+      "file_size": 1670,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

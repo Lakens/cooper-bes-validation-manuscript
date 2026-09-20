@@ -1,0 +1,195 @@
+{
+  "paper_id": "10_1111_2041_210x_14405",
+  "generated": "2026-09-10T09:32:13+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T09:32:13+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 0,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Acoustic Indices.zip",
+      "file_path": "Acoustic Indices.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/Acoustic%20Indices.zip/content",
+      "file_size": 30556,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "npl16/ecoacoustic-vse-validation-v1.0.0.zip",
+      "file_path": "npl16/ecoacoustic-vse-validation-v1.0.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/npl16/ecoacoustic-vse-validation-v1.0.0.zip/content",
+      "file_size": 55903,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Manual Labels O2.zip",
+      "file_path": "Manual Labels O2.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/Manual%20Labels%20O2.zip/content",
+      "file_size": 11349,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "HARKBird O3 Outputs.zip",
+      "file_path": "HARKBird O3 Outputs.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/HARKBird%20O3%20Outputs.zip/content",
+      "file_size": 80087,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BirdNET O3 Outputs.zip",
+      "file_path": "BirdNET O3 Outputs.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/BirdNET%20O3%20Outputs.zip/content",
+      "file_size": 4608,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "HARKBird O1O2 Outputs.zip",
+      "file_path": "HARKBird O1O2 Outputs.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/HARKBird%20O1O2%20Outputs.zip/content",
+      "file_size": 56611,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BirdNET O1O2 Outputs.zip",
+      "file_path": "BirdNET O1O2 Outputs.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/BirdNET%20O1O2%20Outputs.zip/content",
+      "file_size": 25479,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "VGGish Features.zip",
+      "file_path": "VGGish Features.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/VGGish%20Features.zip/content",
+      "file_size": 6454288,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "6mic Audio O3.zip",
+      "file_path": "6mic Audio O3.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/6mic%20Audio%20O3.zip/content",
+      "file_size": 2742203362,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "6mic Audio O1O2.zip",
+      "file_path": "6mic Audio O1O2.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/6mic%20Audio%20O1O2.zip/content",
+      "file_size": 2625347962,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Zylia Recordings.zip",
+      "file_path": "Zylia Recordings.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13157933",
+      "file_url": "https://zenodo.org/api/records/13157933/files/Zylia%20Recordings.zip/content",
+      "file_size": 1707285742,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "seewave",
+      "soundecology",
+      "tuneR"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

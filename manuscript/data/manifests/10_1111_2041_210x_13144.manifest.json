@@ -1,0 +1,223 @@
+{
+  "paper_id": "10_1111_2041_210x_13144",
+  "generated": "2026-09-10T06:08:50+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:08:50+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 13,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "mattbv/lidartf-v1-alpha.zip",
+      "file_path": "mattbv/lidartf-v1-alpha.zip",
+      "repo_url": "https://zenodo.org/record/802379#.WzVrmBzTVqM",
+      "file_url": "https://zenodo.org/api/records/802379/files/mattbv/lidartf-v1-alpha.zip/content",
+      "file_size": 22761,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "TLSeparation/source-rc1.zip",
+      "file_path": "TLSeparation/source-rc1.zip",
+      "repo_url": "https://zenodo.org/record/1147706#.WzVrkxzTVqM",
+      "file_url": "https://zenodo.org/api/records/1147706/files/TLSeparation/source-rc1.zip/content",
+      "file_size": 69886,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "alice_2.txt",
+      "file_path": "alice_2.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/alice_2.txt/content",
+      "file_size": 66654670,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "alice_1.txt",
+      "file_path": "alice_1.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/alice_1.txt/content",
+      "file_size": 16631092,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "caxiuanaA_21.txt",
+      "file_path": "caxiuanaA_21.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/caxiuanaA_21.txt/content",
+      "file_size": 34323195,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nouraguesH20_108.txt",
+      "file_path": "nouraguesH20_108.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/nouraguesH20_108.txt/content",
+      "file_size": 26037176,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nouraguesH20_13.txt",
+      "file_path": "nouraguesH20_13.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/nouraguesH20_13.txt/content",
+      "file_size": 12285748,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pan_33.txt",
+      "file_path": "pan_33.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/pan_33.txt/content",
+      "file_size": 30958308,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tree_13.txt",
+      "file_path": "tree_13.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/tree_13.txt/content",
+      "file_size": 15707904,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tree_2.txt",
+      "file_path": "tree_2.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/tree_2.txt/content",
+      "file_size": 18757529,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "alice_3.txt",
+      "file_path": "alice_3.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/alice_3.txt/content",
+      "file_size": 27955967,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "caxiuanaA_117.txt",
+      "file_path": "caxiuanaA_117.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324155",
+      "file_url": "https://zenodo.org/api/records/1324156/files/caxiuanaA_117.txt/content",
+      "file_size": 6976475,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "test_data.zip",
+      "file_path": "test_data.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.1324157",
+      "file_url": "https://zenodo.org/api/records/1324158/files/test_data.zip/content",
+      "file_size": 265070437,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "classification",
+      "collections",
+      "data_utils",
+      "datetime",
+      "hdbscan",
+      "imp",
+      "itertools",
+      "knnsearch",
+      "mayavi",
+      "networkx",
+      "numba",
+      "numpy",
+      "os",
+      "pandas",
+      "scripts",
+      "setuptools",
+      "shortpath",
+      "sklearn",
+      "struct",
+      "sys",
+      "testres",
+      "tests",
+      "time",
+      "utility",
+      "utils"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "paper_id": "10_1111_2041_210x_14008",
+  "generated": "2026-09-10T07:38:39+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T07:38:39+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "SilkyShark_months.xlsx",
+      "file_path": "Data/SilkyShark_months.xlsx",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Data/SilkyShark_months.xlsx",
+      "file_size": 101216,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "t2ce_ETRO-PS1991-19_bySchool.xlsx",
+      "file_path": "Data/t2ce_ETRO-PS1991-19_bySchool.xlsx",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Data/t2ce_ETRO-PS1991-19_bySchool.xlsx",
+      "file_size": 27074450,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Method_Description_SimulatedData.Rmd",
+      "file_path": "Methods/Method_Description_SimulatedData.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Methods/Method_Description_SimulatedData.Rmd",
+      "file_size": 29072,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/README.md",
+      "file_size": 807,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FinalSOM_1994_1998.Rmd",
+      "file_path": "Results/CaseStudy/FinalSOM_1994_1998.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Results/CaseStudy/FinalSOM_1994_1998.Rmd",
+      "file_size": 140581,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FinalSOM_2012_2016.Rmd",
+      "file_path": "Results/CaseStudy/FinalSOM_2012_2016.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Results/CaseStudy/FinalSOM_2012_2016.Rmd",
+      "file_size": 140580,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DataSimulation_Over12Months.Rmd",
+      "file_path": "Results/Simulations/DataSimulation_Over12Months.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/Results/Simulations/DataSimulation_Over12Months.Rmd",
+      "file_size": 139089,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".Rhistory",
+      "file_path": "SupplementaryMaterial/.Rhistory",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/SupplementaryMaterial/.Rhistory",
+      "file_size": 0,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DataSimulation_DetectionThreshold.Rmd",
+      "file_path": "SupplementaryMaterial/DataSimulation_DetectionThreshold.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/SupplementaryMaterial/DataSimulation_DetectionThreshold.Rmd",
+      "file_size": 38737,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DataSimulation_DetectionThreshold.html",
+      "file_path": "SupplementaryMaterial/DataSimulation_DetectionThreshold.html",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/SupplementaryMaterial/DataSimulation_DetectionThreshold.html",
+      "file_size": 5906987,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DataSimulation_Preprocessing_Clustering.Rmd",
+      "file_path": "SupplementaryMaterial/DataSimulation_Preprocessing_Clustering.Rmd",
+      "repo_url": "https://github.com/stephanpau/SOM_TunaFisheries",
+      "file_url": "https://raw.githubusercontent.com/stephanpau/SOM_TunaFisheries/main/SupplementaryMaterial/DataSimulation_Preprocessing_Clustering.Rmd",
+      "file_size": 170152,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "dplyr",
+      "dynamicTreeCut",
+      "ggplot2",
+      "knitr",
+      "kohonen",
+      "NbClust",
+      "openxlsx",
+      "RColorBrewer",
+      "rgeos",
+      "scales",
+      "scatterpie",
+      "sf",
+      "skimr",
+      "sp",
+      "spData",
+      "splitstackshape",
+      "tidyverse",
+      "truncnorm",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

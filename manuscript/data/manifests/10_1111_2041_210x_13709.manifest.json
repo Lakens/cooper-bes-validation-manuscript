@@ -1,0 +1,221 @@
+{
+  "paper_id": "10_1111_2041_210x_13709",
+  "generated": "2026-09-10T07:19:08+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T07:19:08+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/LICENSE",
+      "file_size": 1211,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "extracting-branches.ipynb",
+      "file_path": "extracting-branches.ipynb",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/extracting-branches.ipynb",
+      "file_size": 9066,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "rxp2ply.json",
+      "file_path": "pdal/rxp2ply.json",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/pdal/rxp2ply.json",
+      "file_size": 230,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "rxp2stickers.json",
+      "file_path": "pdal/rxp2stickers.json",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/pdal/rxp2stickers.json",
+      "file_size": 809,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Untitled-checkpoint.ipynb",
+      "file_path": "python/.ipynb_checkpoints/Untitled-checkpoint.ipynb",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/.ipynb_checkpoints/Untitled-checkpoint.ipynb",
+      "file_size": 541861,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "combine_scans.py",
+      "file_path": "python/combine_scans.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/combine_scans.py",
+      "file_size": 1457,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "create_riscan.py",
+      "file_path": "python/create_riscan.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/create_riscan.py",
+      "file_size": 9058,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "extract_branches.py",
+      "file_path": "python/extract_branches.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/extract_branches.py",
+      "file_size": 10365,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "filter_branch.py",
+      "file_path": "python/filter_branch.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/filter_branch.py",
+      "file_size": 2434,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "find_dots.py",
+      "file_path": "python/find_dots.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/find_dots.py",
+      "file_size": 3232,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ply_io.py",
+      "file_path": "python/ply_io.py",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/python/ply_io.py",
+      "file_size": 2478,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "readme.md",
+      "file_path": "readme.md",
+      "repo_url": "https://github.com/philwilkes/branch-extraction",
+      "file_url": "https://raw.githubusercontent.com/philwilkes/branch-extraction/main/readme.md",
+      "file_size": 7230,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "argparse",
+      "glob",
+      "itertools",
+      "json",
+      "matplotlib",
+      "multiprocessing",
+      "numpy",
+      "os",
+      "pandas",
+      "pcd_io",
+      "ply_io",
+      "qrdar",
+      "scipy",
+      "shutil",
+      "sklearn",
+      "subprocess",
+      "sys",
+      "warnings"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

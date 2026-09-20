@@ -1,0 +1,72 @@
+{
+  "paper_id": "10_1111_1365_2745_12819",
+  "generated": "2026-09-10T04:14:32+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:14:32+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 0,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 1,
+    "unintentional_files": [
+      {
+        "file_name": "Gunn Pt data_for archiving_incl trees.xlsx",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.4903115",
+        "reason": "download failed after retries: HTTP 403 Forbidden."
+      }
+    ],
+    "rerun_recommended": true
+  },
+  "files": [
+    {
+      "file_name": "Gunn Pt data_for archiving_incl trees.xlsx",
+      "file_path": "Gunn Pt data_for archiving_incl trees.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.4903115",
+      "file_url": "https://ndownloader.figshare.com/files/8500322",
+      "file_size": 122399,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "download failed after retries: HTTP 403 Forbidden.",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "Methods for figshare_1.docx",
+      "file_path": "Methods for figshare_1.docx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.4903115",
+      "file_url": "https://ndownloader.figshare.com/files/8723581",
+      "file_size": 24853,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

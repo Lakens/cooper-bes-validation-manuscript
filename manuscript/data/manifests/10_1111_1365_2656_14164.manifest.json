@@ -1,0 +1,307 @@
+{
+  "paper_id": "10_1111_1365_2656_14164",
+  "generated": "2026-09-10T03:18:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:18:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 14,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/.gitignore",
+      "file_size": 1799,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/LICENSE",
+      "file_size": 7048,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/README.md",
+      "file_size": 418,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "apply_gbif_filter.py",
+      "file_path": "apply_gbif_filter.py",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/apply_gbif_filter.py",
+      "file_size": 7019,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "config.yml",
+      "file_path": "example/config.yml",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/example/config.yml",
+      "file_size": 1329,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "table_annot_olig01.csv",
+      "file_path": "example/table_annot_olig01.csv",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/example/table_annot_olig01.csv",
+      "file_size": 2057,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gbif_helper.py",
+      "file_path": "gbif_helper.py",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/gbif_helper.py",
+      "file_size": 4128,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "logging.json",
+      "file_path": "logging.json",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/logging.json",
+      "file_size": 1085,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "requirements.txt",
+      "file_path": "requirements.txt",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/requirements.txt",
+      "file_size": 80,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "config.yml",
+      "file_path": "test/config.yml",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/test/config.yml",
+      "file_size": 1131,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "filtered.csv",
+      "file_path": "test/filtered.csv",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/test/filtered.csv",
+      "file_size": 12054,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "motu_table_sample.csv",
+      "file_path": "test/motu_table_sample.csv",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/test/motu_table_sample.csv",
+      "file_size": 12746,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "__init__.py",
+      "file_path": "util/__init__.py",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__init__.py",
+      "file_size": 0,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "__init__.cpython-37.pyc",
+      "file_path": "util/__pycache__/__init__.cpython-37.pyc",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__pycache__/__init__.cpython-37.pyc",
+      "file_size": 152,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data_source.cpython-37.pyc",
+      "file_path": "util/__pycache__/data_source.cpython-37.pyc",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__pycache__/data_source.cpython-37.pyc",
+      "file_size": 2277,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "gbif.cpython-37.pyc",
+      "file_path": "util/__pycache__/gbif.cpython-37.pyc",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__pycache__/gbif.cpython-37.pyc",
+      "file_size": 2489,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "occurrence_engine.cpython-37.pyc",
+      "file_path": "util/__pycache__/occurrence_engine.cpython-37.pyc",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__pycache__/occurrence_engine.cpython-37.pyc",
+      "file_size": 1353,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "taxid.cpython-37.pyc",
+      "file_path": "util/__pycache__/taxid.cpython-37.pyc",
+      "repo_url": "https://github.com/nleguillarme/gbif-filter-python",
+      "file_url": "https://raw.githubusercontent.com/nleguillarme/gbif-filter-python/master/util/__pycache__/taxid.cpython-37.pyc",
+      "file_size": 1493,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Data_Dryad.zip",
+      "file_path": "Data_Dryad.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.wdbrv15xr",
+      "file_url": "https://datadryad.org/api/v2/files/3364405/download",
+      "file_size": 471899,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.wdbrv15xr",
+      "file_url": "https://datadryad.org/api/v2/files/3364415/download",
+      "file_size": 10691,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "argparse",
+      "box",
+      "gbif_helper",
+      "json",
+      "logging",
+      "os",
+      "pandas",
+      "pygbif",
+      "sys",
+      "yaml"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

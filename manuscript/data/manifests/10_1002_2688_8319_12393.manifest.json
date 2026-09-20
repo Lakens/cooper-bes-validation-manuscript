@@ -1,0 +1,146 @@
+{
+  "paper_id": "10_1002_2688_8319_12393",
+  "generated": "2026-09-09T22:40:07+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:40:07+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "nsookhan/floral_segmentation-V1.0.zip",
+      "file_path": "nsookhan/floral_segmentation-V1.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13834747",
+      "file_url": "https://zenodo.org/api/records/13834747/files/nsookhan/floral_segmentation-V1.0.zip/content",
+      "file_size": 20162,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "external_val.7z",
+      "file_path": "external_val.7z",
+      "repo_url": "https://doi.org/10.5061/dryad.nvx0k6f1t",
+      "file_url": "https://datadryad.org/api/v2/files/3492924/download",
+      "file_size": 2608,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "image.7z",
+      "file_path": "image.7z",
+      "repo_url": "https://doi.org/10.5061/dryad.nvx0k6f1t",
+      "file_url": "https://datadryad.org/api/v2/files/3492921/download",
+      "file_size": 15225665647,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "model.7z",
+      "file_path": "model.7z",
+      "repo_url": "https://doi.org/10.5061/dryad.nvx0k6f1t",
+      "file_url": "https://datadryad.org/api/v2/files/3492923/download",
+      "file_size": 208620517,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "predict.7z",
+      "file_path": "predict.7z",
+      "repo_url": "https://doi.org/10.5061/dryad.nvx0k6f1t",
+      "file_url": "https://datadryad.org/api/v2/files/3492922/download",
+      "file_size": 45749784,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.nvx0k6f1t",
+      "file_url": "https://datadryad.org/api/v2/files/3492931/download",
+      "file_size": 5978,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "csv",
+      "cv2",
+      "functools",
+      "gc",
+      "imgaug",
+      "itertools",
+      "keras",
+      "matplotlib",
+      "numpy",
+      "os",
+      "osgeo",
+      "patchify",
+      "pathlib",
+      "random",
+      "re",
+      "segmentation_models",
+      "shutil",
+      "sklearn",
+      "tensorflow",
+      "tensorflow_addons",
+      "time"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

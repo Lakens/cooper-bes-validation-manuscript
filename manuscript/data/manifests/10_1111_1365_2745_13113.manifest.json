@@ -1,0 +1,132 @@
+{
+  "paper_id": "10_1111_1365_2745_13113",
+  "generated": "2026-09-10T05:00:43+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:00:43+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Diet_GNP16_trnL_raw_data.fasta.gz",
+      "file_path": "Diet_GNP16_trnL_raw_data.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79934/download",
+      "file_size": 22369637,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Diet_GNP2016_trnL_filtered_data.txt",
+      "file_path": "Diet_GNP2016_trnL_filtered_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79936/download",
+      "file_size": 164650,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "GNP_gh_reference_database.fasta",
+      "file_path": "GNP_gh_reference_database.fasta",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79940/download",
+      "file_size": 168592,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Metadata_GNP2016.txt",
+      "file_path": "Metadata_GNP2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79938/download",
+      "file_size": 28019,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Diet_GNP16_trnL_raw_data.fasta.txt",
+      "file_path": "README_for_Diet_GNP16_trnL_raw_data.fasta.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79935/download",
+      "file_size": 1849,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Diet_GNP2016_trnL_filtered_data.txt",
+      "file_path": "README_for_Diet_GNP2016_trnL_filtered_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79937/download",
+      "file_size": 2509,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_GNP_gh_reference_database.txt",
+      "file_path": "README_for_GNP_gh_reference_database.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79941/download",
+      "file_size": 1771,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Metadata_GNP2016.txt",
+      "file_path": "README_for_Metadata_GNP2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.63tj806",
+      "file_url": "https://datadryad.org/api/v2/files/79939/download",
+      "file_size": 889,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

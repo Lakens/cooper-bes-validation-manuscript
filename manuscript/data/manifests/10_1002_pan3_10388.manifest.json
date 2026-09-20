@@ -1,0 +1,88 @@
+{
+  "paper_id": "10_1002_pan3_10388",
+  "generated": "2026-09-09T22:44:49+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:44:49+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 4,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Nyboer et al_2022_AdaptationLakeVic_MCDAIndices_FINAL DATA.xlsx",
+      "file_path": "Nyboer et al_2022_climate adaptation lake victoria/Nyboer et al_2022_AdaptationLakeVic_MCDAIndices_FINAL DATA.xlsx",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/BT4QD",
+      "file_url": "https://osf.io/download/tkhds/",
+      "provider": "osfstorage",
+      "file_size": 44838,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Nyboer et al_2022_AdaptationLakeVic_SurveyDataComplete_FINAL DATA.xlsx",
+      "file_path": "Nyboer et al_2022_climate adaptation lake victoria/Nyboer et al_2022_AdaptationLakeVic_SurveyDataComplete_FINAL DATA.xlsx",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/BT4QD",
+      "file_url": "https://osf.io/download/wxpgk/",
+      "provider": "osfstorage",
+      "file_size": 256847,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Nyboer et al_2022_AdaptationLakeVic_SurveyDataComplete_METADATA.xlsx",
+      "file_path": "Nyboer et al_2022_climate adaptation lake victoria/Nyboer et al_2022_AdaptationLakeVic_SurveyDataComplete_METADATA.xlsx",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/BT4QD",
+      "file_url": "https://osf.io/download/62c3b4710ebbbf1f2b110bec/",
+      "provider": "osfstorage",
+      "file_size": 27503,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Nyboer et al_2022_AdaptationLakeVic_MCDA Indices_METADATA.xlsx",
+      "file_path": "Nyboer et al_2022_climate adaptation lake victoria/Nyboer et al_2022_AdaptationLakeVic_MCDA Indices_METADATA.xlsx",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/BT4QD",
+      "file_url": "https://osf.io/download/dp85f/",
+      "provider": "osfstorage",
+      "file_size": 26684,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

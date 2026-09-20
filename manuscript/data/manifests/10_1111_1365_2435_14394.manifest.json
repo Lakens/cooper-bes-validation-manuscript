@@ -1,0 +1,95 @@
+{
+  "paper_id": "10_1111_1365_2435_14394",
+  "generated": "2026-09-10T02:23:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:23:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "BNPP_MayHarvest_2015.csv",
+      "file_path": "BNPP_MayHarvest_2015.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.547d7wmds",
+      "file_url": "https://datadryad.org/api/v2/files/2360560/download",
+      "file_size": 7610,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ClimVar_2015_species-cover_wide.csv",
+      "file_path": "ClimVar_2015_species-cover_wide.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.547d7wmds",
+      "file_url": "https://datadryad.org/api/v2/files/2360556/download",
+      "file_size": 9054,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ClimVar_ANPP-peak.csv",
+      "file_path": "ClimVar_ANPP-peak.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.547d7wmds",
+      "file_url": "https://datadryad.org/api/v2/files/2360557/download",
+      "file_size": 11446,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "GHtraits.csv",
+      "file_path": "GHtraits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.547d7wmds",
+      "file_url": "https://datadryad.org/api/v2/files/2360563/download",
+      "file_size": 11269,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.547d7wmds",
+      "file_url": "https://datadryad.org/api/v2/files/2360561/download",
+      "file_size": 2392,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

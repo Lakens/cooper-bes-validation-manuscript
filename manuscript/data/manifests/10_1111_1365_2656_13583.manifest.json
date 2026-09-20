@@ -1,0 +1,122 @@
+{
+  "paper_id": "10_1111_1365_2656_13583",
+  "generated": "2026-09-10T03:10:56+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:10:56+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "readme.txt",
+      "file_path": "readme.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14378813",
+      "file_url": "https://ndownloader.figshare.com/files/27465620",
+      "file_size": 2944,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SEV_IS_DATA.csv",
+      "file_path": "SEV_IS_DATA.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14378813",
+      "file_url": "https://ndownloader.figshare.com/files/28855845",
+      "file_size": 43308,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RMark_capturehistories.csv",
+      "file_path": "RMark_capturehistories.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14378813",
+      "file_url": "https://ndownloader.figshare.com/files/28855848",
+      "file_size": 43393,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_IS_script.R",
+      "file_path": "JAE_IS_script.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14378813",
+      "file_url": "https://ndownloader.figshare.com/files/28855851",
+      "file_size": 37030,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "JAE_MARK_script.R",
+      "file_path": "JAE_MARK_script.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14378813",
+      "file_url": "https://ndownloader.figshare.com/files/28855857",
+      "file_size": 9593,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bayesplot",
+      "dplyr",
+      "GGally",
+      "ggeffects",
+      "ggplot2",
+      "ggpubr",
+      "ggstance",
+      "ggthemes",
+      "loo",
+      "mgcv",
+      "RMark",
+      "rstanarm",
+      "sjPlot",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

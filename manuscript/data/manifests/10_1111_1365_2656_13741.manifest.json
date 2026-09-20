@@ -1,0 +1,194 @@
+{
+  "paper_id": "10_1111_1365_2656_13741",
+  "generated": "2026-09-10T03:12:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:12:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 14,
+  "n_downloaded": 14,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "clutchsize-data.csv",
+      "file_path": "clutchsize-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488471/download",
+      "file_size": 26119,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "EffectsofHelpers-data.csv",
+      "file_path": "EffectsofHelpers-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488475/download",
+      "file_size": 40620,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "EPP1-data.csv",
+      "file_path": "EPP1-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488480/download",
+      "file_size": 9550,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "EPP2-data.csv",
+      "file_path": "EPP2-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488481/download",
+      "file_size": 44727,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "femaledecisionstohelp-data.csv",
+      "file_path": "femaledecisionstohelp-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488479/download",
+      "file_size": 1719,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fledgling-data.csv",
+      "file_path": "fledgling-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488472/download",
+      "file_size": 158961,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "helpereffectonfledglings-data.csv",
+      "file_path": "helpereffectonfledglings-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488477/download",
+      "file_size": 25366,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "immigrantBodyMass-data.csv",
+      "file_path": "immigrantBodyMass-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488482/download",
+      "file_size": 24076,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "indirectfitness-data.csv",
+      "file_path": "indirectfitness-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488476/download",
+      "file_size": 149983,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "maledecisiontohelp-data.csv",
+      "file_path": "maledecisiontohelp-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488478/download",
+      "file_size": 3747,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "philopatricBodyMass-data.csv",
+      "file_path": "philopatricBodyMass-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488484/download",
+      "file_size": 11755,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Roperetal_LTTData.rtf",
+      "file_path": "README_for_Roperetal_LTTData.rtf",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488483/download",
+      "file_size": 12688,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "survival_directfitness_inclusivefitness-data.csv",
+      "file_path": "survival_directfitness_inclusivefitness-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488474/download",
+      "file_size": 303306,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "survivalREAnalysis-data.csv",
+      "file_path": "survivalREAnalysis-data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.g79cnp5rz",
+      "file_url": "https://datadryad.org/api/v2/files/1488473/download",
+      "file_size": 31602,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

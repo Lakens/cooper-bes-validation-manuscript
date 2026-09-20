@@ -1,0 +1,260 @@
+{
+  "paper_id": "10_1111_1365_2664_13965",
+  "generated": "2026-09-10T04:01:23+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:01:23+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 20,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Alt1.xlsx",
+      "file_path": "Alt1.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790001/download",
+      "file_size": 8469,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt10.xlsx",
+      "file_path": "Alt10.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790010/download",
+      "file_size": 8545,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt11.xlsx",
+      "file_path": "Alt11.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790011/download",
+      "file_size": 8548,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt12.xlsx",
+      "file_path": "Alt12.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790012/download",
+      "file_size": 8548,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt13.xlsx",
+      "file_path": "Alt13.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790013/download",
+      "file_size": 8553,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt14.xlsx",
+      "file_path": "Alt14.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790014/download",
+      "file_size": 8550,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt15.xlsx",
+      "file_path": "Alt15.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790015/download",
+      "file_size": 8534,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt16.xlsx",
+      "file_path": "Alt16.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790016/download",
+      "file_size": 8533,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt17.xlsx",
+      "file_path": "Alt17.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790017/download",
+      "file_size": 8537,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt18.xlsx",
+      "file_path": "Alt18.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790018/download",
+      "file_size": 8528,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt19.xlsx",
+      "file_path": "Alt19.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790019/download",
+      "file_size": 8530,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt2.xlsx",
+      "file_path": "Alt2.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790002/download",
+      "file_size": 8499,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt20.xlsx",
+      "file_path": "Alt20.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790020/download",
+      "file_size": 15661,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt21.xlsx",
+      "file_path": "Alt21.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790021/download",
+      "file_size": 15636,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt22.xlsx",
+      "file_path": "Alt22.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790022/download",
+      "file_size": 15657,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt23.xlsx",
+      "file_path": "Alt23.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790023/download",
+      "file_size": 15687,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt24.xlsx",
+      "file_path": "Alt24.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790024/download",
+      "file_size": 8472,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt25.xlsx",
+      "file_path": "Alt25.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790026/download",
+      "file_size": 8654,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt26.xlsx",
+      "file_path": "Alt26.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790025/download",
+      "file_size": 8461,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Alt3.xlsx",
+      "file_path": "Alt3.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.t1g1jwt2p",
+      "file_url": "https://datadryad.org/api/v2/files/790003/download",
+      "file_size": 8499,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

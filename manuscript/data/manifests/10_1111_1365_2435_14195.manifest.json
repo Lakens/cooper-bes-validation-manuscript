@@ -1,0 +1,250 @@
+{
+  "paper_id": "10_1111_1365_2435_14195",
+  "generated": "2026-09-10T02:20:14+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:20:14+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "logger_complete_10cm_2020.csv",
+      "file_path": "logger_complete_10cm_2020.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514387",
+      "file_size": 16854171,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "P.napi_2018-2021_sodermanland.xlsx",
+      "file_path": "P.napi_2018-2021_sodermanland.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514390",
+      "file_size": 286179,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "phenology_data.txt",
+      "file_path": "phenology_data.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514393",
+      "file_size": 492102,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predictor_stack.grd",
+      "file_path": "predictor_stack.grd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514396",
+      "file_size": 989,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "predictor_stack.gri",
+      "file_path": "predictor_stack.gri",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514399",
+      "file_size": 25449120,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "summary.csv",
+      "file_path": "summary.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514405",
+      "file_size": 152,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TPC_parameters.txt",
+      "file_path": "TPC_parameters.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514408",
+      "file_size": 870,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CD_model_coef.csv",
+      "file_path": "CD_model_coef.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514420",
+      "file_size": 57,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "logger_accurate_coordinates.xlsx",
+      "file_path": "logger_accurate_coordinates.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514423",
+      "file_size": 17603,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "logger_complete_10cm_2018.csv",
+      "file_path": "logger_complete_10cm_2018.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514426",
+      "file_size": 17239105,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "logger_complete_10cm_2019.csv",
+      "file_path": "logger_complete_10cm_2019.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/34514429",
+      "file_size": 16545669,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "1_rate_summation_v3.r",
+      "file_path": "1_rate_summation_v3.r",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/37650674",
+      "file_size": 11678,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2_plot_rate_summation_v3.rmd",
+      "file_path": "2_plot_rate_summation_v3.rmd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/37650677",
+      "file_size": 32439,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "3_plot_rate_summation_summaries_v3.r",
+      "file_path": "3_plot_rate_summation_summaries_v3.r",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/37650680",
+      "file_size": 29311,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Readme.docx",
+      "file_path": "Readme.docx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19425296",
+      "file_url": "https://ndownloader.figshare.com/files/37650725",
+      "file_size": 16367,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "base",
+      "corrplot",
+      "dplyr",
+      "ellipse",
+      "ggplot2",
+      "ggridges",
+      "ggsn",
+      "hrbrthemes",
+      "knitr",
+      "latticeExtra",
+      "lubridate",
+      "PerformanceAnalytics",
+      "plotly",
+      "plyr",
+      "raster",
+      "RColorBrewer",
+      "readxl",
+      "reshape",
+      "scales",
+      "scico",
+      "sf",
+      "stringr",
+      "tidyr",
+      "tidyverse",
+      "viridis",
+      "vtable"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

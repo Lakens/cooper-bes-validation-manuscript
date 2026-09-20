@@ -1,0 +1,232 @@
+{
+  "paper_id": "10_1111_1365_2656_12877",
+  "generated": "2026-09-10T02:33:04+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:33:04+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "s-k24r.jpg",
+      "file_path": "s-k24r.jpg",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899862",
+      "file_size": 11341,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "avi data on host habitat preference - 2016 - grofit and samar.xlsx",
+      "file_path": "avi data on host habitat preference - 2016 - grofit and samar.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899886",
+      "file_size": 201532,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "calculate_j.jar",
+      "file_path": "calculate_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899904",
+      "file_size": 48596,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "calculate_j.txt",
+      "file_path": "calculate_j.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899907",
+      "file_size": 176303,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "graph6_j.jar",
+      "file_path": "graph6_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899910",
+      "file_size": 40059,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "graph6_j.txt",
+      "file_path": "graph6_j.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899913",
+      "file_size": 159766,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "graph7_j.jar",
+      "file_path": "graph7_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899916",
+      "file_size": 40008,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "graph7_j.txt",
+      "file_path": "graph7_j.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899919",
+      "file_size": 160231,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "graph8_j.jar",
+      "file_path": "graph8_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899922",
+      "file_size": 40672,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "graph8_j.txt",
+      "file_path": "graph8_j.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899925",
+      "file_size": 162987,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "graph10_j.jar",
+      "file_path": "graph10_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899928",
+      "file_size": 38273,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "graph10_j.txt",
+      "file_path": "graph10_j.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899931",
+      "file_size": 145496,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hhpref@.txt",
+      "file_path": "hhpref@.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899934",
+      "file_size": 69,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hhpref_j.jar",
+      "file_path": "hhpref_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899937",
+      "file_size": 54431,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "hosthab@.txt",
+      "file_path": "hosthab@.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899940",
+      "file_size": 60,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hosthab_j.jar",
+      "file_path": "hosthab_j.jar",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.6470927.v1",
+      "file_url": "https://ndownloader.figshare.com/files/11899943",
+      "file_size": 52841,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

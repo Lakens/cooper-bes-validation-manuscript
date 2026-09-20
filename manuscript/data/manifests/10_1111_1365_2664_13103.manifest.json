@@ -1,0 +1,62 @@
+{
+  "paper_id": "10_1111_1365_2664_13103",
+  "generated": "2026-09-10T03:27:11+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:27:11+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "pollen deposition.csv",
+      "file_path": "pollen deposition.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rf510",
+      "file_url": "https://datadryad.org/api/v2/files/23642/download",
+      "file_size": 558212,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed set.csv",
+      "file_path": "seed set.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.rf510",
+      "file_url": "https://datadryad.org/api/v2/files/23643/download",
+      "file_size": 3875,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

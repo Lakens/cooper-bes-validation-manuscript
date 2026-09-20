@@ -1,0 +1,260 @@
+{
+  "paper_id": "10_1111_1365_2664_14358",
+  "generated": "2026-09-10T04:07:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:07:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 20,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996074/download",
+      "file_size": 6907,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_landscape_data.csv",
+      "file_path": "Wersebeckmann_et_al_landscape_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996075/download",
+      "file_size": 2230,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_landscape_data.txt",
+      "file_path": "Wersebeckmann_et_al_landscape_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996061/download",
+      "file_size": 2111,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_allSR.csv",
+      "file_path": "Wersebeckmann_et_al_local_env_allSR.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996063/download",
+      "file_size": 2983,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_allSR.txt",
+      "file_path": "Wersebeckmann_et_al_local_env_allSR.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996062/download",
+      "file_size": 2411,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR1.csv",
+      "file_path": "Wersebeckmann_et_al_local_env_SR1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996076/download",
+      "file_size": 2251,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR1.txt",
+      "file_path": "Wersebeckmann_et_al_local_env_SR1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996077/download",
+      "file_size": 2143,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR2.csv",
+      "file_path": "Wersebeckmann_et_al_local_env_SR2.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996078/download",
+      "file_size": 2303,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR2.txt",
+      "file_path": "Wersebeckmann_et_al_local_env_SR2.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996079/download",
+      "file_size": 2142,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR3.csv",
+      "file_path": "Wersebeckmann_et_al_local_env_SR3.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996080/download",
+      "file_size": 2232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_local_env_SR3.txt",
+      "file_path": "Wersebeckmann_et_al_local_env_SR3.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996081/download",
+      "file_size": 2144,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_site_info_data.csv",
+      "file_path": "Wersebeckmann_et_al_site_info_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996082/download",
+      "file_size": 1406,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_site_info_data.txt",
+      "file_path": "Wersebeckmann_et_al_site_info_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996083/download",
+      "file_size": 1214,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_all_species_abbreviation.csv",
+      "file_path": "Wersebeckmann_et_al_wildbee_all_species_abbreviation.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996073/download",
+      "file_size": 5202,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_all_species_abbreviation.txt",
+      "file_path": "Wersebeckmann_et_al_wildbee_all_species_abbreviation.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996064/download",
+      "file_size": 4776,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_species_matrix_allSR.csv",
+      "file_path": "Wersebeckmann_et_al_wildbee_species_matrix_allSR.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996098/download",
+      "file_size": 13874,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_species_matrix_allSR.txt",
+      "file_path": "Wersebeckmann_et_al_wildbee_species_matrix_allSR.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996065/download",
+      "file_size": 5591,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_species_matrix_SR1.csv",
+      "file_path": "Wersebeckmann_et_al_wildbee_species_matrix_SR1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996099/download",
+      "file_size": 9348,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_species_matrix_SR1.txt",
+      "file_path": "Wersebeckmann_et_al_wildbee_species_matrix_SR1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996068/download",
+      "file_size": 5078,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wersebeckmann_et_al_wildbee_species_matrix_SR2.csv",
+      "file_path": "Wersebeckmann_et_al_wildbee_species_matrix_SR2.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h44j0zpq0",
+      "file_url": "https://datadryad.org/api/v2/files/1996100/download",
+      "file_size": 9907,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

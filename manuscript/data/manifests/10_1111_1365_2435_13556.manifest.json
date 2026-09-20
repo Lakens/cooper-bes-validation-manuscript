@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2435_13556",
+  "generated": "2026-09-10T02:06:59+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:06:59+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "growth_trajectories.csv",
+      "file_path": "growth_trajectories.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261205/download",
+      "file_size": 1911630,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "individual-specific_data.csv",
+      "file_path": "individual-specific_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261201/download",
+      "file_size": 75940,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "instar-specific_data.csv",
+      "file_path": "instar-specific_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261200/download",
+      "file_size": 365137,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "phylogenetic_tree_within-family_relationships.txt",
+      "file_path": "phylogenetic_tree_within-family_relationships.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261204/download",
+      "file_size": 2035,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "phylogenetic_tree.txt",
+      "file_path": "phylogenetic_tree.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261202/download",
+      "file_size": 2382,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species-specific_data_final_instar_removed.csv",
+      "file_path": "species-specific_data_final_instar_removed.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261198/download",
+      "file_size": 3884,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species-specific_data.csv",
+      "file_path": "species-specific_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261199/download",
+      "file_size": 3862,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temperature-effects.csv",
+      "file_path": "temperature-effects.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vmz",
+      "file_url": "https://datadryad.org/api/v2/files/261203/download",
+      "file_size": 73543,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

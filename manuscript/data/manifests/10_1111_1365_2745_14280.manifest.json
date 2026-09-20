@@ -1,0 +1,266 @@
+{
+  "paper_id": "10_1111_1365_2745_14280",
+  "generated": "2026-09-10T05:14:31+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:14:31+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".Rhistory",
+      "file_path": ".Rhistory",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/.Rhistory",
+      "file_size": 32112,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/.gitignore",
+      "file_size": 590,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "amUnique_6DSER419.htm",
+      "file_path": "Code/.\\amUnique_6DSER419.htm",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Code/.\\amUnique_6DSER419.htm",
+      "file_size": 6150959,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "amUnique_I13PVO5H.htm",
+      "file_path": "Code/.\\amUnique_I13PVO5H.htm",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Code/.\\amUnique_I13PVO5H.htm",
+      "file_size": 4685712,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "amUnique_QT28ONH5.htm",
+      "file_path": "Code/.\\amUnique_QT28ONH5.htm",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Code/.\\amUnique_QT28ONH5.htm",
+      "file_size": 6150959,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Code.Rmd",
+      "file_path": "Code/Code.Rmd",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Code/Code.Rmd",
+      "file_size": 106447,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "vif_function.R",
+      "file_path": "Code/vif_function.R",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Code/vif_function.R",
+      "file_size": 1816,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "coord.csv",
+      "file_path": "Data/coord.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/coord.csv",
+      "file_size": 4232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "full_dataset.csv",
+      "file_path": "Data/full_dataset.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/full_dataset.csv",
+      "file_size": 452736,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "relatedness_matrix.csv",
+      "file_path": "Data/relatedness_matrix.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/relatedness_matrix.csv",
+      "file_size": 13091351,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed_rain_raw.csv",
+      "file_path": "Data/seed_rain_raw.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/seed_rain_raw.csv",
+      "file_size": 42767,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seeds_trees.csv",
+      "file_path": "Data/seeds_trees.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/seeds_trees.csv",
+      "file_size": 129638,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seeds_trees_2.csv",
+      "file_path": "Data/seeds_trees_2.csv",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Data/seeds_trees_2.csv",
+      "file_size": 82951,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_1.png",
+      "file_path": "Figure_1.png",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/Figure_1.png",
+      "file_size": 10267419,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/PJordano-Lab/MS_JuniperusProgeny",
+      "file_url": "https://raw.githubusercontent.com/PJordano-Lab/MS_JuniperusProgeny/master/README.md",
+      "file_size": 1462,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "allelematch",
+      "candisc",
+      "CCA",
+      "CCP",
+      "corrplot",
+      "DHARMa",
+      "dplyr",
+      "effects",
+      "fmsb",
+      "ggalluvial",
+      "GGally",
+      "ggplot2",
+      "ggpubr",
+      "ggridges",
+      "glmmTMB",
+      "graphics",
+      "iNEXT",
+      "janitor",
+      "knitr",
+      "mapproj",
+      "modEvA",
+      "plotly",
+      "plotrix",
+      "plyr",
+      "RColorBrewer",
+      "readr",
+      "reshape2",
+      "sf",
+      "sjPlot",
+      "spatstat",
+      "stringr",
+      "tibble",
+      "tidyr",
+      "TukeyC",
+      "vcd",
+      "VIF"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_2041_210x_13125",
+  "generated": "2026-09-10T06:07:37+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:07:37+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Jpomz/honestly-you-eat-this-6.zip",
+      "file_path": "Jpomz/honestly-you-eat-this-6.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.1482031",
+      "file_url": "https://zenodo.org/api/records/3097987/files/Jpomz/honestly-you-eat-this-6.zip/content",
+      "file_size": 387457,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Adjacency_matrices.zip",
+      "file_path": "Adjacency_matrices.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.k59m37f",
+      "file_url": "https://datadryad.org/api/v2/files/35952/download",
+      "file_size": 13453,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "niche_forbidden_taxa.csv",
+      "file_path": "niche_forbidden_taxa.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k59m37f",
+      "file_url": "https://datadryad.org/api/v2/files/35954/download",
+      "file_size": 170,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "other_feeding_interactions.csv",
+      "file_path": "other_feeding_interactions.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k59m37f",
+      "file_url": "https://datadryad.org/api/v2/files/35955/download",
+      "file_size": 148293,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Taxa_dry_weight_abundance.csv",
+      "file_path": "Taxa_dry_weight_abundance.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k59m37f",
+      "file_url": "https://datadryad.org/api/v2/files/35953/download",
+      "file_size": 21159,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "taxonomy.csv",
+      "file_path": "taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k59m37f",
+      "file_url": "https://datadryad.org/api/v2/files/35956/download",
+      "file_size": 13445,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "dplyr",
+      "ggplot2",
+      "igraph",
+      "knitr",
+      "plyr",
+      "purrr",
+      "quantreg",
+      "ROCR",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

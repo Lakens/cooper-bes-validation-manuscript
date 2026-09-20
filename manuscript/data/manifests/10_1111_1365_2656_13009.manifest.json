@@ -1,0 +1,218 @@
+{
+  "paper_id": "10_1111_1365_2656_13009",
+  "generated": "2026-09-10T02:34:17+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:34:17+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 15,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "NGP_encounter_histories.txt",
+      "file_path": "NGP_encounter_histories.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.37qt6nm",
+      "file_url": "https://datadryad.org/api/v2/files/114073/download",
+      "file_size": 30272,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SGP_encounter_histories.txt",
+      "file_path": "SGP_encounter_histories.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.37qt6nm",
+      "file_url": "https://datadryad.org/api/v2/files/114074/download",
+      "file_size": 15136,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Arg_Dem_LL.xlsx",
+      "file_path": "Arg_Dem_LL.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90612/download",
+      "file_size": 106701,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Chile_LL.xlsx",
+      "file_path": "Chile_LL.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90614/download",
+      "file_size": 57857,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data used.txt",
+      "file_path": "Data used.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90606/download",
+      "file_size": 1636,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Falklands demersal LL.xlsx",
+      "file_path": "Falklands demersal LL.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90611/download",
+      "file_size": 250142,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ICCAT_all_v1_CSV.rar",
+      "file_path": "ICCAT_all_v1_CSV.rar",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90609/download",
+      "file_size": 1190733,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "IOTC data.xlsx",
+      "file_path": "IOTC data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90607/download",
+      "file_size": 2612203,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Namibia Dem Hks Est.txt",
+      "file_path": "Namibia Dem Hks Est.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90618/download",
+      "file_size": 9144,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Arg_Dem_LL.txt",
+      "file_path": "README_for_Arg_Dem_LL.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90613/download",
+      "file_size": 4431,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Chile_LL.txt",
+      "file_path": "README_for_Chile_LL.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90615/download",
+      "file_size": 11466,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_ICCAT_all_v1_CSV.txt",
+      "file_path": "README_for_ICCAT_all_v1_CSV.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90610/download",
+      "file_size": 1445,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_IOTC data.txt",
+      "file_path": "README_for_IOTC data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90608/download",
+      "file_size": 1667,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Namibia Dem Hks Est.txt",
+      "file_path": "README_for_Namibia Dem Hks Est.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90619/download",
+      "file_size": 347,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Saf_KKlip_Dem.txt",
+      "file_path": "README_for_Saf_KKlip_Dem.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90617/download",
+      "file_size": 2317,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Saf_KKlip_Dem.txt",
+      "file_path": "Saf_KKlip_Dem.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.7f63m",
+      "file_url": "https://datadryad.org/api/v2/files/90616/download",
+      "file_size": 9958,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

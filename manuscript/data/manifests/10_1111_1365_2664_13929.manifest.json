@@ -1,0 +1,201 @@
+{
+  "paper_id": "10_1111_1365_2664_13929",
+  "generated": "2026-09-10T04:00:30+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:00:30+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 13,
+  "n_downloaded": 12,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "DATA_model_metrics.csv",
+      "file_path": "DATA_model_metrics.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5x69p8d32",
+      "file_url": "https://datadryad.org/api/v2/files/704382/download",
+      "file_size": 4638,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Catano_datasets.txt",
+      "file_path": "README_Catano_datasets.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5x69p8d32",
+      "file_url": "https://datadryad.org/api/v2/files/704424/download",
+      "file_size": 4605,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site_predictors.csv",
+      "file_path": "site_predictors.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5x69p8d32",
+      "file_url": "https://datadryad.org/api/v2/files/704381/download",
+      "file_size": 1893,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species_plot_data.csv",
+      "file_path": "species_plot_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5x69p8d32",
+      "file_url": "https://datadryad.org/api/v2/files/704384/download",
+      "file_size": 339356,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ecosystem_function_Zirbel_2017_dryad.csv",
+      "file_path": "ecosystem_function_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33622/download",
+      "file_size": 24165,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "phylogeny_Zirbel_2017_dryad.txt",
+      "file_path": "phylogeny_Zirbel_2017_dryad.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33628/download",
+      "file_size": 6151,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plant_community_Zirbel_2017_dryad.csv",
+      "file_path": "plant_community_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33623/download",
+      "file_size": 106910,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33630/download",
+      "file_size": 10599,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Rscript_Zirbel_2017_dryad.R",
+      "file_path": "Rscript_Zirbel_2017_dryad.R",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33629/download",
+      "file_size": 18970,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "site_environmental_Zirbel_2017_dryad.csv",
+      "file_path": "site_environmental_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33624/download",
+      "file_size": 3444,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tax_phylo_names_Zirbel_2017_dryad.csv",
+      "file_path": "tax_phylo_names_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33627/download",
+      "file_size": 6321,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trait_data_field_Zirbel_2017_dryad.csv",
+      "file_path": "trait_data_field_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33625/download",
+      "file_size": 46885,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trait_data_literature_Zirbel_2017_dryad.csv",
+      "file_path": "trait_data_literature_Zirbel_2017_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2175q",
+      "file_url": "https://datadryad.org/api/v2/files/33626/download",
+      "file_size": 10107,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "ggplot2",
+      "grid",
+      "Hmisc",
+      "lavaan",
+      "psych",
+      "reshape2"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

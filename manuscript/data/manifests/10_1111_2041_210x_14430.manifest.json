@@ -1,0 +1,101 @@
+{
+  "paper_id": "10_1111_2041_210x_14430",
+  "generated": "2026-09-10T09:42:34+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T09:42:34+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 4,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Metadata_eDNA_Pole2Pole_v4.csv",
+      "file_path": "Metadata_eDNA_Pole2Pole_v4.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.7805935",
+      "file_url": "https://zenodo.org/api/records/7805935/files/Metadata_eDNA_Pole2Pole_v4.csv/content",
+      "file_size": 371664,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.7805935",
+      "file_url": "https://zenodo.org/api/records/7805935/files/README.md/content",
+      "file_size": 10750,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data.zip",
+      "file_path": "Data.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.7805935",
+      "file_url": "https://zenodo.org/api/records/7805935/files/Data.zip/content",
+      "file_size": 97514539,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "letizialamperti/Spatial_Matrix_factorization_Method_Mixture_Analysis-TESS3forEcology.zip",
+      "file_path": "letizialamperti/Spatial_Matrix_factorization_Method_Mixture_Analysis-TESS3forEcology.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.13709657",
+      "file_url": "https://zenodo.org/api/records/13709658/files/letizialamperti/Spatial_Matrix_factorization_Method_Mixture_Analysis-TESS3forEcology.zip/content",
+      "file_size": 9964480,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "dplyr",
+      "mapplots",
+      "maps",
+      "tess3r"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

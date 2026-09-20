@@ -1,0 +1,243 @@
+{
+  "paper_id": "10_1111_1365_2656_13415",
+  "generated": "2026-09-10T03:07:24+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:07:24+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "DryasSeedSetAndDamage.csv",
+      "file_path": "DryasSeedSetAndDamage.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509552/download",
+      "file_size": 15840,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "HMSC_PhyloTraitData.csv",
+      "file_path": "HMSC_PhyloTraitData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509550/download",
+      "file_size": 5595,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "HMSC_YXdata.csv",
+      "file_path": "HMSC_YXdata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509556/download",
+      "file_size": 988385,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OTUs.fa",
+      "file_path": "OTUs.fa",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509555/download",
+      "file_size": 33220,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ParasitismRatesInSympistisZetterstedtii.csv",
+      "file_path": "ParasitismRatesInSympistisZetterstedtii.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509553/download",
+      "file_size": 2373,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RawDryasCounts.csv",
+      "file_path": "RawDryasCounts.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509551/download",
+      "file_size": 80311,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_ZackenbergParasitoids.txt",
+      "file_path": "README_ZackenbergParasitoids.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509547/download",
+      "file_size": 19255,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S1_Fit_model_ParasioidsOfLeps.R",
+      "file_path": "S1_Fit_model_ParasioidsOfLeps.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509546/download",
+      "file_size": 6507,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "S2_Show_parameters.R",
+      "file_path": "S2_Show_parameters.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509545/download",
+      "file_size": 3627,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "S3a_Compute_model_fit.R",
+      "file_path": "S3a_Compute_model_fit.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509542/download",
+      "file_size": 1629,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "S3b_Show_model_fit.R",
+      "file_path": "S3b_Show_model_fit.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509543/download",
+      "file_size": 1113,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "S4_Make_prediction.R",
+      "file_path": "S4_Make_prediction.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509544/download",
+      "file_size": 6404,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Site_coordinates.csv",
+      "file_path": "Site_coordinates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509548/download",
+      "file_size": 461,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_info.csv",
+      "file_path": "Species_info.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509549/download",
+      "file_size": 10935,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TemperatureLoggerData.csv",
+      "file_path": "TemperatureLoggerData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509557/download",
+      "file_size": 16699411,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YMatrix_AllSpecies.csv",
+      "file_path": "YMatrix_AllSpecies.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf1zn",
+      "file_url": "https://datadryad.org/api/v2/files/509554/download",
+      "file_size": 774683,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "ape",
+      "corrplot",
+      "fields",
+      "Hmsc",
+      "MASS",
+      "snow"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

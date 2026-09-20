@@ -1,0 +1,161 @@
+{
+  "paper_id": "10_1111_1365_2656_13134",
+  "generated": "2026-09-10T03:01:47+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:01:47+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Ambient_Temp_Data_YEJU_Final_archive.csv",
+      "file_path": "Ambient_Temp_Data_YEJU_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182108/download",
+      "file_size": 45581802,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Adult_Body_Size_Final_archive.csv",
+      "file_path": "YEJU_Adult_Body_Size_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182102/download",
+      "file_size": 51871,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Adult_Dispersal_Distances_archive.csv",
+      "file_path": "YEJU_Adult_Dispersal_Distances_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182104/download",
+      "file_size": 1169,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Adult_survival_Final_archive.xlsx",
+      "file_path": "YEJU_Adult_survival_Final_archive.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182105/download",
+      "file_size": 40912,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Clutch_Size_Data_Final_archive.csv",
+      "file_path": "YEJU_Clutch_Size_Data_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182106/download",
+      "file_size": 26456,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Developmental_Period_Duration_Final_archive.csv",
+      "file_path": "YEJU_Developmental_Period_Duration_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182107/download",
+      "file_size": 30973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Hatch_Success_Nest_Fate_Final_archive.csv",
+      "file_path": "YEJU_Hatch_Success_Nest_Fate_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182100/download",
+      "file_size": 27146,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Migratory_Tendencies_Final_archive.csv",
+      "file_path": "YEJU_Migratory_Tendencies_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182098/download",
+      "file_size": 5805,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Nest_Surivival_Data_Final_archive.csv",
+      "file_path": "YEJU_Nest_Surivival_Data_Final_archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182103/download",
+      "file_size": 30664,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Nestling_Growth_final_Archive.csv",
+      "file_path": "YEJU_Nestling_Growth_final_Archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182099/download",
+      "file_size": 20794,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "YEJU_Renests_Annual_Fecundity_final_Archive.csv",
+      "file_path": "YEJU_Renests_Annual_Fecundity_final_Archive.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2547d7wmj",
+      "file_url": "https://datadryad.org/api/v2/files/182101/download",
+      "file_size": 10304,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

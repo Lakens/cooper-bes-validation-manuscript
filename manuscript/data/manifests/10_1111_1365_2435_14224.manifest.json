@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2435_14224",
+  "generated": "2026-09-10T02:20:46+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:20:46+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "CHU1_darkmorphology.xlsx",
+      "file_path": "CHU1_darkmorphology.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897046/download",
+      "file_size": 11949,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "DailyWeather.xlsx",
+      "file_path": "DailyWeather.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897047/download",
+      "file_size": 65290,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "IndividualAnt_observations.xlsx",
+      "file_path": "IndividualAnt_observations.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897048/download",
+      "file_size": 418857,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Mycoparasites.xlsx",
+      "file_path": "Mycoparasites.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897054/download",
+      "file_size": 22106,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PerVisitSummaries.xlsx",
+      "file_path": "PerVisitSummaries.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897051/download",
+      "file_size": 23587,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_file.txt",
+      "file_path": "README_file.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897053/download",
+      "file_size": 805,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TillandsiaRandomTrees.xlsx",
+      "file_path": "TillandsiaRandomTrees.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897052/download",
+      "file_size": 13183,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VegetationLineIntersects.xlsx",
+      "file_path": "VegetationLineIntersects.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.4tmpg4fd8",
+      "file_url": "https://datadryad.org/api/v2/files/1897050/download",
+      "file_size": 12455,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

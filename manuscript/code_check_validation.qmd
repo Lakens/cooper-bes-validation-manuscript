@@ -1,0 +1,440 @@
+---
+title: "Validation of metacheck's code_check module against a real corpus"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    code-fold: true
+execute:
+  echo: false
+  eval: false
+---
+
+## Purpose and method
+
+This document validates five automated checks inside metacheck's `code_check()` module
+(`R/code_check.R`, `inst/modules/code_check.R`) against the code files of a real corpus of
+400 ecology papers (Journal of Applied Ecology, Methods in Ecology and Evolution, and related
+journals). Two other checks the module performs — parse errors and version pinning — were
+already validated separately and are not repeated here.
+
+Every flagged file discussed below was actually opened and read (either from its
+already-downloaded local cache copy, `file_location`, or — for a small remainder with no local
+copy — its `file_url`) and judged by hand as a true or false positive/negative. The full
+sampling and judgment-recording code, with a fixed seed (`set.seed(42)`) at every random draw,
+is in `validate_code_check.R` in this same folder; the judgment tables it produces
+(`judgments_*.csv`, `all_judgments.csv`) and every intermediate sample (`*_sample*.csv`,
+`*_negsample*.csv`) are saved alongside it. This document reports the same numbers those files
+contain and quotes real file content behind every example.
+
+The corpus table has 10,461 code-file rows across 400 papers. 8,218 rows have an
+already-downloaded local file (`file_location` exists on disk) and were read directly; of the
+remaining 2,243 rows, only 39 also carry a `file_url` that could in principle be fetched — the
+other ~2,200 have neither and were never actually analysed by `code_check()` (every analysis
+column for them is `NA`, so there is nothing to validate). The task's "sample up to 100 remote
+files" therefore naturally yields all 39 rather than a capped 100. At the time this validation
+was run, the one host serving most of those 39 (datadryad.org) was rate-limiting every request
+(HTTP 429), so 0/39 downloaded; this is recorded in `remote_only_fetch_attempt.csv` rather than
+silently skipped. This corpus also contains **no SAS, SPSS, or Stata files at all** (it is
+entirely R, Python, MATLAB, and two Mplus files) — the language-specific comment/library logic
+for those three languages could not be exercised against real files here, which is stated
+plainly rather than glossed over.
+
+Note the corpus snapshot used here shows somewhat different flag counts than an earlier
+description of this task (absolute paths: 1,017 rows/170 papers here vs. 399/110 previously;
+setwd: 385 rows/92 papers here vs. 302/79 previously) — apparently from a later full corpus
+rerun. The numbers below are computed live from the batch files as they exist now.
+
+---
+
+## 1. Missing referenced files
+
+**Logic in plain terms.** `code_file_refs()` scans a file's code (comments stripped) for calls
+that read a file (`read.csv`, `source`, Stata `use`, etc.), pulls out any quoted filename found
+on the same line, and `inst/modules/code_check.R` then checks whether that name's basename
+appears anywhere in the paper's repository file listing. A name that never appears is reported
+to the author as a "loaded file missing from the repository."
+
+**Sample.** All 948 flagged rows (183 papers, ~2,949 individual missing-name entries) were
+screened programmatically for a case-insensitive basename match anywhere in the same repo — a
+near-certain false-positive signature — then a further random sample of 40 of the remaining
+"genuinely absent" entries (`set.seed(42)`) was read by hand, together with the full repo file
+listing for each paper. A separate random sample of 40 non-flagged files (`set.seed(42)`) was
+scanned for a quoted, extension-bearing string that a reader-call regex should have captured but
+did not.
+
+**Findings.**
+
+*13 confirmed false positives*, all a single mechanism: the referenced file exists in the repo
+under a different letter case, and `inst/modules/code_check.R`'s `setdiff(base_ref, base_repo)`
+(line 331) is a case-sensitive string comparison. Concrete examples, all independently confirmed
+against the paper's real file listing:
+
+- Paper `10_1002_2688_8319_12229`: three scripts reference `REM_tools.r`; the repo holds
+  `REM_tools.R`.
+- Paper `10_1111_2041_210x_13923`: `220520_model.R` references `diagnostic_fcns.r` and
+  `boot_glmm.r`; the repo holds `diagnostic_fcns.R` and `boot_glmm.R`.
+- Paper `10_1111_2041_210x_13125`: three scripts and a README reference
+  `FoodWeb_Functions.R`; the repo holds `Foodweb_functions.R`.
+- Paper `10_1002_pan3_10736`: `run-sensitivity-analyses.R` references
+  `YIELD-optimisation-downsampleSpeciesPool.R` and `...downsampleFishedSpecies.R`; the repo
+  holds `yield-optimisation-downsampleSpeciesPool.R` / `...downsampleFishedSpecies.R` (lowercase
+  first letter).
+
+*Manually confirmed true positives* in the 40-file random sample: every one of the 40 references
+a file genuinely absent from its repository. For example, paper `10_1111_1365_2664_14445`'s
+`combine_networks_M.R` calls
+`fread(paste0("Results/",network,"/",network,"_M_D_abundance_interactions.csv"))` inside a loop
+over 20 network names — but the entire repository (12 files total) contains no `Data/` or
+`Results/` folder at all, so every one of these referenced inputs is genuinely missing (the
+repo is code-only). Paper `10_1111_1365_2656_13929` (`compute_lambda.r`) and paper
+`10_1111_2041_210x_14372` (`Cuthbert_2019_mf.R`, referencing `stan_model_H3_mixed.RData`) are
+similarly genuinely code-only deposits.
+
+*A distinct, quantified mechanical wrinkle* (true positive, but with a confusing message): when
+the quoted filename is built as `paste0(dir_or_loop_var, "...literal_suffix.csv")`, the
+`code_file_refs()` regex only captures the **literal trailing fragment**
+(`_M_D_abundance_interactions.csv`), not the true intended filename (e.g.
+`M_SD_025_M_D_abundance_interactions.csv`). The flag is still technically correct — nothing by
+that literal fragment name exists — but the name shown to the author is not the file they'd
+recognise. Across the 2,599 "genuinely absent" entries, 128 (4.9%) have a `missing_name`
+starting with punctuation (`_`, space, `.`, `-`), the tell-tale sign of a dropped variable
+prefix — e.g. `_A_D_abundance_interactions.csv`, `_pooled.RDS`, `_filters.tsv`.
+
+*2 confirmed false negatives* in the 40-file negative sample:
+
+- Paper `10_1111_1365_2435_13993`, `tests/testthat/test-m_run_biophysical.R`: assigns quoted
+  filenames to variables on separate lines —
+  `liz_file <- "example_lizard_data.csv"` / `physio <- "example_physio_spec.csv"` /
+  `loc_file <- "example_coordinates.csv"` — then uses those variables later. None of these three
+  files exist in the repo (confirmed), so this file *should* have been flagged as loading 3
+  missing files but was not: `code_file_refs()` only captures a quoted filename on the **same
+  line** as the reader-call keyword.
+- Paper `10_1111_2041_210x_13440`, `R/ncbi.R`: reads
+  `vroom::vroom(file.path(dir, "nodes.dmp"), ...)` and `vroom::vroom(file.path(dir, "names.dmp"), ...)`.
+  Neither `nodes.dmp` nor `names.dmp` exists in the repo, but `vroom` is not in
+  `code_file_refs()`'s R reader-keyword list (`read[._]...`, `import`, `fread`, `readRDS`,
+  `load`, `readLines`, `fromJSON`, `readtext`, `source`), so the call is invisible to the check.
+
+**Precision / recall.** Of 40 hand-read "genuinely absent" entries, 40/40 were true positives
+(after excluding the 13 already-confirmed case-mismatch false positives found by the
+programmatic pre-screen across the full 948-row set). Combined: 13 confirmed FP out of 948
+flagged rows in the exhaustive case-insensitive pre-screen (a lower bound on FP rate, since the
+pre-screen only catches the case-mismatch mechanism specifically), plus 128/2,599 (4.9%)
+TP-but-confusingly-labelled fragment matches. In the 40-file negative sample, 2/40 (5%) files
+had a genuinely missed reference — a real, if modest, false-negative rate from two distinct
+mechanisms.
+
+**Recommendation.** In `inst/modules/code_check.R`, line 331, change
+`missing_files <- setdiff(base_ref, base_repo)` to a case-insensitive comparison, e.g.
+`missing_files <- base_ref[!tolower(base_ref) %in% tolower(base_repo)]` — this alone would
+remove all 13 confirmed false positives found here and any of the same kind not yet sampled. In
+`R/code_check.R`'s `code_file_refs()`, add `vroom` (and, more generally, any bare identifier
+immediately followed by `(file.path(...), ...)` or a quoted-extension string) to the R
+reader-keyword list; `vroom::vroom()` is common enough in real ecology-corpus code that this is
+worth a dedicated entry rather than folding it into the generic `read[._]` pattern (it doesn't
+start with "read"). For the fragment-message wrinkle, `inst/modules/code_check.R`'s
+`loaded_files_missing_names` column could prefix a fragment-shaped name (one starting with
+punctuation) with an indicator like `"...` so the report visibly signals "this is a partial
+match, not the full filename" instead of implying it is one.
+
+---
+
+## 2. Hardcoded absolute paths
+
+**Logic in plain terms.** `code_abs_path()` regex-matches quoted strings shaped like an absolute
+filesystem path: `C:/...`, `/Users/...`, `/home/...`, `~/...`, or a UNC `\\host\share\...`. Its
+own docstring already flags a known risk: a variable-built path like `paste0(dir, '/file.csv')`
+can trigger a false match on the literal fragment.
+
+**Sample.** All 1,017 flagged rows (170 papers, 4,182 individual matched path strings) were
+split out and screened programmatically into four buckets (placeholder-shaped, very short
+(≤6 chars), real username-shaped, UNC-shaped), then representative examples from each bucket
+were read in their original source file. A random sample of 60 non-flagged files
+(`set.seed(42)`) was scanned with a broader regex net for an absolute-path-shaped string
+`code_abs_path()` should have caught but didn't.
+
+**Findings.**
+
+*Confirmed false positives*, four distinct mechanisms, all with exact source quotes:
+
+1. **HTTP routes matched as filesystem paths.** In a vendored web-app test suite
+   (`github.com_ccrisan_motioneye/tests/test_handlers/test_login.py`), `self.fetch('/login')`
+   is an HTTP endpoint call, not a path — matched because the regex's `/(?!/)[^\n'"]+` branch
+   accepts any quoted string starting with a single `/`. The same file (and others in the very-
+   short-match bucket) produced `/hello`, `/echo`, `/adder` — all API routes in test code, not
+   real filesystem paths. (322 of the 4,182 matches are ≤6 characters; this class dominates that
+   bucket.)
+2. **The documented `paste0(dir, ...)` pattern, confirmed for real**:
+   `github.com_YvesBas_Tadarida-C/Sonotypes/write_tabase3HF_Sonotype.R`, line 40:
+   `list.files(paste(ListDate[[i]],"/eti",sep=""), ...)` — `"/eti"` is a relative fragment
+   concatenated onto a loop variable, not a standalone absolute path.
+3. **Regex backreference replacement strings mis-shaped as UNC paths.**
+   `osf.io_5fter/IDcallR_sameN_withIDcallPP.R`, line 183:
+   `sub('group (\\d+)_(\\d+)', "\\2\\1", colnames(clupo))` — `"\\2\\1"` is a `sub()`
+   backreference string, matched by the UNC branch because its hostname character class
+   (`[A-Za-z0-9._-]+`) accepts an all-digit "host" like `2`. A second, independent instance:
+   `zenodo.org.../06_maps_pyrenees.R`, line 258:
+   `gsub('(.{1,10})(\\s|$)', '\\1\n', osm_larger_places.df$name)` — `"\\1\n"` matched the same
+   way. The regex's own comment explains it tries to guard against exactly this (regex escapes
+   are "far more often" than real UNC paths), but the guard is defeated whenever the "host"
+   portion happens to be a bare digit.
+4. **Relative, string-concatenated Windows-style paths mis-triggering the UNC branch.**
+   `zenodo.org.../model_test.py`, lines 43-44:
+   `path_pred = 'data\\' + tile_name + '\\run\\' + model_name + '\\output\\tile\\'` — the whole
+   expression is a **relative** path (it starts with the literal `'data\\'`), built by Python
+   string concatenation; the UNC branch matched the `\run\` / `\output\tile\` substrings.
+
+*Confirmed true positives*: spot-checking 15 of the 997 "real username-shaped" matches (e.g.
+`C:/Users/reddin/Documents/SIA scaling MS/Revisions/...`, `/Users/farrer/Dropbox/...`,
+`/home/michael/Dropbox/engage/...`) found all 15 to be genuine, machine-specific absolute paths
+that would fail on any other computer — the large majority of flags in this check are correct.
+
+**Precision / recall.** Precision on hand-checked examples: of the diverse categories sampled,
+7 of 8 read-through examples were false positives (the four mechanisms above, several with
+multiple real occurrences each) and 15/15 further-sampled "real username" matches were true
+positives — consistent with a high but not perfect precision, concentrated in specific,
+identifiable regex-triggering patterns rather than being spread uniformly across all flags.
+Negative sample: 0/60 files had a missed absolute path — no false negatives detected in this
+sample.
+
+**Recommendation.** In `R/code_check.R`'s `code_abs_path()` (`absolute_path_pattern`, line
+~762): (a) exclude the bare-`/`-prefixed branch from matching when the string is short and
+appears as the sole argument to a known non-filesystem call such as `self.fetch(...)`,
+`.get(...)`, `.post(...)` — or, more simply and robustly, require the matched string to contain
+at least one more `/`-separated segment or a file extension, which would eliminate `/login`,
+`/hello`, `/eti` while keeping genuine single-segment absolute paths rare enough to not matter in
+practice; (b) tighten the UNC branch's hostname character class from `[A-Za-z0-9._-]+` to
+require at least one letter (e.g. `(?=.*[A-Za-z])[A-Za-z0-9._-]+`), which would exclude
+all-digit "hosts" like the `\\2\\1` / `\\1\n` regex-backreference false triggers while still
+matching every real hostname (`\\myserver\share`, `\\10.0.0.1\...` admittedly still matches
+digits-with-dots, which is a real edge case worth a follow-up test); (c) for the Python
+string-concatenation case (`'data\\' + var + '\\run\\' + ...`), there is no fully static fix
+short of tracking whether the enclosing expression is a `+`-concatenation starting with a
+relative literal — a cheaper partial mitigation is to require the matched quoted segment to be
+the **entire** string literal (already anchored start-to-end within one `'...'`/`"..."` pair) AND
+that the literal is not immediately preceded by a `+` operator and a non-path-like preceding
+term; this is a heuristic, not a complete fix, and should be flagged as such in the function's
+own docstring alongside the existing `paste0(dir, ...)` caveat.
+
+---
+
+## 3. `setwd()` calls
+
+**Logic in plain terms.** `code_setwd()` regex-matches any `setwd(...)` call in comment-stripped
+R code and reports it as written. Per the task's validation rule (confirmed explicitly): a true
+positive is any **live, executed** `setwd()` call, regardless of whether its argument is itself
+a hardcoded absolute path — the bad practice being flagged is the call itself, since it mutates
+global state and makes the script depend on where it happens to be run from.
+
+**Sample.** All 385 flagged rows (92 papers, 568 individual calls, 194 distinct call strings)
+were read for pattern classification; a random sample of 80 non-flagged R files
+(`set.seed(42)`) was scanned for the literal word "setwd" anywhere in the raw (not
+comment-stripped) text, to check both for missed live calls and for confirmation that
+commented-out calls are correctly excluded.
+
+**Findings.** All 194 distinct call strings are genuine `setwd()` calls appearing in live,
+executable code — true positives under the stated rule, including calls whose argument is
+itself relative or dynamic (`setwd("./data")`, `setwd(dir)`, `setwd(tempdir())`,
+`setwd(system.file("shapes", package="overlapptest"))`) — these still count, since the check's
+target is the anti-pattern of changing the working directory at all, not specifically hardcoded
+absolute-path arguments. Concrete true-positive examples with real machine-specific paths:
+paper `10_1111_2041_210x_13318`, `AeAegypti_Software_Replacement.R`:
+`setwd("/Users/sanchez.hmsc/Downloads/MGDrivE-master/Examples/SoftwarePaper/")`; paper
+`10_1111_2041_210x_13704`, `Figure 1 RMSE CV and Bias figure.R`:
+`setwd("C:/Users/sard/Google Drive/R/Data analysis/2021/Nspawners rarefaction project/Simulations/")`.
+
+A latent false-positive **mechanism** was confirmed with a synthetic test: `code_setwd()` has no
+string-literal awareness, so `message("Please run setwd(your_path) before continuing")` is
+matched as if it were a live call (`setwd(your_path) before continuing")` is returned as the
+"call"). Scanning all 194 real distinct call strings in the corpus for instructional-text
+tell-tales ("please", "before", "instructions", "note:", ...) found **zero** real instances —
+this is a demonstrated risk with no observed occurrence in this corpus, reported honestly rather
+than inflated into a finding it isn't.
+
+The negative sample found 3 files containing the word "setwd" that were not flagged; all 3 were
+manually confirmed to be genuinely commented-out calls (`# setwd(...)`, `#setwd("D:/...")`,
+`#setwd()`), correctly excluded — **zero real false negatives** in this sample.
+
+**Precision / recall.** 194/194 (100%) of distinct flagged calls in the corpus are true
+positives under the stated rule. 0/80 files in the negative sample were false negatives.
+
+**Recommendation.** No change is needed for correctness against this corpus — the check
+performed cleanly. The one improvement worth making, given the confirmed-but-unobserved
+string-literal risk: `code_setwd()` in `R/code_check.R` could reuse the same
+quote-context-tracking approach already implemented for `.code_strip_inline_comment()` (which
+tracks whether a position is inside a string literal) to skip a `setwd(` match that occurs
+inside an enclosing `"`/`'` — this is a small, targeted reuse of existing logic rather than a
+new mechanism, worth doing pre-emptively even though this corpus did not surface a real instance
+of the bug it would prevent.
+
+---
+
+## 4. Zero/low comment density
+
+**Logic in plain terms.** `code_line_stats()` / `.code_comment_flags()` count, per file and
+per language, how many lines contain a comment marker (whole-line or trailing) versus how many
+are code, using language-specific rules: `#` to end of line for R/Python, `/* */` block plus
+`*...;` line comments for SAS, `/* */`/`COMMENT BEGIN...END.` plus `*`/`COMMENT` for SPSS,
+`/* */` plus `*` plus `//` trailing for Stata, `!` for Mplus, `%`/`%{`/`%}` for MATLAB. A file
+with 0% comment lines is flagged. The validation question, per the task's own framing, is purely
+mechanical: does the comment/code line classification match what a human reading the same file
+would call a comment line — not whether flagging "zero comments" is deserved as a judgment call.
+
+**Sample.** All 984 locally-available zero-comment-flagged files were read for language
+composition (692 R, 280 Python, 12 MATLAB — no SAS/SPSS/Stata/Mplus zero-comment files exist in
+this corpus), then a stratified random sample of 15 per language (`set.seed(42)`) was read
+directly. A random sample of 45 non-flagged files (15 per language, `set.seed(42)`) was
+cross-checked against an independent, crude "whole-line-marker-only" floor count, to check for
+the opposite error (real comments not being counted).
+
+**Findings.**
+
+*Genuine true positives* (files with literally zero comment characters): e.g.
+`doi.org_10.17605_OSF.IO_UZWFV/.../systeme_eqdif.m` — read in full, contains not a single `%`
+character; several other sampled MATLAB files (`getweights.m`, `plotcat.m`, `logit.m`) are
+likewise entirely comment-free, correctly flagged.
+
+*A substantial, quantified design-driven false-positive pattern for Python*:
+`code_remove_comments()`'s Python branch deliberately never treats a triple-quoted string as a
+comment — its own comment explains why (stripping it would also remove real docstrings and any
+triple-quoted literal). The consequence: a Python file documented **only** via docstrings (no
+`#` comments) is reported as 0% comments even though it carries real, substantial documentation.
+Quantified across all 280 locally-available zero-comment-flagged Python files: **200 (71.4%)**
+contain at least one complete triple-quoted string block. Five were read directly to confirm
+these are genuine docstrings, not incidental triple-quoted data: `model_runs.py` —
+`"""Filters for Model Runs."""`; `features.py` —
+`"""API functions to interact with feature names."""` (this file alone has 16 triple-quote
+markers, i.e. 8 separate docstrings); `annotation_tasks.py` —
+`"""Schemas for annotation tasks."""`. This is a documented, deliberate design tradeoff, not a
+coding bug — but it has a real, substantial, and now-quantified cost for this check's precision
+specifically on well-documented Python code.
+
+MATLAB's block-comment syntax (`%{`/`%}`) is exercised by exactly one real file in this corpus
+(`.../SharpRT-CMV_Spread-c2f888d/Program/main.m`) — manually confirmed two well-formed block
+regions (lines 19-39 and 43-51), both correctly counted (file's comment percentage: 24.3%, not
+flagged as zero). No SAS/SPSS/Stata files exist in this corpus to exercise those languages'
+block-comment logic.
+
+The negative sample (45 files, 15 per language) found **zero** cases where a crude,
+whole-line-marker-only floor count exceeded the package's own reported comment percentage — no
+evidence of comments being systematically undercounted for R, Python, or MATLAB in this sample.
+
+**Precision / recall.** For MATLAB and R, the mechanical classification is correct in every
+example read. For Python specifically, 71.4% of zero-comment flags in this corpus (200/280)
+occur on files that do carry documentation, just exclusively via docstrings rather than `#`
+comments — this is not a classification error but is the single largest quantified source of
+"the flag is mechanically correct but likely to mislead a reader about the file's actual
+documentation level" in the whole validation.
+
+**Recommendation.** This is a real, actionable design question for `R/code_check.R`, not a bug
+to silently fix: either (a) keep the current behaviour but make the module's report text
+explicit that Python comment percentage counts only `#` comments, not docstrings, so a reader
+does not conclude a well-documented Python file "has no documentation," or (b) add a second,
+separate metric for Python specifically — a module-or-function-level docstring count, alongside
+(not replacing) the existing `#`-only comment percentage — since a triple-quoted docstring and a
+`#` comment serve the same explanatory role for a human reader even though they are different
+things syntactically. Given the function's own comment already justifies not stripping
+docstrings (to avoid destroying them), option (b) is the more faithful fix: it keeps
+`code_remove_comments()`'s existing, correct treatment of docstrings-as-code untouched, and adds
+the missing signal as a new, separately-reported quantity in `code_line_stats()`/
+`inst/modules/code_check.R` rather than changing what "comment" means for the existing metric.
+
+---
+
+## 5. Scattered library/import lines
+
+**Logic in plain terms.** `code_library_lines()` finds the line numbers of import/library
+statements (per-language regex: `library|require|renv::install|p_load` for R,
+`^\s*(import|from)\s+[A-Za-z_.]` for Python, etc.); if the largest gap between consecutive
+import lines exceeds 3 non-comment lines, the file is flagged as having its imports "scattered"
+rather than grouped in one block.
+
+**Sample.** Given the tractable size (one function call per file), **all 525 locally-available
+scattered-flagged Python files** were checked systematically: for every matched "library line",
+whether it is a real `from x import y` / `import x` statement or a spurious match. A random
+sample of 60 of the 431 scattered-flagged R files (`set.seed(42)`) was checked the same way. A
+stratified negative sample of 20 per language among non-scattered multi-import files
+(`set.seed(42)`) was scanned with a broader-net regex for an uncaptured import-like line.
+
+**Findings.**
+
+*A substantial, quantified false-positive pattern for Python*, mechanistically linked to Check
+4's docstring finding: because Python's comment-removal never strips triple-quoted strings,
+docstring prose that happens to start with "from " or "import " matches
+`code_library_lines()`'s anchor regex (`^\s*(import|from)\s+[A-Za-z_.]`). Concrete, exact
+example: `github.com_openvinotoolkit_cvat/site/process_sdk_docs.py`, line 213 (inside a
+docstring at lines 211-214): `        from the generated model and api descriptions.` — this
+prose sentence is matched as an "import line" at line 154 of the comment-stripped text, while
+the file's 10 real imports are all contiguous at lines 1-10 (would-be max gap ≤1 without the
+spurious match). The spurious match widens `library_max_between` to 144, crossing the >3
+threshold and producing a "scattered" flag on a file whose real imports are, in fact, perfectly
+grouped.
+
+Quantified across all 525 flagged Python files: **155 (29.5%)** have at least one spurious
+(non-import) library-line match; of those, **68 (13.0% of all 525 flagged Python files)** would
+no longer be flagged as scattered at all once the spurious matches are excluded — i.e. these 68
+files are false positives caused entirely by this mechanism. The remaining 87 files with a
+spurious match are still genuinely scattered even after excluding it (the spurious match was not
+what triggered the flag).
+
+*R shows essentially no equivalent problem*: only 2 of 60 sampled R files had an apparent
+non-library-call match by an automated classifier, and on manual inspection the one actual
+occurrence (`10_1111_1365_2435_13071`, `multinomLizerds.Rmd`, line 8:
+`if (!require(x,character.only=TRUE)){`) was confirmed to be a **genuine** conditional
+`require()` call, not a false positive at all — the automated classifier used for screening was
+simply too strict (it expected a literal package name, not a variable). R's regex requires an
+opening parenthesis directly after the keyword, which is structurally much harder to
+spuriously trigger than Python's whitespace-plus-word anchor.
+
+The negative sample (20 files per language among non-scattered multi-import files) found
+**zero** files with an import-like line `code_library_lines()` failed to capture — no evidence
+of false negatives (real scattering being missed) in this sample.
+
+**Precision / recall.** For R: no confirmed false positives in a 60-file sample (the one
+candidate was a manual-inspection false alarm from the screening heuristic, not a real
+`code_library_lines()` bug). For Python: 68 of 525 flagged files (13.0%) are false positives
+caused specifically by the docstring-prose-matches-import-anchor mechanism — a precise,
+reproducible, and substantial number. 0/40 files in the negative sample were false negatives.
+
+**Recommendation.** In `R/code_check.R`'s `code_library_lines()` (the `lang_import_regex` list,
+Python entry), tighten the Python anchor from `^\s*(import|from)\s+[A-Za-z_.]` to require the
+matched text to actually resemble a valid Python import statement rather than any line starting
+with the bareword: for the `from` form, require an `import` keyword to also appear later on the
+same line (`^\s*from\s+[A-Za-z_][A-Za-z0-9_.]*\s+import\s`), and for the `import` form, require
+the rest of the line to be a comma-separated identifier list optionally followed by `as name`
+(`^\s*import\s+[A-Za-z_][A-Za-z0-9_.]*(\s*,\s*[A-Za-z_][A-Za-z0-9_.]*)*(\s+as\s+\w+)?\s*$`) —
+exactly the two patterns used in this validation's own screening script
+(`is_real_import_py()` in `validate_code_check.R`), confirmed against the real corpus to
+correctly separate genuine imports (including multi-line `from x import (a, b, c)` continuations
+opened across several lines) from docstring prose. This single regex tightening would eliminate
+all 68 confirmed pure-false-positive files and reduce the spurious-match rate on the remaining
+87 (still-genuinely-scattered) files without any loss of real detections, since every real import
+statement in the sampled files already matches the tightened pattern.
+
+---
+
+## Summary table
+
+```{r}
+#| eval: true
+#| echo: false
+#| message: false
+suppressMessages(library(dplyr))
+j <- read.csv("data/validation/all_judgments.csv", stringsAsFactors = FALSE)
+j$verdict_bucket <- dplyr::case_when(
+  j$verdict %in% c("TP", "TP_degraded_message") ~ "TP",
+  j$verdict %in% c("FP", "FP_by_design") ~ "FP",
+  j$verdict == "FN" ~ "FN",
+  TRUE ~ j$verdict
+)
+tab <- j |> dplyr::count(check, verdict_bucket) |>
+  tidyr::pivot_wider(names_from = verdict_bucket, values_from = n, values_fill = 0)
+knitr::kable(tab, caption = "Hand-judged verdict counts per check (from the specific example rows discussed above, not the full flagged set -- see each section for full-sample precision/recall figures).")
+```
+
+These counts are the specific illustrative rows discussed above (`all_judgments.csv`), not a
+resample of the entire flagged population — the per-check sections above report the actual
+full-sample-or-full-population precision/recall figures (e.g. "13/948", "68/525", "194/194"),
+which are the numbers that should be cited for the manuscript's aggregate accuracy claims.

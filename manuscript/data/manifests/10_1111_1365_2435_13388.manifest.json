@@ -1,0 +1,267 @@
+{
+  "paper_id": "10_1111_1365_2435_13388",
+  "generated": "2026-09-10T02:05:31+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:05:31+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 19,
+  "n_downloaded": 18,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "CallumJMacgregor/FirePaper-v1.0.zip",
+      "file_path": "CallumJMacgregor/FirePaper-v1.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3243197",
+      "file_url": "https://zenodo.org/api/records/3243197/files/CallumJMacgregor/FirePaper-v1.0.zip/content",
+      "file_size": 104640,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AllPlantSpecies_strategy.csv",
+      "file_path": "AllPlantSpecies_strategy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109224/download",
+      "file_size": 2934,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AllPlantSpecies_strategy.csv",
+      "file_path": "AllPlantSpecies_strategy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109233/download",
+      "file_size": 2934,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AllSpeciesEdited.csv",
+      "file_path": "AllSpeciesEdited.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109225/download",
+      "file_size": 19229,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AllSpeciesEdited.csv",
+      "file_path": "AllSpeciesEdited.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109234/download",
+      "file_size": 19229,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BanzaDataNoct.csv",
+      "file_path": "BanzaDataNoct.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109220/download",
+      "file_size": 470325,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BanzaDataNoct.csv",
+      "file_path": "BanzaDataNoct.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109229/download",
+      "file_size": 470325,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Coordinates.csv",
+      "file_path": "Coordinates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109235/download",
+      "file_size": 2700,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Coordinates.csv",
+      "file_path": "Coordinates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109226/download",
+      "file_size": 2700,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MatrixNoct.txt",
+      "file_path": "MatrixNoct.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109222/download",
+      "file_size": 760317,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MatrixNoct.txt",
+      "file_path": "MatrixNoct.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109231/download",
+      "file_size": 760317,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PlantTransects.csv",
+      "file_path": "PlantTransects.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109221/download",
+      "file_size": 89153,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PlantTransects.csv",
+      "file_path": "PlantTransects.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109230/download",
+      "file_size": 89153,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PlantTransects.txt",
+      "file_path": "PlantTransects.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109232/download",
+      "file_size": 182989,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PlantTransects.txt",
+      "file_path": "PlantTransects.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109223/download",
+      "file_size": 182989,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SeasonOrder.csv",
+      "file_path": "SeasonOrder.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109227/download",
+      "file_size": 127,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SeasonOrder.csv",
+      "file_path": "SeasonOrder.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109236/download",
+      "file_size": 127,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TrapTimes.csv",
+      "file_path": "TrapTimes.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109228/download",
+      "file_size": 5462,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TrapTimes.csv",
+      "file_path": "TrapTimes.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.6ts275n",
+      "file_url": "https://datadryad.org/api/v2/files/109237/download",
+      "file_size": 5462,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "arm",
+      "geosphere",
+      "glmmADMB",
+      "grid",
+      "new.packages",
+      "rstudioapi",
+      "RVAideMemoire"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

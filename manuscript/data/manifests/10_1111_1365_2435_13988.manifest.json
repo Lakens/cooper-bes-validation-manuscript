@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2435_13988",
+  "generated": "2026-09-10T02:17:33+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:17:33+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "01_Survey_of_local_population_densities_of_R._obtusifolius_and_herbivore_distributions_on_R._obtusifolius.csv",
+      "file_path": "01_Survey_of_local_population_densities_of_R._obtusifolius_and_herbivore_distributions_on_R._obtusifolius.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216180/download",
+      "file_size": 32702,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "02_Measurement_of_leaf_traits_in_field_plants.csv",
+      "file_path": "02_Measurement_of_leaf_traits_in_field_plants.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216181/download",
+      "file_size": 1508,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "03_Leaf_beetle_choice_experiment_using_leaf_sections_from_naturally_growing_plants.csv",
+      "file_path": "03_Leaf_beetle_choice_experiment_using_leaf_sections_from_naturally_growing_plants.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216182/download",
+      "file_size": 6843,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "04_Measurement_of_leaf_traits_in_cultivated_plants_Experiment_1.csv",
+      "file_path": "04_Measurement_of_leaf_traits_in_cultivated_plants_Experiment_1.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216183/download",
+      "file_size": 14499,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "05_Measurement_of_chlorophyll_concentration_in_cultivated_plants_Experiment_2.csv",
+      "file_path": "05_Measurement_of_chlorophyll_concentration_in_cultivated_plants_Experiment_2.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216184/download",
+      "file_size": 10026,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "06_Measurement_of_organic_acids_in_cultivated_plants_Experiment_2.csv",
+      "file_path": "06_Measurement_of_organic_acids_in_cultivated_plants_Experiment_2.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216185/download",
+      "file_size": 20319,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "07_Leaf_beetle_choice_experiment_in_cultivation_Experiment_2.csv",
+      "file_path": "07_Leaf_beetle_choice_experiment_in_cultivation_Experiment_2.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216186/download",
+      "file_size": 14993,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "08_Mesocosm_experiments_One-to-one-pot.csv",
+      "file_path": "08_Mesocosm_experiments_One-to-one-pot.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216187/download",
+      "file_size": 557,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "09_Mesocosm_experiments_One-to-three-pot.csv",
+      "file_path": "09_Mesocosm_experiments_One-to-three-pot.csv",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216188/download",
+      "file_size": 3085,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Readme.xlsx",
+      "file_path": "Readme.xlsx",
+      "repo_url": "http://doi.org/10.5061/dryad.f1vhhmgz8",
+      "file_url": "https://datadryad.org/api/v2/files/1216292/download",
+      "file_size": 13037,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

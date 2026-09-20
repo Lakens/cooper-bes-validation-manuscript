@@ -1,0 +1,130 @@
+{
+  "paper_id": "10_1111_1365_2664_14277",
+  "generated": "2026-09-10T04:06:04+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:06:04+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "R-Script.R",
+      "file_path": "R-Script.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.6976170",
+      "file_url": "https://zenodo.org/api/records/6976170/files/R-Script.R/content",
+      "file_size": 71436,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "aggregated_per_month.csv",
+      "file_path": "aggregated_per_month.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.z612jm6fj",
+      "file_url": "https://datadryad.org/api/v2/files/1708475/download",
+      "file_size": 15064,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "aggregated_per_observation_date.csv",
+      "file_path": "aggregated_per_observation_date.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.z612jm6fj",
+      "file_url": "https://datadryad.org/api/v2/files/1708474/download",
+      "file_size": 34228,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "aggregated_per_plant_and_plot.csv",
+      "file_path": "aggregated_per_plant_and_plot.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.z612jm6fj",
+      "file_url": "https://datadryad.org/api/v2/files/1708473/download",
+      "file_size": 377053,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "aggregated_per_year.csv",
+      "file_path": "aggregated_per_year.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.z612jm6fj",
+      "file_url": "https://datadryad.org/api/v2/files/1708476/download",
+      "file_size": 2377,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_vonKönigslöw__Fornoff__Klein_(2022)_J_Appl_Ecol.txt",
+      "file_path": "README_vonKönigslöw__Fornoff__Klein_(2022)_J_Appl_Ecol.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.z612jm6fj",
+      "file_url": "https://datadryad.org/api/v2/files/1708478/download",
+      "file_size": 3395,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "cluster",
+      "cowplot",
+      "DHARMa",
+      "dplyr",
+      "emmeans",
+      "ggh4x",
+      "ggplot2",
+      "ggpubr",
+      "multcomp",
+      "plyr",
+      "scales",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

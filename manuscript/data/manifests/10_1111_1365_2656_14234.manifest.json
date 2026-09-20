@@ -1,0 +1,215 @@
+{
+  "paper_id": "10_1111_1365_2656_14234",
+  "generated": "2026-09-10T03:22:27+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:22:27+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 14,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "GTITprunedpedigree.csv",
+      "file_path": "Data Files/GTITprunedpedigree.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/GTITprunedpedigree.csv",
+      "file_size": 66412,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "degreenatal_vcomp.csv",
+      "file_path": "Data Files/degreenatal_vcomp.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/degreenatal_vcomp.csv",
+      "file_size": 4249,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "flockingevents_natalinfo.rds",
+      "file_path": "Data Files/flockingevents_natalinfo.rds",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/flockingevents_natalinfo.rds",
+      "file_size": 5043700,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "groupsize model estimates.csv",
+      "file_path": "Data Files/groupsize model estimates.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/groupsize model estimates.csv",
+      "file_size": 979,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "groupsizenatal_vcomp.csv",
+      "file_path": "Data Files/groupsizenatal_vcomp.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/groupsizenatal_vcomp.csv",
+      "file_size": 4699,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "natalhabitatdata.csv",
+      "file_path": "Data Files/natalhabitatdata.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/natalhabitatdata.csv",
+      "file_size": 162597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "rawflockingevents.rds",
+      "file_path": "Data Files/rawflockingevents.rds",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/rawflockingevents.rds",
+      "file_size": 9270028,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "socialnetwork_natalinfo.rds",
+      "file_path": "Data Files/socialnetwork_natalinfo.rds",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/socialnetwork_natalinfo.rds",
+      "file_size": 418678,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "socialnetworkdatafull.rds",
+      "file_path": "Data Files/socialnetworkdatafull.rds",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/socialnetworkdatafull.rds",
+      "file_size": 741184,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "socnet model estimates.csv",
+      "file_path": "Data Files/socnet model estimates.csv",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Data Files/socnet model estimates.csv",
+      "file_size": 2324,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Groupsize animal models.R",
+      "file_path": "Groupsize animal models.R",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Groupsize animal models.R",
+      "file_size": 18597,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Natal Effects animal models.R",
+      "file_path": "Natal Effects animal models.R",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Natal Effects animal models.R",
+      "file_size": 19008,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/README.md",
+      "file_size": 4560,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Social Network Traits animal models.R",
+      "file_path": "Social Network Traits animal models.R",
+      "repo_url": "https://github.com/devisatarkar/SocNet_ASRemL_herit-natal",
+      "file_url": "https://raw.githubusercontent.com/devisatarkar/SocNet_ASRemL_herit-natal/main/Social Network Traits animal models.R",
+      "file_size": 23037,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "asreml",
+      "dplyr",
+      "ggplot2",
+      "Matrix",
+      "sf",
+      "tidyr"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

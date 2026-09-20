@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2435_14731",
+  "generated": "2026-09-10T02:29:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:29:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Certhioidea_fossil.nex.txt",
+      "file_path": "Certhioidea_fossil.nex.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215206",
+      "file_size": 438565,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Code_Mouton_et_al_NuthatchResinMS.R",
+      "file_path": "Code_Mouton_et_al_NuthatchResinMS.R",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215212",
+      "file_size": 7981,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LiteratureData_ASR_Mouton_et_al_NuthatchResinMS.csv",
+      "file_path": "LiteratureData_ASR_Mouton_et_al_NuthatchResinMS.csv",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215209",
+      "file_size": 18953,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NestInitiationData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "file_path": "NestInitiationData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215215",
+      "file_size": 850,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NestMaterialData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "file_path": "NestMaterialData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215218",
+      "file_size": 7158,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PredData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "file_path": "PredData_CompExp_Mouton_et_al_NuthatchResinMS.csv",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.26506450",
+      "file_url": "https://ndownloader.figshare.com/files/48215221",
+      "file_size": 6878,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "ape",
+      "bayestestR",
+      "brms",
+      "ggplot2",
+      "lmerTest",
+      "lubridate",
+      "phylolm",
+      "phytools",
+      "sjPlot",
+      "stringr",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

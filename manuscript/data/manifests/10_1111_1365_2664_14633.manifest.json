@@ -1,0 +1,381 @@
+{
+  "paper_id": "10_1111_1365_2664_14633",
+  "generated": "2026-09-10T04:11:13+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:11:13+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 28,
+  "n_downloaded": 21,
+  "not_downloaded": {
+    "intentional_n": 7,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/README.md",
+      "file_size": 7566,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Allcompiled_POdata_NYMS_noduplicates.csv",
+      "file_path": "data/Allcompiled_POdata_NYMS_noduplicates.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/Allcompiled_POdata_NYMS_noduplicates.csv",
+      "file_size": 12474619,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NY_blackbears_ordinaldates.csv",
+      "file_path": "data/NY_blackbears_ordinaldates.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/NY_blackbears_ordinaldates.csv",
+      "file_size": 45134,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_10kmgrid_alllandscapecovs_final.csv",
+      "file_path": "data/allNY_10kmgrid_alllandscapecovs_final.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_10kmgrid_alllandscapecovs_final.csv",
+      "file_size": 3297269,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2000_2022_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_path": "data/allNY_2000_2022_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2000_2022_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_size": 38747,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2000_2022_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_path": "data/allNY_2000_2022_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2000_2022_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_size": 360564,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013-2021_bobcatPArecords_pixelID_10kmgrid.csv",
+      "file_path": "data/allNY_2013-2021_bobcatPArecords_pixelID_10kmgrid.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2013-2021_bobcatPArecords_pixelID_10kmgrid.csv",
+      "file_size": 222945,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013-2021_coyotePArecords_pixelID_10kmgrid.csv",
+      "file_path": "data/allNY_2013-2021_coyotePArecords_pixelID_10kmgrid.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2013-2021_coyotePArecords_pixelID_10kmgrid.csv",
+      "file_size": 197772,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013_2021_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_path": "data/allNY_2013_2021_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2013_2021_bobcatPOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_size": 21934,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013_2021_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_path": "data/allNY_2013_2021_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2013_2021_coyotePOrecord_pixelID_10kmgrid_noweeklydups.csv",
+      "file_size": 131661,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2016-2018_bearPAdata_pixelID_10kmgrid_final.csv",
+      "file_path": "data/allNY_2016-2018_bearPAdata_pixelID_10kmgrid_final.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2016-2018_bearPAdata_pixelID_10kmgrid_final.csv",
+      "file_size": 35659,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2016_2018_bearPOrecord_pixelID_10kmgrid_noweeklydups_final.csv",
+      "file_path": "data/allNY_2016_2018_bearPOrecord_pixelID_10kmgrid_noweeklydups_final.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/allNY_2016_2018_bearPOrecord_pixelID_10kmgrid_noweeklydups_final.csv",
+      "file_size": 121393,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "juliandays_allNY_2013-2021.csv",
+      "file_path": "data/juliandays_allNY_2013-2021.csv",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/data/juliandays_allNY_2013-2021.csv",
+      "file_size": 79863,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Restart MCMC Functions.R",
+      "file_path": "models/Restart MCMC Functions.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/models/Restart MCMC Functions.R",
+      "file_size": 4560,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "nimble_ppp_integrated_model_bear_10km_yearindexed_randomeffects_centrered.R",
+      "file_path": "models/nimble_ppp_integrated_model_bear_10km_yearindexed_randomeffects_centrered.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/models/nimble_ppp_integrated_model_bear_10km_yearindexed_randomeffects_centrered.R",
+      "file_size": 2690,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "nimble_ppp_integrated_model_bobcat_10km_indexingoveryear_randomeffects_centered.R",
+      "file_path": "models/nimble_ppp_integrated_model_bobcat_10km_indexingoveryear_randomeffects_centered.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/models/nimble_ppp_integrated_model_bobcat_10km_indexingoveryear_randomeffects_centered.R",
+      "file_size": 2690,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "nimble_ppp_integrated_model_coyote_10km_yearindexed_randomeffects_centered.R",
+      "file_path": "models/nimble_ppp_integrated_model_coyote_10km_yearindexed_randomeffects_centered.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/models/nimble_ppp_integrated_model_coyote_10km_yearindexed_randomeffects_centered.R",
+      "file_size": 2851,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "bear_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_path": "scripts/bear_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/scripts/bear_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_size": 11503,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "bobcat_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_path": "scripts/bobcat_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/scripts/bobcat_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_size": 11435,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "coyote_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_path": "scripts/coyote_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "repo_url": "https://github.com/jptwining/PO-PA-Integrated-SDM/tree/main",
+      "file_url": "https://raw.githubusercontent.com/jptwining/PO-PA-Integrated-SDM/main/scripts/coyote_PO_PA_model_10km_nimble_formattingandrunscript_indexoveryear.R",
+      "file_size": 11128,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "allNY_10kmgrid_alllandscapecovs_final_dryad.csv",
+      "file_path": "allNY_10kmgrid_alllandscapecovs_final_dryad.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986434/download",
+      "file_size": 1941074,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013-2021_bobcatPArecords_pixelID_10kmgrid.csv",
+      "file_path": "allNY_2013-2021_bobcatPArecords_pixelID_10kmgrid.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986197/download",
+      "file_size": 148074,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2013-2021_coyotePArecords_pixelID_10kmgrid.csv",
+      "file_path": "allNY_2013-2021_coyotePArecords_pixelID_10kmgrid.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986198/download",
+      "file_size": 37,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2016_2018_bearPOrecord_pixelID_10kmgrid_noweeklydups_final.csv",
+      "file_path": "allNY_2016_2018_bearPOrecord_pixelID_10kmgrid_noweeklydups_final.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986199/download",
+      "file_size": 56926,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allNY_2016-2018_bearPAdata_pixelID_10kmgrid_final.csv",
+      "file_path": "allNY_2016-2018_bearPAdata_pixelID_10kmgrid_final.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986200/download",
+      "file_size": 29573,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "juliandays_allNY_2013-2021.csv",
+      "file_path": "juliandays_allNY_2013-2021.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986201/download",
+      "file_size": 79863,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NY_blackbears_ordinaldates.csv",
+      "file_path": "NY_blackbears_ordinaldates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986202/download",
+      "file_size": 32708,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.ghx3ffbwf",
+      "file_url": "https://datadryad.org/api/v2/files/2986436/download",
+      "file_size": 13245,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "AHMbook",
+      "car",
+      "coda",
+      "jagsUI",
+      "mvtnorm",
+      "nimble",
+      "raster",
+      "runjags",
+      "scales",
+      "vioplot"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

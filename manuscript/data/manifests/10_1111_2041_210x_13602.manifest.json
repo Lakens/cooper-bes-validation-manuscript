@@ -1,0 +1,147 @@
+{
+  "paper_id": "10_1111_2041_210x_13602",
+  "generated": "2026-09-10T07:14:53+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T07:14:53+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/LICENSE",
+      "file_size": 35147,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/README.md",
+      "file_size": 248,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sort.md",
+      "file_path": "sort.md",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/sort.md",
+      "file_size": 4761,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Begum.py",
+      "file_path": "src/Begum.py",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/src/Begum.py",
+      "file_size": 7761,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "dna_helper.py",
+      "file_path": "src/dna_helper.py",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/src/dna_helper.py",
+      "file_size": 8146,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "filter.py",
+      "file_path": "src/filter.py",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/src/filter.py",
+      "file_size": 13120,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sort.py",
+      "file_path": "src/sort.py",
+      "repo_url": "https://github.com/shyamsg/Begum",
+      "file_url": "https://raw.githubusercontent.com/shyamsg/Begum/master/src/sort.py",
+      "file_size": 33220,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "argparse",
+      "Bio",
+      "dna_helper",
+      "filter",
+      "gzip",
+      "logging",
+      "regex",
+      "sort",
+      "textdistance"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

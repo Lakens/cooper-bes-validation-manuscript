@@ -1,0 +1,134 @@
+{
+  "paper_id": "10_1111_1365_2435_14191",
+  "generated": "2026-09-10T02:19:42+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:19:42+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "fluLS_total_2016-2018_20220907FE.xlsx",
+      "file_path": "fluLS_total_2016-2018_20220907FE.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831403/download",
+      "file_size": 550410,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "forestcanopydensity_data.xlsx",
+      "file_path": "forestcanopydensity_data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831401/download",
+      "file_size": 14533,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ibutton_mergedata_20220907.csv",
+      "file_path": "ibutton_mergedata_20220907.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831402/download",
+      "file_size": 1042446,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "its_matk_trnl.fasta",
+      "file_path": "its_matk_trnl.fasta",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831404/download",
+      "file_size": 10548776,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RAxML_bestTree.tre",
+      "file_path": "RAxML_bestTree.tre",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831407/download",
+      "file_size": 77706,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_ZingiberalesLaSelva.rd",
+      "file_path": "README_ZingiberalesLaSelva.rd",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831432/download",
+      "file_size": 6590,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "zing.model",
+      "file_path": "zing.model",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831405/download",
+      "file_size": 58,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "zingiberales_treepl.txt",
+      "file_path": "zingiberales_treepl.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.q573n5tmz",
+      "file_url": "https://datadryad.org/api/v2/files/1831406/download",
+      "file_size": 385,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

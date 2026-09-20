@@ -1,0 +1,116 @@
+{
+  "paper_id": "10_1111_1365_2435_13500",
+  "generated": "2026-09-10T02:06:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:06:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "SitesMassBinsThermStrat.Rd",
+      "file_path": "SitesMassBinsThermStrat.Rd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258289",
+      "file_size": 911963,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SitesMassBinsTrophicLevels.Rd",
+      "file_path": "SitesMassBinsTrophicLevels.Rd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258292",
+      "file_size": 1697323,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SitesMassBinsTrophicLevelsThermStrat.Rd",
+      "file_path": "SitesMassBinsTrophicLevelsThermStrat.Rd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258295",
+      "file_size": 1472106,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SitesTrophicLevels.Rd",
+      "file_path": "SitesTrophicLevels.Rd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258301",
+      "file_size": 1237551,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258304",
+      "file_size": 2166,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SitesMassBins.Rd",
+      "file_path": "SitesMassBins.Rd",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.10744235.v1",
+      "file_url": "https://ndownloader.figshare.com/files/19258307",
+      "file_size": 953390,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2435_14575",
+  "generated": "2026-09-10T02:26:25+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:26:25+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "field_data_analyses.html",
+      "file_path": "field_data_analyses.html",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106836/download",
+      "file_size": 529769,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "host_growth_rate.csv",
+      "file_path": "host_growth_rate.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106832/download",
+      "file_size": 47557,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "prey_consum_exp_webs.csv",
+      "file_path": "prey_consum_exp_webs.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106834/download",
+      "file_size": 28414,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "prey_count_empty_web.csv",
+      "file_path": "prey_count_empty_web.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106835/download",
+      "file_size": 5981,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "prey_count_exp_webs.csv",
+      "file_path": "prey_count_exp_webs.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106831/download",
+      "file_size": 56748,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "prey_size_bin_exp_webs.csv",
+      "file_path": "prey_size_bin_exp_webs.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106833/download",
+      "file_size": 320328,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk40h",
+      "file_url": "https://datadryad.org/api/v2/files/3106852/download",
+      "file_size": 3075,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "bestNormalize",
+      "broom",
+      "car",
+      "colorspace",
+      "cowplot",
+      "details",
+      "dplyr",
+      "effsize",
+      "ggpubr",
+      "gt",
+      "kableExtra",
+      "knitr",
+      "lme4",
+      "lmerTest",
+      "lsmeans",
+      "multcomp",
+      "MuMIn",
+      "rcompanion",
+      "scales",
+      "sessioninfo",
+      "sjPlot",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

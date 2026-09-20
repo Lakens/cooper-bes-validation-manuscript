@@ -1,0 +1,143 @@
+{
+  "paper_id": "10_1111_1365_2664_14080",
+  "generated": "2026-09-10T04:04:35+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:04:35+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 4,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/picardis/bsdhs",
+      "file_url": "https://raw.githubusercontent.com/picardis/bsdhs/main/.gitignore",
+      "file_size": 63,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BSDHS.Rproj",
+      "file_path": "BSDHS.Rproj",
+      "repo_url": "https://github.com/picardis/bsdhs",
+      "file_url": "https://raw.githubusercontent.com/picardis/bsdhs/main/BSDHS.Rproj",
+      "file_size": 205,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "fit_hmm.R",
+      "file_path": "fit_hmm.R",
+      "repo_url": "https://github.com/picardis/bsdhs",
+      "file_url": "https://raw.githubusercontent.com/picardis/bsdhs/main/fit_hmm.R",
+      "file_size": 7565,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "fit_issa.R",
+      "file_path": "fit_issa.R",
+      "repo_url": "https://github.com/picardis/bsdhs",
+      "file_url": "https://raw.githubusercontent.com/picardis/bsdhs/main/fit_issa.R",
+      "file_size": 12605,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Picardi-et-al_JApplEcol_HMM-Data.rds",
+      "file_path": "Picardi-et-al_JApplEcol_HMM-Data.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.80gb5mkrw",
+      "file_url": "https://datadryad.org/api/v2/files/1161201/download",
+      "file_size": 519168,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Picardi-et-al_JApplEcol_iSSA-Data-State1.rds",
+      "file_path": "Picardi-et-al_JApplEcol_iSSA-Data-State1.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.80gb5mkrw",
+      "file_url": "https://datadryad.org/api/v2/files/1161202/download",
+      "file_size": 57247052,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Picardi-et-al_JApplEcol_iSSA-Data-State2.rds",
+      "file_path": "Picardi-et-al_JApplEcol_iSSA-Data-State2.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.80gb5mkrw",
+      "file_url": "https://datadryad.org/api/v2/files/1161203/download",
+      "file_size": 27269106,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "amt",
+      "broom",
+      "CircStats",
+      "dplyr",
+      "lubridate",
+      "momentuHMM",
+      "patchwork",
+      "stringr",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

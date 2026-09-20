@@ -1,0 +1,164 @@
+{
+  "paper_id": "10_1111_1365_2435_14455",
+  "generated": "2026-09-10T02:24:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:24:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "code_for_MS.R",
+      "file_path": "code_for_MS.R",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628502/download",
+      "file_size": 32707,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "dapalg1.csv",
+      "file_path": "dapalg1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628454/download",
+      "file_size": 50086,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gradostat_dendritic.m",
+      "file_path": "gradostat_dendritic.m",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628450/download",
+      "file_size": 7562,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "gradostat_linear.m",
+      "file_path": "gradostat_linear.m",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628451/download",
+      "file_size": 7398,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "METAPOP.csv",
+      "file_path": "METAPOP.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628455/download",
+      "file_size": 47956,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "model.csv",
+      "file_path": "model.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628452/download",
+      "file_size": 233251,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628503/download",
+      "file_size": 4904,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tsgradostats.csv",
+      "file_path": "tsgradostats.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.p2ngf1vxk",
+      "file_url": "https://datadryad.org/api/v2/files/2628453/download",
+      "file_size": 22817,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "broom",
+      "clubSandwich",
+      "cowplot",
+      "CR2",
+      "dplyr",
+      "effects",
+      "emmeans",
+      "ggplot2",
+      "ggpubr",
+      "gridExtra",
+      "kableExtra",
+      "knitr",
+      "lme4",
+      "lmerTest",
+      "MASS",
+      "multcomp",
+      "multcompView",
+      "plyr",
+      "sandwich",
+      "stats",
+      "tidyr"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

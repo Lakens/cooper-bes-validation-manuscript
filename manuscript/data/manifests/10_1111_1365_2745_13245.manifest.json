@@ -1,0 +1,369 @@
+{
+  "paper_id": "10_1111_1365_2745_13245",
+  "generated": "2026-09-10T05:01:23+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:23+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 25,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/.gitignore",
+      "file_size": 153,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AICc_PERMANOVA.R",
+      "file_path": "AICc_PERMANOVA.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/AICc_PERMANOVA.R",
+      "file_size": 4250,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AICc_compare.R",
+      "file_path": "AICc_compare.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/AICc_compare.R",
+      "file_size": 607,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AICc_table_generation.R",
+      "file_path": "AICc_table_generation.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/AICc_table_generation.R",
+      "file_size": 8715,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PlotTaxaKD.R",
+      "file_path": "PlotTaxaKD.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/PlotTaxaKD.R",
+      "file_size": 17115,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/README.md",
+      "file_size": 131,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "anon_data.R",
+      "file_path": "anon_data.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/anon_data.R",
+      "file_size": 1864,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "chisquared.R",
+      "file_path": "chisquared.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/chisquared.R",
+      "file_size": 8503,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "eDNA_helpers.R",
+      "file_path": "eDNA_helpers.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/eDNA_helpers.R",
+      "file_size": 11887,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "extract_taxa_TITAN.R",
+      "file_path": "extract_taxa_TITAN.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/extract_taxa_TITAN.R",
+      "file_size": 10722,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "group_PERMANOVA.R",
+      "file_path": "group_PERMANOVA.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/group_PERMANOVA.R",
+      "file_size": 8302,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "group_PERMANOVA_wP.R.R",
+      "file_path": "group_PERMANOVA_wP.R.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/group_PERMANOVA_wP.R.R",
+      "file_size": 4748,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "group_lmPerm.R",
+      "file_path": "group_lmPerm.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/group_lmPerm.R",
+      "file_size": 2228,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "group_lmer.R",
+      "file_path": "group_lmer.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/group_lmer.R",
+      "file_size": 3004,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "repeat_multipatt.R",
+      "file_path": "repeat_multipatt.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/repeat_multipatt.R",
+      "file_size": 7855,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "triplet_fixer.R",
+      "file_path": "triplet_fixer.R",
+      "repo_url": "https://github.com/kdyson/R_Scripts",
+      "file_url": "https://raw.githubusercontent.com/kdyson/R_Scripts/master/triplet_fixer.R",
+      "file_size": 1082,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "seed-add-data-output-biomass.csv",
+      "file_path": "seed-add-data-output-biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69209/download",
+      "file_size": 682944,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-block-soils.csv",
+      "file_path": "seed-add-data-output-block-soils.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69210/download",
+      "file_size": 1216,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-file-descriptions.xlsx",
+      "file_path": "seed-add-data-output-file-descriptions.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69208/download",
+      "file_size": 14365,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-full-plant-biomass-noseed.csv",
+      "file_path": "seed-add-data-output-full-plant-biomass-noseed.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69211/download",
+      "file_size": 186978,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-full-plant-cover-noseed.csv",
+      "file_path": "seed-add-data-output-full-plant-cover-noseed.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69213/download",
+      "file_size": 427985,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-full-plant-cover.csv",
+      "file_path": "seed-add-data-output-full-plant-cover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69212/download",
+      "file_size": 1761562,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-plot-utms.xlsx",
+      "file_path": "seed-add-data-output-plot-utms.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69214/download",
+      "file_size": 55417,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-taxa-table-biomass.csv",
+      "file_path": "seed-add-data-output-taxa-table-biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69215/download",
+      "file_size": 15517,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seed-add-data-output-taxa-table-cover.csv",
+      "file_path": "seed-add-data-output-taxa-table-cover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.61jq1",
+      "file_url": "https://datadryad.org/api/v2/files/69216/download",
+      "file_size": 12706,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "AICcmodavg",
+      "base",
+      "car",
+      "data.table",
+      "dplyr",
+      "ggplot2",
+      "indicspecies",
+      "labdsv",
+      "lme4",
+      "lmPerm",
+      "MuMIn",
+      "RColorBrewer",
+      "stringr",
+      "tibble",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

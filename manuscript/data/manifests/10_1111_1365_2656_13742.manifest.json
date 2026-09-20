@@ -1,0 +1,97 @@
+{
+  "paper_id": "10_1111_1365_2656_13742",
+  "generated": "2026-09-10T03:12:20+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:12:20+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Stats_Supp_info_FINAL_FINAL.docx",
+      "file_path": "Stats_Supp_info_FINAL_FINAL.docx",
+      "repo_url": "https://doi.org/10.5281/zenodo.6508721",
+      "file_url": "https://zenodo.org/api/records/6508721/files/Stats_Supp_info_FINAL_FINAL.docx/content",
+      "file_size": 612720,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Data_S1_Wehi_et_al_2022_kea_CSIA-AA.csv",
+      "file_path": "Data_S1_Wehi_et_al_2022_kea_CSIA-AA.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.j3tx95xh7",
+      "file_url": "https://datadryad.org/api/v2/files/1475571/download",
+      "file_size": 1610,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_S1_Wehi_et_al_2022_kea.csv",
+      "file_path": "Data_S1_Wehi_et_al_2022_kea.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.j3tx95xh7",
+      "file_url": "https://datadryad.org/api/v2/files/1475568/download",
+      "file_size": 10229,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Wehi_Kea_CSIA.txt",
+      "file_path": "README_Wehi_Kea_CSIA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.j3tx95xh7",
+      "file_url": "https://datadryad.org/api/v2/files/1475570/download",
+      "file_size": 8988,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Wehi_Kea_museum_specimens.txt",
+      "file_path": "README_Wehi_Kea_museum_specimens.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.j3tx95xh7",
+      "file_url": "https://datadryad.org/api/v2/files/1475569/download",
+      "file_size": 11582,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

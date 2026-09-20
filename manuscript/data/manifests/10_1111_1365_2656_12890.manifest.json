@@ -1,0 +1,260 @@
+{
+  "paper_id": "10_1111_1365_2656_12890",
+  "generated": "2026-09-10T02:33:11+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:33:11+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 20,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Perkins_ArcticSkua_0001_RawData_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_0001_RawData_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78692/download",
+      "file_size": 847360,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_001_DataPopulationTrends_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_001_DataPopulationTrends_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78694/download",
+      "file_size": 460800,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_002_DataProductivityTrends_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_002_DataProductivityTrends_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78696/download",
+      "file_size": 372224,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_003_DataPopulationTrendAssociations_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_003_DataPopulationTrendAssociations_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78698/download",
+      "file_size": 222208,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_004_DataProductivityAssociations_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_004_DataProductivityAssociations_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78700/download",
+      "file_size": 78336,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_005_CodePopulationTrends_22July2018.txt",
+      "file_path": "Perkins_ArcticSkua_005_CodePopulationTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78702/download",
+      "file_size": 8952,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_006_CodeProductivityTrends_22July2018.txt",
+      "file_path": "Perkins_ArcticSkua_006_CodeProductivityTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78704/download",
+      "file_size": 6707,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_007_CodePopulationTrendAssociations_22July2018.txt",
+      "file_path": "Perkins_ArcticSkua_007_CodePopulationTrendAssociations_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78706/download",
+      "file_size": 2535,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_008_CodeProductivityAssociations_22July2018.txt",
+      "file_path": "Perkins_ArcticSkua_008_CodeProductivityAssociations_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78708/download",
+      "file_size": 3955,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_009_ResultsPopulationTrends_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_009_ResultsPopulationTrends_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78710/download",
+      "file_size": 1367552,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_010_ResultsProductivityTrends_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_010_ResultsProductivityTrends_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78712/download",
+      "file_size": 962560,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_011_ResultsPopulationTrendAssociations_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_011_ResultsPopulationTrendAssociations_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78714/download",
+      "file_size": 187904,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Perkins_ArcticSkua_012_ResultsProductivityAssociations_22July2018.xls",
+      "file_path": "Perkins_ArcticSkua_012_ResultsProductivityAssociations_22July2018.xls",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78716/download",
+      "file_size": 356864,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_0001_RawData_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_0001_RawData_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78693/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_001_DataPopulationTrends_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_001_DataPopulationTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78695/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_002_DataProductivityTrends_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_002_DataProductivityTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78697/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_003_DataPopulationTrendAssociations_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_003_DataPopulationTrendAssociations_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78699/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_004_DataProductivityAssociations_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_004_DataProductivityAssociations_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78701/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_005_CodePopulationTrends_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_005_CodePopulationTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78703/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Perkins_ArcticSkua_006_CodeProductivityTrends_22July2018.txt",
+      "file_path": "README_for_Perkins_ArcticSkua_006_CodeProductivityTrends_22July2018.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.v056r5h",
+      "file_url": "https://datadryad.org/api/v2/files/78705/download",
+      "file_size": 16258,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

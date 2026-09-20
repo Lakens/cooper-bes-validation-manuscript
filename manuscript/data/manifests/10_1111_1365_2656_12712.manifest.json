@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2656_12712",
+  "generated": "2026-09-10T02:29:42+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:29:42+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "AFRALR.txt",
+      "file_path": "AFRALR.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20445/download",
+      "file_size": 65637,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BreedingSucAge.txt",
+      "file_path": "BreedingSucAge.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20446/download",
+      "file_size": 323709,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BreedingSucAgeBothSexes.txt",
+      "file_path": "BreedingSucAgeBothSexes.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20447/download",
+      "file_size": 98557,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "DATA DESCRIPTION.txt",
+      "file_path": "DATA DESCRIPTION.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20451/download",
+      "file_size": 3886,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "EarlyAdulthood.txt",
+      "file_path": "EarlyAdulthood.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20448/download",
+      "file_size": 166392,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FailureStage.txt",
+      "file_path": "FailureStage.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20444/download",
+      "file_size": 190,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "GENERAL STATEMENT PLEASE READ THIS BEFORE USING THE DATA.txt",
+      "file_path": "GENERAL STATEMENT PLEASE READ THIS BEFORE USING THE DATA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20450/download",
+      "file_size": 1648,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "LateAdulthood.txt",
+      "file_path": "LateAdulthood.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20449/download",
+      "file_size": 133345,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MeanAnnualBS.txt",
+      "file_path": "MeanAnnualBS.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20442/download",
+      "file_size": 973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_MeanAnnualBS.txt",
+      "file_path": "README_for_MeanAnnualBS.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.hm7k5",
+      "file_url": "https://datadryad.org/api/v2/files/20443/download",
+      "file_size": 3886,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

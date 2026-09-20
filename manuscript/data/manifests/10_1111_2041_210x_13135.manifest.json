@@ -1,0 +1,196 @@
+{
+  "paper_id": "10_1111_2041_210x_13135",
+  "generated": "2026-09-10T06:07:38+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:07:38+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 0,
+  "not_downloaded": {
+    "intentional_n": 12,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "76_SE_0.01.fasta.gz",
+      "file_path": "76_SE_0.01.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65497/download",
+      "file_size": 886987377,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.05.fasta.gz",
+      "file_path": "76_SE_0.05.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65498/download",
+      "file_size": 887850285,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.1.fasta.gz",
+      "file_path": "76_SE_0.1.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65499/download",
+      "file_size": 889180401,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.2.fasta.gz",
+      "file_path": "76_SE_0.2.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65500/download",
+      "file_size": 890509610,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.3.fasta.gz",
+      "file_path": "76_SE_0.3.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65501/download",
+      "file_size": 890680834,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.4.fasta.gz",
+      "file_path": "76_SE_0.4.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65502/download",
+      "file_size": 889840944,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.5.fasta.gz",
+      "file_path": "76_SE_0.5.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65503/download",
+      "file_size": 887688304,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.6.fasta.gz",
+      "file_path": "76_SE_0.6.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65504/download",
+      "file_size": 884841153,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.7.fasta.gz",
+      "file_path": "76_SE_0.7.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65505/download",
+      "file_size": 880869800,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.8.fasta.gz",
+      "file_path": "76_SE_0.8.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65506/download",
+      "file_size": 875958435,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_0.9.fasta.gz",
+      "file_path": "76_SE_0.9.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65507/download",
+      "file_size": 869863950,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "76_SE_1.0.fasta.gz",
+      "file_path": "76_SE_1.0.fasta.gz",
+      "repo_url": "https://doi.org/10.5061/dryad.t40nj78",
+      "file_url": "https://datadryad.org/api/v2/files/65508/download",
+      "file_size": 861189736,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

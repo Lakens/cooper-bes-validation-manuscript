@@ -1,0 +1,136 @@
+{
+  "paper_id": "10_1111_1365_2656_13847",
+  "generated": "2026-09-10T03:13:49+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:13:49+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 4,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "3DViewshed_codes.rar",
+      "file_path": "3DViewshed_codes.rar",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935284/download",
+      "file_size": 15037,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ALS_tiles_an_example_area.rar",
+      "file_path": "ALS_tiles_an_example_area.rar",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935279/download",
+      "file_size": 3160288279,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Coordinates_all_example_plots.csv",
+      "file_path": "Coordinates_all_example_plots.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935280/download",
+      "file_size": 368,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935285/download",
+      "file_size": 6136,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SOP_example_plot.rar",
+      "file_path": "SOP_example_plot.rar",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935281/download",
+      "file_size": 865,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "TLS_scans_example_plot.rar",
+      "file_path": "TLS_scans_example_plot.rar",
+      "repo_url": "https://doi.org/10.5061/dryad.tx95x6b21",
+      "file_url": "https://datadryad.org/api/v2/files/1935282/download",
+      "file_size": 211462757,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.15dv41p1d",
+      "file_url": "https://datadryad.org/api/v2/files/1935287/download",
+      "file_size": 6136,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Red_deer_data_archived.csv",
+      "file_path": "Red_deer_data_archived.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.15dv41p1d",
+      "file_url": "https://datadryad.org/api/v2/files/1935286/download",
+      "file_size": 60866621,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

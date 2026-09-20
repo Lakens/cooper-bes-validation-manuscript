@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2664_14446",
+  "generated": "2026-09-10T04:09:30+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:09:30+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Butterflies_Malawi_species.csv",
+      "file_path": "Butterflies_Malawi_species.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297494/download",
+      "file_size": 40246,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "household_AE_2020.csv",
+      "file_path": "household_AE_2020.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297495/download",
+      "file_size": 946,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "LULC_percentages_butterflies_Malawi.csv",
+      "file_path": "LULC_percentages_butterflies_Malawi.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297496/download",
+      "file_size": 11807,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Malawi_life_history_butterflies.csv",
+      "file_path": "Malawi_life_history_butterflies.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297497/download",
+      "file_size": 2194,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Meta_butterflies_Malawi_transects.csv",
+      "file_path": "Meta_butterflies_Malawi_transects.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297498/download",
+      "file_size": 116662,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Butterflies_Malawi_species.txt",
+      "file_path": "README_Butterflies_Malawi_species.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297508/download",
+      "file_size": 757,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_household_AE_2020.txt",
+      "file_path": "README_household_AE_2020.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297500/download",
+      "file_size": 1121,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_LULC_percentages_butterflies_Malawi.txt",
+      "file_path": "README_LULC_percentages_butterflies_Malawi.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297509/download",
+      "file_size": 863,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Malawi_life_history_butterflies.txt",
+      "file_path": "README_Malawi_life_history_butterflies.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297511/download",
+      "file_size": 898,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Meta_butterflies_Malawi_transects.txt",
+      "file_path": "README_Meta_butterflies_Malawi_transects.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5qfttdz9p",
+      "file_url": "https://datadryad.org/api/v2/files/2297510/download",
+      "file_size": 696,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

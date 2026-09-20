@@ -1,0 +1,117 @@
+{
+  "paper_id": "10_1111_1365_2435_13502",
+  "generated": "2026-09-10T02:06:20+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:06:20+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "allelopathy_seed_indicator.xlsx",
+      "file_path": "allelopathy_seed_indicator.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204473/download",
+      "file_size": 93786,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allelopathy_seed_neighbour.xlsx",
+      "file_path": "allelopathy_seed_neighbour.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204471/download",
+      "file_size": 117286,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allelopathy_seedling_indicator.xlsx",
+      "file_path": "allelopathy_seedling_indicator.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204472/download",
+      "file_size": 114286,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "allelopathy_seedling_neighbour.xlsx",
+      "file_path": "allelopathy_seedling_neighbour.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204474/download",
+      "file_size": 27379,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "cd_leaf_accumulation_und_herbiviory_data_analysis.xlsx",
+      "file_path": "cd_leaf_accumulation_und_herbiviory_data_analysis.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204475/download",
+      "file_size": 17313,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "field_survey_herbiviore.xlsx",
+      "file_path": "field_survey_herbiviore.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204476/download",
+      "file_size": 28563,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "water_Cd_samples.xlsx",
+      "file_path": "water_Cd_samples.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.k6djh9w39",
+      "file_url": "https://datadryad.org/api/v2/files/204477/download",
+      "file_size": 10000,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

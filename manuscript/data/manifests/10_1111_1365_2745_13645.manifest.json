@@ -1,0 +1,317 @@
+{
+  "paper_id": "10_1111_1365_2745_13645",
+  "generated": "2026-09-10T05:06:02+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:06:02+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "background_absorption.csv",
+      "file_path": "background_absorption.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625436/download",
+      "file_size": 869,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "generate_species.py",
+      "file_path": "generate_species.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625432/download",
+      "file_size": 9178,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "I_in_functions.py",
+      "file_path": "I_in_functions.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625433/download",
+      "file_size": 3008,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "linearregressions.py",
+      "file_path": "linearregressions.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625418/download",
+      "file_size": 2357,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "load_data.py",
+      "file_path": "load_data.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625419/download",
+      "file_size": 3243,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "master_program.py",
+      "file_path": "master_program.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625420/download",
+      "file_size": 1148,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "numerical_NFD.py",
+      "file_path": "numerical_NFD.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625438/download",
+      "file_size": 16837,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Pigment_algae_table.csv",
+      "file_path": "Pigment_algae_table.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625437/download",
+      "file_size": 1347,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pigments.csv",
+      "file_path": "pigments.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625430/download",
+      "file_size": 11160,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plot_figure_1_absorption_spectra.py",
+      "file_path": "plot_figure_1_absorption_spectra.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625421/download",
+      "file_size": 4115,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_2_richness.py",
+      "file_path": "plot_figure_2_richness.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625422/download",
+      "file_size": 4073,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_3_EF.py",
+      "file_path": "plot_figure_3_EF.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625439/download",
+      "file_size": 8381,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_4_traits_NFD_barplot.py",
+      "file_path": "plot_figure_4_traits_NFD_barplot.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625423/download",
+      "file_size": 4505,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_S1_I_out.py",
+      "file_path": "plot_figure_S1_I_out.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625424/download",
+      "file_size": 2260,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_S2_complementarity.py",
+      "file_path": "plot_figure_S2_complementarity.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625425/download",
+      "file_size": 2233,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_figure_S3_NFD_individually.py",
+      "file_path": "plot_figure_S3_NFD_individually.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625426/download",
+      "file_size": 1696,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_NFD_EF.py",
+      "file_path": "plot_NFD_EF.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625427/download",
+      "file_size": 2419,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plots.py",
+      "file_path": "plots.py",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625428/download",
+      "file_size": 282,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Readme_communities.txt",
+      "file_path": "Readme_communities.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625443/download",
+      "file_size": 1323,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Readme.txt",
+      "file_path": "Readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tsw",
+      "file_url": "https://datadryad.org/api/v2/files/625441/download",
+      "file_size": 2512,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "generate_species",
+      "I_in_functions",
+      "load_data",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "phytoplankton_communities",
+      "plot_figure_1_absorption_spectra",
+      "plot_figure_2_richness",
+      "plot_figure_3_EF",
+      "plot_figure_4_traits_NFD_barplot",
+      "plot_figure_S1_I_out",
+      "plot_figure_S2_complementarity",
+      "plot_figure_S3_NFD_individually",
+      "scipy",
+      "sim_data_photoprotection",
+      "sklearn",
+      "warnings"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

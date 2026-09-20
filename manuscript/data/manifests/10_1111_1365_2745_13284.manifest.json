@@ -1,0 +1,153 @@
+{
+  "paper_id": "10_1111_1365_2745_13284",
+  "generated": "2026-09-10T05:01:55+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:55+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/.gitignore",
+      "file_size": 52,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/README.md",
+      "file_size": 1149,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "0_setup.R",
+      "file_path": "code/0_setup.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/0_setup.R",
+      "file_size": 8843,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "1_diversity.R",
+      "file_path": "code/1_diversity.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/1_diversity.R",
+      "file_size": 10516,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2_composition.R",
+      "file_path": "code/2_composition.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/2_composition.R",
+      "file_size": 15382,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data.zip",
+      "file_path": "data.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": "https://datadryad.org/api/v2/files/166997/download",
+      "file_size": 1683709,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_for_data.zip.txt",
+      "file_path": "README_for_data.zip.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": "https://datadryad.org/api/v2/files/166998/download",
+      "file_size": 3526,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "corrplot",
+      "dplyr",
+      "ecodist",
+      "gdm",
+      "ggplot2",
+      "leaps",
+      "lemon",
+      "lme4",
+      "lmerTest",
+      "MuMIn",
+      "mvabund",
+      "phyloseq",
+      "plyr",
+      "reshape2",
+      "scales",
+      "tidyr",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "paper_id": "10_1111_1365_2745_13724",
+  "generated": "2026-09-10T05:06:30+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:06:30+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 18,
+  "n_downloaded": 17,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "above_and_below_npp_raw.csv",
+      "file_path": "above_and_below_npp_raw.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747024/download",
+      "file_size": 2476,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Amax_analysis_averages.csv",
+      "file_path": "Amax_analysis_averages.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747026/download",
+      "file_size": 271,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Amax_analysis.csv",
+      "file_path": "Amax_analysis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747025/download",
+      "file_size": 2968,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CPER-PPT_gapfilled_1980-2018.csv",
+      "file_path": "CPER-PPT_gapfilled_1980-2018.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747030/download",
+      "file_size": 196307,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "final_analysis_051721.R",
+      "file_path": "final_analysis_051721.R",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747043/download",
+      "file_size": 59236,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "growth_pep_analysis.csv",
+      "file_path": "growth_pep_analysis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747028/download",
+      "file_size": 13603,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "npp-precip_pasture_15_analysis.csv",
+      "file_path": "npp-precip_pasture_15_analysis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747027/download",
+      "file_size": 358,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plot_assignments.csv",
+      "file_path": "plot_assignments.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747029/download",
+      "file_size": 2990,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Griffin-Nolan_et_al._2021_JEcol.txt",
+      "file_path": "README_Griffin-Nolan_et_al._2021_JEcol.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747042/download",
+      "file_size": 2355,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "relative_cover.csv",
+      "file_path": "relative_cover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747031/download",
+      "file_size": 3497,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "soil_respiration_pep.csv",
+      "file_path": "soil_respiration_pep.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747033/download",
+      "file_size": 9243,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tlp_confint.csv",
+      "file_path": "tlp_confint.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747032/download",
+      "file_size": 476,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "transposed_daily_vwc_for_R.csv",
+      "file_path": "transposed_daily_vwc_for_R.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747041/download",
+      "file_size": 40750,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "vwc_and_water_potential.csv",
+      "file_path": "vwc_and_water_potential.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747034/download",
+      "file_size": 1835,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "waterpot_rmanova_averages.csv",
+      "file_path": "waterpot_rmanova_averages.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747035/download",
+      "file_size": 208,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "waterpot_rmanova_naoutlier_averages.csv",
+      "file_path": "waterpot_rmanova_naoutlier_averages.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747036/download",
+      "file_size": 218,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "waterpot_rmanova_naoutlier.csv",
+      "file_path": "waterpot_rmanova_naoutlier.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747038/download",
+      "file_size": 2222,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "waterpot_rmanova.csv",
+      "file_path": "waterpot_rmanova.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70s4q",
+      "file_url": "https://datadryad.org/api/v2/files/747037/download",
+      "file_size": 2280,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "cluster",
+      "DescTools",
+      "devtools",
+      "dplyr",
+      "ellipse",
+      "emmeans",
+      "GGally",
+      "ggbiplot",
+      "ggfortify",
+      "ggplot2",
+      "ggpubr",
+      "grid",
+      "lfstat",
+      "lme4",
+      "lmerTest",
+      "lubridate",
+      "magrittr",
+      "pcaMethods",
+      "piecewiseSEM",
+      "plotrix",
+      "RColorBrewer",
+      "Rmisc",
+      "tidyverse",
+      "TSA",
+      "viridis"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "paper_id": "10_1002_pan3_10310",
+  "generated": "2026-09-09T22:44:01+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:44:01+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "kilimanjaro_ipbes_workshop_ecosystem_services_access_change_codes.csv",
+      "file_path": "kilimanjaro_ipbes_workshop_ecosystem_services_access_change_codes.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5846443",
+      "file_url": "https://zenodo.org/api/records/5846443/files/kilimanjaro_ipbes_workshop_ecosystem_services_access_change_codes.csv/content",
+      "file_size": 20898,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "kilimanjaro_ipbes_workshop_spatial_scales_recommended_measures.csv",
+      "file_path": "kilimanjaro_ipbes_workshop_spatial_scales_recommended_measures.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5846443",
+      "file_url": "https://zenodo.org/api/records/5846443/files/kilimanjaro_ipbes_workshop_spatial_scales_recommended_measures.csv/content",
+      "file_size": 450,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "kilimanjaro_ipbes_workshop_habitat_questionnaire.csv",
+      "file_path": "kilimanjaro_ipbes_workshop_habitat_questionnaire.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5846443",
+      "file_url": "https://zenodo.org/api/records/5846443/files/kilimanjaro_ipbes_workshop_habitat_questionnaire.csv/content",
+      "file_size": 93020,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "kilimanjaro_ipbes_workshop_ecosystem_services_questionnaire.csv",
+      "file_path": "kilimanjaro_ipbes_workshop_ecosystem_services_questionnaire.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5846443",
+      "file_url": "https://zenodo.org/api/records/5846443/files/kilimanjaro_ipbes_workshop_ecosystem_services_questionnaire.csv/content",
+      "file_size": 111909,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_KilimanjaroIPBESworkshop_Data.txt",
+      "file_path": "README_KilimanjaroIPBESworkshop_Data.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5846443",
+      "file_url": "https://zenodo.org/api/records/5846443/files/README_KilimanjaroIPBESworkshop_Data.txt/content",
+      "file_size": 11880,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "grahamprescott/kilimanjaro.ipbes.workshop.paper-v1.0.0.zip",
+      "file_path": "grahamprescott/kilimanjaro.ipbes.workshop.paper-v1.0.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.5879758",
+      "file_url": "https://zenodo.org/api/records/5879758/files/grahamprescott/kilimanjaro.ipbes.workshop.paper-v1.0.0.zip/content",
+      "file_size": 454303,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "networkD3",
+      "RColorBrewer",
+      "remotes",
+      "tidyverse",
+      "vegan",
+      "webshot"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

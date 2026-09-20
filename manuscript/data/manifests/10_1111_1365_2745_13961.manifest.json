@@ -1,0 +1,301 @@
+{
+  "paper_id": "10_1111_1365_2745_13961",
+  "generated": "2026-09-10T05:10:56+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:10:56+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 19,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "FSC2_submit.py",
+      "file_path": "FSC2_submit.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/FSC2_submit.py",
+      "file_size": 16124,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FSC2input.py",
+      "file_path": "FSC2input.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/FSC2input.py",
+      "file_size": 8168,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MissingData.py",
+      "file_path": "MissingData.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/MissingData.py",
+      "file_size": 4579,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PopKey_Template.csv",
+      "file_path": "PopKey_Template.csv",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/PopKey_Template.csv",
+      "file_size": 162,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/README.md",
+      "file_size": 12497,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/README.txt",
+      "file_size": 11880,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ScanTools.py",
+      "file_path": "ScanTools.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/ScanTools.py",
+      "file_size": 70986,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ScanTools_commands",
+      "file_path": "ScanTools_commands",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/ScanTools_commands",
+      "file_size": 28141,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ScanTools_commands:",
+      "file_path": "ScanTools_commands:",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/ScanTools_commands:",
+      "file_size": 3178,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FSC2input.cpython-35.pyc",
+      "file_path": "__pycache__/FSC2input.cpython-35.pyc",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/__pycache__/FSC2input.cpython-35.pyc",
+      "file_size": 5945,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ScanTools.cpython-35.pyc",
+      "file_path": "__pycache__/ScanTools.cpython-35.pyc",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/__pycache__/ScanTools.cpython-35.pyc",
+      "file_size": 26673,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "bpm.cpython-35.pyc",
+      "file_path": "__pycache__/bpm.cpython-35.pyc",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/__pycache__/bpm.cpython-35.pyc",
+      "file_size": 9503,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "bpm.py",
+      "file_path": "bpm.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/bpm.py",
+      "file_size": 17748,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "calcAFS.py",
+      "file_path": "calcAFS.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/calcAFS.py",
+      "file_size": 3935,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "calcFreqs_atSites.py",
+      "file_path": "calcFreqs_atSites.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/calcFreqs_atSites.py",
+      "file_size": 2384,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "recode012.py",
+      "file_path": "recode012.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/recode012.py",
+      "file_size": 1843,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "repol.py",
+      "file_path": "repol.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/repol.py",
+      "file_size": 1765,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "wpm.py",
+      "file_path": "wpm.py",
+      "repo_url": "https://github.com/pmonnahan/ScanTools/",
+      "file_url": "https://raw.githubusercontent.com/pmonnahan/ScanTools/master/wpm.py",
+      "file_size": 13155,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Table S3..xlsx",
+      "file_path": "Table S3..xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19771234",
+      "file_url": "https://ndownloader.figshare.com/files/35127631",
+      "file_size": 298896,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "argparse",
+      "datetime",
+      "functools",
+      "gzip",
+      "itertools",
+      "math",
+      "numpy",
+      "operator",
+      "os",
+      "pandas",
+      "random",
+      "subprocess",
+      "time"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

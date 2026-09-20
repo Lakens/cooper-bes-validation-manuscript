@@ -1,0 +1,298 @@
+{
+  "paper_id": "10_1111_2041_210x_14367",
+  "generated": "2026-09-10T08:52:49+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T08:52:49+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 19,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 12,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/.gitignore",
+      "file_size": 735,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/README.md",
+      "file_size": 1171,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "polar_bear.R",
+      "file_path": "code/polar_bear.R",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/code/polar_bear.R",
+      "file_size": 3465,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "zebra.R",
+      "file_path": "code/zebra.R",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/code/zebra.R",
+      "file_size": 2499,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cov_data.RData",
+      "file_path": "data/cov_data.RData",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/cov_data.RData",
+      "file_size": 107381,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "petrel.csv",
+      "file_path": "data/petrel.csv",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/petrel.csv",
+      "file_size": 554549,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "polar_bear.csv",
+      "file_path": "data/polar_bear.csv",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/polar_bear.csv",
+      "file_size": 20459198,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sim_data.RData",
+      "file_path": "data/sim_data.RData",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/sim_data.RData",
+      "file_size": 36876,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "zebra.csv",
+      "file_path": "data/zebra.csv",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/zebra.csv",
+      "file_size": 17310405,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "zebra_par.csv",
+      "file_path": "data/zebra_par.csv",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/data/zebra_par.csv",
+      "file_size": 98,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "petrel.Rmd",
+      "file_path": "examples/petrel.Rmd",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/petrel.Rmd",
+      "file_size": 7820,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "petrel.pdf",
+      "file_path": "examples/petrel.pdf",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/petrel.pdf",
+      "file_size": 316817,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "polar_bear.Rmd",
+      "file_path": "examples/polar_bear.Rmd",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/polar_bear.Rmd",
+      "file_size": 6513,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "polar_bear.pdf",
+      "file_path": "examples/polar_bear.pdf",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/polar_bear.pdf",
+      "file_size": 219187,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sim_data.Rmd",
+      "file_path": "examples/sim_data.Rmd",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/sim_data.Rmd",
+      "file_size": 5378,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sim_data.pdf",
+      "file_path": "examples/sim_data.pdf",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/sim_data.pdf",
+      "file_size": 553356,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "zebra.Rmd",
+      "file_path": "examples/zebra.Rmd",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/zebra.Rmd",
+      "file_size": 6081,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "zebra.pdf",
+      "file_path": "examples/zebra.pdf",
+      "repo_url": "https://github.com/NJKlappstein/smoothSSF",
+      "file_url": "https://raw.githubusercontent.com/NJKlappstein/smoothSSF/main/examples/zebra.pdf",
+      "file_size": 266396,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "smoothSSF.zip",
+      "file_path": "smoothSSF.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.11390020",
+      "file_url": "https://zenodo.org/api/records/11390020/files/smoothSSF.zip/content",
+      "file_size": 11769232,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "amt",
+      "CircStats",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "gratia",
+      "hmmSSF",
+      "knitr",
+      "lubridate",
+      "mgcv",
+      "moveHMM",
+      "sp",
+      "terra",
+      "tictoc",
+      "tidyterra",
+      "wesanderson"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

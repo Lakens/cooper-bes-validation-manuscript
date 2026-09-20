@@ -1,0 +1,205 @@
+{
+  "paper_id": "10_1002_2688_8319_12083",
+  "generated": "2026-09-09T22:36:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:36:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 15,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Acacia_brevispica_biomass.csv",
+      "file_path": "Acacia_brevispica_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739881/download",
+      "file_size": 1770171,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Acacia_etbaica_biomass.csv",
+      "file_path": "Acacia_etbaica_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739877/download",
+      "file_size": 146606,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Acacia_mellifera_biomass.csv",
+      "file_path": "Acacia_mellifera_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739880/download",
+      "file_size": 393468,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Acacia_tortilis_biomass.csv",
+      "file_path": "Acacia_tortilis_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739876/download",
+      "file_size": 67686,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CCA_Data_Main-Il_Motiok.csv",
+      "file_path": "CCA_Data_Main-Il_Motiok.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739882/download",
+      "file_size": 8079,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CCA_Data_Second_-Ilmotiok.csv",
+      "file_path": "CCA_Data_Second_-Ilmotiok.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739884/download",
+      "file_size": 9408,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Master_Data_.csv",
+      "file_path": "Master_Data_.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739879/download",
+      "file_size": 2834512,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_efects_based_on_Density.csv",
+      "file_path": "Piospheric_efects_based_on_Density.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739870/download",
+      "file_size": 1415,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_effects_-_bareground.csv",
+      "file_path": "Piospheric_effects_-_bareground.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739871/download",
+      "file_size": 1800,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_effects_-_Canopy_Volume.csv",
+      "file_path": "Piospheric_effects_-_Canopy_Volume.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739872/download",
+      "file_size": 427,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_effects_-Density_based.csv",
+      "file_path": "Piospheric_effects_-Density_based.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739874/download",
+      "file_size": 1723,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_effects_-Ilmotiok.csv",
+      "file_path": "Piospheric_effects_-Ilmotiok.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739875/download",
+      "file_size": 1723,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Piospheric_effects_Canopy_Area1.csv",
+      "file_path": "Piospheric_effects_Canopy_Area1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739873/download",
+      "file_size": 396,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Soil_Data1.csv",
+      "file_path": "Soil_Data1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739883/download",
+      "file_size": 6049,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Structural_data_.csv",
+      "file_path": "Structural_data_.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0p2ngf21h",
+      "file_url": "https://datadryad.org/api/v2/files/739878/download",
+      "file_size": 292896,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

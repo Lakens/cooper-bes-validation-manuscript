@@ -1,0 +1,267 @@
+{
+  "paper_id": "10_1111_2041_210x_13306",
+  "generated": "2026-09-10T06:12:36+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:12:36+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 18,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 9,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/.gitignore",
+      "file_size": 632,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SantaVirginia_dataset_h_abund.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_abund.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_abund.csv",
+      "file_size": 270,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_h_morph.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_morph.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_morph.csv",
+      "file_size": 238,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_h_phen.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_phen.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_h_phen.csv",
+      "file_size": 796,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_network.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_network.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_network.csv",
+      "file_size": 2549,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_pl_abund.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_abund.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_abund.csv",
+      "file_size": 1977,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_pl_morph.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_morph.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_morph.csv",
+      "file_size": 1644,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SantaVirginia_dataset_pl_phen.csv",
+      "file_path": "DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_phen.csv",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/DataSetExamples/SantaVirginia/SantaVirginia_dataset_pl_phen.csv",
+      "file_size": 4114,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "IC.R",
+      "file_path": "Functions/IC.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Functions/IC.R",
+      "file_size": 334,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "calc.mean.one.second.extinct.mod.R",
+      "file_path": "Functions/calc.mean.one.second.extinct.mod.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Functions/calc.mean.one.second.extinct.mod.R",
+      "file_size": 704,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "extinction.mod.R",
+      "file_path": "Functions/extinction.mod.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Functions/extinction.mod.R",
+      "file_size": 2805,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "matrix.p1.R",
+      "file_path": "Functions/matrix.p1.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Functions/matrix.p1.R",
+      "file_size": 857,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "one.second.extinct.mod.R",
+      "file_path": "Functions/one.second.extinct.mod.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Functions/one.second.extinct.mod.R",
+      "file_size": 7899,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/LICENSE",
+      "file_size": 35149,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE.txt",
+      "file_path": "LICENSE.txt",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/LICENSE.txt",
+      "file_size": 35149,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/README.md",
+      "file_size": 526,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Script_Examples.R",
+      "file_path": "Script_Examples.R",
+      "repo_url": "http://github.com/vanderleidebastiani/rewiring",
+      "file_url": "https://raw.githubusercontent.com/vanderleidebastiani/rewiring/master/Script_Examples.R",
+      "file_size": 7838,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "vanderleidebastiani/rewiring-1.0.zip",
+      "file_path": "vanderleidebastiani/rewiring-1.0.zip",
+      "repo_url": "http://zenodo.org/record/3405384#.XYPBGX97l1t",
+      "file_url": "https://zenodo.org/api/records/3405384/files/vanderleidebastiani/rewiring-1.0.zip/content",
+      "file_size": 40161,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bipartite",
+      "plotrix"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

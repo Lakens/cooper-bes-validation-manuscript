@@ -1,0 +1,313 @@
+{
+  "paper_id": "10_1111_2041_210x_12810",
+  "generated": "2026-09-10T06:02:08+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:02:08+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 17,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "FrequencyTests_ConsTPR_DataCollector.R",
+      "file_path": "FrequencyTests_ConsTPR_DataCollector.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_ConsTPR_DataCollector.R",
+      "file_size": 6361,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FrequencyTests_DatasetReanalysis.R",
+      "file_path": "FrequencyTests_DatasetReanalysis.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_DatasetReanalysis.R",
+      "file_size": 19673,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FrequencyTests_Functions.R",
+      "file_path": "FrequencyTests_Functions.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_Functions.R",
+      "file_size": 30001,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FrequencyTests_SimulationScript.R",
+      "file_path": "FrequencyTests_SimulationScript.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_SimulationScript.R",
+      "file_size": 7263,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FrequencyTests_SimulationsPlotting.R",
+      "file_path": "FrequencyTests_SimulationsPlotting.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_SimulationsPlotting.R",
+      "file_size": 20042,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FrequencyTests_TPR_FPR_DataCollector.R",
+      "file_path": "FrequencyTests_TPR_FPR_DataCollector.R",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/FrequencyTests_TPR_FPR_DataCollector.R",
+      "file_size": 17473,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/README.md",
+      "file_size": 358,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pipeline.txt",
+      "file_path": "pipeline.txt",
+      "repo_url": "https://github.com/RAWWiberg/ER_PoolSeq_Simulations",
+      "file_url": "https://raw.githubusercontent.com/RAWWiberg/ER_PoolSeq_Simulations/master/pipeline.txt",
+      "file_size": 8785,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "rawdata_fst0.1.tar.gz",
+      "file_path": "rawdata_fst0.1.tar.gz",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.mn0tv",
+      "file_url": "https://datadryad.org/api/v2/files/63361/download",
+      "file_size": 4417446667,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "rawdata_fst0.2.tar.gz",
+      "file_path": "rawdata_fst0.2.tar.gz",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.mn0tv",
+      "file_url": "https://datadryad.org/api/v2/files/63362/download",
+      "file_size": 7646597647,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "rawdata_fst0.3.tar.gz",
+      "file_path": "rawdata_fst0.3.tar.gz",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.mn0tv",
+      "file_url": "https://datadryad.org/api/v2/files/63363/download",
+      "file_size": 4453005729,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_for_summary_data.tar.txt",
+      "file_path": "README_for_summary_data.tar.txt",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.mn0tv",
+      "file_url": "https://datadryad.org/api/v2/files/63360/download",
+      "file_size": 1817,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "summary_data.tar.gz",
+      "file_path": "summary_data.tar.gz",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.mn0tv",
+      "file_url": "https://datadryad.org/api/v2/files/63359/download",
+      "file_size": 487739852,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BF15.vcf",
+      "file_path": "BF15.vcf",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100549/download",
+      "file_size": 37940550,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BF15.zip",
+      "file_path": "BF15.zip",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100551/download",
+      "file_size": 75292804,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BF37.vcf",
+      "file_path": "BF37.vcf",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100550/download",
+      "file_size": 36311718,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BF37.zip",
+      "file_path": "BF37.zip",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100552/download",
+      "file_size": 70781987,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Description of Bioinformatic Analysis Pipeline.pdf",
+      "file_path": "Description of Bioinformatic Analysis Pipeline.pdf",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100547/download",
+      "file_size": 91552,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Pairwise Comparisons for CMH test.pdf",
+      "file_path": "Pairwise Comparisons for CMH test.pdf",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100553/download",
+      "file_size": 10285,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "scripts.zip",
+      "file_path": "scripts.zip",
+      "repo_url": "http://dx.doi.org/10.5061/dryad.60k68.2",
+      "file_url": "https://datadryad.org/api/v2/files/100548/download",
+      "file_size": 26224,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "DescTools",
+      "dplyr",
+      "ggplot2",
+      "methods",
+      "optparse",
+      "plyr",
+      "pscl",
+      "qvalue",
+      "reshape",
+      "truncnorm"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

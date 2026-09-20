@@ -1,0 +1,215 @@
+{
+  "paper_id": "10_1111_1365_2664_14074",
+  "generated": "2026-09-10T04:03:48+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:03:48+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 13,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "I1.fastq",
+      "file_path": "I1.fastq",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/I1.fastq",
+      "file_size": 8000,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/LICENSE",
+      "file_size": 18027,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Makefile",
+      "file_path": "Makefile",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/Makefile",
+      "file_size": 321,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "R1.fastq",
+      "file_path": "R1.fastq",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/R1.fastq",
+      "file_size": 40400,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "R2.fastq",
+      "file_path": "R2.fastq",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/R2.fastq",
+      "file_size": 33200,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/README.md",
+      "file_size": 1705,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "barcode_sample.txt",
+      "file_path": "barcode_sample.txt",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/barcode_sample.txt",
+      "file_size": 2148,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "checkDecodedFiles.R",
+      "file_path": "checkDecodedFiles.R",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/checkDecodedFiles.R",
+      "file_size": 2616,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "functions.cpp",
+      "file_path": "functions.cpp",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/functions.cpp",
+      "file_size": 21329,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "functions.h",
+      "file_path": "functions.h",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/functions.h",
+      "file_size": 3218,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "idemp.cpp",
+      "file_path": "idemp.cpp",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/idemp.cpp",
+      "file_size": 16274,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "kseq.h",
+      "file_path": "kseq.h",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/kseq.h",
+      "file_size": 8030,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "kseq_test.c",
+      "file_path": "kseq_test.c",
+      "repo_url": "https://github.com/yhwu/idemp",
+      "file_url": "https://raw.githubusercontent.com/yhwu/idemp/master/kseq_test.c",
+      "file_size": 621,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "ShortRead"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

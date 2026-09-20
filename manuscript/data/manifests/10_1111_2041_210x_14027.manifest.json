@@ -1,0 +1,381 @@
+{
+  "paper_id": "10_1111_2041_210x_14027",
+  "generated": "2026-09-10T07:39:39+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T07:39:39+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 26,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 17,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/.gitignore",
+      "file_size": 40,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "OHM.Rproj",
+      "file_path": "OHM.Rproj",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/OHM.Rproj",
+      "file_size": 205,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2021_OHM_FUN.R",
+      "file_path": "R/2021_OHM_FUN.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/2021_OHM_FUN.R",
+      "file_size": 14370,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2022_OHM_FUN.R",
+      "file_path": "R/2022_OHM_FUN.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/2022_OHM_FUN.R",
+      "file_size": 14270,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "OHM_function.R",
+      "file_path": "R/OHM_function.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/OHM_function.R",
+      "file_size": 31134,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "OHM_functions_v2.R",
+      "file_path": "R/OHM_functions_v2.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/OHM_functions_v2.R",
+      "file_size": 10622,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "OHM_functions_v3.R",
+      "file_path": "R/OHM_functions_v3.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/OHM_functions_v3.R",
+      "file_size": 11174,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "OHM_functions_v4.R",
+      "file_path": "R/OHM_functions_v4.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/OHM_functions_v4.R",
+      "file_size": 12140,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "runOHM.R",
+      "file_path": "R/runOHM.R",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/R/runOHM.R",
+      "file_size": 1593,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.Rmd",
+      "file_path": "README.Rmd",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/README.Rmd",
+      "file_size": 3746,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/README.md",
+      "file_size": 4398,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "data/.DS_Store",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/.DS_Store",
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "data/DF10/.DS_Store",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/DF10/.DS_Store",
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "branch.csv",
+      "file_path": "data/DF10/branch.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/DF10/branch.csv",
+      "file_size": 50266894,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trunk.csv",
+      "file_path": "data/DF10/trunk.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/DF10/trunk.csv",
+      "file_size": 4353653,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "data/PP8/.DS_Store",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/PP8/.DS_Store",
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "branch.csv",
+      "file_path": "data/PP8/branch.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/PP8/branch.csv",
+      "file_size": 66997439,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trunk.csv",
+      "file_path": "data/PP8/trunk.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/PP8/trunk.csv",
+      "file_size": 3191661,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "data/TH20L/.DS_Store",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/TH20L/.DS_Store",
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "branch.csv",
+      "file_path": "data/TH20L/branch.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/TH20L/branch.csv",
+      "file_size": 44515230,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trunk.csv",
+      "file_path": "data/TH20L/trunk.csv",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/data/TH20L/trunk.csv",
+      "file_size": 16864993,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "stem_50_0.txt",
+      "file_path": "input/stem_50_0.txt",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/input/stem_50_0.txt",
+      "file_size": 429543,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "stem_50_0_OHM.txt",
+      "file_path": "output/modeled/stem_50_0_OHM.txt",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/output/modeled/stem_50_0_OHM.txt",
+      "file_size": 17222,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tls.png",
+      "file_path": "readme/tls.png",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/readme/tls.png",
+      "file_size": 429372,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "tree_volume.png",
+      "file_path": "readme/tree_volume.png",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/readme/tree_volume.png",
+      "file_size": 85824,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "trunk_radius.png",
+      "file_path": "readme/trunk_radius.png",
+      "repo_url": "https://github.com/aestovall/OHM",
+      "file_url": "https://raw.githubusercontent.com/aestovall/OHM/master/readme/trunk_radius.png",
+      "file_size": 129418,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "circular",
+      "doParallel",
+      "foreach",
+      "fpc",
+      "ggplot2",
+      "lidR",
+      "rgl",
+      "sp",
+      "spatstat",
+      "svMisc",
+      "viridis",
+      "VoxR"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

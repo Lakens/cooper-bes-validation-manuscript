@@ -1,0 +1,527 @@
+{
+  "paper_id": "10_1111_1365_2435_14206",
+  "generated": "2026-09-10T02:20:42+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:20:42+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 42,
+  "n_downloaded": 37,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "01_AZORES_disperser_plant.csv",
+      "file_path": "01_AZORES_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339818",
+      "file_size": 1243,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "01_AZORES_parasite_disperser.csv",
+      "file_path": "01_AZORES_parasite_disperser.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339821",
+      "file_size": 604,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "02_AZORES_disperser_plant.csv",
+      "file_path": "02_AZORES_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339824",
+      "file_size": 1276,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "02_AZORES_herbivore_plant.csv",
+      "file_path": "02_AZORES_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339827",
+      "file_size": 2485,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "03_AZORES_herbivore_plant.csv",
+      "file_path": "03_AZORES_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339830",
+      "file_size": 2490,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "03_AZORES_parasitoid_herbivore.csv",
+      "file_path": "03_AZORES_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339833",
+      "file_size": 560,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "04_GALAPAGOS_disperser_plant.csv",
+      "file_path": "04_GALAPAGOS_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339836",
+      "file_size": 3816,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "04_GALAPAGOS_pollinator_plant.csv",
+      "file_path": "04_GALAPAGOS_pollinator_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339839",
+      "file_size": 34694,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "05_DORSET_herbivore_plant.csv",
+      "file_path": "05_DORSET_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339842",
+      "file_size": 1009,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "05_DORSET_parasitoid_herbivore.csv",
+      "file_path": "05_DORSET_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339845",
+      "file_size": 698,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "06_NORWOOD_herbivore_plant.csv",
+      "file_path": "06_NORWOOD_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339848",
+      "file_size": 698,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "06_NORWOOD_parasitoid_herbivore.csv",
+      "file_path": "06_NORWOOD_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339851",
+      "file_size": 1289,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "07_NORWOOD_herbivore_plant.csv",
+      "file_path": "07_NORWOOD_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339854",
+      "file_size": 2152,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "07_NORWOOD_pollinator_plant.csv",
+      "file_path": "07_NORWOOD_pollinator_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339857",
+      "file_size": 18996,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "08_NORWOOD_herbivore_plant.csv",
+      "file_path": "08_NORWOOD_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339860",
+      "file_size": 2149,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "08_NORWOOD_parasitoid_herbivore.csv",
+      "file_path": "08_NORWOOD_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339863",
+      "file_size": 577,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "09_BORNEO_herbivore_defender.csv",
+      "file_path": "09_BORNEO_herbivore_defender.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339866",
+      "file_size": 1825,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "09_BORNEO_herbivore_plant.csv",
+      "file_path": "09_BORNEO_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339869",
+      "file_size": 1265,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "10_COIMBRA_disperser_plant.csv",
+      "file_path": "10_COIMBRA_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339872",
+      "file_size": 1340,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "10_COIMBRA_parasite_disperser.csv",
+      "file_path": "10_COIMBRA_parasite_disperser.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339875",
+      "file_size": 607,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "11_BEIRA_galler_plant.csv",
+      "file_path": "11_BEIRA_galler_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339878",
+      "file_size": 2002,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "11_BEIRA_parasitoid_galler.csv",
+      "file_path": "11_BEIRA_parasitoid_galler.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339881",
+      "file_size": 2028,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "12_PURBECK_parasitoid_pollinator.csv",
+      "file_path": "12_PURBECK_parasitoid_pollinator.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339884",
+      "file_size": 534,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "12_PURBECK_pollinator_plant.csv",
+      "file_path": "12_PURBECK_pollinator_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339887",
+      "file_size": 307,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "13_HAWAII_herbivore_plant.csv",
+      "file_path": "13_HAWAII_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339890",
+      "file_size": 2134,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "13_HAWAII_parasitoid_herbivore.csv",
+      "file_path": "13_HAWAII_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339893",
+      "file_size": 498,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "14_BRISTOL_herbivore_plant.csv",
+      "file_path": "14_BRISTOL_herbivore_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339896",
+      "file_size": 58478,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "14_BRISTOL_parasitoid_herbivore.csv",
+      "file_path": "14_BRISTOL_parasitoid_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339899",
+      "file_size": 36890,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "15_POLAND_disperser_plant.csv",
+      "file_path": "15_POLAND_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339902",
+      "file_size": 3361,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "15_POLAND_pollinator_plant.csv",
+      "file_path": "15_POLAND_pollinator_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339905",
+      "file_size": 26843,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "16_GALAPAGOS_disperser_plant.csv",
+      "file_path": "16_GALAPAGOS_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339908",
+      "file_size": 3110,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "16_GALAPAGOS_parasite_disperser.csv",
+      "file_path": "16_GALAPAGOS_parasite_disperser.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339911",
+      "file_size": 804,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "17_MOZAMBIQUE_disperser_plant.csv",
+      "file_path": "17_MOZAMBIQUE_disperser_plant.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339914",
+      "file_size": 938,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "17_MOZAMBIQUE_plant_mycorrhiza.csv",
+      "file_path": "17_MOZAMBIQUE_plant_mycorrhiza.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339917",
+      "file_size": 3816,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "18_NEWZEALAND_herbivore_parasitoid.csv",
+      "file_path": "18_NEWZEALAND_herbivore_parasitoid.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339920",
+      "file_size": 4578,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "18_NEWZEALAND_plant_herbivore.csv",
+      "file_path": "18_NEWZEALAND_plant_herbivore.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14333198",
+      "file_url": "https://ndownloader.figshare.com/files/27339923",
+      "file_size": 8439,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Abundance_Correlations.R",
+      "file_path": "Abundance_Correlations.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/34796680",
+      "file_size": 13618,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Graph_Fig2.R",
+      "file_path": "Graph_Fig2.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/34796683",
+      "file_size": 11474,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Get_Preference_Abundance.R",
+      "file_path": "Get_Preference_Abundance.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/34796686",
+      "file_size": 3865,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "GetPreferences.R",
+      "file_path": "GetPreferences.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/46059639",
+      "file_size": 2505,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/46060581",
+      "file_size": 1671,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Full_analysis.R",
+      "file_path": "Full_analysis.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.14334038",
+      "file_url": "https://ndownloader.figshare.com/files/46060626",
+      "file_size": 26605,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "corpcor",
+      "ggpubr",
+      "kinship2",
+      "metafor",
+      "readr",
+      "x"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

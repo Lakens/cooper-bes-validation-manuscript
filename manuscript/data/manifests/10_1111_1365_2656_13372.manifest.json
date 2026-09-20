@@ -1,0 +1,89 @@
+{
+  "paper_id": "10_1111_1365_2656_13372",
+  "generated": "2026-09-10T03:07:07+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:07:07+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data_DRYAD.xlsx",
+      "file_path": "Data_DRYAD.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.w0vt4b8pg",
+      "file_url": "https://datadryad.org/api/v2/files/443343/download",
+      "file_size": 172258,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Script_JAE_final_DRYAD.R",
+      "file_path": "Script_JAE_final_DRYAD.R",
+      "repo_url": "https://doi.org/10.5061/dryad.w0vt4b8pg",
+      "file_url": "https://datadryad.org/api/v2/files/443344/download",
+      "file_size": 36463,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "Biobase",
+      "cowplot",
+      "ggeffects",
+      "ggplot2",
+      "grid",
+      "gridExtra",
+      "lme4",
+      "lmerTest",
+      "multcompView",
+      "MuMIn",
+      "nlme",
+      "rain",
+      "rcompanion",
+      "reshape",
+      "rptR",
+      "xlsx"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

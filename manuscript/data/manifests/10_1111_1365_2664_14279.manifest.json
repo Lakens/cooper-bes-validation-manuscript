@@ -1,0 +1,84 @@
+{
+  "paper_id": "10_1111_1365_2664_14279",
+  "generated": "2026-09-10T04:06:07+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:06:07+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 4,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Pollination_deficits_DATA_Olhnuud_et_al.csv",
+      "file_path": "Pollination_deficits_DATA_Olhnuud_et_al.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.s7h44j19f",
+      "file_url": "https://datadryad.org/api/v2/files/1731460/download",
+      "file_size": 33794,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Pollinators_contribution_DATA_Olhnuud_et_al.csv",
+      "file_path": "Pollinators_contribution_DATA_Olhnuud_et_al.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.s7h44j19f",
+      "file_url": "https://datadryad.org/api/v2/files/1731461/download",
+      "file_size": 27803,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_Olhnuud_et_al.csv",
+      "file_path": "README_Olhnuud_et_al.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.s7h44j19f",
+      "file_url": "https://datadryad.org/api/v2/files/1731463/download",
+      "file_size": 1627,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Study_details_Olhnuud_et_al.csv",
+      "file_path": "Study_details_Olhnuud_et_al.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.s7h44j19f",
+      "file_url": "https://datadryad.org/api/v2/files/1731462/download",
+      "file_size": 10064,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "paper_id": "10_1111_1365_2656_13304",
+  "generated": "2026-09-10T03:06:15+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:06:15+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 19,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "1._R_code_statistical_analyses.R",
+      "file_path": "1._R_code_statistical_analyses.R",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377844/download",
+      "file_size": 40532,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2._Migration_Traffic_Rate_MTR.xlsx",
+      "file_path": "2._Migration_Traffic_Rate_MTR.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377845/download",
+      "file_size": 54937,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1012_2012.txt",
+      "file_path": "3._GPS_data_1012_2012.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377847/download",
+      "file_size": 252138,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1012_2013.txt",
+      "file_path": "3._GPS_data_1012_2013.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377852/download",
+      "file_size": 695891,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1012_2014.txt",
+      "file_path": "3._GPS_data_1012_2014.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377848/download",
+      "file_size": 758634,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1012_2015.txt",
+      "file_path": "3._GPS_data_1012_2015.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377854/download",
+      "file_size": 2790742,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1013_2012.txt",
+      "file_path": "3._GPS_data_1013_2012.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377849/download",
+      "file_size": 682479,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1013_2013.txt",
+      "file_path": "3._GPS_data_1013_2013.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377850/download",
+      "file_size": 891583,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_1013_2014.txt",
+      "file_path": "3._GPS_data_1013_2014.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377846/download",
+      "file_size": 254402,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2038_2017.txt",
+      "file_path": "3._GPS_data_2038_2017.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377864/download",
+      "file_size": 214996,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2048_2014.txt",
+      "file_path": "3._GPS_data_2048_2014.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377858/download",
+      "file_size": 522255,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2048_2015.txt",
+      "file_path": "3._GPS_data_2048_2015.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377857/download",
+      "file_size": 616571,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2048_2016.txt",
+      "file_path": "3._GPS_data_2048_2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377856/download",
+      "file_size": 304986,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2051_2014.txt",
+      "file_path": "3._GPS_data_2051_2014.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377855/download",
+      "file_size": 375719,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2051_2015.txt",
+      "file_path": "3._GPS_data_2051_2015.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377853/download",
+      "file_size": 348623,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2051_2016.txt",
+      "file_path": "3._GPS_data_2051_2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377851/download",
+      "file_size": 394715,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2336_2017.txt",
+      "file_path": "3._GPS_data_2336_2017.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377868/download",
+      "file_size": 3871756,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2337_2017.txt",
+      "file_path": "3._GPS_data_2337_2017.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377861/download",
+      "file_size": 29254,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2341_2017.txt",
+      "file_path": "3._GPS_data_2341_2017.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377863/download",
+      "file_size": 2583007,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3._GPS_data_2368_2017.txt",
+      "file_path": "3._GPS_data_2368_2017.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0rxwdbrx5",
+      "file_url": "https://datadryad.org/api/v2/files/377866/download",
+      "file_size": 449036,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "circular",
+      "dplyr",
+      "investr",
+      "lubridate",
+      "mapdata",
+      "maps",
+      "missForest",
+      "modEvA",
+      "move",
+      "plotrix",
+      "plyr",
+      "raster",
+      "RColorBrewer",
+      "rgdal",
+      "rgeos",
+      "sp",
+      "tidyr"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

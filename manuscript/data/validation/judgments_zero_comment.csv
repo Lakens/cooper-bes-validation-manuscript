@@ -1,0 +1,3 @@
+"paper_id","file_name","check","verdict","reason"
+"multiple (see .qmd)","(280 Python files, 200 with docstrings)","zero_comment","FP_by_design","code_remove_comments()/.code_comment_flags() deliberately never treat a triple-quoted Python string as a comment (to avoid also stripping real docstrings/literals); consequence is that docstring-only files are reported as 0% comments even though they carry genuine documentation -- a documented design tradeoff with a real, quantified cost (71.4% of zero-comment-flagged Python files in this corpus)"
+"10_1111_1365_2435_13380 (and 11 similar)","systeme_eqdif.m","zero_comment","TP","genuinely zero comment characters ('#') anywhere in the file -- correct flag"

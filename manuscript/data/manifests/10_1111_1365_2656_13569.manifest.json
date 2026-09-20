@@ -1,0 +1,129 @@
+{
+  "paper_id": "10_1111_1365_2656_13569",
+  "generated": "2026-09-10T03:10:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:10:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "a_foraging_vigilance_dispersalphases_data",
+      "file_path": "a_foraging_vigilance_dispersalphases_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809871/download",
+      "file_size": 264359,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "a_foraging_vigilance_disperservsresident_data",
+      "file_path": "a_foraging_vigilance_disperservsresident_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809875/download",
+      "file_size": 539629,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "b_survival_data",
+      "file_path": "b_survival_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809870/download",
+      "file_size": 27604,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "c_aggression_data",
+      "file_path": "c_aggression_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809874/download",
+      "file_size": 382543,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "c_conception_data",
+      "file_path": "c_conception_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809872/download",
+      "file_size": 82326,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "c_fGCM_data",
+      "file_path": "c_fGCM_data",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809873/download",
+      "file_size": 157026,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Harrison2021readme.txt",
+      "file_path": "Harrison2021readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.70rxwdbxz",
+      "file_url": "https://datadryad.org/api/v2/files/809876/download",
+      "file_size": 9220,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

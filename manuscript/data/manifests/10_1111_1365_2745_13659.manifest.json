@@ -1,0 +1,227 @@
+{
+  "paper_id": "10_1111_1365_2745_13659",
+  "generated": "2026-09-10T05:06:12+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:06:12+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 14,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Cosmo_et_al_fulldataset.txt",
+      "file_path": "Cosmo_et_al_fulldataset.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634236/download",
+      "file_size": 55535,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Cosmo_et_al_fulldataset.xlsx",
+      "file_path": "Cosmo_et_al_fulldataset.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634237/download",
+      "file_size": 75873,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Cosmo_et_al_network.txt",
+      "file_path": "Cosmo_et_al_network.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634238/download",
+      "file_size": 5427,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Cosmo_et_al_network.xlsx",
+      "file_path": "Cosmo_et_al_network.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634239/download",
+      "file_size": 15350,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Cosmo_et_al_phytochemical_diversity.Rproj",
+      "file_path": "Cosmo_et_al_phytochemical_diversity.Rproj",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634240/download",
+      "file_size": 218,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "dataset_hplc_ms.txt",
+      "file_path": "dataset_hplc_ms.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634241/download",
+      "file_size": 57846,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "dataset_hplc_ms.xlsx",
+      "file_path": "dataset_hplc_ms.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634242/download",
+      "file_size": 73329,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "dataset_nmr.txt",
+      "file_path": "dataset_nmr.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634243/download",
+      "file_size": 1467310,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "dataset_nmr.xlsx",
+      "file_path": "dataset_nmr.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634244/download",
+      "file_size": 1566920,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "katz_function.R",
+      "file_path": "katz_function.R",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634245/download",
+      "file_size": 701,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_Cosmo_et_al_phytochemical_diversity.txt",
+      "file_path": "README_Cosmo_et_al_phytochemical_diversity.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634232/download",
+      "file_size": 4492,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "script_ICC_SEM.R",
+      "file_path": "script_ICC_SEM.R",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634233/download",
+      "file_size": 3459,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "script_network_analysis.R",
+      "file_path": "script_network_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634234/download",
+      "file_size": 5387,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "script_PD_measures.R",
+      "file_path": "script_PD_measures.R",
+      "repo_url": "https://doi.org/10.5061/dryad.p8cz8w9mz",
+      "file_url": "https://datadryad.org/api/v2/files/634235/download",
+      "file_size": 3514,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "compositions",
+      "DHARMa",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "glmmTMB",
+      "here",
+      "igraph",
+      "lme4",
+      "nlme",
+      "piecewiseSEM",
+      "rptR",
+      "speaq",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

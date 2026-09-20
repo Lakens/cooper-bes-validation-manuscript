@@ -1,0 +1,152 @@
+{
+  "paper_id": "10_1111_1365_2745_13263",
+  "generated": "2026-09-10T05:01:44+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:44+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Estrada-Villegas et al. Supporting Information S1-S9.pdf",
+      "file_path": "Estrada-Villegas et al. Supporting Information S1-S9.pdf",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/21289050",
+      "file_size": 292633,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "1. Estrada-Villegas et al. Saplings. Variables for LMM.csv",
+      "file_path": "1. Estrada-Villegas et al. Saplings. Variables for LMM.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148219",
+      "file_size": 33643,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2. Estrada-Villegas et al. Trees. Variables for LMM.csv",
+      "file_path": "2. Estrada-Villegas et al. Trees. Variables for LMM.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148222",
+      "file_size": 33210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3. Estrada-Villegas et al. Small Lianas. Variables for LMM.csv",
+      "file_path": "3. Estrada-Villegas et al. Small Lianas. Variables for LMM.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148225",
+      "file_size": 33162,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4. Estrada-Villegas et al. Large Lianas. Variables for LMM.csv",
+      "file_path": "4. Estrada-Villegas et al. Large Lianas. Variables for LMM.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148228",
+      "file_size": 32364,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "5. Estrada-Villegas et al. Change in Sp abundance.csv",
+      "file_path": "5. Estrada-Villegas et al. Change in Sp abundance.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148231",
+      "file_size": 11849,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "6. Estrada-Villegas et al. NMDS Composition Saplings across censuses.csv",
+      "file_path": "6. Estrada-Villegas et al. NMDS Composition Saplings across censuses.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148246",
+      "file_size": 6450,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "7. Estrada-Villegas et al. NMDS Composition Trees across censuses.csv",
+      "file_path": "7. Estrada-Villegas et al. NMDS Composition Trees across censuses.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148237",
+      "file_size": 6430,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "8. Estrada-Villegas et al. NMDS Composition Small Lianas across censuses.csv",
+      "file_path": "8. Estrada-Villegas et al. NMDS Composition Small Lianas across censuses.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148240",
+      "file_size": 6446,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "9. Estrada-Villegas et al. NMDS Composition Large Lianas across censuses.csv",
+      "file_path": "9. Estrada-Villegas et al. NMDS Composition Large Lianas across censuses.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.7144112",
+      "file_url": "https://ndownloader.figshare.com/files/13148243",
+      "file_size": 6379,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.Rhistory
+.Rproj.user/
+.DS_Store
+Thumbs.db
+/manuscript/output/
+/manuscript/_quarto_output/
+manuscript/bes.rds

@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2745_13286",
+  "generated": "2026-09-10T05:01:57+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:57+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data_Herbivory_Natural.readme.txt",
+      "file_path": "Data_Herbivory_Natural.readme.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134513",
+      "file_size": 1588,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Herbivory_Natural.txt",
+      "file_path": "Data_Herbivory_Natural.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134516",
+      "file_size": 175699,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Herbivory_Palatabilty.readme.txt",
+      "file_path": "Data_Herbivory_Palatabilty.readme.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134519",
+      "file_size": 1430,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Herbivory_Palatabilty.txt",
+      "file_path": "Data_Herbivory_Palatabilty.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134522",
+      "file_size": 62039,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Warming.treatement.readme.txt",
+      "file_path": "Data_Warming.treatement.readme.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134525",
+      "file_size": 1286,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Warming.treatement.txt",
+      "file_path": "Data_Warming.treatement.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/18134528",
+      "file_size": 52053,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "climherb_natural.herbivory_treatments.readme.txt",
+      "file_path": "climherb_natural.herbivory_treatments.readme.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/25999190",
+      "file_size": 2542,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "climherb_natural.herbivory_treatments.txt",
+      "file_path": "climherb_natural.herbivory_treatments.txt",
+      "repo_url": "http://doi.org/10.6084/m9.figshare.9699131",
+      "file_url": "https://ndownloader.figshare.com/files/25999193",
+      "file_size": 293974,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

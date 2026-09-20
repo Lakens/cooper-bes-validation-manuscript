@@ -1,0 +1,203 @@
+{
+  "paper_id": "10_1111_1365_2664_13913",
+  "generated": "2026-09-10T04:00:24+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:00:24+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "depdat.csv",
+      "file_path": "Data/depdat.csv",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/Data/depdat.csv",
+      "file_size": 2674,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "exifdata.csv",
+      "file_path": "Data/exifdata.csv",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/Data/exifdata.csv",
+      "file_size": 7592285,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "posdat.csv",
+      "file_path": "Data/posdat.csv",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/Data/posdat.csv",
+      "file_size": 844861,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "seqdat.csv",
+      "file_path": "Data/seqdat.csv",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/Data/seqdat.csv",
+      "file_size": 117633,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/README.md",
+      "file_size": 160,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "camtools.R",
+      "file_path": "camtools.R",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/camtools.R",
+      "file_size": 23905,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "camtools.Rmd",
+      "file_path": "camtools.Rmd",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/camtools.Rmd",
+      "file_size": 13538,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "camtools.pdf",
+      "file_path": "camtools.pdf",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/camtools.pdf",
+      "file_size": 329560,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "camtools_example.R",
+      "file_path": "camtools_example.R",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/camtools_example.R",
+      "file_size": 2107,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "detection matrix example.r",
+      "file_path": "detection matrix example.r",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/detection matrix example.r",
+      "file_size": 2769,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "get_detection_matrix.r",
+      "file_path": "get_detection_matrix.r",
+      "repo_url": "https://github.com/MarcusRowcliffe/camtools",
+      "file_url": "https://raw.githubusercontent.com/MarcusRowcliffe/camtools/master/get_detection_matrix.r",
+      "file_size": 9176,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Data_JAppEcolUnmarkedCameratraps.xlsx",
+      "file_path": "Data_JAppEcolUnmarkedCameratraps.xlsx",
+      "repo_url": "https://zenodo.org/record/4745594#.YJkJ1j_tbIU",
+      "file_url": "https://zenodo.org/api/records/4745594/files/Data_JAppEcolUnmarkedCameratraps.xlsx/content",
+      "file_size": 534598,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "activity",
+      "data.table",
+      "devtools",
+      "dplyr",
+      "fasttime",
+      "knitr",
+      "plyr",
+      "readxl",
+      "reshape",
+      "tidyr"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

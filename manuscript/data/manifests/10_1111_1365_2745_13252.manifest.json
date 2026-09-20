@@ -1,0 +1,172 @@
+{
+  "paper_id": "10_1111_1365_2745_13252",
+  "generated": "2026-09-10T05:01:34+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:34+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 12,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "community weighted means metadata.csv",
+      "file_path": "community weighted means metadata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106790/download",
+      "file_size": 186,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "community weighted means metadata.csv",
+      "file_path": "community weighted means metadata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106796/download",
+      "file_size": 186,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "community weighted means per plot.csv",
+      "file_path": "community weighted means per plot.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106786/download",
+      "file_size": 43791,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "community weighted means per plot.csv",
+      "file_path": "community weighted means per plot.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106792/download",
+      "file_size": 43791,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SBK traits.csv",
+      "file_path": "SBK traits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106788/download",
+      "file_size": 830,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SBK traits.csv",
+      "file_path": "SBK traits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106794/download",
+      "file_size": 830,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SBL traits.csv",
+      "file_path": "SBL traits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106789/download",
+      "file_size": 905,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SBL traits.csv",
+      "file_path": "SBL traits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106795/download",
+      "file_size": 905,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SES_diversity_all_metadata.csv",
+      "file_path": "SES_diversity_all_metadata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106791/download",
+      "file_size": 1001,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SES_diversity_all_metadata.csv",
+      "file_path": "SES_diversity_all_metadata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106797/download",
+      "file_size": 1001,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SES_diversity_all.csv",
+      "file_path": "SES_diversity_all.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106787/download",
+      "file_size": 137894,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SES_diversity_all.csv",
+      "file_path": "SES_diversity_all.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.k4v262p",
+      "file_url": "https://datadryad.org/api/v2/files/106793/download",
+      "file_size": 137894,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+"paper_id","file_name","check","verdict","reason"
+"10_1111_2041_210x_13787","process_sdk_docs.py","scattered_library","FP","docstring prose line 213 ('from the generated model and api descriptions.') matches code_library_lines()'s Python anchor regex; real imports are all contiguous at lines 1-10 (max gap <=1) and would NOT be flagged scattered without this spurious match"

@@ -1,0 +1,119 @@
+{
+  "paper_id": "10_1111_1365_2664_13269",
+  "generated": "2026-09-10T03:28:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:28:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Predation analysis_20160909.R",
+      "file_path": "Predation analysis_20160909.R",
+      "repo_url": "https://doi.org/10.5061/dryad.2f5v427",
+      "file_url": "https://datadryad.org/api/v2/files/40670/download",
+      "file_size": 3875,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Predation_experiment_20160909.csv",
+      "file_path": "Predation_experiment_20160909.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2f5v427",
+      "file_url": "https://datadryad.org/api/v2/files/40667/download",
+      "file_size": 39124,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Predation_experiment_birds_20160910.csv",
+      "file_path": "Predation_experiment_birds_20160910.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2f5v427",
+      "file_url": "https://datadryad.org/api/v2/files/40668/download",
+      "file_size": 37481,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Predation_experiment_mammals_20160910.csv",
+      "file_path": "Predation_experiment_mammals_20160910.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2f5v427",
+      "file_url": "https://datadryad.org/api/v2/files/40669/download",
+      "file_size": 36164,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Predation_plottinggraphs_20170327.R",
+      "file_path": "Predation_plottinggraphs_20170327.R",
+      "repo_url": "https://doi.org/10.5061/dryad.2f5v427",
+      "file_url": "https://datadryad.org/api/v2/files/40671/download",
+      "file_size": 15282,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "AICcmodavg",
+      "aods3",
+      "blme",
+      "car",
+      "effects",
+      "ggplot2",
+      "lme4",
+      "lsmeans",
+      "multcompView",
+      "MuMIn",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

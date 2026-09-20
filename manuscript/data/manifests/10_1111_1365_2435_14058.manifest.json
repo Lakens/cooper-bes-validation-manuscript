@@ -1,0 +1,227 @@
+{
+  "paper_id": "10_1111_1365_2435_14058",
+  "generated": "2026-09-10T02:18:05+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:18:05+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 17,
+  "n_downloaded": 17,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "1-choice.txt",
+      "file_path": "1-choice.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444295/download",
+      "file_size": 6228,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "10-intake_target.txt",
+      "file_path": "10-intake_target.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444305/download",
+      "file_size": 11741,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "11-feeding_nutr-epiprogoitrin_FA-GA_Part1.txt",
+      "file_path": "11-feeding_nutr-epiprogoitrin_FA-GA_Part1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444304/download",
+      "file_size": 1187,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "12-feeding_nutr-epiprogoitrin_FA-GA_Part2.txt",
+      "file_path": "12-feeding_nutr-epiprogoitrin_FA-GA_Part2.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444306/download",
+      "file_size": 1759,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "13-feeding_pattern.txt",
+      "file_path": "13-feeding_pattern.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444307/download",
+      "file_size": 1872,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "14-ressource_accessibility.txt",
+      "file_path": "14-ressource_accessibility.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444308/download",
+      "file_size": 464,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "15-bootstrap_parameters_simulation.txt",
+      "file_path": "15-bootstrap_parameters_simulation.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444311/download",
+      "file_size": 691779,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "16-resource_proportion.txt",
+      "file_path": "16-resource_proportion.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444309/download",
+      "file_size": 47379,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2-survival.txt",
+      "file_path": "2-survival.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444296/download",
+      "file_size": 15116,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3-defense_compounds_content.txt",
+      "file_path": "3-defense_compounds_content.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444297/download",
+      "file_size": 1536,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4-feeding_progoitrin_FA-GA.txt",
+      "file_path": "4-feeding_progoitrin_FA-GA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444298/download",
+      "file_size": 1273,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "5-feeding_epiprogoitrin_FA-GA.txt",
+      "file_path": "5-feeding_epiprogoitrin_FA-GA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444299/download",
+      "file_size": 1275,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "6-macronutrients_content.txt",
+      "file_path": "6-macronutrients_content.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444300/download",
+      "file_size": 519,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "7-feeding_nutr_FA-GA.txt",
+      "file_path": "7-feeding_nutr_FA-GA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444301/download",
+      "file_size": 1679,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "8-feeding_nutr_quantity.txt",
+      "file_path": "8-feeding_nutr_quantity.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444302/download",
+      "file_size": 1338,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "9-feeding_nutr_ratio.txt",
+      "file_path": "9-feeding_nutr_ratio.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444303/download",
+      "file_size": 2033,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.866t1g1sq",
+      "file_url": "https://datadryad.org/api/v2/files/1444310/download",
+      "file_size": 7641,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

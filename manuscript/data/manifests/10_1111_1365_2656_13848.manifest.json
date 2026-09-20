@@ -1,0 +1,116 @@
+{
+  "paper_id": "10_1111_1365_2656_13848",
+  "generated": "2026-09-10T03:13:59+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:13:59+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "data_d34S_Africa_GRW.csv",
+      "file_path": "data_d34S_Africa_GRW.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/data_d34S_Africa_GRW.csv/content",
+      "file_size": 2751,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "d34S_isoscape_Africa_200km.tif",
+      "file_path": "d34S_isoscape_Africa_200km.tif",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/d34S_isoscape_Africa_200km.tif/content",
+      "file_size": 2542,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "d34S_isoscape_Africa_50km.tif",
+      "file_path": "d34S_isoscape_Africa_50km.tif",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/d34S_isoscape_Africa_50km.tif/content",
+      "file_size": 29775,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "d34S_isoscape_Africa_100km.tif",
+      "file_path": "d34S_isoscape_Africa_100km.tif",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/d34S_isoscape_Africa_100km.tif/content",
+      "file_size": 8091,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "d34S_SD_Africa_25km.tif",
+      "file_path": "d34S_SD_Africa_25km.tif",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/d34S_SD_Africa_25km.tif/content",
+      "file_size": 120162,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "d34S_isoscape_Africa_25km.tif",
+      "file_path": "d34S_isoscape_Africa_25km.tif",
+      "repo_url": "https://doi.org/10.5281/zenodo.6334822",
+      "file_url": "https://zenodo.org/api/records/6334823/files/d34S_isoscape_Africa_25km.tif/content",
+      "file_size": 116461,
+      "data_type": "materials",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

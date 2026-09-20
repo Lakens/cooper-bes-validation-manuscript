@@ -1,0 +1,246 @@
+{
+  "paper_id": "10_1111_1365_2656_14075",
+  "generated": "2026-09-10T03:17:47+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:17:47+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "SI_m_nb_2_nt.m",
+      "file_path": "SI_m_nb_2_nt.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/SI_m_nb_2_nt.m/content",
+      "file_size": 2626,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "set_baseline_parameter_values.m",
+      "file_path": "set_baseline_parameter_values.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/set_baseline_parameter_values.m/content",
+      "file_size": 698,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mortality_sweep.m",
+      "file_path": "mortality_sweep.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/mortality_sweep.m/content",
+      "file_size": 10827,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "twoPopSim_m.m",
+      "file_path": "twoPopSim_m.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/twoPopSim_m.m/content",
+      "file_size": 1708,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "m_and_lh_sweep.m",
+      "file_path": "m_and_lh_sweep.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/m_and_lh_sweep.m/content",
+      "file_size": 11479,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SI_m_b_2_t.m",
+      "file_path": "SI_m_b_2_t.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/SI_m_b_2_t.m/content",
+      "file_size": 3678,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "onePopSim_m.m",
+      "file_path": "onePopSim_m.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/onePopSim_m.m/content",
+      "file_size": 1570,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mortality_sweep_figures_11_20_23.m",
+      "file_path": "mortality_sweep_figures_11_20_23.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/mortality_sweep_figures_11_20_23.m/content",
+      "file_size": 4274,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "fecundity_sweep.m",
+      "file_path": "fecundity_sweep.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/fecundity_sweep.m/content",
+      "file_size": 10750,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "fecudity_figures_11_20_23.m",
+      "file_path": "fecudity_figures_11_20_23.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/fecudity_figures_11_20_23.m/content",
+      "file_size": 4269,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "figures_1_23_23.m",
+      "file_path": "figures_1_23_23.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/figures_1_23_23.m/content",
+      "file_size": 9677,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "run_single_simulation.m",
+      "file_path": "run_single_simulation.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/run_single_simulation.m/content",
+      "file_size": 3806,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "run_sensitivity_analysis-2.m",
+      "file_path": "run_sensitivity_analysis-2.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/run_sensitivity_analysis-2.m/content",
+      "file_size": 7232,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SI_m_b_1.m",
+      "file_path": "SI_m_b_1.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/SI_m_b_1.m/content",
+      "file_size": 1452,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "READ_ME.txt",
+      "file_path": "READ_ME.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/READ_ME.txt/content",
+      "file_size": 1815,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_m_nb_1.m",
+      "file_path": "SI_m_nb_1.m",
+      "repo_url": "https://doi.org/10.5281/zenodo.10723759",
+      "file_url": "https://zenodo.org/api/records/10723759/files/SI_m_nb_1.m/content",
+      "file_size": 1096,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

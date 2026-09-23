@@ -39,14 +39,26 @@ are reused if the script is stopped and rerun.
 **Step 2** (`02_build_comparison_data.R`) derives Metacheck's `mc_`-prefixed
 columns from that output, joins them against Cooper et al.'s own coded
 ground truth, computes the agreement/sensitivity/specificity statistics
-the manuscript's Empirical Comparison section reports, and writes a
-**blank** disagreement worklist — one row per paper with at least one
-column disagreement, with the disagreement itself named, but with every
-`_verdict`/`_comment` cell empty.
+the manuscript's Empirical Comparison section reports, and writes the
+disagreement worklist as two files with different purposes:
+
+- `data/disagreement_review_worklist.rds` — one row per paper with at
+  least one column disagreement, with the disagreement itself named.
+  Entirely code-generated and overwritten fresh on every run; never
+  edited by hand.
+- `data/disagreement_review_worklist.xlsx` — the same rows, but only
+  `row_id`/`article_id`/`disagreements` plus a `_verdict`/`_comment`
+  column pair per compared column, left **blank** the first time this
+  script runs. This is the file you edit by hand.
+
+Keeping these separate means a `git diff` (or just the file's own
+modified date) shows whether the *data* changed (a metacheck rerun found
+different disagreements) or the *review* changed (someone filled in a
+verdict/comment), instead of conflating both in one file.
 
 ## What happens after Step 2 is manual, not code
 
-The worklist at `data/disagreement_review_worklist.csv` is the point
+The worklist at `data/disagreement_review_worklist.xlsx` is the point
 where automation stops. Every disagreement in it needs a human (or an
 LLM assistant working the same way, one paper at a time) to open the
 paper's own text and Metacheck's saved output, decide which side was
@@ -57,7 +69,11 @@ folder does that step, and nothing should — see the manuscript's own
 Empirical Comparison section for the exact evidence-source rule each
 column should be checked against.
 
-Once every disagreement has a verdict, rerun `02_build_comparison_data.R`
-(it recomputes the comparison statistics from whatever verdicts are
-present each time) so `data/comparison_statistics.RData` reflects the
-completed review, then render `../manuscript.qmd`.
+Rerunning `02_build_comparison_data.R` after metacheck's output changes
+(e.g. Step 1 was rerun) never overwrites a verdict/comment already
+recorded in the xlsx for the same (paper, column, Cooper value, metacheck
+value) combination — it carries every existing verdict forward and only
+leaves new disagreements blank. It also always recomputes the comparison
+statistics from whatever verdicts are present, so rerun it after manual
+review to update `data/comparison_statistics.RData` with the completed
+review, then render `../manuscript.qmd`.

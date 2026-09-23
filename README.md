@@ -73,6 +73,7 @@ see its own section below.
     │   ├── scratch_final_classify_v3.R
     │   └── helpers.R
     └── data/
+        ├── BES-data-code-hackathon-cleaned_2025-12-01.csv  # Cooper et al.'s ground truth (see below)
         ├── res_repo_check.RData                # metacheck's repo_check output, full corpus
         ├── res_data_check.RData                # metacheck's data_check output, full corpus (Git LFS)
         ├── res_code_check.RData                # metacheck's code_check output, full corpus (Git LFS)
@@ -177,9 +178,9 @@ data/` — none are hand-typed. Its own top-of-file chunks:
   `stringr`, `flextable`; writes `package-citations.bib` via
   `knitr::write_bib()`.
 - **`data`** — loads `data/bes.rds` (see Prerequisite below) and
-  Cooper et al.'s ground-truth CSV **live from their public GitHub
-  repository** (not mirrored locally), repairing a few invalid-UTF-8
-  byte sequences in place.
+  `data/BES-data-code-hackathon-cleaned_2025-12-01.csv` (Cooper et al.'s
+  ground truth, mirrored locally — see its entry under `manuscript/data/`
+  below), repairing a few invalid-UTF-8 byte sequences in place.
 - Later chunks (`data-code-archiving-counts`, `comparison-stats`,
   `comment-quality-stats`, `free-extras-stats`, `a6-categorization-load`/
   `-table`, `summary-table-display`) each `load()` one or more of the
@@ -252,7 +253,9 @@ and truncated by R's default 50-warning cap), and `.ensure_cols()`/
 **`02_build_comparison_data.R`**
 - **Relies on**: `data/res_repo_check.RData`, `data/res_data_check.RData`,
   `data/res_code_check.RData` (from step 1); Cooper et al.'s ground-truth
-  CSV (fetched live from GitHub); `../sample.csv` (doi → article_id); an
+  CSV, read from the local mirror at
+  `data/BES-data-code-hackathon-cleaned_2025-12-01.csv` (see its entry
+  under `manuscript/data/` below); `../sample.csv` (doi → article_id); an
   existing `data/disagreement_review_worklist.csv` if present (verdicts
   already recorded there are carried forward, never overwritten); `helpers.R`.
 - **Derives**: every `mc_`-prefixed column (`mc_data_availability`,
@@ -343,6 +346,20 @@ specific number or table in the manuscript, not as a sequence to execute.
 
 Files not already described above:
 
+- **`BES-data-code-hackathon-cleaned_2025-12-01.csv`** — Cooper and the
+  BES Data and Code Hackathon Group's (2026) manually-coded ground truth:
+  145 people coding 1861 papers from the seven British Ecological Society
+  journals (published 2017–2024) on eight questions per paper (data/code
+  use, archiving, location, download/open success, file format, README
+  presence and usefulness, completeness, and citability). Downloaded from
+  Cooper et al.'s own public repository,
+  `https://raw.githubusercontent.com/nhcooper123/reproduce-reuse-recycle/main/data/BES-data-code-hackathon-cleaned_2025-12-01.csv`,
+  on 2026-09-21, and mirrored here so rendering does not depend on that
+  repository's continued availability or on the file staying at that URL.
+  Read by `manuscript.qmd`'s `data` chunk and by
+  `final_pipeline/02_build_comparison_data.R`. Re-download manually from
+  the same URL if Cooper et al. release an updated version of their
+  coding.
 - **`res_repo_check.RData`, `res_data_check.RData` (Git LFS),
   `res_code_check.RData` (Git LFS)** — corpus-wide `repo_check`/
   `data_check`/`code_check` output; produced by
@@ -425,6 +442,115 @@ Europe PMC or an institutional proxy login, then converting with GROBID)
 is done by `build.R`, which — along with the DOI→`article_id` step that
 produces `sample.csv` — exists only in the sibling
 `cooper_validation_metacheck` repository, not here.
+
+## A known data-entry bug in Cooper et al.'s coded CSV: 4 duplicated DOIs
+
+Cooper et al.'s own coded CSV
+(`BES-data-code-hackathon-cleaned_2025-12-01.csv`) has 4 rows whose `doi`
+field was mistakenly copy-pasted from a *different* paper's row —
+confirmed by cross-referencing `paper_number` (unique, never duplicated)
+against the master 8112-row metadata list `build.R` builds the corpus
+from: for all 8 affected rows the coder's own recorded journal matches
+that `paper_number`'s TRUE journal, so only the `doi` field itself is
+wrong on one row of each pair — these are two different papers that
+happen to share an identical (wrong) DOI, **not** two hackathon
+participants independently coding the same paper (an earlier, incorrect
+read of this same pattern; `cooper_validation_metacheck/manuscript/
+check_cooper_duplicates.R`'s header comment frames it as an inter-rater
+check, which the paper_number cross-reference in `build.R` rules out).
+
+The correction (`build.R`, `cooper_validation_metacheck` repository,
+`.DOI_CORRECTIONS`):
+
+| `paper_number` | corrected `doi` |
+|---|---|
+| 57   | `10.1002/2688-8319.12136` |
+| 1275 | `10.1111/1365-2656.13512` |
+| 47   | `10.1111/1365-2656.13145` |
+| 7176 | `10.1111/1365-2435.12981` |
+
+`sample.csv` (repository root here) already reflects this correction — it
+was built by `build.R`'s `phase0_fetch()`, which applies
+`.DOI_CORRECTIONS` *before* deduplicating on `doi`. Any script in this
+repository that re-reads Cooper's raw CSV directly and joins it to
+`sample.csv` on `doi` (rather than loading an already-joined object like
+`side_by_side`) **must reapply this same correction first**, or the two
+mis-DOI'd rows of each pair will collide on the same `article_id` via
+`sample.csv`'s doi-keyed lookup, producing a many-to-many join and
+duplicate rows (confirmed live while building
+`02_create_comparison_data/master_comparison.rds`: 1861 → 1869 rows
+before this fix was applied there — see that folder's
+`04_build_master_comparison.R`, which carries its own copy of
+`.DOI_CORRECTIONS` for exactly this reason).
+
+## `manuscript/01_run_metacheck/`, `manuscript/02_create_comparison_data/`, and `manuscript/03_comparing_results/`
+
+Three folders, added after the file-by-file reference above was written,
+that make the corpus-wide module-running and comparison-building steps
+self-contained (each script plus its own inputs and outputs living
+together, copied from the sibling `cooper_validation_metacheck`
+repository where the originals still exist but are not otherwise part of
+this repository):
+
+- **`01_run_metacheck/`** — `01_run_metacheck.R` (repo_check → data_check
+  → code_check, a copy of `final_pipeline/01_run_metacheck.R` with output
+  paths redirected here), `02_run_open_practices_oddpub.R` (the
+  open_practices/ODDPub stage, extracted from
+  `cooper_validation_metacheck/manuscript/code_data_preparation/
+  01_run_checks.R`'s later section), and `03_run_extra_modules.R` (the
+  seven fast extra modules plus the LLM-backed `power` module, a copy of
+  `cooper_validation_metacheck/manuscript/build_extra_modules.R`), each
+  alongside its own `res_*.RData` output.
+- **`02_create_comparison_data/`** — `04_build_master_comparison.R`
+  recreates `master_comparison.RData`'s `accuracy_summary` attribute
+  (originally computed by a script, `02_compare_to_cooper.R`, that lived
+  only in `cooper_validation_metacheck` and read raw per-batch module
+  output that no longer exists anywhere) against the CURRENT corpus-wide
+  module output. It reads `data/cooper_vs_recreated.RData` (`side_by_side`)
+  directly from its own canonical location — `final_pipeline/
+  02_build_comparison_data.R`'s output — rather than a folder-local copy,
+  reusing its already-correct `mc_*` columns instead of re-deriving a
+  second, slightly different copy of the same logic. It then adds
+  `mc_data_open`/`mc_code_open`/`oddpub_data_open`/`oddpub_code_open`
+  (from `01_run_metacheck/`'s `open_practices`/ODDPub output) and
+  `recorder_ID` (from Cooper's raw CSV, DOI-corrected — see above), and
+  saves the result as `master_comparison.rds` (a single dataframe, so
+  `.rds` rather than `.RData`) — a strict superset of
+  `cooper_vs_recreated.RData`'s own 25 columns, plus these 8. This
+  recreation was checked once against the original `master_comparison.RData`
+  for drift (that original file, and the one-off comparison script, are
+  not kept in this repository): all 1861 papers agreed exactly on every
+  re-derived column, and the resulting `accuracy_summary` figures differed
+  from the original by at most 0.0009 (one paper's worth of `n`, from the
+  DOI-correction fix above) — the original file was not stale.
+- **`03_comparing_results/`** — compares the three CORE Metacheck modules
+  (`repo_check`/`data_check`/`code_check`, via their recreated `mc_*`
+  columns) against Cooper et al.'s ground truth.
+  `01_compute_comparison_statistics.R` (a copy of
+  `cooper_validation_metacheck/manuscript/code_data_preparation/
+  25_compute_comparison_statistics.R`) reads
+  `02_create_comparison_data/master_comparison.rds` (not a separate copy
+  of `cooper_vs_recreated.RData` — since `master_comparison.rds` is a
+  strict superset of that file's columns, reading it directly avoids
+  keeping two copies of the same upstream data in sync across folders)
+  and computes confusion tables, sensitivity/specificity, the two
+  directional miss rates, and McNemar's test for every comparison column,
+  saving `comparison_statistics.RData` (`results`, `verdict_tallies`).
+  `02_categorize_disagreement_causes.R` (a copy of that same repository's
+  `code_data_preparation/58_categorize_disagreement_causes.R`) then
+  categorizes every individually-reviewed disagreement's verdict comment
+  into a small, reproducible set of root-cause buckets by keyword
+  pattern, saving `disagreement_cause_categories.RData`
+  (`cooper_right_causes` and three further `*_dd_causes`/`*_mr_causes`
+  objects) — its only input, copied into this folder, is
+  `disagreement_review_worklist.csv` (already present at the repository
+  root's `manuscript/data/`). Both scripts' outputs are what
+  `manuscript.qmd`'s `comparison-stats` chunk and every
+  sensitivity/specificity/McNemar/root-cause figure in the Empirical
+  Comparison section and Table 0 are read from. Because
+  `01_compute_comparison_statistics.R` depends on
+  `02_create_comparison_data/master_comparison.rds`, that script must be
+  run first if regenerating both from scratch.
 
 ## Reproducing the analysis from scratch
 

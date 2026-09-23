@@ -1,12 +1,14 @@
 # Derive metacheck's mc_*-prefixed columns from the module output that
 # 01_run_metacheck.R produced, join them against Cooper et al.'s own
-# coded ground truth, write the disagreement worklist (blank -- ready
-# for manual review, see final_pipeline/README.md), and compute the
-# comparison statistics the manuscript reports. Rerunning this script
-# after the worklist has been manually reviewed recomputes the
-# statistics from whatever verdicts are present; it never overwrites an
-# existing worklist row's _verdict/_comment (see the note before the
-# worklist-writing step below).
+# coded ground truth, write the disagreement worklist as a data file
+# (data/disagreement_review_worklist.rds, code-generated, no manual
+# content) plus a spreadsheet for manual review
+# (data/disagreement_review_worklist.xlsx, see final_pipeline/README.md),
+# and compute the comparison statistics the manuscript reports.
+# Rerunning this script after the worklist has been manually reviewed
+# recomputes the statistics from whatever verdicts are present; it never
+# overwrites an existing xlsx row's _verdict/_comment (see the note
+# before the worklist-writing step below).
 #
 # Cooper's own column, and what mc_* recreates it from:
 #   data_availability -> a repo_check-listed repository exists, AND at
@@ -193,13 +195,16 @@ for (col in c("mc_data_availability", "mc_code_archived", "mc_data_README", "mc_
   recreated[[col]][is.na(recreated[[col]])] <- FALSE
 }
 
-save(recreated, file = "data/recreated_cooper_columns.RData")
-status("Recreated %d columns for %d papers -> data/recreated_cooper_columns.RData",
+# Saved as .rds, not .RData: recreated is a single plain dataframe, so
+# .rds (readRDS() into any variable name) is the right format, per this
+# repository's convention of never using .RData for a simple dataframe.
+saveRDS(recreated, file = "data/recreated_cooper_columns.rds")
+status("Recreated %d columns for %d papers -> data/recreated_cooper_columns.rds",
        ncol(recreated) - 1, nrow(recreated))
 
-status("Fetching Cooper et al.'s coded ground truth...")
+status("Loading Cooper et al.'s coded ground truth...")
 cooper <- read.csv(
-  "https://raw.githubusercontent.com/nhcooper123/reproduce-reuse-recycle/main/data/BES-data-code-hackathon-cleaned_2025-12-01.csv",
+  "data/BES-data-code-hackathon-cleaned_2025-12-01.csv",
   na.strings = "NA", stringsAsFactors = FALSE
 )
 cooper <- .fix_invalid_utf8(cooper)
@@ -229,10 +234,23 @@ side_by_side$cooper_any_readme <- ifelse(
   ifelse(is.na(data_readme_bool) & is.na(code_readme_bool), NA, FALSE)))
 side_by_side$mc_any_readme <- side_by_side$mc_data_README
 
-save(side_by_side, file = "data/cooper_vs_recreated.RData")
-status("Side-by-side Cooper vs. recreated columns -> data/cooper_vs_recreated.RData")
+# Saved as .rds, not .RData: side_by_side is a single plain dataframe --
+# see the comment on recreated's own save() above.
+saveRDS(side_by_side, file = "data/cooper_vs_recreated.rds")
+status("Side-by-side Cooper vs. recreated columns -> data/cooper_vs_recreated.rds")
 
-# == Step B: build the disagreement worklist (blank -- for manual review) ===========
+# == Step B: build the disagreement worklist =========================================
+# Split into two files so a `git diff` (or just eyeballing mtimes) shows
+# whether the DATA changed (a metacheck rerun found different
+# disagreements) or the human REVIEW changed (someone filled in a
+# verdict/comment), instead of conflating both into one CSV:
+#   - data/disagreement_review_worklist.rds: every disagreement row and
+#     its data columns, entirely code-generated, overwritten fresh every
+#     run.
+#   - data/disagreement_review_worklist.xlsx: only row_id/article_id/
+#     disagreements plus the 7 verdict/comment column pairs, manually
+#     edited. Any other columns already present in this file (free-form
+#     notes such as double_check_disagreements) are left untouched.
 # 7 verdicted columns: data_availability, data_archive, data_license,
 # data_download, code_archived, code_download, any_readme. data_archive
 # is overlap-based (a paper can cite more than one repository, so any
@@ -310,27 +328,41 @@ review <- review[, c("row_id", setdiff(names(review), "row_id"))]
 verdict_cols <- c("data_availability", "data_archive", "data_license",
                   "data_download", "code_archived", "code_download", "any_readme")
 
-WORKLIST_PATH <- "data/disagreement_review_worklist.csv"
-if (file.exists(WORKLIST_PATH)) {
-  # Never overwrite manual review work already recorded: carry forward
-  # any existing verdict/comment for a (paper, column, cooper value, mc
-  # value) combination that is unchanged from the file already on disk.
-  status("Existing worklist found -- carrying forward already-recorded verdicts.")
-  old <- read.csv(WORKLIST_PATH, stringsAsFactors = FALSE)
-  build_key <- function(article_id, cooper_val, mc_val)
-    paste(article_id, as.character(cooper_val), as.character(mc_val), sep = "")
+RDS_PATH <- "data/disagreement_review_worklist.rds"
+XLSX_PATH <- "data/disagreement_review_worklist.xlsx"
+
+saveRDS(review, file = RDS_PATH)
+status("Saved %s: %d disagreement rows (data only, regenerated fresh this run).",
+       RDS_PATH, nrow(review))
+
+build_key <- function(article_id, cooper_val, mc_val)
+  paste(article_id, as.character(cooper_val), as.character(mc_val), sep = "")
+cooper_col_for <- function(col) if (col == "data_archive") "data_archive" else
+  if (col == "any_readme") "cooper_any_readme" else bool_pairs[[col]]$cooper
+mc_col_for <- function(col) if (col == "data_archive") "mc_data_archive" else
+  if (col == "any_readme") "mc_any_readme" else bool_pairs[[col]]$mc
+
+for (col in verdict_cols) {
+  review[[paste0(col, "_verdict")]] <- NA_character_
+  review[[paste0(col, "_comment")]] <- NA_character_
+}
+
+# Carry forward already-recorded verdicts/comments for a (paper, column,
+# cooper value, mc value) combination that is unchanged from a prior
+# run -- reads from the xlsx (the human-edited file) primarily, and, only
+# for cells the xlsx doesn't have, from the xlsx's own most recent CSV
+# predecessor if still present, so review work already recorded before
+# this rds/xlsx split existed is not lost.
+`%||%` <- function(a, b) if (is.null(a)) b else a
+carry_forward_from <- function(old, review) {
   for (col in verdict_cols) {
     vcol <- paste0(col, "_verdict"); ccol <- paste0(col, "_comment")
-    review[[vcol]] <- NA_character_
-    review[[ccol]] <- NA_character_
     if (!all(c(vcol, ccol) %in% names(old))) next
-    cooper_col <- if (col == "data_archive") "data_archive" else
-      if (col == "any_readme") "cooper_any_readme" else bool_pairs[[col]]$cooper
-    mc_col <- if (col == "data_archive") "mc_data_archive" else
-      if (col == "any_readme") "mc_any_readme" else bool_pairs[[col]]$mc
+    cooper_col <- cooper_col_for(col); mc_col <- mc_col_for(col)
+    if (!all(c(cooper_col, mc_col) %in% names(old))) next
     old_verdict <- old[[vcol]]
     has_old <- !is.na(old_verdict) & nzchar(trimws(old_verdict))
-    if (!all(c(cooper_col, mc_col) %in% names(old))) next
+    if (!any(has_old)) next
     lut_key <- build_key(old$article_id, old[[cooper_col]], old[[mc_col]])[has_old]
     lut_verdict <- old_verdict[has_old]
     lut_comment <- old[[ccol]][has_old]
@@ -338,15 +370,27 @@ if (file.exists(WORKLIST_PATH)) {
     lut_key <- lut_key[first]; lut_verdict <- lut_verdict[first]; lut_comment <- lut_comment[first]
     new_key <- build_key(review$article_id, review[[cooper_col]], review[[mc_col]])
     m <- match(new_key, lut_key)
-    hit <- !is.na(m)
+    # Only fill cells still blank: a later source (xlsx) already wins
+    # over an earlier one (old CSV) for any cell both provide.
+    still_blank <- is.na(review[[vcol]]) | !nzchar(trimws(review[[vcol]] %||% ""))
+    hit <- !is.na(m) & still_blank
     review[[vcol]][hit] <- lut_verdict[m[hit]]
     review[[ccol]][hit] <- lut_comment[m[hit]]
   }
-} else {
-  for (col in verdict_cols) {
-    review[[paste0(col, "_verdict")]] <- NA_character_
-    review[[paste0(col, "_comment")]] <- NA_character_
-  }
+  review
+}
+
+old_xlsx <- NULL
+if (file.exists(XLSX_PATH)) {
+  status("Existing xlsx worklist found -- carrying forward already-recorded verdicts.")
+  old_xlsx <- as.data.frame(openxlsx::read.xlsx(XLSX_PATH), stringsAsFactors = FALSE)
+  review <- carry_forward_from(old_xlsx, review)
+}
+OLD_CSV_PATH <- "data/disagreement_review_worklist.csv"
+if (file.exists(OLD_CSV_PATH)) {
+  status("Legacy CSV worklist found -- backfilling any verdicts missing from the xlsx.")
+  old_csv <- read.csv(OLD_CSV_PATH, stringsAsFactors = FALSE)
+  review <- carry_forward_from(old_csv, review)
 }
 
 disagreement_cols_by_len <- verdict_cols[order(-nchar(verdict_cols))]
@@ -363,17 +407,36 @@ review$reviewed <- vapply(seq_len(nrow(review)), function(i) {
   all(!is.na(unlist(review[i, vcols])) & nzchar(trimws(unlist(review[i, vcols]))))
 }, logical(1))
 
-write.csv(review, WORKLIST_PATH, row.names = FALSE)
+# The xlsx keeps only row_id/article_id/disagreements plus the 7
+# verdict/comment pairs and `reviewed` -- everything else the script
+# needs (the data columns joined into `review`, e.g. data_availability,
+# mc_data_archive, cooper_any_readme, ...) lives only in the rds. Any
+# OTHER columns already present in the old xlsx that are NOT one of
+# review's own data columns -- free-form notes such as
+# double_check_disagreements, or unused verdict/comment pairs from an
+# earlier design such as data_format_verdict -- are carried forward
+# untouched, matched by row_id, so manual annotations outside the
+# script's own 7 columns are never dropped on a rewrite.
+xlsx_core_cols <- c("row_id", "article_id", "disagreements", "reviewed",
+                    as.vector(rbind(paste0(verdict_cols, "_verdict"), paste0(verdict_cols, "_comment"))))
+xlsx_out <- review[, xlsx_core_cols]
+if (!is.null(old_xlsx)) {
+  extra_cols <- setdiff(names(old_xlsx), c(xlsx_core_cols, names(review)))
+  if (length(extra_cols) > 0) {
+    extra <- old_xlsx[match(xlsx_out$row_id, old_xlsx$row_id), extra_cols, drop = FALSE]
+    xlsx_out <- cbind(xlsx_out, extra)
+  }
+}
+
+openxlsx::write.xlsx(xlsx_out, XLSX_PATH, overwrite = TRUE)
 status("Saved %s: %d rows, %d fully reviewed, %d awaiting manual review.",
-       WORKLIST_PATH, nrow(review), sum(review$reviewed, na.rm = TRUE), sum(!review$reviewed, na.rm = TRUE))
+       XLSX_PATH, nrow(xlsx_out), sum(xlsx_out$reviewed, na.rm = TRUE), sum(!xlsx_out$reviewed, na.rm = TRUE))
 
 # == Step C: comparison statistics ==================================================
 # Recomputed every time this script runs, from whatever verdicts are
-# currently in the worklist -- run again after manual review to update
+# currently in `review` (already carries forward everything on disk, see
+# Step B above) -- run again after manual review to update
 # data/comparison_statistics.RData with the completed verdict tallies.
-
-`%||%` <- function(a, b) if (is.null(a)) b else a
-review <- read.csv(WORKLIST_PATH, stringsAsFactors = FALSE)
 
 bool_pairs_stats <- c(bool_pairs, list())
 labels <- c(data_availability = "Data availability", data_license = "Data licence present",

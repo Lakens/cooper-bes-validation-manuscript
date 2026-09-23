@@ -8,7 +8,7 @@
  collate  English_Netherlands.utf8
  ctype    English_Netherlands.utf8
  tz       Europe/Amsterdam
- date     2026-09-20
+ date     2026-09-21
  pandoc   3.10 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
  quarto   NA @ C:\\PROGRA~1\\Quarto\\bin\\quarto.exe
 
@@ -40,7 +40,7 @@
  knitr               1.51    2025-12-20 [1] CRAN (R 4.5.2)
  lifecycle           1.0.5   2026-01-08 [1] CRAN (R 4.5.2)
  magrittr            2.0.5   2026-04-04 [1] CRAN (R 4.5.3)
- metacheck         * 0.3.0   2026-09-20 [1] Github (scienceverse/metacheck@55d5873)
+ metacheck         * 0.3.1   2026-09-21 [1] Github (scienceverse/metacheck@85c8c87)
  officer             0.7.5   2026-05-15 [1] CRAN (R 4.5.3)
  openssl             2.4.2   2026-06-09 [1] CRAN (R 4.5.3)
  otel                0.2.0   2025-08-29 [1] CRAN (R 4.5.1)

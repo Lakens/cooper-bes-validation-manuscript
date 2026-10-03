@@ -1,0 +1,145 @@
+{
+  "paper_id": "10_1111_2041_210x_14366",
+  "generated": "2026-09-10T08:49:17+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T08:49:17+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "carmelogzmz/betalinkINIS-v1.0.0.zip",
+      "file_path": "carmelogzmz/betalinkINIS-v1.0.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.11221946",
+      "file_url": "https://zenodo.org/api/records/11221946/files/carmelogzmz/betalinkINIS-v1.0.0.zip/content",
+      "file_size": 6512,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "carmelogzmz/networkModelling-v1.0.0.zip",
+      "file_path": "carmelogzmz/networkModelling-v1.0.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.11221951",
+      "file_url": "https://zenodo.org/api/records/11221951/files/carmelogzmz/networkModelling-v1.0.0.zip/content",
+      "file_size": 5261,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "01_Conventional_vs_INIS_Qualitative.xlsx",
+      "file_path": "01_Conventional_vs_INIS_Qualitative.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3192523/download",
+      "file_size": 25256,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "01_Conventional_vs_INIS_Quantitative.xlsx",
+      "file_path": "01_Conventional_vs_INIS_Quantitative.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3192519/download",
+      "file_size": 25274,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "02_SamplingEffort_Interannual.xlsx",
+      "file_path": "02_SamplingEffort_Interannual.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3191935/download",
+      "file_size": 18028,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "02_SamplingEffort_Seasonal.xlsx",
+      "file_path": "02_SamplingEffort_Seasonal.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3191936/download",
+      "file_size": 29100,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "03_SamplingCompleteness.xlsx",
+      "file_path": "03_SamplingCompleteness.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3192518/download",
+      "file_size": 16591,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.ffbg79d38",
+      "file_url": "https://datadryad.org/api/v2/files/3191939/download",
+      "file_size": 2686,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "betalink",
+      "bipartite",
+      "tidyverse",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

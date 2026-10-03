@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2435_12932",
+  "generated": "2026-09-10T02:02:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:02:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Kuppler et al. Emission rate of floral volatiles.csv",
+      "file_path": "Kuppler et al. Emission rate of floral volatiles.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23089/download",
+      "file_size": 1956,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. exploited space overlap of native and exotic flower visitors (single dimensions).xlsx",
+      "file_path": "Kuppler et al. exploited space overlap of native and exotic flower visitors (single dimensions).xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23088/download",
+      "file_size": 162090,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. exploited space size of native and exotic flower visitors (single dimensions).csv",
+      "file_path": "Kuppler et al. exploited space size of native and exotic flower visitors (single dimensions).csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23090/download",
+      "file_size": 4297,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic flower-visitor species observed in the study.csv",
+      "file_path": "Kuppler et al. Native and exotic flower-visitor species observed in the study.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23091/download",
+      "file_size": 5193,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic plant species observed in the study.csv",
+      "file_path": "Kuppler et al. Native and exotic plant species observed in the study.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23092/download",
+      "file_size": 1824,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic species exploited space size and overlap (full exploited space).csv",
+      "file_path": "Kuppler et al. Native and exotic species exploited space size and overlap (full exploited space).csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23093/download",
+      "file_size": 111640,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic species exploited space size and overlap (Morphology).csv",
+      "file_path": "Kuppler et al. Native and exotic species exploited space size and overlap (Morphology).csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23094/download",
+      "file_size": 100579,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic species exploited space size and overlap (scent).csv",
+      "file_path": "Kuppler et al. Native and exotic species exploited space size and overlap (scent).csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23095/download",
+      "file_size": 109871,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Native and exotic species exploited space size and overlap (weather).csv",
+      "file_path": "Kuppler et al. Native and exotic species exploited space size and overlap (weather).csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23096/download",
+      "file_size": 91325,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Kuppler et al. Plot descripition.csv",
+      "file_path": "Kuppler et al. Plot descripition.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.436c0",
+      "file_url": "https://datadryad.org/api/v2/files/23097/download",
+      "file_size": 2838,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

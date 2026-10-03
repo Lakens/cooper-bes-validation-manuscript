@@ -1,0 +1,167 @@
+{
+  "paper_id": "10_1111_1365_2656_13349",
+  "generated": "2026-09-10T03:06:35+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:06:35+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Analysing_sex_ratio_trends.R",
+      "file_path": "Analysing_sex_ratio_trends.R",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420637/download",
+      "file_size": 2826,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Consequences_of_ASR_bias.R",
+      "file_path": "Consequences_of_ASR_bias.R",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420638/download",
+      "file_size": 4745,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Life_table_response_experiment.R",
+      "file_path": "Life_table_response_experiment.R",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420639/download",
+      "file_size": 150362,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SI_ASR_subdivisions.csv",
+      "file_path": "SI_ASR_subdivisions.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420640/download",
+      "file_size": 5224,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_ASR_total_island.csv",
+      "file_path": "SI_ASR_total_island.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420641/download",
+      "file_size": 1801,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_band_number.csv",
+      "file_path": "SI_band_number.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420642/download",
+      "file_size": 1542,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_band_switches.csv",
+      "file_path": "SI_band_switches.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420643/download",
+      "file_size": 51195,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_female_repro_data.csv",
+      "file_path": "SI_female_repro_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420645/download",
+      "file_size": 87244,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_harem_size.csv",
+      "file_path": "SI_harem_size.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420644/download",
+      "file_size": 44555,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SI_survival_data.csv",
+      "file_path": "SI_survival_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tht76hdxc",
+      "file_url": "https://datadryad.org/api/v2/files/420646/download",
+      "file_size": 402359,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "lme4",
+      "MuMIn"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

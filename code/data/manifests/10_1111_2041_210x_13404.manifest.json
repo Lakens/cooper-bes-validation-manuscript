@@ -1,0 +1,230 @@
+{
+  "paper_id": "10_1111_2041_210x_13404",
+  "generated": "2026-09-10T06:16:50+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:16:50+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 13,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 12,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/.gitignore",
+      "file_size": 104,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/README.md",
+      "file_size": 2743,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Tripod-frame_Performance-test.Rproj",
+      "file_path": "Tripod-frame_Performance-test.Rproj",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/Tripod-frame_Performance-test.Rproj",
+      "file_size": 205,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Get_data.R",
+      "file_path": "src/data/Get_data.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/data/Get_data.R",
+      "file_size": 759,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Preparation_calculation_tilt.R",
+      "file_path": "src/features/Preparation_calculation_tilt.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/features/Preparation_calculation_tilt.R",
+      "file_size": 3727,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Preparation_detection_data.R",
+      "file_path": "src/features/Preparation_detection_data.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/features/Preparation_detection_data.R",
+      "file_size": 8485,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Preparation_detection_hour.R",
+      "file_path": "src/features/Preparation_detection_hour.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/features/Preparation_detection_hour.R",
+      "file_size": 3549,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Model_detection_efficiency.R",
+      "file_path": "src/models/Model_detection_efficiency.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/models/Model_detection_efficiency.R",
+      "file_size": 5807,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig2_Map.R",
+      "file_path": "src/visualization/Fig2_Map.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/visualization/Fig2_Map.R",
+      "file_size": 3524,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig3_Receiver_positions.R",
+      "file_path": "src/visualization/Fig3_Receiver_positions.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/visualization/Fig3_Receiver_positions.R",
+      "file_size": 3073,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig4_Tilt.R",
+      "file_path": "src/visualization/Fig4_Tilt.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/visualization/Fig4_Tilt.R",
+      "file_size": 3110,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig5_Detection_percentage.R",
+      "file_path": "src/visualization/Fig5_Detection_percentage.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/visualization/Fig5_Detection_percentage.R",
+      "file_size": 5303,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig6_Model.R",
+      "file_path": "src/visualization/Fig6_Model.R",
+      "repo_url": "https://github.com/lifewatch/Tripod-frame_Performance-test",
+      "file_url": "https://raw.githubusercontent.com/lifewatch/Tripod-frame_Performance-test/master/src/visualization/Fig6_Model.R",
+      "file_size": 2271,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "caTools",
+      "dplyr",
+      "geosphere",
+      "ggplot2",
+      "ggpubr",
+      "ggsn",
+      "lemon",
+      "lubridate",
+      "plyr",
+      "raster",
+      "RColorBrewer",
+      "rgdal",
+      "rsq",
+      "zoo"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

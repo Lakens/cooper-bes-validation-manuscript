@@ -1,0 +1,182 @@
+{
+  "paper_id": "10_1111_1365_2435_13455",
+  "generated": "2026-09-10T02:06:11+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:06:11+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 7,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "DESCRIPTION",
+      "file_path": "DESCRIPTION",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/DESCRIPTION",
+      "file_size": 505,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/LICENSE",
+      "file_size": 35147,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "NAMESPACE",
+      "file_path": "NAMESPACE",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/NAMESPACE",
+      "file_size": 11,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "NotExport.R",
+      "file_path": "R/NotExport.R",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/R/NotExport.R",
+      "file_size": 67,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apm.R",
+      "file_path": "R/apm.R",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/R/apm.R",
+      "file_size": 4669,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/README.md",
+      "file_size": 249,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "datamix.txt",
+      "file_path": "inst/extdata/datamix.txt",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/inst/extdata/datamix.txt",
+      "file_size": 1093,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "datamono.txt",
+      "file_path": "inst/extdata/datamono.txt",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/inst/extdata/datamono.txt",
+      "file_size": 141,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "apm.Rd",
+      "file_path": "man/apm.Rd",
+      "repo_url": "https://github.com/BenjaminDelory/bef",
+      "file_url": "https://raw.githubusercontent.com/BenjaminDelory/bef/master/man/apm.Rd",
+      "file_size": 3783,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BenjaminDelory/PE_BEF_paper_data-v2.0.0.zip",
+      "file_path": "BenjaminDelory/PE_BEF_paper_data-v2.0.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366967",
+      "file_url": "https://zenodo.org/api/records/3366967/files/BenjaminDelory/PE_BEF_paper_data-v2.0.0.zip/content",
+      "file_size": 27095,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "beanplot",
+      "bef",
+      "devtools",
+      "emmeans",
+      "ggplot2",
+      "ggpubr",
+      "readr",
+      "smatr",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

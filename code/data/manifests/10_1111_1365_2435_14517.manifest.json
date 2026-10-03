@@ -1,0 +1,161 @@
+{
+  "paper_id": "10_1111_1365_2435_14517",
+  "generated": "2026-09-10T02:24:32+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:24:32+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "ap.qs_Hardcode0s.csv",
+      "file_path": "ap.qs_Hardcode0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858123/download",
+      "file_size": 11086,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "KingFungiTablewithTax_AnimalPathogens_DummyCode.csv",
+      "file_path": "KingFungiTablewithTax_AnimalPathogens_DummyCode.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858124/download",
+      "file_size": 37105,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "KingFungiTablewithTax_AnimalPathogens_Remove0s.csv",
+      "file_path": "KingFungiTablewithTax_AnimalPathogens_Remove0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858125/download",
+      "file_size": 31803,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "KingFungiTablewithTax_PlantPathogens_DummyCode.csv",
+      "file_path": "KingFungiTablewithTax_PlantPathogens_DummyCode.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858126/download",
+      "file_size": 73563,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "KingFungiTablewithTax_PlantPathogens_Remove0s.csv",
+      "file_path": "KingFungiTablewithTax_PlantPathogens_Remove0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858128/download",
+      "file_size": 66090,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "KingFungiTablewithTax.csv",
+      "file_path": "KingFungiTablewithTax.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858127/download",
+      "file_size": 318749,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mpbg.qs_Hardcode0s.csv",
+      "file_path": "mpbg.qs_Hardcode0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858129/download",
+      "file_size": 10306,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Myr_Paths_by_Genus_DummyCode.csv",
+      "file_path": "Myr_Paths_by_Genus_DummyCode.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858130/download",
+      "file_size": 29124,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Myr_Paths_by_Genus_Remove0s.csv",
+      "file_path": "Myr_Paths_by_Genus_Remove0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858131/download",
+      "file_size": 24245,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pp.qs_Hardcode0s.csv",
+      "file_path": "pp.qs_Hardcode0s.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858133/download",
+      "file_size": 12185,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.2ngf1vhwv",
+      "file_url": "https://datadryad.org/api/v2/files/2858483/download",
+      "file_size": 8782,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

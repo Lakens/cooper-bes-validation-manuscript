@@ -1,0 +1,198 @@
+{
+  "paper_id": "10_1111_1365_2435_14422",
+  "generated": "2026-09-10T02:23:24+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:23:24+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "http://github.com/wf8/matrixmaker",
+      "file_url": "https://raw.githubusercontent.com/wf8/matrixmaker/master/README.md",
+      "file_size": 1830,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "genes.csv",
+      "file_path": "example/genes.csv",
+      "repo_url": "http://github.com/wf8/matrixmaker",
+      "file_url": "https://raw.githubusercontent.com/wf8/matrixmaker/master/example/genes.csv",
+      "file_size": 68,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "other_genes.csv",
+      "file_path": "example/other_genes.csv",
+      "repo_url": "http://github.com/wf8/matrixmaker",
+      "file_url": "https://raw.githubusercontent.com/wf8/matrixmaker/master/example/other_genes.csv",
+      "file_size": 686,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "synonyms.csv",
+      "file_path": "example/synonyms.csv",
+      "repo_url": "http://github.com/wf8/matrixmaker",
+      "file_url": "https://raw.githubusercontent.com/wf8/matrixmaker/master/example/synonyms.csv",
+      "file_size": 1138,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "matrix_maker.py",
+      "file_path": "matrix_maker.py",
+      "repo_url": "http://github.com/wf8/matrixmaker",
+      "file_url": "https://raw.githubusercontent.com/wf8/matrixmaker/master/matrix_maker.py",
+      "file_size": 12824,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FEMedeiros2023.R",
+      "file_path": "FEMedeiros2023.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.8264651",
+      "file_url": "https://zenodo.org/api/records/8264651/files/FEMedeiros2023.R/content",
+      "file_size": 36601,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Medeiros_Traits_predict_species’_climate_distributions_individualData.csv",
+      "file_path": "Medeiros_Traits_predict_species’_climate_distributions_individualData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.cnp5hqcb2",
+      "file_url": "https://datadryad.org/api/v2/files/2507667/download",
+      "file_size": 95055,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Medeiros_Traits_predict_species’_climate_distributions_legend.csv",
+      "file_path": "Medeiros_Traits_predict_species’_climate_distributions_legend.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.cnp5hqcb2",
+      "file_url": "https://datadryad.org/api/v2/files/2507673/download",
+      "file_size": 3451,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Medeiros_Traits_predict_species’_climate_distributions_siteData.csv",
+      "file_path": "Medeiros_Traits_predict_species’_climate_distributions_siteData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.cnp5hqcb2",
+      "file_url": "https://datadryad.org/api/v2/files/2507669/download",
+      "file_size": 8982,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Medeiros_Traits_predict_species’_climate_distributions_speciesData.csv",
+      "file_path": "Medeiros_Traits_predict_species’_climate_distributions_speciesData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.cnp5hqcb2",
+      "file_url": "https://datadryad.org/api/v2/files/2507665/download",
+      "file_size": 134978,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.cnp5hqcb2",
+      "file_url": "https://datadryad.org/api/v2/files/2507666/download",
+      "file_size": 1828,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "ape",
+      "argparse",
+      "Bio",
+      "caper",
+      "car",
+      "csv",
+      "devtools",
+      "dplyr",
+      "evobiR",
+      "geiger",
+      "ggplot2",
+      "hier.part",
+      "multcomp",
+      "MuMIn",
+      "os",
+      "PKNCA",
+      "plyr",
+      "re",
+      "scales",
+      "stats",
+      "stringr",
+      "sys",
+      "time",
+      "urllib"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

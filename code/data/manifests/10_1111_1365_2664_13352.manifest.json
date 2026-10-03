@@ -1,0 +1,319 @@
+{
+  "paper_id": "10_1111_1365_2664_13352",
+  "generated": "2026-09-10T03:29:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:29:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 21,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 10,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "How_to_download_12S_Rawdata_from_SRA.ipynb",
+      "file_path": "12S/How_to_download_12S_Rawdata_from_SRA.ipynb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/How_to_download_12S_Rawdata_from_SRA.ipynb",
+      "file_size": 7625,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LP_12S.ipynb",
+      "file_path": "12S/LP_12S.ipynb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/LP_12S.ipynb",
+      "file_size": 25306,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Querymap_demultiplex_trimming_12S.txt",
+      "file_path": "12S/Querymap_demultiplex_trimming_12S.txt",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/Querymap_demultiplex_trimming_12S.txt",
+      "file_size": 30734,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Sample_accessions.tsv",
+      "file_path": "12S/supplementary_data/Sample_accessions.tsv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/supplementary_data/Sample_accessions.tsv",
+      "file_size": 687,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "12S_Fish_SATIVA_cleaned_May_2017.gb",
+      "file_path": "12S/supplementary_data/reference_DBs/12S_Fish_SATIVA_cleaned_May_2017.gb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/supplementary_data/reference_DBs/12S_Fish_SATIVA_cleaned_May_2017.gb",
+      "file_size": 3269173,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Astatotilapia_calliptera.gb",
+      "file_path": "12S/supplementary_data/reference_DBs/Astatotilapia_calliptera.gb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/12S/supplementary_data/reference_DBs/Astatotilapia_calliptera.gb",
+      "file_size": 37449,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Appendix_S3_Cytb.csv",
+      "file_path": "Appendix_S3_Cytb.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Appendix_S3_Cytb.csv",
+      "file_size": 37935,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Appendix_S4_12S.csv",
+      "file_path": "Appendix_S4_12S.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Appendix_S4_12S.csv",
+      "file_size": 39973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "How_to_download_Cytb_Rawdata_from_SRA.ipynb",
+      "file_path": "Cytb/How_to_download_Cytb_Rawdata_from_SRA.ipynb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Cytb/How_to_download_Cytb_Rawdata_from_SRA.ipynb",
+      "file_size": 50253,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LP_Cytb.ipynb",
+      "file_path": "Cytb/LP_Cytb.ipynb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Cytb/LP_Cytb.ipynb",
+      "file_size": 21685,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Sample_accessions.tsv",
+      "file_path": "Cytb/supplementary_data/Sample_accessions.tsv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Cytb/supplementary_data/Sample_accessions.tsv",
+      "file_size": 11915,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Astatotilapia_calliptera.gb",
+      "file_path": "Cytb/supplementary_data/reference_DBs/Astatotilapia_calliptera.gb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Cytb/supplementary_data/reference_DBs/Astatotilapia_calliptera.gb",
+      "file_size": 37449,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Cytb_evohull_DEC_2017.gb",
+      "file_path": "Cytb/supplementary_data/reference_DBs/Cytb_evohull_DEC_2017.gb",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/Cytb/supplementary_data/reference_DBs/Cytb_evohull_DEC_2017.gb",
+      "file_size": 10849080,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/README.md",
+      "file_size": 8342,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "12S_LP_Rdataset_Dec_2017.csv",
+      "file_path": "R_script/12S_LP_Rdataset_Dec_2017.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/12S_LP_Rdataset_Dec_2017.csv",
+      "file_size": 39973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Cytb_LP_Rdataset_Dec_2017.csv",
+      "file_path": "R_script/Cytb_LP_Rdataset_Dec_2017.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/Cytb_LP_Rdataset_Dec_2017.csv",
+      "file_size": 37935,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "LP_Oct_2018_Tran.R",
+      "file_path": "R_script/LP_Oct_2018_Tran.R",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/LP_Oct_2018_Tran.R",
+      "file_size": 140573,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Mere_Lake_expected_Bio_Num_Presence.csv",
+      "file_path": "R_script/Mere_Lake_expected_Bio_Num_Presence.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/Mere_Lake_expected_Bio_Num_Presence.csv",
+      "file_size": 2232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Tench.csv",
+      "file_path": "R_script/Tench.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/Tench.csv",
+      "file_size": 158,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Welsh_Lake_expected_DAFOR_Presence.csv",
+      "file_path": "R_script/Welsh_Lake_expected_DAFOR_Presence.csv",
+      "repo_url": "https://github.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/tree/master/R_script",
+      "file_url": "https://raw.githubusercontent.com/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring/master/R_script/Welsh_Lake_expected_DAFOR_Presence.csv",
+      "file_size": 2247,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring-v1.1.zip",
+      "file_path": "HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring-v1.1.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.2544596",
+      "file_url": "https://zenodo.org/api/records/2544596/files/HullUni-bioinformatics/Li_et_al_2019_eDNA_fish_monitoring-v1.1.zip/content",
+      "file_size": 3773227,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "boot",
+      "cluster",
+      "cowplot",
+      "data.table",
+      "dendextend",
+      "factoextra",
+      "ggpubr",
+      "ggrepel",
+      "gridExtra",
+      "gtable",
+      "pandas",
+      "permute",
+      "plyr",
+      "reshape",
+      "reshape2",
+      "rich",
+      "scales",
+      "tidyverse",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

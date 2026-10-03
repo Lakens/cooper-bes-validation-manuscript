@@ -1,0 +1,333 @@
+{
+  "paper_id": "10_1111_1365_2745_13828",
+  "generated": "2026-09-10T05:08:57+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:08:57+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 22,
+  "n_downloaded": 14,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Flowering phenology climate analysis.Rmd",
+      "file_path": "Flowering phenology climate analysis.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/Flowering phenology climate analysis.Rmd",
+      "file_size": 19187,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Getting minimum flowering date for each species.Rmd",
+      "file_path": "Getting minimum flowering date for each species.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/Getting minimum flowering date for each species.Rmd",
+      "file_size": 2459,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Northern vs southern hemisphere analysis.Rmd",
+      "file_path": "Northern vs southern hemisphere analysis.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/Northern vs southern hemisphere analysis.Rmd",
+      "file_size": 487,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ProcessMetData.py",
+      "file_path": "ProcessMetData.py",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/ProcessMetData.py",
+      "file_size": 7221,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/README.md",
+      "file_size": 1358,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "flowering phenology analysis.Rmd",
+      "file_path": "flowering phenology analysis.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/flowering phenology analysis.Rmd",
+      "file_size": 23257,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "phylogenetic analysis of flowering time.Rmd",
+      "file_path": "phylogenetic analysis of flowering time.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/phylogenetic analysis of flowering time.Rmd",
+      "file_size": 5865,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "reorganising data for phenology analysis.R",
+      "file_path": "reorganising data for phenology analysis.R",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/reorganising data for phenology analysis.R",
+      "file_size": 3971,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "weather data analysis.Rmd",
+      "file_path": "weather data analysis.Rmd",
+      "repo_url": "https://github.com/SEveringham/flowering-phenology-changes-in-Sydney",
+      "file_url": "https://raw.githubusercontent.com/SEveringham/flowering-phenology-changes-in-Sydney/main/weather data analysis.Rmd",
+      "file_size": 3806,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "floweringdatafull.csv",
+      "file_path": "floweringdatafull.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267968/download",
+      "file_size": 446512,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "floweringdatafullwithfulldates.csv",
+      "file_path": "floweringdatafullwithfulldates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267972/download",
+      "file_size": 356599,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "floweringdatawithminimumdate_station_data.csv",
+      "file_path": "floweringdatawithminimumdate_station_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267967/download",
+      "file_size": 389215,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "growthform.csv",
+      "file_path": "growthform.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267964/download",
+      "file_size": 1247,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hemispheredatabinomial.csv",
+      "file_path": "hemispheredatabinomial.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267965/download",
+      "file_size": 17201,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "herbtargetlist.csv",
+      "file_path": "herbtargetlist.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267970/download",
+      "file_size": 56602,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "macquarieuniherb.csv",
+      "file_path": "macquarieuniherb.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267971/download",
+      "file_size": 12110,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "myfielddata.csv",
+      "file_path": "myfielddata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267973/download",
+      "file_size": 166069,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Price1960data.csv",
+      "file_path": "Price1960data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267974/download",
+      "file_size": 36396,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267986/download",
+      "file_size": 2199,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Speciesgenusfamily.csv",
+      "file_path": "Speciesgenusfamily.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267966/download",
+      "file_size": 2820,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sydneyuniherbarium.csv",
+      "file_path": "sydneyuniherbarium.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267969/download",
+      "file_size": 12641,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "unswherb.csv",
+      "file_path": "unswherb.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.msbcc2g09",
+      "file_url": "https://datadryad.org/api/v2/files/1267975/download",
+      "file_size": 9859,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "broom",
+      "devtools",
+      "dplyr",
+      "ggforce",
+      "ggmap",
+      "ggplot2",
+      "gridExtra",
+      "lme4",
+      "lubridate",
+      "maps",
+      "maptools",
+      "measurements",
+      "metafor",
+      "MuMIn",
+      "nlme",
+      "numpy",
+      "os",
+      "pandas",
+      "phytools",
+      "relaimpo",
+      "rgdal",
+      "satellite",
+      "scales",
+      "stringr",
+      "tidyr",
+      "V.PhyloMaker"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

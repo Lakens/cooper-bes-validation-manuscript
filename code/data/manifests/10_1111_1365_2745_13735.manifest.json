@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2745_13735",
+  "generated": "2026-09-10T05:08:19+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:08:19+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "1-_Daily_precipitation_2002-2018.csv",
+      "file_path": "1-_Daily_precipitation_2002-2018.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775182/download",
+      "file_size": 19726,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2-_Crab_feeding_activity.csv",
+      "file_path": "2-_Crab_feeding_activity.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775183/download",
+      "file_size": 1875,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2-_Historical_crab_herbivory.csv",
+      "file_path": "2-_Historical_crab_herbivory.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775184/download",
+      "file_size": 42019,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3-_Plant_cover_and_biomass.csv",
+      "file_path": "3-_Plant_cover_and_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775185/download",
+      "file_size": 440,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4-_Edge_retreat_at_landscape-scale.csv",
+      "file_path": "4-_Edge_retreat_at_landscape-scale.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775186/download",
+      "file_size": 1341,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4-_Edge_retreat_at_plot-scale.csv",
+      "file_path": "4-_Edge_retreat_at_plot-scale.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775187/download",
+      "file_size": 99,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "5-_Vertical_erosion.csv",
+      "file_path": "5-_Vertical_erosion.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775188/download",
+      "file_size": 757,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S3-_Spartina_cover_2016_-_2017.xlsx",
+      "file_path": "S3-_Spartina_cover_2016_-_2017.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.8sf7m0cnm",
+      "file_url": "https://datadryad.org/api/v2/files/775189/download",
+      "file_size": 10443,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "paper_id": "10_1111_1365_2664_13455",
+  "generated": "2026-09-10T03:31:50+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:31:50+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 18,
+  "n_downloaded": 0,
+  "not_downloaded": {
+    "intentional_n": 18,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Quadratic_VagueFE_H.R",
+      "file_path": "Quadratic_VagueFE_H.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Quadratic_VagueFE_H.R/content",
+      "file_size": 512,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Bayes_Longevity.R",
+      "file_path": "Bayes_Longevity.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Bayes_Longevity.R/content",
+      "file_size": 4013,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "temp_deriv_functions.R",
+      "file_path": "temp_deriv_functions.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/temp_deriv_functions.R/content",
+      "file_size": 3114,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "R0_analysis_finerscale.R",
+      "file_path": "R0_analysis_finerscale.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/R0_analysis_finerscale.R/content",
+      "file_size": 13242,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Bayes_FE.R",
+      "file_path": "Bayes_FE.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Bayes_FE.R/content",
+      "file_size": 4200,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Quadratic_VaguePEA.R",
+      "file_path": "Quadratic_VaguePEA.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Quadratic_VaguePEA.R/content",
+      "file_size": 290,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Bayes_MDR.R",
+      "file_path": "Bayes_MDR.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Bayes_MDR.R/content",
+      "file_size": 5637,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "temp_functions.R",
+      "file_path": "temp_functions.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/temp_functions.R/content",
+      "file_size": 1227,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Bayes_PEA.R",
+      "file_path": "Bayes_PEA.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Bayes_PEA.R/content",
+      "file_size": 5247,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Briere_VagueFE_H.R",
+      "file_path": "Briere_VagueFE_H.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Briere_VagueFE_H.R/content",
+      "file_size": 423,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Quadratic_VagueMDR.R",
+      "file_path": "Quadratic_VagueMDR.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Quadratic_VagueMDR.R/content",
+      "file_size": 322,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Quadratic_Vague_Long.R",
+      "file_path": "Quadratic_Vague_Long.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Quadratic_Vague_Long.R/content",
+      "file_size": 428,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Briere_Vague_Long.R",
+      "file_path": "Briere_Vague_Long.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Briere_Vague_Long.R/content",
+      "file_size": 346,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Briere_VagueMDR.R",
+      "file_path": "Briere_VagueMDR.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Briere_VagueMDR.R/content",
+      "file_size": 378,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Briere_VaguePEA.R",
+      "file_path": "Briere_VaguePEA.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Briere_VaguePEA.R/content",
+      "file_size": 380,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "CitrusMapping.R",
+      "file_path": "CitrusMapping.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/CitrusMapping.R/content",
+      "file_size": 2077,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mcmc_utils.R",
+      "file_path": "mcmc_utils.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/mcmc_utils.R/content",
+      "file_size": 14803,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Plotting_Posteriors.R",
+      "file_path": "Plotting_Posteriors.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3235271",
+      "file_url": "https://zenodo.org/api/records/3235271/files/Plotting_Posteriors.R/content",
+      "file_size": 2034,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "IDPmisc",
+      "maptools",
+      "raster",
+      "rgdal",
+      "rjags"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

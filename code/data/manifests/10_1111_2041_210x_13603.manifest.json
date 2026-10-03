@@ -1,0 +1,232 @@
+{
+  "paper_id": "10_1111_2041_210x_13603",
+  "generated": "2026-09-10T07:14:56+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T07:14:56+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/LICENSE",
+      "file_size": 35149,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Dorsal_Snake#129972.csv",
+      "file_path": "QuSTo/Dorsal_Snake#129972.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Dorsal_Snake#129972.csv",
+      "file_size": 7823,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Dorsal_Snake#172375.csv",
+      "file_path": "QuSTo/Dorsal_Snake#172375.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Dorsal_Snake#172375.csv",
+      "file_size": 11570,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Dorsal_Snake#8545.csv",
+      "file_path": "QuSTo/Dorsal_Snake#8545.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Dorsal_Snake#8545.csv",
+      "file_size": 8978,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "QuSTov1.0final.exe",
+      "file_path": "QuSTo/QuSTov1.0final.exe",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/QuSTov1.0final.exe",
+      "file_size": 87368103,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Ventral_Snake#129972.csv",
+      "file_path": "QuSTo/Ventral_Snake#129972.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Ventral_Snake#129972.csv",
+      "file_size": 7967,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Ventral_Snake#172375.csv",
+      "file_path": "QuSTo/Ventral_Snake#172375.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Ventral_Snake#172375.csv",
+      "file_size": 16635,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Ventral_Snake#8545.csv",
+      "file_path": "QuSTo/Ventral_Snake#8545.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSTo/Ventral_Snake#8545.csv",
+      "file_size": 12106,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "QuSlicer.py",
+      "file_path": "QuSlicer/QuSlicer.py",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSlicer/QuSlicer.py",
+      "file_size": 9063,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SliceOutput_Lizard.csv",
+      "file_path": "QuSlicer/documents/SliceOutput_Lizard.csv",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSlicer/documents/SliceOutput_Lizard.csv",
+      "file_size": 36791,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "main.py",
+      "file_path": "QuSlicer/main.py",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSlicer/main.py",
+      "file_size": 1352,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "lizardSlingTail_067.OBJ",
+      "file_path": "QuSlicer/meshes/lizardSlingTail_067.OBJ",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSlicer/meshes/lizardSlingTail_067.OBJ",
+      "file_size": 3272192,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "readme.md",
+      "file_path": "QuSlicer/readme.md",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/QuSlicer/readme.md",
+      "file_size": 3390,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/README.md",
+      "file_size": 2410,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_QuSTo.txt",
+      "file_path": "README_QuSTo.txt",
+      "repo_url": "https://github.com/GMLatUCDavis/QuSTo",
+      "file_url": "https://raw.githubusercontent.com/GMLatUCDavis/QuSTo/main/README_QuSTo.txt",
+      "file_size": 9254,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "csv",
+      "matplotlib",
+      "numpy",
+      "open3d",
+      "operator",
+      "os",
+      "QuSlicer",
+      "scipy"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "paper_id": "10_1111_1365_2435_12953",
+  "generated": "2026-09-10T02:02:11+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:02:11+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 17,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data for Fig1b egg-hatching date vs adult catching_date.txt",
+      "file_path": "Data for Fig1b egg-hatching date vs adult catching_date.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27502/download",
+      "file_size": 376,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data on egg developmental time.txt",
+      "file_path": "Data on egg developmental time.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27506/download",
+      "file_size": 10365,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data on larval developmental time.txt",
+      "file_path": "Data on larval developmental time.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27504/download",
+      "file_size": 7597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data on pupal developmental time.txt",
+      "file_path": "Data on pupal developmental time.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27505/download",
+      "file_size": 9998,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_on_female_fecundity.txt",
+      "file_path": "Data_on_female_fecundity.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27509/download",
+      "file_size": 1494,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_survivorship_adult_to_eggs.txt",
+      "file_path": "Data_survivorship_adult_to_eggs.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27526/download",
+      "file_size": 3222,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_survivorship_larvae_to_pupae.txt",
+      "file_path": "Data_survivorship_larvae_to_pupae.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27524/download",
+      "file_size": 12528,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_survivorship_pupae_to_adult.txt",
+      "file_path": "Data_survivorship_pupae_to_adult.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27525/download",
+      "file_size": 9260,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_weight.txt",
+      "file_path": "Data_weight.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27510/download",
+      "file_size": 20033,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "DataforFig1a egg-hatching date vs adult catching_date.txt",
+      "file_path": "DataforFig1a egg-hatching date vs adult catching_date.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27501/download",
+      "file_size": 271747,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "humidity_coef_for_OHtest.txt",
+      "file_path": "humidity_coef_for_OHtest.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27521/download",
+      "file_size": 107,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "humidity_data.txt",
+      "file_path": "humidity_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27518/download",
+      "file_size": 32821,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "light_coef_for_OHtest.txt",
+      "file_path": "light_coef_for_OHtest.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27522/download",
+      "file_size": 103,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "light_data.txt",
+      "file_path": "light_data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27519/download",
+      "file_size": 2849,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OHtest_weight_adult.txt",
+      "file_path": "OHtest_weight_adult.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27515/download",
+      "file_size": 121,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OHtest_weight_larvae.txt",
+      "file_path": "OHtest_weight_larvae.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27513/download",
+      "file_size": 119,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OHtest_weight_pupae.txt",
+      "file_path": "OHtest_weight_pupae.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27514/download",
+      "file_size": 121,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "r script for analysis and OHtests of temperature humidity and light data.R",
+      "file_path": "r script for analysis and OHtests of temperature humidity and light data.R",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27516/download",
+      "file_size": 4985,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "R script for analysis of larval pupal and egg development time.R",
+      "file_path": "R script for analysis of larval pupal and egg development time.R",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27507/download",
+      "file_size": 2562,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "R script for analysis of survivorship.R",
+      "file_path": "R script for analysis of survivorship.R",
+      "repo_url": "https://doi.org/10.5061/dryad.s67c8",
+      "file_url": "https://datadryad.org/api/v2/files/27523/download",
+      "file_size": 1535,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bear",
+      "coxme",
+      "ggplot2",
+      "glmm",
+      "gWidgets2",
+      "gWidgets2RGtk2",
+      "lme4",
+      "pbkrtest",
+      "randomizeBE",
+      "survival"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

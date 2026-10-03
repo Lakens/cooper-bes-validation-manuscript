@@ -1,0 +1,124 @@
+{
+  "paper_id": "10_1111_1365_2656_13198",
+  "generated": "2026-09-10T03:03:02+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:03:02+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "nest_locations.csv",
+      "file_path": "nest_locations.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/3u8tj/",
+      "provider": "osfstorage",
+      "file_size": 10239,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "trees.csv",
+      "file_path": "trees.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/fdnv4/",
+      "provider": "osfstorage",
+      "file_size": 4231,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "conditions.csv",
+      "file_path": "conditions.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/6rjgx/",
+      "provider": "osfstorage",
+      "file_size": 205,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "READ_ME.txt",
+      "file_path": "READ_ME.txt",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/nsxug/",
+      "provider": "osfstorage",
+      "file_size": 1092,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nests.csv",
+      "file_path": "nests.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/c2jb4/",
+      "provider": "osfstorage",
+      "file_size": 22310,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "edges.csv",
+      "file_path": "edges.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/86ubv/",
+      "provider": "osfstorage",
+      "file_size": 42198,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "focal_trees.csv",
+      "file_path": "focal_trees.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/J4XHS",
+      "file_url": "https://osf.io/download/94peq/",
+      "provider": "osfstorage",
+      "file_size": 82,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

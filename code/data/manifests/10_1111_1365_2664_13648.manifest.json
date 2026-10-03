@@ -1,0 +1,86 @@
+{
+  "paper_id": "10_1111_1365_2664_13648",
+  "generated": "2026-09-10T03:52:29+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:52:29+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 4,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Branch_data.xlsx",
+      "file_path": "Branch_data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.rn8pk0p6n",
+      "file_url": "https://datadryad.org/api/v2/files/405788/download",
+      "file_size": 14693,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Coordinates.xlsx",
+      "file_path": "Coordinates.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.rn8pk0p6n",
+      "file_url": "https://datadryad.org/api/v2/files/405789/download",
+      "file_size": 13244,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Phylogenetic_tree.tr",
+      "file_path": "Phylogenetic_tree.tr",
+      "repo_url": "https://doi.org/10.5061/dryad.rn8pk0p6n",
+      "file_url": "https://datadryad.org/api/v2/files/405790/download",
+      "file_size": 177813,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Species_data.xlsx",
+      "file_path": "Species_data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.rn8pk0p6n",
+      "file_url": "https://datadryad.org/api/v2/files/405791/download",
+      "file_size": 62076,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

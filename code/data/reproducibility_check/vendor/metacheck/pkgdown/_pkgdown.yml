@@ -1,0 +1,228 @@
+url: https://scienceverse.github.io/metacheck/
+development:
+  mode: release
+home:
+  sidebar:
+    structure: [badges, citation, license, community, links, funding]
+    components:
+      badges:
+        title: ""
+        text: >
+          [![DOI](https://zenodo.org/badge/926991536.svg)](https://doi.org/10.5281/zenodo.20704754)
+          [![Made in Europe](https://img.shields.io/badge/Made_in_Europe-003399?logo=european-union&logoColor=FFCC00)]()
+          [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+          [![Codecov test coverage](https://codecov.io/gh/scienceverse/metacheck/graph/badge.svg)](https://app.codecov.io/gh/scienceverse/metacheck)
+      funding:
+        title: "Funding"
+        text: Metacheck is partly financed by the Dutch Research Council (NWO) via the Thematic Digital Competence Centre Social Sciences & Humanities (TDCC-SSH) as part of the project Research Transparency Check with file number ICT.001.TDCC.018 under the grant <https://doi.org/10.61686/ENWVD61320>.
+  links:
+  - text: Metacheck Manual
+    href: https://www.scienceverse.org/metacheck_book/
+  - text: Contact the Team
+    href: mailto:metacheck.scienceverse@gmail.com
+
+template:
+  # includes:
+  #   in_header: <!-- inserted at the end of the head -->
+  #   before_body: <!-- inserted at the beginning of the body -->
+  #   after_body: <!-- inserted at the end of the body -->
+  #   before_title: <!-- inserted before the package title in the header ->
+  #   before_navbar: <!-- inserted before the navbar links -->
+  #   after_navbar: <!-- inserted after the navbar links -->
+  # light-switch: true
+  bootstrap: 5
+  bslib:
+    preset: spacelab
+    primary: '#327118'
+    base_font: {google: "Open Sans"}
+    heading_font: {google: "Open Sans"}
+    code_font: {google: "Fira Code"}
+  params:
+    ganalytics: UA-160147578-1
+
+navbar:
+  structure:
+    left: [home, manual, external, reference, news]
+  components:
+    manual:
+      text: Metacheck Manual
+      href: https://www.scienceverse.org/metacheck_book/
+    external:
+      text: Example Report
+      href: report-example.html
+
+reference:
+- title: Reading in Papers
+  desc: ~
+  contents:
+  - '`report_app`'
+  - '`convert`'
+  - '`convert_bibr`'
+  - '`convert_grobid`'
+  - '`grobid_to_bibr`'
+  - '`read`'
+  - '`demopaper`'
+  - '`demofile`'
+  - '`test_paper`'
+  - '`paper_id`'
+  - '`paper_write`'
+  - '`paper_validate`'
+- title: Paper Database Corpora
+  desc: ~
+  contents:
+  - '`papers_available`'
+  - '`papers_load`'
+  - '`papers_remove`'
+  - '`papers_metadata`'
+- title: Search Papers
+  desc: ~
+  contents:
+  - '`text_search`'
+  - '`text_expand`'
+  - '`paper_table`'
+  - '`ref_table`'
+- title: Module Functions
+  desc: ~
+  contents:
+  - '`module_list`'
+  - '`module_help`'
+  - '`module_info`'
+  - '`module_run`'
+  - '`module_report`'
+  - '`module_template`'
+  - '`report`'
+  - '`report_module_run`'
+  - '`report_qmd`'
+- title: Module Helpers
+  desc: These functions help module writers make consistently formatted report text.
+  contents:
+  - '`scroll_table`'
+  - '`report_table`'
+  - '`collapse_section`'
+  - '`plural`'
+  - '`link`'
+  - '`logger`'
+  - '`lastlog`'
+  - '`format_ref`'
+  - '`get_prev_outputs`'
+  - '`format_bib_authors`'
+  - '`fig_image_view`'
+- title: Code Check Helpers
+  desc: These functions help repo_check and code_check modules to assess code files.
+  contents:
+  - '`code_abs_path`'
+  - '`code_extract_r`'
+  - '`code_file_refs`'
+  - '`code_lang`'
+  - '`code_library_lines`'
+  - '`code_line_stats`'
+  - '`code_parse_r`'
+  - '`code_read`'
+  - '`code_remove_comments`'
+- title: LLM Functions
+  desc: ~
+  contents:
+  - '`llm`'
+  - '`llm_max_calls`'
+  - '`llm_model`'
+  - '`llm_model_list`'
+  - '`llm_use`'
+  - '`json_expand`'
+- title: References/Citations
+  desc: ~
+  contents:
+  - '`add_bib_match`'
+  - '`crossref_doi`'
+  - '`crossref_query`'
+  - '`datacite_doi`'
+  - '`doi_clean`'
+  - '`doi_lookup`'
+  - '`doi_valid_format`'
+  - '`doi_resolves`'
+  - '`FLoRA`'
+  - '`FLoRA_update`'
+  - '`FLoRA_date`'
+  - '`openalex_doi`'
+  - '`openalex_query`'
+  - '`pubpeer_comments`'
+  - '`retractionwatch`'
+  - '`rw_date`'
+  - '`rw_update`'
+- title: OSF Functions
+  desc: ~
+  contents:
+  - '`osf_links`'
+  - '`osf_info`'
+  - '`osf_file_download`'
+  - '`osf_api_check`'
+  - '`osf_check_id`'
+  - '`osf_delay`'
+  - '`osf_get_all_pages`'
+  - '`osf_preprint_list`'
+  - '`osf_type`'
+- title: GitHub Functions
+  desc: ~
+  contents:
+  - '`github_links`'
+  - '`github_repo`'
+  - '`github_info`'
+  - '`github_files`'
+  - '`github_readme`'
+  - '`github_languages`'
+- title: Archive Functions
+  desc: ~
+  contents:
+  - '`local_files`'
+  - '`aspredicted_links`'
+  - '`aspredicted_info`'
+  - '`rbox_links`'
+  - '`rbox_info`'
+  - '`rbox_file_download`'
+  - '`zenodo_links`'
+  - '`zenodo_info`'
+  - '`zenodo_file_download`'
+  - '`dataverse_links`'
+  - '`dataverse_info`'
+  - '`dataverse_file_download`'
+  - '`dataverse_pat`'
+  - '`figshare_links`'
+  - '`figshare_info`'
+  - '`figshare_file_download`'
+  - '`figshare_pat`'
+  - '`dryad_links`'
+  - '`dryad_info`'
+  - '`dryad_file_download`'
+  - '`dryad_pat`'
+  - '`reshare_links`'
+  - '`reshare_info`'
+  - '`reshare_file_download`'
+  - '`researchdata4tu_links`'
+  - '`researchdata4tu_info`'
+  - '`researchdata4tu_file_download`'
+  - '`researchdata4tu_pat`'
+- title: Integrations
+  desc: ~
+  contents:
+  - '`email`'
+  - '`filetype`'
+  - '`file_category`'
+  - '`causal_relations`'
+- title: Validation Functions
+  desc: ~
+  contents:
+  - '`validate`'
+  - '`accuracy`'
+- title: Extras
+  desc: ~
+  contents:
+  - '`extract_eq`'
+  - '`extract_p_values`'
+  - '`extract_urls`'
+  - '`path_sanitize`'
+  - '`stats`'
+  - '`emojis`'
+- title: "Internal functions"
+  desc: "Functions for developers"
+  contents:
+  - has_keyword("internal")
+

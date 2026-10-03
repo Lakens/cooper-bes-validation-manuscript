@@ -1,0 +1,207 @@
+{
+  "paper_id": "10_1111_1365_2664_13492",
+  "generated": "2026-09-10T03:34:25+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:34:25+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 13,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 12,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "2014_B.zip",
+      "file_path": "2014_B.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_B.zip/content",
+      "file_size": 817272171,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Pillay_et_al_Songbirds_Acoustic_Counts_Vegetation_Cover.xlsx",
+      "file_path": "Pillay_et_al_Songbirds_Acoustic_Counts_Vegetation_Cover.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/Pillay_et_al_Songbirds_Acoustic_Counts_Vegetation_Cover.xlsx/content",
+      "file_size": 610828,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2013_OG1.zip",
+      "file_path": "2013_OG1.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_OG1.zip/content",
+      "file_size": 627963808,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2014_D.zip",
+      "file_path": "2014_D.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_D.zip/content",
+      "file_size": 817109753,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2014_E.zip",
+      "file_path": "2014_E.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_E.zip/content",
+      "file_size": 825465742,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2014_F.zip",
+      "file_path": "2014_F.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_F.zip/content",
+      "file_size": 711026264,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2014_OG1.zip",
+      "file_path": "2014_OG1.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_OG1.zip/content",
+      "file_size": 905202524,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2013_F.zip",
+      "file_path": "2013_F.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_F.zip/content",
+      "file_size": 814690329,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2013_OG2.zip",
+      "file_path": "2013_OG2.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_OG2.zip/content",
+      "file_size": 605849503,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2013_E.zip",
+      "file_path": "2013_E.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_E.zip/content",
+      "file_size": 837623569,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2013_D.zip",
+      "file_path": "2013_D.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_D.zip/content",
+      "file_size": 816870671,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2013_B.zip",
+      "file_path": "2013_B.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2013_B.zip/content",
+      "file_size": 816139733,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2014_OG2.zip",
+      "file_path": "2014_OG2.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3366104",
+      "file_url": "https://zenodo.org/api/records/3366104/files/2014_OG2.zip/content",
+      "file_size": 950355221,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

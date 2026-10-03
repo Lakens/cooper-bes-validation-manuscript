@@ -1,0 +1,192 @@
+{
+  "paper_id": "10_1111_1365_2745_13597",
+  "generated": "2026-09-10T05:05:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:05:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "demoTraits.csv",
+      "file_path": "demoTraits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560274/download",
+      "file_size": 512,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "funcTraits.csv",
+      "file_path": "funcTraits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560273/download",
+      "file_size": 969,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Paniw_DemoFuncTraitsCommRes_README.txt",
+      "file_path": "Paniw_DemoFuncTraitsCommRes_README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560430/download",
+      "file_size": 10296,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pca_plots.R",
+      "file_path": "pca_plots.R",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560272/download",
+      "file_size": 10926,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "plot_cover.csv",
+      "file_path": "plot_cover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560275/download",
+      "file_size": 909,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plot_resilience_traits.R",
+      "file_path": "plot_resilience_traits.R",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560269/download",
+      "file_size": 10380,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "resilience_analysis_PCA_alternative.R",
+      "file_path": "resilience_analysis_PCA_alternative.R",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560268/download",
+      "file_size": 15518,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "resilience_analysis_PCA.R",
+      "file_path": "resilience_analysis_PCA.R",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560270/download",
+      "file_size": 27380,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "resilience_analysis_traits.R",
+      "file_path": "resilience_analysis_traits.R",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560271/download",
+      "file_size": 11346,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "seed_flower.csv",
+      "file_path": "seed_flower.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560277/download",
+      "file_size": 17960,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species_cover.csv",
+      "file_path": "species_cover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.xwdbrv1cn",
+      "file_url": "https://datadryad.org/api/v2/files/560276/download",
+      "file_size": 4440,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "corrplot",
+      "dplyr",
+      "Epi",
+      "ggplot2",
+      "ggrepel",
+      "goeveg",
+      "mgcv",
+      "MuMIn",
+      "psych",
+      "stringr",
+      "vegan",
+      "viridis"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

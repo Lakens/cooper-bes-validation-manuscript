@@ -1,0 +1,169 @@
+{
+  "paper_id": "10_1111_2041_210x_13335",
+  "generated": "2026-09-10T06:15:15+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T06:15:15+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 9,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitattributes",
+      "file_path": ".gitattributes",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/.gitattributes",
+      "file_size": 66,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FinalModelMaker6.R",
+      "file_path": "FinalModelMaker6.R",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/FinalModelMaker6.R",
+      "file_size": 13401,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fit and Analyse Models.Rmd",
+      "file_path": "Fit and Analyse Models.Rmd",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/Fit and Analyse Models.Rmd",
+      "file_size": 29365,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fit and Analyse Models.html",
+      "file_path": "Fit and Analyse Models.html",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/Fit and Analyse Models.html",
+      "file_size": 924510,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Gen_Image_TVT.R",
+      "file_path": "Gen_Image_TVT.R",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/Gen_Image_TVT.R",
+      "file_size": 3582,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Gen_Meta_All_PSL.R",
+      "file_path": "Gen_Meta_All_PSL.R",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/Gen_Meta_All_PSL.R",
+      "file_size": 1709,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/LICENSE",
+      "file_size": 35129,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "http://github.com/jcdterry/LadybirdID_Public",
+      "file_url": "https://raw.githubusercontent.com/jcdterry/LadybirdID_Public/master/README.md",
+      "file_size": 1740,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "jcdterry/LadybirdID_Public-v.1.0.zip",
+      "file_path": "jcdterry/LadybirdID_Public-v.1.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3530383",
+      "file_url": "https://zenodo.org/api/records/3530383/files/jcdterry/LadybirdID_Public-v.1.0.zip/content",
+      "file_size": 342964,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "cowplot",
+      "keras",
+      "knitr",
+      "reticulate",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

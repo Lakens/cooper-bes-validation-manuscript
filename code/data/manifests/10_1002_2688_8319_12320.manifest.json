@@ -1,0 +1,163 @@
+{
+  "paper_id": "10_1002_2688_8319_12320",
+  "generated": "2026-09-09T22:39:41+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:39:41+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Apple_landcover500.csv",
+      "file_path": "Apple_landcover500.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/Apple_landcover500.csv/content",
+      "file_size": 3295,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Apple_landcover1000.csv",
+      "file_path": "Apple_landcover1000.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/Apple_landcover1000.csv/content",
+      "file_size": 3365,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fruit_set.csv",
+      "file_path": "fruit_set.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/fruit_set.csv/content",
+      "file_size": 2284,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "df_wildbees_site.csv",
+      "file_path": "df_wildbees_site.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/df_wildbees_site.csv/content",
+      "file_size": 5421,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Apple_landcover250.csv",
+      "file_path": "Apple_landcover250.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/Apple_landcover250.csv/content",
+      "file_size": 3281,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BMSspecies.csv",
+      "file_path": "BMSspecies.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/BMSspecies.csv/content",
+      "file_size": 519,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "df_wildbees_rep.csv",
+      "file_path": "df_wildbees_rep.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/df_wildbees_rep.csv/content",
+      "file_size": 11692,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Apple_landcover2000.csv",
+      "file_path": "Apple_landcover2000.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/Apple_landcover2000.csv/content",
+      "file_size": 3479,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Apple_landcover100.csv",
+      "file_path": "Apple_landcover100.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/Apple_landcover100.csv/content",
+      "file_size": 3266,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fruitset_success.csv",
+      "file_path": "fruitset_success.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/fruitset_success.csv/content",
+      "file_size": 14990,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "File description.docx",
+      "file_path": "File description.docx",
+      "repo_url": "https://doi.org/10.5281/zenodo.10046644",
+      "file_url": "https://zenodo.org/api/records/10046644/files/File%20description.docx/content",
+      "file_size": 15747,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2435_13250",
+  "generated": "2026-09-10T02:03:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:03:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data set for Figure 2B.xlsx",
+      "file_path": "Data set for Figure 2B.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40423/download",
+      "file_size": 9334,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data set for Figure 3.xlsx",
+      "file_path": "Data set for Figure 3.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40424/download",
+      "file_size": 9416,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data set for Figure 4 (ordination NMDS).xlsx",
+      "file_path": "Data set for Figure 4 (ordination NMDS).xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40425/download",
+      "file_size": 11264,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data set for Figure 5.xlsx",
+      "file_path": "Data set for Figure 5.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40426/download",
+      "file_size": 10033,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data set for Figure S3 (number of seeds added at each treatment).xlsx",
+      "file_path": "Data set for Figure S3 (number of seeds added at each treatment).xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40427/download",
+      "file_size": 37151,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data set for GLM shown in Table 1.xlsx",
+      "file_path": "Data set for GLM shown in Table 1.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40428/download",
+      "file_size": 31395,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Figure_S2_Rarefaction_curve_global.xlsx",
+      "file_path": "Data_Figure_S2_Rarefaction_curve_global.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40429/download",
+      "file_size": 15782,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_Figure_S2_Rarefaction_curve_local.xlsx",
+      "file_path": "Data_Figure_S2_Rarefaction_curve_local.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.55p11md",
+      "file_url": "https://datadryad.org/api/v2/files/40430/download",
+      "file_size": 9938,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "paper_id": "10_1111_1365_2664_13770",
+  "generated": "2026-09-10T03:53:44+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:53:44+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 21,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 10,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "C_fire_invasives-1.0.0.tar",
+      "file_path": "C_fire_invasives-1.0.0.tar",
+      "repo_url": "https://doi.org/10.5281/zenodo.4037178",
+      "file_url": "https://zenodo.org/api/records/4037178/files/C_fire_invasives-1.0.0.tar/content",
+      "file_size": 5048320,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Anderson_biomass.csv",
+      "file_path": "Anderson_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422926/download",
+      "file_size": 232122,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Anderson_ED.csv",
+      "file_path": "Anderson_ED.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422924/download",
+      "file_size": 6374,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Anderson_occ.csv",
+      "file_path": "Anderson_occ.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422929/download",
+      "file_size": 686647,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Bansal_data.csv",
+      "file_path": "Bansal_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422927/download",
+      "file_size": 73968,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Blank&Norton.csv",
+      "file_path": "Blank&Norton.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422928/download",
+      "file_size": 22032,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Bradley_AGB.csv",
+      "file_path": "Bradley_AGB.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422930/download",
+      "file_size": 1973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Bradley_soil.csv",
+      "file_path": "Bradley_soil.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422931/download",
+      "file_size": 4681,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.cpg",
+      "file_path": "cb_2016_us_state_20m.cpg",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422959/download",
+      "file_size": 5,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.dbf",
+      "file_path": "cb_2016_us_state_20m.dbf",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422960/download",
+      "file_size": 8434,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.prj",
+      "file_path": "cb_2016_us_state_20m.prj",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422961/download",
+      "file_size": 165,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.shp",
+      "file_path": "cb_2016_us_state_20m.shp",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422962/download",
+      "file_size": 224580,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.shp.ea.iso.xml",
+      "file_path": "cb_2016_us_state_20m.shp.ea.iso.xml",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422963/download",
+      "file_size": 19442,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.shp.iso.xml",
+      "file_path": "cb_2016_us_state_20m.shp.iso.xml",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422964/download",
+      "file_size": 30806,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.shp.xml",
+      "file_path": "cb_2016_us_state_20m.shp.xml",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422965/download",
+      "file_size": 18224,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "cb_2016_us_state_20m.shx",
+      "file_path": "cb_2016_us_state_20m.shx",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422966/download",
+      "file_size": 516,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data_studies_refs.pdf",
+      "file_path": "data_studies_refs.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422923/download",
+      "file_size": 71677,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ind_points.csv",
+      "file_path": "ind_points.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422932/download",
+      "file_size": 8142,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Jones_litter_only.csv",
+      "file_path": "Jones_litter_only.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422933/download",
+      "file_size": 4691,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Jones_soil.csv",
+      "file_path": "Jones_soil.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422934/download",
+      "file_size": 5275,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Jones_veg_only.csv",
+      "file_path": "Jones_veg_only.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.4mw6m9082",
+      "file_url": "https://datadryad.org/api/v2/files/422935/download",
+      "file_size": 4054,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

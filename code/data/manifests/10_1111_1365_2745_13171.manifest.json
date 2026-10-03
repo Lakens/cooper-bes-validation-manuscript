@@ -1,0 +1,216 @@
+{
+  "paper_id": "10_1111_1365_2745_13171",
+  "generated": "2026-09-10T05:00:58+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:00:58+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 16,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Aalpina_constitutive_glucosinolates.csv",
+      "file_path": "Aalpina_constitutive_glucosinolates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83458/download",
+      "file_size": 16278,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_expt1_individuallarvalmass.csv",
+      "file_path": "Aalpina_expt1_individuallarvalmass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83452/download",
+      "file_size": 8555,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_expt1_larvalsurvival.csv",
+      "file_path": "Aalpina_expt1_larvalsurvival.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83454/download",
+      "file_size": 2497,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_expt1_leaflength.csv",
+      "file_path": "Aalpina_expt1_leaflength.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83450/download",
+      "file_size": 3700,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_expt2_growth_morphology_traits.csv",
+      "file_path": "Aalpina_expt2_growth_morphology_traits.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83456/download",
+      "file_size": 6097,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_fielddata_frequencytypesdamage.csv",
+      "file_path": "Aalpina_fielddata_frequencytypesdamage.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83448/download",
+      "file_size": 10222,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_fielddata_totaldamage.csv",
+      "file_path": "Aalpina_fielddata_totaldamage.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83446/download",
+      "file_size": 14746,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Aalpina_induced_glucosinolates.csv",
+      "file_path": "Aalpina_induced_glucosinolates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83460/download",
+      "file_size": 14482,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_constitutive_glucosinolates.pdf",
+      "file_path": "README_for_Aalpina_constitutive_glucosinolates.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83459/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_expt1_individuallarvalmass.pdf",
+      "file_path": "README_for_Aalpina_expt1_individuallarvalmass.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83453/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_expt1_larvalsurvival.pdf",
+      "file_path": "README_for_Aalpina_expt1_larvalsurvival.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83455/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_expt1_leaflength.pdf",
+      "file_path": "README_for_Aalpina_expt1_leaflength.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83451/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_expt2_growth_morphology_traits.pdf",
+      "file_path": "README_for_Aalpina_expt2_growth_morphology_traits.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83457/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_fielddata_frequencytypesdamage.pdf",
+      "file_path": "README_for_Aalpina_fielddata_frequencytypesdamage.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83449/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_fielddata_totaldamage.pdf",
+      "file_path": "README_for_Aalpina_fielddata_totaldamage.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83447/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Aalpina_induced_glucosinolates.pdf",
+      "file_path": "README_for_Aalpina_induced_glucosinolates.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.ff11k13",
+      "file_url": "https://datadryad.org/api/v2/files/83461/download",
+      "file_size": 122525,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

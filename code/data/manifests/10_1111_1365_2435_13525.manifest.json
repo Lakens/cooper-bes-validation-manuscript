@@ -1,0 +1,233 @@
+{
+  "paper_id": "10_1111_1365_2435_13525",
+  "generated": "2026-09-10T02:06:38+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:06:38+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 12,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "analysis_fig2.R",
+      "file_path": "analysis_fig2.R",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222136/download",
+      "file_size": 17906,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "analysis_main.R",
+      "file_path": "analysis_main.R",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222133/download",
+      "file_size": 8769,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "analysis_resp.R",
+      "file_path": "analysis_resp.R",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222134/download",
+      "file_size": 17895,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data_hiresp_full_181003.txt",
+      "file_path": "data_hiresp_full_181003.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222135/download",
+      "file_size": 11318,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "data_resp_full_190109.txt",
+      "file_path": "data_resp_full_190109.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222130/download",
+      "file_size": 34254,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "data_termin_main_190301.txt",
+      "file_path": "data_termin_main_190301.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222129/download",
+      "file_size": 41210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_artportalen_2018.txt",
+      "file_path": "input_artportalen_2018.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222138/download",
+      "file_size": 431779,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_CDestimates.txt",
+      "file_path": "input_CDestimates.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222137/download",
+      "file_size": 216,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_T_erken05-16.txt",
+      "file_path": "input_T_erken05-16.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222139/download",
+      "file_size": 65907,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_T_gotlandhemse05-16.txt",
+      "file_path": "input_T_gotlandhemse05-16.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222140/download",
+      "file_size": 71091,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_T_lund05-16.txt",
+      "file_path": "input_T_lund05-16.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222141/download",
+      "file_size": 71793,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_T_tomtabacken05-16.txt",
+      "file_path": "input_T_tomtabacken05-16.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222142/download",
+      "file_size": 71337,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nondiapause_times_190314.txt",
+      "file_path": "nondiapause_times_190314.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222128/download",
+      "file_size": 405,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Readme_file_list-2.txt",
+      "file_path": "Readme_file_list-2.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222143/download",
+      "file_size": 4158,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temp_resp_ind_list.txt",
+      "file_path": "temp_resp_ind_list.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.pvmcvdngw",
+      "file_url": "https://datadryad.org/api/v2/files/222132/download",
+      "file_size": 4495,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "boot",
+      "car",
+      "dplyr",
+      "geosphere",
+      "lme4",
+      "lubridate",
+      "magrittr",
+      "maps",
+      "maptools",
+      "multcomp",
+      "purrr",
+      "scales",
+      "viridis"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

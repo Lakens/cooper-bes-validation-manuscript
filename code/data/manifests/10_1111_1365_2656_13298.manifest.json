@@ -1,0 +1,167 @@
+{
+  "paper_id": "10_1111_1365_2656_13298",
+  "generated": "2026-09-10T03:05:50+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:05:50+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "CatfishMetadata.xlsx",
+      "file_path": "CatfishMetadata.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397282/download",
+      "file_size": 11008,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CatfishPositions.rdata",
+      "file_path": "CatfishPositions.rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397288/download",
+      "file_size": 311367480,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "exceeds max_file_size (100 MB): skipped by the per-file cap",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "CatfishWaterParameters.rdata",
+      "file_path": "CatfishWaterParameters.rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397290/download",
+      "file_size": 1455612,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CatfishWeatherData.Rdata",
+      "file_path": "CatfishWeatherData.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397289/download",
+      "file_size": 1096598,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Hydrophones.csv",
+      "file_path": "Hydrophones.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397281/download",
+      "file_size": 563,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PikeEnvironmentalData.rdata",
+      "file_path": "PikeEnvironmentalData.rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397284/download",
+      "file_size": 459915,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PikeMetaData.csv",
+      "file_path": "PikeMetaData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397283/download",
+      "file_size": 21402,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PikePositions.rdata",
+      "file_path": "PikePositions.rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397287/download",
+      "file_size": 178071053,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "exceeds max_file_size (100 MB): skipped by the per-file cap",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PikeReproductiveData.Rdata",
+      "file_path": "PikeReproductiveData.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397285/download",
+      "file_size": 3245,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ReadMe.txt",
+      "file_path": "ReadMe.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397291/download",
+      "file_size": 17763,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "shoreline.shp",
+      "file_path": "shoreline.shp",
+      "repo_url": "https://doi.org/10.5061/dryad.95x69p8h1",
+      "file_url": "https://datadryad.org/api/v2/files/397286/download",
+      "file_size": 1868,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

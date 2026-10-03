@@ -1,0 +1,10 @@
+structure(list(method = "POST", url = "https://pubpeer.com/v3/publications?devkey=PubPeerZotero", 
+    status_code = 422L, headers = structure(list(server = "nginx", 
+        `content-type` = "application/json", `access-control-allow-origin` = "*", 
+        `access-control-allow-headers` = "Content-Type,X-Auth-Token,Authorization,Origin,x-csrf-token,x-requested-with", 
+        `access-control-allow-methods` = "POST,PUT", `cache-control` = "no-cache, private", 
+        date = "Tue, 12 May 2026 20:23:20 GMT", `x-ratelimit-limit` = "20", 
+        `x-ratelimit-remaining` = "14", via = "1.1 google", `alt-svc` = "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"), class = "httr2_headers"), 
+    body = charToRaw("{\"errors\":{\"dois\":[\"The dois field is required when none of pmids \\/ issns are present.\"],\"pmids\":[\"The pmids field is required when none of dois \\/ issns are present.\"],\"issns\":[\"The issns field is required when none of dois \\/ pmids are present.\"]},\"status\":\"bad\"}"), 
+    timing = c(redirect = 0, namelookup = 0, connect = 0, pretransfer = 0.000139, 
+    starttransfer = 0.11845, total = 0.119124), cache = new.env(parent = emptyenv())), class = "httr2_response")

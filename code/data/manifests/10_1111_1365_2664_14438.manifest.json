@@ -1,0 +1,143 @@
+{
+  "paper_id": "10_1111_1365_2664_14438",
+  "generated": "2026-09-10T04:09:18+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:09:18+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 4,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "1._Hounslow_BRTs_GLMMs.R",
+      "file_path": "1._Hounslow_BRTs_GLMMs.R",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305250/download",
+      "file_size": 17494,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2._Hounslow_Dive_Geolocation_KUD.R",
+      "file_path": "2._Hounslow_Dive_Geolocation_KUD.R",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305249/download",
+      "file_size": 29619,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DF.csv",
+      "file_path": "DF.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305245/download",
+      "file_size": 1927549,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Foraging.zip",
+      "file_path": "Foraging.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305248/download",
+      "file_size": 231550,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305298/download",
+      "file_size": 4684,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Resting.zip",
+      "file_path": "Resting.zip",
+      "repo_url": "https://doi.org/10.5061/dryad.7wm37pvzb",
+      "file_url": "https://datadryad.org/api/v2/files/2305247/download",
+      "file_size": 197218,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "adehabitatHR",
+      "caret",
+      "data.table",
+      "dismo",
+      "dplyr",
+      "ggeffects",
+      "ggplot2",
+      "glmmTMB",
+      "gridExtra",
+      "MetBrewer",
+      "MuMIn",
+      "nlme",
+      "pROC",
+      "raster",
+      "rgdal",
+      "SDLfilter",
+      "sjPlot",
+      "sp",
+      "tidyverse",
+      "TrackReconstruction"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

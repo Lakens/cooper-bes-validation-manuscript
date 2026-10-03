@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2664_13530",
+  "generated": "2026-09-10T03:34:39+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:34:39+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "bfly_species_matrix.csv",
+      "file_path": "bfly_species_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180836/download",
+      "file_size": 8303,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "bird_species_matrix.csv",
+      "file_path": "bird_species_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180837/download",
+      "file_size": 11471,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "covariates_matrix.csv",
+      "file_path": "covariates_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180838/download",
+      "file_size": 4881,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "habitat_matrix.csv",
+      "file_path": "habitat_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180839/download",
+      "file_size": 10803,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "landcomp_matrix.csv",
+      "file_path": "landcomp_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180840/download",
+      "file_size": 5104,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ReadMe.txt",
+      "file_path": "ReadMe.txt",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180841/download",
+      "file_size": 9114,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "rept_species_matrix.csv",
+      "file_path": "rept_species_matrix.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180842/download",
+      "file_size": 4469,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species_codes_all_taxa.csv",
+      "file_path": "species_codes_all_taxa.csv",
+      "repo_url": "://doi.org/10.5061/dryad.bnzs7h464",
+      "file_url": "https://datadryad.org/api/v2/files/180843/download",
+      "file_size": 19154,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

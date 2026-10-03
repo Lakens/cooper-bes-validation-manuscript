@@ -1,0 +1,177 @@
+test_that(".onLoad", {
+  op.defaults <- c(
+    metacheck.verbose = TRUE,
+    metacheck.llm_max_calls = 30L,
+    metacheck.llm.use = FALSE,
+    metacheck.llm.model = "groq",
+    metacheck.osf.delay = 0,
+    metacheck.osf.api = "https://api.osf.io/v2",
+    metacheck.osf.api.calls = 0
+  )
+
+  # op.current <- names(op.defaults) |> sapply(getOption)
+  names(op.defaults) |> sapply(\(o) options(setNames(list(NULL), o)))
+  op.null <- names(op.defaults) |> sapply(getOption)
+  expect_true(sapply(op.null, is.null) |> all())
+
+  metacheck:::.onLoad()
+  op.reset <- names(op.defaults) |> sapply(getOption)
+  expect_false(sapply(op.reset, is.null) |> any())
+  expect_equal(op.reset, op.defaults)
+})
+
+test_that(".onAttach", {
+  op <- capture_message(metacheck:::.onAttach())
+  expect_true(grepl("Welcome to metacheck", op))
+  expect_true(grepl("This is beta software", op))
+})
+
+
+test_that("llm_use", {
+  withr::defer(llm_use(FALSE))
+  expect_true(is.function(metacheck::llm_use))
+  expect_no_error(helplist <- help(llm_use, metacheck))
+
+  expect_error(llm_use("G"))
+  expect_invisible(llm_use(TRUE))
+  expect_visible(llm_use())
+
+  expect_equal(llm_use(FALSE), FALSE)
+  expect_equal(llm_use(), FALSE)
+  expect_equal(llm_use(TRUE), TRUE)
+  expect_equal(getOption("metacheck.llm.use"), TRUE)
+  expect_equal(llm_use(0), FALSE)
+  expect_equal(llm_use("FALSE"), FALSE)
+
+  # llm_use() only true if online & API
+  llm_use(1)
+  expect_equal(getOption("metacheck.llm.use"), TRUE)
+  llm_use("TRUE")
+  expect_equal(getOption("metacheck.llm.use"), TRUE)
+})
+
+test_that("email", {
+  orig <- email()
+  e <- "debruine@gmail.com"
+  expect_invisible(email(email = e))
+  expect_error(email("email"))
+  expect_equal(email(), e)
+  expect_equal(email(email = e), e)
+  expect_equal(email(), e)
+  expect_visible(email())
+  email(orig)
+})
+
+
+test_that(".batch_query", {
+  expect_true(is.function(metacheck:::.batch_query))
+
+  expect_error(.batch_query())
+
+  urls <- c()
+  obs <- .batch_query(urls)
+  exp <- list()
+  expect_equal(obs, exp)
+
+  urls <- "notawebsite"
+  expect_warning(obs <- .batch_query(urls), "notawebsite")
+
+  # skip_api("httpbin.org")
+
+  urls <- "https://httpbin.org/get"
+  obs <- .batch_query(urls)
+  expect_equal(length(obs), 1)
+
+  urls <- c("https://httpbin.org/status/429",
+            "https://httpbin.org/status/404",
+            "https://httpbin.org/status/200")
+  batch_size <- 2
+  msg <- "X"
+  delay = 0
+  obs <- .batch_query(urls, batch_size, msg, delay)
+  expect_equal(length(obs), 3)
+  expect_equal(obs[[1]]$status_code, 429)
+  expect_equal(obs[[2]]$status_code, 404)
+  expect_equal(obs[[3]]$status_code, 200)
+}, "mock")
+
+test_that(".batch_query sets a per-request timeout, default and overridden", {
+  # Regression test for a real production hang (confirmed live 2026-09-07,
+  # Cooper corpus rerun): req_perform_sequential() has no timeout of its own,
+  # so a connection the remote accepts but then stalls on (no error, no
+  # close, just silence) blocks forever. This is the shared query helper
+  # behind every repository/API integration in the package (OSF, Dataverse,
+  # Dryad, Figshare, Zenodo, Crossref, ...) -- the actual hang was
+  # zenodo_info()'s call here, stuck over an hour on one Zenodo record lookup.
+  captured <- NULL
+  local_mocked_bindings(
+    req_perform_sequential = function(reqs, ...) {
+      captured <<- reqs
+      stop("stop before any real request -- only inspecting req$options")
+    },
+    .package = "httr2"
+  )
+
+  tryCatch(.batch_query("https://example.org/a"), error = function(e) NULL)
+  expect_equal(captured[[1]]$options$timeout_ms, 60000)  # 60s default
+
+  tryCatch(.batch_query("https://example.org/a", timeout_s = 5),
+          error = function(e) NULL)
+  expect_equal(captured[[1]]$options$timeout_ms, 5000)
+})
+
+
+test_that(".batch_query normalizes a connection-level failure to NULL", {
+  # Regression test for a real crash (confirmed live 2026-09-16, Cooper
+  # corpus rerun / 4TU DOI investigation): req_error(is_error = \(resp) FALSE)
+  # only suppresses errors on a real HTTP status, not a connection-level
+  # failure (timeout, DNS, dropped connection). req_perform_sequential's
+  # on_error = "continue" still returns something for that slot, but an
+  # httr2_failure condition object rather than an httr2_response -- and
+  # every archive-*.R caller (dryad_info, figshare_info, dataverse_info,
+  # mendeley_info, dataone_info, gitlab_info, reshare_info, ...) checks only
+  # is.null(resp) before calling httr2::resp_status(resp), which errors
+  # ("resp must be an HTTP response object") on an httr2_failure. This
+  # normalizes any non-response result to NULL here, once, so every
+  # existing is.null(resp) check downstream already does the right thing.
+  failure <- structure(
+    list(message = "Failed to connect"),
+    class = c("httr2_failure", "error", "condition")
+  )
+  local_mocked_bindings(
+    req_perform_sequential = function(reqs, ...) list(failure),
+    .package = "httr2"
+  )
+
+  obs <- .batch_query("https://example.org/a")
+  expect_equal(obs, list(NULL))
+})
+
+
+test_that("path_sanitize", {
+  expect_true(is.function(metacheck::path_sanitize))
+  expect_no_error(helplist <- help(path_sanitize, metacheck))
+
+  expect_error(path_sanitize())
+
+  # defaults
+  path <- " has/ spaces/\\backslashes/><|?chars/.dot.is.ok "
+  obs <- path_sanitize(path)
+  exp <- "has/_spaces/_backslashes/_chars/.dot.is.ok"
+  expect_equal(exp, obs)
+
+  # replacement
+  obs <- path_sanitize(path, replacement = "~")
+  exp <- "has/~spaces/~backslashes/~chars/.dot.is.ok"
+  expect_equal(exp, obs)
+
+  # remove_whitespace
+  obs <- path_sanitize(path, remove_whitespace = FALSE)
+  exp <- "has/ spaces/_backslashes/_chars/.dot.is.ok"
+  expect_equal(exp, obs)
+
+  # keep_sep
+  obs <- path_sanitize(path, keep_sep = FALSE)
+  exp <- "has_spaces_backslashes_chars_.dot.is.ok"
+  expect_equal(exp, obs)
+})

@@ -1,0 +1,270 @@
+{
+  "paper_id": "10_1111_1365_2664_13854",
+  "generated": "2026-09-10T03:54:42+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:54:42+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 18,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 16,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.CPG",
+      "file_path": "baringo_subloc_prosopis_invasion_year.CPG",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903193/download",
+      "file_size": 5,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.dbf",
+      "file_path": "baringo_subloc_prosopis_invasion_year.dbf",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903202/download",
+      "file_size": 5769523,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.prj",
+      "file_path": "baringo_subloc_prosopis_invasion_year.prj",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903195/download",
+      "file_size": 392,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.sbn",
+      "file_path": "baringo_subloc_prosopis_invasion_year.sbn",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903196/download",
+      "file_size": 2217252,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.sbx",
+      "file_path": "baringo_subloc_prosopis_invasion_year.sbx",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903197/download",
+      "file_size": 108900,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.shp",
+      "file_path": "baringo_subloc_prosopis_invasion_year.shp",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903203/download",
+      "file_size": 43189412,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.shp.xml",
+      "file_path": "baringo_subloc_prosopis_invasion_year.shp.xml",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903199/download",
+      "file_size": 27335,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "baringo_subloc_prosopis_invasion_year.shx",
+      "file_path": "baringo_subloc_prosopis_invasion_year.shx",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903200/download",
+      "file_size": 1846316,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Eschen_ProsopisInvasionsince_readme.txt",
+      "file_path": "Eschen_ProsopisInvasionsince_readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903201/download",
+      "file_size": 4510,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Eschen_ProsopisMgmtScenarios_readme.txt",
+      "file_path": "Eschen_ProsopisMgmtScenarios_readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903186/download",
+      "file_size": 5845,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.CPG",
+      "file_path": "sublocations_mgmt_scenarios.CPG",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903188/download",
+      "file_size": 5,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.dbf",
+      "file_path": "sublocations_mgmt_scenarios.dbf",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903194/download",
+      "file_size": 3661007,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.prj",
+      "file_path": "sublocations_mgmt_scenarios.prj",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903187/download",
+      "file_size": 392,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.sbn",
+      "file_path": "sublocations_mgmt_scenarios.sbn",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903190/download",
+      "file_size": 524516,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.sbx",
+      "file_path": "sublocations_mgmt_scenarios.sbx",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903189/download",
+      "file_size": 22004,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.shp",
+      "file_path": "sublocations_mgmt_scenarios.shp",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903198/download",
+      "file_size": 9952836,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.shp.xml",
+      "file_path": "sublocations_mgmt_scenarios.shp.xml",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903191/download",
+      "file_size": 38982,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "sublocations_mgmt_scenarios.shx",
+      "file_path": "sublocations_mgmt_scenarios.shx",
+      "repo_url": "https://doi.org/10.5061/dryad.4xgxd258c",
+      "file_url": "https://datadryad.org/api/v2/files/903192/download",
+      "file_size": 437212,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

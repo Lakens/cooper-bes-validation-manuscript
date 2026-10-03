@@ -1,0 +1,92 @@
+{
+  "paper_id": "10_1111_1365_2664_13229",
+  "generated": "2026-09-10T03:28:22+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:28:22+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 3,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "meta-analysis - data.csv",
+      "file_path": "meta-analysis - data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.5nn3hf3",
+      "file_url": "https://datadryad.org/api/v2/files/53024/download",
+      "file_size": 15637,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "meta-analysis.R",
+      "file_path": "meta-analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.5nn3hf3",
+      "file_url": "https://datadryad.org/api/v2/files/53026/download",
+      "file_size": 20137,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_for_meta-analysis - data.txt",
+      "file_path": "README_for_meta-analysis - data.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.5nn3hf3",
+      "file_url": "https://datadryad.org/api/v2/files/53025/download",
+      "file_size": 4127,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "cowplot",
+      "data.table",
+      "effects",
+      "ggplot2",
+      "metafor",
+      "MuMIn",
+      "nlme",
+      "scales"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

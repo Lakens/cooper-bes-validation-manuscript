@@ -1,0 +1,263 @@
+{
+  "paper_id": "10_1111_1365_2745_14079",
+  "generated": "2026-09-10T05:13:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:13:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 17,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "SA_Matrix.txt",
+      "file_path": "SA_Matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972563",
+      "file_size": 179439,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "STAw_Matrix.txt",
+      "file_path": "STAw_Matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972581",
+      "file_size": 12657,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AFH_matrix.txt",
+      "file_path": "AFH_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/38024784",
+      "file_size": 1916,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TD_matrix.txt",
+      "file_path": "TD_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972545",
+      "file_size": 1207,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TD_GSFS_Matrix.txt",
+      "file_path": "TD_GSFS_Matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/38024787",
+      "file_size": 1985,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CT_matrix.txt",
+      "file_path": "CT_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972554",
+      "file_size": 4255,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "T_matrix.txt",
+      "file_path": "T_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972587",
+      "file_size": 3997,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FS_Matrix.txt",
+      "file_path": "FS_Matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972560",
+      "file_size": 6767,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Connectivity_matrix.txt",
+      "file_path": "Connectivity_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972551",
+      "file_size": 2737,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Temporal_dynamics_connectivity_matrix.txt",
+      "file_path": "Temporal_dynamics_connectivity_matrix.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972548",
+      "file_size": 3298,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Data_REG.txt",
+      "file_path": "Data_REG.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/34939944",
+      "file_size": 12232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Script_TD.R",
+      "file_path": "Script_TD.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/34940538",
+      "file_size": 1267,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Script_TD_GSFS.R",
+      "file_path": "Script_TD_GSFS.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/38024706",
+      "file_size": 3449,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Script_CT.R",
+      "file_path": "Script_CT.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/33972566",
+      "file_size": 6358,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Script_FS.R",
+      "file_path": "Script_FS.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/34939989",
+      "file_size": 3091,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Script_REG.R",
+      "file_path": "Script_REG.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/38024793",
+      "file_size": 19278,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Script_REG_DoC_included.R",
+      "file_path": "Script_REG_DoC_included.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19122410.v1",
+      "file_url": "https://ndownloader.figshare.com/files/38024796",
+      "file_size": 22437,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "data.table",
+      "FD",
+      "ggplot2",
+      "MASS",
+      "MuMIn",
+      "ncf",
+      "picante",
+      "plyr",
+      "reshape",
+      "reshape2",
+      "rsq",
+      "RVAideMemoire",
+      "tidyr",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

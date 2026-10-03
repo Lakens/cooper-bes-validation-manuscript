@@ -1,0 +1,238 @@
+{
+  "paper_id": "10_1111_1365_2435_14016",
+  "generated": "2026-09-10T02:18:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:18:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 15,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "2021_0830_NeonicNSMs_AllCode.R",
+      "file_path": "2021_0830_NeonicNSMs_AllCode.R",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584799",
+      "file_size": 100023,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2021_0811_compounds_effsizes.csv",
+      "file_path": "2021_0811_compounds_effsizes.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584802",
+      "file_size": 1121,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0728_NeonicNSM_metadata.xlsx",
+      "file_path": "2021_0728_NeonicNSM_metadata.xlsx",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584805",
+      "file_size": 16601,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_dig_predose.csv",
+      "file_path": "2021_0121_dig_predose.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584808",
+      "file_size": 9614,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_thy_predose.csv",
+      "file_path": "2021_0121_thy_predose.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584811",
+      "file_size": 17268,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0125_compounds_coldeliv.csv",
+      "file_path": "2021_0125_compounds_coldeliv.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584814",
+      "file_size": 155,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_caf_predose.csv",
+      "file_path": "2021_0121_caf_predose.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584817",
+      "file_size": 16539,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_thy_surv.csv",
+      "file_path": "2021_0121_thy_surv.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584820",
+      "file_size": 17827,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_caf_surv.csv",
+      "file_path": "2021_0121_caf_surv.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584823",
+      "file_size": 23770,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_dig_surv.csv",
+      "file_path": "2021_0121_dig_surv.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584826",
+      "file_size": 38359,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_dig_po.csv",
+      "file_path": "2021_0121_dig_po.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584829",
+      "file_size": 21612,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_thy_po.csv",
+      "file_path": "2021_0121_thy_po.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584832",
+      "file_size": 22647,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_caf_po.csv",
+      "file_path": "2021_0121_caf_po.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584835",
+      "file_size": 12023,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_dig_bvr.csv",
+      "file_path": "2021_0121_dig_bvr.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584838",
+      "file_size": 22248,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_thy_bvr.csv",
+      "file_path": "2021_0121_thy_bvr.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584841",
+      "file_size": 27562,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2021_0121_caf_bvr.csv",
+      "file_path": "2021_0121_caf_bvr.csv",
+      "repo_url": "https://figshare.com/articles/dataset/Data_and_code_for_A_neonicotinoid_pesticide_alt.ers_how_nectar_chemistry_affects_bees/16543620",
+      "file_url": "https://ndownloader.figshare.com/files/30584844",
+      "file_size": 28154,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "dotwhisker",
+      "ggpubr",
+      "glmmTMB",
+      "gridExtra",
+      "jtools",
+      "lme4",
+      "openxlsx",
+      "phia",
+      "pscl",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

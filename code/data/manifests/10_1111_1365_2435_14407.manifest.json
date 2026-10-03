@@ -1,0 +1,129 @@
+{
+  "paper_id": "10_1111_1365_2435_14407",
+  "generated": "2026-09-10T02:23:20+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:23:20+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 4,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Rscript.Rmd",
+      "file_path": "Rscript.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.8146469",
+      "file_url": "https://zenodo.org/api/records/8146469/files/Rscript.Rmd/content",
+      "file_size": 29753,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Niphargus_morpho_data.xlsx",
+      "file_path": "Niphargus_morpho_data.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.8146469",
+      "file_url": "https://zenodo.org/api/records/8146469/files/Niphargus_morpho_data.xlsx/content",
+      "file_size": 44656,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Rscript.html",
+      "file_path": "Rscript.html",
+      "repo_url": "https://doi.org/10.5281/zenodo.8146469",
+      "file_url": "https://zenodo.org/api/records/8146469/files/Rscript.html/content",
+      "file_size": 1777952,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Niphargus_tree.nex",
+      "file_path": "Niphargus_tree.nex",
+      "repo_url": "https://doi.org/10.5281/zenodo.8146469",
+      "file_url": "https://zenodo.org/api/records/8146469/files/Niphargus_tree.nex/content",
+      "file_size": 419383,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Reproducibility_report.doc",
+      "file_path": "Reproducibility_report.doc",
+      "repo_url": "https://doi.org/10.5281/zenodo.8146469",
+      "file_url": "https://zenodo.org/api/records/8146469/files/Reproducibility_report.doc/content",
+      "file_size": 21048,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "BAT",
+      "car",
+      "dplyr",
+      "ellipse",
+      "ggplot2",
+      "ggtree",
+      "knitr",
+      "mvMORPH",
+      "phylolm",
+      "phytools",
+      "readxl",
+      "reshape2",
+      "scales",
+      "sensiPhy",
+      "stringr",
+      "tibble",
+      "tidyr"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

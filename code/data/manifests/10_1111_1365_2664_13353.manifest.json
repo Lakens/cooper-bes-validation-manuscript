@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2664_13353",
+  "generated": "2026-09-10T03:29:48+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:29:48+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "2018-12-07_fecundity_Pjap_marigold.txt",
+      "file_path": "2018-12-07_fecundity_Pjap_marigold.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81263/download",
+      "file_size": 287,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2018-12-07_longevity_Pjap_marigold.txt",
+      "file_path": "2018-12-07_longevity_Pjap_marigold.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81264/download",
+      "file_size": 446,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Flight_mill.txt",
+      "file_path": "Flight_mill.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81265/download",
+      "file_size": 3806,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "METADATA_files_index_ legends.txt",
+      "file_path": "METADATA_files_index_ legends.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81258/download",
+      "file_size": 4047,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Olfactometre.txt",
+      "file_path": "Olfactometre.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81266/download",
+      "file_size": 298,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OR2013-2014.txt",
+      "file_path": "OR2013-2014.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81259/download",
+      "file_size": 195649,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OR2015.txt",
+      "file_path": "OR2015.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81260/download",
+      "file_size": 16279,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OR2016.txt",
+      "file_path": "OR2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81261/download",
+      "file_size": 76855,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wind_tunnel.txt",
+      "file_path": "Wind_tunnel.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81267/download",
+      "file_size": 6316,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Yield2016.txt",
+      "file_path": "Yield2016.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.dt1h407",
+      "file_url": "https://datadryad.org/api/v2/files/81262/download",
+      "file_size": 267,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

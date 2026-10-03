@@ -1,0 +1,141 @@
+{
+  "paper_id": "10_1111_1365_2656_12640",
+  "generated": "2026-09-10T02:29:05+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:29:05+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "arrival_early_late.R",
+      "file_path": "arrival_early_late.R",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34678/download",
+      "file_size": 23454,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "arrival.csv",
+      "file_path": "arrival.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34672/download",
+      "file_size": 14207,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "arrorder.csv",
+      "file_path": "arrorder.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34677/download",
+      "file_size": 13139,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "population.csv",
+      "file_path": "population.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34676/download",
+      "file_size": 133039,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "replicates.csv",
+      "file_path": "replicates.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34675/download",
+      "file_size": 21593,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "swaps14.csv",
+      "file_path": "swaps14.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34673/download",
+      "file_size": 3789,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "swaps15.csv",
+      "file_path": "swaps15.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bs427",
+      "file_url": "https://datadryad.org/api/v2/files/34674/download",
+      "file_size": 4270,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "arm",
+      "Cairo",
+      "cowplot",
+      "ggplot2",
+      "grid",
+      "gridExtra",
+      "lme4",
+      "lmerTest",
+      "MASS",
+      "plyr",
+      "Rcpp",
+      "scales",
+      "survival"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "paper_id": "10_1111_1365_2664_14106",
+  "generated": "2026-09-10T04:04:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:04:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "ReadMe.txt",
+      "file_path": "ReadMe.txt",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/4e529936-5c46-4f29-b39a-bcc734f57a05",
+      "file_size": 8472,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Site_information.csv",
+      "file_path": "Site_information.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/b3986217-21bf-4b82-9062-5767f9f6ab32",
+      "file_size": 23935,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Sticky_Traps.csv",
+      "file_path": "Sticky_Traps.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/8fb95707-32d9-4d16-aad7-a583405ed42a",
+      "file_size": 8715,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Sweep_net.csv",
+      "file_path": "Sweep_net.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/83ea41ad-fef6-4789-a74b-bdb32498beee",
+      "file_size": 36886,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Land_use.csv",
+      "file_path": "Land_use.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/2aa3c8e3-77a3-4981-a070-680646bc4ec3",
+      "file_size": 103540,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Landscape_simple.csv",
+      "file_path": "Landscape_simple.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/59e080bf-6895-4d89-a487-02a57c1fc770",
+      "file_size": 2605,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PesticideTFI.csv",
+      "file_path": "PesticideTFI.csv",
+      "repo_url": "https://doi.org/10.4121/16617184",
+      "file_url": "https://data.4tu.nl/file/faaf1e6a-cf72-4a2e-a2d3-ced00f804fec/80dcf366-19e0-4160-84ec-090c36c44fd9",
+      "file_size": 2406,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

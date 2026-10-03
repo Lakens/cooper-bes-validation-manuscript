@@ -1,0 +1,285 @@
+{
+  "paper_id": "10_1111_1365_2656_13353",
+  "generated": "2026-09-10T03:06:40+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:06:40+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 14,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "experiments-cheetah_vs_impala.R",
+      "file_path": "experiments-cheetah_vs_impala.R",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415378/download",
+      "file_size": 2519,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "experiments-obstacles_and_refuges.R",
+      "file_path": "experiments-obstacles_and_refuges.R",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415379/download",
+      "file_size": 11312,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "global_sensitivity_analysis_1-calculate_mean_and_median_responses.R",
+      "file_path": "global_sensitivity_analysis_1-calculate_mean_and_median_responses.R",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415383/download",
+      "file_size": 149991,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "global_sensitivity_analysis_2-multisensi_sensitivity_analysis.R",
+      "file_path": "global_sensitivity_analysis_2-multisensi_sensitivity_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415382/download",
+      "file_size": 4282,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "global_sensitivity_analysis_3-examine_how_variation_in_individual_parameters_affects_model_responses.R",
+      "file_path": "global_sensitivity_analysis_3-examine_how_variation_in_individual_parameters_affects_model_responses.R",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415389/download",
+      "file_size": 26913,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Global_sensitivity_analysis-parameter_sampling_design.xlsx",
+      "file_path": "Global_sensitivity_analysis-parameter_sampling_design.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415240/download",
+      "file_size": 19898,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-cheetah_vs_impala-acacia_thicket.csv",
+      "file_path": "predator-prey-model-cheetah_vs_impala-acacia_thicket.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415385/download",
+      "file_size": 96589,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-cheetah_vs_impala-open_savanna.csv",
+      "file_path": "predator-prey-model-cheetah_vs_impala-open_savanna.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415386/download",
+      "file_size": 165548,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-parameter_sets_and_results-summarised.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-parameter_sets_and_results-summarised.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415384/download",
+      "file_size": 2417020,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-parameter_sets_and_results.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-parameter_sets_and_results.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415390/download",
+      "file_size": 228270644,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "exceeds max_file_size (100 MB): skipped by the per-file cap",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_001.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_001.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415243/download",
+      "file_size": 1707806,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_002.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_002.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415244/download",
+      "file_size": 3097129,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_003.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_003.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415245/download",
+      "file_size": 1703130,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_004.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_004.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415246/download",
+      "file_size": 1732755,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_005.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_005.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415248/download",
+      "file_size": 3132725,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_006.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_006.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415247/download",
+      "file_size": 1421324,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_007.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_007.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415249/download",
+      "file_size": 1419835,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_008.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_008.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415251/download",
+      "file_size": 2841388,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_009.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_009.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415250/download",
+      "file_size": 1673690,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "predator-prey-model-global_sensitivity_analysis-PS_010.csv",
+      "file_path": "predator-prey-model-global_sensitivity_analysis-PS_010.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmkm",
+      "file_url": "https://datadryad.org/api/v2/files/415252/download",
+      "file_size": 3117034,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "multisensi",
+      "plot3D",
+      "reshape2",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

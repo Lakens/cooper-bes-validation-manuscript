@@ -1,0 +1,106 @@
+{
+  "paper_id": "10_1111_1365_2435_14383",
+  "generated": "2026-09-10T02:23:16+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:23:16+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "OrdTJ_FE-2023-00099_nestfeatures_dat.csv",
+      "file_path": "OrdTJ_FE-2023-00099_nestfeatures_dat.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315382/download",
+      "file_size": 20808,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OrdTJ_FE-2023-00099_rainfall_dat.csv",
+      "file_path": "OrdTJ_FE-2023-00099_rainfall_dat.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315378/download",
+      "file_size": 329,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OrdTJ_FE-2023-00099_spatialboundary_dat.csv",
+      "file_path": "OrdTJ_FE-2023-00099_spatialboundary_dat.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315379/download",
+      "file_size": 1300,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OrdTJ_FE-2023-00099_spatialnest_dat.csv",
+      "file_path": "OrdTJ_FE-2023-00099_spatialnest_dat.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315380/download",
+      "file_size": 20321,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_file_Ord_FE-2023-00099.rtf",
+      "file_path": "README_file_Ord_FE-2023-00099.rtf",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315381/download",
+      "file_size": 5512,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.n8pk0p31n",
+      "file_url": "https://datadryad.org/api/v2/files/2315383/download",
+      "file_size": 4925,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "paper_id": "10_1111_1365_2745_13038",
+  "generated": "2026-09-10T05:00:28+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:00:28+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Caterpillar_Performance.xlsx",
+      "file_path": "Caterpillar_Performance.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43844/download",
+      "file_size": 14686,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CN_Plant_Tissue.xlsx",
+      "file_path": "CN_Plant_Tissue.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43845/download",
+      "file_size": 18842,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Nematode_Galls.xlsx",
+      "file_path": "Nematode_Galls.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43846/download",
+      "file_size": 23922,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Nicotine.xlsx",
+      "file_path": "Nicotine.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43847/download",
+      "file_size": 13065,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Plant_Biomass.xlsx",
+      "file_path": "Plant_Biomass.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43848/download",
+      "file_size": 24717,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Seed_Characterstics.xlsx",
+      "file_path": "Seed_Characterstics.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.7n89v8r",
+      "file_url": "https://datadryad.org/api/v2/files/43849/download",
+      "file_size": 13974,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

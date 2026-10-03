@@ -1,0 +1,180 @@
+{
+  "paper_id": "10_1111_1365_2656_13608",
+  "generated": "2026-09-10T03:11:08+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:11:08+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 9,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/.gitignore",
+      "file_size": 3445,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitmodules",
+      "file_path": ".gitmodules",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/.gitmodules",
+      "file_size": 114,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Main.R",
+      "file_path": "Main.R",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/Main.R",
+      "file_size": 13913,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/README.md",
+      "file_size": 793,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TempSwimSpeed.Rproj",
+      "file_path": "TempSwimSpeed.Rproj",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/TempSwimSpeed.Rproj",
+      "file_size": 217,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "TempSwimSpeedOptim.cpp",
+      "file_path": "TempSwimSpeedOptim.cpp",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/TempSwimSpeedOptim.cpp",
+      "file_size": 7299,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "TempSwimSpeedOptim.hpp",
+      "file_path": "TempSwimSpeedOptim/TempSwimSpeedOptim.hpp",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/TempSwimSpeedOptim/TempSwimSpeedOptim.hpp",
+      "file_size": 14433,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "UseTempSwimSpeedOptim.cpp",
+      "file_path": "TempSwimSpeedOptim/UseTempSwimSpeedOptim.cpp",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/TempSwimSpeedOptim/UseTempSwimSpeedOptim.cpp",
+      "file_size": 2863,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "shark_activity_functions.R",
+      "file_path": "shark_activity_functions.R",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/shark_activity_functions.R",
+      "file_size": 21213,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "shark_activity_plotfunctions.R",
+      "file_path": "shark_activity_plotfunctions.R",
+      "repo_url": "https://github.com/hmito/TempSwimSpeed",
+      "file_url": "https://raw.githubusercontent.com/hmito/TempSwimSpeed/master/shark_activity_plotfunctions.R",
+      "file_size": 12783,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "BH",
+      "hmRLib",
+      "Rcpp"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

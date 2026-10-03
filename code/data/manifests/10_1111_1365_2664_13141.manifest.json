@@ -1,0 +1,142 @@
+{
+  "paper_id": "10_1111_1365_2664_13141",
+  "generated": "2026-09-10T03:27:27+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:27:27+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "hy_counts_size_novn_MC294_11-15.csv",
+      "file_path": "hy_counts_size_novn_MC294_11-15.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44497/download",
+      "file_size": 3446,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "impact_values.csv",
+      "file_path": "impact_values.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44501/download",
+      "file_size": 2211,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "initial_impact_counts.csv",
+      "file_path": "initial_impact_counts.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44498/download",
+      "file_size": 3305,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "initial_size_simulations_100_170br.csv",
+      "file_path": "initial_size_simulations_100_170br.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44500/download",
+      "file_size": 61816,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "initial_size.csv",
+      "file_path": "initial_size.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44499/download",
+      "file_size": 1131,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Model_script.R",
+      "file_path": "Model_script.R",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44494/download",
+      "file_size": 21140,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "nh_counts_size_novn_MC294_11-15.csv",
+      "file_path": "nh_counts_size_novn_MC294_11-15.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44496/download",
+      "file_size": 4919,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nv_counts_size_novn_MC294_11-15.csv",
+      "file_path": "nv_counts_size_novn_MC294_11-15.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.2d0g778",
+      "file_url": "https://datadryad.org/api/v2/files/44495/download",
+      "file_size": 6351,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "fields",
+      "lme4",
+      "popbio"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

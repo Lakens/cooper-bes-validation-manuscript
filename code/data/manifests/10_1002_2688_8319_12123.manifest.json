@@ -1,0 +1,84 @@
+{
+  "paper_id": "10_1002_2688_8319_12123",
+  "generated": "2026-09-09T22:36:31+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:36:31+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 4,
+  "n_downloaded": 4,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Ferns__mainland_Uatuma_Zuquim_2012.csv",
+      "file_path": "Ferns__mainland_Uatuma_Zuquim_2012.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wstqjq2nq",
+      "file_url": "https://datadryad.org/api/v2/files/1207058/download",
+      "file_size": 130096,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Ferns_UHE_BALBINA_Brasil.csv",
+      "file_path": "Ferns_UHE_BALBINA_Brasil.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wstqjq2nq",
+      "file_url": "https://datadryad.org/api/v2/files/1207057/download",
+      "file_size": 17985,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Ferns_UHE_BALBINA_Brazil_predictors.csv",
+      "file_path": "Ferns_UHE_BALBINA_Brazil_predictors.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.wstqjq2nq",
+      "file_url": "https://datadryad.org/api/v2/files/1207056/download",
+      "file_size": 2513,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Ferns_UHE_BALBINA_Brazil.txt",
+      "file_path": "README_for_Ferns_UHE_BALBINA_Brazil.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.wstqjq2nq",
+      "file_url": "https://datadryad.org/api/v2/files/1207059/download",
+      "file_size": 1206,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

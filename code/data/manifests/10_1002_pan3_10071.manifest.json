@@ -1,0 +1,98 @@
+{
+  "paper_id": "10_1002_pan3_10071",
+  "generated": "2026-09-09T22:42:27+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-09T22:42:27+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 0,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "bowlerbear/harmonizeRasters-v1.1.zip",
+      "file_path": "bowlerbear/harmonizeRasters-v1.1.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3520136",
+      "file_url": "https://zenodo.org/api/records/3520136/files/bowlerbear/harmonizeRasters-v1.1.zip/content",
+      "file_size": 3367,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "bowlerbear/geographyDrivers-v1.0.zip",
+      "file_path": "bowlerbear/geographyDrivers-v1.0.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3520138",
+      "file_url": "https://zenodo.org/api/records/3520138/files/bowlerbear/geographyDrivers-v1.0.zip/content",
+      "file_size": 10300,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "circlize",
+      "cluster",
+      "cowplot",
+      "fpc",
+      "gdalUtils",
+      "ggplot2",
+      "gplots",
+      "gridExtra",
+      "lubridate",
+      "maps",
+      "maptools",
+      "ncdf4",
+      "ncf",
+      "plyr",
+      "raster",
+      "rasterVis",
+      "RColorBrewer",
+      "reshape2",
+      "rgdal",
+      "scales",
+      "spatial.tools",
+      "SpatialPack",
+      "zoo"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

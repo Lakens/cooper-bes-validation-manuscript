@@ -1,0 +1,133 @@
+{
+  "paper_id": "10_1111_1365_2656_14186",
+  "generated": "2026-09-10T03:19:01+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:19:01+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "RMBL_BB_global.csv",
+      "file_path": "RMBL_BB_global.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/M5KHA",
+      "file_url": "https://osf.io/download/htfx5/",
+      "provider": "osfstorage",
+      "file_size": 630203,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RMBL_BB_size_dist.csv",
+      "file_path": "RMBL_BB_size_dist.csv",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/M5KHA",
+      "file_url": "https://osf.io/download/bv6p8/",
+      "provider": "osfstorage",
+      "file_size": 45278,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RMBL BB size data manipulation 12MAR2024.R",
+      "file_path": "RMBL BB size data manipulation 12MAR2024.R",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/M5KHA",
+      "file_url": "https://osf.io/download/qnbc5/",
+      "provider": "osfstorage",
+      "file_size": 15176,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RMBL BB size figures 19MAR2024.R",
+      "file_path": "RMBL BB size figures 19MAR2024.R",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/M5KHA",
+      "file_url": "https://osf.io/download/dtw6s/",
+      "provider": "osfstorage",
+      "file_size": 26869,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RMBL BB size analysis 12MAR2024.R",
+      "file_path": "RMBL BB size analysis 12MAR2024.R",
+      "repo_url": "https://doi.org/10.17605/OSF.IO/M5KHA",
+      "file_url": "https://osf.io/download/hxmpj/",
+      "provider": "osfstorage",
+      "file_size": 70956,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bayestestR",
+      "brms",
+      "broom",
+      "broom.mixed",
+      "dplyr",
+      "ggdist",
+      "ggh4x",
+      "ggnewscale",
+      "ggpubr",
+      "ggridges",
+      "janitor",
+      "lubridate",
+      "modelr",
+      "moments",
+      "PearsonDS",
+      "scales",
+      "tidybayes",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

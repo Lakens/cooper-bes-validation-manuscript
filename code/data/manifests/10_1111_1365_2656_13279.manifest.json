@@ -1,0 +1,159 @@
+{
+  "paper_id": "10_1111_1365_2656_13279",
+  "generated": "2026-09-10T03:05:28+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:05:28+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 9,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 4,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "JAE_iButtons_UnderTile.zip",
+      "file_path": "JAE_iButtons_UnderTile.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_iButtons_UnderTile.zip/content",
+      "file_size": 425995,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "JAE_Meteo.csv",
+      "file_path": "JAE_Meteo.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Meteo.csv/content",
+      "file_size": 513635,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "script_nichemapper_Rozen-Rechelsetal_JAE.R",
+      "file_path": "script_nichemapper_Rozen-Rechelsetal_JAE.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/script_nichemapper_Rozen-Rechelsetal_JAE.R/content",
+      "file_size": 18503,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "JAE_Behavior.csv",
+      "file_path": "JAE_Behavior.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Behavior.csv/content",
+      "file_size": 423597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_HOBOS.zip",
+      "file_path": "JAE_HOBOS.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_HOBOS.zip/content",
+      "file_size": 1749718,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "JAE_iButtons_Shelter.zip",
+      "file_path": "JAE_iButtons_Shelter.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_iButtons_Shelter.zip/content",
+      "file_size": 456337,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_JAE2020.txt",
+      "file_path": "README_JAE2020.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/README_JAE2020.txt/content",
+      "file_size": 3769,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_Tprefs.csv",
+      "file_path": "JAE_Tprefs.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Tprefs.csv/content",
+      "file_size": 39344,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_IndividualData.csv",
+      "file_path": "JAE_IndividualData.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_IndividualData.csv/content",
+      "file_size": 4288,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "lubridate",
+      "NicheMapR",
+      "xts"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

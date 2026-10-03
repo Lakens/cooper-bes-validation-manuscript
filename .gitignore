@@ -1,0 +1,43 @@
+.Rhistory
+.Rproj.user/
+.DS_Store
+Thumbs.db
+/manuscript/output/
+/manuscript/_quarto_output/
+manuscript/bes.rds
+manuscript/data/bes.rds
+# Same file, after the restructuring into code/ -- contains the full
+# extracted text of copyrighted papers, so it is never committed (see
+# manuscript.qmd's own `data` chunk comment: hosted as a private GitHub
+# Release asset instead, downloaded manually before rendering).
+code/data/bes.rds
+
+# Runtime caches from 01_run_metacheck.R and the reproducibility check
+# scripts: speed up a local rerun but are not needed to render the
+# manuscript itself, and can grow to tens of GB. Matched by **/ since
+# metacheck.cache.dir is set to different roots by different scripts
+# (code/data/, code/data/reproducibility_check/, ...), except the tiny
+# fixture under vendor/metacheck/tests/testthat/, which is real test
+# data bundled with the vendored package, not a download cache.
+**/.metacheck_repo_cache/
+**/.metacheck_repo_info_cache/
+**/.metacheck_llm_cache/
+**/.metacheck_zip_peek_cache/
+!code/data/reproducibility_check/vendor/metacheck/tests/testthat/.metacheck_repo_cache/
+
+# Per-batch checkpoint files from reproducibility_check/run_reproducibility_check.R:
+# intermediate, regenerable via resume, not the final combined result.
+/data/batches/
+
+# Per-batch checkpoint files from 01_run_metacheck.R (and
+# 02_run_open_practices_oddpub.R, sharing the same directory): only
+# needed to resume an interrupted run; duplicate essentially 1:1 with
+# the 3 final combined res_*_check.RData files once a run finishes, so
+# committing both doubles LFS storage for files nothing downstream
+# reads (the manuscript and comparison scripts only read the combined
+# files, never these).
+code/01_run_metacheck/batches/
+
+
+/.quarto/
+**/*.quarto_ipynb

@@ -1,0 +1,197 @@
+{
+  "paper_id": "10_1111_1365_2656_13488",
+  "generated": "2026-09-10T03:09:01+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:09:01+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "GDM Upload 20180412.R",
+      "file_path": "GDM Upload 20180412.R",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/707/download",
+      "file_size": 8960,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "GDM_TotalmodelOutput_1758snps.txt",
+      "file_path": "GDM_TotalmodelOutput_1758snps.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/711/download",
+      "file_size": 307963,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Ischnura_elegans_draftgenome_assemblyDec2015.fasta",
+      "file_path": "Ischnura_elegans_draftgenome_assemblyDec2015.fasta",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/703/download",
+      "file_size": 839204097,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Ischnura_elegans_draftgenomeDec2015.output.completeness_report",
+      "file_path": "Ischnura_elegans_draftgenomeDec2015.output.completeness_report",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/705/download",
+      "file_size": 1388,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Ischnura_elegans_draftgenomeDec2015.report",
+      "file_path": "Ischnura_elegans_draftgenomeDec2015.report",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/706/download",
+      "file_size": 6775,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Outlier_EAA_SNPs1758.txt",
+      "file_path": "Outlier_EAA_SNPs1758.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/714/download",
+      "file_size": 12752,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PlinkMap_datafile.map",
+      "file_path": "PlinkMap_datafile.map",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/710/download",
+      "file_size": 414461,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "popmap.csv",
+      "file_path": "popmap.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/713/download",
+      "file_size": 3339,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_for_Ischnura_elegans_draftgenome_assemblyDec2015.txt",
+      "file_path": "README_for_Ischnura_elegans_draftgenome_assemblyDec2015.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/704/download",
+      "file_size": 638,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SNP_datafile.gen",
+      "file_path": "SNP_datafile.gen",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/709/download",
+      "file_size": 29116666,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "SNPannotations.xlsx",
+      "file_path": "SNPannotations.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/712/download",
+      "file_size": 283485,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Upload1_EnvData.csv",
+      "file_path": "Upload1_EnvData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.8s449qb",
+      "file_url": "https://datadryad.org/api/v2/files/708/download",
+      "file_size": 1610,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "adegenet",
+      "data.table",
+      "gdm",
+      "hierfstat"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

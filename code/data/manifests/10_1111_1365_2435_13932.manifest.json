@@ -1,0 +1,198 @@
+{
+  "paper_id": "10_1111_1365_2435_13932",
+  "generated": "2026-09-10T02:12:22+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:12:22+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 14,
+  "n_downloaded": 12,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "datatomodel2.csv",
+      "file_path": "datatomodel2.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071911/download",
+      "file_size": 52624,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fullmodeloutput_2020-06-22.rds",
+      "file_path": "fullmodeloutput_2020-06-22.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071912/download",
+      "file_size": 1698448117,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "exceeds max_file_size (100 MB): skipped by the per-file cap",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "longtermoutput.rds",
+      "file_path": "longtermoutput.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071917/download",
+      "file_size": 167154087,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "exceeds max_file_size (100 MB): skipped by the per-file cap",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PARMS_2020-06-22.rds",
+      "file_path": "PARMS_2020-06-22.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071923/download",
+      "file_size": 68994740,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pbdata_modified.rds",
+      "file_path": "pbdata_modified.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071914/download",
+      "file_size": 48222,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pbdata.rds",
+      "file_path": "pbdata.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071913/download",
+      "file_size": 46252,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pbdataWE.rds",
+      "file_path": "pbdataWE.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071915/download",
+      "file_size": 6385,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RDAdata.rds",
+      "file_path": "RDAdata.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071916/download",
+      "file_size": 69893,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RDAWdata.rds",
+      "file_path": "RDAWdata.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071918/download",
+      "file_size": 13819,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "schema.csv",
+      "file_path": "schema.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1072372/download",
+      "file_size": 15064,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "selected_runs_2020-06-22.csv",
+      "file_path": "selected_runs_2020-06-22.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071919/download",
+      "file_size": 1973,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SOAL2017.rds",
+      "file_path": "SOAL2017.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071920/download",
+      "file_size": 23344,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "wormdata2.rds",
+      "file_path": "wormdata2.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071921/download",
+      "file_size": 112163,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "wormWE.rds",
+      "file_path": "wormWE.rds",
+      "repo_url": "https://doi.org/10.5061/dryad.t76hdr824",
+      "file_url": "https://datadryad.org/api/v2/files/1071922/download",
+      "file_size": 18886,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

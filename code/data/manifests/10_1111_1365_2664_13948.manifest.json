@@ -1,0 +1,403 @@
+{
+  "paper_id": "10_1111_1365_2664_13948",
+  "generated": "2026-09-10T04:01:16+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:01:16+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 29,
+  "n_downloaded": 13,
+  "not_downloaded": {
+    "intentional_n": 16,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".Rbuildignore",
+      "file_path": ".Rbuildignore",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/.Rbuildignore",
+      "file_size": 34,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/.gitignore",
+      "file_size": 12,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DESCRIPTION",
+      "file_path": "DESCRIPTION",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/DESCRIPTION",
+      "file_size": 969,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "NAMESPACE",
+      "file_path": "NAMESPACE",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/NAMESPACE",
+      "file_size": 100,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "computeFloralNesting.R",
+      "file_path": "R/computeFloralNesting.R",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/R/computeFloralNesting.R",
+      "file_size": 5926,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "growth.func.R",
+      "file_path": "R/growth.func.R",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/R/growth.func.R",
+      "file_size": 868,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "kerncalc.R",
+      "file_path": "R/kerncalc.R",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/R/kerncalc.R",
+      "file_size": 976,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "latfordisp.R",
+      "file_path": "R/latfordisp.R",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/R/latfordisp.R",
+      "file_size": 2344,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "runpoll_3seasons.R",
+      "file_path": "R/runpoll_3seasons.R",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/R/runpoll_3seasons.R",
+      "file_size": 14715,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/README.md",
+      "file_size": 1272,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "flowermargins.rda",
+      "file_path": "data/flowermargins.rda",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/data/flowermargins.rda",
+      "file_size": 17382,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "grassmargins.rda",
+      "file_path": "data/grassmargins.rda",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/data/grassmargins.rda",
+      "file_size": 108369,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "landuse.rda",
+      "file_path": "data/landuse.rda",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/data/landuse.rda",
+      "file_size": 82572,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "parameters.rda",
+      "file_path": "data/parameters.rda",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/data/parameters.rda",
+      "file_size": 8151,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "computeFloralNesting.Rd",
+      "file_path": "man/computeFloralNesting.Rd",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/man/computeFloralNesting.Rd",
+      "file_size": 2825,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "growth.func.Rd",
+      "file_path": "man/growth.func.Rd",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/man/growth.func.Rd",
+      "file_size": 875,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "kerncalc.Rd",
+      "file_path": "man/kerncalc.Rd",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/man/kerncalc.Rd",
+      "file_size": 588,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "latfordisp.Rd",
+      "file_path": "man/latfordisp.Rd",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/man/latfordisp.Rd",
+      "file_size": 901,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "runpoll_3seasons.Rd",
+      "file_path": "man/runpoll_3seasons.Rd",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/man/runpoll_3seasons.Rd",
+      "file_size": 3262,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "poll4pop.Rproj",
+      "file_path": "poll4pop.Rproj",
+      "repo_url": "https://github.com/yclough/poll4pop",
+      "file_url": "https://raw.githubusercontent.com/yclough/poll4pop/master/poll4pop.Rproj",
+      "file_size": 414,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "yclough/poll4pop-v1.1.1.zip",
+      "file_path": "yclough/poll4pop-v1.1.1.zip",
+      "repo_url": "https://doi.org/10.5281/zenodo.4001015",
+      "file_url": "https://zenodo.org/api/records/4001015/files/yclough/poll4pop-v1.1.1.zip/content",
+      "file_size": 210276,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "attract.csv",
+      "file_path": "attract.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398410/download",
+      "file_size": 21665,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "av.csv",
+      "file_path": "av.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398409/download",
+      "file_size": 60,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "distances.csv",
+      "file_path": "distances.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398408/download",
+      "file_size": 177,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "floralCover.csv",
+      "file_path": "floralCover.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398411/download",
+      "file_size": 4966,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "growth.csv",
+      "file_path": "growth.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398412/download",
+      "file_size": 535,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "lfn.csv",
+      "file_path": "lfn.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398413/download",
+      "file_size": 745,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "poll_names.csv",
+      "file_path": "poll_names.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398414/download",
+      "file_size": 347,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TransectSurveyData.csv",
+      "file_path": "TransectSurveyData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.9cnp5hqfw",
+      "file_url": "https://datadryad.org/api/v2/files/398415/download",
+      "file_size": 72337,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "EBImage",
+      "plyr",
+      "raster"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "paper_id": "10_1111_1365_2664_14751",
+  "generated": "2026-09-10T04:12:28+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T04:12:28+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 19,
+  "n_downloaded": 13,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/README.md",
+      "file_size": 1993,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "baci_fencing.Rproj",
+      "file_path": "baci_fencing.Rproj",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/baci_fencing.Rproj",
+      "file_size": 205,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "mod_beta_mx.RDS",
+      "file_path": "data/output_data/mod_beta_mx.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/output_data/mod_beta_mx.RDS",
+      "file_size": 132,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mod_sp_dry.RDS",
+      "file_path": "data/output_data/mod_sp_dry.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/output_data/mod_sp_dry.RDS",
+      "file_size": 133,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mod_sp_rainy.RDS",
+      "file_path": "data/output_data/mod_sp_rainy.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/output_data/mod_sp_rainy.RDS",
+      "file_size": 133,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "before_after_recs.RDS",
+      "file_path": "data/processed_data/before_after_recs.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/processed_data/before_after_recs.RDS",
+      "file_size": 130,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "covariates.RDS",
+      "file_path": "data/processed_data/covariates.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/processed_data/covariates.RDS",
+      "file_size": 129,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "dat_mods_dry.RDS",
+      "file_path": "data/processed_data/dat_mods_dry.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/processed_data/dat_mods_dry.RDS",
+      "file_size": 129,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "dat_mods_rainy.RDS",
+      "file_path": "data/processed_data/dat_mods_rainy.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/processed_data/dat_mods_rainy.RDS",
+      "file_size": 129,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sum_ops.RDS",
+      "file_path": "data/processed_data/sum_ops.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/data/processed_data/sum_ops.RDS",
+      "file_size": 128,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "p_baci_animals.RDS",
+      "file_path": "figures/p_baci_animals.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/figures/p_baci_animals.RDS",
+      "file_size": 134,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "p_beta_linpred_veg.RDS",
+      "file_path": "figures/p_beta_linpred_veg.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/figures/p_beta_linpred_veg.RDS",
+      "file_size": 131,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "p_coeff_veg.RDS",
+      "file_path": "figures/p_coeff_veg.RDS",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/figures/p_coeff_veg.RDS",
+      "file_size": 132,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "p_linpreds_animals.rdata",
+      "file_path": "figures/p_linpreds_animals.rdata",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/figures/p_linpreds_animals.rdata",
+      "file_size": 9319465,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "01a_glmm_animals.R",
+      "file_path": "programs/01a_glmm_animals.R",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/programs/01a_glmm_animals.R",
+      "file_size": 5795,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "01b_glmm_veg.R",
+      "file_path": "programs/01b_glmm_veg.R",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/programs/01b_glmm_veg.R",
+      "file_size": 6579,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "02_baci_plots.R",
+      "file_path": "programs/02_baci_plots.R",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/programs/02_baci_plots.R",
+      "file_size": 2365,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "03_baci_preds.R",
+      "file_path": "programs/03_baci_preds.R",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/programs/03_baci_preds.R",
+      "file_size": 3547,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "04_diagnostics_ppc.Rmd",
+      "file_path": "programs/04_diagnostics_ppc.Rmd",
+      "repo_url": "https://github.com/julianavelez1/baci_fencing.git",
+      "file_url": "https://raw.githubusercontent.com/julianavelez1/baci_fencing/main/programs/04_diagnostics_ppc.Rmd",
+      "file_size": 1629,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bayesplot",
+      "brms",
+      "broom.mixed",
+      "dplyr",
+      "ggthemes",
+      "here",
+      "knitr",
+      "parallel",
+      "rstan",
+      "scales",
+      "tidybayes",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

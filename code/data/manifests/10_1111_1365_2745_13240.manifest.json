@@ -1,0 +1,64 @@
+{
+  "paper_id": "10_1111_1365_2745_13240",
+  "generated": "2026-09-10T05:01:19+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:01:19+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Fogelstrom_Ehrlen_2019.zip",
+      "file_path": "Fogelstrom_Ehrlen_2019.zip",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": "https://datadryad.org/api/v2/files/108655/download",
+      "file_size": 103834,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_for_Fogelstrom_Ehrlen_2019.pdf",
+      "file_path": "README_for_Fogelstrom_Ehrlen_2019.pdf",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": "https://datadryad.org/api/v2/files/108656/download",
+      "file_size": 61556,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

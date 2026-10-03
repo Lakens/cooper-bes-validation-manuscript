@@ -1,0 +1,139 @@
+{
+  "paper_id": "10_1111_1365_2656_13853",
+  "generated": "2026-09-10T03:14:01+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:14:01+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "supplementary_code.R",
+      "file_path": "supplementary_code.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.7333325",
+      "file_url": "https://zenodo.org/api/records/7333325/files/supplementary_code.R/content",
+      "file_size": 37602,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_file.docx",
+      "file_path": "README_file.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937635/download",
+      "file_size": 17045,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937641/download",
+      "file_size": 4100,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "supplementary_data1.csv",
+      "file_path": "supplementary_data1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937636/download",
+      "file_size": 18645,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "supplementary_data2.csv",
+      "file_path": "supplementary_data2.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937637/download",
+      "file_size": 13396,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "supplementary_data3.csv",
+      "file_path": "supplementary_data3.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937638/download",
+      "file_size": 727,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "supplementary_data4.csv",
+      "file_path": "supplementary_data4.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.tb2rbp047",
+      "file_url": "https://datadryad.org/api/v2/files/1937639/download",
+      "file_size": 121,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "corrplot",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "ggpubr",
+      "Hmsc",
+      "MASS",
+      "MRFcov",
+      "Rarefy",
+      "svglite",
+      "vegan"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

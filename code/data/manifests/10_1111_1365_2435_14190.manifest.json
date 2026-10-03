@@ -1,0 +1,150 @@
+{
+  "paper_id": "10_1111_1365_2435_14190",
+  "generated": "2026-09-10T02:19:40+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:19:40+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 10,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "all_heterochaelis.csv",
+      "file_path": "all_heterochaelis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757041/download",
+      "file_size": 24072,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "angle_df_merge.csv",
+      "file_path": "angle_df_merge.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757042/download",
+      "file_size": 62319,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "behavioral_transitions.csv",
+      "file_path": "behavioral_transitions.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757050/download",
+      "file_size": 60632,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "contest_pairings.csv",
+      "file_path": "contest_pairings.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757043/download",
+      "file_size": 4357,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "heterochaelis_morphology.csv",
+      "file_path": "heterochaelis_morphology.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757045/download",
+      "file_size": 3502,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "measurements.csv",
+      "file_path": "measurements.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757046/download",
+      "file_size": 2208,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.csv",
+      "file_path": "README.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757037/download",
+      "file_size": 8141,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "snap_maxes.csv",
+      "file_path": "snap_maxes.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757048/download",
+      "file_size": 4884,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "snap_measurements_merged.csv",
+      "file_path": "snap_measurements_merged.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757047/download",
+      "file_size": 75979,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "snap_measurements.csv",
+      "file_path": "snap_measurements.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qz612jmjx",
+      "file_url": "https://datadryad.org/api/v2/files/1757049/download",
+      "file_size": 83886,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

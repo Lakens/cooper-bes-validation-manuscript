@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2745_13803",
+  "generated": "2026-09-10T05:08:40+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:08:40+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Exp1_GasExchange.xlsx",
+      "file_path": "Exp1_GasExchange.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828307",
+      "file_size": 12433,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp1_GasExchange2.xlsx",
+      "file_path": "Exp1_GasExchange2.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828310",
+      "file_size": 38931,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp1_LeafWater.xlsx",
+      "file_path": "Exp1_LeafWater.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828313",
+      "file_size": 10577,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp1_Vegetative.xlsx",
+      "file_path": "Exp1_Vegetative.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828316",
+      "file_size": 13885,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp2_AllGasExchange_andLeafWater.xlsx",
+      "file_path": "Exp2_AllGasExchange_andLeafWater.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828319",
+      "file_size": 16060,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp2_Biomass.xlsx",
+      "file_path": "Exp2_Biomass.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828322",
+      "file_size": 13988,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp2_Nonstructural_Carbohydrates.xlsx",
+      "file_path": "Exp2_Nonstructural_Carbohydrates.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828325",
+      "file_size": 15480,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Exp3_Sapling_LeafProduction.xlsx",
+      "file_path": "Exp3_Sapling_LeafProduction.xlsx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.16649176",
+      "file_url": "https://ndownloader.figshare.com/files/30828328",
+      "file_size": 11202,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

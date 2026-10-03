@@ -1,0 +1,136 @@
+{
+  "paper_id": "10_1111_1365_2664_13888",
+  "generated": "2026-09-10T03:54:59+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:54:59+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "metadata.txt",
+      "file_path": "metadata.txt",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/6bb088fc-7f82-4c2b-9325-706c36d402e8",
+      "file_size": 2643,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "analysis_MarinDiaz_et_al_2021.R",
+      "file_path": "analysis_MarinDiaz_et_al_2021.R",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/66c5aa9c-832d-4b59-a1e9-5b5c1b2fc9b5",
+      "file_size": 43610,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "datavariablesclay38.csv",
+      "file_path": "datavariablesclay38.csv",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/5eee1db2-3a98-4227-95a5-721c1ef27fbe",
+      "file_size": 11680,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "datavariablessand.csv",
+      "file_path": "datavariablessand.csv",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/1e9643bd-c97b-42ac-abc8-c53108c634a7",
+      "file_size": 31001,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "datavolumeloss.csv",
+      "file_path": "datavolumeloss.csv",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/055eeee1-cf3d-4747-8f86-e585871e8fa2",
+      "file_size": 7099,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "elev_r.csv",
+      "file_path": "elev_r.csv",
+      "repo_url": "https://doi.org/10.4121/14199176",
+      "file_url": "https://data.4tu.nl/file/47b7934e-4790-4531-879a-b8087f91a1b0/dd014218-2b49-4abd-896f-1b30cd108d57",
+      "file_size": 5378,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "car",
+      "dplyr",
+      "drc",
+      "ggcorrplot",
+      "ggfortify",
+      "ggpubr",
+      "Hmisc",
+      "lattice",
+      "lme4",
+      "multcomp",
+      "multcompView",
+      "openxlsx",
+      "PairedData",
+      "PerformanceAnalytics",
+      "plotrix",
+      "reshape2",
+      "rlang",
+      "scales",
+      "tidyverse"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

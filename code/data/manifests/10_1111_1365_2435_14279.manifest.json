@@ -1,0 +1,128 @@
+{
+  "paper_id": "10_1111_1365_2435_14279",
+  "generated": "2026-09-10T02:21:26+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:21:26+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Broods.csv",
+      "file_path": "Broods.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053416/download",
+      "file_size": 2104,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FecunditySurv.csv",
+      "file_path": "FecunditySurv.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053417/download",
+      "file_size": 6892,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FemSurv.csv",
+      "file_path": "FemSurv.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053418/download",
+      "file_size": 5360,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MaleData.csv",
+      "file_path": "MaleData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053419/download",
+      "file_size": 17550,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MaleSurv.csv",
+      "file_path": "MaleSurv.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053420/download",
+      "file_size": 5046,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053422/download",
+      "file_size": 13963,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SpectraData.csv",
+      "file_path": "SpectraData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053423/download",
+      "file_size": 11821,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "SpermData.csv",
+      "file_path": "SpermData.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.dv41ns22x",
+      "file_url": "https://datadryad.org/api/v2/files/2053421/download",
+      "file_size": 6937,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

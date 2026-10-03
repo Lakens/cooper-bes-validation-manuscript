@@ -1,0 +1,117 @@
+{
+  "paper_id": "10_1111_1365_2745_14368",
+  "generated": "2026-09-10T05:14:58+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T05:14:58+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "beech_spatial.csv",
+      "file_path": "beech_spatial.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261682/download",
+      "file_size": 6438,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "beech_temporal.csv",
+      "file_path": "beech_temporal.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261681/download",
+      "file_size": 1308,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fir_spatial.csv",
+      "file_path": "fir_spatial.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261685/download",
+      "file_size": 6474,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fir_temporal.csv",
+      "file_path": "fir_temporal.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261686/download",
+      "file_size": 1387,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261674/download",
+      "file_size": 1281,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "spruce_spatial.csv",
+      "file_path": "spruce_spatial.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261683/download",
+      "file_size": 6459,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "spruce_temporal.csv",
+      "file_path": "spruce_temporal.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.kkwh70scg",
+      "file_url": "https://datadryad.org/api/v2/files/3261684/download",
+      "file_size": 1297,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

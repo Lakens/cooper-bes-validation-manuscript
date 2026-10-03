@@ -1,0 +1,161 @@
+{
+  "paper_id": "10_1002_2688_8319_12136",
+  "generated": "2026-09-10T09:50:07+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T09:50:07+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "1_What_makes_a_good_bat_box_box_occupancy.txt",
+      "file_path": "1_What_makes_a_good_bat_box_box_occupancy.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5918809",
+      "file_url": "https://zenodo.org/api/records/5918809/files/1_What_makes_a_good_bat_box_box_occupancy.txt/content",
+      "file_size": 13228,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2_What_makes_a_good_bat_box_only_adult_bats.txt",
+      "file_path": "2_What_makes_a_good_bat_box_only_adult_bats.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5918809",
+      "file_url": "https://zenodo.org/api/records/5918809/files/2_What_makes_a_good_bat_box_only_adult_bats.txt/content",
+      "file_size": 13464,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3_What_makes_a_good_bat_box_nursery_groups.txt",
+      "file_path": "3_What_makes_a_good_bat_box_nursery_groups.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5918809",
+      "file_url": "https://zenodo.org/api/records/5918809/files/3_What_makes_a_good_bat_box_nursery_groups.txt/content",
+      "file_size": 16311,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4_What_makes_a_good_bat_box_P_pip.txt",
+      "file_path": "4_What_makes_a_good_bat_box_P_pip.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5918809",
+      "file_url": "https://zenodo.org/api/records/5918809/files/4_What_makes_a_good_bat_box_P_pip.txt/content",
+      "file_size": 14691,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "5_What_makes_a_good_bat_box_M_nat.txt",
+      "file_path": "5_What_makes_a_good_bat_box_M_nat.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.5918809",
+      "file_url": "https://zenodo.org/api/records/5918809/files/5_What_makes_a_good_bat_box_M_nat.txt/content",
+      "file_size": 14694,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "1_box_occupancy.txt",
+      "file_path": "1_box_occupancy.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290940/download",
+      "file_size": 322788,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "2_only_adult_bats.txt",
+      "file_path": "2_only_adult_bats.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290943/download",
+      "file_size": 240318,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "3_nursery_groups.txt",
+      "file_path": "3_nursery_groups.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290941/download",
+      "file_size": 207825,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "4_P_pip.txt",
+      "file_path": "4_P_pip.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290942/download",
+      "file_size": 126494,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "5_M_nat.txt",
+      "file_path": "5_M_nat.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290944/download",
+      "file_size": 117848,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.brv15dvbc",
+      "file_url": "https://datadryad.org/api/v2/files/1290950/download",
+      "file_size": 12095,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

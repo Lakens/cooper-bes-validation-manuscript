@@ -1,0 +1,195 @@
+{
+  "paper_id": "10_1111_2041_210x_14246",
+  "generated": "2026-09-10T08:13:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T08:13:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "GLatombe/Kernel-Integral-Method-v1.0.0.zip",
+      "file_path": "GLatombe/Kernel-Integral-Method-v1.0.0.zip",
+      "repo_url": "https://zenodo.org/doi.org/10.5281/zenodo.10017788",
+      "file_url": "https://zenodo.org/api/records/10017789/files/GLatombe/Kernel-Integral-Method-v1.0.0.zip/content",
+      "file_size": 36006,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Reference_Overview.csv",
+      "file_path": "Reference_Overview.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748776/download",
+      "file_size": 5479,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Reference_table_0106.csv",
+      "file_path": "Reference_table_0106.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748773/download",
+      "file_size": 294044,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Smith_Brown_plus_Wohlwend_tree.tre",
+      "file_path": "Smith_Brown_plus_Wohlwend_tree.tre",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748782/download",
+      "file_size": 120611,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Species_list_full_2905.csv",
+      "file_path": "Species_list_full_2905.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748779/download",
+      "file_size": 11664387,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_list_full_2905.txt",
+      "file_path": "Species_list_full_2905.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748778/download",
+      "file_size": 11664387,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_list_group_2905.csv",
+      "file_path": "Species_list_group_2905.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748777/download",
+      "file_size": 6890618,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_list_island_2905.csv",
+      "file_path": "Species_list_island_2905.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748780/download",
+      "file_size": 14042630,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_mat_group_2905.csv",
+      "file_path": "Species_mat_group_2905.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748774/download",
+      "file_size": 481472,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Species_mat_island_2905.csv",
+      "file_path": "Species_mat_island_2905.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748775/download",
+      "file_size": 3876308,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Wohlwendetal_PacIFlora_Readme.txt",
+      "file_path": "Wohlwendetal_PacIFlora_Readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.qfttdz0hd",
+      "file_url": "https://datadryad.org/api/v2/files/748781/download",
+      "file_size": 14459,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "abind",
+      "alphahull",
+      "BAT",
+      "data.table",
+      "FD",
+      "geometry",
+      "ggplot2",
+      "gridExtra",
+      "hypervolume",
+      "ks",
+      "labdsv",
+      "MASS",
+      "mFD",
+      "picante",
+      "progress",
+      "psych",
+      "reshape2",
+      "rgl",
+      "StatMatch",
+      "TPD",
+      "TreeTools"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

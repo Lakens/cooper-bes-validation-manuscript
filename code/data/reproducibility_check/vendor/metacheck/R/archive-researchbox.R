@@ -1,0 +1,403 @@
+#' Headers Needed to Access ResearchBox
+#'
+#' ResearchBox sits behind Cloudflare, which returns a 406 for httr2's
+#' default User-Agent (the same issue archive-aspredicted.R works around).
+#' Used for both the page GET in `.rbox_info()` and the file-list POST in
+#' `rbox_file_download()`.
+#'
+#' @returns a named list of headers
+#' @keywords internal
+.rbox_headers <- function() {
+  list(
+    Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    `User-Agent` = paste(
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "AppleWebKit/537.36 (KHTML, like Gecko)",
+      "Chrome/137.0.0.0 Safari/537.36",
+      "scienceverse/metacheck"
+    )
+  )
+}
+
+#' Find ResearchBox Links in Papers
+#'
+#' Get all ResearchBox links: real hyperlinks from the paper's own `url`
+#' table, plus a body-text fallback for a BARE mention like "researchbox.org/
+#' 801" that the source PDF/HTML never encoded as an actual hyperlink (common
+#' in PDF-converted papers, where a plain-text URL mention loses its link
+#' formatting) — the `url` table only ever contains links the source
+#' document itself made clickable. Same two-tier approach `github_links()`
+#' uses for GitHub.
+#'
+#' @param paper a paper object or paperlist object
+#'
+#' @returns a table with the ResearchBox url in the first (href) column
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' psychsci <- papers_load("psychsci", cache = TRUE)
+#' rbox_links(psychsci)
+#' }
+rbox_links <- function(paper) {
+  href <- text <- NULL
+
+  found_href <- paper_table(paper, "url") |>
+    dplyr::filter(grepl("researchbox\\.org", href, ignore.case = TRUE))
+
+  rb_bare_regex <- "(?:https?://)?researchbox\\.org/[0-9]+/?"
+  other_rb <- text_search(paper, rb_bare_regex, return = "match", perl = TRUE) |>
+    dplyr::select(href = text, dplyr::any_of(c("text_id", "paper_id")))
+
+  # See osf_links() for why this normalization is needed: a real hyperlink and
+  # a bare body-text mention of the same repo commonly differ only by a
+  # trailing slash (captured by the "/?" above), and left un-normalized that
+  # turns one repo into two throughout repo_check.
+  #
+  # ResearchBox has since added URL forms that name a SPECIFIC FILE within a
+  # box, not a separate box: "2257.8"/"2257.9" (a dotted box variant) and
+  # "2257/72" (a numeric file id under the box). rb_bare_regex already stops
+  # at the box id for a bare mention, but a REAL hyperlink (found_href, from
+  # the paper's own url table) carries the full href unmodified -- so two
+  # links to different files in the SAME box were reaching repo_check as two
+  # DIFFERENT repositories, each downloaded and cached separately. Truncate
+  # every href to "researchbox.org/<box id>" so all such links collapse to
+  # the one box before repo_check ever sees them.
+  dplyr::bind_rows(found_href, other_rb) |>
+    dplyr::mutate(href = sub("/+$", "", href)) |>
+    dplyr::mutate(href = sub(
+      "(researchbox\\.org/[0-9]+)(\\.[0-9]+)?(/.*)?$", "\\1", href,
+      ignore.case = TRUE)) |>
+    unique()
+}
+
+#' Retrieve info from ResearchBox by URL
+#'
+#' @param rb_url an ResearchBox URL, or a table containing them (e.g., as created by `rbox_links()`)
+#' @param id_col the index or name of the column that contains ResearchBox URLs, if id is a table
+#' @param pb a progress bar passed from another function
+#'
+#' @returns a data frame of information
+#' @export
+#' @examples
+#' \dontrun{
+#' # get info on one OSF node
+#' rbox_info("https://researchbox.org/801")
+#' }
+rbox_info <- function(rb_url, id_col = 1, pb = NULL) {
+  if (!online("researchbox.org")) {
+    stop("ResearchBox.org seems to be offline")
+  }
+
+  if (is.null(pb)) {
+    pb <- pb(NA, "(:spin) :what")
+    pb$tick(0, list(what = "ResearchBox Retrieve"))
+    on.exit(pb$terminate())
+  }
+
+  # handle list of links
+  if (is.data.frame(rb_url)) {
+    table <- rb_url
+    id_col_name <- colnames(table[id_col])
+    raw_urls <- table[[id_col]]
+  } else {
+    id_col_name <- "rb_url"
+    raw_urls <- unique(rb_url) |> stats::na.omit()
+    table <- data.frame(rb_url = raw_urls)
+  }
+
+  # remove blank, missing, duplicate, or invalid IDs
+  ids <- data.frame(
+    rb_url = raw_urls
+  )
+  ids <- ids[!is.na(ids$rb_url), , drop = FALSE] |> unique()
+  valid_ids <- unique(ids$rb_url)
+
+  if (length(valid_ids) == 0) {
+    ("No valid ResearchBox links") |>
+      list(what = _) |>
+      pb$tick(0, tokens = _)
+    return(table)
+  }
+
+  # iterate over valid IDs
+  paste0(
+    "Starting ResearchBox retrieval for ",
+    length(valid_ids), " file",
+    ifelse(length(valid_ids) == 1, "", "s"), "..."
+  ) |>
+    list(what = _) |>
+    pb$tick(0, tokens = _)
+
+  id_info <- vector("list", length(valid_ids))
+  i <- 0
+  error <- FALSE
+  while (!error & i < length(valid_ids)) {
+    i <- i + 1
+    info <- .rbox_info(valid_ids[[i]])
+    if ("error" %in% names(info)) error <- TRUE
+    id_info[[i]] <- info
+  }
+
+  info <- id_info |>
+    do.call(dplyr::bind_rows, args = _) |>
+    dplyr::left_join(ids, by = "rb_url")
+
+  # reduplicate and add original table info
+  by <- stats::setNames("rb_url", id_col_name)
+  data <- dplyr::left_join(table, info,
+    by = by,
+    suffix = c("", ".rb")
+  )
+
+  paste0("...ResearchBox retrieval complete!") |>
+    list(what = _) |>
+    pb$tick(0, tokens = _)
+
+  return(data)
+}
+
+#' Retrieve info from ResearchBox by URL
+#'
+#' @param rb_url a ResearchBox URL
+#' @param pb a progress bar passed from another function
+#'
+#' @returns a data frame of information
+#' @export
+#' @keywords internal
+.rbox_info <- function(rb_url, pb = NULL) {
+  if (is.null(pb)) {
+    pb <- pb(NA, "(:spin) :what")
+    on.exit(pb$terminate())
+  }
+
+  paste0("* Retrieving info from ", rb_url, "...") |>
+    list(what = _) |>
+    pb$tick(0, tokens = _)
+
+  # set up return table
+  obj <- data.frame(
+    rb_url = rb_url
+  )
+
+  # get website
+  resp <- httr2::request(rb_url) |>
+    httr2::req_headers(!!!.rbox_headers()) |>
+    httr2::req_error(is_error = \(resp) FALSE) |>
+    httr2::req_perform()
+
+  # check if redirect (suppress encodings warning)
+  suppressMessages({
+    body_text <- httr2::resp_body_string(resp)
+    pattern <- "(?<=window\\.location\\.replace\\(')https://researchbox.org/\\d+(?='\\))"
+    if (grepl(pattern, body_text, perl = TRUE)) {
+      matches <- gregexpr(pattern, body_text, perl = TRUE)
+      redirect_url <- regmatches(body_text, matches)
+
+      resp <- httr2::request(redirect_url[[1]]) |>
+        httr2::req_headers(!!!.rbox_headers()) |>
+        httr2::req_error(is_error = \(resp) FALSE) |>
+        httr2::req_perform()
+    }
+  })
+
+  # handle missing file
+  if (httr2::resp_status(resp) != 200) {
+    warning(rb_url, " could not be found", call. = FALSE)
+    obj$error <- "unfound"
+    return(obj)
+  }
+
+  # Read the content with specified encoding
+  html <- httr2::resp_body_string(resp) |>
+    xml2::read_html(encoding = "UTF-8")
+
+  # get file list
+  file_names <- xml2::xml_find_all(html, "//p [@class='file_name']") |>
+    xml2::xml_text()
+  # filedesc <- xml2::xml_find_all(html, "//p [@class='preview_link']") |> # blocked out, seems gone after website redesign?
+  #   xml2::xml_text()
+  # filedesc <- filedesc[filedesc!=""]
+
+  # Each downloadable file has a checkbox <input type="checkbox"
+  # name="fileN" value="<file_id>"> in the same document order as the
+  # file_name <p> tags above, so they're paired positionally. These file_ids
+  # (plus box_id and reference below) are what download_files.php needs to
+  # generate the zip -- see rbox_file_download().
+  file_ids <- xml2::xml_find_all(
+    html, "//input[@type='checkbox'][starts-with(@name, 'file')]"
+  ) |>
+    xml2::xml_attr("value")
+
+  file_list <- data.frame(
+    name = file_names,
+    file_id = if (length(file_ids) == length(file_names)) file_ids else NA_character_
+    # description = filedesc
+  )
+  obj$files <- list(file_list)
+
+  obj$box_id <- xml2::xml_find_first(html, "//input[@id='box_id']") |>
+    xml2::xml_attr("value")
+  obj$reference <- xml2::xml_find_first(html, "//input[@id='reference']") |>
+    xml2::xml_attr("value")
+
+  # get info from bottom table
+  body <- xml2::xml_find_all(html, "//body") |>
+    rvest::html_text2() # xml2::xml_text()
+
+  # section borders
+  sections <- c(
+    RB_target = "SUPPLEMENTARY FILES FOR",
+    RB_license = "LICENSE FOR USE",
+    RB_public = "BOX PUBLIC SINCE",
+    RB_authors = "BOX CREATORS",
+    RB_abstract = "ABSTRACT",
+    done = "$('.file_number')"
+  )
+
+  for (i in 1:5) {
+    obj[[names(sections)[i]]] <- tryCatch(
+      {
+        after <- strsplit(body, sections[[i]], fixed = TRUE)[[1]][[2]]
+        answer <- strsplit(after, sections[[i + 1]], fixed = TRUE)[[1]][[1]]
+        trimws(answer)
+      },
+      error = \(e) return(NA_character_)
+    )
+  }
+
+  return(obj)
+}
+
+
+#' Retrieve files from ResearchBox by URL
+#'
+#' @param rb_url a vector of ResearchBox URLs
+#' @param pb a progress bar passed from another function
+#'
+#' @returns a data frame of information
+#' @export
+rbox_file_download <- function(rb_url, pb = NULL) {
+  listed <- NULL
+
+  if (is.null(pb)) {
+    pb <- pb(NA, "(:spin) :what")
+    on.exit(pb$terminate())
+  }
+
+  # vectorise
+  if (length(rb_url) > 1) {
+    unique_rb <- unique(rb_url) |> setdiff(NA)
+
+    file_lists <- lapply(unique_rb, rbox_file_download, pb = pb)
+    info <- do.call(dplyr::bind_rows, args = file_lists)
+    orig <- data.frame(rb_url = rb_url)
+    df <- dplyr::left_join(orig, info, by = "rb_url")
+
+    return(df)
+  }
+
+  paste0("* Retrieving files from ", rb_url, "...") |>
+    list(what = _) |>
+    pb$tick(0, tokens = _)
+
+  # Download the ZIP into a persistent cache keyed by the ResearchBox URL, so
+  # re-runs reuse the already-downloaded/unzipped files instead of re-fetching.
+  tmp_dir <- .repo_cache_subdir(rb_url)
+  dir.create(tmp_dir, showWarnings = FALSE, recursive = TRUE)
+
+  zip_path <- file.path(tmp_dir, "archive.zip")
+  out_dir  <- file.path(tmp_dir, "unzipped")
+
+  # Reuse a previous successful download/unzip when present.
+  already_unzipped <- dir.exists(out_dir) &&
+    length(list.files(out_dir, recursive = TRUE)) > 0
+
+  if (!already_unzipped) {
+    # ResearchBox no longer serves a static zip URL (the old
+    # s3.wasabisys.com guess in earlier versions of this function now 404s,
+    # see issue #186). The site instead generates the zip on request from a
+    # POST to download_files.php, given the box_id, reference token, and the
+    # numeric ids of the files to include -- all of which are scraped off
+    # the box's own page by .rbox_info(), so we reuse that here instead of
+    # re-scraping.
+    info <- .rbox_info(rb_url, pb = pb)
+    if ("error" %in% names(info)) {
+      # .rbox_info() already warns for this case
+      return(NULL)
+    }
+
+    file_ids <- info$files[[1]]$file_id
+    file_ids <- file_ids[!is.na(file_ids)]
+    if (length(file_ids) == 0 || is.na(info$box_id) || is.na(info$reference)) {
+      warning("Could not find downloadable files for: ", rb_url)
+      return(NULL)
+    }
+
+    paste0("Downloading to: ", zip_path) |>
+      list(what = _) |>
+      pb$tick(0, tokens = _)
+
+    dl_status <- tryCatch({
+      resp <- httr2::request("https://researchbox.org/download_files.php") |>
+        httr2::req_headers(!!!.rbox_headers()) |>
+        httr2::req_body_json(list(
+          files = as.numeric(file_ids),
+          box_id = info$box_id,
+          reference = info$reference
+        )) |>
+        httr2::req_error(is_error = \(resp) FALSE) |>
+        httr2::req_perform(path = zip_path)
+      httr2::resp_status(resp)
+    }, error = \(e) NA_integer_)
+
+    if (!identical(dl_status, 200L) ||
+        !file.exists(zip_path) || file.size(zip_path) == 0) {
+      warning("Download failed or resulted in an empty file: ", zip_path)
+      return(NULL)
+    }
+
+    dir.create(out_dir, showWarnings = FALSE)
+    paste0("Unzipping into: ", out_dir) |>
+      list(what = _) |>
+      pb$tick(0, tokens = _)
+    utils::unzip(zip_path, exdir = out_dir)
+  }
+
+  unzipped_files <- list.files(out_dir, recursive = TRUE, full.names = TRUE)
+
+  if (length(unzipped_files) == 0) {
+    warning("Unzip produced no files. The archive might be corrupt.")
+    return(NULL)
+  }
+
+  # list files (recursively) and return
+  files <- list.files(out_dir, recursive = TRUE, full.names = FALSE)
+  file_locations <- list.files(out_dir, recursive = TRUE, full.names = TRUE)
+  file_info <- file.info(file_locations)
+
+  # Create dataframe
+  rb_file_info <- data.frame(
+    rb_url = rep(rb_url, length(files)),
+    name = files,
+    file_location = file_locations,
+    size = file_info$size,
+    isdir = file_info$isdir
+  )
+
+  rb_file_info$ext <- strsplit(rb_file_info$name, "\\.") |>
+    sapply(\(x) {
+      if (length(x) < 2) {
+        return("")
+      }
+      x[[length(x)]]
+    }) |>
+    tolower()
+  rb_file_info <- dplyr::left_join(
+    rb_file_info,
+    metacheck::file_types,
+    by = "ext"
+  )
+
+  return(rb_file_info)
+}

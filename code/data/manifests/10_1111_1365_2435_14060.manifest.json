@@ -1,0 +1,139 @@
+{
+  "paper_id": "10_1111_1365_2435_14060",
+  "generated": "2026-09-10T02:18:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:18:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 9,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "aggression_rate.txt",
+      "file_path": "aggression_rate.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450107/download",
+      "file_size": 15055,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "group_size.txt",
+      "file_path": "group_size.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450110/download",
+      "file_size": 57798,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "N_groups_day.txt",
+      "file_path": "N_groups_day.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450108/download",
+      "file_size": 1452,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "N_individuals_day.txt",
+      "file_path": "N_individuals_day.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450109/download",
+      "file_size": 3768,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450111/download",
+      "file_size": 8254,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "steepness.txt",
+      "file_path": "steepness.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450112/download",
+      "file_size": 215386,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "strength_associations.txt",
+      "file_path": "strength_associations.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450115/download",
+      "file_size": 308543,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "time_groups.txt",
+      "file_path": "time_groups.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450113/download",
+      "file_size": 66244,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "time_individuals.txt",
+      "file_path": "time_individuals.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.vq83bk3vq",
+      "file_url": "https://datadryad.org/api/v2/files/1450114/download",
+      "file_size": 13660,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

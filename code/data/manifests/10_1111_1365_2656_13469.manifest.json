@@ -1,0 +1,106 @@
+{
+  "paper_id": "10_1111_1365_2656_13469",
+  "generated": "2026-09-10T03:08:35+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:08:35+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "CalcLocs.csv",
+      "file_path": "CalcLocs.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605277/download",
+      "file_size": 8595024,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NE_US_HOFI_zeros.csv",
+      "file_path": "NE_US_HOFI_zeros.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605279/download",
+      "file_size": 31319999,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NE_US_HOFI.csv",
+      "file_path": "NE_US_HOFI.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605278/download",
+      "file_size": 27642329,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "NE_US_prev.csv",
+      "file_path": "NE_US_prev.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605276/download",
+      "file_size": 4317735,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ReadMe_Hochachka_et_al_JAnimalEcology_2021.pdf",
+      "file_path": "ReadMe_Hochachka_et_al_JAnimalEcology_2021.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605275/download",
+      "file_size": 192376,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ReadMe_Hochachka_et_al_JAnimalEcology_2021.txt",
+      "file_path": "ReadMe_Hochachka_et_al_JAnimalEcology_2021.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.bnzs7h49x",
+      "file_url": "https://datadryad.org/api/v2/files/605274/download",
+      "file_size": 21781,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

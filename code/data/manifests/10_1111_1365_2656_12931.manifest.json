@@ -1,0 +1,337 @@
+{
+  "paper_id": "10_1111_1365_2656_12931",
+  "generated": "2026-09-10T02:33:41+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T02:33:41+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 22,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 20,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data_chla.RDS",
+      "file_path": "Data/Data_chla.RDS",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Data/Data_chla.RDS",
+      "file_size": 29581,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Fn_averaged_igood.R",
+      "file_path": "Fn_averaged_igood.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_averaged_igood.R",
+      "file_size": 3692,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_distributions.R",
+      "file_path": "Fn_distributions.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_distributions.R",
+      "file_size": 4058,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_plot_barplot.R",
+      "file_path": "Fn_plot_barplot.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_plot_barplot.R",
+      "file_size": 2035,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_plot_check_hold.R",
+      "file_path": "Fn_plot_check_hold.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_plot_check_hold.R",
+      "file_size": 2144,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_simulation.R",
+      "file_path": "Fn_simulation.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_simulation.R",
+      "file_size": 2976,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_simulation_regression_analysis.R",
+      "file_path": "Fn_simulation_regression_analysis.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_simulation_regression_analysis.R",
+      "file_size": 2755,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_simulation_temp_vs_spat.R",
+      "file_path": "Fn_simulation_temp_vs_spat.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_simulation_temp_vs_spat.R",
+      "file_size": 1221,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fn_tls.R",
+      "file_path": "Fn_tls.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/Fn_tls.R",
+      "file_size": 1376,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/README.txt",
+      "file_size": 846,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "empirical_TL_slopes.R",
+      "file_path": "empirical_TL_slopes.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_TL_slopes.R",
+      "file_size": 1154,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_data.R",
+      "file_path": "empirical_data.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_data.R",
+      "file_size": 979,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_hist_count.R",
+      "file_path": "empirical_hist_count.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_hist_count.R",
+      "file_size": 1420,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_plot_temp_vs_spat.R",
+      "file_path": "empirical_plot_temp_vs_spat.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_plot_temp_vs_spat.R",
+      "file_size": 1886,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_predict.R",
+      "file_path": "empirical_predict.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_predict.R",
+      "file_size": 2576,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_predict_test_temporal_autocor.R",
+      "file_path": "empirical_predict_test_temporal_autocor.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_predict_test_temporal_autocor.R",
+      "file_size": 2666,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_regression.R",
+      "file_path": "empirical_regression.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_regression.R",
+      "file_size": 3952,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "empirical_scatter_plot.R",
+      "file_path": "empirical_scatter_plot.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/empirical_scatter_plot.R",
+      "file_size": 3792,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "main_empirical.R",
+      "file_path": "main_empirical.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/main_empirical.R",
+      "file_size": 22743,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "main_simulation.R",
+      "file_path": "main_simulation.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/main_simulation.R",
+      "file_size": 2187,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "main_test_extended_dimension.R",
+      "file_path": "main_test_extended_dimension.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/main_test_extended_dimension.R",
+      "file_size": 2200,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "main_test_temporal_autocorrelation.R",
+      "file_path": "main_test_temporal_autocorrelation.R",
+      "repo_url": "https://github.com/leiku/TL_proximate.git",
+      "file_url": "https://raw.githubusercontent.com/leiku/TL_proximate/master/main_test_temporal_autocorrelation.R",
+      "file_size": 7361,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "asbio",
+      "lmodel2",
+      "miscTools",
+      "moments",
+      "mvtnorm",
+      "nlme"
+    ],
+    "files_failed": {},
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+"paper_id","file_name","check","verdict","reason"
+"10_1111_2041_210x_13318","AeAegypti_Software_Replacement.R","setwd","TP","setwd(""/Users/sanchez.hmsc/Downloads/MGDrivE-master/Examples/SoftwarePaper/"") -- live, machine-specific absolute path"
+"10_1111_2041_210x_13704","Figure 1 RMSE CV and Bias figure.R","setwd","TP","setwd(""C:/Users/sard/Google Drive/R/Data analysis/2021/..."") -- live, machine-specific absolute path"
+"10_1111_2041_210x_13923","220520_valtemp-assessment.R","setwd","TP","setwd(""./data"") -- still a live setwd() call (relative argument does not exempt it under the stated rule: the bad practice is the call itself)"
+"10_1111_2041_210x_13503","test_plotDot.R","setwd","TP","setwd(tempdir()) / setwd("".."") -- live calls in testthat fixtures, non-machine-specific but still executed setwd() calls"
+"10_1111_2041_210x_13503 (testthat suite)","multiple test_*.R files","setwd","TP","setwd(""exampleWorkspace"") appearing across ~14 test_*.R files in the actel package test suite -- all live calls"

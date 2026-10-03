@@ -1,0 +1,192 @@
+{
+  "paper_id": "10_1111_1365_2664_13447",
+  "generated": "2026-09-10T03:31:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.2.1"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-09-10T03:31:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 10,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "apiary_2013.dbf",
+      "file_path": "apiary_2013.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2013.dbf/content",
+      "file_size": 1075,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiaries_2016.dbf",
+      "file_path": "apiaries_2016.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiaries_2016.dbf/content",
+      "file_size": 1745,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2017.dbf",
+      "file_path": "apiary_2017.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2017.dbf/content",
+      "file_size": 8948,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2010.dbf",
+      "file_path": "apiary_2010.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2010.dbf/content",
+      "file_size": 1613,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2009.dbf",
+      "file_path": "apiary_2009.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2009.dbf/content",
+      "file_size": 631,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Flowering_Period_OSR_Sunflower_2000_2017.csv",
+      "file_path": "Flowering_Period_OSR_Sunflower_2000_2017.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/Flowering_Period_OSR_Sunflower_2000_2017.csv/content",
+      "file_size": 11237,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "apiary_2011.dbf",
+      "file_path": "apiary_2011.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2011.dbf/content",
+      "file_size": 499,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2008.dbf",
+      "file_path": "apiary_2008.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2008.dbf/content",
+      "file_size": 499,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2012.dbf",
+      "file_path": "apiary_2012.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2012.dbf/content",
+      "file_size": 811,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2015.dbf",
+      "file_path": "apiary_2015.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2015.dbf/content",
+      "file_size": 1613,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "apiary_2014.dbf",
+      "file_path": "apiary_2014.dbf",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/apiary_2014.dbf/content",
+      "file_size": 499,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data - Effects of organic farming on honeybees.csv",
+      "file_path": "data - Effects of organic farming on honeybees.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3089481",
+      "file_url": "https://zenodo.org/api/records/3089481/files/data%20-%20Effects%20of%20organic%20farming%20on%20honeybees.csv/content",
+      "file_size": 637355,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

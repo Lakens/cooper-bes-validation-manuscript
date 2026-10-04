@@ -647,18 +647,18 @@ main <- function() {
   cat("Repo root: ", repo_root, "\n", sep = "")
   cat("metacheck version: ", as.character(packageVersion("metacheck")), "\n", sep = "")
 
-  # Share ONE cache location with manuscript/code_data_preparation/01_run_checks.R
-  # (which runs with manuscript/ as its working directory) instead of each
-  # process defaulting to a folder relative to ITS OWN cwd. Without this, this
-  # script's repo root and that pipeline's manuscript/ working directory each
+  # Share ONE cache location with 01_run_metacheck/01_run_metacheck.R instead
+  # of each process defaulting to a folder relative to ITS OWN cwd. Without
+  # this, this script's repo root and that script's working directory each
   # grew their own separate .metacheck_repo_cache / .metacheck_repo_info_cache
   # -- confirmed live: ~40GB of downloaded repo files ended up duplicated in
   # both locations, doubled again by OneDrive syncing the whole project
-  # folder. After the restructuring into code/, the shared cache lives in
-  # code/data/ (this script's repo_root), and 01_run_metacheck/01_run_metacheck.R
-  # points at the same folder.
-  options(metacheck.cache.dir = repo_root)
-  cat("metacheck cache dir: ", repo_root, "\n", sep = "")
+  # folder. Moved to D:/.metacheck_repo_cache (off the OneDrive-synced
+  # project folder entirely) to stop that duplication/syncing cost; both
+  # scripts now point at D:/ as the cache root.
+  metacheck_cache_root <- "D:/"
+  options(metacheck.cache.dir = metacheck_cache_root)
+  cat("metacheck cache dir: ", metacheck_cache_root, "\n", sep = "")
 
   ensure_repro_branch(repo_root)
 

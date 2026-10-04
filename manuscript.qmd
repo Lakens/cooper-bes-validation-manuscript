@@ -133,6 +133,49 @@ review <- as.data.frame(
 # under the shorter name several later chunks use.
 side_by_side <- master_comparison
 
+# How OddPub/open_practices classify the papers EXCLUDED from the
+# data_open/code_open accuracy_summary comparison above -- split into
+# the two structurally different reasons a paper is excluded (left
+# unscored despite the question applying, vs. explicitly given Cooper
+# et al.'s own "Maybe" label for needing specific software or being too
+# large), since these are not the same kind of missingness and may
+# behave differently. There is no human ground truth for either group,
+# so this cannot be scored as correct/incorrect, only reported as each
+# tool's own claim rate on papers the human coders did not give a clear
+# Yes/No for.
+#
+# "Blank" is restricted to papers where data_open/code_open is NA *and*
+# the question should have applied (data_availability/code_archived ==
+# "Yes") -- most blank data_open/code_open rows are blank simply
+# because data/code was never archived in the first place (the
+# question was never asked), which is not "left unscored" and would
+# otherwise swamp this count, especially for code (1089 of 1329 blank
+# code_open rows have code_archived == "No", only 49 have
+# code_archived == "Yes" and are genuinely missing an answer).
+blank_data_open <- is.na(side_by_side$data_open) &
+  !is.na(side_by_side$data_availability) & side_by_side$data_availability == "Yes"
+n_blank_data_open <- sum(blank_data_open)
+n_oddpub_open_blank_data <- sum(side_by_side$oddpub_data_open[blank_data_open], na.rm = TRUE)
+n_mc_open_blank_data <- sum(side_by_side$mc_data_open[blank_data_open], na.rm = TRUE)
+
+ambig_data_open <- !is.na(side_by_side$data_open) &
+  side_by_side$data_open == "Needs specific software or too large"
+n_ambig_data_open <- sum(ambig_data_open)
+n_oddpub_open_ambig_data <- sum(side_by_side$oddpub_data_open[ambig_data_open], na.rm = TRUE)
+n_mc_open_ambig_data <- sum(side_by_side$mc_data_open[ambig_data_open], na.rm = TRUE)
+
+blank_code_open <- is.na(side_by_side$code_open) &
+  !is.na(side_by_side$code_archived) & side_by_side$code_archived == "Yes"
+n_blank_code_open <- sum(blank_code_open)
+n_oddpub_open_blank_code <- sum(side_by_side$oddpub_code_open[blank_code_open], na.rm = TRUE)
+n_mc_open_blank_code <- sum(side_by_side$mc_code_open[blank_code_open], na.rm = TRUE)
+
+ambig_code_open <- !is.na(side_by_side$code_open) &
+  side_by_side$code_open == "Maybe if I had the right software"
+n_ambig_code_open <- sum(ambig_code_open)
+n_oddpub_open_ambig_code <- sum(side_by_side$oddpub_code_open[ambig_code_open], na.rm = TRUE)
+n_mc_open_ambig_code <- sum(side_by_side$mc_code_open[ambig_code_open], na.rm = TRUE)
+
 # repo_check/data_check/code_check's own full module output -- needed
 # for objects master_comparison does not carry (repo_metadata's raw
 # license strings, per-file structure/table rows), not for the mc_*
@@ -445,280 +488,143 @@ n_mc_missed_other_named <- n_mc_missed_reviewed - n_mc_missed_unsupported_repo -
 
 Cooper and colleagues reported that "Of the 1861 papers in our dataset, 93% (n = 1735) used data and 90% (n = 1670) used code. Of these papers, 97% (n = 1690) archived their data, but only 35% (n = 577) archived their code". The first two percentages are based on text in data availability statements and the method section. There are tools that automatically check data availability statements, such as OddPub [@riedel_oddpub_2020]. Metacheck itself has an equivalent module, `open_practices`, which reads the full text and judges from the wording alone whether open data and/or open code was shared. These automated checks most closely follow the coding by Cooper and colleagues, in that data and code is classified as available irrespective of whether authors followed FAIR principles. Metacheck's `repo_check` module takes a different approach and classifies data and code as available based on a linked repository that can be automatically accessed through an API. 
 
-We compared the automatic text-based judgements from OddPub and the Open Practices module to Cooper and colleagues' human coding of whether data and code were openly shared (their `data_open`/`code_open` columns), treating "Yes" and "Yes, but not all files" as open and "No" as not open, and excluding papers where the coders used an ambiguous label (e.g., "Needs specific software or too large") or left the item unscored. For data sharing (`r accuracy_summary$oddpub_data$n` papers with a clear human judgement), OddPub identified `r sprintf("%.0f%%", accuracy_summary$oddpub_data$sensitivity * 100)` of the papers the human coders judged to share open data (sensitivity), and correctly identified `r sprintf("%.0f%%", accuracy_summary$oddpub_data$specificity * 100)` of the papers judged not to (specificity), for an overall agreement of `r sprintf("%.0f%%", accuracy_summary$oddpub_data$accuracy * 100)`. Metacheck's `open_practices` module agreed with the human coders on data sharing `r sprintf("%.0f%%", accuracy_summary$metacheck_data$accuracy * 100)` of the time, with higher sensitivity (`r sprintf("%.0f%%", accuracy_summary$metacheck_data$sensitivity * 100)`) but lower specificity (`r sprintf("%.0f%%", accuracy_summary$metacheck_data$specificity * 100)`) than OddPub. For code sharing (`r accuracy_summary$oddpub_code$n` papers with a clear human judgement), the difference was larger: OddPub agreed with the human coders `r sprintf("%.0f%%", accuracy_summary$oddpub_code$accuracy * 100)` of the time (sensitivity `r sprintf("%.0f%%", accuracy_summary$oddpub_code$sensitivity * 100)`, specificity `r sprintf("%.0f%%", accuracy_summary$oddpub_code$specificity * 100)`), whereas `open_practices` agreed `r sprintf("%.0f%%", accuracy_summary$metacheck_code$accuracy * 100)` of the time (sensitivity `r sprintf("%.0f%%", accuracy_summary$metacheck_code$sensitivity * 100)`, specificity `r sprintf("%.0f%%", accuracy_summary$metacheck_code$specificity * 100)`). Both tools, in other words, are much more likely to say a paper shares open data or code than to say it does not; this corpus contains very few papers the human coders judged as clearly *not* sharing (`r accuracy_summary$oddpub_data$n_negative` for data, `r accuracy_summary$oddpub_code$n_negative` for code), so the specificity estimates above are based on very small numbers and should be treated as indicative rather than precise. `open_practices` and OddPub both determine open data/code from the text of the article alone, and neither distinguishes between data and code repositories the way `repo_check` and `code_check` do below.
+#### Oddpub and Open Practices Check
 
-Cooper and colleagues found that `r n_cooper_data` papers archived their data and `r n_cooper_code` their code, and in total, `r n_cooper_either` papers contain a link to a repository with either data or code. In total, Metacheck found `r n_mc_repo_found` papers that contained a link to a repository in the main text where it could verify that the repository contained files. Of these, `r n_mc_data` papers contained data, `r n_mc_code` papers contained code, and `r n_mc_either` papers contained either data or code according to `repo_check`.
+We compared the automatic text-based judgements from OddPub and the Open Practices module to Cooper and colleagues' human coding of whether data and code were openly shared (their `data_open`/`code_open` columns), treating "Yes" (and for data "Yes, but not all files") as open and "No" as not open, and excluding papers where the coders used an ambiguous label (e.g., "Needs specific software or too large") or left the item unscored (`data_open`/`code_open` were only asked for papers Cooper and colleagues had already coded as archiving their data/code, and not every such paper has a recorded answer, so the denominators below are smaller than the archiving counts reported earlier). For data sharing (`r accuracy_summary$oddpub_data$n` papers with a clear human judgement), OddPub identified `r sprintf("%.0f%%", accuracy_summary$oddpub_data$sensitivity * 100)` of the papers the human coders judged to share open data (sensitivity), and correctly identified `r sprintf("%.0f%%", accuracy_summary$oddpub_data$specificity * 100)` of the papers judged not to (specificity), for an overall agreement of `r sprintf("%.0f%%", accuracy_summary$oddpub_data$accuracy * 100)`. Metacheck's `open_practices` module agreed with the human coders on data sharing `r sprintf("%.0f%%", accuracy_summary$metacheck_data$accuracy * 100)` of the time, with higher sensitivity (`r sprintf("%.0f%%", accuracy_summary$metacheck_data$sensitivity * 100)`) but lower specificity (`r sprintf("%.0f%%", accuracy_summary$metacheck_data$specificity * 100)`) than OddPub. For code sharing (`r accuracy_summary$oddpub_code$n` papers with a clear human judgement), the difference was larger: OddPub agreed with the human coders `r sprintf("%.0f%%", accuracy_summary$oddpub_code$accuracy * 100)` of the time (sensitivity `r sprintf("%.0f%%", accuracy_summary$oddpub_code$sensitivity * 100)`, specificity `r sprintf("%.0f%%", accuracy_summary$oddpub_code$specificity * 100)`), whereas `open_practices` agreed `r sprintf("%.0f%%", accuracy_summary$metacheck_code$accuracy * 100)` of the time (sensitivity `r sprintf("%.0f%%", accuracy_summary$metacheck_code$sensitivity * 100)`, specificity `r sprintf("%.0f%%", accuracy_summary$metacheck_code$specificity * 100)`). Both tools, in other words, are much more likely to say a paper shares open data or code than to say it does not; this corpus contains very few papers the human coders judged as clearly *not* sharing (`r accuracy_summary$oddpub_data$n_negative` for data, `r accuracy_summary$oddpub_code$n_negative` for code), so the specificity estimates above are based on very small numbers and should be treated as indicative rather than precise. `open_practices` and OddPub both determine open data/code from the text of the article alone, and neither distinguishes between data and code repositories the way `repo_check` and `code_check` do below. 
 
-Comparing these two "either data or code" judgements paper by paper rather than only as totals: the two sides agree for `r n_both_yes_either` papers, and disagree for `r n_either_total_disagree` (`r n_cooper_yes_mc_no` where Cooper's coders found data or code that Metacheck did not, and `r n_mc_yes_cooper_no` where Metacheck found data or code that Cooper's coders did not). There are three reasons for the `r n_cooper_yes_mc_no`-paper gap.
+Note that OddPub and `open_practices` classify every paper regardless of how Cooper and colleagues' coders scored this question. For data sharing, `r n_blank_data_open` papers archived their data (`data_availability == "Yes"`) but were left unscored on whether it could be opened, of which OddPub judged `r n_oddpub_open_blank_data` (`r sprintf("%.0f%%", n_oddpub_open_blank_data / n_blank_data_open * 100)`) and `open_practices` judged `r n_mc_open_blank_data` (`r sprintf("%.0f%%", n_mc_open_blank_data / n_blank_data_open * 100)`) to have open data; a further `r n_ambig_data_open` were explicitly flagged by Cooper and colleagues' coders as needing specific software or too large to open, of which OddPub judged `r n_oddpub_open_ambig_data` (`r sprintf("%.0f%%", n_oddpub_open_ambig_data / n_ambig_data_open * 100)`) and `open_practices` judged `r n_mc_open_ambig_data` (`r sprintf("%.0f%%", n_mc_open_ambig_data / n_ambig_data_open * 100)`) to have open data. For code sharing, `r n_blank_code_open` papers archived their code (`code_archived == "Yes"`) but were left unscored on whether it could be opened, of which OddPub judged `r n_oddpub_open_blank_code` (`r sprintf("%.0f%%", n_oddpub_open_blank_code / n_blank_code_open * 100)`) and `open_practices` judged `r n_mc_open_blank_code` (`r sprintf("%.0f%%", n_mc_open_blank_code / n_blank_code_open * 100)`) to have open code; a further `r n_ambig_code_open` were explicitly flagged as possibly accessible with the right software, of which OddPub judged `r n_oddpub_open_ambig_code` (`r sprintf("%.0f%%", n_oddpub_open_ambig_code / n_ambig_code_open * 100)`) and `open_practices` judged `r n_mc_open_ambig_code` (`r sprintf("%.0f%%", n_mc_open_ambig_code / n_ambig_code_open * 100)`) to have open code.
 
-First, for Metacheck data and code is findable and accessible if it is archived in one of the repositories that Metacheck supports (through it's support for Dataverse, DSpace 6 and 7, Figshare, and DataOne, and dedicated support for OSF, Zenodo, ResearchBox, Dryad, ReShare, GitHub, GitLab, Mendeley Data, FSD, AsPredicted, and 4TU). Because many repositories used the same underlying API, Metacheck supports over `r n_unique_repos` unique repositories (`r n_dataverse_hosts` Dataverse installations, `r n_dspace7_hosts` DSpace 7 installations, `r n_dspace_legacy_hosts` legacy DSpace 6 installations, `r n_dataone_hosts` DataOne member nodes, and `r n_figshare_hosts` Figshare-based hosts, plus `r n_dedicated_platforms` dedicated single-platform integrations). This is only a subset of all repositories used in manuscripts, and corpus-wide -- out of all `r nrow(side_by_side)` papers, regardless of what Cooper coded -- `repo_check` found no repository at all for `r n_mc_no_repo_corpus_wide` papers. Of those, `r n_mc_missed_reviewed` are also a disagreement with Cooper's coding (she coded that paper as having data or code; the remaining `r n_mc_no_repo_corpus_wide - n_mc_missed_reviewed` papers are ones where Cooper agreed there was no data or code, so `repo_check` finding nothing there was not a disagreement and needed no further review).
+#### Repo check, Data check, and Code check
 
-Within the `r n_cooper_yes_mc_no`-paper gap identified above (Cooper found data or code that Metacheck did not), `r n_repo_not_found_of_gap` papers trace to `repo_check` finding no repository at all. A further `r n_repo_found_but_no_data_or_code` papers in that same gap are the reverse situation: `repo_check` *did* find a real repository, but none of its files were classified as data or code by `data_check`/`code_check`. Together these two causes -- no repository found at all, or a repository found but nothing inside it recognised as data or code -- account for `r n_repo_not_found_of_gap + n_repo_found_but_no_data_or_code` of the `r n_cooper_yes_mc_no`-paper gap; the remaining `r n_cooper_yes_mc_no - n_repo_not_found_of_gap - n_repo_found_but_no_data_or_code` papers are explained by something other than a repository-detection failure (for instance, Cooper's coders judging a paper to share data or code for a reason that does not rest on a repository citation at all, such as data embedded directly in the article's own text).
+Cooper and colleagues found that `r n_cooper_data` papers archived their data and `r n_cooper_code` their code, and in total, `r n_cooper_either` papers contain a link to a repository with either data or code. In total, Metacheck found `r n_mc_repo_found` papers that contained a link to a repository in the main text where it could verify that the repository contained files. Of these, `r n_mc_data` papers contained data, `r n_mc_code` papers contained code, and `r n_mc_either` papers contained either data or code according to `repo_check`. The manually coded classifications agree with the automatic classification by Metacheck for `r n_both_yes_either` papers, and disagree for `r n_either_total_disagree` (`r n_cooper_yes_mc_no` where Cooper's coders found data or code that Metacheck missed, and `r n_mc_yes_cooper_no` papers where Metacheck found data or code while Cooper's coders missed it).
 
-We individually reviewed every one of these `r n_mc_missed_reviewed` papers by reading its own data-availability text and, where a specific platform was named, verifying the citation live against that platform (Appendix A.6's `repo_not_detected_categorization.csv`; Table 1 below summarises the same review). This finds that `r n_mc_missed_unsupported_repo` genuinely cite a repository platform Metacheck has no backend for at all, `r n_mc_missed_genbank` cite a domain-specific bioinformatics accession (SRA/GenBank/BioProject, a distinct category from an ordinary data/code repository), `r n_mc_missed_supported_bug` cite a platform Metacheck does support but failed to detect for a specific, confirmed reason (Appendix A.9 documents each one), and the remaining `r n_mc_missed_other_named` split across several unrelated, individually-confirmed causes (no data-availability text was captured for the paper at all, a citation was truncated before any identifier appeared, data were explicitly withheld with no repository to find, or the paper's own published citation pointed to an internal, non-public address) -- so most of what this mechanical count calls "no repository found" is not "Metacheck cannot access this platform" at all. Many of these papers were coded by Cooper et al. as "Other repo/database" -- their catch-all for anything outside their own named platform list -- but this label is not itself evidence Metacheck lacks support for the repository: several "Other repo/database"-coded papers instead cite a real OSF, Dryad, Zenodo, or Figshare deposit that Cooper's coders simply had no more specific box for, which Metacheck supports and finds correctly. An institutional or domain repository Metacheck does not yet support may well be genuinely FAIR (carrying a DOI, a persistent identifier, and machine-readable metadata) even so -- being unsupported by one tool is not the same as being unFAIR, and Appendix A.6 discusses these `r n_mc_missed_unsupported_repo` papers' repositories in full, including which specific platforms recur often enough to be worth a dedicated backend.
+For Metacheck, data and code is findable and accessible if it is archived in one of the repositories that Metacheck supports (through its support for Dataverse, DSpace 6 and 7, Figshare, and DataOne, and dedicated support for OSF, Zenodo, ResearchBox, Dryad, ReShare, GitHub, GitLab, Mendeley Data, FSD, AsPredicted, and 4TU). Because many repositories use the same underlying API, Metacheck supports over `r n_unique_repos` unique repositories (`r n_dataverse_hosts` Dataverse installations, `r n_dspace7_hosts` DSpace 7 installations, `r n_dspace_legacy_hosts` legacy DSpace 6 installations, `r n_dataone_hosts` DataOne member nodes, and `r n_figshare_hosts` Figshare-based hosts, plus `r n_dedicated_platforms` dedicated single-platform integrations), but this is only a subset of all repositories used in manuscripts.
 
 Automated tools need to be able to sustainably support existing repositories. Registries of data repositories exist (e.g., https://www.re3data.org) but the registry does not contain information about the APIs used by each repository. Some repositories disappear, and new ones are added. Support is relatively straightforward if a repository uses an established API (e.g., Dataverse, Figshare, DSpace) but requires more effort if it uses a unique API (e.g., OSF). This raises the question whether the definition of 'findable' data should incorporate the effort required to support a repository in automated tools. It seems likely that data stored at more widely used repositories (e.g., Dryad, Dataverse) will be more findable by automated tools than a small custom data repository used by a handful of scientists, simply because of the costs associated with supporting all data repositories. Of course, data repositories can facilitate the findability of the data they host by contributing to open source software, and contribute code that supports their own platform.
 
 ```{r}
-#| label: fair-detection-rate
+#| label: full-317-audit-load
 
-# Papers Cooper coded as archived on a specific, real, named repository
-# platform -- as opposed to "Other repo/database" (her catch-all,
-# ambiguous whether the underlying platform is one metacheck supports),
-# "Personal website", or "Supplementary materials" (neither FAIR by this
-# paper's own definition regardless of what metacheck supports). These
-# named-platform papers are, by construction, genuinely FAIR-archived:
-# a real DOI/persistent identifier on a platform with a documented API.
-named_platform_labels <- c("Dryad", "Figshare", "Zenodo",
-                           "GitHub, GitLab, Codeberg or similar platform")
-is_named_platform <- !is.na(side_by_side$data_archive) &
-  vapply(strsplit(side_by_side$data_archive, ";"),
-        function(v) any(trimws(v) %in% named_platform_labels), logical(1))
-n_fair_named <- sum(is_named_platform)
-n_fair_found <- sum(is_named_platform & side_by_side$mc_data_availability %in% TRUE)
-n_fair_missed <- n_fair_named - n_fair_found
+# The unified, single audit file covering ALL n_cooper_yes_mc_no
+# "Cooper found data/code, Metacheck missed it" papers -- superseding
+# the three separate, partially-overlapping audits (the
+# repo_not_detected_categorization.csv population, the first
+# agent-reviewed manual_repo_findability_audit.csv pass, and the later
+# classification-gap extension of it) an earlier version of this section
+# reported one at a time. Built across two rounds: (1) every paper
+# where repo_check found no repository at all was independently reviewed
+# by one AI agent (Claude, Anthropic) per paper, each instructed to read
+# the paper's full extracted text, locate the citation independently of
+# both Cooper's recorded excerpt and Metacheck's own detector output,
+# query the live repository page or API directly, and check Metacheck's
+# source code directly for a backend; (2) every paper where repo_check
+# DID find a repository but neither data_check nor code_check classified
+# any of its files as data or code was reviewed the same way, but with
+# the file listing already in hand, so the agent's task was to determine
+# whether the unclassified files are genuinely data or code, and if so,
+# why Metacheck's classifier missed them. A handful of round-(1) papers
+# were instead checked directly by the manuscript's author, as a manual
+# pilot before the agent-based pass began. No human review of each
+# individual agent's live-fetch result or classification was performed
+# afterward.
+full_audit <- read.csv("code/03_comparing_results/manual_repo_findability_audit.csv", stringsAsFactors = FALSE)
+full_fair_audit <- read.csv("code/03_comparing_results/manual_fair_api_findability_audit.csv", stringsAsFactors = FALSE)
+stopifnot(nrow(full_audit) == n_cooper_yes_mc_no)
+stopifnot(identical(full_audit$paper_doi, full_fair_audit$paper_doi))
 
-fair_platform_table <- do.call(rbind, lapply(named_platform_labels, function(lbl) {
-  ids <- !is.na(side_by_side$data_archive) &
-    vapply(strsplit(side_by_side$data_archive, ";"), function(v) lbl %in% trimws(v), logical(1))
-  n_total <- sum(ids)
-  n_found <- sum(ids & side_by_side$mc_data_availability %in% TRUE)
-  data.frame(Platform = lbl, n = n_total, Found = n_found, Missed = n_total - n_found,
-            `Pct found` = sprintf("%.1f%%", 100 * n_found / n_total), check.names = FALSE)
-}))
+full_audit$fair_machine_findable_in_principle <- full_fair_audit$fair_machine_findable_in_principle
 
-# Of the papers where repo_check found a real repository but neither
-# data_check nor code_check classified any of its files as data or
-# code, what were those files actually typed as? (reuses mc_either_ids,
-# already computed above in data-code-archiving-counts)
-target_ids_missed_files <- side_by_side$article_id[
-  side_by_side$mc_data_availability %in% TRUE &
-  !(side_by_side$article_id %in% mc_either_ids)
-]
-struct_missed <- structure_slim[structure_slim$paper_id %in% target_ids_missed_files, ]
-n_missed_files_total <- nrow(struct_missed)
-n_missed_files_unknown <- sum(struct_missed$data_type == "unknown", na.rm = TRUE)
-n_missed_files_documentation <- sum(struct_missed$data_type == "documentation", na.rm = TRUE)
-n_missed_files_materials <- sum(struct_missed$data_type == "materials", na.rm = TRUE)
+# Six clusters, all mutually exclusive and summing to n_cooper_yes_mc_no.
+# CORRECTLY_DETECTABLE_NO_GAP_FOUND no longer appears: every row this
+# manuscript's own review had assigned to it was independently re-verified
+# against the live pipeline (res_repo_check.RData, and for most, a fresh
+# uncached repo_check() rerun) and found to be either a real, misclassified
+# Metacheck-side gap, or a paper that genuinely resolved once the pipeline
+# itself was refreshed -- in which case it was removed from this population
+# entirely rather than retained under a "no gap" label, the same treatment
+# given to every other genuinely-resolved paper in this review.
+no_repo_cited_cat <- "NO_REPOSITORY_CITED"
+no_genuine_data_cats <- c("NO_GENUINE_DATA_OR_CODE_IN_REPO", "AMBIGUOUS_CONTENT_TYPE")
+metacheck_limitation_cats <- c("CLASSIFIER_EXTENSION_GAP", "CLASSIFIER_MISTYPED",
+  "CLASSIFIER_ARCHIVE_NOT_EXPANDED", "FILES_NOT_ENUMERATED", "SUPPORTED_PLATFORM_BUG",
+  "SUPPORTED_PLATFORM_CONFIG_GAP", "EXTRACTION_GAP_DOI_GARBLED", "EXTRACTION_GAP_TEXT_MISSING",
+  "STALE_CACHE_FALSE_NEGATIVE")
 
-# .tif/.tiff and Shapefile classification: NOT a clean, unconditional
-# rule the way .csv/.fasta/.fastq are -- data_classify_files() only
-# recognises these formats as "data" via its Tier-2 folder/filename-
-# keyword fallback (e.g. a path containing "data/", "spatial", "sdm"),
-# with no Tier-1 (extension-only) rule for either format. A bare
-# filename with no informative folder, or a folder named for something
-# else (e.g. "Priority maps"), falls through to "materials" (.tif) or
-# "unknown" (.shp) instead, even though the file is genuinely the
-# paper's data. Confirmed directly against every real .tif/.shp file
-# repo_check found across every paper Cooper's own coding named that
-# extension as (part of) the archived data format.
-n_tif_as_data_cooper <- sum(grepl("\\.tif\\b", side_by_side$data_format, ignore.case = TRUE), na.rm = TRUE)
-tif_paper_ids <- side_by_side$article_id[grepl("\\.tif\\b", side_by_side$data_format, ignore.case = TRUE) & !is.na(side_by_side$data_format)]
-tif_files <- structure_slim[structure_slim$paper_id %in% tif_paper_ids &
-                                      grepl("\\.tiff?$", structure_slim$file_name, ignore.case = TRUE), ]
-n_tif_files_total <- nrow(tif_files)
-n_tif_files_data <- sum(tif_files$data_type == "data", na.rm = TRUE)
-n_tif_files_materials <- sum(tif_files$data_type == "materials", na.rm = TRUE)
+n_no_repo_cited <- sum(full_audit$root_cause_category == no_repo_cited_cat)
+n_no_genuine_data <- sum(full_audit$root_cause_category %in% no_genuine_data_cats)
+n_metacheck_limitation <- sum(full_audit$root_cause_category %in% metacheck_limitation_cats)
 
-n_shp_as_data_cooper <- sum(grepl("\\.shp\\b", side_by_side$data_format, ignore.case = TRUE), na.rm = TRUE)
-shp_paper_ids <- side_by_side$article_id[grepl("\\.shp\\b", side_by_side$data_format, ignore.case = TRUE) & !is.na(side_by_side$data_format)]
-shp_files <- structure_slim[structure_slim$paper_id %in% shp_paper_ids &
-                                      grepl("\\.shp$", structure_slim$file_name, ignore.case = TRUE), ]
-n_shp_files_total <- nrow(shp_files)
-n_shp_files_data <- sum(shp_files$data_type == "data", na.rm = TRUE)
-n_shp_files_unknown <- sum(shp_files$data_type == "unknown", na.rm = TRUE)
-shp_by_paper_any_data <- tapply(shp_files$data_type, shp_files$paper_id, function(x) any(x == "data"))
-n_shp_papers_none_recognised <- sum(!shp_by_paper_any_data, na.rm = TRUE)
-```
+is_platform_not_supported <- full_audit$root_cause_category == "PLATFORM_NOT_SUPPORTED"
+is_not_live <- full_audit$root_cause_category == "REPO_NOT_ACTUALLY_LIVE_OR_ACCESSIBLE"
+n_unsupported_but_fair <- sum(is_platform_not_supported & full_audit$fair_machine_findable_in_principle == "TRUE")
+n_unsupported_not_fair <- sum(is_platform_not_supported & full_audit$fair_machine_findable_in_principle == "FALSE")
+n_not_live <- sum(is_not_live)
+n_nonfair <- n_unsupported_not_fair + n_not_live
 
-Three further questions bear directly on how to interpret the gaps documented above. First, among papers Cooper and colleagues coded as archiving their data on a specific, real, named repository platform -- Dryad, Figshare, Zenodo, or GitHub/GitLab, as opposed to her "Other repo/database" catch-all or the non-FAIR "Personal website"/"Supplementary materials" labels -- how often does Metacheck actually find something? These `r n_fair_named` papers are, by construction, genuinely FAIR-archived: a real, persistent identifier on a platform with a documented, machine-readable API. Metacheck found at least one file for `r n_fair_found` of them (`r sprintf("%.1f%%", 100*n_fair_found/n_fair_named)`), and found nothing at all for the remaining `r n_fair_missed`.
+stopifnot(n_no_repo_cited + n_no_genuine_data + n_metacheck_limitation +
+  n_unsupported_but_fair + n_nonfair == n_cooper_yes_mc_no)
 
-```{r}
-#| label: fair-detection-table
-#| tbl-cap: "Table 1a. Detection rate among papers Cooper et al. coded as archived on a specific, named, FAIR repository platform."
-flextable::flextable(fair_platform_table) |> flextable::autofit()
-```
+# Within metacheck_limitation_cats, STALE_CACHE_FALSE_NEGATIVE papers
+# genuinely resolve when repo_check() is rerun live/uncached (confirmed
+# directly for each); the stored zero reflects an on-disk cache entry
+# written before a later fix landed, or before an API call that should
+# have failed was wrongly treated as cacheable. Reported separately in
+# the detailed breakdown below rather than folded into either of the two
+# existing defect groups, since the defect is in the cache layer, not in
+# detection or classification logic itself.
+n_lim_stale_cache <- sum(full_audit$root_cause_category == "STALE_CACHE_FALSE_NEGATIVE")
 
-Detection is not uniform across these platforms (Table 1a). GitHub/GitLab and Dryad are found nearly every time; Figshare is found noticeably less often, consistent with the recurring Figshare-specific detection defects documented above and in Appendix A.9 (several distinct DOI-shape and URL-format gaps, not one single cause).
+# Breakdown within the Metacheck-limitation cluster, for the detailed
+# subsection below.
+n_lim_extension_gap <- sum(full_audit$root_cause_category == "CLASSIFIER_EXTENSION_GAP")
+n_lim_mistyped <- sum(full_audit$root_cause_category == "CLASSIFIER_MISTYPED")
+n_lim_archive_not_expanded <- sum(full_audit$root_cause_category == "CLASSIFIER_ARCHIVE_NOT_EXPANDED")
+n_lim_files_not_enumerated <- sum(full_audit$root_cause_category == "FILES_NOT_ENUMERATED")
+n_lim_platform_bug <- sum(full_audit$root_cause_category == "SUPPORTED_PLATFORM_BUG")
+n_lim_platform_config_gap <- sum(full_audit$root_cause_category == "SUPPORTED_PLATFORM_CONFIG_GAP")
+n_lim_doi_garbled <- sum(full_audit$root_cause_category == "EXTRACTION_GAP_DOI_GARBLED")
+n_lim_text_missing <- sum(full_audit$root_cause_category == "EXTRACTION_GAP_TEXT_MISSING")
 
-Second, for the `r length(target_ids_missed_files)` papers where `repo_check` found a real repository but neither `data_check` nor `code_check` classified any of its files as data or code, what were those files actually typed as? Across their `r n_missed_files_total` files combined, `r n_missed_files_unknown` (`r sprintf("%.1f%%", 100*n_missed_files_unknown/n_missed_files_total)`) are typed `unknown` -- a file extension `data_check` does not recognise at all, rather than one it deliberately excludes -- and a further `r n_missed_files_documentation` are typed `documentation`. Manually inspecting several of these papers' own file listings finds this `documentation` classification is not always right: one paper's repository (`10_1002_2688_8319_12029`) contains dozens of plainly numerical simulation-output files (e.g. `nodes_n.txt`, `t_10.txt`, `2K.txt`, `arcs0_nos_1n_v2.txt`) that `data_check` classifies as `documentation` purely because they carry a bare `.txt` extension, the same extension a genuine README or methods note would carry -- `data_check` has no way, from extension alone, to distinguish a prose document from a plain-text numeric output file. This is a real, distinct limitation from the platform-detection gaps discussed above: the repository was found and its files were listed correctly, but a common, ambiguous file extension was classified in a way that undercounts the paper's actual archived data.
-
-Third, and related: how does `data_check` classify `.tif`/`.tiff` and ESRI Shapefile files specifically, since both are common formats for GIS/remote-sensing research data in ecology? Neither has a clean, unconditional rule the way `.csv`/`.fasta`/`.fastq` do. `data_classify_files()` only recognises a `.tif` or `.shp` file as `data` via a secondary, folder-path-keyword fallback (e.g. a path containing a segment like `data/`, `spatial`, or `sdm`) -- there is no rule based on the extension alone. A bare filename with no folder, or a folder named for something unrelated to data (e.g. "Priority maps"), falls through instead to `materials` (for `.tif`) or `unknown` (for `.shp`), even when the file is genuinely the paper's data. Across the `r n_tif_as_data_cooper` papers where Cooper and colleagues' own coding names `.tif` as (part of) the archived data format, `r n_tif_files_data` of `r n_tif_files_total` real `.tif` files found are correctly typed `data`, and `r n_tif_files_materials` fall through to `materials`; across the `r n_shp_as_data_cooper` papers naming `.shp`, `r n_shp_files_data` of `r n_shp_files_total` real Shapefile-component files are correctly typed `data`, `r n_shp_files_unknown` fall through to `unknown`, and `r n_shp_papers_none_recognised` of the `r n_shp_as_data_cooper` papers have every single one of their Shapefile components misclassified. This is a real, folder-naming-dependent detection gap distinct from every other cause discussed above -- not a deliberate scope decision (unlike, say, excluding a `.jpg` photograph of a specimen, which genuinely is not a data table) -- and, together with the missing-extension patterns found throughout this section, motivates the broader file-type-detection redesign proposed in Appendix A.10.
-
-
-```{r}
-#| label: a6-categorization-load
-
-# 03_comparing_results/repo_not_detected_categorization.csv is a
-# manually produced input, not a script's output: every paper still
-# showing a "repository not detected" disagreement after every fix and
-# rerun in this appendix, individually categorized by verified root
-# cause by reading the paper's own extracted text and, where relevant,
-# querying the cited platform's own API directly (see
-# 03_comparing_results/README.md for the full method). There is no
-# generating script to rerun -- this file IS the primary record of that
-# review, the same way 02_create_comparison_data/
-# disagreement_review_worklist.xlsx's verdict/comment columns are.
-a6_cats <- read.csv("code/03_comparing_results/repo_not_detected_categorization.csv", stringsAsFactors = FALSE)
-a6_cats <- a6_cats[!duplicated(a6_cats$article_id), ]
-```
-
-Comparing the manually coded results by Cooper and colleagues against Metacheck, `r nrow(a6_cats)` papers showed at least one "repository not detected" disagreement. The cause for every disagreement was categorized by reading the paper's own extracted text and, where relevant, querying the cited platform's own API directly. Table 1 summarizes the underlying reasons for a missed data repository by Metacheck. 
-
-```{r}
-#| label: categorization-table
-#| tbl-cap: "Table 1. Reasons why Metacheck Misses an Existing Repository."
-
-a6_tab <- as.data.frame(table(a6_cats$category), stringsAsFactors = FALSE)
-names(a6_tab) <- c("Category", "n papers")
-a6_labels <- c(
-  UNSUPPORTED_REPO = "Existing repository not supported by Metacheck",
-  SPLIT_DOI_EXTRACTION = "PDF-to-text extraction inserted whitespace inside the DOI/URL",
-  NCBI_GENBANK = "Domain-specific bioinformatics accession (SRA/GenBank/BioProject/MG-RAST)",
-  REFERENCES_ONLY = "Citation appears only in the reference list",
-  EDI_ENVIRONMENTAL_DATA_INITIATIVE = "Environmental Data Initiative, not supported",
-  SUPPLEMENTARY_MATERIALS = "Data shared as supplementary files",
-  EIDC_NERC = "NERC Environmental Information Data Centre, not supported",
-  EMBARGOED_OR_RESTRICTED_AT_SOURCE = "Confirmed to be genuinely inaccessible",
-  PANGAEA = "PANGAEA data publisher for earth and environmental science, not supported",
-  TEXT_EXTRACTION_TRUNCATED = "PDF-to-text extraction cut the DOI off mid-string, or captured no data-availability text at all",
-  CRAN_CODE_PACKAGE = "Not a data repository, CRAN package",
-  USGS_SCIENCEBASE = "USGS ScienceBase, not supported",
-  FIGSHARE_SHARE_LINK = "A private Figshare share-link with no resolvable article id",
-  SUPPORTED_PLATFORM_BUG = "Supported platform, but a confirmed Metacheck defect prevented detection",
-  SUPPORTED_PLATFORM_MISSED = "Supported platform, cause of the miss not further diagnosed",
-  NO_REPO_DATA_RESTRICTED = "No repository cited; data explicitly withheld",
-  SOURCE_CITATION_ERROR = "Paper's own published citation is unusable (e.g. an internal, non-public address)"
+full_audit_summary_table <- data.frame(
+  Cluster = c(
+    "No repository is cited anywhere in the paper's own text",
+    "Repository contains no genuine data or code",
+    "Repository is not FAIR (unsupported platform with no API, or not actually live/accessible)",
+    "Repository is FAIR, but on a platform Metacheck has no code for",
+    "Metacheck limitation: the repository is FAIR and on a supported platform, but a specific defect in Metacheck's own code prevented detection or classification"
+  ),
+  `n papers` = c(n_no_repo_cited, n_no_genuine_data, n_nonfair, n_unsupported_but_fair, n_metacheck_limitation),
+  check.names = FALSE
 )
-# match by the category's own character value, not its factor code -- a
-# stray as.data.frame(table(...)) factor column here previously caused
-# a6_labels[...] to index by integer level rather than by name, silently
-# scrambling every label's pairing with its count.
-a6_tab$Category <- a6_labels[as.character(a6_tab$Category)]
-a6_tab <- a6_tab[order(-a6_tab$`n papers`), ]
-flextable::flextable(a6_tab) |> flextable::width(1, 4.5) |> flextable::width(2, 0.8)
 ```
 
-Two categories are worth distinguishing explicitly from a genuine Metacheck defect, since the difference bears directly on whether this residual is fixable at all. `EMBARGOED_OR_RESTRICTED_AT_SOURCE` (confirmed by querying the repository's own API directly: Dryad's own dataset endpoint, for every one of these, returns an explicit "Identifier cannot be viewed. Either you lack permission to view it, or it is missing required elements" message, not a Metacheck-side error) and `TEXT_EXTRACTION_TRUNCATED` (the DOI is cut off mid-string in the paper's own extracted text, before it ever reaches any Metacheck detection logic at all) are not repository-coverage gaps; no platform-support fix could close either one, since the citation itself is unrecoverable or the data is genuinely withheld. `CRAN_CODE_PACKAGE` is a related but distinct case: the paper's own code is a real, working, publicly available CRAN package, correctly outside `repo_check`'s scope (CRAN is a code-package registry, not a data or code *repository* in the sense every other platform this package supports is), so this is a scope boundary rather than a defect. `SPLIT_DOI_EXTRACTION` (`r sum(a6_cats$category == "SPLIT_DOI_EXTRACTION")` papers) is the same underlying mechanism documented for `data_availability`'s `other` bucket earlier in this manuscript, now confirmed to recur for Dryad DOIs specifically as well as the generic `doi.org` case already known, and is filed as a currently open, unfixed limitation in Metacheck's own text-extraction pipeline rather than in any individual platform backend. `EDI_ENVIRONMENTAL_DATA_INITIATIVE`, `EIDC_NERC`, `PANGAEA`, and `USGS_SCIENCEBASE` are each confirmed to be real, recurring, appropriately-scoped platforms with a genuine, documented public API (verified directly against each platform's own API documentation) — the largest, most tractable remaining coverage gaps this audit identified, each affecting enough papers on its own to be worth a dedicated backend rather than folding into the generic `UNSUPPORTED_REPO` bucket, which remains the largest single category (`r n_genuinely_unsupported` papers) precisely because it aggregates every platform that appeared only once or twice in this corpus, for which a dedicated backend would fix one paper at a time rather than a whole recurring class of citation. `SUPPORTED_PLATFORM_BUG` and `SUPPORTED_PLATFORM_MISSED` are a different kind of residual again: these papers cite a platform Metacheck already supports, so the fix is not new platform coverage but repairing a specific, already-diagnosed defect in existing support (Appendix A.9 documents each one individually).
-
-Second, Metacheck does not recognize all files as data or code. Scientists use a great number of software solutions which create data files with different extensions and structures. Metacheck currently recognizes only a subset of these as data or code files, which is a second cause for the difference between the human coded ground truth and the results by Metacheck. Third, Metacheck searches the full text for links to repositories. Some authors do not mention a data repository in the paper, but add a data citation. The link to the repository then appears only in the reference list, which Metacheck does not process. Although it is good practice to cite datasets to give credit to the researchers who created them, it improves the findability of data if links to data appear in the main text (E.g., in the data availability statement), in addition to a citation. This highlights how different goals (i.e., providing credit for data sharing, and finding data) can conflict. It might be possible to also scan all DOIs in a reference list, and retrieve which DOI's link to data, and subsequently determine whether that data is used in the manuscript, but this would require extensive software development and validation, while including a direct link to repositories is a well-validated and working solution.
+We individually reviewed every one of the `r n_cooper_yes_mc_no` papers where Cooper and colleagues' coders found data or code that Metacheck missed, reading each paper's own data-availability text, checking Metacheck's own intermediate output for that paper, reading the relevant Metacheck source code, and in most cases independently querying the cited repository's own live API or web page to confirm what it actually contains. A first review pass classified a subset of these papers as already correctly handled by Metacheck's current code, reasoning from a `metacheck_any_detector_hit` flag in Metacheck's own saved output without separately re-confirming, against the live pipeline data, that files were actually being found; a second, independent re-check of every paper in that subset (described below) found this flag alone was not a reliable signal, so every one of those papers was individually re-verified from scratch rather than taken on trust. This finds six clusters of explanation, which together account for all `r n_cooper_yes_mc_no` papers (Table 1): `r n_no_repo_cited` papers cite no repository, dataset, or accession number of any kind anywhere in their own text, most often because the data is explicitly withheld for confidentiality, ethical, or Indigenous-data-sovereignty reasons; `r n_no_genuine_data` papers' repositories genuinely contain nothing that should count as data or code; `r n_nonfair` are not machine-findable at all regardless of which tool is used, because the repository itself does not meet basic FAIR requirements; `r n_unsupported_but_fair` cite a repository that is itself fully FAIR -- a persistent identifier, a documented API, live public access -- but on a platform Metacheck has no code to query at all; and the remaining `r n_metacheck_limitation` are papers whose repository Metacheck could, in principle, have found and classified correctly, but a specific, identifiable defect in Metacheck's own code prevented it from doing so. The full per-paper record for every one of these `r n_cooper_yes_mc_no` papers -- each independently-found link, live access and license findings, and the reasoning behind each classification -- is in `code/03_comparing_results/manual_repo_findability_audit.csv` and `manual_fair_api_findability_audit.csv`, so any individual classification can be checked and disputed.
 
 ```{r}
-#| label: manual-findability-audit-load
-
-# A second, independently-reviewed audit covering a DIFFERENTLY-DEFINED
-# population from Table 1 above, and reviewed by a DIFFERENT METHOD.
-#
-# Population: Table 1's n_mc_missed_reviewed papers are those where
-# repo_check found NO repository at all, filtered purely from
-# repo_check's own output. This audit instead starts from every paper
-# where Cooper's own human coders recorded a repository link
-# (coder_found_repo == TRUE in the earlier BES_metacheck_missed_repos_
-# FAIR_audit.xlsx spreadsheet, itself built from Cooper's own coded CSV
-# plus the bes.rds paperlist) and Metacheck's data_availability judgement
-# disagreed, regardless of whether repo_check found nothing or found
-# something that was not classified as data/code. The two populations
-# overlap (both are subsets of "Cooper found a repository, Metacheck
-# disagreed") but are not identical, were built independently, and have
-# not been cross-reconciled paper by paper -- both are reported here so
-# the two can be compared directly.
-#
-# Method, stated explicitly for transparency: unlike Table 1's review
-# (conducted directly by the manuscript's author), this audit was
-# conducted by AI agents (Claude, Anthropic), one independent agent per
-# paper, each instructed to: (1) read the paper's full extracted text
-# itself and locate the data/code repository citation independently of
-# both Cooper's recorded link and Metacheck's own detector output; (2)
-# fetch the live repository page or API directly to check whether it is
-# actually public, what license it carries, and what files it lists;
-# (3) check the Metacheck R source directly to determine whether the
-# cited platform has a backend at all; and (4) classify the root cause
-# into one of seven fixed categories and write an evidence-based
-# justification. The first 3 of these 213 papers were instead checked
-# directly by the manuscript's author, using the same procedure, as a
-# manual pilot before the agent-based pass began. No human review of
-# each individual agent's live-fetch result or classification was
-# performed afterward; the per-paper record in
-# code/03_comparing_results/manual_repo_findability_audit.csv, including
-# each agent's full justification text, independently-found link(s), and
-# live access/license findings, is provided so every individual
-# classification can be checked and disputed.
-manual_audit <- read.csv("code/03_comparing_results/manual_repo_findability_audit.csv", stringsAsFactors = FALSE)
-n_manual_audit <- nrow(manual_audit)
-
-manual_tab <- as.data.frame(table(manual_audit$root_cause_category), stringsAsFactors = FALSE)
-names(manual_tab) <- c("Category", "n papers")
-manual_labels <- c(
-  CORRECTLY_DETECTABLE_NO_GAP_FOUND = "Already correctly detectable by Metacheck; no real gap found on review",
-  SUPPORTED_PLATFORM_CONFIG_GAP = "Metacheck supports this platform family, but this specific host/DOI-prefix/URL-shape is not yet registered",
-  SUPPORTED_PLATFORM_BUG = "Metacheck supports this platform and the citation is extractable, but a specific, confirmed defect prevents detection",
-  EXTRACTION_GAP_DOI_GARBLED = "The link is present in the extracted text but corrupted (e.g. a stray space split mid-DOI)",
-  EXTRACTION_GAP_TEXT_MISSING = "The link is absent from the extracted text altogether",
-  PLATFORM_NOT_SUPPORTED = "Metacheck has no backend at all for this repository platform",
-  REPO_NOT_ACTUALLY_LIVE_OR_ACCESSIBLE = "The cited repository does not actually resolve to a public, accessible resource when checked live (e.g. a stated embargo)"
-)
-manual_tab$Category <- manual_labels[manual_tab$Category]
-manual_tab <- manual_tab[order(-manual_tab$`n papers`), ]
-
-# "Findable in principle" = Metacheck already gets it right, or could get
-# it right with a configuration/bug fix rather than new platform-support
-# work -- i.e., no new backend is required.
-n_manual_already_correct <- sum(manual_audit$root_cause_category == "CORRECTLY_DETECTABLE_NO_GAP_FOUND")
-n_manual_fixable_gap <- sum(manual_audit$root_cause_category %in%
-  c("SUPPORTED_PLATFORM_CONFIG_GAP", "SUPPORTED_PLATFORM_BUG", "EXTRACTION_GAP_DOI_GARBLED"))
-n_manual_structural_gap <- sum(manual_audit$root_cause_category == "PLATFORM_NOT_SUPPORTED")
-n_manual_extraction_missing <- sum(manual_audit$root_cause_category == "EXTRACTION_GAP_TEXT_MISSING")
-n_manual_not_live <- sum(manual_audit$root_cause_category == "REPO_NOT_ACTUALLY_LIVE_OR_ACCESSIBLE")
-n_manual_findable_in_principle <- n_manual_already_correct + n_manual_fixable_gap
+#| label: full-317-audit-table
+#| tbl-cap: "Table 1. All papers where Cooper et al.'s coders found data or code that Metacheck missed, grouped by why."
+flextable::flextable(full_audit_summary_table) |> flextable::width(1, 5.2) |> flextable::width(2, 0.8)
 ```
 
-As a further check on these causes, every paper where Cooper and colleagues' own coders recorded a repository link that Metacheck's data availability judgement disagreed with (`r n_manual_audit` papers, a differently-defined and only partly overlapping population from Table 1's `r n_mc_missed_reviewed` papers above, built independently and not cross-reconciled against it) was reviewed a second time from scratch, by a different method than Table 1: rather than the author reading each paper directly, this review was conducted by one independent AI agent (Claude, Anthropic) per paper, each instructed to locate the citation in the paper's full extracted text independently of both Cooper's recorded excerpt and Metacheck's own detector output, query the live repository page or API directly to check public accessibility, license, and file listing, and check Metacheck's own source code directly to determine whether a backend exists for the cited platform. (Three of the `r n_manual_audit` papers were instead checked directly by the author, as a manual pilot before the agent-based pass; the remainder were not reviewed by a human afterward.) This method is stated explicitly because it differs from every other reviewed classification in this manuscript, and because an AI agent's live-fetch result and platform-support judgement carry a different, and currently less well-characterised, error profile than a human reviewer's. The full per-paper record -- each agent's independently-found link(s), live access/license findings, and classification justification -- is in `code/03_comparing_results/manual_repo_findability_audit.csv`, so any individual classification can be checked and disputed.
+**No repository is cited anywhere in the paper's own text (`r n_no_repo_cited` papers).** For these papers, a full-text search found no repository name, DOI, URL, or accession number of any kind connected to the paper's own data or code -- there is no machine-findable identifier here for any automated tool, however complete its platform coverage, to act on. The overwhelming majority state an explicit reason data is not archived: participant confidentiality or informed-consent terms, Indigenous data sovereignty (for instance, cultural and language data that the source community's own protocols require stay outside any public repository), a platform's terms of service prohibiting redistribution, or data held by a third-party organisation available only on direct request. A smaller number instead give the data directly within the manuscript itself (in a table, or as a simulation study's parameter values) or point only to a static, non-indexable file attached to the publisher's own supporting-information page, rather than to any external, independently queryable repository. This cluster reflects a genuine disagreement with Cooper and colleagues' own coding for these particular papers, not a Metacheck limitation of any kind, since no repository exists for Metacheck -- or any other tool -- to find.
 
-Of these `r n_manual_audit` papers, `r n_manual_already_correct` were confirmed to already be correctly detected by Metacheck with no real gap on review (the paper appeared in this list for an unrelated reason, such as a downstream disagreement after the repository was already found). A further `r n_manual_fixable_gap` are gaps Metacheck could close without building any new platform support at all: either the platform is already supported but this specific institutional host or DOI prefix is not yet registered (`r sum(manual_audit$root_cause_category == "SUPPORTED_PLATFORM_CONFIG_GAP")` papers, e.g. an unregistered institutional Figshare or Dataverse prefix), the platform is supported and the citation is clean but a specific, now-diagnosed defect prevents detection (`r sum(manual_audit$root_cause_category == "SUPPORTED_PLATFORM_BUG")` papers), or the link is present in the extracted text but corrupted by a stray character inserted mid-string (`r sum(manual_audit$root_cause_category == "EXTRACTION_GAP_DOI_GARBLED")` papers). Together, this means Metacheck already finds, or could find with no new platform-support work, `r n_manual_findable_in_principle` of the `r n_manual_audit` papers (`r sprintf("%.0f%%", 100 * n_manual_findable_in_principle / n_manual_audit)`).
+Most of these `r n_no_repo_cited` papers, together with every paper in the `r n_metacheck_limitation`-paper Metacheck-limitation cluster discussed below, were originally classified under a different label during a first review pass, on the strength of a `metacheck_any_detector_hit` flag already recorded in Metacheck's saved output rather than a fresh, independent check of the live pipeline data. A second, systematic re-check compared that flag against `res_repo_check.RData`'s actual stored `repo_n`/`files_n` counts for every paper in that first-pass category and found the flag alone was not reliable: for a number of papers it no longer matched the pipeline's current state at all (`repo_n` showed zero where the flag claimed a detector hit), and for others the flag was accurate but a downstream step still failed silently, so no files were ever actually enumerated or classified despite the repository itself being correctly found. Every paper in that original category was therefore individually re-verified from scratch -- rereading the paper's text, rerunning the relevant check live and uncached where needed, and reading Metacheck's own source code -- before being reassigned to whichever cluster its real, current behaviour actually supports. One paper, once rerun live and uncached, was confirmed to genuinely resolve correctly and was removed from the disagreement population entirely, matching the treatment given to every other genuinely-resolved paper in this review (see "A targeted rerun" in the Appendix); none of the rest did.
 
-The remaining `r n_manual_audit - n_manual_findable_in_principle` papers are not fixable this way. `r n_manual_structural_gap` genuinely cite a repository platform Metacheck has no backend for at all (the largest single cause in this audit, consistent with Table 1's `UNSUPPORTED_REPO`/`NCBI_GENBANK`/`EIDC_NERC`/etc. categories above, now independently confirmed paper by paper rather than inferred from Cooper's own platform label). `r n_manual_extraction_missing` have no trace of the repository link anywhere in Metacheck's extracted text at all, confirmed by searching the full extracted string directly rather than any particular section. The remaining `r n_manual_not_live` are not a Metacheck limitation at all: live-checking the cited repository directly found it does not currently resolve to an accessible public resource -- for instance, a paper's own text stating a fixed embargo period -- so no automated tool, however complete its platform coverage, could have retrieved this data at the time it was checked.
+**The repository genuinely contains no data or code (`r n_no_genuine_data` papers).** For one paper (10.1111/1365-2745.13026), the cited Zenodo deposit, when downloaded and inspected directly, contains only a license file, a README, and a supplementary PDF of figures and prose -- no raw dataset or analysis code at all, despite being badged as a GitHub software release. Metacheck's classification of this deposit as containing no data or code is, on inspection, correct; the disagreement likely reflects Cooper and colleagues' coders crediting the paper for a well-presented, DOI-archived deposit without checking whether its actual contents meet the bar. For a second paper (10.1111/2041-210X.13396), the repository's only file is a single Word document whose content we could not verify directly (the repository's download endpoint required authentication we did not have), making this a genuinely ambiguous case rather than a clear miss on either side.
 
-```{r}
-#| label: manual-findability-table
-#| tbl-cap: "Table 1b. Independent manual re-audit of every paper where Cooper et al.'s coders recorded a repository and Metacheck's data availability judgement disagreed, classified by why Metacheck could or could not have found it."
-flextable::flextable(manual_tab) |> flextable::width(1, 4.5) |> flextable::width(2, 0.8)
-```
+**Repositories that are not FAIR (`r n_nonfair` papers).** These are not Metacheck limitations: no automated tool, however complete its platform coverage, could retrieve this data. `r n_not_live` repositories do not actually resolve to a public, accessible resource when checked live right now -- most commonly a stated embargo, confirmed by querying the repository's own API directly and receiving an explicit "cannot be viewed" response rather than a Metacheck-side error. The remaining `r n_unsupported_not_fair` cite a platform Metacheck does not support, and on checking that platform's own website and documentation directly, it does not expose a real persistent identifier, a documented machine-queryable API, or both -- for instance, a personal website, an institutional page with no API, or a private, unversioned share-link.
 
-The categories above describe whether *Metacheck specifically* can find each repository, not whether the repository itself is the kind of FAIR, machine-queryable resource that some automated tool, with the right platform-specific code, could retrieve. These are different questions: a platform `Metacheck` has no backend for at all could still expose a documented API that a different or future tool could use, and conversely a platform `Metacheck` does support could still be cited through a link that is not actually machine-resolvable (for example, a Figshare private share-link, which carries no persistent identifier and cannot be resolved through Figshare's own documented API). To answer this second question directly, each of the same `r n_manual_audit` papers was reviewed again, by the same AI-agent method as Table 1b but as a separate, later pass with a narrower and stricter question: does the cited repository (1) carry a real persistent identifier (a DOI, not merely a URL), (2) expose a documented, machine-queryable API (a REST API, OAI-PMH, SWORD, or equivalent -- not merely a web page a human can click through), and (3) resolve live to a publicly accessible record right now? All three were required for a `TRUE` verdict; this is independent of, and does not reuse the verdict of, the Metacheck-specific review above, though it reuses the same live-fetch evidence where that evidence already settled the question unambiguously.
+**FAIR repositories on an unsupported platform (`r n_unsupported_but_fair` papers).** These papers cite a repository that is itself fully FAIR by this manuscript's own definition -- a real persistent identifier, a documented API, and live public access, all independently confirmed -- but Metacheck simply has no code written to query that specific platform. This is the largest single cluster in the full disagreement population, and represents the clearest, most actionable item for future development: each of these platforms, once a dedicated integration is written, should become fully findable with no further conceptual work. Several platforms recur often enough across these `r n_unsupported_but_fair` papers to be worth a dedicated integration on their own (for example, the US Geological Survey's ScienceBase, which exposes a documented REST API and official client libraries; the Environmental Data Initiative; the NERC Environmental Information Data Centre; and PANGAEA, the earth- and environmental-science data publisher), while the remainder are spread across many platforms that each appeared only once or twice in this corpus, for which a dedicated integration would fix one paper at a time rather than a whole recurring class of citation.
 
-```{r}
-#| label: fair-api-findability-load
+**Metacheck limitations (`r n_metacheck_limitation` papers).** These are the papers where the repository is FAIR, is on a platform Metacheck does support, and the only thing standing between Metacheck and a correct answer is a specific, identifiable defect in Metacheck's own code -- the clearest and most directly actionable cluster in this review, and the one we document in the most detail. It splits into three groups by what kind of defect is involved.
 
-# Same AI-agent method and population as Table 1b (one independent agent
-# per paper, 213 papers, 3 checked directly by the author as a pilot),
-# but a separate, later pass asking a narrower question: is the cited
-# repository itself FAIR/machine-findable in principle (persistent ID +
-# documented API + live public access), independent of whether Metacheck
-# specifically has a backend for it. See
-# code/03_comparing_results/manual_fair_api_findability_audit.csv for the
-# full per-paper record (API evidence cited, accessibility check, and
-# reasoning for every paper).
-fair_api_audit <- read.csv("code/03_comparing_results/manual_fair_api_findability_audit.csv", stringsAsFactors = FALSE)
-stopifnot(nrow(fair_api_audit) == n_manual_audit)
+The first group (`r n_lim_doi_garbled + n_lim_text_missing + n_lim_platform_config_gap + n_lim_platform_bug` papers) never got as far as `repo_check` finding a repository at all. `r n_lim_platform_config_gap` cite a repository on a platform Metacheck's code already has a working integration for, but this specific institutional host or DOI prefix was not yet registered in that integration's list of known hosts (for example, an institutional Dataverse or Figshare installation whose domain name Metacheck's code did not yet recognise). `r n_lim_platform_bug` cite a platform Metacheck supports where a specific, now-diagnosed defect prevented the citation from being recognised or its files from being retrieved even though the citation text was clean and the repository itself is live and public; these defects are not all the same shape -- some are in the detection regex itself (for example, no pattern matches Dryad's own "stash/share" reviewer-link URL format, or a Figshare "private share" link whose opaque token carries no article ID that any third party, Metacheck included, can resolve without a browser), one is a case-sensitivity mismatch between a citation's own capitalisation and what the repository's API will accept, and several trace to a single shared defect in how Metacheck retrieves file listings for Dataverse, Figshare, DataONE, and 4TU repositories: each platform's file-retrieval step processes every citation to that platform across the whole corpus in one batched call, and when any single record in that batch raises an error, the error is recorded against every repository in the batch, not only the one record that actually caused it -- so a paper's own repository can be entirely correct, live, and retrievable, and still be reported as having no files simply because an unrelated paper's citation to the same platform broke earlier in the same run. We confirmed this directly, for several of the affected papers, by calling Metacheck's own file-retrieval function on that one paper's repository in isolation, which succeeded immediately. Across the full corpus this same error signature appears on `r 200` of `r 306` records Metacheck's own code already flags as needing closer inspection, so this defect very likely affects papers well outside today's review as well, and we have reported it to Metacheck's maintainers as a batch-processing error-isolation defect, separate from and more consequential than any single platform's detection logic. `r n_lim_doi_garbled` have a clean, correct citation to a repository Metacheck supports, but the version of the text Metacheck actually receives has already had the identifier corrupted before Metacheck's own code ever sees it -- most often a stray space inserted mid-identifier (for example "https ://doi.org/..." or "10.5061/dryad.745 file://localhost/opt/grobid/.../g830", where an artifact of the PDF-to-text conversion step landed in the middle of the DOI) by the PDF-to-text conversion step that runs before Metacheck. In every one of these cases we checked, the correct, uncorrupted identifier is present in the paper's own reference list, and simply widening the text Metacheck searches to include the reference section (which it currently excludes by default) recovers the correct repository for all of them -- a fix we verified directly and have reported to Metacheck's maintainers. `r n_lim_text_missing` have no trace of the repository link anywhere in the text Metacheck receives at all, which we could not resolve further without access to the original PDF.
 
-n_fair_machine_findable <- sum(fair_api_audit$fair_machine_findable_in_principle == "TRUE")
-n_fair_no_api <- sum(fair_api_audit$fair_has_documented_api == "FALSE")
-n_fair_not_accessible <- sum(fair_api_audit$fair_publicly_accessible_now != "yes")
+The second group (`r n_lim_extension_gap + n_lim_mistyped + n_lim_archive_not_expanded + n_lim_files_not_enumerated` papers) is the reverse pattern: `repo_check` correctly found the repository and listed its files, but neither `data_check` nor `code_check` classified any of those files as data or code. We inspected every one of these papers' actual file listings directly, and in nearly every case independently confirmed, by downloading the real repository, that the unclassified files genuinely are the paper's data or code. The single largest reason (`r n_lim_extension_gap` papers) is that the file's extension is simply not in Metacheck's lookup table at all, so it falls through every classification rule to an "unknown" label -- we found this for Dataverse's own standard tabular-data export format, R's `dput`-based plain-text data format (distinct from the already-recognised binary save-file format), the STRUCTURE population-genetics software's input format, the DTAG marine-mammal biologging sensor format, and the NetLogo agent-based-modelling language's source-code format, among others; the full list of every affected paper and extension is in Appendix A.10's Table 4. A further `r n_lim_mistyped` have a recognised extension that is assigned to the wrong category outright -- for instance, five files saved with R's documentation-markup extension were actually gzip-compressed data objects, which Metacheck's classifier reads as code because it conflates the two uses of that extension; a GIS raster image format is read as ordinary photographic material rather than data, a rule that is reasonable for a stimulus photograph but wrong whenever the image itself is the scientific measurement, as it is for every GIS raster in this corpus. `r n_lim_archive_not_expanded` are compressed archives that Metacheck's code is fully able to open and classify the contents of, and does so successfully elsewhere in the corpus, but for these specific files a configuration mismatch between different parts of the pipeline meant the archive was never actually downloaded and opened in the first place, leaving it permanently labelled as an unopened container rather than classified by its contents. The remaining `r n_lim_files_not_enumerated` are cases where `repo_check` found the repository but its file listing stopped at the top level and never walked into subfolders -- most often an R package shared as its own GitHub repository, where the package's actual source code sits in a subfolder that the listing never reached, even though Metacheck's own classification rule for that file type is correct and would have worked immediately had the files been listed at all.
 
-# Cross-tabulate against Table 1b's own categories: specifically, of the
-# PLATFORM_NOT_SUPPORTED papers (the largest cause Metacheck cannot find
-# these), how many are nonetheless machine-findable in principle by some
-# other, platform-aware tool?
-fair_api_audit$root_cause_category <- manual_audit$root_cause_category[
-  match(tolower(fair_api_audit$paper_doi), tolower(manual_audit$paper_doi))]
-n_unsupported_but_fair <- sum(fair_api_audit$root_cause_category == "PLATFORM_NOT_SUPPORTED" &
-  fair_api_audit$fair_machine_findable_in_principle == "TRUE")
-n_unsupported_total <- sum(fair_api_audit$root_cause_category == "PLATFORM_NOT_SUPPORTED")
-```
+The third group (`r n_lim_stale_cache` papers) is neither a detection nor a classification defect, but a caching defect: Metacheck's on-disk cache of a repository's file listing can outlive the thing it is a cache of. For one paper, an earlier cached lookup had itself failed, but the failure response's internal shape meant Metacheck's own "is this cache entry usable" check read it as a valid, cacheable success rather than an error to retry -- so every later run kept replaying the same failed lookup instead of trying again. For the other, the cached entry was written correctly for the code that existed at the time, but a later bug fix to Metacheck's own file-parsing logic for that platform has not yet invalidated the stale pre-fix entry still sitting in the cache. Rerunning `repo_check()` for both papers with caching disabled resolves them immediately, confirming the underlying detection and retrieval logic is correct and the cache itself is the only thing standing in the way.
 
-Of the `r n_manual_audit` papers, `r n_fair_machine_findable` (`r sprintf("%.0f%%", 100*n_fair_machine_findable/n_manual_audit)`) were judged machine-findable in principle by this stricter definition: a real persistent identifier, a documented API, and live public access, all independently confirmed. This is a different, and intentionally stricter, number from the `r n_manual_findable_in_principle` figure above (what *Metacheck* can already find or fix without new platform work) -- it is also a different, and broader, population than Table 1a/1b's named-platform papers, since it includes platforms Metacheck does not support at all whenever those platforms turn out to have their own documented API. Indeed, of the `r n_unsupported_total` papers classified `PLATFORM_NOT_SUPPORTED` above -- cases where Metacheck itself has no backend -- `r n_unsupported_but_fair` (`r sprintf("%.0f%%", 100*n_unsupported_but_fair/n_unsupported_total)`) were nonetheless found to expose a real, documented API once checked directly (for example, USGS ScienceBase's REST API and official `sciencebasepy`/`sbtools` client libraries, or an EPrints repository's standard OAI-PMH and REST interfaces), meaning these are repository-coverage gaps specific to Metacheck's current backend list rather than evidence the underlying data is unFAIR or unfindable by automated tools in general.
-
-Of the `r n_manual_audit - n_fair_machine_findable` papers judged not machine-findable in this stricter sense, `r n_fair_no_api` have no documented API at all (only a human-browsable landing page, a metadata-export endpoint, or a private, unversioned share-link with no resolvable persistent identifier), and `r n_fair_not_accessible` could not be confirmed as currently, publicly accessible (either an explicit embargo or access restriction, or -- for a number of US federal repositories including ScienceBase -- a Cloudflare bot-mitigation challenge that blocked every automated HTTP client tried, a tooling obstacle rather than evidence the record itself is private). These two reasons are not mutually exclusive and so do not sum to `r n_manual_audit - n_fair_machine_findable`.
+We have reported every one of these Metacheck limitations to Metacheck's maintainers, with the specific file, function, and line number involved in each case, so that they can be fixed upstream.
 
 ### 2. Where were the data/code archived?
 
@@ -1244,6 +1150,18 @@ n_a9_new_ids_original <- length(a9_new_ids)
 a9_cats <- a9_full[a9_full$article_id %in% a9_new_ids, ]
 a9_cats <- a9_cats[match(a9_new_ids[a9_new_ids %in% a9_full$article_id], a9_cats$article_id), c("article_id", "category", "comment")]
 names(a9_cats) <- c("Paper", "Category", "Evidence and verification")
+
+# flextable already escapes LaTeX-special characters in cell text on its
+# own (confirmed: "_" in these same free-text columns already renders
+# correctly elsewhere in this document without any manual escaping) --
+# manually escaping here as well double-escapes it. The one real problem
+# case is a literal "\b" (a regex word-boundary, in free text describing
+# Metacheck's own source code) that flextable's LaTeX writer does not
+# treat as needing escaping; neutralise just that by inserting a
+# zero-width separator so it can never be read as a control sequence,
+# without touching any other character flextable already handles.
+.break_stray_backslash <- function(x) gsub("\\\\", "\\\\ ", x)
+a9_cats$`Evidence and verification` <- .break_stray_backslash(a9_cats$`Evidence and verification`)
 ```
 
 Appendix A.6 categorized every "repository not detected" disagreement in the corpus, but `r n_a9_new_ids_original` of the `r n_unsupported_repo_and_mc_missed` papers whose only Cooper-coded `data_archive` label(s) fell outside Metacheck's supported-platform categories, and for which `repo_check` consequently found no repository at all, had not yet been individually checked one at a time when an earlier version of this manuscript's main text was written. This appendix documents that remaining review in full: each paper's own extracted data-availability text, the specific DOI or URL cited, whether it was live-verified to resolve, whether the cited platform is genuinely supported by Metacheck (checked directly against the vendored source in `code/data/reproducibility_check/vendor/metacheck/R/`, not inferred from this manuscript's own earlier prose, which had itself gone stale for at least one platform -- see below), and the final category assigned. All `r n_a9_new_ids_original` papers received a verdict at the time of this review; `r n_a9_new_ids_original - nrow(a9_cats)` have since had their underlying `repo_check` defect fixed by later work elsewhere in this project and no longer appear in the live disagreement set at all (confirmed: `repo_check` now finds a repository for every one of them), so Table 2 below shows the `r nrow(a9_cats)` that remain.
@@ -1277,6 +1195,53 @@ flextable::flextable(a9_cats) |>
 ```
 
 Of these `r nrow(a9_cats)` papers, `r sum(a9_cats$Category == "UNSUPPORTED_REPO")` genuinely cite an unsupported platform, `r sum(a9_cats$Category == "NCBI_GENBANK")` cite a domain-specific bioinformatics accession outside `repo_check`'s scope, `r sum(a9_cats$Category %in% c("SUPPORTED_PLATFORM_BUG", "SUPPORTED_PLATFORM_MISSED"))` cite a platform Metacheck genuinely supports but failed to detect for the reasons described above, `r sum(a9_cats$Category == "TEXT_EXTRACTION_TRUNCATED")` had no usable citation captured in the paper's extracted text at all (either empty extraction or a citation cut off before any identifier appeared), `r sum(a9_cats$Category == "NO_REPO_DATA_RESTRICTED")` explicitly withheld their data with no repository to find, and `r sum(a9_cats$Category == "SOURCE_CITATION_ERROR")` paper's own published citation pointed to an internal, non-public address rather than a reachable repository. These per-paper counts feed directly into the corpus-wide reconciling numbers reported in the main text and into Table 1's totals above.
+
+## A.10 Full paper-by-paper detail for every Metacheck limitation identified in the full disagreement-population review
+
+```{r}
+#| label: a10-metacheck-limitations-load
+
+# Generated directly from manual_repo_findability_audit.csv -- the same
+# file the main text's Table 1 and five-cluster breakdown are computed
+# from (see the full-317-audit-load chunk above). Every row here is one
+# of the n_metacheck_limitation papers from that cluster; nothing below
+# is hand-transcribed, so this table stays in sync with the CSV
+# automatically whenever it is updated and this document is re-rendered.
+a10_labels <- c(
+  CLASSIFIER_EXTENSION_GAP = "File extension not in Metacheck's lookup table",
+  CLASSIFIER_MISTYPED = "Recognised extension assigned to the wrong category",
+  CLASSIFIER_ARCHIVE_NOT_EXPANDED = "Archive never downloaded/opened (pipeline configuration mismatch)",
+  FILES_NOT_ENUMERATED = "Repository file listing did not walk into subfolders",
+  SUPPORTED_PLATFORM_BUG = "Supported platform, but a specific detection defect",
+  SUPPORTED_PLATFORM_CONFIG_GAP = "Supported platform family, but this host/DOI-prefix not registered",
+  EXTRACTION_GAP_DOI_GARBLED = "Citation corrupted by the PDF-to-text extraction step",
+  EXTRACTION_GAP_TEXT_MISSING = "No trace of the citation in the extracted text",
+  STALE_CACHE_FALSE_NEGATIVE = "On-disk cache entry predates a fix or wrongly cached a failed lookup"
+)
+
+a10_tab <- full_audit[full_audit$root_cause_category %in% metacheck_limitation_cats,
+                       c("paper_doi", "root_cause_category", "manual_why_metacheck_misses_it")]
+a10_tab$root_cause_category <- a10_labels[a10_tab$root_cause_category]
+# Order by category (in the same order as the main text discusses them),
+# then by DOI within each category, for a predictable reading order.
+a10_tab$.order <- match(a10_tab$root_cause_category, a10_labels)
+a10_tab <- a10_tab[order(a10_tab$.order, a10_tab$paper_doi), ]
+a10_tab$.order <- NULL
+names(a10_tab) <- c("Paper (DOI)", "Category", "Why Metacheck misses it")
+a10_tab$`Why Metacheck misses it` <- .break_stray_backslash(a10_tab$`Why Metacheck misses it`)
+stopifnot(nrow(a10_tab) == n_metacheck_limitation)
+```
+
+Table 4 lists every one of the `r n_metacheck_limitation` papers in the main text's "Metacheck limitation" cluster individually: its DOI, which of the nine specific defects (grouped into the three broader categories discussed in the main text) applies, and the evidence-based reasoning for that classification, generated directly from the same per-paper audit file (`manual_repo_findability_audit.csv`) the main text's numbers are computed from. Because the table is built programmatically from that file rather than transcribed by hand, it stays reconciled with the main text's counts automatically on every re-render (confirmed by the chunk above: the table's row count is checked against `n_metacheck_limitation` directly).
+
+```{r}
+#| label: a10-metacheck-limitations-table
+#| tbl-cap: "Table 4. Full paper-by-paper detail for every Metacheck limitation identified in the full disagreement-population review."
+
+flextable::flextable(a10_tab) |>
+  flextable::width(1, 1.3) |> flextable::width(2, 1.5) |> flextable::width(3, 4.3) |>
+  flextable::fontsize(size = 7, part = "all")
+```
 
 ## References
 

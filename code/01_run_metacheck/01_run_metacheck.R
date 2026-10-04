@@ -18,12 +18,14 @@
 library(metacheck)
 library(dplyr)
 
-# Downloaded repository files are cached in data/ (.metacheck_repo_cache,
-# .metacheck_repo_info_cache, .metacheck_llm_cache), shared with
-# data/reproducibility_check/run_reproducibility_check.R. Without this,
-# metacheck defaults to the working directory (code/) and downloads
-# everything again into a second cache.
-options(metacheck.cache.dir = normalizePath("data", winslash = "/"))
+# Downloaded repository files are cached at D:/.metacheck_repo_cache
+# (.metacheck_repo_info_cache, .metacheck_llm_cache live alongside it),
+# shared with data/reproducibility_check/run_reproducibility_check.R.
+# Moved here from code/data/ to keep the (large, ~40GB+) cache off the
+# OneDrive-synced project folder. Without this, metacheck defaults to the
+# working directory (code/) and downloads everything again into a second
+# cache.
+options(metacheck.cache.dir = "D:/")
 
 # Progress line, timestamped, flushed immediately so `tail -f` (or the
 # equivalent) on stdout shows live status during a run that takes hours

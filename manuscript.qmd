@@ -82,16 +82,25 @@ knitr::write_bib(
 # scienceverse/papers_private if you do not already have it.
 bes <- readRDS("code/data/bes.rds")
 
-# master_comparison.rds (built by 02_create_comparison_data/
-# 03_build_master_comparison.R) is a strict superset of every other
-# comparison-data object this manuscript needs: Cooper et al.'s own
-# columns, metacheck's recreated mc_* columns, open_practices/ODDPub's
-# columns, the data_open/code_open accuracy_summary attribute, and
-# recorder_ID (joined against the DOI-corrected, deduplicated 1861-paper
-# set -- using this rather than Cooper's raw CSV directly avoids a
-# known data-entry bug, see README.md's "known data-entry bug" section,
-# where 4 rows' doi field was mistakenly copy-pasted from a different
-# paper's row).
+# Every object below is a target in the targets pipeline (_targets.R at
+# the repo root) rather than a direct readRDS()/load() call, so rendering
+# this manuscript always reflects whatever `targets::tar_make()` last
+# computed -- and tar_make() itself only recomputes a target when one of
+# its own upstream dependencies (ultimately, the three res_*_check.RData
+# files) has actually changed, catching the staleness that direct
+# readRDS()/load() calls could not. Run `Rscript -e
+# "targets::tar_make()"` before rendering if you are not sure everything
+# is current; quarto::quarto_render() itself does not check this.
+#
+# master_comparison is a strict superset of every other comparison-data
+# object this manuscript needs: Cooper et al.'s own columns, metacheck's
+# recreated mc_* columns, open_practices/ODDPub's columns, the
+# data_open/code_open accuracy_summary attribute, and recorder_ID
+# (joined against the DOI-corrected, deduplicated 1861-paper set --
+# using this rather than Cooper's raw CSV directly avoids a known
+# data-entry bug, see README.md's "known data-entry bug" section, where
+# 4 rows' doi field was mistakenly copy-pasted from a different paper's
+# row).
 #
 # TODO (open question, not yet resolved): master_comparison does not
 # carry a data_used/code_used column even though Cooper et al. coded
@@ -102,32 +111,34 @@ bes <- readRDS("code/data/bes.rds")
 # values could still be joined in here for the papers-that-use-data/
 # code denominators used below, rather than reconstructed from
 # data_availability/code_archived as a proxy.
-master_comparison <- readRDS("code/02_create_comparison_data/master_comparison.rds")
+targets::tar_load(master_comparison, store = "_targets")
 accuracy_summary <- attr(master_comparison, "accuracy_summary")
 
-# Computed by 03_comparing_results/01_compute_comparison_statistics.R
-# (confusion tables, sensitivity/specificity, the two directional miss
-# rates, and McNemar's test for every comparison column, from
-# master_comparison.rds, n = 1861, agreements included, and the
-# individually-verified verdicts in 02_create_comparison_data/
-# disagreement_review_worklist.xlsx) and by 03_comparing_results/
-# 02_categorize_disagreement_causes.R (a reproducible, keyword-based
+# comparison_statistics (confusion tables, sensitivity/specificity, the
+# two directional miss rates, and McNemar's test for every comparison
+# column, from master_comparison, n = 1861, agreements included, and the
+# individually-verified verdicts in the disagreement worklist) and
+# disagreement_cause_categories (a reproducible, keyword-based
 # categorization of each verified disagreement's root cause, computed
 # directly from the verdict comments rather than hand-tallied). Both
-# scripts compare the three CORE Metacheck modules' (repo_check/
-# data_check/code_check) recreated columns against Cooper et al.'s
-# ground truth -- see 03_comparing_results/'s own scripts for the full
-# derivation.
-load("code/03_comparing_results/comparison_statistics.RData")
-load("code/03_comparing_results/disagreement_cause_categories.RData")
+# compare the three CORE Metacheck modules' (repo_check/data_check/
+# code_check) recreated columns against Cooper et al.'s ground truth --
+# see R/comparison_statistics.R and R/disagreement_cause_categories.R
+# for the full derivation.
+targets::tar_load(comparison_statistics, store = "_targets")
+results <- comparison_statistics$results
+verdict_tallies <- comparison_statistics$verdict_tallies
+targets::tar_load(disagreement_cause_categories, store = "_targets")
+cooper_right_causes <- disagreement_cause_categories$cooper_right_causes
+any_readme_dd_causes <- disagreement_cause_categories$any_readme_dd_causes
+data_availability_dd_causes <- disagreement_cause_categories$data_availability_dd_causes
+code_archived_mr_causes <- disagreement_cause_categories$code_archived_mr_causes
 
 # The disagreement worklist itself, for the qualitative review counts
 # quoted in the Empirical Comparison section (how many of the n
 # disagreements were individually reviewed).
-review <- as.data.frame(
-  openxlsx::read.xlsx("code/02_create_comparison_data/disagreement_review_worklist.xlsx"),
-  stringsAsFactors = FALSE
-)
+targets::tar_load(disagreement_worklist, store = "_targets")
+review <- disagreement_worklist$review
 
 # side_by_side: master_comparison's own Cooper-vs-metacheck columns,
 # under the shorter name several later chunks use.
@@ -186,20 +197,21 @@ n_mc_open_ambig_code <- sum(side_by_side$mc_code_open[ambig_code_open], na.rm = 
 # three full module-output files (res_repo_check.RData,
 # res_data_check.RData, res_code_check.RData -- ~80MB + ~1.9GB + ~1.9GB
 # on disk, several times that once deserialized), so it reads a small,
-# pre-extracted "slim" file instead: repo_metadata in full (already
+# pre-extracted "slim" target instead: repo_metadata in full (already
 # small), and only paper_id/data_type/repo_url/file_name from
 # res_data_check$structure and paper_id/repo_url from
 # res_code_check$table (confirmed, by grepping this file, that no
 # other columns from either table are ever read anywhere below). This
 # cuts render time and peak memory use substantially, since loading
 # this file never requires holding either multi-gigabyte object in
-# memory at all. Rebuild it with
-# `Rscript code/01_run_metacheck/02_build_manuscript_data_slim.R`
-# whenever one of the three source RData files is regenerated (e.g.
-# after a corpus rerun) -- that script documents the exact column list
-# this manuscript depends on, so a column added here should be added
-# there too.
-load("code/01_run_metacheck/manuscript_data_slim.RData")
+# memory at all. Built by the structure_slim_obj / code_table_slim_obj /
+# manuscript_data_slim targets in _targets.R (R/slim_extraction.R),
+# which document the exact column list this manuscript depends on, so a
+# column added here should be added there too.
+targets::tar_load(manuscript_data_slim, store = "_targets")
+repo_metadata <- manuscript_data_slim$repo_metadata
+structure_slim <- manuscript_data_slim$structure_slim
+code_table_slim <- manuscript_data_slim$code_table_slim
 
 # Small formatting helpers used throughout the Empirical Comparison
 # section, so every percentage/test-statistic there is computed rather
@@ -758,8 +770,8 @@ Cooper et al.'s protocol includes a construct no Metacheck module attempts to an
 # over code lines summed across every analysable file in that paper, not
 # an average of per-file percentages, so a 500-line file counts more than
 # a 5-line file).
-load("code/03_comparing_results/comment_quality_correlation.RData")
-cq <- comment_quality
+targets::tar_load(comment_quality_correlation, store = "_targets")
+cq <- comment_quality_correlation
 ```
 
 We aggregated Metacheck's per-file comment counts to one value per paper — total comment lines divided by total lines across every code file `code_check` could download and parse for that paper — and compared it against Cooper et al.'s `code_annotation_scale` for the `r cq$n_both` papers where both were available (of `r cq$n_cooper_coded` papers Cooper et al. rated and `r cq$n_mc_has_stats` papers Metacheck could compute a comment percentage for at all; the smaller overlap reflects that Metacheck's count requires at least one code file to have actually downloaded and parsed, which, as the sections above document, is itself not guaranteed).
@@ -775,10 +787,10 @@ Every comparison above answers a question Cooper et al.'s protocol already asked
 ```{r}
 #| label: free-extras-stats
 
-# Computed by 03_comparing_results/04_free_extras_summary.R directly
-# from the saved corpus-wide module outputs -- no new module run.
-load("code/03_comparing_results/free_extras_summary.RData")
-fe <- free_extras
+# Computed directly from the saved corpus-wide module outputs -- no new
+# module run. See R/free_extras_summary.R.
+targets::tar_load(free_extras_summary, store = "_targets")
+fe <- free_extras_summary
 ```
 
 ### Code portability and reproducibility signals

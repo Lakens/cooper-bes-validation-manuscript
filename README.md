@@ -22,16 +22,64 @@ assumed to be present.
 ## Quickest path: just render the manuscript
 
 ```bash
-cd manuscript
-quarto render manuscript.qmd
+Rscript -e "targets::tar_make()"
 ```
 
-This needs no internet access and no corpus rerun — every number the
-manuscript reports is read from the small `.RData`/`.csv` files already in
-`manuscript/data/`, at render time, via inline R code. Nothing in
-`manuscript.qmd` is a hand-typed number describing the results (a few
-narrative counts describing *methodology*, e.g. "145 people," are typed
-prose, not derived figures).
+Run from the repository root. This needs no internet access and no corpus
+rerun — every number the manuscript reports is computed by the `targets`
+pipeline (`_targets.R`, functions in `R/`) from the `.RData`/`.csv` files
+already in `code/`, then read into `manuscript.qmd` at render time via
+`targets::tar_read()`/`tar_load()`. Nothing in `manuscript.qmd` is a
+hand-typed number describing the results (a few narrative counts
+describing *methodology*, e.g. "145 people," are typed prose, not derived
+figures).
+
+Running `quarto render manuscript.qmd` directly (bypassing `tar_make()`)
+also works, but only reflects whatever `targets` last computed — it does
+not itself check for or rebuild anything stale. Use `tar_make()` as the
+normal way to render; reach for `quarto render` directly only when you
+already know nothing upstream has changed.
+
+### The two-tier pipeline
+
+This project has two tiers, kept deliberately separate:
+
+1. **Manual, outside `targets`**: `code/01_run_metacheck/01_run_metacheck.R`
+   (the full multi-hour, rate-limited, live-API corpus run) and the
+   targeted rerun-and-merge scripts in that same folder
+   (`03_rerun_confirmed_fixed_papers.R` through `07_*.R`, each re-running
+   and merging a specific, hand-picked subset of papers). Run these by
+   hand with `Rscript` exactly as before; nothing about them changed.
+   They write `code/01_run_metacheck/res_repo_check.RData`,
+   `res_data_check.RData`, and `res_code_check.RData`.
+
+2. **Automatic, via `targets`**: everything from those three files
+   through to the manuscript PDF. `_targets.R` declares this as a
+   dependency graph; `tar_make()` rebuilds exactly the steps whose
+   inputs changed, in the right order — including the manuscript render
+   itself.
+
+Useful commands (run from the repository root):
+
+```r
+targets::tar_make()        # bring every comparison file and the PDF up to date
+targets::tar_outdated()    # see what's stale, without running anything
+targets::tar_visnetwork()  # see the dependency graph
+targets::tar_read(master_comparison)  # inspect one target's current value
+```
+
+After running a corpus rerun or a targeted rerun-and-merge script (tier 1
+above), just run `targets::tar_make()` — it detects which of the three
+`res_*_check.RData` files changed and rebuilds only what depends on it,
+down to the PDF.
+
+The disagreement-review worklist
+(`code/02_create_comparison_data/disagreement_review_worklist.xlsx`) is
+hand-edited (verdict/comment cells) between pipeline runs. `targets`
+tracks it as both an input (so a hand edit is picked up on the next
+`tar_make()`) and an output (so the data columns stay in sync with
+`master_comparison`) — editing it by hand and running `tar_make()` is
+the normal workflow; no separate script needs to be run first.
 
 `code_check_validation.qmd` renders the same way but is a **separate**
 report over a **different** corpus (400 ecology papers, not these 1861) —

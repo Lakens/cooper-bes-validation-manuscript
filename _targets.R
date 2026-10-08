@@ -49,6 +49,19 @@ list(
   tar_target(manual_fair_api_findability_audit_csv, "code/03_comparing_results/manual_fair_api_findability_audit.csv", format = "file"),
   tar_target(repo_not_detected_categorization_csv, "code/03_comparing_results/repo_not_detected_categorization.csv", format = "file"),
 
+  # The two manual_*_audit.csv files above contain free-text explanations
+  # of metacheck's behaviour on specific papers; those explanations are
+  # only valid for the metacheck version installed when they were written.
+  # Returning the installed RemoteSha as a plain target (not a file
+  # target) makes targets treat it like any other value: whenever a fresh
+  # `library(metacheck)` install changes this string, targets reruns
+  # audit_staleness below automatically, the same way it reruns anything
+  # else whose upstream value changed.
+  tar_target(installed_metacheck_sha, .current_metacheck_sha()),
+  tar_target(audit_staleness, check_audit_staleness(
+    manual_repo_findability_audit_csv, manual_fair_api_findability_audit_csv,
+    installed_metacheck_sha)),
+
   # == Slim extraction chain (02a/02b/02c) ============================================
   tar_target(structure_slim_obj, extract_structure_slim(res_data_check_file)),
   tar_target(code_table_slim_obj, extract_code_table_slim(res_code_check_file)),

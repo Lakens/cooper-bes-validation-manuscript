@@ -37,9 +37,12 @@ test_that("the repo_check results list every file once and count files correctly
   expect_false(any(grepl("_by_batch_by_batch", names(r))))
   expect_equal(sum(copies(r$table)), 0)
   expect_true(all(r$table$paper_id %in% st$paper_id))
-  # files_n is the number of files repo_check listed for the paper.
+  # files_n is the number of files repo_check listed for the paper. Metacheck
+  # 109a9aa leaves it NA for a paper that cites no repository (repo_n 0),
+  # which has no files.
   rows <- as.integer(table(factor(r$table$paper_id, levels = st$paper_id)))
-  expect_equal(st$files_n, rows)
+  expect_true(all(st$repo_n[is.na(st$files_n)] == 0))
+  expect_equal(ifelse(is.na(st$files_n), 0L, as.integer(st$files_n)), rows)
 })
 
 test_that("the data_check results list every file once", {

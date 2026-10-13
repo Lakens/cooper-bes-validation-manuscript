@@ -21,14 +21,7 @@ OPEN
    read_corpus_result(). If any of the older scripts is ever rerun, change it
    to use those two functions first.
 
-2. Metacheck issue to file (draft ready, waiting for approval): support the
-   Environmental Data Initiative through its DataONE member node
-   (gmn.edirepository.org/mn/v2/; needs reading the ORE resource map and
-   full-URL file PIDs) and Handle identifiers for Dataverse
-   (repo.researchdata.hu); corrections to issue #461 (researchdata.se is not
-   Dataverse; the UNSW Handle redirect could not be verified).
-
-3. Possible Metacheck issues noticed during the review (not yet filed):
+2. Possible Metacheck issues noticed during the review (not yet filed):
    - reproducibility_check worked for two hours without starting paper
      10_1111_2041_210x_14196 (a 97-file Python package); it was stopped.
    - Dryad dataset listings can hold a file twice under two file numbers;
@@ -39,3 +32,11 @@ OPEN
      hold R code (MLWIC, LadderFuelsR); R scripts inside a zip missed
      (10_1111_1365_2656_13159); an install_github() repository labelled
      "Other repo/database" (10_1111_2041_210x_14417).
+
+3. Filed 2026-10-13 as scienceverse/metacheck#476: the "arguments imply
+   differing number of rows" message in gated_repos hides the real error
+   when every link of one platform on a paper fails (no data is lost); DataONE
+   does not find a DOI written in lower case (13026, 14387); Dataverse
+   persistentId=hdl: links return an empty record (13077). When #476 is fixed,
+   rerun 10_1111_2041_210x_14387 (in the audit) and check 13026 and 13077,
+   which have other files but miss this deposit.

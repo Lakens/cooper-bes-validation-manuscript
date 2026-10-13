@@ -1,0 +1,141 @@
+{
+  "paper_id": "10_1111_1365_2664_14704",
+  "generated": "2026-10-13T08:32:09+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-13T08:32:09+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 9,
+  "n_downloaded": 8,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Description of the datafiles.pdf",
+      "file_path": "Description of the datafiles.pdf",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/38337",
+      "file_size": 51507,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Figure 2 Seagrass populations per region.tab",
+      "file_path": "Figure 2 Seagrass populations per region.tab",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/38336",
+      "file_size": 7809,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_3_Elbe.tab",
+      "file_path": "Figure_3_Elbe.tab",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/34989",
+      "file_size": 103542,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_3_Lobith.ods",
+      "file_path": "Figure_3_Lobith.ods",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/38342",
+      "file_size": 53822,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_4.ods",
+      "file_path": "Figure_4.ods",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/38343",
+      "file_size": 10613,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_5.tab",
+      "file_path": "Figure_5.tab",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/34981",
+      "file_size": 4976,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_6.tab",
+      "file_path": "Figure_6.tab",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/34990",
+      "file_size": 1781,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_7.tab",
+      "file_path": "Figure_7.tab",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/34986",
+      "file_size": 3637,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Table 3.ods",
+      "file_path": "Table 3.ods",
+      "repo_url": "https://doi.org/10.17026/LS/TZYAGQ",
+      "file_url": "https://lifesciences.datastations.nl/api/access/datafile/38341",
+      "file_size": 12138,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

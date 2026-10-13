@@ -1,0 +1,165 @@
+{
+  "paper_id": "10_1111_1365_2656_12832",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_for_Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.pdf",
+      "file_path": "README_for_Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": "https://datadryad.org/api/v2/files/35426/download",
+      "file_size": 185822,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FIG1_MSFC.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/FIG1_MSFC.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 483,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FIG2_BrPHEN.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/FIG2_BrPHEN.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 401,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Linton_DM_Macdonald_DW_Data_Archive_RCODE.R",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/Linton_DM_Macdonald_DW_Data_Archive_RCODE.R",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 20719,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MDJCOH.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MDJCOH.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 267,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MNJCOH.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MNJCOH.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 256,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MODEL_Ia_BRVP1.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MODEL_Ia_BRVP1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 12976,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MODEL_Ib_BRVL1.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MODEL_Ib_BRVL1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 17848,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MODEL_II_BRVLA.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MODEL_II_BRVLA.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 73047,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MODEL_III_BRVLY.txt",
+      "file_path": "Linton_DM_Macdonald_DW_J_Animal_Ecology_2018.zip/Linton_DM_Macdonald_DW_J_Animal_Ecology_2018/MODEL_III_BRVLY.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7m5f83",
+      "file_url": {},
+      "file_size": 80496,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "AICcmodavg",
+      "ggplot2",
+      "lme4",
+      "mgcv",
+      "optimx"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

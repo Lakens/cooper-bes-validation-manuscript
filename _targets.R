@@ -57,7 +57,9 @@ list(
   # `library(metacheck)` install changes this string, targets reruns
   # audit_staleness below automatically, the same way it reruns anything
   # else whose upstream value changed.
-  tar_target(installed_metacheck_sha, .current_metacheck_sha()),
+  # cue "always": the function body never changes, so without it targets
+  # would keep the SHA from the first build even after a reinstall.
+  tar_target(installed_metacheck_sha, .current_metacheck_sha(), cue = tar_cue(mode = "always")),
   tar_target(audit_staleness, check_audit_staleness(
     manual_repo_findability_audit_csv, manual_fair_api_findability_audit_csv,
     installed_metacheck_sha)),
@@ -92,6 +94,9 @@ list(
   tar_target(disagreement_worklist_xlsx_written,
              write_disagreement_worklist_xlsx(disagreement_worklist, disagreement_worklist_xlsx_input),
              format = "file"),
+  # Same version check as audit_staleness, for every written verdict.
+  tar_target(worklist_staleness, check_worklist_staleness(
+    disagreement_worklist, installed_metacheck_sha)),
 
   # == Master comparison (03_build_master_comparison.R) ==============================
   tar_target(master_comparison, build_master_comparison(

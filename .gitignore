@@ -41,3 +41,19 @@ code/01_run_metacheck/batches/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Run logs (stdout/stderr of long runs, cache-copy logs): local progress
+# records, not inputs to anything. Per-paper download outcomes are kept
+# in the committed manifests/ folders instead.
+code/01_run_metacheck/*.log
+code/data/*.log
+# Per-paper result files of the targeted reruns (several GB): merged into
+# the corpus-wide res_*_check.RData files, like batches/ above.
+code/01_run_metacheck/*/papers/
+code/01_run_metacheck/*/batches/
+code/01_run_metacheck/*/paper_logs/
+# One-off backup copies made before a merge.
+/backup_*.rds
+# Script 13's combined rerun results (1.6 GB each): an intermediate step,
+# already merged into the corpus-wide res_*_check.RData files.
+code/01_run_metacheck/rerun_failed_archive_downloads/res_*_new.RData

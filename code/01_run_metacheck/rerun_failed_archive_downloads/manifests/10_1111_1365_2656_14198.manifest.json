@@ -1,0 +1,355 @@
+{
+  "paper_id": "10_1111_1365_2656_14198",
+  "generated": "2026-10-11T08:00:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T08:00:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 23,
+  "n_downloaded": 13,
+  "not_downloaded": {
+    "intentional_n": 9,
+    "unintentional_n": 1,
+    "unintentional_files": [
+      {
+        "file_name": "Goose_SIMS.RData",
+        "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+        "reason": "no download URL in the listing"
+      }
+    ],
+    "rerun_recommended": true
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": "https://datadryad.org/api/v2/files/3043379/download",
+      "file_size": 7821,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".Rhistory",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/.Rhistory",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 96,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "A.Simulations.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/A.Simulations.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 11501,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "B.SimFunctions.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/B.SimFunctions.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 20732,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "C.FoxModelEstimations.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/C.FoxModelEstimations.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 15085,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "D.GooseModelEstimations.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/D.GooseModelEstimations.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 10943,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README Fox.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Fox Data/README Fox.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 1425,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Env_covariates.xlsx",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Goose Data/Env_covariates.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 12506,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "goose_recruitment.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Goose Data/goose_recruitment.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 149031,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "goose_survival.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Goose Data/goose_survival.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 154876,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README Goose.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Goose Data/README Goose.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 2681,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README Reindeer.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Reindeer Data/README Reindeer.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 1646,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temperature_SvalbardAirport.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/data/Reindeer Data/temperature_SvalbardAirport.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 316187,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "E.Figure2_code.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/E.Figure2_code.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 19375,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "F.Figure3_code.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/F.Figure3_code.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 12446,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "G.Figure4_code.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/G.Figure4_code.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 8156,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "H.extract_winterlength.R",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/H.extract_winterlength.R",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 3109,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 8112,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fox_estimates_varcov.RData",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/tmp_data/fox_estimates_varcov.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 3679355,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Fox_SIMS.Rdata",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/tmp_data/Fox_SIMS.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 76821767,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Goose_SIMS.RData",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/tmp_data/Goose_SIMS.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 237876557,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "goose_surv_estimates.RData",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/tmp_data/goose_surv_estimates.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 1351294,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Reindeer_SIMS.Rdata",
+      "file_path": "Dryad_BartraCabre.zip/Dryad_BartraCabre/tmp_data/Reindeer_SIMS.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.zcrjdfnm4",
+      "file_url": {},
+      "file_size": 91244659,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "ape",
+      "arm",
+      "boot",
+      "caper",
+      "cowplot",
+      "dplyr",
+      "ggplot2",
+      "glmmTMB",
+      "grid",
+      "gridExtra",
+      "here",
+      "jagsUI",
+      "lme4",
+      "logitnorm",
+      "MCMCpack",
+      "MuMIn",
+      "mvtnorm",
+      "nlme",
+      "operators",
+      "overlapping",
+      "plyr",
+      "pracma",
+      "progress",
+      "readxl",
+      "reshape",
+      "stringr",
+      "tidyr",
+      "tidyverse"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

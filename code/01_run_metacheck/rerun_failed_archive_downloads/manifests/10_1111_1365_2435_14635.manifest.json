@@ -1,0 +1,1652 @@
+{
+  "paper_id": "10_1111_1365_2435_14635",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 128,
+  "n_downloaded": 99,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 29,
+    "unintentional_files": [
+      {
+        "file_name": "ZTPSN21HD210-A_T3_3_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD222-B_T2_3_R_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD228-B_CK1_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD228-B_CK1_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD229-B_CK2_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD229-B_CK2_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD230-B_CK3_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD230-B_CK3_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD231-B_CK4_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD231-B_CK4_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD232-B_T1_1_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD233-B_T1_2_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD233-B_T1_2_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD234-B_T1_3_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD234-B_T1_3_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD235-B_T1_4_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD236-B_T2_1_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD236-B_T2_1_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD237-B_T2_2_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD237-B_T2_2_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD238-B_T2_3_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD238-B_T2_3_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD239-B_T2_4_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD240-B_T3_1_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD240-B_T3_1_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD242-B_T3_3_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD242-B_T3_3_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD243-B_T3_4_nR_R1.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      },
+      {
+        "file_name": "ZTPSN21HD243-B_T3_4_nR_R2.fq.gz",
+        "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+        "reason": "no download URL in the listing"
+      }
+    ],
+    "rerun_recommended": true
+  },
+  "files": [
+    {
+      "file_name": "ZTPSN21HD210-A_T3_3_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD210-A_T3_3_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6391686,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD222-B_T2_3_R_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD222-B_T2_3_R_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6385798,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD228-B_CK1_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD228-B_CK1_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6550730,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD228-B_CK1_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD228-B_CK1_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6897775,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD229-B_CK2_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD229-B_CK2_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 10398948,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD229-B_CK2_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD229-B_CK2_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 11340880,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD230-B_CK3_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD230-B_CK3_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6636264,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD230-B_CK3_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD230-B_CK3_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6953519,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD231-B_CK4_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD231-B_CK4_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6500860,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD231-B_CK4_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD231-B_CK4_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6834585,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD232-B_T1_1_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD232-B_T1_1_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6306178,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD233-B_T1_2_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD233-B_T1_2_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6613825,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD233-B_T1_2_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD233-B_T1_2_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6943361,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD234-B_T1_3_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD234-B_T1_3_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7417503,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD234-B_T1_3_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD234-B_T1_3_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7748991,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD235-B_T1_4_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD235-B_T1_4_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6448042,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD236-B_T2_1_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD236-B_T2_1_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7610132,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD236-B_T2_1_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD236-B_T2_1_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7943649,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD237-B_T2_2_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD237-B_T2_2_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6928595,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD237-B_T2_2_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD237-B_T2_2_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7258030,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD238-B_T2_3_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD238-B_T2_3_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6397737,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD238-B_T2_3_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD238-B_T2_3_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6705664,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD239-B_T2_4_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD239-B_T2_4_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6565127,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD240-B_T3_1_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD240-B_T3_1_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7033198,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD240-B_T3_1_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD240-B_T3_1_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7312691,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD242-B_T3_3_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD242-B_T3_3_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6815528,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD242-B_T3_3_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD242-B_T3_3_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7039947,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD243-B_T3_4_nR_R1.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD243-B_T3_4_nR_R1.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 6874242,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD243-B_T3_4_nR_R2.fq.gz",
+      "file_path": "phoD.zip/ZTPSN21HD243-B_T3_4_nR_R2.fq.gz",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 7053909,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    },
+    {
+      "file_name": "ZTPSN21HD180-A_CK1_R_R1.fq",
+      "file_path": "ZTPSN21HD180-A_CK1_R_R1.fq.gz/ZTPSN21HD180-A_CK1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49744987,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD180-A_CK1_R_R2.fq",
+      "file_path": "ZTPSN21HD180-A_CK1_R_R2.fq.gz/ZTPSN21HD180-A_CK1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 51019407,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD181-A_CK2_R_R1.fq",
+      "file_path": "ZTPSN21HD181-A_CK2_R_R1.fq.gz/ZTPSN21HD181-A_CK2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56085069,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD181-A_CK2_R_R2.fq",
+      "file_path": "ZTPSN21HD181-A_CK2_R_R2.fq.gz/ZTPSN21HD181-A_CK2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 57521917,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD182-A_CK3_R_R1.fq",
+      "file_path": "ZTPSN21HD182-A_CK3_R_R1.fq.gz/ZTPSN21HD182-A_CK3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 63259803,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD182-A_CK3_R_R2.fq",
+      "file_path": "ZTPSN21HD182-A_CK3_R_R2.fq.gz/ZTPSN21HD182-A_CK3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 64880457,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD183-A_CK4_R_R1.fq",
+      "file_path": "ZTPSN21HD183-A_CK4_R_R1.fq.gz/ZTPSN21HD183-A_CK4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56664074,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD183-A_CK4_R_R2.fq",
+      "file_path": "ZTPSN21HD183-A_CK4_R_R2.fq.gz/ZTPSN21HD183-A_CK4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 58115762,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD184-A_T1_1_R_R1.fq",
+      "file_path": "ZTPSN21HD184-A_T1_1_R_R1.fq.gz/ZTPSN21HD184-A_T1_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 61903326,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD184-A_T1_1_R_R2.fq",
+      "file_path": "ZTPSN21HD184-A_T1_1_R_R2.fq.gz/ZTPSN21HD184-A_T1_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 63489232,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD185-A_T1_2_R_R1.fq",
+      "file_path": "ZTPSN21HD185-A_T1_2_R_R1.fq.gz/ZTPSN21HD185-A_T1_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 48025419,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD185-A_T1_2_R_R2.fq",
+      "file_path": "ZTPSN21HD185-A_T1_2_R_R2.fq.gz/ZTPSN21HD185-A_T1_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49255781,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD186-A_T1_3_R_R1.fq",
+      "file_path": "ZTPSN21HD186-A_T1_3_R_R1.fq.gz/ZTPSN21HD186-A_T1_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 57544417,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD186-A_T1_3_R_R2.fq",
+      "file_path": "ZTPSN21HD186-A_T1_3_R_R2.fq.gz/ZTPSN21HD186-A_T1_3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59018659,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD187-A_T1_4_R_R1.fq",
+      "file_path": "ZTPSN21HD187-A_T1_4_R_R1.fq.gz/ZTPSN21HD187-A_T1_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 50936765,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD187-A_T1_4_R_R2.fq",
+      "file_path": "ZTPSN21HD187-A_T1_4_R_R2.fq.gz/ZTPSN21HD187-A_T1_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 52241719,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD188-A_T2_1_R_R1.fq",
+      "file_path": "ZTPSN21HD188-A_T2_1_R_R1.fq.gz/ZTPSN21HD188-A_T2_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 53938866,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD188-A_T2_1_R_R2.fq",
+      "file_path": "ZTPSN21HD188-A_T2_1_R_R2.fq.gz/ZTPSN21HD188-A_T2_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 55320736,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD189-A_T2_2_R_R1.fq",
+      "file_path": "ZTPSN21HD189-A_T2_2_R_R1.fq.gz/ZTPSN21HD189-A_T2_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 58296701,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD189-A_T2_2_R_R2.fq",
+      "file_path": "ZTPSN21HD189-A_T2_2_R_R2.fq.gz/ZTPSN21HD189-A_T2_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59790221,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD190-A_T2_3_R_R1.fq",
+      "file_path": "ZTPSN21HD190-A_T2_3_R_R1.fq.gz/ZTPSN21HD190-A_T2_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49762579,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD190-A_T2_3_R_R2.fq",
+      "file_path": "ZTPSN21HD190-A_T2_3_R_R2.fq.gz/ZTPSN21HD190-A_T2_3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 51037461,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD191-A_T2_4_R_R1.fq",
+      "file_path": "ZTPSN21HD191-A_T2_4_R_R1.fq.gz/ZTPSN21HD191-A_T2_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 52155261,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD191-A_T2_4_R_R2.fq",
+      "file_path": "ZTPSN21HD191-A_T2_4_R_R2.fq.gz/ZTPSN21HD191-A_T2_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 53491435,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD192-A_T3_1_R_R1.fq",
+      "file_path": "ZTPSN21HD192-A_T3_1_R_R1.fq.gz/ZTPSN21HD192-A_T3_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 64504660,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD192-A_T3_1_R_R2.fq",
+      "file_path": "ZTPSN21HD192-A_T3_1_R_R2.fq.gz/ZTPSN21HD192-A_T3_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 66157206,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD193-A_T3_2_R_R1.fq",
+      "file_path": "ZTPSN21HD193-A_T3_2_R_R1.fq.gz/ZTPSN21HD193-A_T3_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 58493227,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD193-A_T3_2_R_R2.fq",
+      "file_path": "ZTPSN21HD193-A_T3_2_R_R2.fq.gz/ZTPSN21HD193-A_T3_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59991773,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD194-A_T3_3_R_R1.fq",
+      "file_path": "ZTPSN21HD194-A_T3_3_R_R1.fq.gz/ZTPSN21HD194-A_T3_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 62251872,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD194-A_T3_3_R_R2.fq",
+      "file_path": "ZTPSN21HD194-A_T3_3_R_R2.fq.gz/ZTPSN21HD194-A_T3_3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 63846710,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD195-A_T3_4_R_R1.fq",
+      "file_path": "ZTPSN21HD195-A_T3_4_R_R1.fq.gz/ZTPSN21HD195-A_T3_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 58216090,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD195-A_T3_4_R_R2.fq",
+      "file_path": "ZTPSN21HD195-A_T3_4_R_R2.fq.gz/ZTPSN21HD195-A_T3_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59707538,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD196-A_CK1_nR_R1.fq",
+      "file_path": "ZTPSN21HD196-A_CK1_nR_R1.fq.gz/ZTPSN21HD196-A_CK1_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56058053,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD196-A_CK1_nR_R2.fq",
+      "file_path": "ZTPSN21HD196-A_CK1_nR_R2.fq.gz/ZTPSN21HD196-A_CK1_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 57494215,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD197-A_CK2_nR_R1.fq",
+      "file_path": "ZTPSN21HD197-A_CK2_nR_R1.fq.gz/ZTPSN21HD197-A_CK2_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41607199,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD197-A_CK2_nR_R2.fq",
+      "file_path": "ZTPSN21HD197-A_CK2_nR_R2.fq.gz/ZTPSN21HD197-A_CK2_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 42673131,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD198-A_CK3_nR_R1.fq",
+      "file_path": "ZTPSN21HD198-A_CK3_nR_R1.fq.gz/ZTPSN21HD198-A_CK3_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 43696292,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD198-A_CK3_nR_R2.fq",
+      "file_path": "ZTPSN21HD198-A_CK3_nR_R2.fq.gz/ZTPSN21HD198-A_CK3_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 44815746,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD199-A_CK4_nR_R1.fq",
+      "file_path": "ZTPSN21HD199-A_CK4_nR_R1.fq.gz/ZTPSN21HD199-A_CK4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 40096488,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD199-A_CK4_nR_R2.fq",
+      "file_path": "ZTPSN21HD199-A_CK4_nR_R2.fq.gz/ZTPSN21HD199-A_CK4_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41123724,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD200-A_T1_1_nR_R1.fq",
+      "file_path": "ZTPSN21HD200-A_T1_1_nR_R1.fq.gz/ZTPSN21HD200-A_T1_1_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41193302,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD200-A_T1_1_nR_R2.fq",
+      "file_path": "ZTPSN21HD200-A_T1_1_nR_R2.fq.gz/ZTPSN21HD200-A_T1_1_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 42248636,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD201-A_T1_2_nR_R1.fq",
+      "file_path": "ZTPSN21HD201-A_T1_2_nR_R1.fq.gz/ZTPSN21HD201-A_T1_2_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 40206992,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD201-A_T1_2_nR_R2.fq",
+      "file_path": "ZTPSN21HD201-A_T1_2_nR_R2.fq.gz/ZTPSN21HD201-A_T1_2_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41237056,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD202-A_T1_3_nR_R1.fq",
+      "file_path": "ZTPSN21HD202-A_T1_3_nR_R1.fq.gz/ZTPSN21HD202-A_T1_3_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 40775328,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD202-A_T1_3_nR_R2.fq",
+      "file_path": "ZTPSN21HD202-A_T1_3_nR_R2.fq.gz/ZTPSN21HD202-A_T1_3_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41819952,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD203-A_T1_4_nR_R1.fq",
+      "file_path": "ZTPSN21HD203-A_T1_4_nR_R1.fq.gz/ZTPSN21HD203-A_T1_4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 44559972,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD203-A_T1_4_nR_R2.fq",
+      "file_path": "ZTPSN21HD203-A_T1_4_nR_R2.fq.gz/ZTPSN21HD203-A_T1_4_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 45701574,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD204-A_T2_1_nR_R1.fq",
+      "file_path": "ZTPSN21HD204-A_T2_1_nR_R1.fq.gz/ZTPSN21HD204-A_T2_1_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 51421544,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD204-A_T2_1_nR_R2.fq",
+      "file_path": "ZTPSN21HD204-A_T2_1_nR_R2.fq.gz/ZTPSN21HD204-A_T2_1_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 52738916,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD205-A_T2_2_nR_R1.fq",
+      "file_path": "ZTPSN21HD205-A_T2_2_nR_R1.fq.gz/ZTPSN21HD205-A_T2_2_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 41832019,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD205-A_T2_2_nR_R2.fq",
+      "file_path": "ZTPSN21HD205-A_T2_2_nR_R2.fq.gz/ZTPSN21HD205-A_T2_2_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 42903719,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD206-A_T2_3_nR_R1.fq",
+      "file_path": "ZTPSN21HD206-A_T2_3_nR_R1.fq.gz/ZTPSN21HD206-A_T2_3_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 45498578,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD206-A_T2_3_nR_R2.fq",
+      "file_path": "ZTPSN21HD206-A_T2_3_nR_R2.fq.gz/ZTPSN21HD206-A_T2_3_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 46664218,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD207-A_T2_4_nR_R1.fq",
+      "file_path": "ZTPSN21HD207-A_T2_4_nR_R1.fq.gz/ZTPSN21HD207-A_T2_4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 46499238,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD207-A_T2_4_nR_R2.fq",
+      "file_path": "ZTPSN21HD207-A_T2_4_nR_R2.fq.gz/ZTPSN21HD207-A_T2_4_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 47690512,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD208-A_T3_1_nR_R1.fq",
+      "file_path": "ZTPSN21HD208-A_T3_1_nR_R1.fq.gz/ZTPSN21HD208-A_T3_1_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 47567516,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD208-A_T3_1_nR_R2.fq",
+      "file_path": "ZTPSN21HD208-A_T3_1_nR_R2.fq.gz/ZTPSN21HD208-A_T3_1_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 48786160,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD209-A_T3_2_nR_R1.fq",
+      "file_path": "ZTPSN21HD209-A_T3_2_nR_R1.fq.gz/ZTPSN21HD209-A_T3_2_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 45928276,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD209-A_T3_2_nR_R2.fq",
+      "file_path": "ZTPSN21HD209-A_T3_2_nR_R2.fq.gz/ZTPSN21HD209-A_T3_2_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 47104920,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD210-A_T3_3_nR_R1.fq",
+      "file_path": "ZTPSN21HD210-A_T3_3_nR_R1.fq.gz/ZTPSN21HD210-A_T3_3_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 48056447,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD211-A_T3_4_nR_R1.fq",
+      "file_path": "ZTPSN21HD211-A_T3_4_nR_R1.fq.gz/ZTPSN21HD211-A_T3_4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 48020245,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD211-A_T3_4_nR_R2.fq",
+      "file_path": "ZTPSN21HD211-A_T3_4_nR_R2.fq.gz/ZTPSN21HD211-A_T3_4_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49250481,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD212-B_CK1_R_R1.fq",
+      "file_path": "ZTPSN21HD212-B_CK1_R_R1.fq.gz/ZTPSN21HD212-B_CK1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 46601273,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD212-B_CK1_R_R2.fq",
+      "file_path": "ZTPSN21HD212-B_CK1_R_R2.fq.gz/ZTPSN21HD212-B_CK1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 47795151,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD213-B_CK2_R_R1.fq",
+      "file_path": "ZTPSN21HD213-B_CK2_R_R1.fq.gz/ZTPSN21HD213-B_CK2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 55158845,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD213-B_CK2_R_R2.fq",
+      "file_path": "ZTPSN21HD213-B_CK2_R_R2.fq.gz/ZTPSN21HD213-B_CK2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56571977,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD214-B_CK3_R_R1.fq",
+      "file_path": "ZTPSN21HD214-B_CK3_R_R1.fq.gz/ZTPSN21HD214-B_CK3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 52125401,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD214-B_CK3_R_R2.fq",
+      "file_path": "ZTPSN21HD214-B_CK3_R_R2.fq.gz/ZTPSN21HD214-B_CK3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 53460819,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD215-B_CK4_R_R1.fq",
+      "file_path": "ZTPSN21HD215-B_CK4_R_R1.fq.gz/ZTPSN21HD215-B_CK4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 55469648,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD215-B_CK4_R_R2.fq",
+      "file_path": "ZTPSN21HD215-B_CK4_R_R2.fq.gz/ZTPSN21HD215-B_CK4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56890732,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD216-B_T1_1_R_R1.fq",
+      "file_path": "ZTPSN21HD216-B_T1_1_R_R1.fq.gz/ZTPSN21HD216-B_T1_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56527930,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD216-B_T1_1_R_R2.fq",
+      "file_path": "ZTPSN21HD216-B_T1_1_R_R2.fq.gz/ZTPSN21HD216-B_T1_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 57976132,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD217-B_T1_2_R_R1.fq",
+      "file_path": "ZTPSN21HD217-B_T1_2_R_R1.fq.gz/ZTPSN21HD217-B_T1_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 62868958,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD217-B_T1_2_R_R2.fq",
+      "file_path": "ZTPSN21HD217-B_T1_2_R_R2.fq.gz/ZTPSN21HD217-B_T1_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 64479616,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD218-B_T1_3_R_R1.fq",
+      "file_path": "ZTPSN21HD218-B_T1_3_R_R1.fq.gz/ZTPSN21HD218-B_T1_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 56733365,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD218-B_T1_3_R_R2.fq",
+      "file_path": "ZTPSN21HD218-B_T1_3_R_R2.fq.gz/ZTPSN21HD218-B_T1_3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 58186831,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD219-B_T1_4_R_R1.fq",
+      "file_path": "ZTPSN21HD219-B_T1_4_R_R1.fq.gz/ZTPSN21HD219-B_T1_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 66525869,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD219-B_T1_4_R_R2.fq",
+      "file_path": "ZTPSN21HD219-B_T1_4_R_R2.fq.gz/ZTPSN21HD219-B_T1_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 68230201,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD220-B_T2_1_R_R1.fq",
+      "file_path": "ZTPSN21HD220-B_T2_1_R_R1.fq.gz/ZTPSN21HD220-B_T2_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 61885103,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD220-B_T2_1_R_R2.fq",
+      "file_path": "ZTPSN21HD220-B_T2_1_R_R2.fq.gz/ZTPSN21HD220-B_T2_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 63470547,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD221-B_T2_2_R_R1.fq",
+      "file_path": "ZTPSN21HD221-B_T2_2_R_R1.fq.gz/ZTPSN21HD221-B_T2_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59002719,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD221-B_T2_2_R_R2.fq",
+      "file_path": "ZTPSN21HD221-B_T2_2_R_R2.fq.gz/ZTPSN21HD221-B_T2_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 60514313,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD222-B_T2_3_R_R1.fq",
+      "file_path": "ZTPSN21HD222-B_T2_3_R_R1.fq.gz/ZTPSN21HD222-B_T2_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 66752560,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD223-B_T2_4_R_R1.fq",
+      "file_path": "ZTPSN21HD223-B_T2_4_R_R1.fq.gz/ZTPSN21HD223-B_T2_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 63277718,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD223-B_T2_4_R_R2.fq",
+      "file_path": "ZTPSN21HD223-B_T2_4_R_R2.fq.gz/ZTPSN21HD223-B_T2_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 64898834,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD224-B_T3_1_R_R1.fq",
+      "file_path": "ZTPSN21HD224-B_T3_1_R_R1.fq.gz/ZTPSN21HD224-B_T3_1_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 59457431,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD224-B_T3_1_R_R2.fq",
+      "file_path": "ZTPSN21HD224-B_T3_1_R_R2.fq.gz/ZTPSN21HD224-B_T3_1_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 60980673,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD225-B_T3_2_R_R1.fq",
+      "file_path": "ZTPSN21HD225-B_T3_2_R_R1.fq.gz/ZTPSN21HD225-B_T3_2_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 65757397,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD225-B_T3_2_R_R2.fq",
+      "file_path": "ZTPSN21HD225-B_T3_2_R_R2.fq.gz/ZTPSN21HD225-B_T3_2_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 67442045,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD226-B_T3_3_R_R1.fq",
+      "file_path": "ZTPSN21HD226-B_T3_3_R_R1.fq.gz/ZTPSN21HD226-B_T3_3_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 45444055,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD226-B_T3_3_R_R2.fq",
+      "file_path": "ZTPSN21HD226-B_T3_3_R_R2.fq.gz/ZTPSN21HD226-B_T3_3_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 46608295,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD227-B_T3_4_R_R1.fq",
+      "file_path": "ZTPSN21HD227-B_T3_4_R_R1.fq.gz/ZTPSN21HD227-B_T3_4_R_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 48568140,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD227-B_T3_4_R_R2.fq",
+      "file_path": "ZTPSN21HD227-B_T3_4_R_R2.fq.gz/ZTPSN21HD227-B_T3_4_R_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49812404,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD232-B_T1_1_nR_R1.fq",
+      "file_path": "ZTPSN21HD232-B_T1_1_nR_R1.fq.gz/ZTPSN21HD232-B_T1_1_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 51835854,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD235-B_T1_4_nR_R1.fq",
+      "file_path": "ZTPSN21HD235-B_T1_4_nR_R1.fq.gz/ZTPSN21HD235-B_T1_4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 50640994,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD239-B_T2_4_nR_R1.fq",
+      "file_path": "ZTPSN21HD239-B_T2_4_nR_R1.fq.gz/ZTPSN21HD239-B_T2_4_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 49861096,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD241-B_T3_2_nR_R1.fq",
+      "file_path": "ZTPSN21HD241-B_T3_2_nR_R1.fq.gz/ZTPSN21HD241-B_T3_2_nR_R1.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 51273772,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ZTPSN21HD241-B_T3_2_nR_R2.fq",
+      "file_path": "ZTPSN21HD241-B_T3_2_nR_R2.fq.gz/ZTPSN21HD241-B_T3_2_nR_R2.fq",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.26419813.v1",
+      "file_url": null,
+      "file_size": 52587364,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

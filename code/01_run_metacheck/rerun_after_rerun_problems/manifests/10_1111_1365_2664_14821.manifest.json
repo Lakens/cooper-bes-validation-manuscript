@@ -1,0 +1,227 @@
+{
+  "paper_id": "10_1111_1365_2664_14821",
+  "generated": "2026-10-12T17:57:20+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T17:57:20+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 17,
+  "n_downloaded": 17,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Data description.docx",
+      "file_path": "Data 4TU.zip/Data 4TU/Data description.docx",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 23427,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_1.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_1.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 15042775,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_2.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_2.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 14853326,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_3.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_3.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 14986995,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_4.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_4.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 15091005,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_5.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_5.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 13126361,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_6.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_6.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 13246359,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_7.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_7.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 14933659,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_8.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Accelerometer/Scheur_8.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 15000286,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_1.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_1.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 786660,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_2.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_2.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 793489,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_4.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_4.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 796980,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_5.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_5.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 801320,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_6.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_6.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 718056,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Scheur_8.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Field monitoring/Pressure sensor/Scheur_8.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 793489,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Dislodgement test.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Flume study/Dislodgement test/Dislodgement test.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 932,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Long exposure experiment.csv",
+      "file_path": "Data 4TU.zip/Data 4TU/Flume study/Long exposure experiment/Long exposure experiment.csv",
+      "repo_url": "https://doi.org/10.4121/ce413614-1c82-4e81-90c0-323aa7d2fabd",
+      "file_url": null,
+      "file_size": 1114,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

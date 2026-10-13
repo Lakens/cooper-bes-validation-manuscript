@@ -1,0 +1,215 @@
+{
+  "paper_id": "10_1111_2041_210x_14314",
+  "generated": "2026-10-12T00:23:32+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T00:23:32+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 11,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 10,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitattributes",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/.gitattributes",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 43,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/.gitignore",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 62,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Ain_lynx_occupancy.Rmd",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/Ain_lynx_occupancy.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 72147,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Ain_lynx_occupancy.html",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/Ain_lynx_occupancy.html",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 5296678,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 11568,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "get_figures_article.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/get_figures_article.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 120282,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "run_comparisons.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/run_comparisons.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 19135,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "0_general_functions.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/utils/0_general_functions.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 9591,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "1_detection_simulation.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/utils/1_detection_simulation.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 39527,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2_occupancy_models.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/utils/2_occupancy_models.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 29021,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "comparison_of_occupancy_models.R",
+      "file_path": "occupancy-modelling-comparison-discrete-continuous-develop.zip/occupancy-modelling-comparison-discrete-continuous-develop/utils/comparison_of_occupancy_models.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10782748",
+      "file_url": {},
+      "file_size": 59110,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "data.table",
+      "dplyr",
+      "DT",
+      "expm",
+      "ggnewscale",
+      "ggplot2",
+      "ggpubr",
+      "ggtext",
+      "glue",
+      "gridExtra",
+      "htmltools",
+      "jsonlite",
+      "knitr",
+      "latex2exp",
+      "left",
+      "lubridate",
+      "plyr",
+      "progress",
+      "readr",
+      "rstatix",
+      "scales",
+      "stringr",
+      "tibble",
+      "tidyr",
+      "tidyverse",
+      "unmarked"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

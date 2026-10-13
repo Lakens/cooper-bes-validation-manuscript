@@ -1,0 +1,293 @@
+{
+  "paper_id": "10_1111_1365_2745_13257",
+  "generated": "2026-10-11T19:39:47+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:39:47+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 23,
+  "n_downloaded": 23,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_for_Villar_et_al_JoEco2019_data.pdf",
+      "file_path": "README_for_Villar_et_al_JoEco2019_data.pdf",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": "https://datadryad.org/api/v2/files/110064/download",
+      "file_size": 602081,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CAR_divers_full.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/CAR_divers_full.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 29925,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CBO_divers_full.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/CBO_divers_full.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 23338,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_divers_dominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/ITA_divers_dominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 22454,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_divers_full.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/ITA_divers_full.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 22682,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_divers_rare.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/ITA_divers_rare.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 19813,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VGM_divers_full.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/diversity data/VGM_divers_full.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 30384,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CAR_Ranktime_ClDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CAR_Ranktime_ClDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1361,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CAR_Ranktime_ClosedFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CAR_Ranktime_ClosedFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2174,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CAR_Ranktime_OpDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CAR_Ranktime_OpDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1103,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CAR_Ranktime_OpenFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CAR_Ranktime_OpenFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2429,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CBO_Ranktime_ClDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CBO_Ranktime_ClDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1039,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CBO_Ranktime_ClosedFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CBO_Ranktime_ClosedFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2428,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CBO_Ranktime_OpDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CBO_Ranktime_OpDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 947,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CBO_Ranktime_OpenFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/CBO_Ranktime_OpenFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2790,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_Ranktime_ClDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/ITA_Ranktime_ClDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 985,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_Ranktime_ClosedFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/ITA_Ranktime_ClosedFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2078,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_Ranktime_OpDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/ITA_Ranktime_OpDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 646,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ITA_Ranktime_OpenFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/ITA_Ranktime_OpenFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1981,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VGM_Ranktime_ClDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/VGM_Ranktime_ClDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1332,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VGM_Ranktime_ClosedFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/VGM_Ranktime_ClosedFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2904,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VGM_Ranktime_OpDominant.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/VGM_Ranktime_OpDominant.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 1061,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "VGM_Ranktime_OpenFull.txt",
+      "file_path": "Villar_et_al_JoEco2019_data.zip/species composition data/VGM_Ranktime_OpenFull.txt",
+      "repo_url": "10.5061/dryad.88d5v17",
+      "file_url": null,
+      "file_size": 2107,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

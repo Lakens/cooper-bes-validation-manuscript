@@ -1,0 +1,282 @@
+{
+  "paper_id": "10_1111_1365_2656_13348",
+  "generated": "2026-10-12T22:04:19+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T22:04:19+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 22,
+  "n_downloaded": 22,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Zrumina.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Zrumina.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3154,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_mtemp_RH.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_mtemp_RH.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 103447,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Acardamines.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Acardamines.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 2562,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Acrataegi.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Acrataegi.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3911,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Apaphia.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Apaphia.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3110,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Carcania.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Carcania.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3054,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Etriaria.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Etriaria.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 2958,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Eaurinia.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Eaurinia.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 2082,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Fadippe.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Fadippe.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3383,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Fniobe.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Fniobe.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 4895,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Hcomma.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Hcomma.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 5313,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Hhermione.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Hhermione.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 5372,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Hstatilinus.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Hstatilinus.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 4006,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Hlycaon.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Hlycaon.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 5834,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Lalciphron.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Lalciphron.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 5016,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Lvirgaureae.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Lvirgaureae.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 4684,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Mlachesis.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Mlachesis.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 8051,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Ptithonus.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Ptithonus.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3984,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Sactaea.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Sactaea.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3185,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Saglaja.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Saglaja.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 4641,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_Tsylvestris.csv",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_Tsylvestris.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 3421,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Gutierrez_Wilson_JAE_data_metadata.txt",
+      "file_path": "Gutierrez_Wilson_JAE_dataset.zip/Gutierrez_Wilson_JAE_data_metadata.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.12807065",
+      "file_url": null,
+      "file_size": 768,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

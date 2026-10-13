@@ -18,7 +18,6 @@
 #     for genuine disagreements.
 
 compute_comparison_statistics <- function(master_comparison, disagreement_worklist_review) {
-  `%||%` <- function(a, b) if (is.null(a)) b else a
   side_by_side <- master_comparison
   review <- disagreement_worklist_review
 
@@ -136,41 +135,28 @@ compute_comparison_statistics <- function(master_comparison, disagreement_workli
     )
   }
 
-  # data_archive: overlap-based (not boolean), so sensitivity/specificity
-  # don't apply the same way -- report agreement rate and the disagreement
-  # breakdown instead.
-  {
-    cv <- side_by_side$data_archive; mv <- side_by_side$mc_data_archive
-    both <- !is.na(cv) & !is.na(mv) & nzchar(cv) & nzchar(mv)
-    n_both <- sum(both)
-    ov <- mapply(function(a, b) {
-      sa <- trimws(strsplit(a, ";")[[1]]); sb <- trimws(strsplit(b, ";")[[1]])
-      any(tolower(sa) %in% tolower(sb))
-    }, cv[both], mv[both])
-    results[["data_archive"]] <- list(
-      label = "Archive platform (overlap match, not simple boolean)",
-      n_cooper_coded = sum(!is.na(cv) & nzchar(cv %||% "")),
-      n_mc_coded = sum(!is.na(mv) & nzchar(mv %||% "")),
-      n_both_coded = n_both,
-      n_agree = sum(ov), n_disagree = sum(!ov),
-      pct_agree = mean(ov) * 100
-    )
-  }
+  # data_archive / code_archive: both sides can name several platforms
+  # (";"-joined), so they are compared as SETS rather than as a boolean
+  # (platform_set_comparison(), R/platforms.R).
+  results[["data_archive"]] <- platform_set_comparison(
+    side_by_side$data_archive, side_by_side$mc_data_archive,
+    "Data archive platform (exact match of platform sets)")
+  results[["code_archive"]] <- platform_set_comparison(
+    side_by_side$code_archive, side_by_side$mc_code_archive,
+    "Code archive platform (exact match of platform sets)")
 
   # Qualitative verdict tallies from the worklist (disagreements only,
   # each individually reviewed and resolved).
+  # The worklist itself only keeps a verdict on a column that disagrees for
+  # that paper (build_disagreement_worklist()), so these count disagreements.
   verdict_cols <- c("data_availability", "data_archive", "data_license",
-                    "data_download", "code_archived", "code_download")
+                    "data_download", "code_archived", "code_archive",
+                    "code_download", "any_readme")
   verdict_tallies <- list()
   for (nm in verdict_cols) {
     vcol <- paste0(nm, "_verdict")
     if (!vcol %in% names(review)) next
-    tab <- table(review[[vcol]], useNA = "no")
-    verdict_tallies[[nm]] <- tab
-  }
-  if ("any_readme_verdict" %in% names(review)) {
-    tab <- table(review$any_readme_verdict, useNA = "no")
-    verdict_tallies[["any_readme"]] <- tab
+    verdict_tallies[[nm]] <- table(review[[vcol]], useNA = "no")
   }
 
   list(results = results, verdict_tallies = verdict_tallies)

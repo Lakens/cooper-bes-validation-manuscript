@@ -1,0 +1,143 @@
+{
+  "paper_id": "10_1111_2041_210x_13588",
+  "generated": "2026-10-12T22:15:08+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T22:15:08+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Llopis-Belenguer_et_al_Hostxspecies_abundance.xls",
+      "file_path": "Llopis-Belenguer_et_al_Hostxspecies_abundance.xls",
+      "repo_url": "https://doi.org/10.7910/DVN/IWIKOL",
+      "file_url": "https://dataverse.harvard.edu/api/access/datafile/3429519",
+      "file_size": 386048,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "README.txt",
+      "repo_url": "https://doi.org/10.7910/DVN/IWIKOL",
+      "file_url": "https://dataverse.harvard.edu/api/access/datafile/3429520",
+      "file_size": 4355,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "READ ME.txt",
+      "file_path": "READ ME.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809346",
+      "file_size": 1015,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "abundace_matrices.RData",
+      "file_path": "abundace_matrices.RData",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809349",
+      "file_size": 138481,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "envinroment_matrices.RData",
+      "file_path": "envinroment_matrices.RData",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809352",
+      "file_size": 184,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "interaction_matrices.RData",
+      "file_path": "interaction_matrices.RData",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809355",
+      "file_size": 991,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "coocur_net.R",
+      "file_path": "coocur_net.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809358",
+      "file_size": 5552,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "simulations.R",
+      "file_path": "simulations.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.9906092",
+      "file_url": "https://ndownloader.figshare.com/files/17809361",
+      "file_size": 7085,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "igraph",
+      "spaa",
+      "vegan"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

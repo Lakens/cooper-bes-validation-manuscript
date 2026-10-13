@@ -1,0 +1,323 @@
+{
+  "paper_id": "10_1111_1365_2745_13284",
+  "generated": "2026-10-11T19:40:03+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:40:03+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 22,
+  "n_downloaded": 14,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/.gitignore",
+      "file_size": 52,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/README.md",
+      "file_size": 1149,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "0_setup.R",
+      "file_path": "code/0_setup.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/0_setup.R",
+      "file_size": 8843,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "1_diversity.R",
+      "file_path": "code/1_diversity.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/1_diversity.R",
+      "file_size": 10516,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2_composition.R",
+      "file_path": "code/2_composition.R",
+      "repo_url": "https://github.com/claraqin/JRGCE_soil_microbes",
+      "file_url": "https://raw.githubusercontent.com/claraqin/JRGCE_soil_microbes/master/code/2_composition.R",
+      "file_size": 15382,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README_for_data.zip.txt",
+      "file_path": "README_for_data.zip.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": "https://datadryad.org/api/v2/files/166998/download",
+      "file_size": 3526,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "GCE_compiled_data.csv",
+      "file_path": "data.zip/data/GCE_compiled_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 11228,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._GCE_compiled_data.csv",
+      "file_path": "data.zip/__MACOSX/data/._GCE_compiled_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 385,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plant_biomass.csv",
+      "file_path": "data.zip/data/plant_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 259674,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._plant_biomass.csv",
+      "file_path": "data.zip/__MACOSX/data/._plant_biomass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 1361,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mapping_file_ITS.txt",
+      "file_path": "data.zip/data/mapping_file_ITS.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 1564,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._mapping_file_ITS.txt",
+      "file_path": "data.zip/__MACOSX/data/._mapping_file_ITS.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 346,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mapping_file_16S.txt",
+      "file_path": "data.zip/data/mapping_file_16S.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 1564,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._mapping_file_16S.txt",
+      "file_path": "data.zip/__MACOSX/data/._mapping_file_16S.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 346,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README",
+      "file_path": "data.zip/data/README",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 3526,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._README",
+      "file_path": "data.zip/__MACOSX/data/._README",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 266,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "plant_species.csv",
+      "file_path": "data.zip/data/plant_species.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 13114,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._plant_species.csv",
+      "file_path": "data.zip/__MACOSX/data/._plant_species.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 1271,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "otu_table_wTax_ITS.biom",
+      "file_path": "data.zip/data/otu_table_wTax_ITS.biom",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 1337620,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._otu_table_wTax_ITS.biom",
+      "file_path": "data.zip/__MACOSX/data/._otu_table_wTax_ITS.biom",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 239,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "otu_table_wTax_16S.biom",
+      "file_path": "data.zip/data/otu_table_wTax_16S.biom",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 7412573,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._otu_table_wTax_16S.biom",
+      "file_path": "data.zip/__MACOSX/data/._otu_table_wTax_16S.biom",
+      "repo_url": "https://doi.org/10.5061/dryad.nf481q8",
+      "file_url": {},
+      "file_size": 239,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "corrplot",
+      "dplyr",
+      "ecodist",
+      "gdm",
+      "ggplot2",
+      "leaps",
+      "lemon",
+      "lme4",
+      "lmerTest",
+      "MuMIn",
+      "mvabund",
+      "phyloseq",
+      "plyr",
+      "reshape2",
+      "scales",
+      "tidyr",
+      "vegan"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

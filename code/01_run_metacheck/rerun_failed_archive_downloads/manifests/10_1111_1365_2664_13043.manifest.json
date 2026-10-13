@@ -1,0 +1,116 @@
+{
+  "paper_id": "10_1111_1365_2664_13043",
+  "generated": "2026-10-11T08:00:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T08:00:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 6,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "ConnMat_1121_S.mat",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/ConnMat_1121_S.mat",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 20840954,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DemographicParameters.mat",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/DemographicParameters.mat",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 859,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/LICENSE",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 1072,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 681,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ReefSize.mat",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/ReefSize.mat",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 4536,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Simulation Function",
+      "file_path": "refovargue/Journal-of-Applied-Eco-2017-v1.0.zip/refovargue-Journal-of-Applied-Eco-2017-6b25484/Simulation Function",
+      "repo_url": "https://doi.org/10.5281/zenodo.1035409",
+      "file_url": null,
+      "file_size": 1803,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

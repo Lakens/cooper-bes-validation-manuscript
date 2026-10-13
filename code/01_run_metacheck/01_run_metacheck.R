@@ -74,41 +74,13 @@ run_with_warnings <- function(module_name, ...) {
 # (R/module.R's `paper <- prev$paper`); stripping it from a per-batch
 # file would silently break resuming an interrupted run from that
 # batch.
-strip_paper_text <- function(res) {
-  res$paper <- NULL
-  res
-}
-
-# Combine a list of per-batch metacheck_module_output objects into one
-# corpus-wide object with the same shape module_run() itself produces.
-combine_batches <- function(batches) {
-  all_fields <- unique(unlist(lapply(batches, names)))
-  is_df <- function(x) is.data.frame(x)
-
-  out <- list()
-  for (f in all_fields) {
-    vals <- lapply(batches, `[[`, f)
-    vals <- vals[!vapply(vals, is.null, logical(1))]
-    if (length(vals) == 0) next
-
-    if (f %in% c("module", "title", "section")) {
-      out[[f]] <- vals[[1]]
-    } else if (f == "paper") {
-      out[[f]] <- do.call(paperlist, vals)
-    } else if (f == "previews") {
-      out[[f]] <- do.call(c, vals)
-    } else if (all(vapply(vals, is_df, logical(1)))) {
-      # Drop 0-row frames before bind_rows(): an empty batch's field can
-      # have a mismatched column type vs. a populated batch's, which
-      # bind_rows() errors on.
-      nonempty <- vals[vapply(vals, nrow, integer(1)) > 0]
-      out[[f]] <- if (length(nonempty) > 0) dplyr::bind_rows(nonempty) else vals[[1]]
-    } else {
-      out[[paste0(f, "_by_batch")]] <- vals
-    }
-  }
-  out
-}
+#
+# strip_paper_text() and combine_batches() are shared with the rerun
+# scripts and covered by tests/testthat/test-corpus-merge.R.
+source("../R/corpus_merge.R")
+# save_corpus_result(): saves the data and code results in parts, each under
+# GitHub's 2 GB per-file limit (see R/corpus_files.R).
+source("../R/corpus_files.R")
 
 BATCH_SIZE   <- 50
 BATCH_RESUME <- TRUE
@@ -213,9 +185,9 @@ res_code_check <- combine_batches(code_check_batches)
 res_repo_check <- strip_paper_text(res_repo_check)
 res_data_check <- strip_paper_text(res_data_check)
 res_code_check <- strip_paper_text(res_code_check)
-save(res_repo_check, file = "01_run_metacheck/res_repo_check.RData")
-save(res_data_check, file = "01_run_metacheck/res_data_check.RData")
-save(res_code_check, file = "01_run_metacheck/res_code_check.RData")
+save_corpus_result(res_repo_check, "res_repo_check", "01_run_metacheck/res_repo_check.RData")
+save_corpus_result(res_data_check, "res_data_check", "01_run_metacheck/res_data_check.RData")
+save_corpus_result(res_code_check, "res_code_check", "01_run_metacheck/res_code_check.RData")
 status("Combined: repo_check %d rows, data_check %d rows, code_check %d rows (summary_table).",
        nrow(res_repo_check$summary_table), nrow(res_data_check$summary_table),
        nrow(res_code_check$summary_table))

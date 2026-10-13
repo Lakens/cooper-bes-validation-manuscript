@@ -1,0 +1,194 @@
+{
+  "paper_id": "10_1111_2041_210x_13817",
+  "generated": "2026-10-12T05:29:58+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T05:29:58+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": "https://datadryad.org/api/v2/files/4813603/download",
+      "file_size": 2547,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "area.inc",
+      "file_path": "Data_Eldorado_updated.zip/area.inc",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 16656,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "b1k.inc",
+      "file_path": "Data_Eldorado_updated.zip/b1k.inc",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 637,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "b2k.inc",
+      "file_path": "Data_Eldorado_updated.zip/b2k.inc",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 645,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "borderei.INC",
+      "file_path": "Data_Eldorado_updated.zip/borderei.INC",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 2478,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "br1r2.INC",
+      "file_path": "Data_Eldorado_updated.zip/br1r2.INC",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 707,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "corridor_computational efficiency.gms",
+      "file_path": "Data_Eldorado_updated.zip/corridor_computational efficiency.gms",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 12291,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "corridor_Eldorado.gms",
+      "file_path": "Data_Eldorado_updated.zip/corridor_Eldorado.gms",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 6776,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "dist300.inc",
+      "file_path": "Data_Eldorado_updated.zip/dist300.inc",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 1356042,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "edgends.inc",
+      "file_path": "Data_Eldorado_updated.zip/edgends.inc",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 96173,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "length.INC",
+      "file_path": "Data_Eldorado_updated.zip/length.INC",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 83301,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "pairseij.INC",
+      "file_path": "Data_Eldorado_updated.zip/pairseij.INC",
+      "repo_url": "https://doi.org/10.5061/dryad.fn2z34tw7",
+      "file_url": null,
+      "file_size": 64403,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

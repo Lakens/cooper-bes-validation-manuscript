@@ -1,0 +1,95 @@
+{
+  "paper_id": "10_1111_1365_2745_12911",
+  "generated": "2026-10-11T19:30:28+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:30:28+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Recruits between 2011 and 2014.xlsx",
+      "file_path": "Data.zip/Data/Recruits between 2011 and 2014.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.67nd5",
+      "file_url": null,
+      "file_size": 31544,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RGR.across.All.Habitats.xlsx",
+      "file_path": "Data.zip/Data/RGR.across.All.Habitats.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.67nd5",
+      "file_url": null,
+      "file_size": 336032,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RGR.in.Canopy.Gaps.xlsx",
+      "file_path": "Data.zip/Data/RGR.in.Canopy.Gaps.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.67nd5",
+      "file_url": null,
+      "file_size": 220943,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Survival.across.All.Habitats.xlsx",
+      "file_path": "Data.zip/Data/Survival.across.All.Habitats.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.67nd5",
+      "file_url": null,
+      "file_size": 495252,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Survival.in.Canopy.Gaps.xlsx",
+      "file_path": "Data.zip/Data/Survival.in.Canopy.Gaps.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.67nd5",
+      "file_url": null,
+      "file_size": 321671,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

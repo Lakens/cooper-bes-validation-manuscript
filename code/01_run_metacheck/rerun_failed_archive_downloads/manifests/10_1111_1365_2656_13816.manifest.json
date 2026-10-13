@@ -1,0 +1,190 @@
+{
+  "paper_id": "10_1111_1365_2656_13816",
+  "generated": "2026-10-11T08:00:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T08:00:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 10,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 5,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "func_final_20220729all.R",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_final_20220729all.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 97967,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "func_final_20220729nohumm.R",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_final_20220729nohumm.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 78390,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "func_meta_20220715all.RData",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_meta_20220715all.RData",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 17531021,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "func_meta_20220715nohumm.RData",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_meta_20220715nohumm.RData",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 16624717,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "func_meta_JAE_20220715all.R",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_meta_JAE_20220715all.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 48628,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "func_meta_JAE_20220715nohumm.R",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/func_meta_JAE_20220715nohumm.R",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 46684,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "occ_final_all.csv",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/occ_final_all.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 35677,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Phy_Amazonas.tre",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/Phy_Amazonas.tre",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 13520,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "READ ME.docx",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/READ ME.docx",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 14908,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "traits_final_20220604.csv",
+      "file_path": "Ausprey2022-FuncPredictors.zip/Data Sharing/traits_final_20220604.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.19249235",
+      "file_url": {},
+      "file_size": 49148,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "BAT",
+      "beeswarm",
+      "colorspace",
+      "dplyr",
+      "emmeans",
+      "hypervolume",
+      "jagsUI",
+      "jpeg",
+      "lme4",
+      "lmerTest",
+      "MCMCglmm",
+      "pez",
+      "phylolm",
+      "phytools",
+      "picante",
+      "plotrix",
+      "plyr",
+      "reshape",
+      "sciplot",
+      "vegan",
+      "vioplot",
+      "visreg"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

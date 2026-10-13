@@ -1,0 +1,41 @@
+TODO
+
+DONE (2026-10-13): the two large corpus result files are saved in parts.
+  res_data_check.RData and res_code_check.RData had grown to about 3.5 GB,
+  over GitHub LFS's 2 GB per-file limit. Their one long, unused list each
+  (res_data_check$previews, res_code_check$prev_outputs_by_batch) is now saved
+  in numbered part files next to the main file (res_*_check.partN.RData, each
+  under 1.2 GB); see R/corpus_files.R. The conversion
+  (01_run_metacheck/16_split_corpus_files.R) was checked element by element
+  against the original files: every element is present, in order, with the
+  same content. (Three elements hold a function as an attribute; R gives a
+  function a fresh environment when it is loaded, so those compare equal but
+  not byte-identical, exactly as reloading the original file would.)
+
+OPEN
+
+1. Scripts 02e to 13 in code/01_run_metacheck/ are history and are not meant
+   to be run again. They save the corpus files whole with save(), which would
+   drop the part files and exceed the 2 GB limit. Only 01_run_metacheck.R and
+   14_rerun_papers_without_downloaded_data.R use save_corpus_result() /
+   read_corpus_result(). If any of the older scripts is ever rerun, change it
+   to use those two functions first.
+
+2. Metacheck issue to file (draft ready, waiting for approval): support the
+   Environmental Data Initiative through its DataONE member node
+   (gmn.edirepository.org/mn/v2/; needs reading the ORE resource map and
+   full-URL file PIDs) and Handle identifiers for Dataverse
+   (repo.researchdata.hu); corrections to issue #461 (researchdata.se is not
+   Dataverse; the UNSW Handle redirect could not be verified).
+
+3. Possible Metacheck issues noticed during the review (not yet filed):
+   - reproducibility_check worked for two hours without starting paper
+     10_1111_2041_210x_14196 (a 97-file Python package); it was stopped.
+   - Dryad dataset listings can hold a file twice under two file numbers;
+     metacheck passes both on.
+   - 10_1002_2688_8319_12405: DOAS_maindata.csv on Dryad fails with
+     "no download URL in the listing".
+   - Reviewers flagged: no code files found in two GitHub repositories that
+     hold R code (MLWIC, LadderFuelsR); R scripts inside a zip missed
+     (10_1111_1365_2656_13159); an install_github() repository labelled
+     "Other repo/database" (10_1111_2041_210x_14417).

@@ -1,0 +1,70 @@
+{
+  "paper_id": "10_1002_2688_8319_12405",
+  "generated": "2026-10-12T05:27:05+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T05:27:05+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 2,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 1,
+    "unintentional_files": [
+      {
+        "file_name": "DOAS_maindata.csv",
+        "repo_url": "https://doi.org/10.5061/dryad.zkh1893ks",
+        "reason": "no download URL in the listing"
+      }
+    ],
+    "rerun_recommended": true
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.zkh1893ks",
+      "file_url": "https://datadryad.org/api/v2/files/3668003/download",
+      "file_size": 1581,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "DOAS_maindata.csv",
+      "file_path": "DOAS_maindata.zip/DOAS_maindata.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.zkh1893ks",
+      "file_url": null,
+      "file_size": 221117044,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": false,
+      "status": "failed",
+      "skip_reason": "no download URL in the listing",
+      "skip_intentional": false
+    }
+  ]
+}

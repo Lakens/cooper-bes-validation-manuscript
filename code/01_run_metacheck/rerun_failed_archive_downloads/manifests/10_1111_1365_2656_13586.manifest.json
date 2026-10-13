@@ -1,0 +1,121 @@
+{
+  "paper_id": "10_1111_1365_2656_13586",
+  "generated": "2026-10-11T08:00:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T08:00:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "readme_Rabdeau_et_al..txt",
+      "file_path": "Rabdeau_et_al..zip/Rabdeau_et_al./readme_Rabdeau_et_al..txt",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 2520,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._readme_Rabdeau_et_al..txt",
+      "file_path": "Rabdeau_et_al..zip/__MACOSX/Rabdeau_et_al./._readme_Rabdeau_et_al..txt",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 474,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Rabdeau_et_al..zip/Rabdeau_et_al./.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 6148,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "Rabdeau_et_al..zip/__MACOSX/Rabdeau_et_al./._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 120,
+      "data_type": "unknown",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data_Rabdeau et al..txt",
+      "file_path": "Rabdeau_et_al..zip/Rabdeau_et_al./data_Rabdeau et al..txt",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 113082,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "~$readme.docx",
+      "file_path": "Rabdeau_et_al..zip/Rabdeau_et_al./~$readme.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 162,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._~$readme.docx",
+      "file_path": "Rabdeau_et_al..zip/__MACOSX/Rabdeau_et_al./._~$readme.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.wm37pvmns",
+      "file_url": null,
+      "file_size": 187,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

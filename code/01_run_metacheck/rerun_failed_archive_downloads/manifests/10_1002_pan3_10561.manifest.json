@@ -1,0 +1,247 @@
+{
+  "paper_id": "10_1002_pan3_10561",
+  "generated": "2026-10-10T22:58:40+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-10T22:58:40+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 10,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/.DS_Store",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitattributes",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/.gitattributes",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 66,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/.gitignore",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 40,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Code/.DS_Store",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "1_set_themes.R",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Code/1_set_themes.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 951,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "2_cfa.R",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Code/2_cfa.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 1336,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "3_pca&model.R",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Code/3_pca&model.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 4726,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "4_pca_supplement.R",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Code/4_pca_supplement.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 2261,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Data/.DS_Store",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "pa_statements.csv",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Data/pa_statements.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 3003,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "scaled_data&explanatory_vars.csv",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Data/scaled_data&explanatory_vars.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 11866,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "scaled_data.csv",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Data/scaled_data.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 7904,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "scaled_data_pa_scores_combined.csv",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/Data/scaled_data_pa_scores_combined.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 6449,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 1604,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ecostructure_irish.Rproj",
+      "file_path": "Jeneen/AffectiveEngagement2023-v1.0.0.zip/Jeneen-AffectiveEngagement2023-af6fd67/ecostructure_irish.Rproj",
+      "repo_url": "https://doi.org/10.5281/zenodo.10037663",
+      "file_url": {},
+      "file_size": 205,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "brms",
+      "concaveman",
+      "ggforce",
+      "ggplot2",
+      "ggrepel",
+      "lavaan",
+      "psych",
+      "scales",
+      "semPlot",
+      "semPower",
+      "sjPlot",
+      "tidyverse",
+      "vegan",
+      "viridis"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

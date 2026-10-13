@@ -1,0 +1,280 @@
+{
+  "paper_id": "10_1111_1365_2435_14046",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 17,
+  "n_downloaded": 2,
+  "not_downloaded": {
+    "intentional_n": 15,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".gitattributes",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/.gitattributes",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 66,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AGB_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/AGB_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 30284,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BGB_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/BGB_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 30795,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BIOMASS_DATA_2AUG20.xlsx",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/BIOMASS_DATA_2AUG20.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 144391,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "CRB_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/CRB_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 30849,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LMA_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/LMA_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 31287,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MPa_monitoring_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/MPa_monitoring_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 4925,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 82,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RMR_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/RMR_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 25648,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Species_ABG_190421.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/Species_ABG_190421.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 10630,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Species_BGB_190421.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/Species_BGB_190421.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 10572,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Species_TB_190421.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/Species_TB_190421.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 10598,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "TB_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/TB_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 30981,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "crown_area_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/crown_area_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 30913,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "glasshouse_figures_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/glasshouse_figures_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 3743,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "height_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/height_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 31098,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ligno_biomass_2AUG20.Rmd",
+      "file_path": "eli-bendall/EB.Ch4.scripts-v1.0.0.zip/eli-bendall-EB.Ch4.scripts-728f5e1/ligno_biomass_2AUG20.Rmd",
+      "repo_url": "https://doi.org/10.5281/zenodo.6403777",
+      "file_url": {},
+      "file_size": 31225,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "cowplot",
+      "dplyr",
+      "egg",
+      "ggplot2",
+      "ggpubr",
+      "knitr",
+      "numform",
+      "png",
+      "purrr",
+      "RColorBrewer",
+      "readxl",
+      "rjags",
+      "runjags",
+      "stringr",
+      "tidyr"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "paper_id": "10_1111_1365_2745_13240",
+  "generated": "2026-10-11T19:39:32+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:39:32+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 5,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_for_Fogelstrom_Ehrlen_2019.pdf",
+      "file_path": "README_for_Fogelstrom_Ehrlen_2019.pdf",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": "https://datadryad.org/api/v2/files/108656/download",
+      "file_size": 61556,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FogelstromEhrlen2019JEcol_Analyses.R",
+      "file_path": "Fogelstrom_Ehrlen_2019.zip/Fogelstrom_Ehrlen_2019/FogelstromEhrlen2019JEcol_Analyses.R",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": {},
+      "file_size": 16495,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FogelstromEhrlen2019JEcol_Data.txt",
+      "file_path": "Fogelstrom_Ehrlen_2019.zip/Fogelstrom_Ehrlen_2019/FogelstromEhrlen2019JEcol_Data.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": {},
+      "file_size": 68243,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FogelstromEhrlen2019JEcol_Data_Sibgroups.txt",
+      "file_path": "Fogelstrom_Ehrlen_2019.zip/Fogelstrom_Ehrlen_2019/FogelstromEhrlen2019JEcol_Data_Sibgroups.txt",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": {},
+      "file_size": 58573,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MetadataS1.pdf",
+      "file_path": "Fogelstrom_Ehrlen_2019.zip/Fogelstrom_Ehrlen_2019/MetadataS1.pdf",
+      "repo_url": "http://doi.org/10.5061/dryad.3sj2h60",
+      "file_url": {},
+      "file_size": 61556,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "boot",
+      "car",
+      "grid",
+      "gridExtra",
+      "lme4",
+      "logitnorm",
+      "MCMCglmm",
+      "tidyverse"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

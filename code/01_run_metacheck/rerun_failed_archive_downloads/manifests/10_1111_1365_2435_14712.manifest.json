@@ -1,0 +1,250 @@
+{
+  "paper_id": "10_1111_1365_2435_14712",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 17,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 6,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": "https://datadryad.org/api/v2/files/3639948/download",
+      "file_size": 4310,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 120,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "PodocarpCN8June2016.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/PodocarpCN8June2016.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 1758,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._PodocarpCN8June2016.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._PodocarpCN8June2016.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "27May2016_PodocarpFoliarNutrients.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/27May2016_PodocarpFoliarNutrients.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 7399,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._27May2016_PodocarpFoliarNutrients.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._27May2016_PodocarpFoliarNutrients.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Steidinger2024_FE2024_00721.nb.html",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/Steidinger2024_FE2024_00721.nb.html",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 732750,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Steidinger2024_FE2024_00721.nb.html",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._Steidinger2024_FE2024_00721.nb.html",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 163,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Steidinger2024_FE2024_00721.Rmd",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/Steidinger2024_FE2024_00721.Rmd",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 18251,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Steidinger2024_FE2024_00721.Rmd",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._Steidinger2024_FE2024_00721.Rmd",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 219,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ReadMe_Steidinger2024_FE",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/ReadMe_Steidinger2024_FE",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 3734,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._ReadMe_Steidinger2024_FE",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._ReadMe_Steidinger2024_FE",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 532,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Podocarp_drymass.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/Podocarp_drymass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 5966,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._Podocarp_drymass.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._Podocarp_drymass.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PodocarpEnzyme_IU.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/Steidinger_2024_FE2024_00721/PodocarpEnzyme_IU.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 3722,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._PodocarpEnzyme_IU.csv",
+      "file_path": "Steidinger_2024_FE2024_00721_3.zip/__MACOSX/Steidinger_2024_FE2024_00721/._PodocarpEnzyme_IU.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.jm63xsjm6",
+      "file_url": {},
+      "file_size": 232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "agricolae",
+      "ggplot2",
+      "reshape2"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

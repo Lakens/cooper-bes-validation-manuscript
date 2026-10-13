@@ -1,0 +1,779 @@
+{
+  "paper_id": "10_1111_1365_2656_13279",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 66,
+  "n_downloaded": 65,
+  "not_downloaded": {
+    "intentional_n": 1,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "JAE_Meteo.csv",
+      "file_path": "JAE_Meteo.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Meteo.csv/content",
+      "file_size": 513635,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "script_nichemapper_Rozen-Rechelsetal_JAE.R",
+      "file_path": "script_nichemapper_Rozen-Rechelsetal_JAE.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/script_nichemapper_Rozen-Rechelsetal_JAE.R/content",
+      "file_size": 18503,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "JAE_Behavior.csv",
+      "file_path": "JAE_Behavior.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Behavior.csv/content",
+      "file_size": 423597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README_JAE2020.txt",
+      "file_path": "README_JAE2020.txt",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/README_JAE2020.txt/content",
+      "file_size": 3769,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_Tprefs.csv",
+      "file_path": "JAE_Tprefs.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_Tprefs.csv/content",
+      "file_size": 39344,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "JAE_IndividualData.csv",
+      "file_path": "JAE_IndividualData.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": "https://zenodo.org/api/records/3775431/files/JAE_IndividualData.csv/content",
+      "file_size": 4288,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC1.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC1.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185380,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC2.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC2.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185450,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC3.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC3.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185278,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC4.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC4.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185246,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC5.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC5.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186325,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC6.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC6.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185978,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC7.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC7.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186423,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC8.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC8.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 184941,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC9.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC9.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186499,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC10_1.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC10_1.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186090,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC10_2.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC10_2.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 139982,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC11.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC11.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 184659,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC12.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC12.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 184949,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC13.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC13.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185776,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC14.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC14.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 184028,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC15.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC15.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185511,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC16.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC16.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185232,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC17.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC17.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185625,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC18.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC18.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186181,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC19.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC19.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 185749,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ST_BAC20.csv",
+      "file_path": "JAE_iButtons_UnderTile.zip/JAE_iButtons_UnderTile/ST_BAC20.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 186347,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC1.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC1.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399177,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC2.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC2.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399131,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC3.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC3.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399499,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC5.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC5.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 400063,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC6.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC6.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399361,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC7.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC7.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399269,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC8.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC8.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399039,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC9.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC9.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398901,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC10.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC10.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398350,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC11.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC11.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398994,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC12.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC12.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398810,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC13.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC13.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398718,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC14.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC14.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399086,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC15.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC15.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398994,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC16.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC16.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 399132,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC17.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC17.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 395820,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC18.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC18.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398672,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC19.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC19.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398626,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BAC20.csv",
+      "file_path": "JAE_HOBOS.zip/JAE_HOBOS/BAC20.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 398482,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC2.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC2.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221691,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC3.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC3.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 218085,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC1.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC1.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 220656,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC4.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC4.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221800,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC5.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC5.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 218868,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC6.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC6.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221588,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC7.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC7.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221663,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC8.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC8.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221845,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC9.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC9.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221821,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC10.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC10.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221847,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC11.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC11.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 218755,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC12.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC12.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221734,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC13.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC13.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221847,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC14.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC14.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 217716,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC15.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC15.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 220899,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC16.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC16.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 218077,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC17.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC17.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221837,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC18.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC18.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221061,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC19.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC19.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221847,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ABRI_BAC20.csv",
+      "file_path": "JAE_iButtons_Shelter.zip/JAE_iButtons_Shelter/ABRI_BAC20.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.3775431",
+      "file_url": {},
+      "file_size": 221466,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "lubridate",
+      "NicheMapR",
+      "xts"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

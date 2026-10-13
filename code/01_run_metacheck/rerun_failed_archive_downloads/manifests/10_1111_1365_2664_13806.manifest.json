@@ -1,0 +1,330 @@
+{
+  "paper_id": "10_1111_1365_2664_13806",
+  "generated": "2026-10-11T18:13:21+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T18:13:21+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 22,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 16,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": ".Rbuildignore",
+      "file_path": ".Rbuildignore",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/.Rbuildignore",
+      "file_size": 28,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitignore",
+      "file_path": ".gitignore",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/.gitignore",
+      "file_size": 40,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BaBA.Rproj",
+      "file_path": "BaBA.Rproj",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/BaBA.Rproj",
+      "file_size": 303,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BaBA_Catogories.png",
+      "file_path": "BaBA_Catogories.png",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/BaBA_Catogories.png",
+      "file_size": 165241,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DESCRIPTION",
+      "file_path": "DESCRIPTION",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/DESCRIPTION",
+      "file_size": 1027,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Flowchart.png",
+      "file_path": "Flowchart.png",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/Flowchart.png",
+      "file_size": 100801,
+      "data_type": "materials",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "LICENSE",
+      "file_path": "LICENSE",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/LICENSE",
+      "file_size": 1067,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "NAMESPACE",
+      "file_path": "NAMESPACE",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/NAMESPACE",
+      "file_size": 62,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BaBA.R",
+      "file_path": "R/BaBA.R",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/R/BaBA.R",
+      "file_size": 19531,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BaRanking.R",
+      "file_path": "R/BaRanking.R",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/R/BaRanking.R",
+      "file_size": 3385,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/README.md",
+      "file_size": 2698,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "fences.rda",
+      "file_path": "data/fences.rda",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/data/fences.rda",
+      "file_size": 293263,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "muleDeer.rda",
+      "file_path": "data/muleDeer.rda",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/data/muleDeer.rda",
+      "file_size": 57533,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pronghorn.rda",
+      "file_path": "data/pronghorn.rda",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/data/pronghorn.rda",
+      "file_size": 74467,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BaBA.Rd",
+      "file_path": "man/BaBA.Rd",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/man/BaBA.Rd",
+      "file_size": 10808,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "BaRanking.Rd",
+      "file_path": "man/BaRanking.Rd",
+      "repo_url": "https://github.com/wx-ecology/BaBA",
+      "file_url": "https://raw.githubusercontent.com/wx-ecology/BaBA/master/man/BaRanking.Rd",
+      "file_size": 4731,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FENCE.dbf",
+      "file_path": "BaBA_dryad_data.zip/FENCE.dbf",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 90638,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FENCE.prj",
+      "file_path": "BaBA_dryad_data.zip/FENCE.prj",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 403,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FENCE.shp",
+      "file_path": "BaBA_dryad_data.zip/FENCE.shp",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 741384,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FENCE.shx",
+      "file_path": "BaBA_dryad_data.zip/FENCE.shx",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 24244,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "MULEDEER.csv",
+      "file_path": "BaBA_dryad_data.zip/MULEDEER.csv",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 3154865,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PRONGHORN.csv",
+      "file_path": "BaBA_dryad_data.zip/PRONGHORN.csv",
+      "repo_url": "https://doi.org/10.6078/D1FB0R",
+      "file_url": {},
+      "file_size": 3152740,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "dplyr",
+      "grDevices",
+      "rlang",
+      "scales",
+      "sf",
+      "stats",
+      "tidyr",
+      "utils"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

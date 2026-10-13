@@ -1,0 +1,309 @@
+{
+  "paper_id": "10_1111_1365_2664_13415",
+  "generated": "2026-10-11T14:19:07+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T14:19:07+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 23,
+  "n_downloaded": 15,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_for_Annual Trends Preston and Starcross.docx",
+      "file_path": "README_for_Annual Trends Preston and Starcross.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": "https://datadryad.org/api/v2/files/93865/download",
+      "file_size": 14596,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Preston_CODAindex.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Preston_CODAindex.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 2372,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Starcross.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Starcross.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 26271,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Starcross_CODAchain1.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Starcross_CODAchain1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 6461050,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Starcross_CODAchain2.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Starcross_CODAchain2.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 6458601,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Starcross_CODAindex.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Starcross_CODAindex.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 1682,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AR1PoissonModel.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/AR1PoissonModel.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 1941,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AR1PoissonModel_Preston_Inits.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/AR1PoissonModel_Preston_Inits.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 3337,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AR1PoissonModel_Starcross_Inits.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/AR1PoissonModel_Starcross_Inits.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 2561,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "AssessMultipleClimateTrends.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/AssessMultipleClimateTrends.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 3490,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AssessTrends.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/AssessTrends.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 2074,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AssessTrends_ModelParameters.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/AssessTrends_ModelParameters.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 4609,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "AssessTrendsToo.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/AssessTrendsToo.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 3242,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ComputeClimateTrends.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/ComputeClimateTrends.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 3172,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "ComputeClimateTrendsToo.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/ComputeClimateTrendsToo.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 4132,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "DataAvailabilityAndFileDescriptions.docx",
+      "file_path": "Annual Trends Preston and Starcross.zip/DataAvailabilityAndFileDescriptions.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 14596,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "GeneratePPD_PhenologyMeasures.m",
+      "file_path": "Annual Trends Preston and Starcross.zip/GeneratePPD_PhenologyMeasures.m",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 12240,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "RISAnnualTrends_Preston.csv",
+      "file_path": "Annual Trends Preston and Starcross.zip/RISAnnualTrends_Preston.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 73045,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "RISAnnualTrends_Starcross.csv",
+      "file_path": "Annual Trends Preston and Starcross.zip/RISAnnualTrends_Starcross.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 53722,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Script.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/Script.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 2048,
+      "data_type": "code",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Preston.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Preston.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 35187,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Preston_CODAchain1.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Preston_CODAchain1.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 9087177,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "TotalCulicoides_Preston_CODAchain2.txt",
+      "file_path": "Annual Trends Preston and Starcross.zip/TotalCulicoides_Preston_CODAchain2.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.h7b12g4",
+      "file_url": null,
+      "file_size": 9090434,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

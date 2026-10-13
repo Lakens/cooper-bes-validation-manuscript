@@ -1,0 +1,216 @@
+{
+  "paper_id": "10_1111_1365_2656_12731",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 16,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "floral_resources.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/floral_resources.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 5295,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site1.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site1.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1678,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site10.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site10.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 2214,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site11.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site11.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1788,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site12.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site12.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 2015,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site13.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site13.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1842,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site14.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site14.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 2047,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site2.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site2.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1646,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site3.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site3.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1943,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site4.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site4.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1993,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site5.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site5.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1733,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site6.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site6.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1934,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site7.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site7.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 2180,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site8.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site8.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1604,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "site9.csv",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/site9.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 1790,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species_ids_and_postfire_categories.xlsx",
+      "file_path": "plant_bee_networks.zip/plant_bee_networks/species_ids_and_postfire_categories.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.c7844",
+      "file_url": null,
+      "file_size": 15283,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

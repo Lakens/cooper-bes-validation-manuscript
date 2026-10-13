@@ -67,29 +67,13 @@ build_master_comparison <- function(cooper_vs_metacheck, res_open_practices_file
   }
 
   # Cooper's data_open/code_open columns live on the raw CSV, not on
-  # side_by_side -- load them fresh, joined the same way as the rest of
-  # this pipeline (same DOI-duplicate correction as recreate_cooper_columns'
-  # build_cooper_vs_metacheck(), applied independently here since this
-  # reads the raw CSV fresh rather than reusing that target's corrected copy).
-  cooper <- read.csv(cooper_csv_file, na.strings = "NA", stringsAsFactors = FALSE)
-  cooper <- .fix_invalid_utf8(cooper)
-
-  doi_corrections <- data.frame(
-    paper_number = c("57", "1275", "47", "7176"),
-    correct_doi  = c("10.1002/2688-8319.12136", "10.1111/1365-2656.13512",
-                     "10.1111/1365-2656.13145", "10.1111/1365-2435.12981"),
-    stringsAsFactors = FALSE
-  )
-  m <- match(as.character(cooper$paper_number), doi_corrections$paper_number)
-  fix <- !is.na(m)
-  if (any(fix)) cooper$doi[fix] <- doi_corrections$correct_doi[m[fix]]
-
-  sampled <- read.csv(sample_csv_file, colClasses = "character")
-  doi_to_article_id <- setNames(sampled$article_id, tolower(sampled$doi))
-  cooper$article_id <- doi_to_article_id[tolower(cooper$doi)]
+  # side_by_side -- load them with the same reader (and DOI correction) as
+  # build_cooper_vs_metacheck().
+  cooper <- read_cooper_coded(cooper_csv_file, sample_csv_file)
 
   master_comparison <- master_comparison |>
     dplyr::left_join(cooper |> dplyr::select(article_id, data_open, code_open, recorder_ID), by = "article_id")
+  stopifnot(nrow(master_comparison) == nrow(side_by_side))
 
   data_truth <- cooper_yesno_data(master_comparison$data_open)
   code_truth <- cooper_yesno_code(master_comparison$code_open)

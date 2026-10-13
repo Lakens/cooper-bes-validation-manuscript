@@ -1,0 +1,210 @@
+{
+  "paper_id": "10_1002_pan3_10291",
+  "generated": "2026-10-10T22:58:40+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-10T22:58:40+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 14,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 8,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "._Data for Dryad upload",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/._Data for Dryad upload",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 1482,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._README.txt",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/._README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 417,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._data",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/._data",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "01_SurveyResponseData_RAW.csv",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/data/01_SurveyResponseData_RAW.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 67560,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._01_SurveyResponseData_RAW.csv",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/data/._01_SurveyResponseData_RAW.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 344,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/data/.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/data/._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "03_NumericalCodes_Key.docx",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/data/03_NumericalCodes_Key.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 20112,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._03_NumericalCodes_Key.docx",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/data/._03_NumericalCodes_Key.docx",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 433,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "02_OpenQuestionsData_Coding.csv",
+      "file_path": "Data_for_Dryad_upload.zip/Data for Dryad upload/data/02_OpenQuestionsData_Coding.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 59595,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._02_OpenQuestionsData_Coding.csv",
+      "file_path": "Data_for_Dryad_upload.zip/__MACOSX/Data for Dryad upload/data/._02_OpenQuestionsData_Coding.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.0zpc866zj",
+      "file_url": null,
+      "file_size": 344,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

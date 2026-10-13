@@ -9,8 +9,8 @@
 # Converted from code/02_create_comparison_data/01_comparison_data.R.
 #
 # Cooper's own column, and what mc_* recreates it from:
-#   data_availability -> a repo_check-listed repository exists, AND at
-#     least one of its files was classified as tabular data
+#   data_availability -> repo_check found at least one linked repository
+#     with at least one file of any type (summary_table$files_n > 0)
 #   data_archive      -> WHERE the data lives (platform name, from the
 #     repo_url, e.g. "Dryad") for whichever repository holds the data
 #   data_doi          -> the DOI metacheck resolved for that repository
@@ -71,38 +71,7 @@ recreate_cooper_columns <- function(res_repo_check_file, res_data_check_file, re
   mc_data_availability <- res_repo_check$summary_table |>
     dplyr::summarise(mc_data_availability = any(files_n > 0, na.rm = TRUE), .by = paper_id)
 
-  # Platform-name matching for mc_data_archive: matches BOTH the
-  # platform's own domain and its DOI prefix reached via doi.org (repo_url
-  # stores the doi.org form far more often than the platform's own
-  # domain). Dryad and Figshare match every known alternate DOI prefix and
-  # institutional host metacheck itself recognises (.dryad_doi_prefixes(),
-  # .figshare_vanity_hosts(), .figshare_doi_prefix_hosts()), not just the
-  # single most common literal for each -- read directly from metacheck's
-  # own lists so this classification cannot drift out of sync with what it
-  # recognises.
-  dryad_url_regex <- paste0(
-    "datadryad\\.org|(?:",
-    paste(gsub("\\.", "\\\\.", metacheck:::.dryad_doi_prefixes()), collapse = "|"),
-    ")/"
-  )
-  figshare_url_regex <- paste0(
-    "figshare\\.com|10\\.6084/m9\\.figshare|(?:",
-    paste(gsub("\\.", "\\\\.", metacheck:::.figshare_vanity_hosts()), collapse = "|"),
-    ")|(?:",
-    paste(gsub("\\.", "\\\\.", names(metacheck:::.figshare_doi_prefix_hosts())), collapse = "|"),
-    ")/"
-  )
-  repo_url_platform <- function(url) {
-    dplyr::case_when(
-      is.na(url) ~ NA_character_,
-      grepl("osf\\.io", url, ignore.case = TRUE) ~ "OSF",
-      grepl("github\\.com|gitlab\\.com", url, ignore.case = TRUE) ~ "GitHub, GitLab, Codeberg or similar platform",
-      grepl("zenodo\\.org|10\\.5281/zenodo", url, ignore.case = TRUE) ~ "Zenodo",
-      grepl(dryad_url_regex, url, ignore.case = TRUE, perl = TRUE) ~ "Dryad",
-      grepl(figshare_url_regex, url, ignore.case = TRUE, perl = TRUE) ~ "Figshare",
-      TRUE ~ "Other repo/database"
-    )
-  }
+  # Platform names from repo_url_platform() (R/platforms.R).
   mc_data_archive <- data_repos |>
     dplyr::mutate(platform = repo_url_platform(repo_url)) |>
     dplyr::summarise(mc_data_archive = paste(sort(unique(platform)), collapse = ";"), .by = paper_id)
@@ -150,6 +119,15 @@ recreate_cooper_columns <- function(res_repo_check_file, res_data_check_file, re
   mc_code_archived <- code_table |>
     dplyr::summarise(mc_code_archived = dplyr::n() > 0, .by = paper_id)
 
+  # Platform(s) of every repository holding at least one code_check code
+  # file -- the code counterpart of mc_data_archive, compared against
+  # Cooper's own code_archive column.
+  mc_code_archive <- code_table |>
+    dplyr::filter(!is.na(repo_url), nzchar(repo_url)) |>
+    dplyr::distinct(paper_id, repo_url) |>
+    dplyr::mutate(platform = repo_url_platform(repo_url)) |>
+    dplyr::summarise(mc_code_archive = paste(sort(unique(platform)), collapse = ";"), .by = paper_id)
+
   mc_code_download <- code_table |>
     dplyr::summarise(mc_code_download = any(!is.na(file_location) & nzchar(file_location)),
               .by = paper_id)
@@ -176,6 +154,7 @@ recreate_cooper_columns <- function(res_repo_check_file, res_data_check_file, re
     dplyr::left_join(mc_readme |> dplyr::rename(mc_data_README = mc_readme_present), by = "paper_id") |>
     dplyr::mutate(mc_code_used = NA) |>
     dplyr::left_join(mc_code_archived,     by = "paper_id") |>
+    dplyr::left_join(mc_code_archive,      by = "paper_id") |>
     dplyr::left_join(mc_code_download,     by = "paper_id") |>
     dplyr::left_join(mc_code_language,     by = "paper_id") |>
     dplyr::left_join(mc_readme |> dplyr::rename(mc_code_README = mc_readme_present), by = "paper_id")
@@ -194,39 +173,14 @@ recreate_cooper_columns <- function(res_repo_check_file, res_data_check_file, re
 build_cooper_vs_metacheck <- function(recreated_cooper_columns, cooper_csv_file, sample_csv_file) {
   # Cooper's CSV is read from a fixed, versioned local snapshot rather
   # than fetched fresh from GitHub on every run, so this target has no
-  # network dependency and is reproducible from that snapshot.
-  cooper <- read.csv(cooper_csv_file, na.strings = "NA", stringsAsFactors = FALSE)
-  cooper <- .fix_invalid_utf8(cooper)
-
-  # Cooper et al.'s coded CSV has 4 DOIs each mistakenly copy-pasted onto
-  # TWO different papers (confirmed by cross-referencing paper_number --
-  # unique, never duplicated -- against the master metadata list: for all
-  # 8 affected rows the coder's own recorded journal matches that
-  # paper_number's TRUE journal, so only the doi field was wrong on one
-  # row of each pair). Uncorrected, both rows of each pair map to the SAME
-  # article_id via sample.csv's doi-keyed lookup below, producing a
-  # many-to-many join and duplicate rows. sample.csv itself already
-  # reflects the corrected DOIs -- this must be applied here too, to this
-  # freshly loaded copy of cooper, so this join uses the same corrected
-  # DOIs sample.csv was keyed on.
-  doi_corrections <- data.frame(
-    paper_number = c("57", "1275", "47", "7176"),
-    correct_doi  = c("10.1002/2688-8319.12136", "10.1111/1365-2656.13512",
-                     "10.1111/1365-2656.13145", "10.1111/1365-2435.12981"),
-    stringsAsFactors = FALSE
-  )
-  m <- match(as.character(cooper$paper_number), doi_corrections$paper_number)
-  fix <- !is.na(m)
-  if (any(fix)) cooper$doi[fix] <- doi_corrections$correct_doi[m[fix]]
-
-  sampled <- read.csv(sample_csv_file, colClasses = "character")
-  doi_to_article_id <- setNames(sampled$article_id, tolower(sampled$doi))
-  cooper$article_id <- doi_to_article_id[tolower(cooper$doi)]
+  # network dependency and is reproducible from that snapshot; DOI
+  # corrections and article_id from read_cooper_coded() (R/cooper_data.R).
+  cooper <- read_cooper_coded(cooper_csv_file, sample_csv_file)
 
   side_by_side <- cooper |>
     dplyr::select(article_id, data_availability, data_archive, data_doi, data_license,
            data_download, data_format, data_README,
-           code_used, code_archived, code_download, code_language, code_README) |>
+           code_used, code_archived, code_archive, code_download, code_language, code_README) |>
     dplyr::left_join(recreated_cooper_columns, by = c("article_id" = "paper_id"))
 
   # any_readme: collapsed data_README OR code_README vs. the one repo_check

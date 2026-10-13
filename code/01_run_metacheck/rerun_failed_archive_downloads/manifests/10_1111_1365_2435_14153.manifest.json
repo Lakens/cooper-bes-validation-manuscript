@@ -1,0 +1,249 @@
+{
+  "paper_id": "10_1111_1365_2435_14153",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 19,
+  "n_downloaded": 19,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.pdf",
+      "file_path": "README.pdf",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": "https://datadryad.org/api/v2/files/1685299/download",
+      "file_size": 120881,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hull.res.full.csv",
+      "file_path": "Dryad_upload.zip/Family morphology analysis/hull.res.full.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 37844,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nnd.res.full.csv",
+      "file_path": "Dryad_upload.zip/Family morphology analysis/nnd.res.full.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 48049,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "co1.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/co1.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 421204,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "cytb.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/cytb.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 531810,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mc1r.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/mc1r.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 20321,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "mt.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/mt.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 95884,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nd2.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/nd2.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 562052,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "rag1.taxonomy.csv",
+      "file_path": "Dryad_upload.zip/Genetic analyses/rag1.taxonomy.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 119732,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "GeneticCoverageSummary.xlsx",
+      "file_path": "Dryad_upload.zip/GeneticCoverageSummary.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 566800,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "coords.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/coords.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 17848,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.co1.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.co1.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 462424,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.cytb.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.cytb.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 425374,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.hull.size.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.hull.size.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 348827,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.mc1r.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.mc1r.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 107310,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.mt.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.mt.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 280442,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.nd2.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.nd2.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 397181,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.nnd.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.nnd.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 399056,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "global.rag1.scores.RDS",
+      "file_path": "Dryad_upload.zip/Global maps/global.rag1.scores.RDS",
+      "repo_url": "https://doi.org/10.5061/dryad.b5mkkwhf4",
+      "file_url": null,
+      "file_size": 186452,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

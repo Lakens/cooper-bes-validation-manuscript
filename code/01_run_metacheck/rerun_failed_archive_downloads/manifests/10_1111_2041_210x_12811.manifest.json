@@ -1,0 +1,376 @@
+{
+  "paper_id": "10_1111_2041_210x_12811",
+  "generated": "2026-10-12T02:00:48+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T02:00:48+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 29,
+  "n_downloaded": 27,
+  "not_downloaded": {
+    "intentional_n": 2,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "m2_lcdat.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_lcdat.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2770742,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_posA_s13.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_posA_s13.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 204,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_posA_s23.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_posA_s23.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 230,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_posA_s42.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_posA_s42.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 230,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_posA_s77.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_posA_s77.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 239,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_posA_s92.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_posA_s92.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 242,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_regions.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_regions.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 313,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "species.table.rdata",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/species.table.rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2795,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "W1e39_2013.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/W1e39_2013.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 625739,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "W2e39_2013.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/W2e39_2013.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 624881,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "W3e39_2013.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/W3e39_2013.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 775234,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "weathercol_e38.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/weathercol_e38.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 34711,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "weatherrow_e38.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/weatherrow_e38.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 7265,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ysp.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/ysp.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 193333,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gridIDs.txt",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gridIDs.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 941,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "elevation.dat",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/elevation.dat",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2967667,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "rdasqs",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/rdasqs",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 10428432,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Oedekoven et al. Supp Info R code.r",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/Oedekoven et al. Supp Info R code.r",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 101396,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "gamdat_13.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gamdat_13.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2022638,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gamdat_23.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gamdat_23.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2102803,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gamdat_42.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gamdat_42.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2102760,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gamdat_77.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gamdat_77.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2115737,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "gamdat_92.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/gamdat_92.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 2114312,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_countries.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_countries.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 76,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_EDF_s13.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_EDF_s13.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 67,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_EDF_s23.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_EDF_s23.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 67,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_EDF_s42.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_EDF_s42.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 67,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_EDF_s77.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_EDF_s77.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 67,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "m2_EDF_s92.RData",
+      "file_path": "Oedekoven et. al data for MEE-17-02-096.R1.zip/m2_EDF_s92.RData",
+      "repo_url": "https://doi.org/10.5061/dryad.77h7k",
+      "file_url": {},
+      "file_size": 67,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "fields",
+      "MASS",
+      "mgcv",
+      "MuMIn",
+      "raster"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

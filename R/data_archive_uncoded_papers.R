@@ -46,17 +46,9 @@ summarize_data_archive_uncoded_papers <- function(master_comparison, res_data_ch
                              function(e) sort(table(e), decreasing = TRUE))
   data_type_table <- table(files$data_type, useNA = "ifany")
 
-  # Platform of the repositories Metacheck fetched, same labels as Cooper's.
-  platform <- function(u) {
-    dplyr::case_when(
-      grepl("osf[.]io", u, ignore.case = TRUE) ~ "OSF",
-      grepl("github[.]com|gitlab[.]com", u, ignore.case = TRUE) ~ "GitHub, GitLab, Codeberg or similar platform",
-      grepl("zenodo", u, ignore.case = TRUE) ~ "Zenodo",
-      grepl("dryad|10[.]5061", u, ignore.case = TRUE) ~ "Dryad",
-      grepl("figshare|10[.]6084", u, ignore.case = TRUE) ~ "Figshare",
-      TRUE ~ "Other repo/database"
-    )
-  }
+  # Platform of the repositories Metacheck fetched, with the same labels as
+  # mc_data_archive (repo_url_platform(), R/platforms.R).
+  platform <- repo_url_platform
 
   # Extension groups used to classify each paper. Archive members carry
   # the archive's address in archive_url, so an archive counts as opened

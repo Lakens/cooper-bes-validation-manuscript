@@ -1,0 +1,142 @@
+{
+  "paper_id": "10_1111_1365_2664_14129",
+  "generated": "2026-10-11T18:18:50+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T18:18:50+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 8,
+  "n_downloaded": 1,
+  "not_downloaded": {
+    "intentional_n": 7,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_file.txt",
+      "file_path": "README_file.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": "https://datadryad.org/api/v2/files/1351538/download",
+      "file_size": 182,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Traditional_boat_moorings.cpg",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.cpg",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 5,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.dbf",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.dbf",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 4279,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.prj",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.prj",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 145,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.sbn",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.sbn",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 3652,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.sbx",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.sbx",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 164,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.shp",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.shp",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 10824,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Traditional_boat_moorings.shx",
+      "file_path": "Boat_moorings.zip/BOAT MOORINGS/Traditional_boat_moorings.shx",
+      "repo_url": "https://doi.org/10.5061/dryad.8w9ghx3p5",
+      "file_url": null,
+      "file_size": 3164,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ]
+}

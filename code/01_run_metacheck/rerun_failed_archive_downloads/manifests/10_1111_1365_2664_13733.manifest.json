@@ -1,0 +1,386 @@
+{
+  "paper_id": "10_1111_1365_2664_13733",
+  "generated": "2026-10-11T18:13:00+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T18:13:00+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 28,
+  "n_downloaded": 17,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "JAPPL-2020-00332_Feld_data.xlsx",
+      "file_path": "JAPPL-2020-00332_Feld_data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.5x69p8d17",
+      "file_url": "https://datadryad.org/api/v2/files/369798/download",
+      "file_size": 98676,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._JAPPL-2020-00332_Feld_scripts",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/._JAPPL-2020-00332_Feld_scripts",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 220,
+      "data_type": "unknown",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._data_and_text",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/._data_and_text",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "app.R",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/app.R",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 19764,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._app.R",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/._app.R",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "data_for_shiny_catchment.Rdata",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_for_shiny_catchment.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 13556,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._data_for_shiny_catchment.Rdata",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/._data_for_shiny_catchment.Rdata",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Readme.txt",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/Readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 1446,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._Readme.txt",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/._Readme.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 227,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "code_for_shiny.R",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/code_for_shiny.R",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 13847,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._code_for_shiny.R",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/._code_for_shiny.R",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "output_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/output_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 1669,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._output_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._output_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "output_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/output_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 2195,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._output_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._output_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/input_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 1156,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._input_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._input_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "general_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/general_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 403,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._general_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._general_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._network_file",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._network_file",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "general_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/general_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 460,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._general_diagnosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._general_diagnosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "input_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/input_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 1600,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._input_prognosis.csv",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/._input_prognosis.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "BN_MZB_Catch_2_trained_for_bnlearn.net",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/JAPPL-2020-00332_Feld_scripts/data_and_text/network_file/BN_MZB_Catch_2_trained_for_bnlearn.net",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 7565,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._BN_MZB_Catch_2_trained_for_bnlearn.net",
+      "file_path": "JAPPL-2020-00332_Feld_scripts.zip/__MACOSX/JAPPL-2020-00332_Feld_scripts/data_and_text/network_file/._BN_MZB_Catch_2_trained_for_bnlearn.net",
+      "repo_url": "https://doi.org/10.5061/dryad.37pvmcvh6",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bnlearn",
+      "fmsb",
+      "gRain",
+      "gRbase",
+      "radarchart",
+      "scales",
+      "shiny",
+      "shinyBS"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

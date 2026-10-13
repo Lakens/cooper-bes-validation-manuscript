@@ -1,0 +1,264 @@
+{
+  "paper_id": "10_1111_2041_210x_13447",
+  "generated": "2026-10-12T17:57:06+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T17:57:06+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 15,
+  "n_downloaded": 3,
+  "not_downloaded": {
+    "intentional_n": 12,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "Additional_Funcs.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/KP_Fish/Additional_Funcs.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 34767,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "KPFish_Plot_Group_Contents.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/KP_Fish/KPFish_Plot_Group_Contents.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 11126,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "KPFish_Plot_environment.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/KP_Fish/KPFish_Plot_environment.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 20864,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "KPFish_Plot_pred_clusters.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/KP_Fish/KPFish_Plot_pred_clusters.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 14296,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "KPFish_Run_Models.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/KP_Fish/KPFish_Run_Models.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 30273,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/README.md",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 2390,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Plot_Group_Contents.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Plot_Group_Contents.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 12542,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Plot_environment.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Plot_environment.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 24338,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Plot_pred_clusters.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Plot_pred_clusters.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 11264,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Many_covars_sim_fin.RData",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Sim_Setup/Many_covars_sim_fin.RData",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 787975,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sim_env_070518.RData",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Sim_Setup/sim_env_070518.RData",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 314839,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "simulate_communities_final.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Sim_Setup/simulate_communities_final.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 8807,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "simulation_env_070518.r",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Sim_Setup/simulation_env_070518.r",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 1648,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Simulation_Additional_Funcs.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Simulation_Additional_Funcs.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 28542,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Simulation_Run_Models.R",
+      "file_path": "Hillna-IMAS/Bioregion_Methods-v1.1.zip/Hillna-IMAS-Bioregion_Methods-a7b10b2/Simulation/Simulation_Run_Models.R",
+      "repo_url": "https://zenodo.org/record/3936354",
+      "file_url": {},
+      "file_size": 27801,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "cluster",
+      "ecomix",
+      "extendedForest",
+      "fpc",
+      "gdm",
+      "ggplot2",
+      "gradientForest",
+      "grid",
+      "gridExtra",
+      "gtools",
+      "HMSC",
+      "MASS",
+      "mistnet",
+      "mvtnorm",
+      "plyr",
+      "PresenceAbsence",
+      "raster",
+      "rasterVis",
+      "RColorBrewer",
+      "RCPmod",
+      "reshape2",
+      "scales",
+      "scatterplot3d",
+      "SDMTools",
+      "surveillance",
+      "tidyr",
+      "vegan"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

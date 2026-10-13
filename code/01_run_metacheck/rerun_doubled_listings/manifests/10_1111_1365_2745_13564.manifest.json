@@ -1,0 +1,139 @@
+{
+  "paper_id": "10_1111_1365_2745_13564",
+  "generated": "2026-10-12T22:10:15+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-12T22:10:15+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 9,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "bag-info.txt",
+      "file_path": "FACE_UNCOM_201209-201602.zip/bag-info.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 64,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "manifest-sha1.txt",
+      "file_path": "FACE_UNCOM_201209-201602.zip/manifest-sha1.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 411,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.html",
+      "file_path": "FACE_UNCOM_201209-201602.zip/data/README.html",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 43866,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FACE_P0029_RA_UCOMFB_R_201209-201602.csv",
+      "file_path": "FACE_UNCOM_201209-201602.zip/data/FACE_P0029_RA_UCOMFB_R_201209-201602.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 11884,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FACE_P0029_RA_UCOMGM_R_201209-201602.csv",
+      "file_path": "FACE_UNCOM_201209-201602.zip/data/FACE_P0029_RA_UCOMGM_R_201209-201602.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 7816,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FACE_P0029_RA_ENVVARS_L1_201301-201512.csv",
+      "file_path": "FACE_UNCOM_201209-201602.zip/data/FACE_P0029_RA_ENVVARS_L1_201301-201512.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 1185,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "FACE_P0029_RA_SOILVARS_L1_201311-201602.csv",
+      "file_path": "FACE_UNCOM_201209-201602.zip/data/FACE_P0029_RA_SOILVARS_L1_201311-201602.csv",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 1006,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "manifest-md5.txt",
+      "file_path": "FACE_UNCOM_201209-201602.zip/manifest-md5.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 371,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "bagit.txt",
+      "file_path": "FACE_UNCOM_201209-201602.zip/bagit.txt",
+      "repo_url": "https://doi.org/10.6084/m9.figshare.5835216.v3",
+      "file_url": null,
+      "file_size": 55,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

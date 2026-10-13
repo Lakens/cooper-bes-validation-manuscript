@@ -1,0 +1,312 @@
+{
+  "paper_id": "10_1111_1365_2745_13682",
+  "generated": "2026-10-11T19:49:22+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:49:22+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 20,
+  "n_downloaded": 6,
+  "not_downloaded": {
+    "intentional_n": 14,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 361,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Figure_S1_VPD_Code.R",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Code/Figure_S1_VPD_Code.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 14992,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Figure_S3_Chilling_degree_day_Code.R",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Code/Figure_S3_Chilling_degree_day_Code.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 9052,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Figure_S4_Code.R",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Code/Figure_S4_Code.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 11357,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FullScript_Code.R",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Code/FullScript_Code.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 45709,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "S1_climate_data.csv",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Data/S1_climate_data.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 34099,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S2_phenology_data.csv",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Data/S2_phenology_data.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 9217,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S3_stem_volume_data.csv",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Data/S3_stem_volume_data.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 33224,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S4_biomass_data.csv",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Data/S4_biomass_data.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 4432,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "S5_climate_hourly.csv",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Data/S5_climate_hourly.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 1404690,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Fig1_Temperature deviation.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/Fig1_Temperature deviation.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 28695,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig2_PhenologyLinearTreatmentModel.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/Fig2_PhenologyLinearTreatmentModel.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 7491,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig3_LinePlot.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/Fig3_LinePlot.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 9297,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig4_BiomassLinearTreatmentModel.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/Fig4_BiomassLinearTreatmentModel.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 7950,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Fig5_PhenologyBiomass.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/Fig5_PhenologyBiomass.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 70065,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FigS1_VPD.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/FigS1_VPD.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 10718,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FigS2_PhenologyChange.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/FigS2_PhenologyChange.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 7663,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FigS3_DegreeDay.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/FigS3_DegreeDay.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 5322,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FigS4_TemperatureChange.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/FigS4_TemperatureChange.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 5953,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "FigS5_BiomassChange.pdf",
+      "file_path": "ConstantinZohner/PhenoGrowth-v1.0.zip/ConstantinZohner-PhenoGrowth-753c588/Zohner_et_al_JEcol_Analysis_data_code/Output/FigS5_BiomassChange.pdf",
+      "repo_url": "https://doi.org/10.5281/zenodo.4727525",
+      "file_url": {},
+      "file_size": 8024,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "broom",
+      "car",
+      "chillR",
+      "data.table",
+      "dplyr",
+      "ggplot2",
+      "git2r",
+      "gmodels",
+      "lubridate",
+      "patchwork",
+      "plantecophys",
+      "readr",
+      "stringr",
+      "tidyverse",
+      "viridis",
+      "wesanderson"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

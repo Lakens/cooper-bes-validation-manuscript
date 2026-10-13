@@ -4,14 +4,16 @@
 # REVIEW changed (someone filled in a verdict/comment):
 #   - the .rds return value: every disagreement row and its data columns,
 #     entirely code-generated, overwritten fresh every run.
-#   - the .xlsx file: only row_id/article_id/disagreements plus the 7
-#     verdict/comment column pairs, manually edited. Any other columns
-#     already present in this file (free-form notes) are left untouched.
-# 7 verdicted columns: data_availability, data_archive, data_license,
-# data_download, code_archived, code_download, any_readme. data_archive
-# is overlap-based (a paper can cite more than one repository, so any
-# shared platform name counts as agreement); every other column is a
-# straight boolean comparison.
+#   - the .xlsx file: row_id/article_id/disagreements plus, for each of the
+#     8 verdicted columns, its verdict/comment/version-stamp cells (manually
+#     edited) and the Cooper and Metacheck values the verdict is about. Any
+#     other columns already present in this file (free-form notes) are left
+#     untouched.
+# 8 verdicted columns: data_availability, data_archive, data_license,
+# data_download, code_archived, code_archive, code_download, any_readme.
+# data_archive and code_archive compare platform SETS (a paper can cite
+# more than one repository) and disagree whenever the sets are not
+# identical; every other column is a straight boolean comparison.
 #
 # Converted from code/02_create_comparison_data/02_build_disagreement_worklist.R.
 #
@@ -70,18 +72,20 @@ build_disagreement_worklist <- function(side_by_side, xlsx_path, worklist_target
     }
   }
 
-  cv <- side_by_side$data_archive; mv <- side_by_side$mc_data_archive
-  da_both <- !is.na(cv) & !is.na(mv) & nzchar(cv) & nzchar(mv)
-  da_ov <- rep(NA, n)
-  da_ov[da_both] <- mapply(function(a, b) {
-    sa <- trimws(strsplit(a, ";")[[1]]); sb <- trimws(strsplit(b, ";")[[1]])
-    any(tolower(sa) %in% tolower(sb))
-  }, cv[da_both], mv[da_both])
-  da_disagree <- !is.na(da_ov) & !da_ov
-  flags[["data_archive"]] <- da_disagree
-  for (i in which(da_disagree)) {
-    tag <- sprintf("data_archive[cooper=%s,mc=%s]", side_by_side$data_archive[i], side_by_side$mc_data_archive[i])
-    disagree_cols[i] <- if (nzchar(disagree_cols[i])) paste(disagree_cols[i], tag, sep = ";") else tag
+  # data_archive / code_archive: a disagreement is any comparable paper whose
+  # two platform sets are not identical -- the same rule, through the same
+  # function, as the agreement percentages in compute_comparison_statistics()
+  # (platform_set_category(), R/platforms.R), so the worklist lists exactly
+  # the disagreements the manuscript counts.
+  for (nm in c("data_archive", "code_archive")) {
+    cv <- side_by_side[[nm]]; mv <- side_by_side[[paste0("mc_", nm)]]
+    category <- platform_set_category(cv, mv)
+    disagree <- !is.na(category) & category != "exact"
+    flags[[nm]] <- disagree
+    for (i in which(disagree)) {
+      tag <- sprintf("%s[cooper=%s,mc=%s]", nm, cv[i], mv[i])
+      disagree_cols[i] <- if (nzchar(disagree_cols[i])) paste(disagree_cols[i], tag, sep = ";") else tag
+    }
   }
 
   ar_disagree <- !is.na(side_by_side$cooper_any_readme) & !is.na(side_by_side$mc_any_readme) &
@@ -106,18 +110,30 @@ build_disagreement_worklist <- function(side_by_side, xlsx_path, worklist_target
   review <- review[, c("row_id", setdiff(names(review), "row_id"))]
 
   verdict_cols <- c("data_availability", "data_archive", "data_license",
-                    "data_download", "code_archived", "code_download", "any_readme")
+                    "data_download", "code_archived", "code_archive",
+                    "code_download", "any_readme")
 
+  # A separator that cannot occur in an id or a coded value, so two
+  # different (paper, Cooper value, Metacheck value) combinations can never
+  # produce the same key.
   build_key <- function(article_id, cooper_val, mc_val)
-    paste(article_id, as.character(cooper_val), as.character(mc_val), sep = "")
-  cooper_col_for <- function(col) if (col == "data_archive") "data_archive" else
+    paste(article_id, as.character(cooper_val), as.character(mc_val), sep = "\r")
+  cooper_col_for <- function(col) if (col %in% c("data_archive", "code_archive")) col else
     if (col == "any_readme") "cooper_any_readme" else bool_pairs[[col]]$cooper
-  mc_col_for <- function(col) if (col == "data_archive") "mc_data_archive" else
+  mc_col_for <- function(col) if (col %in% c("data_archive", "code_archive")) paste0("mc_", col) else
     if (col == "any_readme") "mc_any_readme" else bool_pairs[[col]]$mc
 
+  # Each verdict carries the same version stamp as a row of the manual
+  # audit CSVs (see R/audit_staleness.R): the installed metacheck RemoteSha
+  # when the verdict was written, the date it was written, and whether
+  # that SHA was actually captured (TRUE) or the date only inferred from
+  # git history (FALSE). One stamp per verdict column, not per row,
+  # because a row's verdicts can be written at different times.
+  stamp_suffixes <- c("_metacheck_version", "_metacheck_version_date", "_version_is_exact")
   for (col in verdict_cols) {
     review[[paste0(col, "_verdict")]] <- NA_character_
     review[[paste0(col, "_comment")]] <- NA_character_
+    for (s in stamp_suffixes) review[[paste0(col, s)]] <- NA_character_
   }
 
   # Carry forward already-recorded verdicts/comments for a (paper, column,
@@ -146,8 +162,12 @@ build_disagreement_worklist <- function(side_by_side, xlsx_path, worklist_target
       }
       lut_verdict <- old_verdict[has_old]
       lut_comment <- old[[ccol]][has_old]
+      stamp_cols <- paste0(col, stamp_suffixes)
+      lut_stamp <- lapply(stamp_cols, function(sc)
+        if (sc %in% names(old)) as.character(old[[sc]])[has_old] else rep(NA_character_, sum(has_old)))
       first <- !duplicated(lut_key)
       lut_key <- lut_key[first]; lut_verdict <- lut_verdict[first]; lut_comment <- lut_comment[first]
+      lut_stamp <- lapply(lut_stamp, `[`, first)
       m <- match(new_key, lut_key)
       # Only fill cells still blank: a later source wins over an earlier
       # one for any cell both provide.
@@ -155,6 +175,7 @@ build_disagreement_worklist <- function(side_by_side, xlsx_path, worklist_target
       hit <- !is.na(m) & still_blank
       review[[vcol]][hit] <- lut_verdict[m[hit]]
       review[[ccol]][hit] <- lut_comment[m[hit]]
+      for (j in seq_along(stamp_cols)) review[[stamp_cols[j]]][hit] <- lut_stamp[[j]][m[hit]]
     }
     review
   }
@@ -176,21 +197,62 @@ build_disagreement_worklist <- function(side_by_side, xlsx_path, worklist_target
     review <- carry_forward_from(old_keyed, review)
   }
 
-  disagreement_cols_by_len <- verdict_cols[order(-nchar(verdict_cols))]
-  flagged_cols_for_row <- function(disagreements_text) {
-    if (is.na(disagreements_text) || !nzchar(disagreements_text)) return(character(0))
-    disagreement_cols_by_len[vapply(disagreement_cols_by_len, function(col) {
-      grepl(paste0("(^|;)", col, "\\["), disagreements_text)
-    }, logical(1))]
+  # Which columns disagree for each row, straight from the flags computed
+  # above (not re-parsed from the disagreements text, whose platform values
+  # can themselves contain ";").
+  flag_mat <- do.call(cbind, lapply(verdict_cols, function(col) flags[[col]][has_disagreement]))
+  colnames(flag_mat) <- verdict_cols
+  flagged_cols_for_row <- function(i) verdict_cols[flag_mat[i, ]]
+
+  # A verdict judges one specific disagreement. A column that no longer
+  # disagrees for this paper keeps no verdict, comment or version stamp: the
+  # carry-forward key matches on values, and a verdict could otherwise sit on
+  # a column where Cooper and Metacheck now agree and still be counted.
+  for (col in verdict_cols) {
+    off <- !flag_mat[, col]
+    for (cc in paste0(col, c("_verdict", "_comment", stamp_suffixes))) review[[cc]][off] <- NA_character_
   }
   review$reviewed <- vapply(seq_len(nrow(review)), function(i) {
-    flagged <- flagged_cols_for_row(review$disagreements[i])
+    flagged <- flagged_cols_for_row(i)
     if (length(flagged) == 0) return(NA)
     vcols <- paste0(flagged, "_verdict")
     all(!is.na(unlist(review[i, vcols])) & nzchar(trimws(unlist(review[i, vcols]))))
   }, logical(1))
 
-  list(review = review, verdict_cols = verdict_cols)
+  # The Cooper and Metacheck value each verdict was written about. Written
+  # into the xlsx next to the verdicts (write_disagreement_worklist_xlsx()),
+  # so the next run's carry-forward keys on the values stored WITH each
+  # verdict rather than on this target's previous cached value: those two
+  # drift apart whenever a build stops between this target and the xlsx
+  # write (2026-10-12: a run that ran out of memory left 16 verdicts on
+  # columns that no longer disagreed).
+  value_cols <- unique(unlist(lapply(verdict_cols, function(col) c(cooper_col_for(col), mc_col_for(col)))))
+
+  list(review = review, verdict_cols = verdict_cols, stamp_suffixes = stamp_suffixes,
+       value_cols = value_cols, flagged = flag_mat)
+}
+
+# The worklist counterpart of .audit_staleness(): one row per written
+# verdict, flagged stale when its stamp is not an exact match for the
+# currently installed metacheck -- a list of verdicts to re-check, not an
+# error to fix automatically.
+check_worklist_staleness <- function(disagreement_worklist, current_sha) {
+  review <- disagreement_worklist$review
+  out <- do.call(rbind, lapply(disagreement_worklist$verdict_cols, function(col) {
+    v <- review[[paste0(col, "_verdict")]]
+    has <- !is.na(v) & nzchar(trimws(v))
+    if (!any(has)) return(NULL)
+    exact <- as.character(review[[paste0(col, "_version_is_exact")]][has])
+    ver <- review[[paste0(col, "_metacheck_version")]][has]
+    data.frame(
+      row_id = review$row_id[has], column = col, verdict = v[has],
+      metacheck_version = ver,
+      metacheck_version_date = review[[paste0(col, "_metacheck_version_date")]][has],
+      version_is_exact = exact,
+      stale = is.na(current_sha) | !(exact %in% "TRUE") | (exact %in% "TRUE" & ver != current_sha),
+      stringsAsFactors = FALSE)
+  }))
+  list(verdicts = out, current_metacheck_sha = current_sha)
 }
 
 # Writes the xlsx file a caller should persist at xlsx_path: only
@@ -203,8 +265,11 @@ write_disagreement_worklist_xlsx <- function(worklist, xlsx_path) {
   review <- worklist$review
   verdict_cols <- worklist$verdict_cols
 
+  stamp_suffixes <- worklist$stamp_suffixes
   xlsx_core_cols <- c("row_id", "article_id", "disagreements", "reviewed",
-                      as.vector(rbind(paste0(verdict_cols, "_verdict"), paste0(verdict_cols, "_comment"))))
+                      unlist(lapply(verdict_cols, function(col)
+                        paste0(col, c("_verdict", "_comment", stamp_suffixes)))),
+                      worklist$value_cols)
   xlsx_out <- review[, xlsx_core_cols]
   if (file.exists(xlsx_path)) {
     old_xlsx <- as.data.frame(openxlsx::read.xlsx(xlsx_path), stringsAsFactors = FALSE)
@@ -231,7 +296,15 @@ write_disagreement_worklist_xlsx <- function(worklist, xlsx_path) {
       as.data.frame(openxlsx::read.xlsx(xlsx_path), stringsAsFactors = FALSE),
       error = function(e) NULL
     )
-    if (!is.null(on_disk) && isTRUE(all.equal(on_disk, xlsx_out, check.attributes = FALSE))) {
+    # Compared as text: read.xlsx() returns an all-NA or "TRUE"/"FALSE"
+    # column (e.g. the version stamps) as logical, so a type-sensitive
+    # comparison would report a change on every run.
+    as_text <- function(df) {
+      df[] <- lapply(df, function(x) { x <- as.character(x); x[is.na(x)] <- ""; x })
+      df
+    }
+    if (!is.null(on_disk) && identical(names(on_disk), names(xlsx_out)) &&
+        isTRUE(all.equal(as_text(on_disk), as_text(xlsx_out), check.attributes = FALSE))) {
       needs_write <- FALSE
     }
   }

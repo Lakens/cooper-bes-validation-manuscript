@@ -1,0 +1,353 @@
+{
+  "paper_id": "10_1111_1365_2745_12963",
+  "generated": "2026-10-11T19:30:51+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:30:51+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 25,
+  "n_downloaded": 11,
+  "not_downloaded": {
+    "intentional_n": 14,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README_for_Data_archive.txt",
+      "file_path": "README_for_Data_archive.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": "https://datadryad.org/api/v2/files/76877/download",
+      "file_size": 2255,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": ".DS_Store",
+      "file_path": "Data_archive.zip/Data_archive/.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 6148,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._.DS_Store",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._.DS_Store",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_biotic_resistance_analysis.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_biotic_resistance_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 6858,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_biotic_resistance_analysis.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_biotic_resistance_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_competitive_exclusion_analysis.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_competitive_exclusion_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 5946,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_competitive_exclusion_analysis.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_competitive_exclusion_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_data_setup.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_data_setup.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 12667,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_data_setup.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_data_setup.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_env_filtering_analysis.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_env_filtering_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 4214,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_env_filtering_analysis.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_env_filtering_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_env_heterogeneity_analysis.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_env_heterogeneity_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 1365,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_env_heterogeneity_analysis.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_env_heterogeneity_analysis.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Div_Inv_archive_master.R",
+      "file_path": "Data_archive.zip/Data_archive/Div_Inv_archive_master.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 2264,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "._Div_Inv_archive_master.R",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Div_Inv_archive_master.R",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Lake_mean_env_data.csv",
+      "file_path": "Data_archive.zip/Data_archive/Lake_mean_env_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 8597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._Lake_mean_env_data.csv",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Lake_mean_env_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 210,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Lake_plant_diversity_data.csv",
+      "file_path": "Data_archive.zip/Data_archive/Lake_plant_diversity_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 22424662,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._Lake_plant_diversity_data.csv",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._Lake_plant_diversity_data.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MpcaFqa.csv",
+      "file_path": "Data_archive.zip/Data_archive/MpcaFqa.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 226840,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._MpcaFqa.csv",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._MpcaFqa.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 1288,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tnrs_invasives.csv",
+      "file_path": "Data_archive.zip/Data_archive/tnrs_invasives.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 1841,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._tnrs_invasives.csv",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._tnrs_invasives.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "tnrs_results.csv",
+      "file_path": "Data_archive.zip/Data_archive/tnrs_results.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 17870,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "._tnrs_results.csv",
+      "file_path": "Data_archive.zip/__MACOSX/Data_archive/._tnrs_results.csv",
+      "repo_url": "https://doi.org/10.5061/dryad.19cf1c2",
+      "file_url": {},
+      "file_size": 120,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "lme4",
+      "pbkrtest"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

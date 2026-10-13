@@ -1,0 +1,206 @@
+{
+  "paper_id": "10_1111_1365_2664_14661",
+  "generated": "2026-10-11T19:23:20+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T19:23:20+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 12,
+  "n_downloaded": 9,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "2020_BeeTox_database_acute_contact_publication_final_R1.csv",
+      "file_path": "ld50_adjust.zip/ld50_adjust/2020_BeeTox_database_acute_contact_publication_final_R1.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 50885,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ld50_adjust.R",
+      "file_path": "ld50_adjust.zip/ld50_adjust/ld50_adjust.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 2674,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "all_pesticide.csv",
+      "file_path": "input.zip/input/all_pesticide.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 54478,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "hive_distance_matrix.csv",
+      "file_path": "input.zip/input/gis/hive_distance_matrix.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 1033,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "sitelocation.csv",
+      "file_path": "input.zip/input/gis/sitelocation.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 484,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "LD50.csv",
+      "file_path": "input.zip/input/LD50.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 2303,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "ld50_per_bee.csv",
+      "file_path": "input.zip/input/ld50_per_bee.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 1990,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "nesting_type.csv",
+      "file_path": "input.zip/input/nesting_type.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 145,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pesticide_type.csv",
+      "file_path": "input.zip/input/pesticide_type.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 2721,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "short_name.csv",
+      "file_path": "input.zip/input/short_name.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 303,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "pesticide_analysis_upload.R",
+      "file_path": "code.zip/code/pesticide_analysis_upload.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 61923,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "unadjusted_pesticide_analysis_upload.R",
+      "file_path": "code.zip/code/unadjusted_pesticide_analysis_upload.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.10835332",
+      "file_url": {},
+      "file_size": 13943,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "broom",
+      "cowplot",
+      "devtools",
+      "ggnewscale",
+      "ggordiplots",
+      "ggpattern",
+      "ggpubr",
+      "ggrepel",
+      "gridExtra",
+      "pairwiseAdonis",
+      "plotly",
+      "psych",
+      "RColorBrewer",
+      "rcompanion",
+      "remotes",
+      "reshape2",
+      "rstatix",
+      "scales",
+      "tidyverse",
+      "vegan"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

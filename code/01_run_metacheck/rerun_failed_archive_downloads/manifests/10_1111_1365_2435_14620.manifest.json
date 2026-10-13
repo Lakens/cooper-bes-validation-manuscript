@@ -1,0 +1,271 @@
+{
+  "paper_id": "10_1111_1365_2435_14620",
+  "generated": "2026-10-11T07:30:45+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T07:30:45+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 13,
+  "not_downloaded": {
+    "intentional_n": 3,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "ABS_SMC_meanMAD_v4_future_proj.R",
+      "file_path": "jvajedsamiei/A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-ABC-SMC.zip/jvajedsamiei-A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-c3e8592/ABS_SMC_meanMAD_v4_future_proj.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 89407,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Bayessian_regression_Nov2023.R",
+      "file_path": "jvajedsamiei/A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-ABC-SMC.zip/jvajedsamiei-A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-c3e8592/Bayessian_regression_Nov2023.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 34553,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "Compare_MAD_ABCSMC_BR.R",
+      "file_path": "jvajedsamiei/A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-ABC-SMC.zip/jvajedsamiei-A-Bayesian-overhaul-of-thermal-tolerance-landscape-models-c3e8592/Compare_MAD_ABCSMC_BR.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 1198,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "df_ghl_long.xlsx",
+      "file_path": "DATA.zip/DATA/ABS_SMC_meanMAD_v4_future_proj/df_ghl_long.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 408597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "five_warmestsummer_RCP85_projection_1005grid_hourly.csv",
+      "file_path": "DATA.zip/DATA/ABS_SMC_meanMAD_v4_future_proj/five_warmestsummer_RCP85_projection_1005grid_hourly.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 362729,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "five_warmestsummer_RCP85_projection_1005grid_hourly_fluc.csv",
+      "file_path": "DATA.zip/DATA/ABS_SMC_meanMAD_v4_future_proj/five_warmestsummer_RCP85_projection_1005grid_hourly_fluc.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 411069,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "observed_surv_df.xlsx",
+      "file_path": "DATA.zip/DATA/ABS_SMC_meanMAD_v4_future_proj/observed_surv_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 15315,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temperature_df.xlsx",
+      "file_path": "DATA.zip/DATA/ABS_SMC_meanMAD_v4_future_proj/temperature_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 143710,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "df_ghl_long.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/df_ghl_long.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 408597,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MAD_ABCSMC_df.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/MAD_ABCSMC_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 469145,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "observed_surv_df.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/observed_surv_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 15315,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "PostParam_ABCSMC_CHW_DHW_df.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/PostParam_ABCSMC_CHW_DHW_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 2299047,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Surv_time_df_formatted_for_brm_PART1.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/Surv_time_df_formatted_for_brm_PART1.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 18578,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "temperature_df.xlsx",
+      "file_path": "DATA.zip/DATA/Bayessian_regression_Nov2023/temperature_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 143710,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MAD_ABCSMC_df.xlsx",
+      "file_path": "DATA.zip/DATA/Compare_MAD_ABCSMC_BR/MAD_ABCSMC_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 469145,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "MAD_BR_df.xlsx",
+      "file_path": "DATA.zip/DATA/Compare_MAD_ABCSMC_BR/MAD_BR_df.xlsx",
+      "repo_url": "https://doi.org/10.5281/zenodo.12699002",
+      "file_url": {},
+      "file_size": 481576,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ],
+  "code": {
+    "packages": [
+      "bayesplot",
+      "brms",
+      "broom",
+      "cowplot",
+      "data.table",
+      "dplyr",
+      "extrafont",
+      "flextable",
+      "ggplot2",
+      "ggpubr",
+      "ggridges",
+      "ggsurvfit",
+      "gridExtra",
+      "htmlTable",
+      "knitr",
+      "lme4",
+      "lubridate",
+      "magick",
+      "MASS",
+      "merTools",
+      "mgcViz",
+      "modelr",
+      "officer",
+      "openxlsx",
+      "patchwork",
+      "pdftools",
+      "plotly",
+      "pscl",
+      "RColorBrewer",
+      "readr",
+      "readxl",
+      "scales",
+      "survival",
+      "survminer",
+      "texreg",
+      "tidybayes",
+      "tidyr",
+      "tidyverse",
+      "tools",
+      "writexl",
+      "zoo"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

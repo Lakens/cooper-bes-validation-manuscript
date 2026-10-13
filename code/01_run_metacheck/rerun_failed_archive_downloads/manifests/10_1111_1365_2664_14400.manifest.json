@@ -1,0 +1,257 @@
+{
+  "paper_id": "10_1111_1365_2664_14400",
+  "generated": "2026-10-11T18:54:31+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 2000
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T18:54:31+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 16,
+  "n_downloaded": 5,
+  "not_downloaded": {
+    "intentional_n": 11,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "CITATION.cff",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/CITATION.cff",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 648,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 1813,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.md",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/data/README.md",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 1803,
+      "data_type": "documentation",
+      "data_format": {},
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "bird_abundance.csv",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/data/bird_abundance.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 8163161,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "bird_info.csv",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/data/bird_info.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 1554,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "bird_rich.csv",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/data/bird_rich.csv",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 296613,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "district_fallow.gpkg",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/data/district_fallow.gpkg",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 25780224,
+      "data_type": "data",
+      "data_format": "raw",
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitkeep",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/model_output/coef_species/.gitkeep",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 0,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitkeep",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/model_output/cond_species/.gitkeep",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 0,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitkeep",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/model_output/standmodelabund/.gitkeep",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 0,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitkeep",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/model_output/stanmodelmeta/.gitkeep",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 0,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": ".gitkeep",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/model_output/stanmodelrich/.gitkeep",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 0,
+      "data_type": "output",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "01_model_fitting_rich.r",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/script/01_model_fitting_rich.r",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 603,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "02_model_fitting_abund.r",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/script/02_model_fitting_abund.r",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 2961,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "03_plotting_script.R",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/script/03_plotting_script.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 8607,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    },
+    {
+      "file_name": "XX_helper_function.R",
+      "file_path": "lionel68/ase_fallow-v4.zip/lionel68-ase_fallow-9ddfb10/script/XX_helper_function.R",
+      "repo_url": "https://doi.org/10.5281/zenodo.5561412",
+      "file_url": {},
+      "file_size": 5703,
+      "data_type": "code",
+      "data_format": {},
+      "downloaded": false,
+      "status": "skipped",
+      "skip_reason": "not a data/codebook/README file (use download = \"all\")",
+      "skip_intentional": true
+    }
+  ],
+  "code": {
+    "packages": [
+      "bayesplot",
+      "brms",
+      "DHARMa",
+      "ggpubr",
+      "gridExtra",
+      "ncf",
+      "parallel",
+      "plyr",
+      "posterior",
+      "sf",
+      "tidyverse"
+    ],
+    "ddi_mapping": {
+      "code.packages": "otherMat/software (loaded packages)",
+      "code.files_failed": "fileDscr/notes (code files whose download failed after retries)"
+    }
+  }
+}

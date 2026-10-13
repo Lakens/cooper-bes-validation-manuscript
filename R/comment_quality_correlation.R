@@ -12,11 +12,9 @@
 # cannot compute at all (whether those comments are actually helpful).
 
 compute_comment_quality_correlation <- function(res_code_check_file, cooper_csv_file, sample_csv_file) {
-  cooper_raw <- read.csv(cooper_csv_file, na.strings = "NA", stringsAsFactors = FALSE)
-  cooper_raw <- .fix_invalid_utf8(cooper_raw)
-  sampled <- read.csv(sample_csv_file, colClasses = "character")
-  doi_to_article_id <- setNames(sampled$article_id, tolower(sampled$doi))
-  cooper_raw$article_id <- doi_to_article_id[tolower(cooper_raw$doi)]
+  # Same reader as every other target: without its DOI correction, two
+  # Cooper rows map onto each of 4 article_ids.
+  cooper_raw <- read_cooper_coded(cooper_csv_file, sample_csv_file)
 
   cooper_annot <- data.frame(
     article_id = cooper_raw$article_id,

@@ -1,0 +1,117 @@
+{
+  "paper_id": "10_1111_1365_2656_14191",
+  "generated": "2026-10-11T08:00:52+0200",
+  "download": "data",
+  "caps": {
+    "max_file_size_mb": 100,
+    "max_download_size_mb": 500
+  },
+  "provenance": {
+    "software": {
+      "name": "metacheck",
+      "version": "0.3.2.2"
+    },
+    "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+    "platform": "x86_64-w64-mingw32",
+    "prod_date": "2026-10-11T08:00:52+0200",
+    "llm": {
+      "used": false
+    },
+    "ddi_mapping": {
+      "provenance.software": "docDscr/citation/prodStmt/software (@version)",
+      "provenance.prod_date": "docDscr/citation/prodStmt/prodDate",
+      "files[].file_name": "fileDscr/fileTxt/fileName",
+      "files[].file_url": "fileDscr/@URI",
+      "files[].data_type": "fileDscr/fileTxt/fileCont",
+      "files[].status": "fileDscr/fileTxt/ProcStat",
+      "files[].skip_reason": "fileDscr/notes"
+    }
+  },
+  "n_files": 7,
+  "n_downloaded": 7,
+  "not_downloaded": {
+    "intentional_n": 0,
+    "unintentional_n": 0,
+    "unintentional_files": [],
+    "rerun_recommended": false
+  },
+  "files": [
+    {
+      "file_name": "README.md",
+      "file_path": "README.md",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": "https://datadryad.org/api/v2/files/3491394/download",
+      "file_size": 3486,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Competition_Data.xlsx",
+      "file_path": "Data_files.zip/Data files/Competition_Data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 18641,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "Fitness_Data.xlsx",
+      "file_path": "Data_files.zip/Data files/Fitness_Data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 20906,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "HostHandlingTime_Data.xlsx",
+      "file_path": "Data_files.zip/Data files/HostHandlingTime_Data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 12563,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OocytesTraits_Data.xlsx",
+      "file_path": "Data_files.zip/Data files/OocytesTraits_Data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 9856,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "OvipositionDynamic_Data.xlsx",
+      "file_path": "Data_files.zip/Data files/OvipositionDynamic_Data.xlsx",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 14984,
+      "data_type": "data",
+      "data_format": "tabular",
+      "downloaded": true,
+      "status": "downloaded"
+    },
+    {
+      "file_name": "README.txt",
+      "file_path": "Data_files.zip/Data files/README.txt",
+      "repo_url": "https://doi.org/10.5061/dryad.1zcrjdg27",
+      "file_url": null,
+      "file_size": 3335,
+      "data_type": "documentation",
+      "data_format": null,
+      "downloaded": true,
+      "status": "downloaded"
+    }
+  ]
+}

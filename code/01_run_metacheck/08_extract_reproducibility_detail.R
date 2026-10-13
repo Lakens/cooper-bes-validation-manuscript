@@ -37,6 +37,12 @@ worker_root <- "data/batches/worker_results"
 batch_dirs <- list.dirs(worker_root, recursive = FALSE)
 if (length(batch_dirs) == 0) stop("No batch folders found under ", worker_root,
                                   " -- has run_reproducibility_check.R been run?")
+# The Python rerun (reproducibility_check/rerun_python_papers.R, merged into
+# reproducibility_check_results.RData by merge_python_rerun.R) replaced the
+# results of the 71 papers with Python code; its checkpoints are searched
+# first, so those papers' detail comes from the same run as their results.
+python_dir <- "data/batches/python_rerun_results"
+if (dir.exists(python_dir)) batch_dirs <- c(python_dir, batch_dirs)
 
 resolve_path <- function(pid) {
   for (d in batch_dirs) {

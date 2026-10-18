@@ -57,3 +57,20 @@ code/01_run_metacheck/*/paper_logs/
 # Script 13's combined rerun results (1.6 GB each): an intermediate step,
 # already merged into the corpus-wide res_*_check.RData files.
 code/01_run_metacheck/rerun_failed_archive_downloads/res_*_new.RData
+
+# Large intermediate files at ANY depth below code/01_run_metacheck/ (the
+# rules above only match one folder level, so e.g.
+# rerun_after_dev_fixes/run/papers/ was not ignored). An untracked file that
+# is not ignored is stored in full in .git/objects every time VS Code's agent
+# host computes a session's changes (it runs `git add -A` on all untracked
+# files into a temporary index), which filled the disk on 2026-10-17.
+code/01_run_metacheck/**/papers/
+code/01_run_metacheck/**/paper_logs/
+code/01_run_metacheck/**/batches/
+code/01_run_metacheck/**/*.log
+# Half-written files of an interrupted save (save_corpus_result writes
+# <file>.tmp first).
+*.tmp
+# The corpus result files (about 8 GB): too large for Git; they will be
+# shared on Zenodo once the paper is finished.
+/code/01_run_metacheck/*.RData
